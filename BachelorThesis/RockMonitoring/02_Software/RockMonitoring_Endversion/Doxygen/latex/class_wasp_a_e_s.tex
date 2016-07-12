@@ -1,0 +1,226 @@
+\hypertarget{class_wasp_a_e_s}{}\section{Wasp\+A\+ES Class Reference}
+\label{class_wasp_a_e_s}\index{Wasp\+A\+ES@{Wasp\+A\+ES}}
+
+
+\hyperlink{class_wasp_a_e_s}{Wasp\+A\+ES} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+A\+E\+S.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_a_e_s_a2b1ec7f2140235bf7afdb48e28346128}{Wasp\+A\+ES} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_e_s_af1dce4d0b180e349d5b9acac8cc924e6}{seed\+Generator} (uint8\+\_\+t $\ast$seed)
+\begin{DoxyCompactList}\small\item\em It generate a seed of 2 bytes. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_e_s_a75819acddbbc5bd70e2b2c48dffabeb3}{print\+Matrix} (uint8\+\_\+t $\ast$data, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em It prints encrypted message with matrix format. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_e_s_ae2bca58e4f37a90d9ff371be45316233}{print\+Message} (uint8\+\_\+t $\ast$data, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em It prints encrypted message. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_e_s_af32679b848814302ba9a036ece343c6b}{size\+Of\+Blocks} (char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Calculate the number of blocks occupied by the message. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries size\+Of\+Blocks} (uint16\+\_\+t length)\hypertarget{class_wasp_a_e_s_af0cde0e1a0843b6e2a9284fb1138bf26}{}\label{class_wasp_a_e_s_af0cde0e1a0843b6e2a9284fb1138bf26}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_e_s_ae09329ad05218f0cc59ea239530129c3}{encrypt} (uint16\+\_\+t key\+Size, char $\ast$password, char original\+\_\+message\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$encrypted\+\_\+message, uint8\+\_\+t mode, uint8\+\_\+t padding, uint8\+\_\+t $\ast$Initial\+Vector)
+\begin{DoxyCompactList}\small\item\em It encrypts a message. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries encrypt} (uint16\+\_\+t key\+Size, char $\ast$password, uint8\+\_\+t $\ast$original\+\_\+message, uint16\+\_\+t length, uint8\+\_\+t $\ast$encrypted\+\_\+message, uint8\+\_\+t mode, uint8\+\_\+t padding, uint8\+\_\+t $\ast$Initial\+Vector)\hypertarget{class_wasp_a_e_s_abe5c470bffd6181994a5d1500ece032a}{}\label{class_wasp_a_e_s_abe5c470bffd6181994a5d1500ece032a}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_e_s_a945d30e8d855348df41d45a8a2841367}{encrypt} (uint16\+\_\+t key\+Size, char $\ast$password, char original\+\_\+message\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$encrypted\+\_\+message, uint8\+\_\+t mode, uint8\+\_\+t padding)
+\begin{DoxyCompactList}\small\item\em It encrypts a message. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries encrypt} (uint16\+\_\+t key\+Size, char $\ast$password, uint8\+\_\+t $\ast$original\+\_\+message, uint16\+\_\+t length, uint8\+\_\+t $\ast$encrypted\+\_\+message, uint8\+\_\+t mode, uint8\+\_\+t padding)\hypertarget{class_wasp_a_e_s_a39bc3c5528a7b20428513a7bc3e9ddd4}{}\label{class_wasp_a_e_s_a39bc3c5528a7b20428513a7bc3e9ddd4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_a_e_s}{Wasp\+A\+ES} Class. 
+
+\hyperlink{class_wasp_a_e_s}{Wasp\+A\+ES} Class defines all the variables and functions used to manage A\+ES algorithm 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{Wasp\+A\+E\+S()}{WaspAES()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+A\+E\+S\+::\+Wasp\+A\+ES (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_a2b1ec7f2140235bf7afdb48e28346128}{}\label{class_wasp_a_e_s_a2b1ec7f2140235bf7afdb48e28346128}
+
+
+class constructor 
+
+Constructors ///////////////////////////////////////////////////////.
+
+It initializes some variables 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{encrypt(uint16\+\_\+t key\+Size, char $\ast$password, char original\+\_\+message[], uint8\+\_\+t $\ast$encrypted\+\_\+message, uint8\+\_\+t mode, uint8\+\_\+t padding, uint8\+\_\+t $\ast$\+Initial\+Vector)}{encrypt(uint16_t keySize, char *password, char original_message[], uint8_t *encrypted_message, uint8_t mode, uint8_t padding, uint8_t *InitialVector)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+E\+S\+::encrypt (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{key\+Size, }
+\item[{char $\ast$}]{password, }
+\item[{char}]{original\+\_\+message\mbox{[}$\,$\mbox{]}, }
+\item[{uint8\+\_\+t $\ast$}]{encrypted\+\_\+message, }
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{padding, }
+\item[{uint8\+\_\+t $\ast$}]{Initial\+Vector}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_ae09329ad05218f0cc59ea239530129c3}{}\label{class_wasp_a_e_s_ae09329ad05218f0cc59ea239530129c3}
+
+
+It encrypts a message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Size} & \+: Size of the key, this value can be 128, 192 or 256 \\
+\hline
+{\em password} & \+: Password chosen by user in char$\ast$ \\
+\hline
+{\em original\+\_\+message} & \+: Message wich is going to encrypted \\
+\hline
+{\em encrypted\+\_\+message} & \+: Message encryped \\
+\hline
+{\em mode} & \+: mode of block cipher \\
+\hline
+{\em padding} & \+: mode of to fill the incomplete blocks \\
+\hline
+{\em Initial\+Vector} & \+: Initial Vector use to cipher in C\+BC mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{encrypt(uint16\+\_\+t key\+Size, char $\ast$password, char original\+\_\+message[], uint8\+\_\+t $\ast$encrypted\+\_\+message, uint8\+\_\+t mode, uint8\+\_\+t padding)}{encrypt(uint16_t keySize, char *password, char original_message[], uint8_t *encrypted_message, uint8_t mode, uint8_t padding)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+E\+S\+::encrypt (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{key\+Size, }
+\item[{char $\ast$}]{password, }
+\item[{char}]{original\+\_\+message\mbox{[}$\,$\mbox{]}, }
+\item[{uint8\+\_\+t $\ast$}]{encrypted\+\_\+message, }
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{padding}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_a945d30e8d855348df41d45a8a2841367}{}\label{class_wasp_a_e_s_a945d30e8d855348df41d45a8a2841367}
+
+
+It encrypts a message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Size} & \+: Size of the key, this value can be 128, 192 or 256 \\
+\hline
+{\em password} & \+: Password choose by user in char$\ast$ \\
+\hline
+{\em original\+\_\+message} & \+: Message wich is going to encrypted \\
+\hline
+{\em encrypted\+\_\+message} & \+: Message encryped \\
+\hline
+{\em mode} & \+: mode of block cipher \\
+\hline
+{\em padding} & \+: mode of to fill the incomplete blocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!print\+Matrix@{print\+Matrix}}
+\index{print\+Matrix@{print\+Matrix}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{print\+Matrix(uint8\+\_\+t $\ast$data, uint16\+\_\+t size)}{printMatrix(uint8_t *data, uint16_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+E\+S\+::print\+Matrix (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_a75819acddbbc5bd70e2b2c48dffabeb3}{}\label{class_wasp_a_e_s_a75819acddbbc5bd70e2b2c48dffabeb3}
+
+
+It prints encrypted message with matrix format. 
+
+Public Methods /////////////////////////////////////////////////////////////.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \+: data of matrix \\
+\hline
+{\em size} & \+: size of matrix \\
+\hline
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!print\+Message@{print\+Message}}
+\index{print\+Message@{print\+Message}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{print\+Message(uint8\+\_\+t $\ast$data, uint16\+\_\+t size)}{printMessage(uint8_t *data, uint16_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+E\+S\+::print\+Message (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_ae2bca58e4f37a90d9ff371be45316233}{}\label{class_wasp_a_e_s_ae2bca58e4f37a90d9ff371be45316233}
+
+
+It prints encrypted message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \+: data of matrix \\
+\hline
+{\em size} & \+: size of matrix \\
+\hline
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!seed\+Generator@{seed\+Generator}}
+\index{seed\+Generator@{seed\+Generator}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{seed\+Generator(uint8\+\_\+t $\ast$seed)}{seedGenerator(uint8_t *seed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+E\+S\+::seed\+Generator (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{seed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_af1dce4d0b180e349d5b9acac8cc924e6}{}\label{class_wasp_a_e_s_af1dce4d0b180e349d5b9acac8cc924e6}
+
+
+It generate a seed of 2 bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & seed to Encryption Libraries \\
+\hline
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+A\+ES@{Wasp\+A\+ES}!size\+Of\+Blocks@{size\+Of\+Blocks}}
+\index{size\+Of\+Blocks@{size\+Of\+Blocks}!Wasp\+A\+ES@{Wasp\+A\+ES}}
+\subsubsection[{\texorpdfstring{size\+Of\+Blocks(char $\ast$message)}{sizeOfBlocks(char *message)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+E\+S\+::size\+Of\+Blocks (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_e_s_af32679b848814302ba9a036ece343c6b}{}\label{class_wasp_a_e_s_af32679b848814302ba9a036ece343c6b}
+
+
+Calculate the number of blocks occupied by the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \+: message to be encrypted \\
+\hline
+{\em length} & \+: length of the message to be encrypted \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/\hyperlink{_wasp_a_e_s_8h}{Wasp\+A\+E\+S.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/Wasp\+A\+E\+S.\+cpp\end{DoxyCompactItemize}

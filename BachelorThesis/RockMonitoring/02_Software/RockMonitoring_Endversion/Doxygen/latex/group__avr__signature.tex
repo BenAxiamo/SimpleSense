@@ -1,0 +1,25 @@
+\hypertarget{group__avr__signature}{}\section{$<$avr/signature.h$>$\+: Signature Support}
+\label{group__avr__signature}\index{$<$avr/signature.\+h$>$\+: Signature Support@{$<$avr/signature.\+h$>$\+: Signature Support}}
+\begin{DoxyParagraph}{Introduction}
+
+\end{DoxyParagraph}
+The $<$\hyperlink{signature_8h}{avr/signature.\+h}$>$ header file allows the user to automatically and easily include the device\textquotesingle{}s signature data in a special section of the final linked E\+LF file.
+
+This value can then be used by programming software to compare the on-\/device signature with the signature recorded in the E\+LF file to look for a match before programming the device.
+
+\begin{DoxyParagraph}{A\+PI Usage Example}
+
+\end{DoxyParagraph}
+Usage is very simple; just include the header file\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{signature_8h}{avr/signature.h}>}
+\end{DoxyCode}
+
+
+This will declare a constant unsigned char array and it is initialized with the three signature bytes, M\+SB first, that are defined in the device I/O header file. This array is then placed in the .signature section in the resulting linked E\+LF file.
+
+The three signature bytes that are used to initialize the array are these defined macros in the device I/O header file, from M\+SB to L\+SB\+: S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+2, S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+1, S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+0.
+
+This header file should only be included once in an application. 

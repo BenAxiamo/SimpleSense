@@ -1,0 +1,509 @@
+\hypertarget{class_wasp_sensor_parking}{}\section{Wasp\+Sensor\+Parking Class Reference}
+\label{class_wasp_sensor_parking}\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+
+
+\hyperlink{class_wasp_sensor_parking}{Wasp\+Sensor\+Parking} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Parking.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wasp_sensor_parking_a6c056748d5d70090ae6e2f55ae245652}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_parking_aae248ad64c3da7ee85915a8a535ef688}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_parking_a96d219f6f80b436d2a77da2596fff240}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets board power mode, setting O\+N/\+O\+FF the 5V switch. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration} (void)
+\item 
+void \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} (void)
+\item 
+void \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} (int temperature)
+\item 
+int \hyperlink{class_wasp_sensor_parking_a8f1e16fed41cb87f3388e33b691e0f97}{read\+Temperature} (void)
+\item 
+void \hyperlink{class_wasp_sensor_parking_a495a2b26ed6620d327b7cd902696f533}{read\+Parking} (void)
+\item 
+void \hyperlink{class_wasp_sensor_parking_a8a3311a8d14d5538f2b42cba5c2cc8e0}{read\+Parking\+Set\+Reset} (void)
+\item 
+boolean \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_wasp_sensor_parking_a94b63101ce4110a3823c705d8ecf549d}{coef\+X2}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the X axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a0b8dc5b606eac7d2a1294d2c2d3388c6}{coef\+Y2}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the Y axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a39d3f1d9fc164de3f7fdbaa205de641d}{coef\+Z2}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the Z axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_ac994717599ea6fc41329bf640d3ac944}{coefX}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the X axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a8cca7bd7e2127e65e43a93809d361cbe}{coefY}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the Y axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a1d49e5a81bb3f865134f43c41df4a5f2}{coefZ}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the Z axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a7aca3e77d76cffce8e58dc8a8eb062cb}{constX}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the X axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a1b4300f89f26d8d8a0c104ce16a21181}{constY}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the Y axis. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_aa0af7fe7d7661cf7f36f162d92e834f0}{constZ}
+\begin{DoxyCompactList}\small\item\em Variable \+: compensation coeficient for the Z axis. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_a0010d75cfb492aef0794721fa9b762ef}{initialX}
+\begin{DoxyCompactList}\small\item\em Variable \+: initial value for the X axis sensor. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_a1123948e8e4dcff6c6ad7c6d888140c8}{initialY}
+\begin{DoxyCompactList}\small\item\em Variable \+: initial value for the Y axis sensor. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_ac9701254b08807f587833464815f1a5a}{initialZ}
+\begin{DoxyCompactList}\small\item\em Variable \+: initial value for the Z axis sensor. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_adb9a140ea401fbd67abc125f9e1d876f}{initialT}
+\begin{DoxyCompactList}\small\item\em Variable \+: initial value for the X axis sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a02772d82b8822128cced1a7b596286b0}{indexX}
+\begin{DoxyCompactList}\small\item\em Variable \+: reference index for temperature compensation. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_a47e833790acf534eec8ab1d520c5c38c}{indexY}
+\begin{DoxyCompactList}\small\item\em Variable \+: reference index for temperature compensation. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_parking_ac5fa582c062f406c3c5063b62e59034f}{indexZ}
+\begin{DoxyCompactList}\small\item\em Variable \+: reference index for temperature compensation. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_ae02b0503c73ab5f528f06df024db2850}{referenceX}
+\begin{DoxyCompactList}\small\item\em Variable \+: reference value for the X axis. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_a808052d32c85055c6cb21e0fffd2a0d4}{referenceY}
+\begin{DoxyCompactList}\small\item\em Variable \+: reference value for the X axis. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_a4508196e8faaf3b2ad894fb2a277ebbd}{referenceZ}
+\begin{DoxyCompactList}\small\item\em Variable \+: reference value for the X axis. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_a6b1a1e36659642554802b51ffacead27}{valueX}
+\begin{DoxyCompactList}\small\item\em Variable \+: current value for the X axis. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_af1a5efe0c7270b33888039e4a26855b0}{valueY}
+\begin{DoxyCompactList}\small\item\em Variable \+: current value for the Y axis. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_sensor_parking_aa6a6cc9de9a74e3658270d7db127539c}{valueZ}
+\begin{DoxyCompactList}\small\item\em Variable \+: current value for the Z axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_sensor_parking}{Wasp\+Sensor\+Parking} Class. 
+
+\hyperlink{class_wasp_sensor_parking}{Wasp\+Sensor\+Parking} Class defines all the variables and functions used for managing the Parking Sensor Board 
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!calculate\+Reference@{calculate\+Reference}}
+\index{calculate\+Reference@{calculate\+Reference}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{calculate\+Reference(int temperature)}{calculateReference(int temperature)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::calculate\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{temperature}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{}\label{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}
+It calculates the reference for each axis in function of the initial values (initialX, initialY and initialZ), the compensation coefficeints (coef\+X2, coef\+Y2, coef\+Z2, coefX, coefY, coefZ, constX, constY and constZ) and current temperature and stores them in variables referenceX, referenceY and referenceZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & temperature \+: specifies the temperature of the sensors in Celsius degree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8f1e16fed41cb87f3388e33b691e0f97}{read\+Temperature}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!calibration@{calibration}}
+\index{calibration@{calibration}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{calibration(void)}{calibration(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::calibration (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{}\label{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}
+It starts the application, calculating the initial values at the lot and stores them at variables initialX, initialY and initialZ, the initial temperature in initialT and the initial compensation indexes in variables indexX, indexY and indexZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!estimate\+State@{estimate\+State}}
+\index{estimate\+State@{estimate\+State}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{estimate\+State(void)}{estimateState(void)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+Sensor\+Parking\+::estimate\+State (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{}\label{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}
+It uses the values in variables valueX, valueY, valueZ, referenceX, referenceY and referenceZ to estimate the state of the parking lot
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+estate of the lot (0 for empty, 1 for occupied) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!load\+Reference@{load\+Reference}}
+\index{load\+Reference@{load\+Reference}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{load\+Reference(void)}{loadReference(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::load\+Reference (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{}\label{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}
+It loads the coefficients of the approximation for temperature dependance from the E\+E\+P\+R\+OM in variables coef\+X2, coef\+Y2, coef\+Z2, coefX, coefY, coefZ, constX, constY and constZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_aae248ad64c3da7ee85915a8a535ef688}{}\label{class_wasp_sensor_parking_aae248ad64c3da7ee85915a8a535ef688}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a6c056748d5d70090ae6e2f55ae245652}{}\label{class_wasp_sensor_parking_a6c056748d5d70090ae6e2f55ae245652}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!read\+Parking@{read\+Parking}}
+\index{read\+Parking@{read\+Parking}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{read\+Parking(void)}{readParking(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::read\+Parking (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a495a2b26ed6620d327b7cd902696f533}{}\label{class_wasp_sensor_parking_a495a2b26ed6620d327b7cd902696f533}
+It reads the magnetic field sensors and returns the values read in variables valueX, valueY and valueZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!read\+Parking\+Set\+Reset@{read\+Parking\+Set\+Reset}}
+\index{read\+Parking\+Set\+Reset@{read\+Parking\+Set\+Reset}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{read\+Parking\+Set\+Reset(void)}{readParkingSetReset(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Parking\+::read\+Parking\+Set\+Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a8a3311a8d14d5538f2b42cba5c2cc8e0}{}\label{class_wasp_sensor_parking_a8a3311a8d14d5538f2b42cba5c2cc8e0}
+It applies a set and reset pulse to the magnetic field sensors and reads them, returning the values read in variables valueX, valueY and valueZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!read\+Temperature@{read\+Temperature}}
+\index{read\+Temperature@{read\+Temperature}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{read\+Temperature(void)}{readTemperature(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::read\+Temperature (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a8f1e16fed41cb87f3388e33b691e0f97}{}\label{class_wasp_sensor_parking_a8f1e16fed41cb87f3388e33b691e0f97}
+It reads the output voltage of the temperature sensor and returns temperature in Celsius degree
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: the temperature read in Celsius degree 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Parking\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_parking_a96d219f6f80b436d2a77da2596fff240}{}\label{class_wasp_sensor_parking_a96d219f6f80b436d2a77da2596fff240}
+
+
+It sets board power mode, setting O\+N/\+O\+FF the 5V switch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!coefX@{coefX}}
+\index{coefX@{coefX}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{coefX}{coefX}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::coefX}\hypertarget{class_wasp_sensor_parking_ac994717599ea6fc41329bf640d3ac944}{}\label{class_wasp_sensor_parking_ac994717599ea6fc41329bf640d3ac944}
+
+
+Variable \+: compensation coeficient for the X axis. 
+
+It specifies the degree one compensation coefficient reference that will be taken to calculate the reference for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!coef\+X2@{coef\+X2}}
+\index{coef\+X2@{coef\+X2}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{coef\+X2}{coefX2}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::coef\+X2}\hypertarget{class_wasp_sensor_parking_a94b63101ce4110a3823c705d8ecf549d}{}\label{class_wasp_sensor_parking_a94b63101ce4110a3823c705d8ecf549d}
+
+
+Variable \+: compensation coeficient for the X axis. 
+
+It specifies the degree two compensation coefficient reference that will be taken to calculate the reference for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!coefY@{coefY}}
+\index{coefY@{coefY}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{coefY}{coefY}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::coefY}\hypertarget{class_wasp_sensor_parking_a8cca7bd7e2127e65e43a93809d361cbe}{}\label{class_wasp_sensor_parking_a8cca7bd7e2127e65e43a93809d361cbe}
+
+
+Variable \+: compensation coeficient for the Y axis. 
+
+It specifies the degree one compensation coefficient reference that will be taken to calculate the reference for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!coef\+Y2@{coef\+Y2}}
+\index{coef\+Y2@{coef\+Y2}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{coef\+Y2}{coefY2}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::coef\+Y2}\hypertarget{class_wasp_sensor_parking_a0b8dc5b606eac7d2a1294d2c2d3388c6}{}\label{class_wasp_sensor_parking_a0b8dc5b606eac7d2a1294d2c2d3388c6}
+
+
+Variable \+: compensation coeficient for the Y axis. 
+
+It specifies the degree two compensation coefficient reference that will be taken to calculate the reference for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!coefZ@{coefZ}}
+\index{coefZ@{coefZ}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{coefZ}{coefZ}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::coefZ}\hypertarget{class_wasp_sensor_parking_a1d49e5a81bb3f865134f43c41df4a5f2}{}\label{class_wasp_sensor_parking_a1d49e5a81bb3f865134f43c41df4a5f2}
+
+
+Variable \+: compensation coeficient for the Z axis. 
+
+It specifies the degree one compensation coefficient reference that will be taken to calculate the reference for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!coef\+Z2@{coef\+Z2}}
+\index{coef\+Z2@{coef\+Z2}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{coef\+Z2}{coefZ2}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::coef\+Z2}\hypertarget{class_wasp_sensor_parking_a39d3f1d9fc164de3f7fdbaa205de641d}{}\label{class_wasp_sensor_parking_a39d3f1d9fc164de3f7fdbaa205de641d}
+
+
+Variable \+: compensation coeficient for the Z axis. 
+
+It specifies the degree two compensation coefficient reference that will be taken to calculate the reference for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!constX@{constX}}
+\index{constX@{constX}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{constX}{constX}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::constX}\hypertarget{class_wasp_sensor_parking_a7aca3e77d76cffce8e58dc8a8eb062cb}{}\label{class_wasp_sensor_parking_a7aca3e77d76cffce8e58dc8a8eb062cb}
+
+
+Variable \+: compensation coeficient for the X axis. 
+
+It specifies the constant coefficient reference that will be taken to calculate the reference for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!constY@{constY}}
+\index{constY@{constY}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{constY}{constY}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::constY}\hypertarget{class_wasp_sensor_parking_a1b4300f89f26d8d8a0c104ce16a21181}{}\label{class_wasp_sensor_parking_a1b4300f89f26d8d8a0c104ce16a21181}
+
+
+Variable \+: compensation coeficient for the Y axis. 
+
+It specifies the constant coefficient reference that will be taken to calculate the reference for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!constZ@{constZ}}
+\index{constZ@{constZ}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{constZ}{constZ}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::constZ}\hypertarget{class_wasp_sensor_parking_aa0af7fe7d7661cf7f36f162d92e834f0}{}\label{class_wasp_sensor_parking_aa0af7fe7d7661cf7f36f162d92e834f0}
+
+
+Variable \+: compensation coeficient for the Z axis. 
+
+It specifies the constant coefficient reference that will be taken to calculate the reference for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_ada85f8d26b42a4a6733c0e1d1880a4ad}{load\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!indexX@{indexX}}
+\index{indexX@{indexX}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{indexX}{indexX}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::indexX}\hypertarget{class_wasp_sensor_parking_a02772d82b8822128cced1a7b596286b0}{}\label{class_wasp_sensor_parking_a02772d82b8822128cced1a7b596286b0}
+
+
+Variable \+: reference index for temperature compensation. 
+
+It specifies the initial index for temperature compensation for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration}, \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!indexY@{indexY}}
+\index{indexY@{indexY}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{indexY}{indexY}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::indexY}\hypertarget{class_wasp_sensor_parking_a47e833790acf534eec8ab1d520c5c38c}{}\label{class_wasp_sensor_parking_a47e833790acf534eec8ab1d520c5c38c}
+
+
+Variable \+: reference index for temperature compensation. 
+
+It specifies the initial index for temperature compensation for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration}, \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!indexZ@{indexZ}}
+\index{indexZ@{indexZ}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{indexZ}{indexZ}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Parking\+::indexZ}\hypertarget{class_wasp_sensor_parking_ac5fa582c062f406c3c5063b62e59034f}{}\label{class_wasp_sensor_parking_ac5fa582c062f406c3c5063b62e59034f}
+
+
+Variable \+: reference index for temperature compensation. 
+
+It specifies the initial index for temperature compensation for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration}, \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!initialT@{initialT}}
+\index{initialT@{initialT}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{initialT}{initialT}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::initialT}\hypertarget{class_wasp_sensor_parking_adb9a140ea401fbd67abc125f9e1d876f}{}\label{class_wasp_sensor_parking_adb9a140ea401fbd67abc125f9e1d876f}
+
+
+Variable \+: initial value for the X axis sensor. 
+
+It specifies the temperature at which calibration was performed \index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!initialX@{initialX}}
+\index{initialX@{initialX}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{initialX}{initialX}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::initialX}\hypertarget{class_wasp_sensor_parking_a0010d75cfb492aef0794721fa9b762ef}{}\label{class_wasp_sensor_parking_a0010d75cfb492aef0794721fa9b762ef}
+
+
+Variable \+: initial value for the X axis sensor. 
+
+It specifies the reference that will be taken to calculate the reference for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration}, \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!initialY@{initialY}}
+\index{initialY@{initialY}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{initialY}{initialY}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::initialY}\hypertarget{class_wasp_sensor_parking_a1123948e8e4dcff6c6ad7c6d888140c8}{}\label{class_wasp_sensor_parking_a1123948e8e4dcff6c6ad7c6d888140c8}
+
+
+Variable \+: initial value for the Y axis sensor. 
+
+It specifies the reference that will be taken to calculate the reference for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration}, \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!initialZ@{initialZ}}
+\index{initialZ@{initialZ}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{initialZ}{initialZ}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::initialZ}\hypertarget{class_wasp_sensor_parking_ac9701254b08807f587833464815f1a5a}{}\label{class_wasp_sensor_parking_ac9701254b08807f587833464815f1a5a}
+
+
+Variable \+: initial value for the Z axis sensor. 
+
+It specifies the reference that will be taken to calculate the reference for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8e99b4ddd7a0f18b2b96a9c4de18f914}{calibration}, \hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!referenceX@{referenceX}}
+\index{referenceX@{referenceX}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{referenceX}{referenceX}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::referenceX}\hypertarget{class_wasp_sensor_parking_ae02b0503c73ab5f528f06df024db2850}{}\label{class_wasp_sensor_parking_ae02b0503c73ab5f528f06df024db2850}
+
+
+Variable \+: reference value for the X axis. 
+
+It specifies the reference that will be taken to estimate the lot state for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!referenceY@{referenceY}}
+\index{referenceY@{referenceY}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{referenceY}{referenceY}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::referenceY}\hypertarget{class_wasp_sensor_parking_a808052d32c85055c6cb21e0fffd2a0d4}{}\label{class_wasp_sensor_parking_a808052d32c85055c6cb21e0fffd2a0d4}
+
+
+Variable \+: reference value for the X axis. 
+
+It specifies the reference that will be taken to estimate the lot state for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!referenceZ@{referenceZ}}
+\index{referenceZ@{referenceZ}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{referenceZ}{referenceZ}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::referenceZ}\hypertarget{class_wasp_sensor_parking_a4508196e8faaf3b2ad894fb2a277ebbd}{}\label{class_wasp_sensor_parking_a4508196e8faaf3b2ad894fb2a277ebbd}
+
+
+Variable \+: reference value for the X axis. 
+
+It specifies the reference that will be taken to estimate the lot state for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a8fe1255a714fed88684a89363963eb02}{calculate\+Reference}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!valueX@{valueX}}
+\index{valueX@{valueX}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{valueX}{valueX}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::valueX}\hypertarget{class_wasp_sensor_parking_a6b1a1e36659642554802b51ffacead27}{}\label{class_wasp_sensor_parking_a6b1a1e36659642554802b51ffacead27}
+
+
+Variable \+: current value for the X axis. 
+
+It specifies the last read value for the X axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a495a2b26ed6620d327b7cd902696f533}{read\+Parking}, \hyperlink{class_wasp_sensor_parking_a8a3311a8d14d5538f2b42cba5c2cc8e0}{read\+Parking\+Set\+Reset}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!valueY@{valueY}}
+\index{valueY@{valueY}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{valueY}{valueY}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::valueY}\hypertarget{class_wasp_sensor_parking_af1a5efe0c7270b33888039e4a26855b0}{}\label{class_wasp_sensor_parking_af1a5efe0c7270b33888039e4a26855b0}
+
+
+Variable \+: current value for the Y axis. 
+
+It specifies the last read value for the Y axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a495a2b26ed6620d327b7cd902696f533}{read\+Parking}, \hyperlink{class_wasp_sensor_parking_a8a3311a8d14d5538f2b42cba5c2cc8e0}{read\+Parking\+Set\+Reset}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+\index{Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}!valueZ@{valueZ}}
+\index{valueZ@{valueZ}!Wasp\+Sensor\+Parking@{Wasp\+Sensor\+Parking}}
+\subsubsection[{\texorpdfstring{valueZ}{valueZ}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sensor\+Parking\+::valueZ}\hypertarget{class_wasp_sensor_parking_aa6a6cc9de9a74e3658270d7db127539c}{}\label{class_wasp_sensor_parking_aa6a6cc9de9a74e3658270d7db127539c}
+
+
+Variable \+: current value for the Z axis. 
+
+It specifies the last read value for the Z axis \begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_sensor_parking_a495a2b26ed6620d327b7cd902696f533}{read\+Parking}, \hyperlink{class_wasp_sensor_parking_a8a3311a8d14d5538f2b42cba5c2cc8e0}{read\+Parking\+Set\+Reset}, \hyperlink{class_wasp_sensor_parking_a5635382fc068370a3b561c94dccbb283}{estimate\+State} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Parking/\hyperlink{_wasp_sensor_parking_8h}{Wasp\+Sensor\+Parking.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Parking/Wasp\+Sensor\+Parking.\+cpp\end{DoxyCompactItemize}

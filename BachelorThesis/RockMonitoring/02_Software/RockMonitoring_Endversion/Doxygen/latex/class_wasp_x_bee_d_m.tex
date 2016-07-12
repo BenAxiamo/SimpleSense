@@ -1,0 +1,315 @@
+\hypertarget{class_wasp_x_bee_d_m}{}\section{Wasp\+X\+Bee\+DM Class Reference}
+\label{class_wasp_x_bee_d_m}\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+
+
+\hyperlink{class_wasp_x_bee_d_m}{Wasp\+X\+Bee\+DM} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee\+D\+M.\+h$>$}
+
+Inheritance diagram for Wasp\+X\+Bee\+DM\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_x_bee_d_m}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_x_bee_d_m_a4ff0350f301fb2d04a61ee73f474410d}{Wasp\+X\+Bee\+DM} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_d_m_af24064ddd73b0c86201d36a693d6f19f}{init} (uint8\+\_\+t uart\+\_\+used)
+\begin{DoxyCompactList}\small\item\em M\+E\+T\+H\+O\+DS ///. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a14cefccd876ebb9507d587592aaf917c}{get\+Good\+Packets} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_ac9b4531bd42bb795ea6bafbd5b3539ed}{get\+Transmision\+Errors} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a6da2114d35dbd0b1f38ec7ef54ec6fa4}{set\+Network\+Hops} (uint8\+\_\+t nhops)
+\begin{DoxyCompactList}\small\item\em It sets the maximum number of hops expected to be seen in a network route. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_ac3cb784bc6019c1fd71d3c393864919d}{get\+Network\+Hops} ()
+\begin{DoxyCompactList}\small\item\em It gets the maximum number of hops expected to be seen in a network route. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a577e4af1c745dfc032a5b043ee3870df}{set\+Network\+Delay\+Slots} (uint8\+\_\+t dslots)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a2996157f3a44c29970715548f559830c}{get\+Network\+Delay\+Slots} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_ab7d3ed990ff47dffa94233215a816304}{set\+Mesh\+Network\+Retries} (uint8\+\_\+t mesh)
+\begin{DoxyCompactList}\small\item\em It sets the maximum number of network packet delivery attempts. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a86effdefa9423dafd9f3a83f28ebb105}{get\+Mesh\+Network\+Retries} ()
+\begin{DoxyCompactList}\small\item\em It gets the maximum number of network packet delivery attempts. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_aa24fee61d07b3690f3ace3a1ce22db34}{set\+Retries} (uint8\+\_\+t retry)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a47bdc4d6d47d71f6e12da64ea17f1ca7}{get\+Retries} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a57fa8ab47b3fd356cd40de42cb7b4bdc}{send\+X\+Bee\+Priv} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em It sends a packet to other X\+Bee modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a7b3307adc604b9f2d603ae9cdc050f07}{good\+Packets} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em A\+T\+R\+I\+B\+U\+T\+ES ///. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_ac69aa4bfd16eac93d3e1fb93ad4b41cd}{transmision\+Errors} \mbox{[}2\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_ab31869e8f1dc35ded13fbe9c235fe95d}{network\+Hops}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_ad01ffb7f948e6cf3abe109de0272e54a}{net\+Delay\+Slots}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a5feb709c24b31b682fa198cf1d38fa60}{mesh\+Net\+Retries}\hypertarget{class_wasp_x_bee_d_m_a5feb709c24b31b682fa198cf1d38fa60}{}\label{class_wasp_x_bee_d_m_a5feb709c24b31b682fa198cf1d38fa60}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the maximum number of network packet delivery attempts (range \mbox{[}0-\/7\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_d_m_a71a8d4f44010a7660147da19f814bfb3}{retries}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_x_bee_d_m}{Wasp\+X\+Bee\+DM} Class. 
+
+\hyperlink{class_wasp_x_bee_d_m}{Wasp\+X\+Bee\+DM} Class defines all the variables and functions used to manage X\+Bee Digi\+Mesh and 900\+M\+Hz modules. It inherits from \textquotesingle{}\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core}\textquotesingle{} class the necessary functions, variables and definitions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{Wasp\+X\+Bee\+D\+M()}{WaspXBeeDM()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+X\+Bee\+D\+M\+::\+Wasp\+X\+Bee\+DM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wasp_x_bee_d_m_a4ff0350f301fb2d04a61ee73f474410d}{}\label{class_wasp_x_bee_d_m_a4ff0350f301fb2d04a61ee73f474410d}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!get\+Good\+Packets@{get\+Good\+Packets}}
+\index{get\+Good\+Packets@{get\+Good\+Packets}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{get\+Good\+Packets()}{getGoodPackets()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::get\+Good\+Packets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_a14cefccd876ebb9507d587592aaf917c}{}\label{class_wasp_x_bee_d_m_a14cefccd876ebb9507d587592aaf917c}
+It reads the number of good frames with valid M\+AC headers that are received on the RF interface. When the value reaches 0x\+F\+F\+FF, it stays there. \begin{DoxyVerb}It stores in global 'goodPackets' variable the number good frames with 
+\end{DoxyVerb}
+ valid M\+AC headers \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!get\+Mesh\+Network\+Retries@{get\+Mesh\+Network\+Retries}}
+\index{get\+Mesh\+Network\+Retries@{get\+Mesh\+Network\+Retries}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{get\+Mesh\+Network\+Retries()}{getMeshNetworkRetries()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::get\+Mesh\+Network\+Retries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_a86effdefa9423dafd9f3a83f28ebb105}{}\label{class_wasp_x_bee_d_m_a86effdefa9423dafd9f3a83f28ebb105}
+
+
+It gets the maximum number of network packet delivery attempts. 
+
+It stores in global \textquotesingle{}mesh\+Net\+Retries\textquotesingle{} variable the maximum number of network packet delivery attempts \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!get\+Network\+Delay\+Slots@{get\+Network\+Delay\+Slots}}
+\index{get\+Network\+Delay\+Slots@{get\+Network\+Delay\+Slots}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{get\+Network\+Delay\+Slots()}{getNetworkDelaySlots()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::get\+Network\+Delay\+Slots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_a2996157f3a44c29970715548f559830c}{}\label{class_wasp_x_bee_d_m_a2996157f3a44c29970715548f559830c}
+It gets the maximum random number of network delay slots before rebroadcasting a network packet
+
+It stores in global \textquotesingle{}net\+Delay\+Slots\textquotesingle{} variable the maximum random number of network delay slots before rebroadcasting a network packet \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!get\+Network\+Hops@{get\+Network\+Hops}}
+\index{get\+Network\+Hops@{get\+Network\+Hops}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{get\+Network\+Hops()}{getNetworkHops()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::get\+Network\+Hops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_ac3cb784bc6019c1fd71d3c393864919d}{}\label{class_wasp_x_bee_d_m_ac3cb784bc6019c1fd71d3c393864919d}
+
+
+It gets the maximum number of hops expected to be seen in a network route. 
+
+It stores in global \textquotesingle{}network\+Hops\textquotesingle{} variable the maximum number of hops expected to be seen in a network route receiving a M\+AC acknowledgement message from the adjacent node \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!get\+Retries@{get\+Retries}}
+\index{get\+Retries@{get\+Retries}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{get\+Retries()}{getRetries()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::get\+Retries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_a47bdc4d6d47d71f6e12da64ea17f1ca7}{}\label{class_wasp_x_bee_d_m_a47bdc4d6d47d71f6e12da64ea17f1ca7}
+It gets the maximum number of M\+AC level packet delivery attempts for unicasts. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!get\+Transmision\+Errors@{get\+Transmision\+Errors}}
+\index{get\+Transmision\+Errors@{get\+Transmision\+Errors}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{get\+Transmision\+Errors()}{getTransmisionErrors()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::get\+Transmision\+Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_ac9b4531bd42bb795ea6bafbd5b3539ed}{}\label{class_wasp_x_bee_d_m_ac9b4531bd42bb795ea6bafbd5b3539ed}
+It gets the number of M\+AC frames that exhaust M\+AC retries without ever receiving a M\+AC acknowledgement message from the adjacent node
+
+It stores in global \textquotesingle{}transmision\+Errors\textquotesingle{} variable the number of M\+AC frames that exhaust M\+AC retries without ever receiving a M\+AC acknowledgement message from the adjacent node \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!init@{init}}
+\index{init@{init}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t uart\+\_\+used)}{init(uint8_t uart_used)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+D\+M\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{uart\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee_d_m_af24064ddd73b0c86201d36a693d6f19f}{}\label{class_wasp_x_bee_d_m_af24064ddd73b0c86201d36a693d6f19f}
+
+
+M\+E\+T\+H\+O\+DS ///. 
+
+It initializes the necessary variables
+
+It initalizes all the necessary variables 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & protocol\+\_\+used \+: specifies the protocol used in the X\+Bee module (depends on the X\+Bee module) \\
+\hline
+{\em uint8\+\_\+t} & uart\+\_\+used \+: specifies the U\+A\+RT where the data are sent to, (S\+O\+C\+K\+E\+T0 or S\+O\+C\+K\+E\+T1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}}
+\index{send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{send\+X\+Bee\+Priv(struct packet\+X\+Bee $\ast$packet)}{sendXBeePriv(struct packetXBee *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::send\+X\+Bee\+Priv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee_d_m_a57fa8ab47b3fd356cd40de42cb7b4bdc}{}\label{class_wasp_x_bee_d_m_a57fa8ab47b3fd356cd40de42cb7b4bdc}
+
+
+It sends a packet to other X\+Bee modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ packet \+: the function gets the needed information to send the packet from it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!set\+Mesh\+Network\+Retries@{set\+Mesh\+Network\+Retries}}
+\index{set\+Mesh\+Network\+Retries@{set\+Mesh\+Network\+Retries}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{set\+Mesh\+Network\+Retries(uint8\+\_\+t mesh)}{setMeshNetworkRetries(uint8_t mesh)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::set\+Mesh\+Network\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mesh}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_ab7d3ed990ff47dffa94233215a816304}{}\label{class_wasp_x_bee_d_m_ab7d3ed990ff47dffa94233215a816304}
+
+
+It sets the maximum number of network packet delivery attempts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mesh \+: the maximum number of network packet delivery attempts (range \mbox{[}0-\/7\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!set\+Network\+Delay\+Slots@{set\+Network\+Delay\+Slots}}
+\index{set\+Network\+Delay\+Slots@{set\+Network\+Delay\+Slots}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{set\+Network\+Delay\+Slots(uint8\+\_\+t dslots)}{setNetworkDelaySlots(uint8_t dslots)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::set\+Network\+Delay\+Slots (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dslots}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_a577e4af1c745dfc032a5b043ee3870df}{}\label{class_wasp_x_bee_d_m_a577e4af1c745dfc032a5b043ee3870df}
+It sets the maximum random number of network delay slots before rebroadcasting a network packet
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dslots \+: the maximum random number of network delay slots before rebroadcasting a network packet (range \mbox{[}0-\/0x0A\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!set\+Network\+Hops@{set\+Network\+Hops}}
+\index{set\+Network\+Hops@{set\+Network\+Hops}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{set\+Network\+Hops(uint8\+\_\+t nhops)}{setNetworkHops(uint8_t nhops)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::set\+Network\+Hops (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{nhops}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_a6da2114d35dbd0b1f38ec7ef54ec6fa4}{}\label{class_wasp_x_bee_d_m_a6da2114d35dbd0b1f38ec7ef54ec6fa4}
+
+
+It sets the maximum number of hops expected to be seen in a network route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & nhops \+: the maximum number of hops expected to be seen in a network route (range \mbox{[}1-\/0x\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!set\+Retries@{set\+Retries}}
+\index{set\+Retries@{set\+Retries}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{set\+Retries(uint8\+\_\+t retry)}{setRetries(uint8_t retry)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::set\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{retry}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_d_m_aa24fee61d07b3690f3ace3a1ce22db34}{}\label{class_wasp_x_bee_d_m_aa24fee61d07b3690f3ace3a1ce22db34}
+It sets the maximum number of M\+AC level packet delivery attempts for unicasts. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & retry \+: the number of retries to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!good\+Packets@{good\+Packets}}
+\index{good\+Packets@{good\+Packets}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{good\+Packets}{goodPackets}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::good\+Packets\mbox{[}2\mbox{]}}\hypertarget{class_wasp_x_bee_d_m_a7b3307adc604b9f2d603ae9cdc050f07}{}\label{class_wasp_x_bee_d_m_a7b3307adc604b9f2d603ae9cdc050f07}
+
+
+A\+T\+R\+I\+B\+U\+T\+ES ///. 
+
+Variable \+: the number of good frames with valid M\+AC headers that are received on the RF interface \index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!net\+Delay\+Slots@{net\+Delay\+Slots}}
+\index{net\+Delay\+Slots@{net\+Delay\+Slots}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{net\+Delay\+Slots}{netDelaySlots}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::net\+Delay\+Slots}\hypertarget{class_wasp_x_bee_d_m_ad01ffb7f948e6cf3abe109de0272e54a}{}\label{class_wasp_x_bee_d_m_ad01ffb7f948e6cf3abe109de0272e54a}
+Variable \+: the maximum random number of network delay slots before rebroadcasting a network packet (range \mbox{[}0-\/0x0A\mbox{]}) \index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!network\+Hops@{network\+Hops}}
+\index{network\+Hops@{network\+Hops}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{network\+Hops}{networkHops}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::network\+Hops}\hypertarget{class_wasp_x_bee_d_m_ab31869e8f1dc35ded13fbe9c235fe95d}{}\label{class_wasp_x_bee_d_m_ab31869e8f1dc35ded13fbe9c235fe95d}
+Variable \+: the maximum number of hops expected to be seen in a network route (range \mbox{[}1-\/0x\+FF\mbox{]}) \index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!retries@{retries}}
+\index{retries@{retries}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{retries}{retries}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::retries}\hypertarget{class_wasp_x_bee_d_m_a71a8d4f44010a7660147da19f814bfb3}{}\label{class_wasp_x_bee_d_m_a71a8d4f44010a7660147da19f814bfb3}
+Variable \+: the maximum number of M\+AC level packet deliveryn attempts for unicasts. \index{Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}!transmision\+Errors@{transmision\+Errors}}
+\index{transmision\+Errors@{transmision\+Errors}!Wasp\+X\+Bee\+DM@{Wasp\+X\+Bee\+DM}}
+\subsubsection[{\texorpdfstring{transmision\+Errors}{transmisionErrors}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+D\+M\+::transmision\+Errors\mbox{[}2\mbox{]}}\hypertarget{class_wasp_x_bee_d_m_ac69aa4bfd16eac93d3e1fb93ad4b41cd}{}\label{class_wasp_x_bee_d_m_ac69aa4bfd16eac93d3e1fb93ad4b41cd}
+Variable \+: the number of M\+AC frames that exhaust M\+AC retries without ever receiving a M\+AC acknowledgement message from the adjacent node 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee\+D\+M/\hyperlink{_wasp_x_bee_d_m_8h}{Wasp\+X\+Bee\+D\+M.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee\+D\+M/Wasp\+X\+Bee\+D\+M.\+cpp\end{DoxyCompactItemize}

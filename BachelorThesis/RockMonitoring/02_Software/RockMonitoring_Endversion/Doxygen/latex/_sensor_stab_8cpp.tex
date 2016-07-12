@@ -1,0 +1,142 @@
+\hypertarget{_sensor_stab_8cpp}{}\section{Sensor\+Stab.\+cpp File Reference}
+\label{_sensor_stab_8cpp}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+{\ttfamily \#include \char`\"{}Sensor\+Stab.\+h\char`\"{}}\\*
+Include dependency graph for Sensor\+Stab.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_sensor_stab_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8}{State} \{ \\*
+\hyperlink{_gateway_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8abd4654b67de2d10b026cc98456e1bf27}{waking\+UP}, 
+\hyperlink{_gateway_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a4d9fa51cd6b0b9e42dd33eb2caf0dbe6}{data\+Request}, 
+\hyperlink{_gateway_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a51c6827ec565c846b88d83fdd60df72b}{receive}, 
+\hyperlink{_gateway_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a3f994c70ac3dad9b14eb4109217907a4}{send\+Server}, 
+\\*
+\hyperlink{_gateway_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a2f4bce885bcadc21ebb1c70d4648d05b}{send\+Sleep\+Command}, 
+\hyperlink{_gateway_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8ac17a201c9d6b43727061f2e5f0c74f86}{sleep}, 
+\hyperlink{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8abd4654b67de2d10b026cc98456e1bf27}{waking\+UP}, 
+\hyperlink{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8aaf02733522be978db621406c33e403c9}{measure}, 
+\\*
+\hyperlink{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a722895164554475c8f93fc64594826af}{send\+To\+Gateway}, 
+\hyperlink{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8ac17a201c9d6b43727061f2e5f0c74f86}{sleep}, 
+\hyperlink{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a9a117e6b65a88980d4e7d2c7cde52261}{sleep\+Command}
+ \}
+\item 
+enum \hyperlink{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995d}{communication\+State} \{ \hyperlink{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995da95bf884f6d573b69a16ab35455d48e66}{send}, 
+\hyperlink{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995da4587f634fe5d2873df3ff6d22442a10c}{activity\+Detection}, 
+\hyperlink{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995daedb883773bbcf3cb50eb856b0b67171c}{wait\+For\+Request}
+ \}
+\item 
+enum \hyperlink{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977f}{sleep\+State} \{ \hyperlink{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977faba8756d189d4c982cdfbba688eb7bec0}{activity}, 
+\hyperlink{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977fab1f3e9189043ddefab52453f871109a8}{wait\+Sleep\+Command}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \hyperlink{_sensor_stab_8cpp_a1575889e56ac776d61bd3bdf038dcf7b}{number\+Of\+Trys} =0
+\item 
+uint64\+\_\+t \hyperlink{_sensor_stab_8cpp_a450b0041a6dc824763445c671421a5fc}{number\+Of\+Success} =0
+\item 
+uint64\+\_\+t \hyperlink{_sensor_stab_8cpp_aeb876721599563b2b9ad7bafbaea01a3}{number\+Of\+Fails} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!communication\+State@{communication\+State}}
+\index{communication\+State@{communication\+State}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+\subsubsection[{\texorpdfstring{communication\+State}{communicationState}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf communication\+State}}\hypertarget{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995d}{}\label{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{send@{send}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!send@{send}}\item[{\em 
+send\hypertarget{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995da95bf884f6d573b69a16ab35455d48e66}{}\label{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995da95bf884f6d573b69a16ab35455d48e66}
+}]\index{activity\+Detection@{activity\+Detection}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!activity\+Detection@{activity\+Detection}}\item[{\em 
+activity\+Detection\hypertarget{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995da4587f634fe5d2873df3ff6d22442a10c}{}\label{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995da4587f634fe5d2873df3ff6d22442a10c}
+}]\index{wait\+For\+Request@{wait\+For\+Request}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!wait\+For\+Request@{wait\+For\+Request}}\item[{\em 
+wait\+For\+Request\hypertarget{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995daedb883773bbcf3cb50eb856b0b67171c}{}\label{_sensor_stab_8cpp_ab78ae20a16243407a438ca899cf4995daedb883773bbcf3cb50eb856b0b67171c}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 7 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!sleep\+State@{sleep\+State}}
+\index{sleep\+State@{sleep\+State}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+\subsubsection[{\texorpdfstring{sleep\+State}{sleepState}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf sleep\+State}}\hypertarget{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977f}{}\label{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{activity@{activity}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!activity@{activity}}\item[{\em 
+activity\hypertarget{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977faba8756d189d4c982cdfbba688eb7bec0}{}\label{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977faba8756d189d4c982cdfbba688eb7bec0}
+}]\index{wait\+Sleep\+Command@{wait\+Sleep\+Command}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!wait\+Sleep\+Command@{wait\+Sleep\+Command}}\item[{\em 
+wait\+Sleep\+Command\hypertarget{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977fab1f3e9189043ddefab52453f871109a8}{}\label{_sensor_stab_8cpp_a85cfb2a5bd48cdf7450061e4972a977fab1f3e9189043ddefab52453f871109a8}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 10 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!State@{State}}
+\index{State@{State}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+\subsubsection[{\texorpdfstring{State}{State}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf State}}\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{waking\+UP@{waking\+UP}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!waking\+UP@{waking\+UP}}\item[{\em 
+waking\+UP\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8abd4654b67de2d10b026cc98456e1bf27}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8abd4654b67de2d10b026cc98456e1bf27}
+}]\index{data\+Request@{data\+Request}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!data\+Request@{data\+Request}}\item[{\em 
+data\+Request\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a4d9fa51cd6b0b9e42dd33eb2caf0dbe6}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a4d9fa51cd6b0b9e42dd33eb2caf0dbe6}
+}]\index{receive@{receive}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!receive@{receive}}\item[{\em 
+receive\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a51c6827ec565c846b88d83fdd60df72b}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a51c6827ec565c846b88d83fdd60df72b}
+}]\index{send\+Server@{send\+Server}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!send\+Server@{send\+Server}}\item[{\em 
+send\+Server\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a3f994c70ac3dad9b14eb4109217907a4}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a3f994c70ac3dad9b14eb4109217907a4}
+}]\index{send\+Sleep\+Command@{send\+Sleep\+Command}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!send\+Sleep\+Command@{send\+Sleep\+Command}}\item[{\em 
+send\+Sleep\+Command\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a2f4bce885bcadc21ebb1c70d4648d05b}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a2f4bce885bcadc21ebb1c70d4648d05b}
+}]\index{sleep@{sleep}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!sleep@{sleep}}\item[{\em 
+sleep\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8ac17a201c9d6b43727061f2e5f0c74f86}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8ac17a201c9d6b43727061f2e5f0c74f86}
+}]\index{waking\+UP@{waking\+UP}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!waking\+UP@{waking\+UP}}\item[{\em 
+waking\+UP\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8abd4654b67de2d10b026cc98456e1bf27}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8abd4654b67de2d10b026cc98456e1bf27}
+}]\index{measure@{measure}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!measure@{measure}}\item[{\em 
+measure\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8aaf02733522be978db621406c33e403c9}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8aaf02733522be978db621406c33e403c9}
+}]\index{send\+To\+Gateway@{send\+To\+Gateway}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!send\+To\+Gateway@{send\+To\+Gateway}}\item[{\em 
+send\+To\+Gateway\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a722895164554475c8f93fc64594826af}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a722895164554475c8f93fc64594826af}
+}]\index{sleep@{sleep}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!sleep@{sleep}}\item[{\em 
+sleep\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8ac17a201c9d6b43727061f2e5f0c74f86}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8ac17a201c9d6b43727061f2e5f0c74f86}
+}]\index{sleep\+Command@{sleep\+Command}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!sleep\+Command@{sleep\+Command}}\item[{\em 
+sleep\+Command\hypertarget{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a9a117e6b65a88980d4e7d2c7cde52261}{}\label{_sensor_stab_8cpp_a5d74787dedbc4e11c1ab15bf487e61f8a9a117e6b65a88980d4e7d2c7cde52261}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 4 of file Sensor\+Stab.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!number\+Of\+Fails@{number\+Of\+Fails}}
+\index{number\+Of\+Fails@{number\+Of\+Fails}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+\subsubsection[{\texorpdfstring{number\+Of\+Fails}{numberOfFails}}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t number\+Of\+Fails =0}\hypertarget{_sensor_stab_8cpp_aeb876721599563b2b9ad7bafbaea01a3}{}\label{_sensor_stab_8cpp_aeb876721599563b2b9ad7bafbaea01a3}
+
+
+Definition at line 15 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!number\+Of\+Success@{number\+Of\+Success}}
+\index{number\+Of\+Success@{number\+Of\+Success}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+\subsubsection[{\texorpdfstring{number\+Of\+Success}{numberOfSuccess}}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t number\+Of\+Success =0}\hypertarget{_sensor_stab_8cpp_a450b0041a6dc824763445c671421a5fc}{}\label{_sensor_stab_8cpp_a450b0041a6dc824763445c671421a5fc}
+
+
+Definition at line 14 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}!number\+Of\+Trys@{number\+Of\+Trys}}
+\index{number\+Of\+Trys@{number\+Of\+Trys}!Sensor\+Stab.\+cpp@{Sensor\+Stab.\+cpp}}
+\subsubsection[{\texorpdfstring{number\+Of\+Trys}{numberOfTrys}}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t number\+Of\+Trys =0}\hypertarget{_sensor_stab_8cpp_a1575889e56ac776d61bd3bdf038dcf7b}{}\label{_sensor_stab_8cpp_a1575889e56ac776d61bd3bdf038dcf7b}
+
+
+Definition at line 13 of file Sensor\+Stab.\+cpp.
+

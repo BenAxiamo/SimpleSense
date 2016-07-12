@@ -1,0 +1,223 @@
+\hypertarget{class_wasp_sensor_ambient}{}\section{Wasp\+Sensor\+Ambient Class Reference}
+\label{class_wasp_sensor_ambient}\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+
+
+\hyperlink{class_wasp_sensor_ambient}{Wasp\+Sensor\+Ambient} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Ambient.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_ambient_a53e090ecc0d2c78eea7c8f683d7a1a56}{Wasp\+Sensor\+Ambient} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_ambient_a0f032f3688ec2c44681552ff503d8b47}{set\+Sensor\+Mode} (uint8\+\_\+t mode, uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the different sensor switches. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_a06aa0c258f649dc81b1706f24a96bd1d}{read\+Value} (uint8\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em Reads the corresponding sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_a6f56cd6727275acbb63cb85590a9177f}{read\+L\+U\+Xbright} (void)
+\begin{DoxyCompactList}\small\item\em Read Luxes in bright environments (outdoors) \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_a79065afd6980c2e50e983f32979248fc}{read\+L\+U\+Xmedium} (void)
+\begin{DoxyCompactList}\small\item\em Read Luxes in medium light environments. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_ac40761911a72febe1540b77b685f7274}{read\+L\+U\+Xdim} (void)
+\begin{DoxyCompactList}\small\item\em Read Luxes in low light environments. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_ab2d86e3e340a7542dea388140bf23f13}{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright} (void)
+\begin{DoxyCompactList}\small\item\em Read Luxes and calculate other parameters in bright environments. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_aaa9be4682cd98f45d733db3a284d4b47}{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium} (void)
+\begin{DoxyCompactList}\small\item\em Read Luxes and calculate other parameters in medium light environments. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_ambient_acb02d4d25453b784076368f72a78385d}{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim} (void)
+\begin{DoxyCompactList}\small\item\em Read Luxes and calculate other parameters in low light environments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_sensor_ambient}{Wasp\+Sensor\+Ambient} Class. 
+
+\hyperlink{class_wasp_sensor_ambient}{Wasp\+Sensor\+Ambient} Class defines all the variables and functions used for managing the Ambient \hyperlink{class_sensors}{Sensors} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Ambient()}{WaspSensorAmbient()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Ambient\+::\+Wasp\+Sensor\+Ambient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_a53e090ecc0d2c78eea7c8f683d7a1a56}{}\label{class_wasp_sensor_ambient_a53e090ecc0d2c78eea7c8f683d7a1a56}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright@{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright}}
+\index{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright@{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright(void)}{readLUMINOSITYbright(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ybright (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_ab2d86e3e340a7542dea388140bf23f13}{}\label{class_wasp_sensor_ambient_ab2d86e3e340a7542dea388140bf23f13}
+
+
+Read Luxes and calculate other parameters in bright environments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lux 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim@{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim}}
+\index{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim@{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim(void)}{readLUMINOSITYdim(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ydim (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_acb02d4d25453b784076368f72a78385d}{}\label{class_wasp_sensor_ambient_acb02d4d25453b784076368f72a78385d}
+
+
+Read Luxes and calculate other parameters in low light environments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luxes 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium@{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium}}
+\index{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium@{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium(void)}{readLUMINOSITYmedium(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+L\+U\+M\+I\+N\+O\+S\+I\+T\+Ymedium (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_aaa9be4682cd98f45d733db3a284d4b47}{}\label{class_wasp_sensor_ambient_aaa9be4682cd98f45d733db3a284d4b47}
+
+
+Read Luxes and calculate other parameters in medium light environments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luxes 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+L\+U\+Xbright@{read\+L\+U\+Xbright}}
+\index{read\+L\+U\+Xbright@{read\+L\+U\+Xbright}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+L\+U\+Xbright(void)}{readLUXbright(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+L\+U\+Xbright (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_a6f56cd6727275acbb63cb85590a9177f}{}\label{class_wasp_sensor_ambient_a6f56cd6727275acbb63cb85590a9177f}
+
+
+Read Luxes in bright environments (outdoors) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luxes 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+L\+U\+Xdim@{read\+L\+U\+Xdim}}
+\index{read\+L\+U\+Xdim@{read\+L\+U\+Xdim}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+L\+U\+Xdim(void)}{readLUXdim(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+L\+U\+Xdim (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_ac40761911a72febe1540b77b685f7274}{}\label{class_wasp_sensor_ambient_ac40761911a72febe1540b77b685f7274}
+
+
+Read Luxes in low light environments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luxes 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+L\+U\+Xmedium@{read\+L\+U\+Xmedium}}
+\index{read\+L\+U\+Xmedium@{read\+L\+U\+Xmedium}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+L\+U\+Xmedium(void)}{readLUXmedium(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+L\+U\+Xmedium (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_a79065afd6980c2e50e983f32979248fc}{}\label{class_wasp_sensor_ambient_a79065afd6980c2e50e983f32979248fc}
+
+
+Read Luxes in medium light environments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+luxes 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{read\+Value(uint8\+\_\+t sensor)}{readValue(uint8_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Ambient\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_a06aa0c258f649dc81b1706f24a96bd1d}{}\label{class_wasp_sensor_ambient_a06aa0c258f649dc81b1706f24a96bd1d}
+
+
+Reads the corresponding sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor to be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}!set\+Sensor\+Mode@{set\+Sensor\+Mode}}
+\index{set\+Sensor\+Mode@{set\+Sensor\+Mode}!Wasp\+Sensor\+Ambient@{Wasp\+Sensor\+Ambient}}
+\subsubsection[{\texorpdfstring{set\+Sensor\+Mode(uint8\+\_\+t mode, uint16\+\_\+t sensor)}{setSensorMode(uint8_t mode, uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Ambient\+::set\+Sensor\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_ambient_a0f032f3688ec2c44681552ff503d8b47}{}\label{class_wasp_sensor_ambient_a0f032f3688ec2c44681552ff503d8b47}
+
+
+It sets O\+N/\+O\+FF the different sensor switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+{\em uint16\+\_\+t} & sensor \+: the sensor to set O\+N/\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Ambient/\hyperlink{_wasp_sensor_ambient_8h}{Wasp\+Sensor\+Ambient.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Ambient/Wasp\+Sensor\+Ambient.\+cpp\end{DoxyCompactItemize}

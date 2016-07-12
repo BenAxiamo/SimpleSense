@@ -1,0 +1,581 @@
+\hypertarget{_wasp_s_x1272_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+S\+X1272/\+Wasp\+S\+X1272.h File Reference}
+\label{_wasp_s_x1272_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+S\+X1272/\+Wasp\+S\+X1272.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+S\+X1272/\+Wasp\+S\+X1272.\+h}}
+
+
+Library for managing Semtech modules.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$wiring.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpack}{pack}
+\begin{DoxyCompactList}\small\item\em Structure \+: \end{DoxyCompactList}\item 
+class \hyperlink{class_wasp_s_x1272}{Wasp\+S\+X1272}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_s_x1272}{Wasp\+S\+X1272} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+X1272\+\_\+debug\+\_\+mode}~0\hypertarget{_wasp_s_x1272_8h_af8ae7b279812be3c5dd17adb4c471dc3}{}\label{_wasp_s_x1272_8h_af8ae7b279812be3c5dd17adb4c471dc3}
+
+\item 
+\#define {\bfseries W\+A\+S\+P\+M\+O\+T\+E\+\_\+\+G\+A\+T\+E\+W\+A\+Y\+\_\+\+F\+O\+R\+\_\+\+M\+E\+S\+H\+L\+I\+UM}\hypertarget{_wasp_s_x1272_8h_a62fa7e3631b5490419d9c54cd90a1418}{}\label{_wasp_s_x1272_8h_a62fa7e3631b5490419d9c54cd90a1418}
+
+\item 
+\#define \hyperlink{_wasp_s_x1272_8h_aff20d8c0a05ad3043afa2e4ad9ebe768}{bit\+Read}(value,  bit)~(((value) $>$$>$ (bit)) \& 0x01)\hypertarget{_wasp_s_x1272_8h_aff20d8c0a05ad3043afa2e4ad9ebe768}{}\label{_wasp_s_x1272_8h_aff20d8c0a05ad3043afa2e4ad9ebe768}
+
+\begin{DoxyCompactList}\small\item\em M\+A\+C\+R\+OS //. \end{DoxyCompactList}\item 
+\#define {\bfseries bit\+Set}(value,  bit)~((value) $\vert$= (1\+U\+L $<$$<$ (bit)))\hypertarget{_wasp_s_x1272_8h_a6a8195c0e930f86c6af03ba6af8b41dd}{}\label{_wasp_s_x1272_8h_a6a8195c0e930f86c6af03ba6af8b41dd}
+
+\item 
+\#define {\bfseries bit\+Clear}(value,  bit)~((value) \&= $\sim$(1\+U\+L $<$$<$ (bit)))\hypertarget{_wasp_s_x1272_8h_abbe843c0521806a4ab2e7cffe44769e2}{}\label{_wasp_s_x1272_8h_abbe843c0521806a4ab2e7cffe44769e2}
+
+\item 
+\#define \hyperlink{_wasp_s_x1272_8h_a8ed1afe4fdc88a0f2626d9ee783e06e5}{R\+E\+G\+\_\+\+F\+I\+FO}~0x00\hypertarget{_wasp_s_x1272_8h_a8ed1afe4fdc88a0f2626d9ee783e06e5}{}\label{_wasp_s_x1272_8h_a8ed1afe4fdc88a0f2626d9ee783e06e5}
+
+\begin{DoxyCompactList}\small\item\em R\+E\+G\+I\+S\+T\+E\+RS //. \end{DoxyCompactList}\item 
+\#define {\bfseries R\+E\+G\+\_\+\+O\+P\+\_\+\+M\+O\+DE}~0x01\hypertarget{_wasp_s_x1272_8h_a250bcedd7826aa7c25f80654368d0a72}{}\label{_wasp_s_x1272_8h_a250bcedd7826aa7c25f80654368d0a72}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+B\+I\+T\+R\+A\+T\+E\+\_\+\+M\+SB}~0x02\hypertarget{_wasp_s_x1272_8h_ab983a8fa7f3aa4125eb94b9a01da2dd6}{}\label{_wasp_s_x1272_8h_ab983a8fa7f3aa4125eb94b9a01da2dd6}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+B\+I\+T\+R\+A\+T\+E\+\_\+\+L\+SB}~0x03\hypertarget{_wasp_s_x1272_8h_aecb6f7c36f6ac07aad1ac7d894742d52}{}\label{_wasp_s_x1272_8h_aecb6f7c36f6ac07aad1ac7d894742d52}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+D\+E\+V\+\_\+\+M\+SB}~0x04\hypertarget{_wasp_s_x1272_8h_af327ae128e28edc811cf37f91555b205}{}\label{_wasp_s_x1272_8h_af327ae128e28edc811cf37f91555b205}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+D\+E\+V\+\_\+\+L\+SB}~0x05\hypertarget{_wasp_s_x1272_8h_a7dd3c86f4d1d600e557e01d718829cc7}{}\label{_wasp_s_x1272_8h_a7dd3c86f4d1d600e557e01d718829cc7}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+R\+F\+\_\+\+M\+SB}~0x06\hypertarget{_wasp_s_x1272_8h_aa9e79eeafee89809ae618e8c1442e24b}{}\label{_wasp_s_x1272_8h_aa9e79eeafee89809ae618e8c1442e24b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+R\+F\+\_\+\+M\+ID}~0x07\hypertarget{_wasp_s_x1272_8h_ae2f8700ed3931e4e487e7918c9827571}{}\label{_wasp_s_x1272_8h_ae2f8700ed3931e4e487e7918c9827571}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+R\+F\+\_\+\+L\+SB}~0x08\hypertarget{_wasp_s_x1272_8h_ad221a315f543118438b59b8ee37f8b09}{}\label{_wasp_s_x1272_8h_ad221a315f543118438b59b8ee37f8b09}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+\_\+\+C\+O\+N\+F\+IG}~0x09\hypertarget{_wasp_s_x1272_8h_af32e257d44b43bf90a535379a12cab17}{}\label{_wasp_s_x1272_8h_af32e257d44b43bf90a535379a12cab17}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+\_\+\+R\+A\+MP}~0x0A\hypertarget{_wasp_s_x1272_8h_aa56853d3a8ded8552f2a9ebe453b4117}{}\label{_wasp_s_x1272_8h_aa56853d3a8ded8552f2a9ebe453b4117}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+O\+CP}~0x0B\hypertarget{_wasp_s_x1272_8h_a4e0e13619868140039378bb218aa5a3b}{}\label{_wasp_s_x1272_8h_a4e0e13619868140039378bb218aa5a3b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+L\+NA}~0x0C\hypertarget{_wasp_s_x1272_8h_ab08aa4c56ad75b3e715a1115330109ca}{}\label{_wasp_s_x1272_8h_ab08aa4c56ad75b3e715a1115330109ca}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+C\+O\+N\+F\+IG}~0x0D\hypertarget{_wasp_s_x1272_8h_a2f81ffefaab5211d9b4538126bc25ba4}{}\label{_wasp_s_x1272_8h_a2f81ffefaab5211d9b4538126bc25ba4}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+I\+F\+O\+\_\+\+A\+D\+D\+R\+\_\+\+P\+TR}~0x0D\hypertarget{_wasp_s_x1272_8h_af5e9aa6c1a6e12df72f48a896f6f67b3}{}\label{_wasp_s_x1272_8h_af5e9aa6c1a6e12df72f48a896f6f67b3}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+S\+S\+I\+\_\+\+C\+O\+N\+F\+IG}~0x0E\hypertarget{_wasp_s_x1272_8h_a374fa104e6866ac04338ecfe9f57a049}{}\label{_wasp_s_x1272_8h_a374fa104e6866ac04338ecfe9f57a049}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+I\+F\+O\+\_\+\+T\+X\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+DR}~0x0E\hypertarget{_wasp_s_x1272_8h_a01b72f38b82bc5936f8b264324c507d8}{}\label{_wasp_s_x1272_8h_a01b72f38b82bc5936f8b264324c507d8}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+S\+S\+I\+\_\+\+C\+O\+L\+L\+I\+S\+I\+ON}~0x0F\hypertarget{_wasp_s_x1272_8h_a3d9e799addae2f940511eed337fa3116}{}\label{_wasp_s_x1272_8h_a3d9e799addae2f940511eed337fa3116}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+I\+F\+O\+\_\+\+R\+X\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+DR}~0x0F\hypertarget{_wasp_s_x1272_8h_aa267251c81841a1d7b9da58f0d28b89c}{}\label{_wasp_s_x1272_8h_aa267251c81841a1d7b9da58f0d28b89c}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+S\+S\+I\+\_\+\+T\+H\+R\+E\+SH}~0x10\hypertarget{_wasp_s_x1272_8h_a0ded1b6c2474f779737c5cae8ddc7b88}{}\label{_wasp_s_x1272_8h_a0ded1b6c2474f779737c5cae8ddc7b88}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+I\+F\+O\+\_\+\+R\+X\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+A\+D\+DR}~0x10\hypertarget{_wasp_s_x1272_8h_a5e931712eaa4377c0ea89af339147cd4}{}\label{_wasp_s_x1272_8h_a5e931712eaa4377c0ea89af339147cd4}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+S\+S\+I\+\_\+\+V\+A\+L\+U\+E\+\_\+\+F\+SK}~0x11\hypertarget{_wasp_s_x1272_8h_a07f6ef9e460b054f66ec1e314a9c6b11}{}\label{_wasp_s_x1272_8h_a07f6ef9e460b054f66ec1e314a9c6b11}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+A\+G\+S\+\_\+\+M\+A\+SK}~0x11\hypertarget{_wasp_s_x1272_8h_a959ae2060853369767eb7af463c78efe}{}\label{_wasp_s_x1272_8h_a959ae2060853369767eb7af463c78efe}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+BW}~0x12\hypertarget{_wasp_s_x1272_8h_ab9cc032eac120ed0ea85588d0ac38839}{}\label{_wasp_s_x1272_8h_ab9cc032eac120ed0ea85588d0ac38839}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+A\+GS}~0x12\hypertarget{_wasp_s_x1272_8h_a098e2376499ff1140b6cdac8f022295c}{}\label{_wasp_s_x1272_8h_a098e2376499ff1140b6cdac8f022295c}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+F\+C\+\_\+\+BW}~0x13\hypertarget{_wasp_s_x1272_8h_a264d6bb861dfe25baaa63f3ff646a6d8}{}\label{_wasp_s_x1272_8h_a264d6bb861dfe25baaa63f3ff646a6d8}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+N\+B\+\_\+\+B\+Y\+T\+ES}~0x13\hypertarget{_wasp_s_x1272_8h_a45fdf1a8a55bf65cd5fc2af366dbb39a}{}\label{_wasp_s_x1272_8h_a45fdf1a8a55bf65cd5fc2af366dbb39a}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+O\+O\+K\+\_\+\+P\+E\+AK}~0x14\hypertarget{_wasp_s_x1272_8h_ac14a51b64a6da6ef9e8853ab5831322b}{}\label{_wasp_s_x1272_8h_ac14a51b64a6da6ef9e8853ab5831322b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+C\+N\+T\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+SB}~0x14\hypertarget{_wasp_s_x1272_8h_a3f9cd1b51b54d7d0ee3fa332ff52b5cf}{}\label{_wasp_s_x1272_8h_a3f9cd1b51b54d7d0ee3fa332ff52b5cf}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+O\+O\+K\+\_\+\+F\+IX}~0x15\hypertarget{_wasp_s_x1272_8h_a6bb99e592b2048cc882f6a49e70d8c99}{}\label{_wasp_s_x1272_8h_a6bb99e592b2048cc882f6a49e70d8c99}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+C\+N\+T\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+SB}~0x15\hypertarget{_wasp_s_x1272_8h_ad3a4b72b2227118860ee73dc6ceaa5fb}{}\label{_wasp_s_x1272_8h_ad3a4b72b2227118860ee73dc6ceaa5fb}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+O\+O\+K\+\_\+\+A\+VG}~0x16\hypertarget{_wasp_s_x1272_8h_a820c8a583e0e795bb4fc161bec3a33e0}{}\label{_wasp_s_x1272_8h_a820c8a583e0e795bb4fc161bec3a33e0}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+C\+N\+T\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+SB}~0x16\hypertarget{_wasp_s_x1272_8h_ac4d4ba325842028813b9de9927ca0e25}{}\label{_wasp_s_x1272_8h_ac4d4ba325842028813b9de9927ca0e25}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+C\+N\+T\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+SB}~0x17\hypertarget{_wasp_s_x1272_8h_a0c9db3e8c49db8b555b055829d59693c}{}\label{_wasp_s_x1272_8h_a0c9db3e8c49db8b555b055829d59693c}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+M\+O\+D\+E\+M\+\_\+\+S\+T\+AT}~0x18\hypertarget{_wasp_s_x1272_8h_af7211249b5c260cb877827f67c988f4f}{}\label{_wasp_s_x1272_8h_af7211249b5c260cb877827f67c988f4f}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+K\+T\+\_\+\+S\+N\+R\+\_\+\+V\+A\+L\+UE}~0x19\hypertarget{_wasp_s_x1272_8h_ac09e4b4587ebc50f818bbeadc961190b}{}\label{_wasp_s_x1272_8h_ac09e4b4587ebc50f818bbeadc961190b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+F\+C\+\_\+\+F\+EI}~0x1A\hypertarget{_wasp_s_x1272_8h_a12434a2eead060d2fcdf97a3b9870eea}{}\label{_wasp_s_x1272_8h_a12434a2eead060d2fcdf97a3b9870eea}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+K\+T\+\_\+\+R\+S\+S\+I\+\_\+\+V\+A\+L\+UE}~0x1A\hypertarget{_wasp_s_x1272_8h_a4367979bf8684518aaa2919d47f633ce}{}\label{_wasp_s_x1272_8h_a4367979bf8684518aaa2919d47f633ce}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+F\+C\+\_\+\+M\+SB}~0x1B\hypertarget{_wasp_s_x1272_8h_a1fa942208f5955768c989a775a5c330d}{}\label{_wasp_s_x1272_8h_a1fa942208f5955768c989a775a5c330d}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+S\+S\+I\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+O\+RA}~0x1B\hypertarget{_wasp_s_x1272_8h_a1fafd1d22fbd3d35818364820c8fc804}{}\label{_wasp_s_x1272_8h_a1fafd1d22fbd3d35818364820c8fc804}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+F\+C\+\_\+\+L\+SB}~0x1C\hypertarget{_wasp_s_x1272_8h_a5ff918e0e2d76951a99dde76219b3b3b}{}\label{_wasp_s_x1272_8h_a5ff918e0e2d76951a99dde76219b3b3b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+H\+O\+P\+\_\+\+C\+H\+A\+N\+N\+EL}~0x1C\hypertarget{_wasp_s_x1272_8h_a29198ea03f6491213ea4b0d1537e879a}{}\label{_wasp_s_x1272_8h_a29198ea03f6491213ea4b0d1537e879a}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+E\+I\+\_\+\+M\+SB}~0x1D\hypertarget{_wasp_s_x1272_8h_a9b05b7208be8648b0f8883f25a8e27db}{}\label{_wasp_s_x1272_8h_a9b05b7208be8648b0f8883f25a8e27db}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+M\+O\+D\+E\+M\+\_\+\+C\+O\+N\+F\+I\+G1}~0x1D\hypertarget{_wasp_s_x1272_8h_a11debf0f9759ec35e7c5214fa21a8038}{}\label{_wasp_s_x1272_8h_a11debf0f9759ec35e7c5214fa21a8038}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+E\+I\+\_\+\+L\+SB}~0x1E\hypertarget{_wasp_s_x1272_8h_acd56e8b3aeb4df021dfea2fd4e0847c1}{}\label{_wasp_s_x1272_8h_acd56e8b3aeb4df021dfea2fd4e0847c1}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+M\+O\+D\+E\+M\+\_\+\+C\+O\+N\+F\+I\+G2}~0x1E\hypertarget{_wasp_s_x1272_8h_a25ec2854a4adf78872907280fdb803a8}{}\label{_wasp_s_x1272_8h_a25ec2854a4adf78872907280fdb803a8}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+R\+E\+A\+M\+B\+L\+E\+\_\+\+D\+E\+T\+E\+CT}~0x1F\hypertarget{_wasp_s_x1272_8h_af9413ea103b4e4f650e0a579fff90035}{}\label{_wasp_s_x1272_8h_af9413ea103b4e4f650e0a579fff90035}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+M\+B\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+L\+SB}~0x1F\hypertarget{_wasp_s_x1272_8h_a106fc1e09dcf39da871a9b9272d0d471}{}\label{_wasp_s_x1272_8h_a106fc1e09dcf39da871a9b9272d0d471}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+T\+I\+M\+E\+O\+U\+T1}~0x20\hypertarget{_wasp_s_x1272_8h_a9f97a6e87b6f960b2d2e59fe4c703aaf}{}\label{_wasp_s_x1272_8h_a9f97a6e87b6f960b2d2e59fe4c703aaf}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+R\+E\+A\+M\+B\+L\+E\+\_\+\+M\+S\+B\+\_\+\+L\+O\+RA}~0x20\hypertarget{_wasp_s_x1272_8h_a7f30bbce34a3473ea19ecb581ff429d7}{}\label{_wasp_s_x1272_8h_a7f30bbce34a3473ea19ecb581ff429d7}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+T\+I\+M\+E\+O\+U\+T2}~0x21\hypertarget{_wasp_s_x1272_8h_a4030abc3074d569afb1294f6346d0bdb}{}\label{_wasp_s_x1272_8h_a4030abc3074d569afb1294f6346d0bdb}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+R\+E\+A\+M\+B\+L\+E\+\_\+\+L\+S\+B\+\_\+\+L\+O\+RA}~0x21\hypertarget{_wasp_s_x1272_8h_a409f691d0f896ece556cd8f3b033be7a}{}\label{_wasp_s_x1272_8h_a409f691d0f896ece556cd8f3b033be7a}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+T\+I\+M\+E\+O\+U\+T3}~0x22\hypertarget{_wasp_s_x1272_8h_a6e6447f2c506046b106f42dafcd3f577}{}\label{_wasp_s_x1272_8h_a6e6447f2c506046b106f42dafcd3f577}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+O\+RA}~0x22\hypertarget{_wasp_s_x1272_8h_aabb521e7a71885e3cfd8f9ea21730578}{}\label{_wasp_s_x1272_8h_aabb521e7a71885e3cfd8f9ea21730578}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+R\+X\+\_\+\+D\+E\+L\+AY}~0x23\hypertarget{_wasp_s_x1272_8h_a04dfed9fcb45c1566baedc7ca5ff7873}{}\label{_wasp_s_x1272_8h_a04dfed9fcb45c1566baedc7ca5ff7873}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+M\+A\+X\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+L\+E\+N\+G\+TH}~0x23\hypertarget{_wasp_s_x1272_8h_adb39d7025ab2535d4ab93881c85b998b}{}\label{_wasp_s_x1272_8h_adb39d7025ab2535d4ab93881c85b998b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+O\+SC}~0x24\hypertarget{_wasp_s_x1272_8h_a1edb093ed684495473ecd2e97e3a49c2}{}\label{_wasp_s_x1272_8h_a1edb093ed684495473ecd2e97e3a49c2}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+H\+O\+P\+\_\+\+P\+E\+R\+I\+OD}~0x24\hypertarget{_wasp_s_x1272_8h_ae59811c30eb07858b8ef8c83f756f538}{}\label{_wasp_s_x1272_8h_ae59811c30eb07858b8ef8c83f756f538}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+R\+E\+A\+M\+B\+L\+E\+\_\+\+M\+S\+B\+\_\+\+F\+SK}~0x25\hypertarget{_wasp_s_x1272_8h_ae255330d921b20f47a59227e5c502c45}{}\label{_wasp_s_x1272_8h_ae255330d921b20f47a59227e5c502c45}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+I\+F\+O\+\_\+\+R\+X\+\_\+\+B\+Y\+T\+E\+\_\+\+A\+D\+DR}~0x25\hypertarget{_wasp_s_x1272_8h_a2987802f7e909cabebe2aa10421c8881}{}\label{_wasp_s_x1272_8h_a2987802f7e909cabebe2aa10421c8881}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+R\+E\+A\+M\+B\+L\+E\+\_\+\+L\+S\+B\+\_\+\+F\+SK}~0x26\hypertarget{_wasp_s_x1272_8h_a5e3ec8d7601fb76cc73359ecb3242ab6}{}\label{_wasp_s_x1272_8h_a5e3ec8d7601fb76cc73359ecb3242ab6}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+C\+O\+N\+F\+IG}~0x27\hypertarget{_wasp_s_x1272_8h_ab42309e78c15cc77848e75f15d91d18a}{}\label{_wasp_s_x1272_8h_ab42309e78c15cc77848e75f15d91d18a}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E1}~0x28\hypertarget{_wasp_s_x1272_8h_a4584f343400d43b64208a88389b83fad}{}\label{_wasp_s_x1272_8h_a4584f343400d43b64208a88389b83fad}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E2}~0x29\hypertarget{_wasp_s_x1272_8h_abf83f5f3af0ea670ab0af50ad73a4510}{}\label{_wasp_s_x1272_8h_abf83f5f3af0ea670ab0af50ad73a4510}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E3}~0x2A\hypertarget{_wasp_s_x1272_8h_a8266b875f9d380d846c312ae2d22fb18}{}\label{_wasp_s_x1272_8h_a8266b875f9d380d846c312ae2d22fb18}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E4}~0x2B\hypertarget{_wasp_s_x1272_8h_a1e3eeed3368e09a63560155b80582676}{}\label{_wasp_s_x1272_8h_a1e3eeed3368e09a63560155b80582676}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E5}~0x2C\hypertarget{_wasp_s_x1272_8h_a0f7f7522cdb9d45f9b2c06cd97cb5be0}{}\label{_wasp_s_x1272_8h_a0f7f7522cdb9d45f9b2c06cd97cb5be0}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E6}~0x2D\hypertarget{_wasp_s_x1272_8h_a1472eabace24f5b9343b206110b6bed8}{}\label{_wasp_s_x1272_8h_a1472eabace24f5b9343b206110b6bed8}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E7}~0x2E\hypertarget{_wasp_s_x1272_8h_a8833ec401ec64d212f50d3f00ec274cc}{}\label{_wasp_s_x1272_8h_a8833ec401ec64d212f50d3f00ec274cc}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+V\+A\+L\+U\+E8}~0x2F\hypertarget{_wasp_s_x1272_8h_a0180654d81fce859b49a8da7f9a9c2ad}{}\label{_wasp_s_x1272_8h_a0180654d81fce859b49a8da7f9a9c2ad}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+C\+O\+N\+F\+I\+G1}~0x30\hypertarget{_wasp_s_x1272_8h_a007c186b0362cf733f9d7d886e908dad}{}\label{_wasp_s_x1272_8h_a007c186b0362cf733f9d7d886e908dad}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+C\+O\+N\+F\+I\+G2}~0x31\hypertarget{_wasp_s_x1272_8h_a0e59ea63d6b6112b72f345aa6b19ee26}{}\label{_wasp_s_x1272_8h_a0e59ea63d6b6112b72f345aa6b19ee26}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+O\+P\+T\+I\+M\+I\+ZE}~0x31\hypertarget{_wasp_s_x1272_8h_a5e67dadbb462f680ce1423aff1afa225}{}\label{_wasp_s_x1272_8h_a5e67dadbb462f680ce1423aff1afa225}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+F\+SK}~0x32\hypertarget{_wasp_s_x1272_8h_acdda22c524c4a0f2c702ba1deb85fba5}{}\label{_wasp_s_x1272_8h_acdda22c524c4a0f2c702ba1deb85fba5}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+N\+O\+D\+E\+\_\+\+A\+D\+RS}~0x33\hypertarget{_wasp_s_x1272_8h_a2c0efac2a866020cba87a8ad3d139299}{}\label{_wasp_s_x1272_8h_a2c0efac2a866020cba87a8ad3d139299}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+\+A\+D\+RS}~0x34\hypertarget{_wasp_s_x1272_8h_a2a998da1b51a9b953bb0275dd8422539}{}\label{_wasp_s_x1272_8h_a2a998da1b51a9b953bb0275dd8422539}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+I\+F\+O\+\_\+\+T\+H\+R\+E\+SH}~0x35\hypertarget{_wasp_s_x1272_8h_af69544093563e88a75ef0975b150a9ae}{}\label{_wasp_s_x1272_8h_af69544093563e88a75ef0975b150a9ae}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+E\+Q\+\_\+\+C\+O\+N\+F\+I\+G1}~0x36\hypertarget{_wasp_s_x1272_8h_aef19c5475213023f2d6843f97617c618}{}\label{_wasp_s_x1272_8h_aef19c5475213023f2d6843f97617c618}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+S\+E\+Q\+\_\+\+C\+O\+N\+F\+I\+G2}~0x37\hypertarget{_wasp_s_x1272_8h_a28cea61e40ee83d277fb0dfd63e88ee4}{}\label{_wasp_s_x1272_8h_a28cea61e40ee83d277fb0dfd63e88ee4}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}~0x37\hypertarget{_wasp_s_x1272_8h_a3c142b7e485eac98190fce78583eccd6}{}\label{_wasp_s_x1272_8h_a3c142b7e485eac98190fce78583eccd6}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+T\+I\+M\+E\+R\+\_\+\+R\+E\+S\+OL}~0x38\hypertarget{_wasp_s_x1272_8h_ade258385f1fa5bfb4aa151342f03310b}{}\label{_wasp_s_x1272_8h_ade258385f1fa5bfb4aa151342f03310b}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+T\+I\+M\+E\+R1\+\_\+\+C\+O\+EF}~0x39\hypertarget{_wasp_s_x1272_8h_a454743c6c5d09b38bb75d53f9908ae2f}{}\label{_wasp_s_x1272_8h_a454743c6c5d09b38bb75d53f9908ae2f}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+T\+I\+M\+E\+R2\+\_\+\+C\+O\+EF}~0x3A\hypertarget{_wasp_s_x1272_8h_a3715c95235a9dcdd6b335ff7019c1fec}{}\label{_wasp_s_x1272_8h_a3715c95235a9dcdd6b335ff7019c1fec}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+C\+AL}~0x3B\hypertarget{_wasp_s_x1272_8h_a3597b547a2bc2dfe43faf4ff5c877d90}{}\label{_wasp_s_x1272_8h_a3597b547a2bc2dfe43faf4ff5c877d90}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+T\+E\+MP}~0x3C\hypertarget{_wasp_s_x1272_8h_ad3b0b6d8d5d3de58e5d56ce84e667b20}{}\label{_wasp_s_x1272_8h_ad3b0b6d8d5d3de58e5d56ce84e667b20}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+L\+O\+W\+\_\+\+B\+AT}~0x3D\hypertarget{_wasp_s_x1272_8h_a525a156e8e4a269cd7ecd05162e67e58}{}\label{_wasp_s_x1272_8h_a525a156e8e4a269cd7ecd05162e67e58}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+A\+G\+S1}~0x3E\hypertarget{_wasp_s_x1272_8h_a3e21c7197c70ea8be71fbdee5ff84663}{}\label{_wasp_s_x1272_8h_a3e21c7197c70ea8be71fbdee5ff84663}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+A\+G\+S2}~0x3F\hypertarget{_wasp_s_x1272_8h_a86dfc62446be10f58dc8d9dbaa5a7b97}{}\label{_wasp_s_x1272_8h_a86dfc62446be10f58dc8d9dbaa5a7b97}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+D\+I\+O\+\_\+\+M\+A\+P\+P\+I\+N\+G1}~0x40\hypertarget{_wasp_s_x1272_8h_a2e06b21810b5db8374a18e678be2396d}{}\label{_wasp_s_x1272_8h_a2e06b21810b5db8374a18e678be2396d}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+D\+I\+O\+\_\+\+M\+A\+P\+P\+I\+N\+G2}~0x41\hypertarget{_wasp_s_x1272_8h_aa3f9fa77785b2eb54772d705768649ea}{}\label{_wasp_s_x1272_8h_aa3f9fa77785b2eb54772d705768649ea}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+V\+E\+R\+S\+I\+ON}~0x42\hypertarget{_wasp_s_x1272_8h_aa7075c0ae73420685bb4278ee580f3fa}{}\label{_wasp_s_x1272_8h_aa7075c0ae73420685bb4278ee580f3fa}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+G\+C\+\_\+\+R\+EF}~0x43\hypertarget{_wasp_s_x1272_8h_a635be5ab2fdc9ff25450a36be4b69d9e}{}\label{_wasp_s_x1272_8h_a635be5ab2fdc9ff25450a36be4b69d9e}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+G\+C\+\_\+\+T\+H\+R\+E\+S\+H1}~0x44\hypertarget{_wasp_s_x1272_8h_a0d81da015528b717e7ba72b183566583}{}\label{_wasp_s_x1272_8h_a0d81da015528b717e7ba72b183566583}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+G\+C\+\_\+\+T\+H\+R\+E\+S\+H2}~0x45\hypertarget{_wasp_s_x1272_8h_aafd87b6a7d3f2a8bd9483a49b00e9ea7}{}\label{_wasp_s_x1272_8h_aafd87b6a7d3f2a8bd9483a49b00e9ea7}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+A\+G\+C\+\_\+\+T\+H\+R\+E\+S\+H3}~0x46\hypertarget{_wasp_s_x1272_8h_a01137d67b38ec73e7a914bf800523939}{}\label{_wasp_s_x1272_8h_a01137d67b38ec73e7a914bf800523939}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+L\+L\+\_\+\+H\+OP}~0x4B\hypertarget{_wasp_s_x1272_8h_af600b201e15df5c030585cce1f5b4d50}{}\label{_wasp_s_x1272_8h_af600b201e15df5c030585cce1f5b4d50}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+T\+C\+XO}~0x58\hypertarget{_wasp_s_x1272_8h_a57f595889f6a6af755ecc9b3bb5b4c3d}{}\label{_wasp_s_x1272_8h_a57f595889f6a6af755ecc9b3bb5b4c3d}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+A\+\_\+\+D\+AC}~0x5A\hypertarget{_wasp_s_x1272_8h_a9f8d15d83023df8b754745cff0050220}{}\label{_wasp_s_x1272_8h_a9f8d15d83023df8b754745cff0050220}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+LL}~0x5C\hypertarget{_wasp_s_x1272_8h_aa5110ddd4aaa720908be259b5a4af489}{}\label{_wasp_s_x1272_8h_aa5110ddd4aaa720908be259b5a4af489}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+P\+L\+L\+\_\+\+L\+O\+W\+\_\+\+PN}~0x5E\hypertarget{_wasp_s_x1272_8h_ab4c410977d3741bd62f5ba05f8c746dc}{}\label{_wasp_s_x1272_8h_ab4c410977d3741bd62f5ba05f8c746dc}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+F\+O\+R\+M\+E\+R\+\_\+\+T\+E\+MP}~0x6C\hypertarget{_wasp_s_x1272_8h_a6dea0ff06cc33cf1ec925215ab004a88}{}\label{_wasp_s_x1272_8h_a6dea0ff06cc33cf1ec925215ab004a88}
+
+\item 
+\#define {\bfseries R\+E\+G\+\_\+\+B\+I\+T\+\_\+\+R\+A\+T\+E\+\_\+\+F\+R\+AC}~0x70\hypertarget{_wasp_s_x1272_8h_ad04358f6a1b710519b7422029625a10d}{}\label{_wasp_s_x1272_8h_ad04358f6a1b710519b7422029625a10d}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+10\+\_\+868} = 0x\+D84\+C\+CC\hypertarget{_wasp_s_x1272_8h_a4dd18fea3ed9b014b43deadae862df3c}{}\label{_wasp_s_x1272_8h_a4dd18fea3ed9b014b43deadae862df3c}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+11\+\_\+868} = 0x\+D86000\hypertarget{_wasp_s_x1272_8h_a41748632d9b166a90a534f2412abd571}{}\label{_wasp_s_x1272_8h_a41748632d9b166a90a534f2412abd571}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+12\+\_\+868} = 0x\+D87333\hypertarget{_wasp_s_x1272_8h_adefd25c89cb1855cbabfe849b9a64451}{}\label{_wasp_s_x1272_8h_adefd25c89cb1855cbabfe849b9a64451}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+13\+\_\+868} = 0x\+D88666\hypertarget{_wasp_s_x1272_8h_a330c19a2a4fba1ca11308091cfa4a743}{}\label{_wasp_s_x1272_8h_a330c19a2a4fba1ca11308091cfa4a743}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+14\+\_\+868} = 0x\+D89999\hypertarget{_wasp_s_x1272_8h_a633bb56b861429df0df031cc62b81e14}{}\label{_wasp_s_x1272_8h_a633bb56b861429df0df031cc62b81e14}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+15\+\_\+868} = 0x\+D8\+A\+C\+CC\hypertarget{_wasp_s_x1272_8h_aae1a61f841f21b3288d0ac35145506a3}{}\label{_wasp_s_x1272_8h_aae1a61f841f21b3288d0ac35145506a3}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+16\+\_\+868} = 0x\+D8\+C000\hypertarget{_wasp_s_x1272_8h_a3c605421dad805c2702b875984fd3854}{}\label{_wasp_s_x1272_8h_a3c605421dad805c2702b875984fd3854}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+17\+\_\+868} = 0x\+D90000\hypertarget{_wasp_s_x1272_8h_a26893a603160e98cfc919f09c1b43d04}{}\label{_wasp_s_x1272_8h_a26893a603160e98cfc919f09c1b43d04}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+00\+\_\+900} = 0x\+E1\+C51E\hypertarget{_wasp_s_x1272_8h_ae3922024b230ab1fad5e66f77f108928}{}\label{_wasp_s_x1272_8h_ae3922024b230ab1fad5e66f77f108928}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+01\+\_\+900} = 0x\+E24\+F5C\hypertarget{_wasp_s_x1272_8h_a8a4837c83c26e55393336eeaa42ef691}{}\label{_wasp_s_x1272_8h_a8a4837c83c26e55393336eeaa42ef691}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+02\+\_\+900} = 0x\+E2\+D999\hypertarget{_wasp_s_x1272_8h_a425259ff26fc7eda1330455e64530d2c}{}\label{_wasp_s_x1272_8h_a425259ff26fc7eda1330455e64530d2c}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+03\+\_\+900} = 0x\+E363\+D7\hypertarget{_wasp_s_x1272_8h_a5126c48d96065e1bc81c43882b2c347d}{}\label{_wasp_s_x1272_8h_a5126c48d96065e1bc81c43882b2c347d}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+04\+\_\+900} = 0x\+E3\+E\+E14\hypertarget{_wasp_s_x1272_8h_a6b3ce73fa3e3b31133b67f83f4a7caa1}{}\label{_wasp_s_x1272_8h_a6b3ce73fa3e3b31133b67f83f4a7caa1}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+05\+\_\+900} = 0x\+E47851\hypertarget{_wasp_s_x1272_8h_a5579559a679e3017fe7188c241a43be5}{}\label{_wasp_s_x1272_8h_a5579559a679e3017fe7188c241a43be5}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+06\+\_\+900} = 0x\+E5028F\hypertarget{_wasp_s_x1272_8h_ae3823cc8193539ce14cc5024ff4b7caa}{}\label{_wasp_s_x1272_8h_ae3823cc8193539ce14cc5024ff4b7caa}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+07\+\_\+900} = 0x\+E58\+C\+CC\hypertarget{_wasp_s_x1272_8h_ad461f013e897651c768739d5f60254be}{}\label{_wasp_s_x1272_8h_ad461f013e897651c768739d5f60254be}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+08\+\_\+900} = 0x\+E6170A\hypertarget{_wasp_s_x1272_8h_afd19d642e9a952e9ecf6c1599abfe884}{}\label{_wasp_s_x1272_8h_afd19d642e9a952e9ecf6c1599abfe884}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+09\+\_\+900} = 0x\+E6\+A147\hypertarget{_wasp_s_x1272_8h_a26e109dfe0e672fa6e924895b30fada9}{}\label{_wasp_s_x1272_8h_a26e109dfe0e672fa6e924895b30fada9}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+10\+\_\+900} = 0x\+E72\+B85\hypertarget{_wasp_s_x1272_8h_a8ba4475e81f8252f0645c89ed2aa26b6}{}\label{_wasp_s_x1272_8h_a8ba4475e81f8252f0645c89ed2aa26b6}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+11\+\_\+900} = 0x\+E7\+B5\+C2\hypertarget{_wasp_s_x1272_8h_a42560cb7e3d2faba14c19566f12ef70c}{}\label{_wasp_s_x1272_8h_a42560cb7e3d2faba14c19566f12ef70c}
+
+\item 
+const uint32\+\_\+t {\bfseries C\+H\+\_\+12\+\_\+900} = 0x\+E4\+C000\hypertarget{_wasp_s_x1272_8h_a37fa660e3dfda65d057d816a83205379}{}\label{_wasp_s_x1272_8h_a37fa660e3dfda65d057d816a83205379}
+
+\item 
+const uint8\+\_\+t {\bfseries B\+W\+\_\+125} = 0x00\hypertarget{_wasp_s_x1272_8h_ac849e32e5e2b5b858797b5304fb7a074}{}\label{_wasp_s_x1272_8h_ac849e32e5e2b5b858797b5304fb7a074}
+
+\item 
+const uint8\+\_\+t {\bfseries B\+W\+\_\+250} = 0x01\hypertarget{_wasp_s_x1272_8h_ad53060656f18166e156b552f74856060}{}\label{_wasp_s_x1272_8h_ad53060656f18166e156b552f74856060}
+
+\item 
+const uint8\+\_\+t {\bfseries B\+W\+\_\+500} = 0x02\hypertarget{_wasp_s_x1272_8h_aeb8ed446c83f20a16dba36a1a247ff43}{}\label{_wasp_s_x1272_8h_aeb8ed446c83f20a16dba36a1a247ff43}
+
+\item 
+const double {\bfseries Signal\+Bw\+Log} \mbox{[}$\,$\mbox{]}
+\item 
+const uint8\+\_\+t {\bfseries C\+R\+\_\+5} = 0x01\hypertarget{_wasp_s_x1272_8h_a7f581f4b649334be5fe495eda2e72b15}{}\label{_wasp_s_x1272_8h_a7f581f4b649334be5fe495eda2e72b15}
+
+\item 
+const uint8\+\_\+t {\bfseries C\+R\+\_\+6} = 0x02\hypertarget{_wasp_s_x1272_8h_a24649d1d8616d696c2fbd9486d6d54f1}{}\label{_wasp_s_x1272_8h_a24649d1d8616d696c2fbd9486d6d54f1}
+
+\item 
+const uint8\+\_\+t {\bfseries C\+R\+\_\+7} = 0x03\hypertarget{_wasp_s_x1272_8h_a65bd0da49dd7814365a4ebaf031c0ecc}{}\label{_wasp_s_x1272_8h_a65bd0da49dd7814365a4ebaf031c0ecc}
+
+\item 
+const uint8\+\_\+t {\bfseries C\+R\+\_\+8} = 0x04\hypertarget{_wasp_s_x1272_8h_a0fa3dbdf737fbb12a9fa096ceb45c63b}{}\label{_wasp_s_x1272_8h_a0fa3dbdf737fbb12a9fa096ceb45c63b}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+6} = 0x06\hypertarget{_wasp_s_x1272_8h_aae813ab41527cacc146136c5ec30b352}{}\label{_wasp_s_x1272_8h_aae813ab41527cacc146136c5ec30b352}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+7} = 0x07\hypertarget{_wasp_s_x1272_8h_aeec9cf38abe7199b292b4215b9c8669c}{}\label{_wasp_s_x1272_8h_aeec9cf38abe7199b292b4215b9c8669c}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+8} = 0x08\hypertarget{_wasp_s_x1272_8h_a4d11a6e1c50ea5108a1bcd5e4d71f65a}{}\label{_wasp_s_x1272_8h_a4d11a6e1c50ea5108a1bcd5e4d71f65a}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+9} = 0x09\hypertarget{_wasp_s_x1272_8h_afcca92579b838082ac7cff585bc1fb30}{}\label{_wasp_s_x1272_8h_afcca92579b838082ac7cff585bc1fb30}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+10} = 0x0A\hypertarget{_wasp_s_x1272_8h_adb1e40540332a6b4244b7dcdd9c45849}{}\label{_wasp_s_x1272_8h_adb1e40540332a6b4244b7dcdd9c45849}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+11} = 0x0B\hypertarget{_wasp_s_x1272_8h_a4d62031ce4ed1a4033c06a8051ce9360}{}\label{_wasp_s_x1272_8h_a4d62031ce4ed1a4033c06a8051ce9360}
+
+\item 
+const uint8\+\_\+t {\bfseries S\+F\+\_\+12} = 0x0C\hypertarget{_wasp_s_x1272_8h_ad91c31cffbb0c2ea407072b8102a7101}{}\label{_wasp_s_x1272_8h_ad91c31cffbb0c2ea407072b8102a7101}
+
+\item 
+const uint8\+\_\+t {\bfseries L\+O\+R\+A\+\_\+\+S\+L\+E\+E\+P\+\_\+\+M\+O\+DE} = 0x80\hypertarget{_wasp_s_x1272_8h_aac4c84c9ca4316d74bb71fd9b7f1039b}{}\label{_wasp_s_x1272_8h_aac4c84c9ca4316d74bb71fd9b7f1039b}
+
+\item 
+const uint8\+\_\+t {\bfseries L\+O\+R\+A\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+M\+O\+DE} = 0x81\hypertarget{_wasp_s_x1272_8h_a0a403fcde537a73c579eb97abb24be09}{}\label{_wasp_s_x1272_8h_a0a403fcde537a73c579eb97abb24be09}
+
+\item 
+const uint8\+\_\+t {\bfseries L\+O\+R\+A\+\_\+\+T\+X\+\_\+\+M\+O\+DE} = 0x83\hypertarget{_wasp_s_x1272_8h_ad933c2367eba62a38762c3a003222db8}{}\label{_wasp_s_x1272_8h_ad933c2367eba62a38762c3a003222db8}
+
+\item 
+const uint8\+\_\+t {\bfseries L\+O\+R\+A\+\_\+\+R\+X\+\_\+\+M\+O\+DE} = 0x85\hypertarget{_wasp_s_x1272_8h_acef6fb548e80afe5cf80ac2cad834f74}{}\label{_wasp_s_x1272_8h_acef6fb548e80afe5cf80ac2cad834f74}
+
+\item 
+const uint8\+\_\+t {\bfseries L\+O\+R\+A\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+F\+S\+K\+\_\+\+R\+E\+G\+S\+\_\+\+M\+O\+DE} = 0x\+C1\hypertarget{_wasp_s_x1272_8h_a5b3c3aebec6dfc2c38e3c0d4d1780066}{}\label{_wasp_s_x1272_8h_a5b3c3aebec6dfc2c38e3c0d4d1780066}
+
+\item 
+const uint8\+\_\+t {\bfseries F\+S\+K\+\_\+\+S\+L\+E\+E\+P\+\_\+\+M\+O\+DE} = 0x00\hypertarget{_wasp_s_x1272_8h_ac4fa169312ee48404aaad42bd0be01ae}{}\label{_wasp_s_x1272_8h_ac4fa169312ee48404aaad42bd0be01ae}
+
+\item 
+const uint8\+\_\+t {\bfseries F\+S\+K\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+M\+O\+DE} = 0x01\hypertarget{_wasp_s_x1272_8h_a7461969a0fdb03aba2a6b459f50f0cbf}{}\label{_wasp_s_x1272_8h_a7461969a0fdb03aba2a6b459f50f0cbf}
+
+\item 
+const uint8\+\_\+t {\bfseries F\+S\+K\+\_\+\+T\+X\+\_\+\+M\+O\+DE} = 0x03\hypertarget{_wasp_s_x1272_8h_a26cf2128cad5547ac1e8f9b7d92fa0ac}{}\label{_wasp_s_x1272_8h_a26cf2128cad5547ac1e8f9b7d92fa0ac}
+
+\item 
+const uint8\+\_\+t {\bfseries F\+S\+K\+\_\+\+R\+X\+\_\+\+M\+O\+DE} = 0x05\hypertarget{_wasp_s_x1272_8h_a118ace400c23be495c227c8094150f9a}{}\label{_wasp_s_x1272_8h_a118ace400c23be495c227c8094150f9a}
+
+\item 
+const uint8\+\_\+t {\bfseries st\+\_\+\+S\+D\+\_\+\+ON} = 1\hypertarget{_wasp_s_x1272_8h_a7130be06b2fd7712c36c7b908b41ba99}{}\label{_wasp_s_x1272_8h_a7130be06b2fd7712c36c7b908b41ba99}
+
+\item 
+const uint8\+\_\+t {\bfseries st\+\_\+\+S\+D\+\_\+\+O\+FF} = 0\hypertarget{_wasp_s_x1272_8h_a8e5509f6527418db79a48fd6e85e80c5}{}\label{_wasp_s_x1272_8h_a8e5509f6527418db79a48fd6e85e80c5}
+
+\item 
+const uint8\+\_\+t {\bfseries H\+E\+A\+D\+E\+R\+\_\+\+ON} = 0\hypertarget{_wasp_s_x1272_8h_ad684332d7ae4aa02dd0b414d0e91850c}{}\label{_wasp_s_x1272_8h_ad684332d7ae4aa02dd0b414d0e91850c}
+
+\item 
+const uint8\+\_\+t {\bfseries H\+E\+A\+D\+E\+R\+\_\+\+O\+FF} = 1\hypertarget{_wasp_s_x1272_8h_a1d2ee5ef858f9b2f0bc663d90a3299f6}{}\label{_wasp_s_x1272_8h_a1d2ee5ef858f9b2f0bc663d90a3299f6}
+
+\item 
+const uint8\+\_\+t {\bfseries C\+R\+C\+\_\+\+ON} = 1\hypertarget{_wasp_s_x1272_8h_a31c2f1ba046a7077044d7b186c95beb1}{}\label{_wasp_s_x1272_8h_a31c2f1ba046a7077044d7b186c95beb1}
+
+\item 
+const uint8\+\_\+t {\bfseries C\+R\+C\+\_\+\+O\+FF} = 0\hypertarget{_wasp_s_x1272_8h_ac3d4d289ebeda79251762d4426a2a1c6}{}\label{_wasp_s_x1272_8h_ac3d4d289ebeda79251762d4426a2a1c6}
+
+\item 
+const uint8\+\_\+t {\bfseries L\+O\+RA} = 1\hypertarget{_wasp_s_x1272_8h_ac8cbc88cfd3e68d6a4789be5bab07592}{}\label{_wasp_s_x1272_8h_ac8cbc88cfd3e68d6a4789be5bab07592}
+
+\item 
+const uint8\+\_\+t {\bfseries F\+SK} = 0\hypertarget{_wasp_s_x1272_8h_ae045b980d60f254a114d0a66b48c059b}{}\label{_wasp_s_x1272_8h_ae045b980d60f254a114d0a66b48c059b}
+
+\item 
+const uint8\+\_\+t {\bfseries B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+0} = 0x00\hypertarget{_wasp_s_x1272_8h_a566d026b52e1381fa62f8dd7a0abdce3}{}\label{_wasp_s_x1272_8h_a566d026b52e1381fa62f8dd7a0abdce3}
+
+\item 
+const uint8\+\_\+t {\bfseries M\+A\+X\+\_\+\+L\+E\+N\+G\+TH} = 255\hypertarget{_wasp_s_x1272_8h_acfc113cc8a3b3b6ca98716b2f607b991}{}\label{_wasp_s_x1272_8h_acfc113cc8a3b3b6ca98716b2f607b991}
+
+\item 
+const uint8\+\_\+t {\bfseries M\+A\+X\+\_\+\+P\+A\+Y\+L\+O\+AD} = 251\hypertarget{_wasp_s_x1272_8h_a6927c26034d2cbd68f773eb603c4b2c0}{}\label{_wasp_s_x1272_8h_a6927c26034d2cbd68f773eb603c4b2c0}
+
+\item 
+const uint8\+\_\+t {\bfseries M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+F\+SK} = 64\hypertarget{_wasp_s_x1272_8h_a36127e40f827339ff687ea21ea877abf}{}\label{_wasp_s_x1272_8h_a36127e40f827339ff687ea21ea877abf}
+
+\item 
+const uint8\+\_\+t {\bfseries M\+A\+X\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+F\+SK} = 60\hypertarget{_wasp_s_x1272_8h_af7011be31bc1246df606ef45c43039fa}{}\label{_wasp_s_x1272_8h_af7011be31bc1246df606ef45c43039fa}
+
+\item 
+const uint8\+\_\+t {\bfseries A\+C\+K\+\_\+\+L\+E\+N\+G\+TH} = 5\hypertarget{_wasp_s_x1272_8h_a565356a2c9fddc4ff1c04120f5803ca9}{}\label{_wasp_s_x1272_8h_a565356a2c9fddc4ff1c04120f5803ca9}
+
+\item 
+const uint8\+\_\+t {\bfseries O\+F\+F\+S\+E\+T\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+L\+E\+N\+G\+TH} = 5\hypertarget{_wasp_s_x1272_8h_a32f45c4addf46bad1a453305e8268c33}{}\label{_wasp_s_x1272_8h_a32f45c4addf46bad1a453305e8268c33}
+
+\item 
+const uint8\+\_\+t {\bfseries O\+F\+F\+S\+E\+T\+\_\+\+R\+S\+SI} = 137\hypertarget{_wasp_s_x1272_8h_a3689ec66de5a2c6853cbe897b8e280d7}{}\label{_wasp_s_x1272_8h_a3689ec66de5a2c6853cbe897b8e280d7}
+
+\item 
+const uint8\+\_\+t {\bfseries N\+O\+I\+S\+E\+\_\+\+F\+I\+G\+U\+RE} = 6.\+0\hypertarget{_wasp_s_x1272_8h_aaec3ff9cf349309404898c3515412199}{}\label{_wasp_s_x1272_8h_aaec3ff9cf349309404898c3515412199}
+
+\item 
+const uint8\+\_\+t {\bfseries N\+O\+I\+S\+E\+\_\+\+A\+B\+S\+O\+L\+U\+T\+E\+\_\+\+Z\+E\+RO} = 174.\+0\hypertarget{_wasp_s_x1272_8h_aac1ea6f42cb4829e33715f12bd89895b}{}\label{_wasp_s_x1272_8h_aac1ea6f42cb4829e33715f12bd89895b}
+
+\item 
+const uint16\+\_\+t {\bfseries M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT} = 10000\hypertarget{_wasp_s_x1272_8h_a809720b5a240264919b57888372b3356}{}\label{_wasp_s_x1272_8h_a809720b5a240264919b57888372b3356}
+
+\item 
+const uint32\+\_\+t {\bfseries M\+A\+X\+\_\+\+W\+A\+IT} = 12000\hypertarget{_wasp_s_x1272_8h_ad23f62b9a047d8a5ed843049db4bdb7d}{}\label{_wasp_s_x1272_8h_ad23f62b9a047d8a5ed843049db4bdb7d}
+
+\item 
+const uint32\+\_\+t {\bfseries M\+E\+S\+H\+\_\+\+T\+I\+M\+E\+O\+UT} = 3600000\hypertarget{_wasp_s_x1272_8h_a5e6beadb8160a03b10f0a470107b03ca}{}\label{_wasp_s_x1272_8h_a5e6beadb8160a03b10f0a470107b03ca}
+
+\item 
+const uint8\+\_\+t {\bfseries M\+A\+X\+\_\+\+R\+E\+T\+R\+I\+ES} = 5\hypertarget{_wasp_s_x1272_8h_a58fff818a2313afe4a13970541fa17fa}{}\label{_wasp_s_x1272_8h_a58fff818a2313afe4a13970541fa17fa}
+
+\item 
+const uint8\+\_\+t {\bfseries C\+O\+R\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+ET} = 0\hypertarget{_wasp_s_x1272_8h_ac8ab1906e7a5f237a252f92b7669ca13}{}\label{_wasp_s_x1272_8h_ac8ab1906e7a5f237a252f92b7669ca13}
+
+\item 
+const uint8\+\_\+t {\bfseries I\+N\+C\+O\+R\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+ET} = 1\hypertarget{_wasp_s_x1272_8h_a321e182a3d1845062b2db839f692e34a}{}\label{_wasp_s_x1272_8h_a321e182a3d1845062b2db839f692e34a}
+
+\item 
+\hyperlink{class_wasp_s_x1272}{Wasp\+S\+X1272} {\bfseries sx1272}\hypertarget{_wasp_s_x1272_8h_a2fd29fefa5082f562df1f2c87ba9bee4}{}\label{_wasp_s_x1272_8h_a2fd29fefa5082f562df1f2c87ba9bee4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing Semtech modules. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+2 Design\+: David Gascón Implementation\+: Covadonga Albiñana, Yuri Carmona 
+
+\subsection{Variable Documentation}
+\index{Wasp\+S\+X1272.\+h@{Wasp\+S\+X1272.\+h}!Signal\+Bw\+Log@{Signal\+Bw\+Log}}
+\index{Signal\+Bw\+Log@{Signal\+Bw\+Log}!Wasp\+S\+X1272.\+h@{Wasp\+S\+X1272.\+h}}
+\subsubsection[{\texorpdfstring{Signal\+Bw\+Log}{SignalBwLog}}]{\setlength{\rightskip}{0pt plus 5cm}const double Signal\+Bw\+Log\mbox{[}$\,$\mbox{]}}\hypertarget{_wasp_s_x1272_8h_ac96e1e7bdcffe296d36ab75329aa2025}{}\label{_wasp_s_x1272_8h_ac96e1e7bdcffe296d36ab75329aa2025}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\{
+    5.0969100130080564143587833158265,
+    5.397940008672037609572522210551,
+    5.6989700043360188047862611052755
+\}
+\end{DoxyCode}

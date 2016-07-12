@@ -1,0 +1,60 @@
+\hypertarget{structfat32__fsinfo}{}\section{fat32\+\_\+fsinfo Struct Reference}
+\label{structfat32__fsinfo}\index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+
+
+F\+S\+I\+N\+FO sector for a F\+A\+T32 volume.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Fat\+Structs.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structfat32__fsinfo_aa8ee056cc1beb1355e15610c1beba5e3}{lead\+Signature}
+\item 
+uint8\+\_\+t \hyperlink{structfat32__fsinfo_ac24bd4801a60a54e5133ed1bb71bcdaa}{reserved1} \mbox{[}480\mbox{]}
+\item 
+uint32\+\_\+t \hyperlink{structfat32__fsinfo_aa4a9ed657a0f58a7a1c75760c3a79fd4}{struct\+Signature}
+\item 
+uint32\+\_\+t \hyperlink{structfat32__fsinfo_a6c2d84388c0a38a74f7682fd602492c7}{free\+Count}
+\item 
+uint32\+\_\+t \hyperlink{structfat32__fsinfo_a539b3bb0a2ead9df417df9ac8b6b1606}{next\+Free}
+\item 
+uint8\+\_\+t \hyperlink{structfat32__fsinfo_a9ec0e2756cd7e169268798a558df3814}{reserved2} \mbox{[}12\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{structfat32__fsinfo_a484dd16425e4e687dc914d12309470e0}{tail\+Signature} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+S\+I\+N\+FO sector for a F\+A\+T32 volume. 
+
+\subsection{Member Data Documentation}
+\index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!free\+Count@{free\+Count}}
+\index{free\+Count@{free\+Count}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{free\+Count}{freeCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat32\+\_\+fsinfo\+::free\+Count}\hypertarget{structfat32__fsinfo_a6c2d84388c0a38a74f7682fd602492c7}{}\label{structfat32__fsinfo_a6c2d84388c0a38a74f7682fd602492c7}
+Contains the last known free cluster count on the volume. If the value is 0x\+F\+F\+F\+F\+F\+F\+FF, then the free count is unknown and must be computed. Any other value can be used, but is not necessarily correct. It should be range checked at least to make sure it is $<$= volume cluster count. \index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!lead\+Signature@{lead\+Signature}}
+\index{lead\+Signature@{lead\+Signature}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{lead\+Signature}{leadSignature}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat32\+\_\+fsinfo\+::lead\+Signature}\hypertarget{structfat32__fsinfo_aa8ee056cc1beb1355e15610c1beba5e3}{}\label{structfat32__fsinfo_aa8ee056cc1beb1355e15610c1beba5e3}
+must be 0\+X52, 0\+X52, 0\+X61, 0\+X41 \index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!next\+Free@{next\+Free}}
+\index{next\+Free@{next\+Free}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{next\+Free}{nextFree}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat32\+\_\+fsinfo\+::next\+Free}\hypertarget{structfat32__fsinfo_a539b3bb0a2ead9df417df9ac8b6b1606}{}\label{structfat32__fsinfo_a539b3bb0a2ead9df417df9ac8b6b1606}
+This is a hint for the F\+AT driver. It indicates the cluster number at which the driver should start looking for free clusters. If the value is 0x\+F\+F\+F\+F\+F\+F\+FF, then there is no hint and the driver should start looking at cluster 2. \index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!reserved1@{reserved1}}
+\index{reserved1@{reserved1}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{reserved1}{reserved1}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat32\+\_\+fsinfo\+::reserved1\mbox{[}480\mbox{]}}\hypertarget{structfat32__fsinfo_ac24bd4801a60a54e5133ed1bb71bcdaa}{}\label{structfat32__fsinfo_ac24bd4801a60a54e5133ed1bb71bcdaa}
+must be zero \index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!reserved2@{reserved2}}
+\index{reserved2@{reserved2}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{reserved2}{reserved2}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat32\+\_\+fsinfo\+::reserved2\mbox{[}12\mbox{]}}\hypertarget{structfat32__fsinfo_a9ec0e2756cd7e169268798a558df3814}{}\label{structfat32__fsinfo_a9ec0e2756cd7e169268798a558df3814}
+must be zero \index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!struct\+Signature@{struct\+Signature}}
+\index{struct\+Signature@{struct\+Signature}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{struct\+Signature}{structSignature}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat32\+\_\+fsinfo\+::struct\+Signature}\hypertarget{structfat32__fsinfo_aa4a9ed657a0f58a7a1c75760c3a79fd4}{}\label{structfat32__fsinfo_aa4a9ed657a0f58a7a1c75760c3a79fd4}
+must be 0\+X72, 0\+X72, 0\+X41, 0\+X61 \index{fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}!tail\+Signature@{tail\+Signature}}
+\index{tail\+Signature@{tail\+Signature}!fat32\+\_\+fsinfo@{fat32\+\_\+fsinfo}}
+\subsubsection[{\texorpdfstring{tail\+Signature}{tailSignature}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat32\+\_\+fsinfo\+::tail\+Signature\mbox{[}4\mbox{]}}\hypertarget{structfat32__fsinfo_a484dd16425e4e687dc914d12309470e0}{}\label{structfat32__fsinfo_a484dd16425e4e687dc914d12309470e0}
+must be 0\+X00, 0\+X00, 0\+X55, 0\+X\+AA 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_fat_structs_8h}{Sd\+Fat\+Structs.\+h}\end{DoxyCompactItemize}

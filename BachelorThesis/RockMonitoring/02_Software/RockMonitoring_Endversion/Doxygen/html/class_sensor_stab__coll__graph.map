@@ -1,0 +1,11 @@
+<map id="SensorStab" name="SensorStab">
+<area shape="rect" id="node2" href="$class_lora.html" title="Class that is used to initialize and communicate between Gateway and Sensornode via LoRa..." alt="" coords="202,451,365,763"/>
+<area shape="rect" id="node4" href="$struct_sensors_1_1struct_sensors.html" title="{Sensors::structSensors\n|+ sensTemp1\l+ sensTemp2\l+ sensTemp3\l+ extension\l+ sensorNodeId\l+ batteryLevel\l|}" alt="" coords="18,199,176,350"/>
+<area shape="rect" id="node6" href="$struct_f_x_l_s8471_q_1_1struct_pitch_roll.html" title="{FXLS8471Q::structPitchRoll\n|+ pitch\l+ roll\l|}" alt="" coords="5,6,189,98"/>
+<area shape="rect" id="node8" href="$struct_lora_1_1lora_settings.html" title="{Lora::loraSettings\n|+ channel\l+ mode\l+ nodeId\l+ packetLength\l+ header\l+ power\l+ crc\l|}" alt="" coords="222,192,345,357"/>
+<area shape="rect" id="node11" href="$class_leds.html" title="Class that handles the Leds. " alt="" coords="390,495,572,719"/>
+<area shape="rect" id="node13" href="$class_sensors.html" title="Class that handles sensors. " alt="" coords="597,502,741,711"/>
+<area shape="rect" id="node15" href="$class_p_c_t2075.html" title="Class that handles the communication to the temperature sensor PCT2075. " alt="" coords="545,214,649,335"/>
+<area shape="rect" id="node17" href="$class_f_x_l_s8471_q.html" title="Class that handles the communication to the Accelerometer FXLS8471Q. " alt="" coords="674,207,808,343"/>
+<area shape="rect" id="node19" href="$class_connection3_g.html" title="Class that handles the communication over 3G. " alt="" coords="766,531,908,682"/>
+</map>

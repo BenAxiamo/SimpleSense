@@ -1,0 +1,391 @@
+\hypertarget{class_wasp_p_w_r}{}\section{Wasp\+P\+WR Class Reference}
+\label{class_wasp_p_w_r}\index{Wasp\+P\+WR@{Wasp\+P\+WR}}
+
+
+\hyperlink{class_wasp_p_w_r}{Wasp\+P\+WR} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+P\+W\+R.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_p_w_r_a353f999c1152f9bc9bb71ac0b9745c61}{Wasp\+P\+WR} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_ad7bd7321ba187fb141ac5798709a88ae}{set\+Sensor\+Power} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF 3\+V3 or 5V switches. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_a4024f9714103d955a0ca20b7b0977315}{set\+Watchdog} (uint8\+\_\+t mode, uint8\+\_\+t timer)
+\begin{DoxyCompactList}\small\item\em It enables or disables watchdog interruption. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_a270674b3518448624b5b48ceaea5c734}{switches\+O\+FF} (uint8\+\_\+t option)
+\begin{DoxyCompactList}\small\item\em It switches off the specified Waspmote switches. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_aaca804d8d62c6b1a2c97191d53d646cc}{switches\+ON} (uint8\+\_\+t option)
+\begin{DoxyCompactList}\small\item\em It switches on the specified Waspmote switches. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_abba7c7f0a1099e6de71cbf63a2bf7dad}{sleep} (uint8\+\_\+t option)
+\begin{DoxyCompactList}\small\item\em It sets the microcontroller to the lowest consumption sleep mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_a5d92c2316e9d250359f681cba941807c}{sleep} (uint8\+\_\+t timer, uint8\+\_\+t option)
+\item 
+void \hyperlink{class_wasp_p_w_r_aab824e09a93206bea929cb27811144a0}{deep\+Sleep} (const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option)
+\item 
+void \hyperlink{class_wasp_p_w_r_a13a34c3cebd7f42fd23d0e1202f6735f}{hibernate} (const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It switches off the general switch enabling R\+TC interruption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_p_w_r_a7f9144cbe45b6d35b582d23cc8337767}{get\+Battery\+Level} ()
+\begin{DoxyCompactList}\small\item\em It gets the remaining battery \%. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_p_w_r_ab5644b897b5e12cba165c4d200c82341}{get\+Battery\+Volts} ()
+\begin{DoxyCompactList}\small\item\em It gets the remaining battery in volts. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_aac6b9ee2752e69995db3dd65d1c7e29b}{close\+I2C} ()
+\begin{DoxyCompactList}\small\item\em It closes I2C bus. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_a115f4a85bf4c1ce9b5bb46153a078e4b}{if\+Hibernate} ()
+\begin{DoxyCompactList}\small\item\em It checks if Hibernate has generated the reset. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_a6cd2a849cbdeb7a525b39da989cf0283}{reboot} ()
+\begin{DoxyCompactList}\small\item\em It restarts Waspmote. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_aefed3fd8e97164117415b18b475fca61}{clear\+Interruption\+Pin} ()
+\begin{DoxyCompactList}\small\item\em It cleans the interruption signal. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_p_w_r_a13d4ee1bab7f75051d261cb34835c242}{print\+Int\+Flag} ()
+\begin{DoxyCompactList}\small\item\em It prints the \textquotesingle{}int\+Flag\textquotesingle{} bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries I\+P\+RA}\hypertarget{class_wasp_p_w_r_aec0100e8fa45adad6399e75cfaa3ab56}{}\label{class_wasp_p_w_r_aec0100e8fa45adad6399e75cfaa3ab56}
+
+\item 
+uint8\+\_\+t {\bfseries I\+P\+RB}\hypertarget{class_wasp_p_w_r_ace0eaf3896fac24ab1e328ec6cf97732}{}\label{class_wasp_p_w_r_ace0eaf3896fac24ab1e328ec6cf97732}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_p_w_r}{Wasp\+P\+WR} Class. 
+
+\hyperlink{class_wasp_p_w_r}{Wasp\+P\+WR} Class defines all the variables and functions used for managing Waspmote Energy and Power Modes 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{Wasp\+P\+W\+R()}{WaspPWR()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+P\+W\+R\+::\+Wasp\+P\+WR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a353f999c1152f9bc9bb71ac0b9745c61}{}\label{class_wasp_p_w_r_a353f999c1152f9bc9bb71ac0b9745c61}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!clear\+Interruption\+Pin@{clear\+Interruption\+Pin}}
+\index{clear\+Interruption\+Pin@{clear\+Interruption\+Pin}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{clear\+Interruption\+Pin()}{clearInterruptionPin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::clear\+Interruption\+Pin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_aefed3fd8e97164117415b18b475fca61}{}\label{class_wasp_p_w_r_aefed3fd8e97164117415b18b475fca61}
+
+
+It cleans the interruption signal. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!close\+I2C@{close\+I2C}}
+\index{close\+I2C@{close\+I2C}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{close\+I2\+C()}{closeI2C()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::close\+I2C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_aac6b9ee2752e69995db3dd65d1c7e29b}{}\label{class_wasp_p_w_r_aac6b9ee2752e69995db3dd65d1c7e29b}
+
+
+It closes I2C bus. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!deep\+Sleep@{deep\+Sleep}}
+\index{deep\+Sleep@{deep\+Sleep}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{deep\+Sleep(const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option)}{deepSleep(const char *time2wake, uint8_t offset, uint8_t mode, uint8_t option)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::deep\+Sleep (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time2wake, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_aab824e09a93206bea929cb27811144a0}{}\label{class_wasp_p_w_r_aab824e09a93206bea929cb27811144a0}
+It sets the microcontroller to the lowest consumption sleep mode enabling R\+TC interruption
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time2wake \+: string that indicates the time to wake up. It looks like \char`\"{}dd\+:hh\+:mm\+:ss\char`\"{} \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4 or R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5 \\
+\hline
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_p_w_r_abba7c7f0a1099e6de71cbf63a2bf7dad}{sleep(uint8\+\_\+t option)} 
+
+\hyperlink{class_wasp_p_w_r_a5d92c2316e9d250359f681cba941807c}{sleep(uint8\+\_\+t timer, uint8\+\_\+t option)} 
+
+\hyperlink{class_wasp_p_w_r_a13a34c3cebd7f42fd23d0e1202f6735f}{hibernate(const char$\ast$ time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode)} 
+\end{DoxySeeAlso}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!get\+Battery\+Level@{get\+Battery\+Level}}
+\index{get\+Battery\+Level@{get\+Battery\+Level}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{get\+Battery\+Level()}{getBatteryLevel()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+P\+W\+R\+::get\+Battery\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a7f9144cbe45b6d35b582d23cc8337767}{}\label{class_wasp_p_w_r_a7f9144cbe45b6d35b582d23cc8337767}
+
+
+It gets the remaining battery \%. 
+
+\begin{DoxyReturn}{Returns}
+the remaining battery \% 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!get\+Battery\+Volts@{get\+Battery\+Volts}}
+\index{get\+Battery\+Volts@{get\+Battery\+Volts}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{get\+Battery\+Volts()}{getBatteryVolts()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+P\+W\+R\+::get\+Battery\+Volts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_ab5644b897b5e12cba165c4d200c82341}{}\label{class_wasp_p_w_r_ab5644b897b5e12cba165c4d200c82341}
+
+
+It gets the remaining battery in volts. 
+
+\begin{DoxyReturn}{Returns}
+the remaining battery in volts \% 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!hibernate@{hibernate}}
+\index{hibernate@{hibernate}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{hibernate(const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode)}{hibernate(const char *time2wake, uint8_t offset, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::hibernate (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time2wake, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a13a34c3cebd7f42fd23d0e1202f6735f}{}\label{class_wasp_p_w_r_a13a34c3cebd7f42fd23d0e1202f6735f}
+
+
+It switches off the general switch enabling R\+TC interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time2wake \+: string that indicates the time to wake up. It looks like \char`\"{}dd\+:hh\+:mm\+:ss\char`\"{} \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4 or R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_p_w_r_abba7c7f0a1099e6de71cbf63a2bf7dad}{sleep(uint8\+\_\+t option)} 
+
+\hyperlink{class_wasp_p_w_r_a5d92c2316e9d250359f681cba941807c}{sleep(uint8\+\_\+t timer, uint8\+\_\+t option)} 
+
+\hyperlink{class_wasp_p_w_r_aab824e09a93206bea929cb27811144a0}{deep\+Sleep(const char$\ast$ time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option)} 
+\end{DoxySeeAlso}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!if\+Hibernate@{if\+Hibernate}}
+\index{if\+Hibernate@{if\+Hibernate}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{if\+Hibernate()}{ifHibernate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::if\+Hibernate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a115f4a85bf4c1ce9b5bb46153a078e4b}{}\label{class_wasp_p_w_r_a115f4a85bf4c1ce9b5bb46153a078e4b}
+
+
+It checks if Hibernate has generated the reset. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!print\+Int\+Flag@{print\+Int\+Flag}}
+\index{print\+Int\+Flag@{print\+Int\+Flag}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{print\+Int\+Flag()}{printIntFlag()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::print\+Int\+Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a13d4ee1bab7f75051d261cb34835c242}{}\label{class_wasp_p_w_r_a13d4ee1bab7f75051d261cb34835c242}
+
+
+It prints the \textquotesingle{}int\+Flag\textquotesingle{} bitmap. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!reboot@{reboot}}
+\index{reboot@{reboot}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{reboot()}{reboot()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::reboot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a6cd2a849cbdeb7a525b39da989cf0283}{}\label{class_wasp_p_w_r_a6cd2a849cbdeb7a525b39da989cf0283}
+
+
+It restarts Waspmote. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!set\+Sensor\+Power@{set\+Sensor\+Power}}
+\index{set\+Sensor\+Power@{set\+Sensor\+Power}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{set\+Sensor\+Power(uint8\+\_\+t type, uint8\+\_\+t mode)}{setSensorPower(uint8_t type, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::set\+Sensor\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{type, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_ad7bd7321ba187fb141ac5798709a88ae}{}\label{class_wasp_p_w_r_ad7bd7321ba187fb141ac5798709a88ae}
+
+
+It sets O\+N/\+O\+FF 3\+V3 or 5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & type \+: S\+E\+N\+S\+\_\+3\+V3 or S\+E\+N\+S\+\_\+5V \\
+\hline
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!set\+Watchdog@{set\+Watchdog}}
+\index{set\+Watchdog@{set\+Watchdog}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{set\+Watchdog(uint8\+\_\+t mode, uint8\+\_\+t timer)}{setWatchdog(uint8_t mode, uint8_t timer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::set\+Watchdog (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{timer}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a4024f9714103d955a0ca20b7b0977315}{}\label{class_wasp_p_w_r_a4024f9714103d955a0ca20b7b0977315}
+
+
+It enables or disables watchdog interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: W\+T\+D\+\_\+\+ON or W\+T\+D\+\_\+\+O\+FF \\
+\hline
+{\em uint8\+\_\+t} & timer \+: W\+T\+D\+\_\+16\+MS, W\+T\+D\+\_\+32\+MS, W\+T\+D\+\_\+64\+MS, W\+T\+D\+\_\+128\+MS, W\+T\+D\+\_\+250\+MS, W\+T\+D\+\_\+500\+MS, W\+T\+D\+\_\+1S, W\+T\+D\+\_\+2S, W\+T\+D\+\_\+4S or W\+T\+D\+\_\+8S \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!sleep@{sleep}}
+\index{sleep@{sleep}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{sleep(uint8\+\_\+t option)}{sleep(uint8_t option)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::sleep (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_abba7c7f0a1099e6de71cbf63a2bf7dad}{}\label{class_wasp_p_w_r_abba7c7f0a1099e6de71cbf63a2bf7dad}
+
+
+It sets the microcontroller to the lowest consumption sleep mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_p_w_r_a5d92c2316e9d250359f681cba941807c}{sleep(uint8\+\_\+t timer, uint8\+\_\+t option)}, \hyperlink{class_wasp_p_w_r_aab824e09a93206bea929cb27811144a0}{deep\+Sleep}(const char$\ast$ time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option), \hyperlink{class_wasp_p_w_r_a13a34c3cebd7f42fd23d0e1202f6735f}{hibernate(const char$\ast$ time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode)} 
+\end{DoxySeeAlso}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!sleep@{sleep}}
+\index{sleep@{sleep}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{sleep(uint8\+\_\+t timer, uint8\+\_\+t option)}{sleep(uint8_t timer, uint8_t option)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::sleep (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{timer, }
+\item[{uint8\+\_\+t}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a5d92c2316e9d250359f681cba941807c}{}\label{class_wasp_p_w_r_a5d92c2316e9d250359f681cba941807c}
+It sets the microcontroller to the lowest consumption sleep mode enabling the watchdog
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & timer \+: W\+T\+D\+\_\+16\+MS, W\+T\+D\+\_\+32\+MS, W\+T\+D\+\_\+64\+MS, W\+T\+D\+\_\+128\+MS, W\+T\+D\+\_\+250\+MS, W\+T\+D\+\_\+500\+MS, W\+T\+D\+\_\+1S, W\+T\+D\+\_\+2S, W\+T\+D\+\_\+4S or W\+T\+D\+\_\+8S \\
+\hline
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_p_w_r_abba7c7f0a1099e6de71cbf63a2bf7dad}{sleep(uint8\+\_\+t option)} 
+
+\hyperlink{class_wasp_p_w_r_aab824e09a93206bea929cb27811144a0}{deep\+Sleep(const char$\ast$ time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option)} 
+
+\hyperlink{class_wasp_p_w_r_a13a34c3cebd7f42fd23d0e1202f6735f}{hibernate(const char$\ast$ time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode)} 
+\end{DoxySeeAlso}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!switches\+O\+FF@{switches\+O\+FF}}
+\index{switches\+O\+FF@{switches\+O\+FF}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{switches\+O\+F\+F(uint8\+\_\+t option)}{switchesOFF(uint8_t option)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::switches\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_a270674b3518448624b5b48ceaea5c734}{}\label{class_wasp_p_w_r_a270674b3518448624b5b48ceaea5c734}
+
+
+It switches off the specified Waspmote switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_p_w_r_aaca804d8d62c6b1a2c97191d53d646cc}{switches\+O\+N(uint8\+\_\+t option)} 
+\end{DoxySeeAlso}
+\index{Wasp\+P\+WR@{Wasp\+P\+WR}!switches\+ON@{switches\+ON}}
+\index{switches\+ON@{switches\+ON}!Wasp\+P\+WR@{Wasp\+P\+WR}}
+\subsubsection[{\texorpdfstring{switches\+O\+N(uint8\+\_\+t option)}{switchesON(uint8_t option)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+P\+W\+R\+::switches\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_p_w_r_aaca804d8d62c6b1a2c97191d53d646cc}{}\label{class_wasp_p_w_r_aaca804d8d62c6b1a2c97191d53d646cc}
+
+
+It switches on the specified Waspmote switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_p_w_r_a270674b3518448624b5b48ceaea5c734}{switches\+O\+F\+F(uint8\+\_\+t option)} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_p_w_r_8h}{Wasp\+P\+W\+R.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+P\+W\+R.\+cpp\end{DoxyCompactItemize}

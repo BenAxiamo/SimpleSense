@@ -1,0 +1,5 @@
+<map id="Lora" name="Lora">
+<area shape="rect" id="node2" href="$struct_sensors_1_1struct_sensors.html" title="{Sensors::structSensors\n|+ sensTemp1\l+ sensTemp2\l+ sensTemp3\l+ extension\l+ sensorNodeId\l+ batteryLevel\l|}" alt="" coords="18,199,176,350"/>
+<area shape="rect" id="node4" href="$struct_f_x_l_s8471_q_1_1struct_pitch_roll.html" title="{FXLS8471Q::structPitchRoll\n|+ pitch\l+ roll\l|}" alt="" coords="5,6,189,98"/>
+<area shape="rect" id="node6" href="$struct_lora_1_1lora_settings.html" title="{Lora::loraSettings\n|+ channel\l+ mode\l+ nodeId\l+ packetLength\l+ header\l+ power\l+ crc\l|}" alt="" coords="201,192,324,357"/>
+</map>

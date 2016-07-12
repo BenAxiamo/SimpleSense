@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=DSCL_P Pin=X2-3
+Removed Pin From Net: NetName=DSCL_N Pin=X2-5
+Added Pin To Net: NetName=DSCL_N Pin=X2-3
+Added Pin To Net: NetName=DSCL_P Pin=X2-5

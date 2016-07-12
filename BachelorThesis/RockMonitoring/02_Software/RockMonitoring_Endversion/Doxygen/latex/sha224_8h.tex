@@ -1,0 +1,181 @@
+\hypertarget{sha224_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha224.h File Reference}
+\label{sha224_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha224.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha224.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}sha2\+\_\+small\+\_\+common.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sha224_8h_ae6502cc180d34c6c61733f7ec2e4d043}{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}~224
+\item 
+\#define \hyperlink{sha224_8h_a25bdefa4a67379b909a86711d151e387}{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}~(\hyperlink{sha224_8h_ae6502cc180d34c6c61733f7ec2e4d043}{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}/8)
+\item 
+\#define \hyperlink{sha224_8h_af159ce37c290fcbfc0520a27afc949b5}{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}~512
+\item 
+\#define \hyperlink{sha224_8h_ae88d48c8225a3490d530c8611b445aec}{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}~(\hyperlink{sha224_8h_af159ce37c290fcbfc0520a27afc949b5}{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}/8)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structsha2__small__common__ctx__t}{sha2\+\_\+small\+\_\+common\+\_\+ctx\+\_\+t} \hyperlink{sha224_8h_a228a9874adeff0356b6090787517b92e}{sha224\+\_\+ctx\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+H\+A-\/224 context type. \end{DoxyCompactList}\item 
+typedef uint8\+\_\+t {\bfseries sha224\+\_\+hash\+\_\+t}\mbox{[}\hyperlink{sha224_8h_ae6502cc180d34c6c61733f7ec2e4d043}{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}/8\mbox{]}\hypertarget{sha224_8h_a00fd05ec54e8b7b2183a8cee5442180b}{}\label{sha224_8h_a00fd05ec54e8b7b2183a8cee5442180b}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sha224_8h_a751b051db738c5cc9b866182cf0f3dc4}{sha224\+\_\+init} (\hyperlink{sha224_8h_a228a9874adeff0356b6090787517b92e}{sha224\+\_\+ctx\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em {\ttfamily sh224\+\_\+init} initialises a sha224 context for hashing. {\ttfamily sh224\+\_\+init} c initialises the given sha224 context for hashing \end{DoxyCompactList}\item 
+void \hyperlink{sha224_8h_aa445d0fea5b9333775fe2f5922bde7ab}{sha224\+\_\+next\+Block} (\hyperlink{sha224_8h_a228a9874adeff0356b6090787517b92e}{sha224\+\_\+ctx\+\_\+t} $\ast$state, const void $\ast$block)
+\begin{DoxyCompactList}\small\item\em update the context with a given block \end{DoxyCompactList}\item 
+void \hyperlink{sha224_8h_aa8d647ca6dd16b32c0e3bad98eae3e9a}{sha224\+\_\+last\+Block} (\hyperlink{sha224_8h_a228a9874adeff0356b6090787517b92e}{sha224\+\_\+ctx\+\_\+t} $\ast$state, const void $\ast$block, uint16\+\_\+t length\+\_\+b)
+\begin{DoxyCompactList}\small\item\em finalize the context with the given block \end{DoxyCompactList}\item 
+void \hyperlink{sha224_8h_aa4dc51c1af783db7968ccb6fa48d08cc}{sha224\+\_\+ctx2hash} (sha224\+\_\+hash\+\_\+t $\ast$dest, const \hyperlink{sha224_8h_a228a9874adeff0356b6090787517b92e}{sha224\+\_\+ctx\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em convert the hash state into the hash value This function reads the context and writes the hash value to the destination \end{DoxyCompactList}\item 
+void \hyperlink{sha224_8h_add7c5a37f9f1cbd5759de3029ed2ff74}{sha224\+\_\+1} (sha224\+\_\+hash\+\_\+t $\ast$dest, const void $\ast$msg, uint32\+\_\+t length\+\_\+b)
+\begin{DoxyCompactList}\small\item\em function to process the last block being hashed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Daniel Otte 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2011-\/10-\/11  G\+P\+Lv3 or later 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{sha224.\+h@{sha224.\+h}!S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS@{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}}
+\index{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS@{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}{SHA224_BLOCK_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS~512}\hypertarget{sha224_8h_af159ce37c290fcbfc0520a27afc949b5}{}\label{sha224_8h_af159ce37c290fcbfc0520a27afc949b5}
+defines the size of a S\+H\+A-\/224 input block in bits \index{sha224.\+h@{sha224.\+h}!S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES@{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}}
+\index{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES@{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}{SHA224_BLOCK_BYTES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES~({\bf S\+H\+A224\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}/8)}\hypertarget{sha224_8h_ae88d48c8225a3490d530c8611b445aec}{}\label{sha224_8h_ae88d48c8225a3490d530c8611b445aec}
+defines the size of a S\+H\+A-\/224 input block in bytes \index{sha224.\+h@{sha224.\+h}!S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS@{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}}
+\index{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS@{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}{SHA224_HASH_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS~224}\hypertarget{sha224_8h_ae6502cc180d34c6c61733f7ec2e4d043}{}\label{sha224_8h_ae6502cc180d34c6c61733f7ec2e4d043}
+defines the size of a S\+H\+A-\/224 hash value in bits \index{sha224.\+h@{sha224.\+h}!S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES@{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}}
+\index{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES@{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}{SHA224_HASH_BYTES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES~({\bf S\+H\+A224\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}/8)}\hypertarget{sha224_8h_a25bdefa4a67379b909a86711d151e387}{}\label{sha224_8h_a25bdefa4a67379b909a86711d151e387}
+defines the size of a S\+H\+A-\/224 hash value in bytes 
+
+\subsection{Typedef Documentation}
+\index{sha224.\+h@{sha224.\+h}!sha224\+\_\+ctx\+\_\+t@{sha224\+\_\+ctx\+\_\+t}}
+\index{sha224\+\_\+ctx\+\_\+t@{sha224\+\_\+ctx\+\_\+t}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{sha224\+\_\+ctx\+\_\+t}{sha224_ctx_t}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sha224\+\_\+ctx\+\_\+t}}\hypertarget{sha224_8h_a228a9874adeff0356b6090787517b92e}{}\label{sha224_8h_a228a9874adeff0356b6090787517b92e}
+
+
+S\+H\+A-\/224 context type. 
+
+A variable of this type may hold the state of a S\+H\+A-\/224 hashing process 
+
+\subsection{Function Documentation}
+\index{sha224.\+h@{sha224.\+h}!sha224\+\_\+1@{sha224\+\_\+1}}
+\index{sha224\+\_\+1@{sha224\+\_\+1}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{sha224\+\_\+1(sha224\+\_\+hash\+\_\+t $\ast$dest, const void $\ast$msg, uint32\+\_\+t length\+\_\+b)}{sha224_1(sha224_hash_t *dest, const void *msg, uint32_t length_b)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha224\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{sha224\+\_\+hash\+\_\+t $\ast$}]{dest, }
+\item[{const void $\ast$}]{msg, }
+\item[{uint32\+\_\+t}]{length\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{sha224_8h_add7c5a37f9f1cbd5759de3029ed2ff74}{}\label{sha224_8h_add7c5a37f9f1cbd5759de3029ed2ff74}
+
+
+function to process the last block being hashed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the context in which this block should be processed. \\
+\hline
+{\em block} & Pointer to the message wich should be hashed. \\
+\hline
+{\em length} & is the length of only T\+H\+IS block in B\+I\+TS not in bytes! bits are big endian, meaning high bits come first. if you have a message with bits at the end, the byte must be padded with zeros \\
+\hline
+\end{DoxyParams}
+\index{sha224.\+h@{sha224.\+h}!sha224\+\_\+ctx2hash@{sha224\+\_\+ctx2hash}}
+\index{sha224\+\_\+ctx2hash@{sha224\+\_\+ctx2hash}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{sha224\+\_\+ctx2hash(sha224\+\_\+hash\+\_\+t $\ast$dest, const sha224\+\_\+ctx\+\_\+t $\ast$state)}{sha224_ctx2hash(sha224_hash_t *dest, const sha224_ctx_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha224\+\_\+ctx2hash (
+\begin{DoxyParamCaption}
+\item[{sha224\+\_\+hash\+\_\+t $\ast$}]{dest, }
+\item[{const {\bf sha224\+\_\+ctx\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{sha224_8h_aa4dc51c1af783db7968ccb6fa48d08cc}{}\label{sha224_8h_aa4dc51c1af783db7968ccb6fa48d08cc}
+
+
+convert the hash state into the hash value This function reads the context and writes the hash value to the destination 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & pointer to the location where the hash value should be written \\
+\hline
+{\em state} & pointer to the S\+H\+A-\/224 hash context \\
+\hline
+\end{DoxyParams}
+\index{sha224.\+h@{sha224.\+h}!sha224\+\_\+init@{sha224\+\_\+init}}
+\index{sha224\+\_\+init@{sha224\+\_\+init}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{sha224\+\_\+init(sha224\+\_\+ctx\+\_\+t $\ast$state)}{sha224_init(sha224_ctx_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha224\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf sha224\+\_\+ctx\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{sha224_8h_a751b051db738c5cc9b866182cf0f3dc4}{}\label{sha224_8h_a751b051db738c5cc9b866182cf0f3dc4}
+
+
+{\ttfamily sh224\+\_\+init} initialises a sha224 context for hashing. {\ttfamily sh224\+\_\+init} c initialises the given sha224 context for hashing 
+
+initialize a S\+H\+A-\/224 context
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to a sha224 context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+This function sets a \hyperlink{sha224_8h_a228a9874adeff0356b6090787517b92e}{sha224\+\_\+ctx\+\_\+t} to the initial values for hashing. 
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/224 hashing context \\
+\hline
+\end{DoxyParams}
+\index{sha224.\+h@{sha224.\+h}!sha224\+\_\+last\+Block@{sha224\+\_\+last\+Block}}
+\index{sha224\+\_\+last\+Block@{sha224\+\_\+last\+Block}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{sha224\+\_\+last\+Block(sha224\+\_\+ctx\+\_\+t $\ast$state, const void $\ast$block, uint16\+\_\+t length\+\_\+b)}{sha224_lastBlock(sha224_ctx_t *state, const void *block, uint16_t length_b)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha224\+\_\+last\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf sha224\+\_\+ctx\+\_\+t} $\ast$}]{state, }
+\item[{const void $\ast$}]{block, }
+\item[{uint16\+\_\+t}]{length\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{sha224_8h_aa8d647ca6dd16b32c0e3bad98eae3e9a}{}\label{sha224_8h_aa8d647ca6dd16b32c0e3bad98eae3e9a}
+
+
+finalize the context with the given block 
+
+This function finalizes the S\+H\+A-\/224 hash context by processing the given block of variable length. 
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/224 hash context \\
+\hline
+{\em block} & pointer to the block of fixed length (512 bit = 64 byte) \\
+\hline
+{\em length\+\_\+b} & the length of the block in bits \\
+\hline
+\end{DoxyParams}
+\index{sha224.\+h@{sha224.\+h}!sha224\+\_\+next\+Block@{sha224\+\_\+next\+Block}}
+\index{sha224\+\_\+next\+Block@{sha224\+\_\+next\+Block}!sha224.\+h@{sha224.\+h}}
+\subsubsection[{\texorpdfstring{sha224\+\_\+next\+Block(sha224\+\_\+ctx\+\_\+t $\ast$state, const void $\ast$block)}{sha224_nextBlock(sha224_ctx_t *state, const void *block)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha224\+\_\+next\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf sha224\+\_\+ctx\+\_\+t} $\ast$}]{state, }
+\item[{const void $\ast$}]{block}
+\end{DoxyParamCaption}
+)}\hypertarget{sha224_8h_aa445d0fea5b9333775fe2f5922bde7ab}{}\label{sha224_8h_aa445d0fea5b9333775fe2f5922bde7ab}
+
+
+update the context with a given block 
+
+This function updates the S\+H\+A-\/224 hash context by processing the given block of fixed length. 
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/224 hash context \\
+\hline
+{\em block} & pointer to the block of fixed length (512 bit = 64 byte) \\
+\hline
+\end{DoxyParams}

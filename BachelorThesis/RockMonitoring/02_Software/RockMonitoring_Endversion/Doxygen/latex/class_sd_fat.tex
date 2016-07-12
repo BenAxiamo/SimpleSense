@@ -1,0 +1,348 @@
+\hypertarget{class_sd_fat}{}\section{Sd\+Fat Class Reference}
+\label{class_sd_fat}\index{Sd\+Fat@{Sd\+Fat}}
+
+
+Integration class for the Sd\+Fat library.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Fat.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sd2_card}{Sd2\+Card} $\ast$ \hyperlink{class_sd_fat_a9a4deb665fb0140daf22c62de3ae497d}{card} ()
+\item 
+bool \hyperlink{class_sd_fat_aba234d73505354cbb105b4ad7d3524b0}{chdir} (bool set\+\_\+cwd=false)
+\item 
+bool \hyperlink{class_sd_fat_aa17f9efe90fb42543395c43804b120f0}{chdir} (const char $\ast$path, bool set\+\_\+cwd=false)
+\item 
+void \hyperlink{class_sd_fat_a1c61e5433f4734f9fb3e1426fd804494}{chvol} ()
+\item 
+void {\bfseries error\+Halt} ()\hypertarget{class_sd_fat_aaba28b5be802f623969022226e6dfd21}{}\label{class_sd_fat_aaba28b5be802f623969022226e6dfd21}
+
+\item 
+void {\bfseries error\+Halt} (char const $\ast$msg)\hypertarget{class_sd_fat_a8240ad752998c4788a9aa8fea4f6f075}{}\label{class_sd_fat_a8240ad752998c4788a9aa8fea4f6f075}
+
+\item 
+void {\bfseries error\+Print} ()\hypertarget{class_sd_fat_a1ff9f2027978d6ea5fcbd81d53378a7f}{}\label{class_sd_fat_a1ff9f2027978d6ea5fcbd81d53378a7f}
+
+\item 
+void {\bfseries error\+Print} (char const $\ast$msg)\hypertarget{class_sd_fat_a47256ec22b421d76bbf86901d47226fa}{}\label{class_sd_fat_a47256ec22b421d76bbf86901d47226fa}
+
+\item 
+bool \hyperlink{class_sd_fat_a15e97702e6a8654a86a745dc20c9ae8a}{exists} (const char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name})
+\item 
+bool \hyperlink{class_sd_fat_a94174f5a2ddb9b4672d3028849e22d1d}{begin} (uint8\+\_\+t chip\+Select\+Pin=S\+D\+\_\+\+SS, uint8\+\_\+t sck\+Divisor=\hyperlink{_sd2_card_8h_a6c091c07d1eb82a94b1c5738f720264b}{S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED})
+\item 
+void {\bfseries init\+Error\+Halt} ()\hypertarget{class_sd_fat_a6294adccc03e23e35db6488bf9ace69f}{}\label{class_sd_fat_a6294adccc03e23e35db6488bf9ace69f}
+
+\item 
+void {\bfseries init\+Error\+Halt} (char const $\ast$msg)\hypertarget{class_sd_fat_a28e8e4d72848a1024056c4b59a18fb78}{}\label{class_sd_fat_a28e8e4d72848a1024056c4b59a18fb78}
+
+\item 
+void {\bfseries init\+Error\+Print} ()\hypertarget{class_sd_fat_ae2210d3d663bd54740eddfb83bcf4473}{}\label{class_sd_fat_ae2210d3d663bd54740eddfb83bcf4473}
+
+\item 
+void {\bfseries init\+Error\+Print} (char const $\ast$msg)\hypertarget{class_sd_fat_a6ea82316a10297b53393c39034d560fb}{}\label{class_sd_fat_a6ea82316a10297b53393c39034d560fb}
+
+\item 
+void \hyperlink{class_sd_fat_a74846855ee6cd53b1716adeaf630b12c}{ls} (uint8\+\_\+t flags=0)
+\item 
+bool \hyperlink{class_sd_fat_a1fe08676296e10b4c1e30311ce35b4de}{mkdir} (const char $\ast$path, bool p\+Flag=true)
+\item 
+bool \hyperlink{class_sd_fat_affdaad4aeac6fc6d678b21c2a271d09d}{remove} (const char $\ast$path)
+\item 
+bool \hyperlink{class_sd_fat_a39afa05b07c30872b27c3d2b53b56911}{rename} (const char $\ast$old\+Path, const char $\ast$new\+Path)
+\item 
+bool \hyperlink{class_sd_fat_a9ece030794f3fb78018cfc9803a62c69}{rmdir} (const char $\ast$path)
+\item 
+bool \hyperlink{class_sd_fat_ac0c2ed27d37bdb1b50f4543253871c1e}{truncate} (const char $\ast$path, uint32\+\_\+t length)
+\item 
+\hyperlink{class_sd_volume}{Sd\+Volume} $\ast$ \hyperlink{class_sd_fat_a9fca7480532e54b828a3a31015f7c905}{vol} ()
+\item 
+\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$ \hyperlink{class_sd_fat_a7027f78e1febb655009b62d7f6c10bbb}{vwd} ()
+\item 
+void {\bfseries error\+Halt\+\_\+P} (\hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P} msg)\hypertarget{class_sd_fat_a1ddef63d71c00f49a521e8a81472fd60}{}\label{class_sd_fat_a1ddef63d71c00f49a521e8a81472fd60}
+
+\item 
+void {\bfseries error\+Print\+\_\+P} (\hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P} msg)\hypertarget{class_sd_fat_ab432c14265f396c3559e575fe3cd512b}{}\label{class_sd_fat_ab432c14265f396c3559e575fe3cd512b}
+
+\item 
+void {\bfseries init\+Error\+Halt\+\_\+P} (\hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P} msg)\hypertarget{class_sd_fat_a23599f8e6bea81f22b167b50733c5f47}{}\label{class_sd_fat_a23599f8e6bea81f22b167b50733c5f47}
+
+\item 
+void {\bfseries init\+Error\+Print\+\_\+P} (\hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P} msg)\hypertarget{class_sd_fat_adc8cd692cbba16fae572207e329e48c3}{}\label{class_sd_fat_adc8cd692cbba16fae572207e329e48c3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Integration class for the Sd\+Fat library. 
+
+\subsection{Member Function Documentation}
+\index{Sd\+Fat@{Sd\+Fat}!begin@{begin}}
+\index{begin@{begin}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{begin(uint8\+\_\+t chip\+Select\+Pin=\+S\+D\+\_\+\+S\+S, uint8\+\_\+t sck\+Divisor=\+S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+E\+D)}{begin(uint8_t chipSelectPin=SD_SS, uint8_t sckDivisor=SPI_FULL_SPEED)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::begin (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{chip\+Select\+Pin = {\ttfamily SD\+\_\+SS}, }
+\item[{uint8\+\_\+t}]{sck\+Divisor = {\ttfamily {\bf S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a94174f5a2ddb9b4672d3028849e22d1d}{}\label{class_sd_fat_a94174f5a2ddb9b4672d3028849e22d1d}
+Initialize an \hyperlink{class_sd_fat}{Sd\+Fat} object.
+
+Initializes the SD card, SD volume, and root directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em chip\+Select\+Pin} & SD chip select pin. See \hyperlink{class_sd2_card_a634eb9af523f942d01cb374de1e05d7b}{Sd2\+Card\+::init()}. \\
+\hline
+\mbox{\tt in}  & {\em sck\+Divisor} & value for S\+PI S\+CK divisor. See \hyperlink{class_sd2_card_a634eb9af523f942d01cb374de1e05d7b}{Sd2\+Card\+::init()}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!card@{card}}
+\index{card@{card}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{card()}{card()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd2\+Card}$\ast$ Sd\+Fat\+::card (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_fat_a9a4deb665fb0140daf22c62de3ae497d}{}\label{class_sd_fat_a9a4deb665fb0140daf22c62de3ae497d}
+\begin{DoxyReturn}{Returns}
+a pointer to the \hyperlink{class_sd2_card}{Sd2\+Card} object. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!chdir@{chdir}}
+\index{chdir@{chdir}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{chdir(bool set\+\_\+cwd=false)}{chdir(bool set_cwd=false)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::chdir (
+\begin{DoxyParamCaption}
+\item[{bool}]{set\+\_\+cwd = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_aba234d73505354cbb105b4ad7d3524b0}{}\label{class_sd_fat_aba234d73505354cbb105b4ad7d3524b0}
+Change a volume\textquotesingle{}s working directory to root
+
+Changes the volume\textquotesingle{}s working directory to the SD\textquotesingle{}s root directory. Optionally set the current working directory to the volume\textquotesingle{}s working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em set\+\_\+cwd} & Set the current working directory to this volume\textquotesingle{}s working directory if true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!chdir@{chdir}}
+\index{chdir@{chdir}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{chdir(const char $\ast$path, bool set\+\_\+cwd=false)}{chdir(const char *path, bool set_cwd=false)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::chdir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{bool}]{set\+\_\+cwd = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_aa17f9efe90fb42543395c43804b120f0}{}\label{class_sd_fat_aa17f9efe90fb42543395c43804b120f0}
+Change a volume\textquotesingle{}s working directory
+
+Changes the volume working directory to the {\itshape path} subdirectory. Optionally set the current working directory to the volume\textquotesingle{}s working directory.
+
+Example\+: If the volume\textquotesingle{}s working directory is \char`\"{}/\+D\+I\+R\char`\"{}, chdir(\char`\"{}\+S\+U\+B\char`\"{}) will change the volume\textquotesingle{}s working directory from \char`\"{}/\+D\+I\+R\char`\"{} to \char`\"{}/\+D\+I\+R/\+S\+U\+B\char`\"{}.
+
+If path is \char`\"{}/\char`\"{}, the volume\textquotesingle{}s working directory will be changed to the root directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & The name of the subdirectory.\\
+\hline
+\mbox{\tt in}  & {\em set\+\_\+cwd} & Set the current working directory to this volume\textquotesingle{}s working directory if true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!chvol@{chvol}}
+\index{chvol@{chvol}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{chvol()}{chvol()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Fat\+::chvol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a1c61e5433f4734f9fb3e1426fd804494}{}\label{class_sd_fat_a1c61e5433f4734f9fb3e1426fd804494}
+Set the current working directory to a volume\textquotesingle{}s working directory.
+
+This is useful with multiple SD cards.
+
+The current working directory is changed to this volume\textquotesingle{}s working directory.
+
+This is like the Windows/\+D\+OS $<$drive letter$>$\+: command. \index{Sd\+Fat@{Sd\+Fat}!exists@{exists}}
+\index{exists@{exists}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{exists(const char $\ast$name)}{exists(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::exists (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a15e97702e6a8654a86a745dc20c9ae8a}{}\label{class_sd_fat_a15e97702e6a8654a86a745dc20c9ae8a}
+Test for the existence of a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & Name of the file to be tested for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file exists else false. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!ls@{ls}}
+\index{ls@{ls}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{ls(uint8\+\_\+t flags=0)}{ls(uint8_t flags=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Fat\+::ls (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{flags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a74846855ee6cd53b1716adeaf630b12c}{}\label{class_sd_fat_a74846855ee6cd53b1716adeaf630b12c}
+List the directory contents of the volume working directory to std\+Out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flags} & The inclusive OR of\\
+\hline
+\end{DoxyParams}
+L\+S\+\_\+\+D\+A\+TE -\/ Print file modification date
+
+L\+S\+\_\+\+S\+I\+ZE -\/ Print file size.
+
+L\+S\+\_\+R -\/ Recursive list of subdirectories. \index{Sd\+Fat@{Sd\+Fat}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{mkdir(const char $\ast$path, bool p\+Flag=true)}{mkdir(const char *path, bool pFlag=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::mkdir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{bool}]{p\+Flag = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a1fe08676296e10b4c1e30311ce35b4de}{}\label{class_sd_fat_a1fe08676296e10b4c1e30311ce35b4de}
+List the directory contents of the volume working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pr} & Print stream for list.\\
+\hline
+\mbox{\tt in}  & {\em flags} & The inclusive OR of\\
+\hline
+\end{DoxyParams}
+L\+S\+\_\+\+D\+A\+TE -\/ Print file modification date
+
+L\+S\+\_\+\+S\+I\+ZE -\/ Print file size.
+
+L\+S\+\_\+R -\/ Recursive list of subdirectories. Make a subdirectory in the volume working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for the subdirectory.\\
+\hline
+\mbox{\tt in}  & {\em p\+Flag} & Create missing parent directories if true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!remove@{remove}}
+\index{remove@{remove}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{remove(const char $\ast$path)}{remove(const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::remove (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_affdaad4aeac6fc6d678b21c2a271d09d}{}\label{class_sd_fat_affdaad4aeac6fc6d678b21c2a271d09d}
+Remove a file from the volume working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!rename@{rename}}
+\index{rename@{rename}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{rename(const char $\ast$old\+Path, const char $\ast$new\+Path)}{rename(const char *oldPath, const char *newPath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::rename (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{old\+Path, }
+\item[{const char $\ast$}]{new\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a39afa05b07c30872b27c3d2b53b56911}{}\label{class_sd_fat_a39afa05b07c30872b27c3d2b53b56911}
+Rename a file or subdirectory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em old\+Path} & Path name to the file or subdirectory to be renamed.\\
+\hline
+\mbox{\tt in}  & {\em new\+Path} & New path name of the file or subdirectory.\\
+\hline
+\end{DoxyParams}
+The {\itshape new\+Path} object must not exist before the rename call.
+
+The file to be renamed must not be open. The directory entry may be moved and file system corruption could occur if the file is accessed by a file object that was opened before the \hyperlink{class_sd_fat_a39afa05b07c30872b27c3d2b53b56911}{rename()} call.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!rmdir@{rmdir}}
+\index{rmdir@{rmdir}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{rmdir(const char $\ast$path)}{rmdir(const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::rmdir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_a9ece030794f3fb78018cfc9803a62c69}{}\label{class_sd_fat_a9ece030794f3fb78018cfc9803a62c69}
+Remove a subdirectory from the volume\textquotesingle{}s working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for the subdirectory.\\
+\hline
+\end{DoxyParams}
+The subdirectory file will be removed only if it is empty.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!truncate@{truncate}}
+\index{truncate@{truncate}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{truncate(const char $\ast$path, uint32\+\_\+t length)}{truncate(const char *path, uint32_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Fat\+::truncate (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{uint32\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_fat_ac0c2ed27d37bdb1b50f4543253871c1e}{}\label{class_sd_fat_ac0c2ed27d37bdb1b50f4543253871c1e}
+Truncate a file to a specified length. The current file position will be maintained if it is less than or equal to {\itshape length} otherwise it will be set to end of file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for the file. \\
+\hline
+\mbox{\tt in}  & {\em length} & The desired length for the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include file is read only, file is a directory, {\itshape length} is greater than the current file size or an I/O error occurs. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!vol@{vol}}
+\index{vol@{vol}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{vol()}{vol()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd\+Volume}$\ast$ Sd\+Fat\+::vol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_fat_a9fca7480532e54b828a3a31015f7c905}{}\label{class_sd_fat_a9fca7480532e54b828a3a31015f7c905}
+\begin{DoxyReturn}{Returns}
+a pointer to the \hyperlink{class_sd_volume}{Sd\+Volume} object. 
+\end{DoxyReturn}
+\index{Sd\+Fat@{Sd\+Fat}!vwd@{vwd}}
+\index{vwd@{vwd}!Sd\+Fat@{Sd\+Fat}}
+\subsubsection[{\texorpdfstring{vwd()}{vwd()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd\+Base\+File}$\ast$ Sd\+Fat\+::vwd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_fat_a7027f78e1febb655009b62d7f6c10bbb}{}\label{class_sd_fat_a7027f78e1febb655009b62d7f6c10bbb}
+\begin{DoxyReturn}{Returns}
+a pointer to the volume working directory. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_fat_8h}{Sd\+Fat.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/Sd\+Fat.\+cpp\end{DoxyCompactItemize}

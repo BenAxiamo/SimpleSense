@@ -1,0 +1,203 @@
+\hypertarget{_wasp_g_p_r_s___pro__core_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core.h File Reference}
+\label{_wasp_g_p_r_s___pro__core_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core.\+h}}
+
+
+Library for managing the S\+I\+M900 module.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_g_p_r_s___pro__core}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_g_p_r_s___pro__core}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wasp_g_p_r_s___pro__core_1_1operators}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::operators}
+\begin{DoxyCompactList}\small\item\em Variable \+: struct that stores the format and the name of the operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a28a1b1e3b501d4ef3cb57d6a5558f558}{G\+S\+M\+\_\+\+F\+U\+SE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a28a1b1e3b501d4ef3cb57d6a5558f558}{}\label{_wasp_g_p_r_s___pro__core_8h_a28a1b1e3b501d4ef3cb57d6a5558f558}
+
+\begin{DoxyCompactList}\small\item\em Module fuses. \end{DoxyCompactList}\item 
+\#define {\bfseries H\+T\+T\+P\+\_\+\+F\+U\+SE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a18832ff86026d4a1ae08e0f196e915af}{}\label{_wasp_g_p_r_s___pro__core_8h_a18832ff86026d4a1ae08e0f196e915af}
+
+\item 
+\#define {\bfseries F\+T\+P\+\_\+\+F\+U\+SE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_aea29061ad53aca9174bd0de40003c369}{}\label{_wasp_g_p_r_s___pro__core_8h_aea29061ad53aca9174bd0de40003c369}
+
+\item 
+\#define {\bfseries I\+P\+\_\+\+F\+U\+SE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_ab5791d783bcba386a1c90987675a3467}{}\label{_wasp_g_p_r_s___pro__core_8h_ab5791d783bcba386a1c90987675a3467}
+
+\item 
+\#define {\bfseries O\+T\+A\+\_\+\+F\+U\+SE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_ae69152a0136348b46d343d160aa94a6d}{}\label{_wasp_g_p_r_s___pro__core_8h_ae69152a0136348b46d343d160aa94a6d}
+
+\item 
+\#define {\bfseries G\+P\+R\+S\+\_\+debug\+\_\+mode}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a71b7261a876f8a5f2c9af72a3f81cca4}{}\label{_wasp_g_p_r_s___pro__core_8h_a71b7261a876f8a5f2c9af72a3f81cca4}
+
+\item 
+\#define {\bfseries B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~300\hypertarget{_wasp_g_p_r_s___pro__core_8h_a6b20d41d6252e9871430c242cb1a56e7}{}\label{_wasp_g_p_r_s___pro__core_8h_a6b20d41d6252e9871430c242cb1a56e7}
+
+\item 
+\#define {\bfseries B\+U\+F\+F\+E\+R\+\_\+\+U\+A\+RT}~250\hypertarget{_wasp_g_p_r_s___pro__core_8h_a92141f216da7d821278aedba6f40e4fd}{}\label{_wasp_g_p_r_s___pro__core_8h_a92141f216da7d821278aedba6f40e4fd}
+
+\item 
+\#define {\bfseries A\+T\+\_\+\+G\+P\+R\+S\+\_\+\+A\+PN}~\char`\"{}A\+PN\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a63b644fdf4cea87002aef224131a7f0e}{}\label{_wasp_g_p_r_s___pro__core_8h_a63b644fdf4cea87002aef224131a7f0e}
+
+\item 
+\#define {\bfseries A\+T\+\_\+\+G\+P\+R\+S\+\_\+\+L\+O\+G\+IN}~\char`\"{}user\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a0e362c53207df4a5006c98f52ae9a0b6}{}\label{_wasp_g_p_r_s___pro__core_8h_a0e362c53207df4a5006c98f52ae9a0b6}
+
+\item 
+\#define {\bfseries A\+T\+\_\+\+G\+P\+R\+S\+\_\+\+P\+A\+S\+SW}~\char`\"{}password\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_ac1740f7f2da769ecb1ee1e9860aa0dba}{}\label{_wasp_g_p_r_s___pro__core_8h_ac1740f7f2da769ecb1ee1e9860aa0dba}
+
+\item 
+\#define {\bfseries A\+T\+\_\+\+C\+O\+M\+M\+A\+ND}~\char`\"{}AT\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a74f9ed5892151336c3b61cc6ea2acd53}{}\label{_wasp_g_p_r_s___pro__core_8h_a74f9ed5892151336c3b61cc6ea2acd53}
+
+\item 
+\#define {\bfseries O\+K\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~\char`\"{}OK\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_acc64899f20272bb50258de4d9a428df5}{}\label{_wasp_g_p_r_s___pro__core_8h_acc64899f20272bb50258de4d9a428df5}
+
+\item 
+\#define {\bfseries A\+T\+\_\+\+G\+P\+R\+S\+\_\+\+D\+N\+S1}~\char`\"{}80.\+58.\+0.\+33\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_ae8bb9cd2ee47b81d510b666e259e60ca}{}\label{_wasp_g_p_r_s___pro__core_8h_ae8bb9cd2ee47b81d510b666e259e60ca}
+
+\item 
+\#define {\bfseries A\+T\+\_\+\+G\+P\+R\+S\+\_\+\+D\+N\+S2}~\char`\"{}80.\+58.\+32.\+97\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a3a6061fb541a2c4eaaef613bcd0212ce}{}\label{_wasp_g_p_r_s___pro__core_8h_a3a6061fb541a2c4eaaef613bcd0212ce}
+
+\item 
+\#define {\bfseries E\+R\+R\+O\+R\+\_\+\+C\+ME}~\char`\"{}+C\+ME E\+R\+R\+O\+R\+:\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a808ce031c0bb2aeaf85cfff82710bbbd}{}\label{_wasp_g_p_r_s___pro__core_8h_a808ce031c0bb2aeaf85cfff82710bbbd}
+
+\item 
+\#define {\bfseries E\+R\+R\+O\+R\+\_\+\+C\+MS}~\char`\"{}+C\+MS E\+R\+R\+O\+R\+:\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a18006354c0b9ec592e0f471ef1e555fb}{}\label{_wasp_g_p_r_s___pro__core_8h_a18006354c0b9ec592e0f471ef1e555fb}
+
+\item 
+\#define {\bfseries E\+R\+R\+OR}~\char`\"{}E\+R\+R\+OR\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a8fe83ac76edc595f6b98cd4a4127aed5}{}\label{_wasp_g_p_r_s___pro__core_8h_a8fe83ac76edc595f6b98cd4a4127aed5}
+
+\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a25771b2a1a8f1add400ccbc8b71c5ece}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+ON}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a25771b2a1a8f1add400ccbc8b71c5ece}{}\label{_wasp_g_p_r_s___pro__core_8h_a25771b2a1a8f1add400ccbc8b71c5ece}
+
+\begin{DoxyCompactList}\small\item\em Working mode. ON in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a7d6a70f6aafead4d751998a62574e8a8}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+F\+U\+LL}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a7d6a70f6aafead4d751998a62574e8a8}{}\label{_wasp_g_p_r_s___pro__core_8h_a7d6a70f6aafead4d751998a62574e8a8}
+
+\begin{DoxyCompactList}\small\item\em Working mode. Full functionality. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a2e8aed68084613675187b56590d4886e}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+R\+F\+\_\+\+O\+FF}~2\hypertarget{_wasp_g_p_r_s___pro__core_8h_a2e8aed68084613675187b56590d4886e}{}\label{_wasp_g_p_r_s___pro__core_8h_a2e8aed68084613675187b56590d4886e}
+
+\begin{DoxyCompactList}\small\item\em Working mode. The RF part of the module will not work. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_abe6f39ae9a66e9ca92fdb8d3fb0881f7}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+M\+IN}~3\hypertarget{_wasp_g_p_r_s___pro__core_8h_abe6f39ae9a66e9ca92fdb8d3fb0881f7}{}\label{_wasp_g_p_r_s___pro__core_8h_abe6f39ae9a66e9ca92fdb8d3fb0881f7}
+
+\begin{DoxyCompactList}\small\item\em Working mode. minimum functionality. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_af55d509926be1c3f7b0bea4c17bc492f}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+S\+L\+E\+EP}~4\hypertarget{_wasp_g_p_r_s___pro__core_8h_af55d509926be1c3f7b0bea4c17bc492f}{}\label{_wasp_g_p_r_s___pro__core_8h_af55d509926be1c3f7b0bea4c17bc492f}
+
+\begin{DoxyCompactList}\small\item\em Working mode. sleep mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a9ac2f7270f0a197fb68a45fb28b015bd}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+P\+O\+W\+E\+R\+\_\+\+O\+FF}~5\hypertarget{_wasp_g_p_r_s___pro__core_8h_a9ac2f7270f0a197fb68a45fb28b015bd}{}\label{_wasp_g_p_r_s___pro__core_8h_a9ac2f7270f0a197fb68a45fb28b015bd}
+
+\begin{DoxyCompactList}\small\item\em Working mode. Powers off the voltage of the module. \end{DoxyCompactList}\item 
+\#define {\bfseries E\+N\+A\+B\+LE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a514ad415fb6125ba296793df7d1a468a}{}\label{_wasp_g_p_r_s___pro__core_8h_a514ad415fb6125ba296793df7d1a468a}
+
+\item 
+\#define {\bfseries D\+I\+S\+A\+B\+LE}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a99496f7308834e8b220f7894efa0b6ab}{}\label{_wasp_g_p_r_s___pro__core_8h_a99496f7308834e8b220f7894efa0b6ab}
+
+\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_aa045b6864425ecb90f2c253e8440d21c}{N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+DE}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_aa045b6864425ecb90f2c253e8440d21c}{}\label{_wasp_g_p_r_s___pro__core_8h_aa045b6864425ecb90f2c253e8440d21c}
+
+\begin{DoxyCompactList}\small\item\em Alert Sound Mode. Normal mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a87f296d7594bb8178cf76f0c045b7013}{S\+I\+L\+E\+N\+T\+\_\+\+M\+O\+DE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a87f296d7594bb8178cf76f0c045b7013}{}\label{_wasp_g_p_r_s___pro__core_8h_a87f296d7594bb8178cf76f0c045b7013}
+
+\begin{DoxyCompactList}\small\item\em Alert Sound Mode. Silent mode (all sounds from ME are prevented) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_af43a01f904c31ae04d62e8e79714b74f}{L\+E\+V\+E\+L\+\_\+\+O\+FF}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_af43a01f904c31ae04d62e8e79714b74f}{}\label{_wasp_g_p_r_s___pro__core_8h_af43a01f904c31ae04d62e8e79714b74f}
+
+\begin{DoxyCompactList}\small\item\em Ringer mode. O\+FF in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a54466dd17fd53b573ab50b64ee5d84af}{L\+E\+V\+E\+L\+\_\+\+L\+OW}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a54466dd17fd53b573ab50b64ee5d84af}{}\label{_wasp_g_p_r_s___pro__core_8h_a54466dd17fd53b573ab50b64ee5d84af}
+
+\begin{DoxyCompactList}\small\item\em Ringer mode. Low level in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_aa6ac30e07e337fc09c92384499c69ae5}{L\+E\+V\+E\+L\+\_\+\+M\+E\+D\+I\+UM}~2\hypertarget{_wasp_g_p_r_s___pro__core_8h_aa6ac30e07e337fc09c92384499c69ae5}{}\label{_wasp_g_p_r_s___pro__core_8h_aa6ac30e07e337fc09c92384499c69ae5}
+
+\begin{DoxyCompactList}\small\item\em Ringer mode. Medium level in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_ae3f3cbd9fc2a6cb553c402bb9b2ea9dc}{L\+E\+V\+E\+L\+\_\+\+H\+I\+GH}~3\hypertarget{_wasp_g_p_r_s___pro__core_8h_ae3f3cbd9fc2a6cb553c402bb9b2ea9dc}{}\label{_wasp_g_p_r_s___pro__core_8h_ae3f3cbd9fc2a6cb553c402bb9b2ea9dc}
+
+\begin{DoxyCompactList}\small\item\em Ringer mode. High level in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a2f220edfae42351534211095efe81b37}{L\+E\+V\+E\+L\+\_\+\+C\+R\+E\+S\+C\+E\+N\+DO}~4\hypertarget{_wasp_g_p_r_s___pro__core_8h_a2f220edfae42351534211095efe81b37}{}\label{_wasp_g_p_r_s___pro__core_8h_a2f220edfae42351534211095efe81b37}
+
+\begin{DoxyCompactList}\small\item\em Ringer mode. Crescendo in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a7c441100e6494306e5474f09ebf8afc4}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+L\+IR}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a7c441100e6494306e5474f09ebf8afc4}{}\label{_wasp_g_p_r_s___pro__core_8h_a7c441100e6494306e5474f09ebf8afc4}
+
+\begin{DoxyCompactList}\small\item\em C\+L\+IR mode. Presentation indicator is used according to the subscription of the C\+L\+IR service. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a29179a1b6a3cab0210e0d5a15b36fc51}{S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+C\+L\+IR}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a29179a1b6a3cab0210e0d5a15b36fc51}{}\label{_wasp_g_p_r_s___pro__core_8h_a29179a1b6a3cab0210e0d5a15b36fc51}
+
+\begin{DoxyCompactList}\small\item\em C\+L\+IR mode. C\+L\+IR supression. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a8a7c98ef21fe05eeed7a1e0b859512b2}{I\+N\+V\+O\+K\+E\+\_\+\+C\+L\+IR}~2\hypertarget{_wasp_g_p_r_s___pro__core_8h_a8a7c98ef21fe05eeed7a1e0b859512b2}{}\label{_wasp_g_p_r_s___pro__core_8h_a8a7c98ef21fe05eeed7a1e0b859512b2}
+
+\begin{DoxyCompactList}\small\item\em C\+L\+IR mode. C\+L\+IR invocation. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a64ed60603768f2dd04be4e6c7d54a245}{G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+R\+A\+TE}~115200\hypertarget{_wasp_g_p_r_s___pro__core_8h_a64ed60603768f2dd04be4e6c7d54a245}{}\label{_wasp_g_p_r_s___pro__core_8h_a64ed60603768f2dd04be4e6c7d54a245}
+
+\begin{DoxyCompactList}\small\item\em S\+I\+M900 Baud Rate. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a04d737ec6e014b72d5ad8ae57b33dd85}{D\+E\+L\+A\+Y\+\_\+\+O\+N\+\_\+\+S\+E\+ND}~250\hypertarget{_wasp_g_p_r_s___pro__core_8h_a04d737ec6e014b72d5ad8ae57b33dd85}{}\label{_wasp_g_p_r_s___pro__core_8h_a04d737ec6e014b72d5ad8ae57b33dd85}
+
+\begin{DoxyCompactList}\small\item\em Constants for AT commands. Delay (in ms) after every sending attempt in this case i. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_aad2dd72565852b91c809cd4685833b17}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+M\+E\+O\+UT}~10000\hypertarget{_wasp_g_p_r_s___pro__core_8h_aad2dd72565852b91c809cd4685833b17}{}\label{_wasp_g_p_r_s___pro__core_8h_aad2dd72565852b91c809cd4685833b17}
+
+\begin{DoxyCompactList}\small\item\em Constants for AT commands. Default attempts (in ms) to try in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a5c5dac108ab6cbffe6b0909baf2951f8}{S\+E\+N\+D\+\_\+\+O\+N\+CE}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a5c5dac108ab6cbffe6b0909baf2951f8}{}\label{_wasp_g_p_r_s___pro__core_8h_a5c5dac108ab6cbffe6b0909baf2951f8}
+
+\begin{DoxyCompactList}\small\item\em Constants for AT commands. Sending only once in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_ae0fdea42b5922b144898a3dc7422c90e}{P\+O\+R\+T\+\_\+\+U\+S\+ED}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_ae0fdea42b5922b144898a3dc7422c90e}{}\label{_wasp_g_p_r_s___pro__core_8h_ae0fdea42b5922b144898a3dc7422c90e}
+
+\begin{DoxyCompactList}\small\item\em Constants for AT commands. Port used in AT commands functions in this case. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+ET}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a982a66f513611f7f83ebfa4b4ecf1df9}{}\label{_wasp_g_p_r_s___pro__core_8h_a982a66f513611f7f83ebfa4b4ecf1df9}
+
+\item 
+\#define {\bfseries P\+O\+ST}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_aaa567395088118b7a0aec48af9278fa1}{}\label{_wasp_g_p_r_s___pro__core_8h_aaa567395088118b7a0aec48af9278fa1}
+
+\item 
+\#define {\bfseries H\+E\+AD}~2\hypertarget{_wasp_g_p_r_s___pro__core_8h_a110f3b6cdacd45daee818b3e5965f6da}{}\label{_wasp_g_p_r_s___pro__core_8h_a110f3b6cdacd45daee818b3e5965f6da}
+
+\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a6636aa2437419160ff2423fa0cf2da6f}{S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a6636aa2437419160ff2423fa0cf2da6f}{}\label{_wasp_g_p_r_s___pro__core_8h_a6636aa2437419160ff2423fa0cf2da6f}
+
+\begin{DoxyCompactList}\small\item\em Configures the module to use single connection mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_acf112cc0e1e3b45ea84b3fe895d5fbd7}{M\+U\+L\+T\+I\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_acf112cc0e1e3b45ea84b3fe895d5fbd7}{}\label{_wasp_g_p_r_s___pro__core_8h_acf112cc0e1e3b45ea84b3fe895d5fbd7}
+
+\begin{DoxyCompactList}\small\item\em Configures the module to use multiple connection mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a053c87bbd77c73d47a099c04e54bb941}{U\+D\+P\+\_\+\+C\+L\+I\+E\+NT}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a053c87bbd77c73d47a099c04e54bb941}{}\label{_wasp_g_p_r_s___pro__core_8h_a053c87bbd77c73d47a099c04e54bb941}
+
+\begin{DoxyCompactList}\small\item\em When opening a socket, it can be opened as client or server. Client in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a4104204c5555669ff963b5b1eab3835f}{T\+C\+P\+\_\+\+C\+L\+I\+E\+NT}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a4104204c5555669ff963b5b1eab3835f}{}\label{_wasp_g_p_r_s___pro__core_8h_a4104204c5555669ff963b5b1eab3835f}
+
+\begin{DoxyCompactList}\small\item\em When opening a socket, it can be opened as client or server. Client in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a14a0bd12b297d29ea43b01ffaa0a51f6}{T\+C\+P\+\_\+\+S\+E\+R\+V\+ER}~2\hypertarget{_wasp_g_p_r_s___pro__core_8h_a14a0bd12b297d29ea43b01ffaa0a51f6}{}\label{_wasp_g_p_r_s___pro__core_8h_a14a0bd12b297d29ea43b01ffaa0a51f6}
+
+\begin{DoxyCompactList}\small\item\em When opening a socket, it can be opened as client or server. Server in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a73742ff69fab421850e6067539aaa117}{U\+D\+P\+\_\+\+E\+X\+T\+E\+N\+D\+ED}~3\hypertarget{_wasp_g_p_r_s___pro__core_8h_a73742ff69fab421850e6067539aaa117}{}\label{_wasp_g_p_r_s___pro__core_8h_a73742ff69fab421850e6067539aaa117}
+
+\begin{DoxyCompactList}\small\item\em When opening a socket, it can be opened as client or server. Client for extended U\+DP in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a047b40d54b1a7c2e48c020ac5d61d4e8}{N\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a047b40d54b1a7c2e48c020ac5d61d4e8}{}\label{_wasp_g_p_r_s___pro__core_8h_a047b40d54b1a7c2e48c020ac5d61d4e8}
+
+\begin{DoxyCompactList}\small\item\em When opening a socket, it can be opened in non transparent mode or transparent mode. Non transparent in this chase. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a6c54e72c6142d317114a29adbcbb24b6}{T\+R\+A\+N\+S\+P\+A\+R\+E\+NT}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a6c54e72c6142d317114a29adbcbb24b6}{}\label{_wasp_g_p_r_s___pro__core_8h_a6c54e72c6142d317114a29adbcbb24b6}
+
+\begin{DoxyCompactList}\small\item\em When opening a socket, it can be opened in non transparent mode or transparent mode. Transparent in this chase. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a546ba9100bf935a6d3961c351ff78407}{G\+P\+R\+S\+\_\+\+D\+A\+T\+A\+\_\+\+L\+E\+N\+G\+TH}~\char`\"{}100\char`\"{}\hypertarget{_wasp_g_p_r_s___pro__core_8h_a546ba9100bf935a6d3961c351ff78407}{}\label{_wasp_g_p_r_s___pro__core_8h_a546ba9100bf935a6d3961c351ff78407}
+
+\begin{DoxyCompactList}\small\item\em Maximum data length expressed as a string. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a8ca4a53d259a3cf75cd5199183a294d5}{G\+P\+R\+S\+\_\+\+D\+A\+T\+A\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+U}~100\hypertarget{_wasp_g_p_r_s___pro__core_8h_a8ca4a53d259a3cf75cd5199183a294d5}{}\label{_wasp_g_p_r_s___pro__core_8h_a8ca4a53d259a3cf75cd5199183a294d5}
+
+\begin{DoxyCompactList}\small\item\em Maximum data length expressed as an integer. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a92a510ba82d55391f677adf12d78a7aa}{G\+P\+R\+S\+\_\+\+M\+A\+X\+\_\+\+D\+A\+TA}~100\hypertarget{_wasp_g_p_r_s___pro__core_8h_a92a510ba82d55391f677adf12d78a7aa}{}\label{_wasp_g_p_r_s___pro__core_8h_a92a510ba82d55391f677adf12d78a7aa}
+
+\begin{DoxyCompactList}\small\item\em Maximum data length. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a87725ba18a47aac67ebf30d6c09f3be9}{F\+R\+A\+M\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}~0\hypertarget{_wasp_g_p_r_s___pro__core_8h_a87725ba18a47aac67ebf30d6c09f3be9}{}\label{_wasp_g_p_r_s___pro__core_8h_a87725ba18a47aac67ebf30d6c09f3be9}
+
+\begin{DoxyCompactList}\small\item\em Disable F\+R\+A\+ME conversion when using H\+T\+TP protocol in G\+P\+RS and 3G modules. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_g_p_r_s___pro__core_8h_a49efe754aa6ce4aa4b9abee6dc81f20e}{F\+R\+A\+M\+E\+\_\+\+E\+N\+A\+B\+L\+ED}~1\hypertarget{_wasp_g_p_r_s___pro__core_8h_a49efe754aa6ce4aa4b9abee6dc81f20e}{}\label{_wasp_g_p_r_s___pro__core_8h_a49efe754aa6ce4aa4b9abee6dc81f20e}
+
+\begin{DoxyCompactList}\small\item\em Enable F\+R\+A\+ME conversion when using H\+T\+TP protocol in G\+P\+RS and 3G modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the S\+I\+M900 module. 
+
+Copyright (C) 2014 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 2.\+1 Design\+: David Gascón Implementation\+: Alejandro Gállego 

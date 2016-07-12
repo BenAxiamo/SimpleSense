@@ -1,0 +1,1065 @@
+\hypertarget{class_wasp_a_c_c}{}\section{Wasp\+A\+CC Class Reference}
+\label{class_wasp_a_c_c}\index{Wasp\+A\+CC@{Wasp\+A\+CC}}
+
+
+\hyperlink{class_wasp_a_c_c}{Wasp\+A\+CC} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+A\+C\+C.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_a_c_c_a843d6783152d28a13ced1a09caaba27d}{Wasp\+A\+CC} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_c_c_a69aeeb4b8a9a5fc189d77c3764984a17}{ON} ()
+\begin{DoxyCompactList}\small\item\em It opens I2C bus and powers the accelerometer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_c_c_acd8e202fd80a7a7c95df36fbf5ecf7c1}{ON} (uint8\+\_\+t F\+S\+\_\+\+O\+P\+T\+I\+ON)
+\begin{DoxyCompactList}\small\item\em It opens I2C bus and powers the accelerometer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_c_c_a55ea9e65192a9940d5773c164fa0bcab}{boot} ()
+\begin{DoxyCompactList}\small\item\em It reboots the accelerometer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_c_c_aabd457aa421b8f323b724184aa1b66fa}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It closes I2C bus. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a65e4b85a09b10b32ec7580a55e78723b}{get\+Status} ()
+\begin{DoxyCompactList}\small\item\em It gets the accelerometer status. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_add13bf03ce0e0208524254bf71b9e564}{check} ()
+\begin{DoxyCompactList}\small\item\em It checks if accelerometer is working properly. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_afae0314979678dbab3fe122e69c7dcbd}{get\+C\+T\+R\+L1} ()
+\begin{DoxyCompactList}\small\item\em It gets the C\+T\+R\+L1 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a9ac3f4eaae5b0a4d164e8e974d6153de}{set\+C\+T\+R\+L1} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It sets the C\+T\+R\+L1 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a70975c72daf9f996bebed59925707f69}{get\+C\+T\+R\+L2} ()
+\begin{DoxyCompactList}\small\item\em It gets the C\+T\+R\+L2 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a8de00d78126d7fe9508e7e84a20edfc6}{set\+C\+T\+R\+L2} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It sets the C\+T\+R\+L2 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_af0445fbd65a90f0930f0a50c7268646e}{get\+C\+T\+R\+L3} ()
+\begin{DoxyCompactList}\small\item\em It gets the C\+T\+R\+L3 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a148c0664137bbb748a73b46235f60fe5}{set\+C\+T\+R\+L3} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It sets the C\+T\+R\+L3 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a5baed21e9c8ee0b8b758258fca69e962}{get\+C\+T\+R\+L4} ()
+\begin{DoxyCompactList}\small\item\em It gets the C\+T\+R\+L4 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_ae41d75c0214bafcc82b02eba8c90dfde}{set\+C\+T\+R\+L4} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It sets the C\+T\+R\+L4 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a4033f80b73a0abddade3c2f229939983}{get\+C\+T\+R\+L5} ()
+\begin{DoxyCompactList}\small\item\em It gets the C\+T\+R\+L5 register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_aae5cc9234f01976dd8423a4356c7966f}{set\+C\+T\+R\+L5} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It sets the C\+T\+R\+L5 register. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_a_c_c_ac2dfe7f3b89fdf9ba318738243379db7}{read\+Register} (uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em It reads a register from the accelerometer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a0e6c012e4f79b9407af0c65cda91a599}{write\+Register} (uint8\+\_\+t address, uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It writes a register to the accelerometer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a582a0976824a854a309f0649c25a9ab3}{set\+Sampling\+Rate} (uint8\+\_\+t rate)
+\begin{DoxyCompactList}\small\item\em It sets the accelerometer\textquotesingle{}s sampling rate. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_a_c_c_ae65dc36d04d671625b0d4b58955acf3b}{getX} ()
+\begin{DoxyCompactList}\small\item\em It gets the acceleration on OX. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_a_c_c_ae6d575b655e4ddb8a7de018968247268}{getY} ()
+\begin{DoxyCompactList}\small\item\em It gets the acceleration on OY. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_a_c_c_a631199092bf550be18b8cd95ed741291}{getZ} ()
+\begin{DoxyCompactList}\small\item\em It gets the acceleration on OZ. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a1dbfc0236297b3466a1181b393304da6}{set\+FF} (void)
+\item 
+uint8\+\_\+t {\bfseries set\+FF} (uint16\+\_\+t ths)\hypertarget{class_wasp_a_c_c_a7585a89ccd3e88854a04234a618ea917}{}\label{class_wasp_a_c_c_a7585a89ccd3e88854a04234a618ea917}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a206628c3b6747bd713c379b303cd1feb}{unset\+FF} (void)
+\begin{DoxyCompactList}\small\item\em It unsets the Free Fall interrupt. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_addb9450894c12ed72ff766a6aabb4ed5}{set\+I\+WU} (void)
+\item 
+uint8\+\_\+t {\bfseries set\+I\+WU} (uint16\+\_\+t ths)\hypertarget{class_wasp_a_c_c_ab03be8f6e276d552c84e4f3c5602ba2b}{}\label{class_wasp_a_c_c_ab03be8f6e276d552c84e4f3c5602ba2b}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_aeff5903b57a7fbd83cdd8389bdfbd3f6}{unset\+I\+WU} (void)
+\begin{DoxyCompactList}\small\item\em It unsets the Inertial Wake-\/\+UP interrupt. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_af397a30eacee4432daf2bc3506e4b915}{set6\+D\+Movement} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a36d9b73fc127ad3789da3cd6aae6b1b4}{unset6\+D\+Movement} (void)
+\begin{DoxyCompactList}\small\item\em It unsets the 6D Movement Recognition interrupt interrupt. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_acb6a205493ee39ca1cd5205c9d64ffbe}{set6\+D\+Position} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_acaee2292b7a8fce48a922e44cf7e0398}{unset6\+D\+Position} (void)
+\begin{DoxyCompactList}\small\item\em It unsets the 6D Movement Postition interrupt interrupt. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_ac230de590102dcfe1c4f20afde66e1ae}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets the accelerometer\textquotesingle{}s work mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a268f14bdff8be64d161beb7342732fd0}{set\+Sleep\+To\+Wake} (void)
+\begin{DoxyCompactList}\small\item\em It sets accelerometer\textquotesingle{}s Sleep to Wake mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a7044f89874bf615c2da0c43b5162764f}{un\+Set\+Sleep\+To\+Wake} (void)
+\begin{DoxyCompactList}\small\item\em It unsets accelerometer\textquotesingle{}s Sleep to Wake mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a9e681501dd207a30d46d39cd2976fd5f}{set\+Mode} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em It sets the accelerometer\textquotesingle{}s work mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_c_c_ad3e1312dc2936011eda5dee30b75b0e0}{attach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It configures the specific hardware interrupt for the acc. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_a_c_c_a43613588f024b0d52cc23ec27aaa496a}{detach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It unsets the specific hardware interrupt for the acc. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a4e5449e60c35245c78dbd657a52858ef}{get\+I\+N\+T1\+C\+FG} ()
+\begin{DoxyCompactList}\small\item\em It gets the contents of I\+N\+T1\+\_\+\+C\+FG. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a1de35cd7feb62b5a0d33279e9758b230}{get\+I\+N\+T1\+S\+RC} ()
+\begin{DoxyCompactList}\small\item\em It gets the contents of I\+N\+T1\+\_\+\+S\+RC. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_ae95dc6e86625e340c3bb6361e2e67ce7}{get\+I\+N\+T1\+T\+HS} ()
+\begin{DoxyCompactList}\small\item\em It gets the contents of I\+N\+T1\+\_\+\+T\+HS. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_aebaccb781df39b214ae54139d7a40fd5}{get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+ON} ()
+\begin{DoxyCompactList}\small\item\em It gets the contents of I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+ON. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_af0314c66822649636c7442de22e750bb}{calculate\+Threshold} (uint16\+\_\+t ths)
+\begin{DoxyCompactList}\small\item\em It calculates the attribute in order to set the interruption threshold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a68bd866582dd3a6cffb18c806b22b5de}{flag}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a6ce4e7806e8476ae6b71c93664676667}{flag\+Int}
+\begin{DoxyCompactList}\small\item\em Variable \+: interrupt flag, used to check which interrupt got active. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a763559b5cce13e31413a28f69bf22abe}{is\+ON}\hypertarget{class_wasp_a_c_c_a763559b5cce13e31413a28f69bf22abe}{}\label{class_wasp_a_c_c_a763559b5cce13e31413a28f69bf22abe}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores if the A\+CC is O\+N(1) or O\+F\+F(0) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_adaaf55e90566fe60d0142cbd751c358f}{acc\+Int}
+\begin{DoxyCompactList}\small\item\em Variable \+: Accelerometer Interruption state. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_a_c_c_a78a11c8f00171fc654921f6fd6e563b8}{\+\_\+int1\+\_\+ths}
+\begin{DoxyCompactList}\small\item\em Variable \+: Int1 threshold variable. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_a_c_c_af40fced948ff84d39301e7886ae7449f}{\+\_\+threshold}\hypertarget{class_wasp_a_c_c_af40fced948ff84d39301e7886ae7449f}{}\label{class_wasp_a_c_c_af40fced948ff84d39301e7886ae7449f}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Threshold set in mg units. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_a_c_c}{Wasp\+A\+CC} Class. 
+
+\hyperlink{class_wasp_a_c_c}{Wasp\+A\+CC} Class defines all the variables and functions used to manage L\+I\+S3\+L\+V02\+DL accelerometer 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{Wasp\+A\+C\+C()}{WaspACC()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+A\+C\+C\+::\+Wasp\+A\+CC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a843d6783152d28a13ced1a09caaba27d}{}\label{class_wasp_a_c_c_a843d6783152d28a13ced1a09caaba27d}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!attach\+Int@{attach\+Int}}
+\index{attach\+Int@{attach\+Int}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{attach\+Int(void)}{attachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+C\+C\+::attach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ad3e1312dc2936011eda5dee30b75b0e0}{}\label{class_wasp_a_c_c_ad3e1312dc2936011eda5dee30b75b0e0}
+
+
+It configures the specific hardware interrupt for the acc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a43613588f024b0d52cc23ec27aaa496a}{detach\+Int()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!boot@{boot}}
+\index{boot@{boot}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{boot()}{boot()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+C\+C\+::boot (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a55ea9e65192a9940d5773c164fa0bcab}{}\label{class_wasp_a_c_c_a55ea9e65192a9940d5773c164fa0bcab}
+
+
+It reboots the accelerometer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+init(), close() 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!calculate\+Threshold@{calculate\+Threshold}}
+\index{calculate\+Threshold@{calculate\+Threshold}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{calculate\+Threshold(uint16\+\_\+t ths)}{calculateThreshold(uint16_t ths)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::calculate\+Threshold (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{ths}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_af0314c66822649636c7442de22e750bb}{}\label{class_wasp_a_c_c_af0314c66822649636c7442de22e750bb}
+
+
+It calculates the attribute in order to set the interruption threshold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & ths\+: threshold to set in mg units \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value set in attribute 
+\end{DoxyReturn}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!check@{check}}
+\index{check@{check}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{check()}{check()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::check (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_add13bf03ce0e0208524254bf71b9e564}{}\label{class_wasp_a_c_c_add13bf03ce0e0208524254bf71b9e564}
+
+
+It checks if accelerometer is working properly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the register value. If this value is different from \textquotesingle{}0x3A\textquotesingle{}, the accelerometer is not working properly 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a65e4b85a09b10b32ec7580a55e78723b}{get\+Status()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!detach\+Int@{detach\+Int}}
+\index{detach\+Int@{detach\+Int}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{detach\+Int(void)}{detachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+C\+C\+::detach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a43613588f024b0d52cc23ec27aaa496a}{}\label{class_wasp_a_c_c_a43613588f024b0d52cc23ec27aaa496a}
+
+
+It unsets the specific hardware interrupt for the acc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ad3e1312dc2936011eda5dee30b75b0e0}{attach\+Int()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+C\+T\+R\+L1@{get\+C\+T\+R\+L1}}
+\index{get\+C\+T\+R\+L1@{get\+C\+T\+R\+L1}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+C\+T\+R\+L1()}{getCTRL1()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+C\+T\+R\+L1 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_afae0314979678dbab3fe122e69c7dcbd}{}\label{class_wasp_a_c_c_afae0314979678dbab3fe122e69c7dcbd}
+
+
+It gets the C\+T\+R\+L1 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the register value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a9ac3f4eaae5b0a4d164e8e974d6153de}{set\+C\+T\+R\+L1(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+C\+T\+R\+L2@{get\+C\+T\+R\+L2}}
+\index{get\+C\+T\+R\+L2@{get\+C\+T\+R\+L2}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+C\+T\+R\+L2()}{getCTRL2()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+C\+T\+R\+L2 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a70975c72daf9f996bebed59925707f69}{}\label{class_wasp_a_c_c_a70975c72daf9f996bebed59925707f69}
+
+
+It gets the C\+T\+R\+L2 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the register value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a8de00d78126d7fe9508e7e84a20edfc6}{set\+C\+T\+R\+L2(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+C\+T\+R\+L3@{get\+C\+T\+R\+L3}}
+\index{get\+C\+T\+R\+L3@{get\+C\+T\+R\+L3}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+C\+T\+R\+L3()}{getCTRL3()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+C\+T\+R\+L3 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_af0445fbd65a90f0930f0a50c7268646e}{}\label{class_wasp_a_c_c_af0445fbd65a90f0930f0a50c7268646e}
+
+
+It gets the C\+T\+R\+L3 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the register value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a148c0664137bbb748a73b46235f60fe5}{set\+C\+T\+R\+L3(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+C\+T\+R\+L4@{get\+C\+T\+R\+L4}}
+\index{get\+C\+T\+R\+L4@{get\+C\+T\+R\+L4}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+C\+T\+R\+L4()}{getCTRL4()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+C\+T\+R\+L4 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a5baed21e9c8ee0b8b758258fca69e962}{}\label{class_wasp_a_c_c_a5baed21e9c8ee0b8b758258fca69e962}
+
+
+It gets the C\+T\+R\+L4 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the register value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ae41d75c0214bafcc82b02eba8c90dfde}{set\+C\+T\+R\+L4(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+C\+T\+R\+L5@{get\+C\+T\+R\+L5}}
+\index{get\+C\+T\+R\+L5@{get\+C\+T\+R\+L5}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+C\+T\+R\+L5()}{getCTRL5()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+C\+T\+R\+L5 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a4033f80b73a0abddade3c2f229939983}{}\label{class_wasp_a_c_c_a4033f80b73a0abddade3c2f229939983}
+
+
+It gets the C\+T\+R\+L5 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the register value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_aae5cc9234f01976dd8423a4356c7966f}{set\+C\+T\+R\+L5(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+I\+N\+T1\+C\+FG@{get\+I\+N\+T1\+C\+FG}}
+\index{get\+I\+N\+T1\+C\+FG@{get\+I\+N\+T1\+C\+FG}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+I\+N\+T1\+C\+F\+G()}{getINT1CFG()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+I\+N\+T1\+C\+FG (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a4e5449e60c35245c78dbd657a52858ef}{}\label{class_wasp_a_c_c_a4e5449e60c35245c78dbd657a52858ef}
+
+
+It gets the contents of I\+N\+T1\+\_\+\+C\+FG. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the contents of interrupt 1 configuration reg 
+\end{DoxyReturn}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+ON@{get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+ON}}
+\index{get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+ON@{get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+ON}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+O\+N()}{getINT1DURATION()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+I\+N\+T1\+D\+U\+R\+A\+T\+I\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_aebaccb781df39b214ae54139d7a40fd5}{}\label{class_wasp_a_c_c_aebaccb781df39b214ae54139d7a40fd5}
+
+
+It gets the contents of I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+ON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the contents of interrupt 1 duration reg 
+\end{DoxyReturn}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+I\+N\+T1\+S\+RC@{get\+I\+N\+T1\+S\+RC}}
+\index{get\+I\+N\+T1\+S\+RC@{get\+I\+N\+T1\+S\+RC}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+I\+N\+T1\+S\+R\+C()}{getINT1SRC()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+I\+N\+T1\+S\+RC (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a1de35cd7feb62b5a0d33279e9758b230}{}\label{class_wasp_a_c_c_a1de35cd7feb62b5a0d33279e9758b230}
+
+
+It gets the contents of I\+N\+T1\+\_\+\+S\+RC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the contents of interrupt 1 source reg 
+\end{DoxyReturn}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+I\+N\+T1\+T\+HS@{get\+I\+N\+T1\+T\+HS}}
+\index{get\+I\+N\+T1\+T\+HS@{get\+I\+N\+T1\+T\+HS}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+I\+N\+T1\+T\+H\+S()}{getINT1THS()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+I\+N\+T1\+T\+HS (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ae95dc6e86625e340c3bb6361e2e67ce7}{}\label{class_wasp_a_c_c_ae95dc6e86625e340c3bb6361e2e67ce7}
+
+
+It gets the contents of I\+N\+T1\+\_\+\+T\+HS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the contents of interrupt 1 threshold reg 
+\end{DoxyReturn}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+Mode()}{getMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ac230de590102dcfe1c4f20afde66e1ae}{}\label{class_wasp_a_c_c_ac230de590102dcfe1c4f20afde66e1ae}
+
+
+It gets the accelerometer\textquotesingle{}s work mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}acc\+Mode\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a9e681501dd207a30d46d39cd2976fd5f}{set\+Mode(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!get\+Status@{get\+Status}}
+\index{get\+Status@{get\+Status}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+Status()}{getStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::get\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a65e4b85a09b10b32ec7580a55e78723b}{}\label{class_wasp_a_c_c_a65e4b85a09b10b32ec7580a55e78723b}
+
+
+It gets the accelerometer status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a byte containing the accelerometer status as read from the proper register. It won\textquotesingle{}t activate any flags by itself, but activates A\+C\+C\+\_\+\+C\+O\+M\+M\+\_\+\+E\+R\+R\+OR in case there was an error writing to the register 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_add13bf03ce0e0208524254bf71b9e564}{check()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!getX@{getX}}
+\index{getX@{getX}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+X()}{getX()}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+A\+C\+C\+::getX (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ae65dc36d04d671625b0d4b58955acf3b}{}\label{class_wasp_a_c_c_ae65dc36d04d671625b0d4b58955acf3b}
+
+
+It gets the acceleration on OX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the combined contents of data registers out\+Xhigh and out\+Xlow as an integer according to A\+DC\textquotesingle{}s configuration 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ae6d575b655e4ddb8a7de018968247268}{get\+Y()}, \hyperlink{class_wasp_a_c_c_a631199092bf550be18b8cd95ed741291}{get\+Z()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!getY@{getY}}
+\index{getY@{getY}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+A\+C\+C\+::getY (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ae6d575b655e4ddb8a7de018968247268}{}\label{class_wasp_a_c_c_ae6d575b655e4ddb8a7de018968247268}
+
+
+It gets the acceleration on OY. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the combined contents of data registers out\+Yhigh and out\+Ylow as an integer according to A\+DC\textquotesingle{}s configuration 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ae65dc36d04d671625b0d4b58955acf3b}{get\+X()}, \hyperlink{class_wasp_a_c_c_a631199092bf550be18b8cd95ed741291}{get\+Z()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!getZ@{getZ}}
+\index{getZ@{getZ}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{get\+Z()}{getZ()}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+A\+C\+C\+::getZ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a631199092bf550be18b8cd95ed741291}{}\label{class_wasp_a_c_c_a631199092bf550be18b8cd95ed741291}
+
+
+It gets the acceleration on OZ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the combined contents of data registers out\+Zhigh and out\+Zlow as an integer according to A\+DC\textquotesingle{}s configuration 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ae65dc36d04d671625b0d4b58955acf3b}{get\+X()}, \hyperlink{class_wasp_a_c_c_ae6d575b655e4ddb8a7de018968247268}{get\+Y()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+C\+C\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_aabd457aa421b8f323b724184aa1b66fa}{}\label{class_wasp_a_c_c_aabd457aa421b8f323b724184aa1b66fa}
+
+
+It closes I2C bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+init(), \hyperlink{class_wasp_a_c_c_a55ea9e65192a9940d5773c164fa0bcab}{boot()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!ON@{ON}}
+\index{ON@{ON}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+C\+C\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a69aeeb4b8a9a5fc189d77c3764984a17}{}\label{class_wasp_a_c_c_a69aeeb4b8a9a5fc189d77c3764984a17}
+
+
+It opens I2C bus and powers the accelerometer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a55ea9e65192a9940d5773c164fa0bcab}{boot()}, close(), begin() 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!ON@{ON}}
+\index{ON@{ON}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t F\+S\+\_\+\+O\+P\+T\+I\+O\+N)}{ON(uint8_t FS_OPTION)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+A\+C\+C\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{F\+S\+\_\+\+O\+P\+T\+I\+ON}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_acd8e202fd80a7a7c95df36fbf5ecf7c1}{}\label{class_wasp_a_c_c_acd8e202fd80a7a7c95df36fbf5ecf7c1}
+
+
+It opens I2C bus and powers the accelerometer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a55ea9e65192a9940d5773c164fa0bcab}{boot()}, close(), begin() 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!read\+Register@{read\+Register}}
+\index{read\+Register@{read\+Register}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{read\+Register(uint8\+\_\+t address)}{readRegister(uint8_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+A\+C\+C\+::read\+Register (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ac2dfe7f3b89fdf9ba318738243379db7}{}\label{class_wasp_a_c_c_ac2dfe7f3b89fdf9ba318738243379db7}
+
+
+It reads a register from the accelerometer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & address \+: register address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+register value or \textquotesingle{}-\/1\textquotesingle{} if error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a0e6c012e4f79b9407af0c65cda91a599}{write\+Register(uint8\+\_\+t address, uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set6\+D\+Movement@{set6\+D\+Movement}}
+\index{set6\+D\+Movement@{set6\+D\+Movement}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set6\+D\+Movement(void)}{set6DMovement(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set6\+D\+Movement (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_af397a30eacee4432daf2bc3506e4b915}{}\label{class_wasp_a_c_c_af397a30eacee4432daf2bc3506e4b915}
+It sets the 6D Movement Recognition interrupt using the parameters previously defined
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a36d9b73fc127ad3789da3cd6aae6b1b4}{unset6\+D\+Movement()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set6\+D\+Position@{set6\+D\+Position}}
+\index{set6\+D\+Position@{set6\+D\+Position}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set6\+D\+Position(void)}{set6DPosition(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set6\+D\+Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_acb6a205493ee39ca1cd5205c9d64ffbe}{}\label{class_wasp_a_c_c_acb6a205493ee39ca1cd5205c9d64ffbe}
+It sets the 6D Movement Recognition interrupt using the parameters previously defined
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_acaee2292b7a8fce48a922e44cf7e0398}{unset6\+D\+Position()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+C\+T\+R\+L1@{set\+C\+T\+R\+L1}}
+\index{set\+C\+T\+R\+L1@{set\+C\+T\+R\+L1}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+C\+T\+R\+L1(uint8\+\_\+t val)}{setCTRL1(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+C\+T\+R\+L1 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a9ac3f4eaae5b0a4d164e8e974d6153de}{}\label{class_wasp_a_c_c_a9ac3f4eaae5b0a4d164e8e974d6153de}
+
+
+It sets the C\+T\+R\+L1 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: value to set the C\+T\+R\+L1 register to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} on error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_afae0314979678dbab3fe122e69c7dcbd}{get\+C\+T\+R\+L1()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+C\+T\+R\+L2@{set\+C\+T\+R\+L2}}
+\index{set\+C\+T\+R\+L2@{set\+C\+T\+R\+L2}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+C\+T\+R\+L2(uint8\+\_\+t val)}{setCTRL2(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+C\+T\+R\+L2 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a8de00d78126d7fe9508e7e84a20edfc6}{}\label{class_wasp_a_c_c_a8de00d78126d7fe9508e7e84a20edfc6}
+
+
+It sets the C\+T\+R\+L2 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: value to set the C\+T\+R\+L2 register to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} on error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a70975c72daf9f996bebed59925707f69}{get\+C\+T\+R\+L2()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+C\+T\+R\+L3@{set\+C\+T\+R\+L3}}
+\index{set\+C\+T\+R\+L3@{set\+C\+T\+R\+L3}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+C\+T\+R\+L3(uint8\+\_\+t val)}{setCTRL3(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+C\+T\+R\+L3 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a148c0664137bbb748a73b46235f60fe5}{}\label{class_wasp_a_c_c_a148c0664137bbb748a73b46235f60fe5}
+
+
+It sets the C\+T\+R\+L3 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: value to set the C\+T\+R\+L3 register to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} on error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_af0445fbd65a90f0930f0a50c7268646e}{get\+C\+T\+R\+L3()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+C\+T\+R\+L4@{set\+C\+T\+R\+L4}}
+\index{set\+C\+T\+R\+L4@{set\+C\+T\+R\+L4}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+C\+T\+R\+L4(uint8\+\_\+t val)}{setCTRL4(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+C\+T\+R\+L4 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_ae41d75c0214bafcc82b02eba8c90dfde}{}\label{class_wasp_a_c_c_ae41d75c0214bafcc82b02eba8c90dfde}
+
+
+It sets the C\+T\+R\+L4 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: value to set the C\+T\+R\+L4 register to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} on error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a5baed21e9c8ee0b8b758258fca69e962}{get\+C\+T\+R\+L4()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+C\+T\+R\+L5@{set\+C\+T\+R\+L5}}
+\index{set\+C\+T\+R\+L5@{set\+C\+T\+R\+L5}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+C\+T\+R\+L5(uint8\+\_\+t val)}{setCTRL5(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+C\+T\+R\+L5 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_aae5cc9234f01976dd8423a4356c7966f}{}\label{class_wasp_a_c_c_aae5cc9234f01976dd8423a4356c7966f}
+
+
+It sets the C\+T\+R\+L5 register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: value to set the C\+T\+R\+L5 register to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} on error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a4033f80b73a0abddade3c2f229939983}{get\+C\+T\+R\+L5()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+FF@{set\+FF}}
+\index{set\+FF@{set\+FF}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+F\+F(void)}{setFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a1dbfc0236297b3466a1181b393304da6}{}\label{class_wasp_a_c_c_a1dbfc0236297b3466a1181b393304da6}
+It sets the Free Fall interrupt using the parameters previously defined
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a206628c3b6747bd713c379b303cd1feb}{unset\+F\+F()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+I\+WU@{set\+I\+WU}}
+\index{set\+I\+WU@{set\+I\+WU}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+I\+W\+U(void)}{setIWU(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+I\+WU (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_addb9450894c12ed72ff766a6aabb4ed5}{}\label{class_wasp_a_c_c_addb9450894c12ed72ff766a6aabb4ed5}
+It sets the Inertial Wake-\/\+UP interrupt using the parameters previously defined
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_aeff5903b57a7fbd83cdd8389bdfbd3f6}{unset\+I\+W\+U()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t val)}{setMode(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a9e681501dd207a30d46d39cd2976fd5f}{}\label{class_wasp_a_c_c_a9e681501dd207a30d46d39cd2976fd5f}
+
+
+It sets the accelerometer\textquotesingle{}s work mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: the accelerometer\textquotesingle{}s work mode (A\+C\+C\+\_\+\+ON, A\+C\+C\+\_\+\+H\+I\+B\+E\+R\+N\+A\+TE, A\+C\+C\+\_\+\+C\+U\+S\+T\+OM) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ac230de590102dcfe1c4f20afde66e1ae}{get\+Mode()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+Sampling\+Rate@{set\+Sampling\+Rate}}
+\index{set\+Sampling\+Rate@{set\+Sampling\+Rate}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+Sampling\+Rate(uint8\+\_\+t rate)}{setSamplingRate(uint8_t rate)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+Sampling\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a582a0976824a854a309f0649c25a9ab3}{}\label{class_wasp_a_c_c_a582a0976824a854a309f0649c25a9ab3}
+
+
+It sets the accelerometer\textquotesingle{}s sampling rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & rate \+: A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+40, A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+160, A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+640, A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+2560 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!set\+Sleep\+To\+Wake@{set\+Sleep\+To\+Wake}}
+\index{set\+Sleep\+To\+Wake@{set\+Sleep\+To\+Wake}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{set\+Sleep\+To\+Wake(void)}{setSleepToWake(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::set\+Sleep\+To\+Wake (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a268f14bdff8be64d161beb7342732fd0}{}\label{class_wasp_a_c_c_a268f14bdff8be64d161beb7342732fd0}
+
+
+It sets accelerometer\textquotesingle{}s Sleep to Wake mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+unset\+Sleep\+To\+Wake() 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!unset6\+D\+Movement@{unset6\+D\+Movement}}
+\index{unset6\+D\+Movement@{unset6\+D\+Movement}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{unset6\+D\+Movement(void)}{unset6DMovement(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::unset6\+D\+Movement (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a36d9b73fc127ad3789da3cd6aae6b1b4}{}\label{class_wasp_a_c_c_a36d9b73fc127ad3789da3cd6aae6b1b4}
+
+
+It unsets the 6D Movement Recognition interrupt interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_af397a30eacee4432daf2bc3506e4b915}{set6\+D\+Movement()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!unset6\+D\+Position@{unset6\+D\+Position}}
+\index{unset6\+D\+Position@{unset6\+D\+Position}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{unset6\+D\+Position(void)}{unset6DPosition(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::unset6\+D\+Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_acaee2292b7a8fce48a922e44cf7e0398}{}\label{class_wasp_a_c_c_acaee2292b7a8fce48a922e44cf7e0398}
+
+
+It unsets the 6D Movement Postition interrupt interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_acb6a205493ee39ca1cd5205c9d64ffbe}{set6\+D\+Position()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!unset\+FF@{unset\+FF}}
+\index{unset\+FF@{unset\+FF}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{unset\+F\+F(void)}{unsetFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::unset\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a206628c3b6747bd713c379b303cd1feb}{}\label{class_wasp_a_c_c_a206628c3b6747bd713c379b303cd1feb}
+
+
+It unsets the Free Fall interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a1dbfc0236297b3466a1181b393304da6}{set\+F\+F()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!unset\+I\+WU@{unset\+I\+WU}}
+\index{unset\+I\+WU@{unset\+I\+WU}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{unset\+I\+W\+U(void)}{unsetIWU(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::unset\+I\+WU (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_aeff5903b57a7fbd83cdd8389bdfbd3f6}{}\label{class_wasp_a_c_c_aeff5903b57a7fbd83cdd8389bdfbd3f6}
+
+
+It unsets the Inertial Wake-\/\+UP interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_addb9450894c12ed72ff766a6aabb4ed5}{set\+I\+W\+U()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!un\+Set\+Sleep\+To\+Wake@{un\+Set\+Sleep\+To\+Wake}}
+\index{un\+Set\+Sleep\+To\+Wake@{un\+Set\+Sleep\+To\+Wake}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{un\+Set\+Sleep\+To\+Wake(void)}{unSetSleepToWake(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::un\+Set\+Sleep\+To\+Wake (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a7044f89874bf615c2da0c43b5162764f}{}\label{class_wasp_a_c_c_a7044f89874bf615c2da0c43b5162764f}
+
+
+It unsets accelerometer\textquotesingle{}s Sleep to Wake mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_a268f14bdff8be64d161beb7342732fd0}{set\+Sleep\+To\+Wake()} 
+\end{DoxySeeAlso}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!write\+Register@{write\+Register}}
+\index{write\+Register@{write\+Register}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{write\+Register(uint8\+\_\+t address, uint8\+\_\+t val)}{writeRegister(uint8_t address, uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::write\+Register (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address, }
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_a_c_c_a0e6c012e4f79b9407af0c65cda91a599}{}\label{class_wasp_a_c_c_a0e6c012e4f79b9407af0c65cda91a599}
+
+
+It writes a register to the accelerometer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & address \+: register address \\
+\hline
+{\em uint8\+\_\+t} & val \+: value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} on error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_a_c_c_ac2dfe7f3b89fdf9ba318738243379db7}{read\+Register(uint8\+\_\+t val)} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+A\+CC@{Wasp\+A\+CC}!\+\_\+int1\+\_\+ths@{\+\_\+int1\+\_\+ths}}
+\index{\+\_\+int1\+\_\+ths@{\+\_\+int1\+\_\+ths}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{\+\_\+int1\+\_\+ths}{_int1_ths}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::\+\_\+int1\+\_\+ths}\hypertarget{class_wasp_a_c_c_a78a11c8f00171fc654921f6fd6e563b8}{}\label{class_wasp_a_c_c_a78a11c8f00171fc654921f6fd6e563b8}
+
+
+Variable \+: Int1 threshold variable. 
+
+Depending on the full scale selected, the reference value is different\+: Full scale Reference mode L\+SB value (mg) 2 16 4 31 8 63 \index{Wasp\+A\+CC@{Wasp\+A\+CC}!acc\+Int@{acc\+Int}}
+\index{acc\+Int@{acc\+Int}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{acc\+Int}{accInt}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::acc\+Int}\hypertarget{class_wasp_a_c_c_adaaf55e90566fe60d0142cbd751c358f}{}\label{class_wasp_a_c_c_adaaf55e90566fe60d0142cbd751c358f}
+
+
+Variable \+: Accelerometer Interruption state. 
+
+Possible values are A\+C\+C\+\_\+\+ON, A\+C\+C\+\_\+\+H\+I\+B\+E\+R\+N\+A\+TE and A\+C\+C\+\_\+\+C\+U\+S\+T\+OM \index{Wasp\+A\+CC@{Wasp\+A\+CC}!flag@{flag}}
+\index{flag@{flag}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{flag}{flag}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint8\+\_\+t Wasp\+A\+C\+C\+::flag}\hypertarget{class_wasp_a_c_c_a68bd866582dd3a6cffb18c806b22b5de}{}\label{class_wasp_a_c_c_a68bd866582dd3a6cffb18c806b22b5de}
+Variable \+: status flag, used to see if there has been an error while reading/writing or if there has been a hardware interrupt
+
+Possible values are A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG or A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG \index{Wasp\+A\+CC@{Wasp\+A\+CC}!flag\+Int@{flag\+Int}}
+\index{flag\+Int@{flag\+Int}!Wasp\+A\+CC@{Wasp\+A\+CC}}
+\subsubsection[{\texorpdfstring{flag\+Int}{flagInt}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+A\+C\+C\+::flag\+Int}\hypertarget{class_wasp_a_c_c_a6ce4e7806e8476ae6b71c93664676667}{}\label{class_wasp_a_c_c_a6ce4e7806e8476ae6b71c93664676667}
+
+
+Variable \+: interrupt flag, used to check which interrupt got active. 
+
+Its structure is\+: (M\+SB) 7 6 5 4 3 2 1 0 (L\+SB) XX XX XX XX XX TH DD FF TH -\/ threshold, DD -\/ direction change, FF -\/ free fall 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_a_c_c_8h}{Wasp\+A\+C\+C.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+A\+C\+C.\+cpp\end{DoxyCompactItemize}

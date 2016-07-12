@@ -1,0 +1,168 @@
+\hypertarget{_wasp_sensor_agr__v20_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Agr\+\_\+v20/\+Wasp\+Sensor\+Agr\+\_\+v20.h File Reference}
+\label{_wasp_sensor_agr__v20_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Agr\+\_\+v20/\+Wasp\+Sensor\+Agr\+\_\+v20.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Agr\+\_\+v20/\+Wasp\+Sensor\+Agr\+\_\+v20.\+h}}
+
+
+Library for managing the Agriculture Sensor Board v2.\+0.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$Wasp\+Constants.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpluviometer__st}{pluviometer\+\_\+st}
+\item 
+class \hyperlink{class_wasp_sensor_agr__v20}{Wasp\+Sensor\+Agr\+\_\+v20}
+\begin{DoxyCompactList}\small\item\em Wasp\+Sensor\+Agr\+V20 Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a77a750131c2a38d6bc75c785b13a4b6d}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+P\+L\+U\+V\+I\+O\+M\+E\+T\+ER}~16\hypertarget{_wasp_sensor_agr__v20_8h_a77a750131c2a38d6bc75c785b13a4b6d}{}\label{_wasp_sensor_agr__v20_8h_a77a750131c2a38d6bc75c785b13a4b6d}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Pluviometer sensor in this case (two sensors may be connected to this socket) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_adedffb4551def4a097e1d65a81c26cd3}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+A\+N\+E\+M\+O\+M\+E\+T\+ER}~1\hypertarget{_wasp_sensor_agr__v20_8h_adedffb4551def4a097e1d65a81c26cd3}{}\label{_wasp_sensor_agr__v20_8h_adedffb4551def4a097e1d65a81c26cd3}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Anemometer sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_ab50baf8836af477d0c56470e7812214c}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+1}~2\hypertarget{_wasp_sensor_agr__v20_8h_ab50baf8836af477d0c56470e7812214c}{}\label{_wasp_sensor_agr__v20_8h_ab50baf8836af477d0c56470e7812214c}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Watermark sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_afd604a1f291e934d4d9c27e60ace8fc7}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+2}~4\hypertarget{_wasp_sensor_agr__v20_8h_afd604a1f291e934d4d9c27e60ace8fc7}{}\label{_wasp_sensor_agr__v20_8h_afd604a1f291e934d4d9c27e60ace8fc7}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Watermark sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a40f901be28b7cb713bd6f88870c77ceb}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+3}~8\hypertarget{_wasp_sensor_agr__v20_8h_a40f901be28b7cb713bd6f88870c77ceb}{}\label{_wasp_sensor_agr__v20_8h_a40f901be28b7cb713bd6f88870c77ceb}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Watermark sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_ad716fec551b59ef6e6021bce6d73bbc2}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+NE}~0\hypertarget{_wasp_sensor_agr__v20_8h_ad716fec551b59ef6e6021bce6d73bbc2}{}\label{_wasp_sensor_agr__v20_8h_ad716fec551b59ef6e6021bce6d73bbc2}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Vane sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a60bc1e93b1ae36b238a5d0863f6022cd}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+D\+E\+N\+D\+R\+O\+M\+E\+T\+ER}~32\hypertarget{_wasp_sensor_agr__v20_8h_a60bc1e93b1ae36b238a5d0863f6022cd}{}\label{_wasp_sensor_agr__v20_8h_a60bc1e93b1ae36b238a5d0863f6022cd}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Dendrometer sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a0990a3f9498cf031a50b322687373d7b}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+P\+T1000}~64\hypertarget{_wasp_sensor_agr__v20_8h_a0990a3f9498cf031a50b322687373d7b}{}\label{_wasp_sensor_agr__v20_8h_a0990a3f9498cf031a50b322687373d7b}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. P\+T1000 sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a8d5bff30a96afb0ff181e3ed2e6df42f}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+L\+E\+A\+F\+\_\+\+W\+E\+T\+N\+E\+SS}~128\hypertarget{_wasp_sensor_agr__v20_8h_a8d5bff30a96afb0ff181e3ed2e6df42f}{}\label{_wasp_sensor_agr__v20_8h_a8d5bff30a96afb0ff181e3ed2e6df42f}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Leaf wetness sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_add7c38510a02abc34017a445335dedd9}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}~256\hypertarget{_wasp_sensor_agr__v20_8h_add7c38510a02abc34017a445335dedd9}{}\label{_wasp_sensor_agr__v20_8h_add7c38510a02abc34017a445335dedd9}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Temperature sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_aa224341ea4ed3e3ac22887ff3151de98}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+H\+U\+M\+I\+D\+I\+TY}~512\hypertarget{_wasp_sensor_agr__v20_8h_aa224341ea4ed3e3ac22887ff3151de98}{}\label{_wasp_sensor_agr__v20_8h_aa224341ea4ed3e3ac22887ff3151de98}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Humidity sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_af19bcb59bf742d3bc3f5929c61de7914}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+R\+A\+D\+I\+A\+T\+I\+ON}~1024\hypertarget{_wasp_sensor_agr__v20_8h_af19bcb59bf742d3bc3f5929c61de7914}{}\label{_wasp_sensor_agr__v20_8h_af19bcb59bf742d3bc3f5929c61de7914}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Sun radiation sensor in this case (two sensors may be connected to this socket) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_ad1f231ab0a40ab05e4e0b8596ddd6b90}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+S\+E\+N\+S\+I\+R\+I\+ON}~2048\hypertarget{_wasp_sensor_agr__v20_8h_ad1f231ab0a40ab05e4e0b8596ddd6b90}{}\label{_wasp_sensor_agr__v20_8h_ad1f231ab0a40ab05e4e0b8596ddd6b90}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Sensirion sensor in this case (two sensors may be connected to this socket) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a34c1d15f0e8211d543097fe1746f1a28}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+P\+R\+E\+S\+S\+U\+RE}~4096\hypertarget{_wasp_sensor_agr__v20_8h_a34c1d15f0e8211d543097fe1746f1a28}{}\label{_wasp_sensor_agr__v20_8h_a34c1d15f0e8211d543097fe1746f1a28}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Pressure sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a0fd6c03ba38e79c4b5cfba06fdf759a3}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+L\+DR}~8192\hypertarget{_wasp_sensor_agr__v20_8h_a0fd6c03ba38e79c4b5cfba06fdf759a3}{}\label{_wasp_sensor_agr__v20_8h_a0fd6c03ba38e79c4b5cfba06fdf759a3}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Pressure sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_aebf36b8d82877677d92406e96a5a3b39}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+T\+E\+M\+P\+\_\+\+D\+S18\+B20}~16384\hypertarget{_wasp_sensor_agr__v20_8h_aebf36b8d82877677d92406e96a5a3b39}{}\label{_wasp_sensor_agr__v20_8h_aebf36b8d82877677d92406e96a5a3b39}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Pressure sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_abd884acc193f904322c0303508b9bffd}{S\+E\+N\+S\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+1}~D\+I\+G\+I\+T\+A\+L7\hypertarget{_wasp_sensor_agr__v20_8h_abd884acc193f904322c0303508b9bffd}{}\label{_wasp_sensor_agr__v20_8h_abd884acc193f904322c0303508b9bffd}
+
+\begin{DoxyCompactList}\small\item\em Switches for powering the sensors. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_abeba9d237b0f76afa5bfb6ed1da52293}{S\+E\+N\+S\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+2}~D\+I\+G\+I\+T\+A\+L1\hypertarget{_wasp_sensor_agr__v20_8h_abeba9d237b0f76afa5bfb6ed1da52293}{}\label{_wasp_sensor_agr__v20_8h_abeba9d237b0f76afa5bfb6ed1da52293}
+
+\begin{DoxyCompactList}\small\item\em Switches for powering the sensors. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a39af54a53d07a061c911b51892dca0f3}{S\+E\+N\+S\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+3}~A\+N\+A0\hypertarget{_wasp_sensor_agr__v20_8h_a39af54a53d07a061c911b51892dca0f3}{}\label{_wasp_sensor_agr__v20_8h_a39af54a53d07a061c911b51892dca0f3}
+
+\begin{DoxyCompactList}\small\item\em Switches for powering the sensors. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a7bc75df8fc73773b584fedbcfc2feed2}{S\+E\+N\+S\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+4}~D\+I\+G\+I\+T\+A\+L5\hypertarget{_wasp_sensor_agr__v20_8h_a7bc75df8fc73773b584fedbcfc2feed2}{}\label{_wasp_sensor_agr__v20_8h_a7bc75df8fc73773b584fedbcfc2feed2}
+
+\begin{DoxyCompactList}\small\item\em Switches for powering the sensors. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a7a1f748262605b605171b030fe043c04}{S\+E\+N\+S\+\_\+\+M\+U\+X\+\_\+\+S\+EL}~D\+I\+G\+I\+T\+A\+L3\hypertarget{_wasp_sensor_agr__v20_8h_a7a1f748262605b605171b030fe043c04}{}\label{_wasp_sensor_agr__v20_8h_a7a1f748262605b605171b030fe043c04}
+
+\begin{DoxyCompactList}\small\item\em Sensor multiplexer selector. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a7d154609c0adc6314fd6e939c83e60bd}{S\+E\+N\+S\+\_\+\+C\+LK}~D\+I\+G\+I\+T\+A\+L8\hypertarget{_wasp_sensor_agr__v20_8h_a7d154609c0adc6314fd6e939c83e60bd}{}\label{_wasp_sensor_agr__v20_8h_a7d154609c0adc6314fd6e939c83e60bd}
+
+\begin{DoxyCompactList}\small\item\em Sensirion C\+LK pin. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a54e0c712a9e0156f8579c566e259f26e}{S\+E\+N\+S\+\_\+\+D\+A\+TA}~D\+I\+G\+I\+T\+A\+L6\hypertarget{_wasp_sensor_agr__v20_8h_a54e0c712a9e0156f8579c566e259f26e}{}\label{_wasp_sensor_agr__v20_8h_a54e0c712a9e0156f8579c566e259f26e}
+
+\begin{DoxyCompactList}\small\item\em Sensirion C\+LK data. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a7021b8be97769916f747edd7a9ef704e}{S\+E\+N\+S\+\_\+\+P\+R\+E\+C\+\_\+\+H\+I\+GH}~1\hypertarget{_wasp_sensor_agr__v20_8h_a7021b8be97769916f747edd7a9ef704e}{}\label{_wasp_sensor_agr__v20_8h_a7021b8be97769916f747edd7a9ef704e}
+
+\begin{DoxyCompactList}\small\item\em Sensirion High Precision. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a6b784799acc754985adc11f112016c30}{S\+E\+N\+S\+\_\+\+P\+R\+E\+C\+\_\+\+L\+OW}~0\hypertarget{_wasp_sensor_agr__v20_8h_a6b784799acc754985adc11f112016c30}{}\label{_wasp_sensor_agr__v20_8h_a6b784799acc754985adc11f112016c30}
+
+\begin{DoxyCompactList}\small\item\em Sensirion Low Precision. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_aae857b92986563d86afd22ece386eddb}{S\+E\+N\+S\+I\+R\+I\+O\+N\+\_\+\+T\+E\+MP}~0\hypertarget{_wasp_sensor_agr__v20_8h_aae857b92986563d86afd22ece386eddb}{}\label{_wasp_sensor_agr__v20_8h_aae857b92986563d86afd22ece386eddb}
+
+\begin{DoxyCompactList}\small\item\em Sensirion Temperature. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_acd86c3fd93278d5d65a08aed04dc1e6e}{S\+E\+N\+S\+I\+R\+I\+O\+N\+\_\+\+H\+UM}~1\hypertarget{_wasp_sensor_agr__v20_8h_acd86c3fd93278d5d65a08aed04dc1e6e}{}\label{_wasp_sensor_agr__v20_8h_acd86c3fd93278d5d65a08aed04dc1e6e}
+
+\begin{DoxyCompactList}\small\item\em Sensirion Humidity. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a6c6da679b98231c69aac8d228adeb7da}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+E}~0\hypertarget{_wasp_sensor_agr__v20_8h_a6c6da679b98231c69aac8d228adeb7da}{}\label{_wasp_sensor_agr__v20_8h_a6c6da679b98231c69aac8d228adeb7da}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: East Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a7ca9f10479c6e2cd6dddaabce7c5346a}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+E\+NE}~1\hypertarget{_wasp_sensor_agr__v20_8h_a7ca9f10479c6e2cd6dddaabce7c5346a}{}\label{_wasp_sensor_agr__v20_8h_a7ca9f10479c6e2cd6dddaabce7c5346a}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: East-\/\+North\+East Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a830d27cd4d197ae6249278851855ad6d}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+NE}~2\hypertarget{_wasp_sensor_agr__v20_8h_a830d27cd4d197ae6249278851855ad6d}{}\label{_wasp_sensor_agr__v20_8h_a830d27cd4d197ae6249278851855ad6d}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: North\+East Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a1d425bd4e4fd1b7c0ad28118541e7d78}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+N\+NE}~3\hypertarget{_wasp_sensor_agr__v20_8h_a1d425bd4e4fd1b7c0ad28118541e7d78}{}\label{_wasp_sensor_agr__v20_8h_a1d425bd4e4fd1b7c0ad28118541e7d78}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: North-\/\+North\+East Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a8823c0180e9edcd9a4ebfaf708c5bf66}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+N}~4\hypertarget{_wasp_sensor_agr__v20_8h_a8823c0180e9edcd9a4ebfaf708c5bf66}{}\label{_wasp_sensor_agr__v20_8h_a8823c0180e9edcd9a4ebfaf708c5bf66}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: North Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a35c6a453b92f0318e545ef21e3b3556f}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+N\+NW}~5\hypertarget{_wasp_sensor_agr__v20_8h_a35c6a453b92f0318e545ef21e3b3556f}{}\label{_wasp_sensor_agr__v20_8h_a35c6a453b92f0318e545ef21e3b3556f}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: North-\/\+North\+West Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_acf34bb3c610c8051181fed9f965016ba}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+NW}~6\hypertarget{_wasp_sensor_agr__v20_8h_acf34bb3c610c8051181fed9f965016ba}{}\label{_wasp_sensor_agr__v20_8h_acf34bb3c610c8051181fed9f965016ba}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: North\+West Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a50967e667ad87e731be62693b85c0cf5}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+W\+NW}~7\hypertarget{_wasp_sensor_agr__v20_8h_a50967e667ad87e731be62693b85c0cf5}{}\label{_wasp_sensor_agr__v20_8h_a50967e667ad87e731be62693b85c0cf5}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: West-\/\+Northwest Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a7406d3591e7d1c42121fa3eb8cb34a60}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+W}~8\hypertarget{_wasp_sensor_agr__v20_8h_a7406d3591e7d1c42121fa3eb8cb34a60}{}\label{_wasp_sensor_agr__v20_8h_a7406d3591e7d1c42121fa3eb8cb34a60}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: West Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_aad1df70366479e40a68a00532cc70559}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+W\+SW}~9\hypertarget{_wasp_sensor_agr__v20_8h_aad1df70366479e40a68a00532cc70559}{}\label{_wasp_sensor_agr__v20_8h_aad1df70366479e40a68a00532cc70559}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: West-\/\+South\+West Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a3041e21935d529e7a83a733c1976de4f}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+SW}~10\hypertarget{_wasp_sensor_agr__v20_8h_a3041e21935d529e7a83a733c1976de4f}{}\label{_wasp_sensor_agr__v20_8h_a3041e21935d529e7a83a733c1976de4f}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: South\+West Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_aad6fca0bd575b908d0bf2d7b3e12d9f1}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+S\+SW}~11\hypertarget{_wasp_sensor_agr__v20_8h_aad6fca0bd575b908d0bf2d7b3e12d9f1}{}\label{_wasp_sensor_agr__v20_8h_aad6fca0bd575b908d0bf2d7b3e12d9f1}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: South-\/\+South\+West Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a978c6e8a2164fc3618725b442a4312ce}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+S}~12\hypertarget{_wasp_sensor_agr__v20_8h_a978c6e8a2164fc3618725b442a4312ce}{}\label{_wasp_sensor_agr__v20_8h_a978c6e8a2164fc3618725b442a4312ce}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: South Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a31c291fa29aaa52dbf130d87aad1c733}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+S\+SE}~13\hypertarget{_wasp_sensor_agr__v20_8h_a31c291fa29aaa52dbf130d87aad1c733}{}\label{_wasp_sensor_agr__v20_8h_a31c291fa29aaa52dbf130d87aad1c733}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: South-\/\+South\+East Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_a773f6bab3c64e1543b43ff0aa7d55409}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+SE}~14\hypertarget{_wasp_sensor_agr__v20_8h_a773f6bab3c64e1543b43ff0aa7d55409}{}\label{_wasp_sensor_agr__v20_8h_a773f6bab3c64e1543b43ff0aa7d55409}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: South\+East Direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_agr__v20_8h_aa6265c7c84ca10ebbba9f57ffffa8ad5}{S\+E\+N\+S\+\_\+\+A\+G\+R\+\_\+\+V\+A\+N\+E\+\_\+\+E\+SE}~15\hypertarget{_wasp_sensor_agr__v20_8h_aa6265c7c84ca10ebbba9f57ffffa8ad5}{}\label{_wasp_sensor_agr__v20_8h_aa6265c7c84ca10ebbba9f57ffffa8ad5}
+
+\begin{DoxyCompactList}\small\item\em Vane \+: East-\/\+South\+East Direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_agr__v20}{Wasp\+Sensor\+Agr\+\_\+v20} {\bfseries Sensor\+Agrv20}\hypertarget{_wasp_sensor_agr__v20_8h_aff7b8480ae127e3a1394b0d63c05fd7a}{}\label{_wasp_sensor_agr__v20_8h_aff7b8480ae127e3a1394b0d63c05fd7a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the Agriculture Sensor Board v2.\+0. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+1 Design\+: David Gascón Implementation\+: Alberto Bielsa, Manuel Calahorra, Yuri Carmona 

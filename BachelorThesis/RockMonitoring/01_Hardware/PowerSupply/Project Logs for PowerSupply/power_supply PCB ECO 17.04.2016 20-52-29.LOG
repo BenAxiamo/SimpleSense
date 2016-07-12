@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetC1_2 Pin=U2-1
+Removed Pin From Net: NetName=NetR3_2 Pin=U2-2
+Removed Pin From Net: NetName=NetR2_1 Pin=U2-3
+Change Component Footprint: Designator=U2 Old Footprint=Z03A New Footprint=SO-8
+Added Pin To Net: NetName=NetR3_2 Pin=U2-1
+Added Pin To Net: NetName=NetC1_2 Pin=U2-4
+Added Pin To Net: NetName=NetR2_1 Pin=U2-6
+Added Member To Class: ClassName=power_supply Member=Component R2 Res2
+Added Room: Name=power_supply

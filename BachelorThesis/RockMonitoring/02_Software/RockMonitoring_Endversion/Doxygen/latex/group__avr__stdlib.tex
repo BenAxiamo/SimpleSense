@@ -1,0 +1,543 @@
+\hypertarget{group__avr__stdlib}{}\section{$<$stdlib.\+h$>$\+: General utilities}
+\label{group__avr__stdlib}\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdiv__t}{div\+\_\+t}
+\item 
+struct \hyperlink{structldiv__t}{ldiv\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+const\+\_\+\+\_\+))\hypertarget{group__avr__stdlib_ga87f6b1b3880d945610873b9da382e5d4}{}\label{group__avr__stdlib_ga87f6b1b3880d945610873b9da382e5d4}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+malloc\+\_\+\+\_\+))\hypertarget{group__avr__stdlib_ga27614117ee5b05d8b991bcfeda0cfcc5}{}\label{group__avr__stdlib_ga27614117ee5b05d8b991bcfeda0cfcc5}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+noreturn\+\_\+\+\_\+))\hypertarget{group__avr__stdlib_ga0d7688dfc56810a4fee42056e35f131b}{}\label{group__avr__stdlib_ga0d7688dfc56810a4fee42056e35f131b}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+pure\+\_\+\+\_\+))\hypertarget{group__avr__stdlib_ga536d41f7767c0a501c4f9aa625ef0c58}{}\label{group__avr__stdlib_ga536d41f7767c0a501c4f9aa625ef0c58}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}\hypertarget{group__avr__stdlib_ga422aaaa51081869a5b29bfc69f3e3178}{}\label{group__avr__stdlib_ga422aaaa51081869a5b29bfc69f3e3178}
+
+\item 
+\#define {\bfseries abs}(\+\_\+\+\_\+i)~\+\_\+\+\_\+builtin\+\_\+abs(\+\_\+\+\_\+i)\hypertarget{group__avr__stdlib_ga1ff37aa7d963bacc17dbfdcd49045ef4}{}\label{group__avr__stdlib_ga1ff37aa7d963bacc17dbfdcd49045ef4}
+
+\item 
+\#define {\bfseries labs}(\+\_\+\+\_\+i)~\+\_\+\+\_\+builtin\+\_\+labs(\+\_\+\+\_\+i)\hypertarget{group__avr__stdlib_ga1e7e1efdea25bca26dd9dbf022a8adb7}{}\label{group__avr__stdlib_ga1e7e1efdea25bca26dd9dbf022a8adb7}
+
+\item 
+\#define \hyperlink{group__avr__stdlib_ga690f251553b39fd4f31894826141b61a}{R\+A\+N\+D\+\_\+\+M\+AX}~0x7\+F\+FF
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{group__avr__stdlib_ga35e28bfcc8d641e0eebd66f4dc559a3f}{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t}) (const void $\ast$, const void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}{abort} (void) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+
+\item 
+int \hyperlink{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}{abs} (int \+\_\+\+\_\+i) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+long \hyperlink{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}{labs} (long \+\_\+\+\_\+i) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_ga885c1ccefb716ff16ab73a57003140be}{bsearch} (const void $\ast$\+\_\+\+\_\+key, const void $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+nmemb, size\+\_\+t \+\_\+\+\_\+size, int($\ast$\+\_\+\+\_\+compar)(const void $\ast$, const void $\ast$))
+\item 
+\hyperlink{structdiv__t}{div\+\_\+t} \hyperlink{group__avr__stdlib_ga63314983c7ee996c09f9e521eda5d399}{div} (int \+\_\+\+\_\+num, int \+\_\+\+\_\+denom) \+\_\+\+\_\+asm\+\_\+\+\_\+(\char`\"{}\+\_\+\+\_\+divmodhi4\char`\"{}) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+\hyperlink{structldiv__t}{ldiv\+\_\+t} \hyperlink{group__avr__stdlib_ga51399546cb1492103d553abf43ff6bd6}{ldiv} (long \+\_\+\+\_\+num, long \+\_\+\+\_\+denom) \+\_\+\+\_\+asm\+\_\+\+\_\+(\char`\"{}\+\_\+\+\_\+divmodsi4\char`\"{}) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+void \hyperlink{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}{qsort} (void $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+nmemb, size\+\_\+t \+\_\+\+\_\+size, \hyperlink{group__avr__stdlib_ga35e28bfcc8d641e0eebd66f4dc559a3f}{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t} \+\_\+\+\_\+compar)
+\item 
+long \hyperlink{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{strtol} (const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr, int \+\_\+\+\_\+base)
+\item 
+unsigned long \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul} (const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr, int \+\_\+\+\_\+base)
+\item 
+long \hyperlink{group__avr__stdlib_ga764de49bd918caf24ce1caf3a10b3823}{atol} (const char $\ast$\+\_\+\+\_\+s) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+
+\item 
+int \hyperlink{group__avr__stdlib_ga3a1fe00c1327bbabc76688a7a1d73370}{atoi} (const char $\ast$\+\_\+\+\_\+s) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+
+\item 
+void \hyperlink{group__avr__stdlib_ga137096a48cc0c731052cadfb69c39b34}{exit} (int \+\_\+\+\_\+status) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc} (size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+
+\item 
+void \hyperlink{group__avr__stdlib_gafb8699abb1f51d920a176e695ff3be8a}{free} (void $\ast$\+\_\+\+\_\+ptr)
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_ga51ac965dacbc9daf922f469bdcfe00c2}{calloc} (size\+\_\+t \+\_\+\+\_\+nele, size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}{realloc} (void $\ast$\+\_\+\+\_\+ptr, size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+
+\item 
+double {\bfseries strtod} (const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr)\hypertarget{group__avr__stdlib_ga5ee4d110a3bb55d2eadda05e3ebedf8a}{}\label{group__avr__stdlib_ga5ee4d110a3bb55d2eadda05e3ebedf8a}
+
+\item 
+double {\bfseries atof} (const char $\ast$\+\_\+\+\_\+nptr)\hypertarget{group__avr__stdlib_ga689c9d3c4c04463aa31d329937789d06}{}\label{group__avr__stdlib_ga689c9d3c4c04463aa31d329937789d06}
+
+\item 
+int \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand} (void)
+\item 
+void \hyperlink{group__avr__stdlib_gacceff9dc95bb3c5562dc9e61fc3d9075}{srand} (unsigned int \+\_\+\+\_\+seed)
+\item 
+int \hyperlink{group__avr__stdlib_gaf5085001be836a0f2a5d3269a7c9fd04}{rand\+\_\+r} (unsigned long $\ast$\+\_\+\+\_\+ctx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{group__avr__stdlib_gaffadd67736fd340e893fb22c207de597}{\+\_\+\+\_\+malloc\+\_\+margin}
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga9310042b3956282440c091d20cb98c5f}{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start}
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga4d7b1bf0f75d529cc75229a266132115}{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end}
+\end{DoxyCompactItemize}
+\subsection*{Non-\/standard (i.\+e. non-\/\+I\+SO C) functions.}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_ga8bf71f6d9c357c8a9690dd6bcda85aca}{ltoa} (long \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert a long integer to a string. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_gae272f8a7060edeade527a0821e5e811b}{utoa} (unsigned int \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned integer to a string. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_gae07ff57ffca09238c490ff4d11cf6399}{ultoa} (unsigned long \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned long integer to a string. \end{DoxyCompactList}\item 
+long \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random} (void)
+\item 
+void \hyperlink{group__avr__stdlib_ga4fca27496ca29c0a723d197696641eff}{srandom} (unsigned long \+\_\+\+\_\+seed)
+\item 
+long \hyperlink{group__avr__stdlib_gaa99a0733f06d2b9960a1401c2721af1e}{random\+\_\+r} (unsigned long $\ast$\+\_\+\+\_\+ctx)
+\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_gaeb782784ecd745890ea66c1c47817435}{itoa} (int \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert an integer to a string. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__avr__stdlib_ga3bd31f0d9a9127548b734e7ca03cc6df}{R\+A\+N\+D\+O\+M\+\_\+\+M\+AX}~0x7\+F\+F\+F\+F\+F\+FF
+\end{DoxyCompactItemize}
+\subsection*{Conversion functions for double arguments.}
+\label{_amgrp67796e0946dab291b611cb32584a051f}%
+Note that these functions are not located in the default library, {\ttfamily libc.\+a}, but in the mathematical library, {\ttfamily libm.\+a}. So when linking the application, the {\ttfamily -\/lm} option needs to be specified. \begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre} (double \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, unsigned char \+\_\+\+\_\+prec, unsigned char \+\_\+\+\_\+flags)
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga060c998e77fb5fc0d3168b3ce8771d42}{dtostrf} (double \+\_\+\+\_\+val, signed char \+\_\+\+\_\+width, unsigned char \+\_\+\+\_\+prec, char $\ast$\+\_\+\+\_\+s)
+\item 
+\#define \hyperlink{group__avr__stdlib_ga815d0d26e215d9b78af1cb2288d22361}{D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN}~0x01        /$\ast$ put \textquotesingle{}+\textquotesingle{} or \textquotesingle{} \textquotesingle{} for positives $\ast$/
+\item 
+\#define \hyperlink{group__avr__stdlib_ga268774f80047812307365f3113109767}{D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN}~0x02        /$\ast$ put \textquotesingle{}+\textquotesingle{} rather than \textquotesingle{} \textquotesingle{} $\ast$/
+\item 
+\#define \hyperlink{group__avr__stdlib_ga125348f1e1fed1793426f4c4dc6fb2f7}{D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE}~0x04        /$\ast$ put \textquotesingle{}\+E\textquotesingle{} rather \textquotesingle{}e\textquotesingle{} $\ast$/
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{stdlib_8h}{stdlib.h}>} 
+\end{DoxyCode}
+
+
+This file declares some basic C macros and functions as defined by the I\+SO standard, plus some A\+V\+R-\/specific extensions. 
+
+\subsection{Macro Definition Documentation}
+\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN@{D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN}}
+\index{D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN@{D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN}{DTOSTR_ALWAYS_SIGN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN~0x01        /$\ast$ put \textquotesingle{}+\textquotesingle{} or \textquotesingle{} \textquotesingle{} for positives $\ast$/}\hypertarget{group__avr__stdlib_ga815d0d26e215d9b78af1cb2288d22361}{}\label{group__avr__stdlib_ga815d0d26e215d9b78af1cb2288d22361}
+Bit value that can be passed in {\ttfamily flags} to \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre()}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN@{D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN}}
+\index{D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN@{D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN}{DTOSTR_PLUS_SIGN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN~0x02        /$\ast$ put \textquotesingle{}+\textquotesingle{} rather than \textquotesingle{} \textquotesingle{} $\ast$/}\hypertarget{group__avr__stdlib_ga268774f80047812307365f3113109767}{}\label{group__avr__stdlib_ga268774f80047812307365f3113109767}
+Bit value that can be passed in {\ttfamily flags} to \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre()}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE@{D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE}}
+\index{D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE@{D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE}{DTOSTR_UPPERCASE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE~0x04        /$\ast$ put \textquotesingle{}\+E\textquotesingle{} rather \textquotesingle{}e\textquotesingle{} $\ast$/}\hypertarget{group__avr__stdlib_ga125348f1e1fed1793426f4c4dc6fb2f7}{}\label{group__avr__stdlib_ga125348f1e1fed1793426f4c4dc6fb2f7}
+Bit value that can be passed in {\ttfamily flags} to \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre()}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!R\+A\+N\+D\+\_\+\+M\+AX@{R\+A\+N\+D\+\_\+\+M\+AX}}
+\index{R\+A\+N\+D\+\_\+\+M\+AX@{R\+A\+N\+D\+\_\+\+M\+AX}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{R\+A\+N\+D\+\_\+\+M\+AX}{RAND_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+N\+D\+\_\+\+M\+AX~0x7\+F\+FF}\hypertarget{group__avr__stdlib_ga690f251553b39fd4f31894826141b61a}{}\label{group__avr__stdlib_ga690f251553b39fd4f31894826141b61a}
+Highest number that can be generated by \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand()}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!R\+A\+N\+D\+O\+M\+\_\+\+M\+AX@{R\+A\+N\+D\+O\+M\+\_\+\+M\+AX}}
+\index{R\+A\+N\+D\+O\+M\+\_\+\+M\+AX@{R\+A\+N\+D\+O\+M\+\_\+\+M\+AX}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{R\+A\+N\+D\+O\+M\+\_\+\+M\+AX}{RANDOM_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+A\+N\+D\+O\+M\+\_\+\+M\+AX~0x7\+F\+F\+F\+F\+F\+FF}\hypertarget{group__avr__stdlib_ga3bd31f0d9a9127548b734e7ca03cc6df}{}\label{group__avr__stdlib_ga3bd31f0d9a9127548b734e7ca03cc6df}
+Highest number that can be generated by \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random()}. 
+
+\subsection{Typedef Documentation}
+\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!\+\_\+\+\_\+compar\+\_\+fn\+\_\+t@{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t}}
+\index{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t@{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t}{__compar_fn_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ \+\_\+\+\_\+compar\+\_\+fn\+\_\+t) (const void $\ast$, const void $\ast$)}\hypertarget{group__avr__stdlib_ga35e28bfcc8d641e0eebd66f4dc559a3f}{}\label{group__avr__stdlib_ga35e28bfcc8d641e0eebd66f4dc559a3f}
+Comparision function type for \hyperlink{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}{qsort()}, just for convenience. 
+
+\subsection{Function Documentation}
+\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!abort@{abort}}
+\index{abort@{abort}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{abort(void) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+}{abort(void) __ATTR_NORETURN__}}]{\setlength{\rightskip}{0pt plus 5cm}void abort (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}{}\label{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}
+The \hyperlink{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}{abort()} function causes abnormal program termination to occur. This realization disables interrupts and jumps to \+\_\+exit() function with argument equal to 1. In the limited A\+VR environment, execution is effectively halted by entering an infinite loop. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!abs@{abs}}
+\index{abs@{abs}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{abs(int \+\_\+\+\_\+i) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{abs(int __i) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int abs (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+i}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}{}\label{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}
+The \hyperlink{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}{abs()} function computes the absolute value of the integer {\ttfamily i}. \begin{DoxyNote}{Note}
+The \hyperlink{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}{abs()} and \hyperlink{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}{labs()} functions are builtins of gcc. 
+\end{DoxyNote}
+\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!atoi@{atoi}}
+\index{atoi@{atoi}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{atoi(const char $\ast$\+\_\+\+\_\+s) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+}{atoi(const char *__s) __ATTR_PURE__}}]{\setlength{\rightskip}{0pt plus 5cm}int atoi (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+\_\+s}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga3a1fe00c1327bbabc76688a7a1d73370}{}\label{group__avr__stdlib_ga3a1fe00c1327bbabc76688a7a1d73370}
+The \hyperlink{group__avr__stdlib_ga3a1fe00c1327bbabc76688a7a1d73370}{atoi()} function converts the initial portion of the string pointed to by {\ttfamily s} to integer representation. In contrast to
+
+
+\begin{DoxyCode}
+1 (int)strtol(s, (char **)NULL, 10); 
+\end{DoxyCode}
+
+
+this function does not detect overflow ({\ttfamily errno} is not changed and the result value is not predictable), uses smaller memory (flash and stack) and works more quickly. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!atol@{atol}}
+\index{atol@{atol}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{atol(const char $\ast$\+\_\+\+\_\+s) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+}{atol(const char *__s) __ATTR_PURE__}}]{\setlength{\rightskip}{0pt plus 5cm}long atol (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+\_\+s}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga764de49bd918caf24ce1caf3a10b3823}{}\label{group__avr__stdlib_ga764de49bd918caf24ce1caf3a10b3823}
+The \hyperlink{group__avr__stdlib_ga764de49bd918caf24ce1caf3a10b3823}{atol()} function converts the initial portion of the string pointed to by {\ttfamily s} to long integer representation. In contrast to
+
+
+\begin{DoxyCode}
+1 strtol(s, (char **)NULL, 10); 
+\end{DoxyCode}
+
+
+this function does not detect overflow ({\ttfamily errno} is not changed and the result value is not predictable), uses smaller memory (flash and stack) and works more quickly. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!bsearch@{bsearch}}
+\index{bsearch@{bsearch}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{bsearch(const void $\ast$\+\_\+\+\_\+key, const void $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+nmemb, size\+\_\+t \+\_\+\+\_\+size, int($\ast$\+\_\+\+\_\+compar)(const void $\ast$, const void $\ast$))}{bsearch(const void *__key, const void *__base, size_t __nmemb, size_t __size, int(*__compar)(const void *, const void *))}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ bsearch (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{\+\_\+\+\_\+key, }
+\item[{const void $\ast$}]{\+\_\+\+\_\+base, }
+\item[{size\+\_\+t}]{\+\_\+\+\_\+nmemb, }
+\item[{size\+\_\+t}]{\+\_\+\+\_\+size, }
+\item[{int($\ast$)(const void $\ast$, const void $\ast$)}]{\+\_\+\+\_\+compar}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga885c1ccefb716ff16ab73a57003140be}{}\label{group__avr__stdlib_ga885c1ccefb716ff16ab73a57003140be}
+The \hyperlink{group__avr__stdlib_ga885c1ccefb716ff16ab73a57003140be}{bsearch()} function searches an array of {\ttfamily nmemb} objects, the initial member of which is pointed to by {\ttfamily base}, for a member that matches the object pointed to by {\ttfamily key}. The size of each member of the array is specified by {\ttfamily size}.
+
+The contents of the array should be in ascending sorted order according to the comparison function referenced by {\ttfamily compar}. The {\ttfamily compar} routine is expected to have two arguments which point to the key object and to an array member, in that order, and should return an integer less than, equal to, or greater than zero if the key object is found, respectively, to be less than, to match, or be greater than the array member.
+
+The \hyperlink{group__avr__stdlib_ga885c1ccefb716ff16ab73a57003140be}{bsearch()} function returns a pointer to a matching member of the array, or a null pointer if no match is found. If two members compare as equal, which member is matched is unspecified. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!calloc@{calloc}}
+\index{calloc@{calloc}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{calloc(size\+\_\+t \+\_\+\+\_\+nele, size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+}{calloc(size_t __nele, size_t __size) __ATTR_MALLOC__}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ calloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+\_\+nele, }
+\item[{size\+\_\+t}]{\+\_\+\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga51ac965dacbc9daf922f469bdcfe00c2}{}\label{group__avr__stdlib_ga51ac965dacbc9daf922f469bdcfe00c2}
+Allocate {\ttfamily nele} elements of {\ttfamily size} each. Identical to calling {\ttfamily \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()}} using {\ttfamily nele $\ast$ size} as argument, except the allocated memory will be cleared to zero. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!div@{div}}
+\index{div@{div}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{div(int \+\_\+\+\_\+num, int \+\_\+\+\_\+denom) \+\_\+\+\_\+asm\+\_\+\+\_\+(""\+\_\+\+\_\+divmodhi4"") \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{div(int __num, int __denom) __asm__("__divmodhi4") __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf div\+\_\+t} div (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+num, }
+\item[{int}]{\+\_\+\+\_\+denom}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga63314983c7ee996c09f9e521eda5d399}{}\label{group__avr__stdlib_ga63314983c7ee996c09f9e521eda5d399}
+The \hyperlink{group__avr__stdlib_ga63314983c7ee996c09f9e521eda5d399}{div()} function computes the value {\ttfamily num/denom} and returns the quotient and remainder in a structure named {\ttfamily \hyperlink{structdiv__t}{div\+\_\+t}} that contains two int members named {\ttfamily quot} and {\ttfamily rem}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!dtostre@{dtostre}}
+\index{dtostre@{dtostre}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{dtostre(double \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, unsigned char \+\_\+\+\_\+prec, unsigned char \+\_\+\+\_\+flags)}{dtostre(double __val, char *__s, unsigned char __prec, unsigned char __flags)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dtostre (
+\begin{DoxyParamCaption}
+\item[{double}]{\+\_\+\+\_\+val, }
+\item[{char $\ast$}]{\+\_\+\+\_\+s, }
+\item[{unsigned char}]{\+\_\+\+\_\+prec, }
+\item[{unsigned char}]{\+\_\+\+\_\+flags}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{}\label{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}
+The \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre()} function converts the double value passed in {\ttfamily val} into an A\+S\+C\+II representation that will be stored under {\ttfamily s}. The caller is responsible for providing sufficient storage in {\ttfamily s}.
+
+Conversion is done in the format {\ttfamily \char`\"{}\mbox{[}-\/\mbox{]}d.\+ddde±dd\char`\"{}} where there is one digit before the decimal-\/point character and the number of digits after it is equal to the precision {\ttfamily prec}; if the precision is zero, no decimal-\/point character appears. If {\ttfamily flags} has the D\+T\+O\+S\+T\+R\+E\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE bit set, the letter {\ttfamily \textquotesingle{}E\textquotesingle{}} (rather than {\ttfamily \textquotesingle{}e\textquotesingle{}} ) will be used to introduce the exponent. The exponent always contains two digits; if the value is zero, the exponent is {\ttfamily \char`\"{}00\char`\"{}}.
+
+If {\ttfamily flags} has the D\+T\+O\+S\+T\+R\+E\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN bit set, a space character will be placed into the leading position for positive numbers.
+
+If {\ttfamily flags} has the D\+T\+O\+S\+T\+R\+E\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN bit set, a plus sign will be used instead of a space character in this case.
+
+The \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre()} function returns the pointer to the converted string {\ttfamily s}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!dtostrf@{dtostrf}}
+\index{dtostrf@{dtostrf}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{dtostrf(double \+\_\+\+\_\+val, signed char \+\_\+\+\_\+width, unsigned char \+\_\+\+\_\+prec, char $\ast$\+\_\+\+\_\+s)}{dtostrf(double __val, signed char __width, unsigned char __prec, char *__s)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dtostrf (
+\begin{DoxyParamCaption}
+\item[{double}]{\+\_\+\+\_\+val, }
+\item[{signed char}]{\+\_\+\+\_\+width, }
+\item[{unsigned char}]{\+\_\+\+\_\+prec, }
+\item[{char $\ast$}]{\+\_\+\+\_\+s}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga060c998e77fb5fc0d3168b3ce8771d42}{}\label{group__avr__stdlib_ga060c998e77fb5fc0d3168b3ce8771d42}
+The \hyperlink{group__avr__stdlib_ga060c998e77fb5fc0d3168b3ce8771d42}{dtostrf()} function converts the double value passed in {\ttfamily val} into an A\+S\+C\+II representationthat will be stored under {\ttfamily s}. The caller is responsible for providing sufficient storage in {\ttfamily s}.
+
+Conversion is done in the format {\ttfamily \char`\"{}\mbox{[}-\/\mbox{]}d.\+ddd\char`\"{}}. The minimum field width of the output string (including the {\ttfamily \textquotesingle{}}.\textquotesingle{} and the possible sign for negative values) is given in {\ttfamily width}, and {\ttfamily prec} determines the number of digits after the decimal sign. {\ttfamily width} is signed value, negative for left adjustment.
+
+The \hyperlink{group__avr__stdlib_ga060c998e77fb5fc0d3168b3ce8771d42}{dtostrf()} function returns the pointer to the converted string {\ttfamily s}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!exit@{exit}}
+\index{exit@{exit}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{exit(int \+\_\+\+\_\+status) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+}{exit(int __status) __ATTR_NORETURN__}}]{\setlength{\rightskip}{0pt plus 5cm}void exit (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+status}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga137096a48cc0c731052cadfb69c39b34}{}\label{group__avr__stdlib_ga137096a48cc0c731052cadfb69c39b34}
+The \hyperlink{group__avr__stdlib_ga137096a48cc0c731052cadfb69c39b34}{exit()} function terminates the application. Since there is no environment to return to, {\ttfamily status} is ignored, and code execution will eventually reach an infinite loop, thereby effectively halting all code processing. Before entering the infinite loop, interrupts are globally disabled.
+
+In a C++ context, global destructors will be called before halting execution. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!free@{free}}
+\index{free@{free}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{free(void $\ast$\+\_\+\+\_\+ptr)}{free(void *__ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+\+\_\+ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gafb8699abb1f51d920a176e695ff3be8a}{}\label{group__avr__stdlib_gafb8699abb1f51d920a176e695ff3be8a}
+The \hyperlink{group__avr__stdlib_gafb8699abb1f51d920a176e695ff3be8a}{free()} function causes the allocated memory referenced by {\ttfamily ptr} to be made available for future allocations. If {\ttfamily ptr} is N\+U\+LL, no action occurs. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!itoa@{itoa}}
+\index{itoa@{itoa}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{itoa(int \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)}{itoa(int __val, char *__s, int __radix)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char$\ast$ itoa (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+val, }
+\item[{char $\ast$}]{\+\_\+\+\_\+s, }
+\item[{int}]{\+\_\+\+\_\+radix}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gaeb782784ecd745890ea66c1c47817435}{}\label{group__avr__stdlib_gaeb782784ecd745890ea66c1c47817435}
+
+
+Convert an integer to a string. 
+
+The function \hyperlink{group__avr__stdlib_gaeb782784ecd745890ea66c1c47817435}{itoa()} converts the integer value from {\ttfamily val} into an A\+S\+C\+II representation that will be stored under {\ttfamily s}. The caller is responsible for providing sufficient storage in {\ttfamily s}.
+
+\begin{DoxyNote}{Note}
+The minimal size of the buffer {\ttfamily s} depends on the choice of radix. For example, if the radix is 2 (binary), you need to supply a buffer with a minimal length of 8 $\ast$ sizeof (int) + 1 characters, i.\+e. one character for each bit plus one for the string terminator. Using a larger radix will require a smaller minimal buffer size.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If the buffer is too small, you risk a buffer overflow.
+\end{DoxyWarning}
+Conversion is done using the {\ttfamily radix} as base, which may be a number between 2 (binary conversion) and up to 36. If {\ttfamily radix} is greater than 10, the next digit after {\ttfamily \textquotesingle{}9\textquotesingle{}} will be the letter {\ttfamily \textquotesingle{}a\textquotesingle{}}.
+
+If radix is 10 and val is negative, a minus sign will be prepended.
+
+The \hyperlink{group__avr__stdlib_gaeb782784ecd745890ea66c1c47817435}{itoa()} function returns the pointer passed as {\ttfamily s}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!labs@{labs}}
+\index{labs@{labs}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{labs(long \+\_\+\+\_\+i) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{labs(long __i) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}long labs (
+\begin{DoxyParamCaption}
+\item[{long}]{\+\_\+\+\_\+i}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}{}\label{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}
+The \hyperlink{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}{labs()} function computes the absolute value of the long integer {\ttfamily i}. \begin{DoxyNote}{Note}
+The \hyperlink{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}{abs()} and \hyperlink{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}{labs()} functions are builtins of gcc. 
+\end{DoxyNote}
+\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!ldiv@{ldiv}}
+\index{ldiv@{ldiv}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{ldiv(long \+\_\+\+\_\+num, long \+\_\+\+\_\+denom) \+\_\+\+\_\+asm\+\_\+\+\_\+(""\+\_\+\+\_\+divmodsi4"") \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{ldiv(long __num, long __denom) __asm__("__divmodsi4") __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ldiv\+\_\+t} ldiv (
+\begin{DoxyParamCaption}
+\item[{long}]{\+\_\+\+\_\+num, }
+\item[{long}]{\+\_\+\+\_\+denom}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga51399546cb1492103d553abf43ff6bd6}{}\label{group__avr__stdlib_ga51399546cb1492103d553abf43ff6bd6}
+The \hyperlink{group__avr__stdlib_ga51399546cb1492103d553abf43ff6bd6}{ldiv()} function computes the value {\ttfamily num/denom} and returns the quotient and remainder in a structure named {\ttfamily \hyperlink{structldiv__t}{ldiv\+\_\+t}} that contains two long integer members named {\ttfamily quot} and {\ttfamily rem}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!ltoa@{ltoa}}
+\index{ltoa@{ltoa}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{ltoa(long \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)}{ltoa(long __val, char *__s, int __radix)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char$\ast$ ltoa (
+\begin{DoxyParamCaption}
+\item[{long}]{\+\_\+\+\_\+val, }
+\item[{char $\ast$}]{\+\_\+\+\_\+s, }
+\item[{int}]{\+\_\+\+\_\+radix}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga8bf71f6d9c357c8a9690dd6bcda85aca}{}\label{group__avr__stdlib_ga8bf71f6d9c357c8a9690dd6bcda85aca}
+
+
+Convert a long integer to a string. 
+
+The function \hyperlink{group__avr__stdlib_ga8bf71f6d9c357c8a9690dd6bcda85aca}{ltoa()} converts the long integer value from {\ttfamily val} into an A\+S\+C\+II representation that will be stored under {\ttfamily s}. The caller is responsible for providing sufficient storage in {\ttfamily s}.
+
+\begin{DoxyNote}{Note}
+The minimal size of the buffer {\ttfamily s} depends on the choice of radix. For example, if the radix is 2 (binary), you need to supply a buffer with a minimal length of 8 $\ast$ sizeof (long int) + 1 characters, i.\+e. one character for each bit plus one for the string terminator. Using a larger radix will require a smaller minimal buffer size.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If the buffer is too small, you risk a buffer overflow.
+\end{DoxyWarning}
+Conversion is done using the {\ttfamily radix} as base, which may be a number between 2 (binary conversion) and up to 36. If {\ttfamily radix} is greater than 10, the next digit after {\ttfamily \textquotesingle{}9\textquotesingle{}} will be the letter {\ttfamily \textquotesingle{}a\textquotesingle{}}.
+
+If radix is 10 and val is negative, a minus sign will be prepended.
+
+The \hyperlink{group__avr__stdlib_ga8bf71f6d9c357c8a9690dd6bcda85aca}{ltoa()} function returns the pointer passed as {\ttfamily s}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!malloc@{malloc}}
+\index{malloc@{malloc}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{malloc(size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+}{malloc(size_t __size) __ATTR_MALLOC__}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ malloc (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{}\label{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}
+The \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()} function allocates {\ttfamily size} bytes of memory. If \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()} fails, a N\+U\+LL pointer is returned.
+
+Note that \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()} does {\itshape not} initialize the returned memory to zero bytes.
+
+See the chapter about \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc() usage} for implementation details. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!qsort@{qsort}}
+\index{qsort@{qsort}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{qsort(void $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+nmemb, size\+\_\+t \+\_\+\+\_\+size, \+\_\+\+\_\+compar\+\_\+fn\+\_\+t \+\_\+\+\_\+compar)}{qsort(void *__base, size_t __nmemb, size_t __size, __compar_fn_t __compar)}}]{\setlength{\rightskip}{0pt plus 5cm}void qsort (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+\+\_\+base, }
+\item[{size\+\_\+t}]{\+\_\+\+\_\+nmemb, }
+\item[{size\+\_\+t}]{\+\_\+\+\_\+size, }
+\item[{{\bf \+\_\+\+\_\+compar\+\_\+fn\+\_\+t}}]{\+\_\+\+\_\+compar}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}{}\label{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}
+The \hyperlink{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}{qsort()} function is a modified partition-\/exchange sort, or quicksort.
+
+The \hyperlink{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}{qsort()} function sorts an array of {\ttfamily nmemb} objects, the initial member of which is pointed to by {\ttfamily base}. The size of each object is specified by {\ttfamily size}. The contents of the array base are sorted in ascending order according to a comparison function pointed to by {\ttfamily compar}, which requires two arguments pointing to the objects being compared.
+
+The comparison function must return an integer less than, equal to, or greater than zero if the first argument is considered to be respectively less than, equal to, or greater than the second. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!rand@{rand}}
+\index{rand@{rand}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{rand(void)}{rand(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int rand (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{}\label{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}
+The \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand()} function computes a sequence of pseudo-\/random integers in the range of 0 to {\ttfamily R\+A\+N\+D\+\_\+\+M\+AX} (as defined by the header file $<$\hyperlink{stdlib_8h}{stdlib.\+h}$>$).
+
+The \hyperlink{group__avr__stdlib_gacceff9dc95bb3c5562dc9e61fc3d9075}{srand()} function sets its argument {\ttfamily seed} as the seed for a new sequence of pseudo-\/random numbers to be returned by \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand()}. These sequences are repeatable by calling \hyperlink{group__avr__stdlib_gacceff9dc95bb3c5562dc9e61fc3d9075}{srand()} with the same seed value.
+
+If no seed value is provided, the functions are automatically seeded with a value of 1.
+
+In compliance with the C standard, these functions operate on {\ttfamily int} arguments. Since the underlying algorithm already uses 32-\/bit calculations, this causes a loss of precision. See {\ttfamily \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random()}} for an alternate set of functions that retains full 32-\/bit precision. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!rand\+\_\+r@{rand\+\_\+r}}
+\index{rand\+\_\+r@{rand\+\_\+r}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{rand\+\_\+r(unsigned long $\ast$\+\_\+\+\_\+ctx)}{rand_r(unsigned long *__ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}int rand\+\_\+r (
+\begin{DoxyParamCaption}
+\item[{unsigned long $\ast$}]{\+\_\+\+\_\+ctx}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gaf5085001be836a0f2a5d3269a7c9fd04}{}\label{group__avr__stdlib_gaf5085001be836a0f2a5d3269a7c9fd04}
+Variant of \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand()} that stores the context in the user-\/supplied variable located at {\ttfamily ctx} instead of a static library variable so the function becomes re-\/entrant. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!random@{random}}
+\index{random@{random}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{random(void)}{random(void)}}]{\setlength{\rightskip}{0pt plus 5cm}long random (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{}\label{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}
+The \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random()} function computes a sequence of pseudo-\/random integers in the range of 0 to {\ttfamily R\+A\+N\+D\+O\+M\+\_\+\+M\+AX} (as defined by the header file $<$\hyperlink{stdlib_8h}{stdlib.\+h}$>$).
+
+The \hyperlink{group__avr__stdlib_ga4fca27496ca29c0a723d197696641eff}{srandom()} function sets its argument {\ttfamily seed} as the seed for a new sequence of pseudo-\/random numbers to be returned by \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand()}. These sequences are repeatable by calling \hyperlink{group__avr__stdlib_ga4fca27496ca29c0a723d197696641eff}{srandom()} with the same seed value.
+
+If no seed value is provided, the functions are automatically seeded with a value of 1. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!random\+\_\+r@{random\+\_\+r}}
+\index{random\+\_\+r@{random\+\_\+r}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{random\+\_\+r(unsigned long $\ast$\+\_\+\+\_\+ctx)}{random_r(unsigned long *__ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}long random\+\_\+r (
+\begin{DoxyParamCaption}
+\item[{unsigned long $\ast$}]{\+\_\+\+\_\+ctx}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gaa99a0733f06d2b9960a1401c2721af1e}{}\label{group__avr__stdlib_gaa99a0733f06d2b9960a1401c2721af1e}
+Variant of \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random()} that stores the context in the user-\/supplied variable located at {\ttfamily ctx} instead of a static library variable so the function becomes re-\/entrant. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!realloc@{realloc}}
+\index{realloc@{realloc}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{realloc(void $\ast$\+\_\+\+\_\+ptr, size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+}{realloc(void *__ptr, size_t __size) __ATTR_MALLOC__}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ realloc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+\+\_\+ptr, }
+\item[{size\+\_\+t}]{\+\_\+\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}{}\label{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}
+The \hyperlink{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}{realloc()} function tries to change the size of the region allocated at {\ttfamily ptr} to the new {\ttfamily size} value. It returns a pointer to the new region. The returned pointer might be the same as the old pointer, or a pointer to a completely different region.
+
+The contents of the returned region up to either the old or the new size value (whatever is less) will be identical to the contents of the old region, even in case a new region had to be allocated.
+
+It is acceptable to pass {\ttfamily ptr} as N\+U\+LL, in which case \hyperlink{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}{realloc()} will behave identical to \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()}.
+
+If the new memory cannot be allocated, \hyperlink{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}{realloc()} returns N\+U\+LL, and the region at {\ttfamily ptr} will not be changed. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!srand@{srand}}
+\index{srand@{srand}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{srand(unsigned int \+\_\+\+\_\+seed)}{srand(unsigned int __seed)}}]{\setlength{\rightskip}{0pt plus 5cm}void srand (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{\+\_\+\+\_\+seed}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gacceff9dc95bb3c5562dc9e61fc3d9075}{}\label{group__avr__stdlib_gacceff9dc95bb3c5562dc9e61fc3d9075}
+Pseudo-\/random number generator seeding; see \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand()}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!srandom@{srandom}}
+\index{srandom@{srandom}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{srandom(unsigned long \+\_\+\+\_\+seed)}{srandom(unsigned long __seed)}}]{\setlength{\rightskip}{0pt plus 5cm}void srandom (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{\+\_\+\+\_\+seed}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_ga4fca27496ca29c0a723d197696641eff}{}\label{group__avr__stdlib_ga4fca27496ca29c0a723d197696641eff}
+Pseudo-\/random number generator seeding; see \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random()}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!strtol@{strtol}}
+\index{strtol@{strtol}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{strtol(const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr, int \+\_\+\+\_\+base)}{strtol(const char *__nptr, char **__endptr, int __base)}}]{\setlength{\rightskip}{0pt plus 5cm}long strtol (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+\_\+nptr, }
+\item[{char $\ast$$\ast$}]{\+\_\+\+\_\+endptr, }
+\item[{int}]{\+\_\+\+\_\+base}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{}\label{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}
+The \hyperlink{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{strtol()} function converts the string in {\ttfamily nptr} to a long value. The conversion is done according to the given base, which must be between 2 and 36 inclusive, or be the special value 0.
+
+The string may begin with an arbitrary amount of white space (as determined by \hyperlink{group__ctype_gac83050abd09696d505838d772b910b37}{isspace()}) followed by a single optional {\ttfamily \textquotesingle{}+\textquotesingle{}} or {\ttfamily \textquotesingle{}-\/\textquotesingle{}} sign. If {\ttfamily base} is zero or 16, the string may then include a {\ttfamily \char`\"{}0x\char`\"{}} prefix, and the number will be read in base 16; otherwise, a zero base is taken as 10 (decimal) unless the next character is {\ttfamily \textquotesingle{}0\textquotesingle{}}, in which case it is taken as 8 (octal).
+
+The remainder of the string is converted to a long value in the obvious manner, stopping at the first character which is not a valid digit in the given base. (In bases above 10, the letter {\ttfamily \textquotesingle{}A\textquotesingle{}} in either upper or lower case represents 10, {\ttfamily \textquotesingle{}B\textquotesingle{}} represents 11, and so forth, with {\ttfamily \textquotesingle{}Z\textquotesingle{}} representing 35.)
+
+If {\ttfamily endptr} is not N\+U\+LL, \hyperlink{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{strtol()} stores the address of the first invalid character in {\ttfamily $\ast$endptr}. If there were no digits at all, however, \hyperlink{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{strtol()} stores the original value of {\ttfamily nptr} in {\ttfamily endptr}. (Thus, if {\ttfamily $\ast$nptr} is not {\ttfamily \textquotesingle{}\textbackslash{}0\textquotesingle{}} but {\ttfamily $\ast$$\ast$endptr} is {\ttfamily \textquotesingle{}\textbackslash{}0\textquotesingle{}} on return, the entire string was valid.)
+
+The \hyperlink{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{strtol()} function returns the result of the conversion, unless the value would underflow or overflow. If no conversion could be performed, 0 is returned. If an overflow or underflow occurs, {\ttfamily errno} is set to \hyperlink{group__avr__errno}{E\+R\+A\+N\+GE} and the function return value is clamped to {\ttfamily L\+O\+N\+G\+\_\+\+M\+IN} or {\ttfamily L\+O\+N\+G\+\_\+\+M\+AX}, respectively. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!strtoul@{strtoul}}
+\index{strtoul@{strtoul}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{strtoul(const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr, int \+\_\+\+\_\+base)}{strtoul(const char *__nptr, char **__endptr, int __base)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long strtoul (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{\+\_\+\+\_\+nptr, }
+\item[{char $\ast$$\ast$}]{\+\_\+\+\_\+endptr, }
+\item[{int}]{\+\_\+\+\_\+base}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{}\label{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}
+The \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul()} function converts the string in {\ttfamily nptr} to an unsigned long value. The conversion is done according to the given base, which must be between 2 and 36 inclusive, or be the special value 0.
+
+The string may begin with an arbitrary amount of white space (as determined by \hyperlink{group__ctype_gac83050abd09696d505838d772b910b37}{isspace()}) followed by a single optional {\ttfamily \textquotesingle{}+\textquotesingle{}} or {\ttfamily \textquotesingle{}-\/\textquotesingle{}} sign. If {\ttfamily base} is zero or 16, the string may then include a {\ttfamily \char`\"{}0x\char`\"{}} prefix, and the number will be read in base 16; otherwise, a zero base is taken as 10 (decimal) unless the next character is {\ttfamily \textquotesingle{}0\textquotesingle{}}, in which case it is taken as 8 (octal).
+
+The remainder of the string is converted to an unsigned long value in the obvious manner, stopping at the first character which is not a valid digit in the given base. (In bases above 10, the letter {\ttfamily \textquotesingle{}A\textquotesingle{}} in either upper or lower case represents 10, {\ttfamily \textquotesingle{}B\textquotesingle{}} represents 11, and so forth, with {\ttfamily \textquotesingle{}Z\textquotesingle{}} representing 35.)
+
+If {\ttfamily endptr} is not N\+U\+LL, \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul()} stores the address of the first invalid character in {\ttfamily $\ast$endptr}. If there were no digits at all, however, \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul()} stores the original value of {\ttfamily nptr} in {\ttfamily endptr}. (Thus, if {\ttfamily $\ast$nptr} is not {\ttfamily \textquotesingle{}\textbackslash{}0\textquotesingle{}} but {\ttfamily $\ast$$\ast$endptr} is {\ttfamily \textquotesingle{}\textbackslash{}0\textquotesingle{}} on return, the entire string was valid.)
+
+The \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul()} function return either the result of the conversion or, if there was a leading minus sign, the negation of the result of the conversion, unless the original (non-\/negated) value would overflow; in the latter case, \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul()} returns U\+L\+O\+N\+G\+\_\+\+M\+AX, and {\ttfamily errno} is set to \hyperlink{group__avr__errno}{E\+R\+A\+N\+GE}. If no conversion could be performed, 0 is returned. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!ultoa@{ultoa}}
+\index{ultoa@{ultoa}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{ultoa(unsigned long \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)}{ultoa(unsigned long __val, char *__s, int __radix)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char$\ast$ ultoa (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{\+\_\+\+\_\+val, }
+\item[{char $\ast$}]{\+\_\+\+\_\+s, }
+\item[{int}]{\+\_\+\+\_\+radix}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gae07ff57ffca09238c490ff4d11cf6399}{}\label{group__avr__stdlib_gae07ff57ffca09238c490ff4d11cf6399}
+
+
+Convert an unsigned long integer to a string. 
+
+The function \hyperlink{group__avr__stdlib_gae07ff57ffca09238c490ff4d11cf6399}{ultoa()} converts the unsigned long integer value from {\ttfamily val} into an A\+S\+C\+II representation that will be stored under {\ttfamily s}. The caller is responsible for providing sufficient storage in {\ttfamily s}.
+
+\begin{DoxyNote}{Note}
+The minimal size of the buffer {\ttfamily s} depends on the choice of radix. For example, if the radix is 2 (binary), you need to supply a buffer with a minimal length of 8 $\ast$ sizeof (unsigned long int) + 1 characters, i.\+e. one character for each bit plus one for the string terminator. Using a larger radix will require a smaller minimal buffer size.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If the buffer is too small, you risk a buffer overflow.
+\end{DoxyWarning}
+Conversion is done using the {\ttfamily radix} as base, which may be a number between 2 (binary conversion) and up to 36. If {\ttfamily radix} is greater than 10, the next digit after {\ttfamily \textquotesingle{}9\textquotesingle{}} will be the letter {\ttfamily \textquotesingle{}a\textquotesingle{}}.
+
+The \hyperlink{group__avr__stdlib_gae07ff57ffca09238c490ff4d11cf6399}{ultoa()} function returns the pointer passed as {\ttfamily s}. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!utoa@{utoa}}
+\index{utoa@{utoa}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{utoa(unsigned int \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)}{utoa(unsigned int __val, char *__s, int __radix)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char$\ast$ utoa (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{\+\_\+\+\_\+val, }
+\item[{char $\ast$}]{\+\_\+\+\_\+s, }
+\item[{int}]{\+\_\+\+\_\+radix}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__stdlib_gae272f8a7060edeade527a0821e5e811b}{}\label{group__avr__stdlib_gae272f8a7060edeade527a0821e5e811b}
+
+
+Convert an unsigned integer to a string. 
+
+The function \hyperlink{group__avr__stdlib_gae272f8a7060edeade527a0821e5e811b}{utoa()} converts the unsigned integer value from {\ttfamily val} into an A\+S\+C\+II representation that will be stored under {\ttfamily s}. The caller is responsible for providing sufficient storage in {\ttfamily s}.
+
+\begin{DoxyNote}{Note}
+The minimal size of the buffer {\ttfamily s} depends on the choice of radix. For example, if the radix is 2 (binary), you need to supply a buffer with a minimal length of 8 $\ast$ sizeof (unsigned int) + 1 characters, i.\+e. one character for each bit plus one for the string terminator. Using a larger radix will require a smaller minimal buffer size.
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If the buffer is too small, you risk a buffer overflow.
+\end{DoxyWarning}
+Conversion is done using the {\ttfamily radix} as base, which may be a number between 2 (binary conversion) and up to 36. If {\ttfamily radix} is greater than 10, the next digit after {\ttfamily \textquotesingle{}9\textquotesingle{}} will be the letter {\ttfamily \textquotesingle{}a\textquotesingle{}}.
+
+The \hyperlink{group__avr__stdlib_gae272f8a7060edeade527a0821e5e811b}{utoa()} function returns the pointer passed as {\ttfamily s}. 
+
+\subsection{Variable Documentation}
+\index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end@{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end}}
+\index{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end@{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end}{__malloc_heap_end}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ \+\_\+\+\_\+malloc\+\_\+heap\+\_\+end}\hypertarget{group__avr__stdlib_ga4d7b1bf0f75d529cc75229a266132115}{}\label{group__avr__stdlib_ga4d7b1bf0f75d529cc75229a266132115}
+{\ttfamily \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()}} tunable. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start@{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start}}
+\index{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start@{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start}{__malloc_heap_start}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ \+\_\+\+\_\+malloc\+\_\+heap\+\_\+start}\hypertarget{group__avr__stdlib_ga9310042b3956282440c091d20cb98c5f}{}\label{group__avr__stdlib_ga9310042b3956282440c091d20cb98c5f}
+{\ttfamily \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()}} tunable. \index{$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}!\+\_\+\+\_\+malloc\+\_\+margin@{\+\_\+\+\_\+malloc\+\_\+margin}}
+\index{\+\_\+\+\_\+malloc\+\_\+margin@{\+\_\+\+\_\+malloc\+\_\+margin}!$<$stdlib.\+h$>$\+: General utilities@{$<$stdlib.\+h$>$\+: General utilities}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+malloc\+\_\+margin}{__malloc_margin}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t \+\_\+\+\_\+malloc\+\_\+margin}\hypertarget{group__avr__stdlib_gaffadd67736fd340e893fb22c207de597}{}\label{group__avr__stdlib_gaffadd67736fd340e893fb22c207de597}
+{\ttfamily \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc()}} tunable. 

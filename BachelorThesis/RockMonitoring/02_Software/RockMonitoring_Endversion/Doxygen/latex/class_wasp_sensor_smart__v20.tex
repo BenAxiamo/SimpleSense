@@ -1,0 +1,184 @@
+\hypertarget{class_wasp_sensor_smart__v20}{}\section{Wasp\+Sensor\+Smart\+\_\+v20 Class Reference}
+\label{class_wasp_sensor_smart__v20}\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+
+
+\hyperlink{class_wasp_sensor_smart__v20}{Wasp\+Sensor\+Smart\+\_\+v20} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Smart\+\_\+v20.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_smart__v20_a9136cd71d6dd0e02e353b50a1f2b1f4b}{Wasp\+Sensor\+Smart\+\_\+v20} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_smart__v20_a6c80267ecba68fb4e33e3ba572896d8f}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_smart__v20_acfde466975945b339c545ad3d6170cc1}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_smart__v20_abb9b88c67df0b1794681cce95bec94de}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the 3\+V3/5V switches. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_smart__v20_a1766a78484a3a23b729995f08cc03f74}{set\+Sensor\+Mode} (uint8\+\_\+t mode, uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the different sensor switches. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_smart__v20_a9d955b3290f181b7c676d499ab8ab76e}{read\+Value} (uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_smart__v20_a5eef637e766f5d9e5340fe26fd869afa}{read\+Value} (uint16\+\_\+t sensor, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_sensor_smart__v20}{Wasp\+Sensor\+Smart\+\_\+v20} Class. 
+
+\hyperlink{class_wasp_sensor_smart__v20}{Wasp\+Sensor\+Smart\+\_\+v20} Class defines all the variables and functions used for managing the Smart Metering Sensor Board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Smart\+\_\+v20()}{WaspSensorSmart_v20()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Smart\+\_\+v20\+::\+Wasp\+Sensor\+Smart\+\_\+v20 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_a9136cd71d6dd0e02e353b50a1f2b1f4b}{}\label{class_wasp_sensor_smart__v20_a9136cd71d6dd0e02e353b50a1f2b1f4b}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Smart\+\_\+v20\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_acfde466975945b339c545ad3d6170cc1}{}\label{class_wasp_sensor_smart__v20_acfde466975945b339c545ad3d6170cc1}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Smart\+\_\+v20\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_a6c80267ecba68fb4e33e3ba572896d8f}{}\label{class_wasp_sensor_smart__v20_a6c80267ecba68fb4e33e3ba572896d8f}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor)}{readValue(uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Smart\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_a9d955b3290f181b7c676d499ab8ab76e}{}\label{class_wasp_sensor_smart__v20_a9d955b3290f181b7c676d499ab8ab76e}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: specifies the socket to set the threshold to (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+M\+A\+R\+T\+\_\+X\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor, uint8\+\_\+t type)}{readValue(uint16_t sensor, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Smart\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_a5eef637e766f5d9e5340fe26fd869afa}{}\label{class_wasp_sensor_smart__v20_a5eef637e766f5d9e5340fe26fd869afa}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: specifies the socket to set the threshold to (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+M\+A\+R\+T\+\_\+X\textquotesingle{}) \\
+\hline
+{\em uint8\+\_\+t} & type \+: specifies the model of the sensor to be read for ultrasound or flow sensors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Smart\+\_\+v20\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_abb9b88c67df0b1794681cce95bec94de}{}\label{class_wasp_sensor_smart__v20_abb9b88c67df0b1794681cce95bec94de}
+
+
+It sets O\+N/\+O\+FF the 3\+V3/5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+8 \+: error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}!set\+Sensor\+Mode@{set\+Sensor\+Mode}}
+\index{set\+Sensor\+Mode@{set\+Sensor\+Mode}!Wasp\+Sensor\+Smart\+\_\+v20@{Wasp\+Sensor\+Smart\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Sensor\+Mode(uint8\+\_\+t mode, uint16\+\_\+t sensor)}{setSensorMode(uint8_t mode, uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Smart\+\_\+v20\+::set\+Sensor\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_smart__v20_a1766a78484a3a23b729995f08cc03f74}{}\label{class_wasp_sensor_smart__v20_a1766a78484a3a23b729995f08cc03f74}
+
+
+It sets O\+N/\+O\+FF the different sensor switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+{\em uint16\+\_\+t} & sensor \+: the sensor to set O\+N/\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Smart\+\_\+v20/\hyperlink{_wasp_sensor_smart__v20_8h}{Wasp\+Sensor\+Smart\+\_\+v20.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Smart\+\_\+v20/Wasp\+Sensor\+Smart\+\_\+v20.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,1244 @@
+\hypertarget{class_wasp_s_d}{}\section{Wasp\+SD Class Reference}
+\label{class_wasp_s_d}\index{Wasp\+SD@{Wasp\+SD}}
+
+
+\hyperlink{class_wasp_s_d}{Wasp\+SD} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+S\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_s_d_a926d2c269676c7a58eccd1ab2b57e374}{Wasp\+SD} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_s_d_af2c0607bd41ca6fd92192f3d4127e366}{clean\+Flags} (void)
+\begin{DoxyCompactList}\small\item\em It clears the flag. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_ab970761ed7114d1bedcf7586050483c3}{is\+SD} ()
+\begin{DoxyCompactList}\small\item\em It checks if there is a SD Card in the slot. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a0c9657d17f4debab2ef3702923416282}{ON} ()
+\begin{DoxyCompactList}\small\item\em It powers the SD card, initialize it and prepare it to work with. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_d_a24169944cf0433e6a909b7d6c3f69917}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It powers off the SD card and closes the pointers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a2de65d3f03424fc56f14d1475fc0f447}{init} ()
+\item 
+void \hyperlink{class_wasp_s_d_a110582100a2d3aaedae1e2143b539d38}{set\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets power mode. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_s_d_a2c6f8aa990e2af347a6a3e66f664c2ed}{print\+\_\+disk\+\_\+info} ()
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_s_d_aee074195db1e2bc5cc0afefe53c5f7d7}{get\+Disk\+Size} ()
+\begin{DoxyCompactList}\small\item\em It gets the total disk size. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a90be16361e951e7cc5f9d6560e367530}{cd} (const char $\ast$dirpath)
+\begin{DoxyCompactList}\small\item\em It changes the current working directory. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_adcf1a17df2a7aeb3294d1efa29163780}{go\+Root} ()
+\begin{DoxyCompactList}\small\item\em It changes the current directory to the root directory. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_d_ae3a14ea6abf645007ca99faf878397d3}{num\+Files} ()
+\begin{DoxyCompactList}\small\item\em It gets the amount of files in a directory. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_d_a06bcee4baa08fa67b66eb17faaa8ab93}{ls} (void)
+\begin{DoxyCompactList}\small\item\em It prints the current working directory\textquotesingle{}s contents. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_d_a782056bf89c3c1463d9071f415431c6f}{ls} (uint8\+\_\+t flags)
+\begin{DoxyCompactList}\small\item\em It prints the working directory indicating flags. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_ab27a9d41c4a4f1fd0b63e32bcef05d97}{find\+\_\+file\+\_\+in\+\_\+dir} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It tests the existence of files in the current directory. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_d_a83c69f275ca5474af72a0fdf65adc403}{mkdir} (char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It creates a directory. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a5aa32dc5b6b5f4407b25bd01cce87e54}{is\+Dir} (\hyperlink{class_sd_file}{Sd\+File} $\ast$dir)
+\begin{DoxyCompactList}\small\item\em It checks if an entry is a file or a directory. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_d_a316c9fb28adcb4228e7a9cc81c7f0697}{is\+Dir} (const char $\ast$dirpath)
+\begin{DoxyCompactList}\small\item\em It checks if an entry is a file or a directory. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_d_a6430feba6d1ebd9b81e0d97f9dca991c}{del} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It deletes a file. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_d_a5cb6e319b94438592bae491f933fed4d}{rmdir} (const char $\ast$dirpath)
+\begin{DoxyCompactList}\small\item\em It deletes a directory. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_d_a969ad23ebf28f6df951dc886d7215bee}{rm\+Rf\+Dir} (const char $\ast$dirpath)
+\begin{DoxyCompactList}\small\item\em It deletes a directory and all contained files. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_aa0e399c0aeeb29eff9a37a7c303796a4}{open\+File} (const char $\ast$filepath, \hyperlink{class_sd_file}{Sd\+File} $\ast$file, uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It opens a file if available. \end{DoxyCompactList}\item 
+\hyperlink{class_sd_file}{Sd\+File} \hyperlink{class_wasp_s_d_a94b8d2ef4aa4bb5c496e235b39b94145}{get\+Parent\+Dir} (const char $\ast$filepath, int $\ast$index)
+\begin{DoxyCompactList}\small\item\em It gets the parent directory of a filepath. \end{DoxyCompactList}\item 
+\hyperlink{class_sd_file}{Sd\+File} \hyperlink{class_wasp_s_d_aaad4cebc4f5f21a6e49c9600d5c21da1}{get\+Dir} (const char $\ast$filepath, int $\ast$index)
+\begin{DoxyCompactList}\small\item\em It gets the directory we need. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a440aa7967f29fefc8a89f25256692b18}{close\+File} (\hyperlink{class_sd_file}{Sd\+File} $\ast$file)
+\begin{DoxyCompactList}\small\item\em It closes a file. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_d_a78620ce2e7ab96c8665c6c5309716dc5}{is\+File} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It tests the existence of a file in the current folder. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{class_wasp_s_d_ada0f343921cc1b68ce1662b6f8b4d2f0}{numln} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It gets the amount of lines in a file. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{class_wasp_s_d_a2a46bde220e6dca44babed44c884a65f}{get\+File\+Size} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It gets the file size for filepath in the current folder. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_s_d_a9a0793484b24874485636faa8ca69f13}{cat} (const char $\ast$filepath, int32\+\_\+t offset, uint16\+\_\+t scope)
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{class_wasp_s_d_a8945e40f481051c716cb55eeb3d7239f}{cat\+Bin} (const char $\ast$filepath, int32\+\_\+t offset, uint16\+\_\+t scope)
+\item 
+char $\ast$ \hyperlink{class_wasp_s_d_abdf079d3b5df4c9448728eccd166c766}{catln} (const char $\ast$filepath, uint32\+\_\+t offset, uint16\+\_\+t scope)
+\item 
+int32\+\_\+t \hyperlink{class_wasp_s_d_ab3554bc532af01d7fd13055f67315f41}{index\+Of} (const char $\ast$filepath, const char $\ast$pattern, uint32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em It searches for first occurrence of a string in a file. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a2fdf92f5da909563a3dd0a6281e7a554}{create} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It creates a file. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+SD} (const char $\ast$filepath, const char $\ast$str, int32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em It writes strings to a file. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_af655e871a7e95f1fdc45b404242146e6}{write\+SD} (const char $\ast$filepath, const char $\ast$str, int32\+\_\+t offset, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It writes strings to a file of a specific length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+SD} (const char $\ast$filepath, uint8\+\_\+t $\ast$str, int32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em It writes integer array to a file. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a5c2e9b515f3e4539d7a0ae8f87354047}{write\+SD} (const char $\ast$filepath, uint8\+\_\+t $\ast$str, int32\+\_\+t offset, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It writes integer array to a file indicating the length of the array. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{append} (const char $\ast$filepath, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em It writes strings at the end of files. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a4270dadbd688fba912069dc39934f70e}{append} (const char $\ast$filepath, const char $\ast$str, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It writes strings at the end of files of a specific length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a4a187b5a5e2635bee084d96c8c415de3}{append} (const char $\ast$filepath, uint8\+\_\+t $\ast$str)
+\begin{DoxyCompactList}\small\item\em It writes integer arrays at the end of files. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a39d2fab7cf0f4ddd7c25bb005823f4cb}{append} (const char $\ast$filepath, uint8\+\_\+t $\ast$str, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It writes integer arrays at the end of files of a specific length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a0f62caa7efd499f04bae51bc94096739}{appendln} (const char $\ast$filepath, uint8\+\_\+t $\ast$str, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It writes integer arrays at the end of files of a specific length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_ab006d3cef31611464459cad157a78672}{appendln} (const char $\ast$filepath, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em It writes strings at the end of files adding an E\+OL. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}{appendln} (const char $\ast$filepath, uint8\+\_\+t $\ast$str)
+\begin{DoxyCompactList}\small\item\em It writes integer arrays at the end of files adding an E\+OL. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a02da5f3b0d7ad6d163d6b208ad669b7d}{write\+End\+Of\+Line} (const char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It writes an E\+OL in the specified file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_s_d_a53e73f2b8ea28837a740ddfc72b46221}{format} ()
+\item 
+void \hyperlink{class_wasp_s_d_a6dcad9007022263cb080e7ac72d1ea0a}{show\+File} (char $\ast$filepath)
+\begin{DoxyCompactList}\small\item\em It writes all the contents of the file specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sd_file}{Sd\+File} \hyperlink{class_wasp_s_d_a86ed553df7ff5803eeb052c2a5629787}{root}\hypertarget{class_wasp_s_d_a86ed553df7ff5803eeb052c2a5629787}{}\label{class_wasp_s_d_a86ed553df7ff5803eeb052c2a5629787}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: root is used for SD card\textquotesingle{}s root directory file. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_s_d_ad33b244f29b0473b95e9367895dd0adf}{buffer} \mbox{[}\hyperlink{_wasp_s_d_8h_a360cae4c2a7e6fda1662c344f2da12ba}{D\+O\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_d_a30858d4ea20d8f577bdda334f9fefaa9}{buffer\+Bin} \mbox{[}\hyperlink{_wasp_s_d_8h_ae0b2e231d682426d06cc13cc79d8a92d}{B\+I\+N\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_s_d_a8ca1aac8727a742cddb33e677c71faef}{flag}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_s_d_a478bb1b2d91f66cddeb272cfd2c45d1c}{disk\+Size}\hypertarget{class_wasp_s_d_a478bb1b2d91f66cddeb272cfd2c45d1c}{}\label{class_wasp_s_d_a478bb1b2d91f66cddeb272cfd2c45d1c}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: total byte size of the drive. \end{DoxyCompactList}\item 
+\hyperlink{class_sd2_card}{Sd2\+Card} \hyperlink{class_wasp_s_d_ada1f923ddbaaeaf0b19a973c6e027949}{card}\hypertarget{class_wasp_s_d_ada1f923ddbaaeaf0b19a973c6e027949}{}\label{class_wasp_s_d_ada1f923ddbaaeaf0b19a973c6e027949}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: object to the SD card. \end{DoxyCompactList}\item 
+\hyperlink{class_sd_file}{Sd\+File} \hyperlink{class_wasp_s_d_a8e28451de27ee79fa11812d17060c6b9}{current\+Dir}\hypertarget{class_wasp_s_d_a8e28451de27ee79fa11812d17060c6b9}{}\label{class_wasp_s_d_a8e28451de27ee79fa11812d17060c6b9}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: object to the current working directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_s_d}{Wasp\+SD} Class. 
+
+\hyperlink{class_wasp_s_d}{Wasp\+SD} Class defines all the variables and functions used to manage the SD Card 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+SD@{Wasp\+SD}!Wasp\+SD@{Wasp\+SD}}
+\index{Wasp\+SD@{Wasp\+SD}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{Wasp\+S\+D()}{WaspSD()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+S\+D\+::\+Wasp\+SD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a926d2c269676c7a58eccd1ab2b57e374}{}\label{class_wasp_s_d_a926d2c269676c7a58eccd1ab2b57e374}
+
+
+class constructor 
+
+Constructors ///////////////////////////////////////////////////////.
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+SD@{Wasp\+SD}!append@{append}}
+\index{append@{append}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{append(const char $\ast$filepath, const char $\ast$str)}{append(const char *filepath, const char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{}\label{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}
+
+
+It writes strings at the end of files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em const} & char$\ast$ str \+: the string to write into the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!append@{append}}
+\index{append@{append}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{append(const char $\ast$filepath, const char $\ast$str, uint16\+\_\+t length)}{append(const char *filepath, const char *str, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{const char $\ast$}]{str, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a4270dadbd688fba912069dc39934f70e}{}\label{class_wasp_s_d_a4270dadbd688fba912069dc39934f70e}
+
+
+It writes strings at the end of files of a specific length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em const} & char$\ast$ str \+: the string to write into the file \\
+\hline
+{\em uint16\+\_\+t} & length \+: the length to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_af655e871a7e95f1fdc45b404242146e6}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset, uint16\+\_\+t length)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!append@{append}}
+\index{append@{append}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{append(const char $\ast$filepath, uint8\+\_\+t $\ast$str)}{append(const char *filepath, uint8_t *str)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint8\+\_\+t $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a4a187b5a5e2635bee084d96c8c415de3}{}\label{class_wasp_s_d_a4a187b5a5e2635bee084d96c8c415de3}
+
+
+It writes integer arrays at the end of files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+S\+D(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{append(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ab006d3cef31611464459cad157a78672}{appendln(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}{appendln(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!append@{append}}
+\index{append@{append}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{append(const char $\ast$filepath, uint8\+\_\+t $\ast$str, uint16\+\_\+t length)}{append(const char *filepath, uint8_t *str, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::append (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint8\+\_\+t $\ast$}]{str, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a39d2fab7cf0f4ddd7c25bb005823f4cb}{}\label{class_wasp_s_d_a39d2fab7cf0f4ddd7c25bb005823f4cb}
+
+
+It writes integer arrays at the end of files of a specific length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+{\em uint16\+\_\+t} & length \+: the length to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+S\+D(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{append(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ab006d3cef31611464459cad157a78672}{appendln(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}{appendln(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!appendln@{appendln}}
+\index{appendln@{appendln}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{appendln(const char $\ast$filepath, uint8\+\_\+t $\ast$str, uint16\+\_\+t length)}{appendln(const char *filepath, uint8_t *str, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::appendln (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint8\+\_\+t $\ast$}]{str, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a0f62caa7efd499f04bae51bc94096739}{}\label{class_wasp_s_d_a0f62caa7efd499f04bae51bc94096739}
+
+
+It writes integer arrays at the end of files of a specific length. 
+
+End of line is added when teh first writing is done successfully 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+{\em uint16\+\_\+t} & length \+: the length to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+S\+D(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{append(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ab006d3cef31611464459cad157a78672}{appendln(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}{appendln(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!appendln@{appendln}}
+\index{appendln@{appendln}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{appendln(const char $\ast$filepath, const char $\ast$str)}{appendln(const char *filepath, const char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::appendln (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ab006d3cef31611464459cad157a78672}{}\label{class_wasp_s_d_ab006d3cef31611464459cad157a78672}
+
+
+It writes strings at the end of files adding an E\+OL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em const} & char$\ast$ str \+: the string to write into the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+S\+D(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{append(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_a4a187b5a5e2635bee084d96c8c415de3}{append(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}{appendln(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!appendln@{appendln}}
+\index{appendln@{appendln}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{appendln(const char $\ast$filepath, uint8\+\_\+t $\ast$str)}{appendln(const char *filepath, uint8_t *str)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::appendln (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint8\+\_\+t $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}{}\label{class_wasp_s_d_ac964ae8fcfb40ed2dd22ef896639e39f}
+
+
+It writes integer arrays at the end of files adding an E\+OL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+S\+D(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str, int32\+\_\+t offset)} 
+
+\hyperlink{class_wasp_s_d_a97e609bad6fc6d25171e47d02226b9d4}{append(const char$\ast$ filepath, const char$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_a4a187b5a5e2635bee084d96c8c415de3}{append(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str)} 
+
+\hyperlink{class_wasp_s_d_ab006d3cef31611464459cad157a78672}{appendln(const char$\ast$ filepath, const char$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!cat@{cat}}
+\index{cat@{cat}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{cat(const char $\ast$filepath, int32\+\_\+t offset, uint16\+\_\+t scope)}{cat(const char *filepath, int32_t offset, uint16_t scope)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+S\+D\+::cat (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{int32\+\_\+t}]{offset, }
+\item[{uint16\+\_\+t}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a9a0793484b24874485636faa8ca69f13}{}\label{class_wasp_s_d_a9a0793484b24874485636faa8ca69f13}
+It dumps into the buffer the amount of bytes in scope after offset coming from filepath
+
+There is a limitation in size, due to D\+O\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE. If the data read was bigger than that, the function will include the characters \char`\"{}$>$$>$\char`\"{} at the end and activate the T\+R\+U\+N\+C\+A\+T\+E\+D\+\_\+\+D\+A\+TA value in the S\+D.\+flag. It is recommened to check this value to assure data integrity. 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file to get the data from \\
+\hline
+{\em int32\+\_\+t} & offset \+: amount of bytes to jump before start dumping the data to the buffer \\
+\hline
+{\em uint16\+\_\+t} & scope \+: amount of bytes for dumping to the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}buffer\textquotesingle{} variable where the data has been dumped 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_a8945e40f481051c716cb55eeb3d7239f}{cat\+Bin} (const char$\ast$ filepath, int32\+\_\+t offset, uint16\+\_\+t scope) 
+
+\hyperlink{class_wasp_s_d_abdf079d3b5df4c9448728eccd166c766}{catln} (const char$\ast$ filepath, uint32\+\_\+t offset, uint16\+\_\+t scope) 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!cat\+Bin@{cat\+Bin}}
+\index{cat\+Bin@{cat\+Bin}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{cat\+Bin(const char $\ast$filepath, int32\+\_\+t offset, uint16\+\_\+t scope)}{catBin(const char *filepath, int32_t offset, uint16_t scope)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t $\ast$ Wasp\+S\+D\+::cat\+Bin (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{int32\+\_\+t}]{offset, }
+\item[{uint16\+\_\+t}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a8945e40f481051c716cb55eeb3d7239f}{}\label{class_wasp_s_d_a8945e40f481051c716cb55eeb3d7239f}
+It dumps into the buffer\+Bin the amount of bytes in scope after offset coming from filepath
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file to get the data from \\
+\hline
+{\em int32\+\_\+t} & offset \+: amount of bytes to jump before start dumping the data to the buffer \\
+\hline
+{\em uint16\+\_\+t} & scope \+: amount of bytes for dumping to the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}buffer\+Bin\textquotesingle{} variable where the data has been dumped 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_a9a0793484b24874485636faa8ca69f13}{cat} (const char$\ast$ filepath, int32\+\_\+t offset, uint16\+\_\+t scope) 
+
+\hyperlink{class_wasp_s_d_abdf079d3b5df4c9448728eccd166c766}{catln} (const char$\ast$ filepath, uint32\+\_\+t offset, uint16\+\_\+t scope) 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!catln@{catln}}
+\index{catln@{catln}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{catln(const char $\ast$filepath, uint32\+\_\+t offset, uint16\+\_\+t scope)}{catln(const char *filepath, uint32_t offset, uint16_t scope)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+S\+D\+::catln (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint32\+\_\+t}]{offset, }
+\item[{uint16\+\_\+t}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_abdf079d3b5df4c9448728eccd166c766}{}\label{class_wasp_s_d_abdf079d3b5df4c9448728eccd166c766}
+It dumps into the buffer the amount of lines in scope after offset lines coming from filepath
+
+There is a limitation in size, due to D\+O\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE. If the data read was bigger than that, the function will include the characters \char`\"{}$>$$>$\char`\"{} at the end and activate the T\+R\+U\+N\+C\+A\+T\+E\+D\+\_\+\+D\+A\+TA value in the S\+D.\+flag. It is recommened to check this value to assure data integrity. 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file to get the data from \\
+\hline
+{\em uint32\+\_\+t} & offset \+: amount of lines to jump before start dumping data to the buffer \\
+\hline
+{\em uint16\+\_\+t} & scope \+: amount of lines for dumping to the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}buffer\textquotesingle{} variable where the data has been dumped 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_a9a0793484b24874485636faa8ca69f13}{cat} (const char$\ast$ filepath, int32\+\_\+t offset, uint16\+\_\+t scope) 
+
+\hyperlink{class_wasp_s_d_a8945e40f481051c716cb55eeb3d7239f}{cat\+Bin} (const char$\ast$ filepath, int32\+\_\+t offset, uint16\+\_\+t scope) 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!cd@{cd}}
+\index{cd@{cd}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{cd(const char $\ast$dirpath)}{cd(const char *dirpath)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::cd (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{dirpath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a90be16361e951e7cc5f9d6560e367530}{}\label{class_wasp_s_d_a90be16361e951e7cc5f9d6560e367530}
+
+
+It changes the current working directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ dirpath \+: path to the directory we want to change to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!clean\+Flags@{clean\+Flags}}
+\index{clean\+Flags@{clean\+Flags}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{clean\+Flags(void)}{cleanFlags(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+S\+D\+::clean\+Flags (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_af2c0607bd41ca6fd92192f3d4127e366}{}\label{class_wasp_s_d_af2c0607bd41ca6fd92192f3d4127e366}
+
+
+It clears the flag. 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}flag\textquotesingle{} variable 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!close\+File@{close\+File}}
+\index{close\+File@{close\+File}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{close\+File(\+Sd\+File $\ast$file)}{closeFile(SdFile *file)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::close\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+File} $\ast$}]{file}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a440aa7967f29fefc8a89f25256692b18}{}\label{class_wasp_s_d_a440aa7967f29fefc8a89f25256692b18}
+
+
+It closes a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & \+: pointer to the file to close \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!create@{create}}
+\index{create@{create}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{create(const char $\ast$filepath)}{create(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::create (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a2fdf92f5da909563a3dd0a6281e7a554}{}\label{class_wasp_s_d_a2fdf92f5da909563a3dd0a6281e7a554}
+
+
+It creates a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!del@{del}}
+\index{del@{del}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{del(const char $\ast$filepath)}{del(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+D\+::del (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a6430feba6d1ebd9b81e0d97f9dca991c}{}\label{class_wasp_s_d_a6430feba6d1ebd9b81e0d97f9dca991c}
+
+
+It deletes a file. 
+
+It allows erasing a file inside the current working directory. Besides, it is possible to delete a file iterating through directories 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the path to the file to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a file that has a long name. 
+\end{DoxyNote}
+\index{Wasp\+SD@{Wasp\+SD}!find\+\_\+file\+\_\+in\+\_\+dir@{find\+\_\+file\+\_\+in\+\_\+dir}}
+\index{find\+\_\+file\+\_\+in\+\_\+dir@{find\+\_\+file\+\_\+in\+\_\+dir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{find\+\_\+file\+\_\+in\+\_\+dir(const char $\ast$filepath)}{find_file_in_dir(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::find\+\_\+file\+\_\+in\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ab27a9d41c4a4f1fd0b63e32bcef05d97}{}\label{class_wasp_s_d_ab27a9d41c4a4f1fd0b63e32bcef05d97}
+
+
+It tests the existence of files in the current directory. 
+
+It is possible to introduce the complete path of the file 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if the file is availabe, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!format@{format}}
+\index{format@{format}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{format()}{format()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+S\+D\+::format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a53e73f2b8ea28837a740ddfc72b46221}{}\label{class_wasp_s_d_a53e73f2b8ea28837a740ddfc72b46221}
+variables\+:
+
+initialization process
+
+Erasing process
+
+Formatting process \index{Wasp\+SD@{Wasp\+SD}!get\+Dir@{get\+Dir}}
+\index{get\+Dir@{get\+Dir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{get\+Dir(const char $\ast$filepath, int $\ast$index)}{getDir(const char *filepath, int *index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd\+File} Wasp\+S\+D\+::get\+Dir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{int $\ast$}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_aaad4cebc4f5f21a6e49c9600d5c21da1}{}\label{class_wasp_s_d_aaad4cebc4f5f21a6e49c9600d5c21da1}
+
+
+It gets the directory we need. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & \+: path to the directory we need \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!get\+Disk\+Size@{get\+Disk\+Size}}
+\index{get\+Disk\+Size@{get\+Disk\+Size}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{get\+Disk\+Size()}{getDiskSize()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+S\+D\+::get\+Disk\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_aee074195db1e2bc5cc0afefe53c5f7d7}{}\label{class_wasp_s_d_aee074195db1e2bc5cc0afefe53c5f7d7}
+
+
+It gets the total disk size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the total size for the disk 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!get\+File\+Size@{get\+File\+Size}}
+\index{get\+File\+Size@{get\+File\+Size}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{get\+File\+Size(const char $\ast$filepath)}{getFileSize(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Wasp\+S\+D\+::get\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a2a46bde220e6dca44babed44c884a65f}{}\label{class_wasp_s_d_a2a46bde220e6dca44babed44c884a65f}
+
+
+It gets the file size for filepath in the current folder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file size on success, \textquotesingle{}-\/1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!get\+Parent\+Dir@{get\+Parent\+Dir}}
+\index{get\+Parent\+Dir@{get\+Parent\+Dir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{get\+Parent\+Dir(const char $\ast$filepath, int $\ast$index)}{getParentDir(const char *filepath, int *index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd\+File} Wasp\+S\+D\+::get\+Parent\+Dir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{int $\ast$}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a94b8d2ef4aa4bb5c496e235b39b94145}{}\label{class_wasp_s_d_a94b8d2ef4aa4bb5c496e235b39b94145}
+
+
+It gets the parent directory of a filepath. 
+
+This function is a little helper used to traverse paths. Answers the object \hyperlink{class_sd_file}{Sd\+File} which is related to the parent directory of a path specified in \textquotesingle{}filepath\textquotesingle{} 
+\begin{DoxyParams}{Parameters}
+{\em filepath} & \+: path to the file whose parent directory is the one we need \\
+\hline
+{\em index} & \+: output variable which means the index from the beginning of the path to the parent directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!go\+Root@{go\+Root}}
+\index{go\+Root@{go\+Root}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{go\+Root()}{goRoot()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::go\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_adcf1a17df2a7aeb3294d1efa29163780}{}\label{class_wasp_s_d_adcf1a17df2a7aeb3294d1efa29163780}
+
+
+It changes the current directory to the root directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_a90be16361e951e7cc5f9d6560e367530}{cd(const char$\ast$ dirpath)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!index\+Of@{index\+Of}}
+\index{index\+Of@{index\+Of}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{index\+Of(const char $\ast$filepath, const char $\ast$pattern, uint32\+\_\+t offset)}{indexOf(const char *filepath, const char *pattern, uint32_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Wasp\+S\+D\+::index\+Of (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{const char $\ast$}]{pattern, }
+\item[{uint32\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ab3554bc532af01d7fd13055f67315f41}{}\label{class_wasp_s_d_ab3554bc532af01d7fd13055f67315f41}
+
+
+It searches for first occurrence of a string in a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file where looking for the pattern \\
+\hline
+{\em const} & char$\ast$ pattern \+: pattern to find \\
+\hline
+{\em uint32\+\_\+t} & offset \+: amount of bytes to jump before start looking for the pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the amount of bytes to the pattern from the offset 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!init@{init}}
+\index{init@{init}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a2de65d3f03424fc56f14d1475fc0f447}{}\label{class_wasp_s_d_a2de65d3f03424fc56f14d1475fc0f447}
+It initializes the use of SD cards, looks into the root partition, opens the file system and initializes the public pointer that can be used to access the filesystem
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} when ok; \textquotesingle{}0\textquotesingle{} when error. 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!is\+Dir@{is\+Dir}}
+\index{is\+Dir@{is\+Dir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{is\+Dir(\+Sd\+File $\ast$dir)}{isDir(SdFile *dir)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::is\+Dir (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+File} $\ast$}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a5aa32dc5b6b5f4407b25bd01cce87e54}{}\label{class_wasp_s_d_a5aa32dc5b6b5f4407b25bd01cce87e54}
+
+
+It checks if an entry is a file or a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sd\+File$\ast$} & dir \+: pointer to the previously opened file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if it is a directory, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_a316c9fb28adcb4228e7a9cc81c7f0697}{is\+Dir(const char$\ast$ dirname)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!is\+Dir@{is\+Dir}}
+\index{is\+Dir@{is\+Dir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{is\+Dir(const char $\ast$dirpath)}{isDir(const char *dirpath)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+D\+::is\+Dir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{dirpath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a316c9fb28adcb4228e7a9cc81c7f0697}{}\label{class_wasp_s_d_a316c9fb28adcb4228e7a9cc81c7f0697}
+
+
+It checks if an entry is a file or a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ dirpath \+: the entry to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if it is a directory, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_a5aa32dc5b6b5f4407b25bd01cce87e54}{is\+Dir(\+Sd\+File$\ast$ dir)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!is\+File@{is\+File}}
+\index{is\+File@{is\+File}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{is\+File(const char $\ast$filepath)}{isFile(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+D\+::is\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a78620ce2e7ab96c8665c6c5309716dc5}{}\label{class_wasp_s_d_a78620ce2e7ab96c8665c6c5309716dc5}
+
+
+It tests the existence of a file in the current folder. 
+
+It is possible to introduce the filepath and iterate through directories so as to check the existence of the file 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if it is a directory, \textquotesingle{}-\/1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!is\+SD@{is\+SD}}
+\index{is\+SD@{is\+SD}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{is\+S\+D()}{isSD()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::is\+SD (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ab970761ed7114d1bedcf7586050483c3}{}\label{class_wasp_s_d_ab970761ed7114d1bedcf7586050483c3}
+
+
+It checks if there is a SD Card in the slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if SD is present, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!ls@{ls}}
+\index{ls@{ls}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{ls(void)}{ls(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+D\+::ls (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a06bcee4baa08fa67b66eb17faaa8ab93}{}\label{class_wasp_s_d_a06bcee4baa08fa67b66eb17faaa8ab93}
+
+
+It prints the current working directory\textquotesingle{}s contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!ls@{ls}}
+\index{ls@{ls}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{ls(uint8\+\_\+t flags)}{ls(uint8_t flags)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+D\+::ls (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a782056bf89c3c1463d9071f415431c6f}{}\label{class_wasp_s_d_a782056bf89c3c1463d9071f415431c6f}
+
+
+It prints the working directory indicating flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & flags\+: The inclusive OR of\+: L\+S\+\_\+\+D\+A\+TE -\/ Print file modification date L\+S\+\_\+\+S\+I\+ZE -\/ Print file size L\+S\+\_\+R -\/ Recursive list of subdirectories \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{mkdir(char $\ast$filepath)}{mkdir(char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+D\+::mkdir (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a83c69f275ca5474af72a0fdf65adc403}{}\label{class_wasp_s_d_a83c69f275ca5474af72a0fdf65adc403}
+
+
+It creates a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the directory to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+only short 8.\+3 names are valid! 
+
+Be careful when calling this function to create a directory for the first time. If it is interrupted, the directory results damaged and it is necessary to delete it as a regular file using S\+D.\+del 
+\end{DoxyRemark}
+\index{Wasp\+SD@{Wasp\+SD}!num\+Files@{num\+Files}}
+\index{num\+Files@{num\+Files}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{num\+Files()}{numFiles()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+D\+::num\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ae3a14ea6abf645007ca99faf878397d3}{}\label{class_wasp_s_d_ae3a14ea6abf645007ca99faf878397d3}
+
+
+It gets the amount of files in a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no files, a negative value if error and a possitive value indicating the amount of files 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!numln@{numln}}
+\index{numln@{numln}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{numln(const char $\ast$filepath)}{numln(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Wasp\+S\+D\+::numln (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ada0f343921cc1b68ce1662b6f8b4d2f0}{}\label{class_wasp_s_d_ada0f343921cc1b68ce1662b6f8b4d2f0}
+
+
+It gets the amount of lines in a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: path to the file we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of lines on success, \textquotesingle{}-\/1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+D\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a24169944cf0433e6a909b7d6c3f69917}{}\label{class_wasp_s_d_a24169944cf0433e6a909b7d6c3f69917}
+
+
+It powers off the SD card and closes the pointers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!ON@{ON}}
+\index{ON@{ON}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a0c9657d17f4debab2ef3702923416282}{}\label{class_wasp_s_d_a0c9657d17f4debab2ef3702923416282}
+
+
+It powers the SD card, initialize it and prepare it to work with. 
+
+Public Methods /////////////////////////////////////////////////////.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} when ok; \textquotesingle{}0\textquotesingle{} when error. 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!open\+File@{open\+File}}
+\index{open\+File@{open\+File}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{open\+File(const char $\ast$filepath, Sd\+File $\ast$file, uint8\+\_\+t mode)}{openFile(const char *filepath, SdFile *file, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::open\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{{\bf Sd\+File} $\ast$}]{file, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_aa0e399c0aeeb29eff9a37a7c303796a4}{}\label{class_wasp_s_d_aa0e399c0aeeb29eff9a37a7c303796a4}
+
+
+It opens a file if available. 
+
+It is possible to open a file iterating through directories. So a valid filename path can be open. i.\+e. \char`\"{}/folder/dir/file1\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: name of the file to open \\
+\hline
+{\em file} & \+: pointer to the opened file \\
+\hline
+{\em mode} & \+: opening mode. This flag is constructed by a bitwise-\/inclusive OR of flags from the following list\+: O\+\_\+\+R\+E\+AD -\/ Open for reading O\+\_\+\+R\+D\+O\+N\+LY -\/ Same as O\+\_\+\+R\+E\+AD O\+\_\+\+W\+R\+I\+TE -\/ Open for writing O\+\_\+\+W\+R\+O\+N\+LY -\/ Same as O\+\_\+\+W\+R\+I\+TE O\+\_\+\+R\+D\+WR -\/ Open for reading and writing O\+\_\+\+A\+P\+P\+E\+ND -\/ If set, the file offset shall be set to the end of the file prior to each write O\+\_\+\+C\+R\+E\+AT -\/ If the file exists, this flag has no effect except as noted under O\+\_\+\+E\+X\+CL below. Otherwise, the file shall be created O\+\_\+\+E\+X\+CL -\/ If O\+\_\+\+C\+R\+E\+AT and O\+\_\+\+E\+X\+CL are set, open() shall fail if the file exists O\+\_\+\+S\+Y\+NC -\/ Call sync() after each write. This flag should not be used with write(uint8\+\_\+t), write\+\_\+\+P(\+P\+G\+M\+\_\+\+P), writeln\+\_\+\+P(\+P\+G\+M\+\_\+\+P), or the Arduino Print class. These functions do character at a time writes so sync() will be called after each byte. O\+\_\+\+T\+R\+U\+NC -\/ If the file exists and is a regular file, and the file is successfully opened and is not read only, its length shall be truncated to 0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!print\+\_\+disk\+\_\+info@{print\+\_\+disk\+\_\+info}}
+\index{print\+\_\+disk\+\_\+info@{print\+\_\+disk\+\_\+info}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{print\+\_\+disk\+\_\+info()}{print_disk_info()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+S\+D\+::print\+\_\+disk\+\_\+info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a2c6f8aa990e2af347a6a3e66f664c2ed}{}\label{class_wasp_s_d_a2c6f8aa990e2af347a6a3e66f664c2ed}
+It packs all the data about the disk into the buffer and returns it back. The buffer will then be available and offer the data to the developers as a human-\/readable encoded string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+human readable string indicating success or possible errors that can be printed by the user directly 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!rmdir@{rmdir}}
+\index{rmdir@{rmdir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{rmdir(const char $\ast$dirpath)}{rmdir(const char *dirpath)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+D\+::rmdir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{dirpath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a5cb6e319b94438592bae491f933fed4d}{}\label{class_wasp_s_d_a5cb6e319b94438592bae491f933fed4d}
+
+
+It deletes a directory. 
+
+It is possible to delete a directory iterating through directories It is not possible to delete the directory in case it is not empty. 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ dirpath \+: the path to the directory to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a directory that has a long name. 
+\end{DoxyNote}
+\index{Wasp\+SD@{Wasp\+SD}!rm\+Rf\+Dir@{rm\+Rf\+Dir}}
+\index{rm\+Rf\+Dir@{rm\+Rf\+Dir}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{rm\+Rf\+Dir(const char $\ast$dirpath)}{rmRfDir(const char *dirpath)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+D\+::rm\+Rf\+Dir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{dirpath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a969ad23ebf28f6df951dc886d7215bee}{}\label{class_wasp_s_d_a969ad23ebf28f6df951dc886d7215bee}
+
+
+It deletes a directory and all contained files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ dirpath \+: the path to the file to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a directory that has a long name. 
+\end{DoxyNote}
+\index{Wasp\+SD@{Wasp\+SD}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t mode)}{setMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+D\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a110582100a2d3aaedae1e2143b539d38}{}\label{class_wasp_s_d_a110582100a2d3aaedae1e2143b539d38}
+
+
+It sets power mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+D\+\_\+\+ON or S\+D\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!show\+File@{show\+File}}
+\index{show\+File@{show\+File}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{show\+File(char $\ast$filepath)}{showFile(char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+D\+::show\+File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a6dcad9007022263cb080e7ac72d1ea0a}{}\label{class_wasp_s_d_a6dcad9007022263cb080e7ac72d1ea0a}
+
+
+It writes all the contents of the file specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!write\+End\+Of\+Line@{write\+End\+Of\+Line}}
+\index{write\+End\+Of\+Line@{write\+End\+Of\+Line}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{write\+End\+Of\+Line(const char $\ast$filepath)}{writeEndOfLine(const char *filepath)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::write\+End\+Of\+Line (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a02da5f3b0d7ad6d163d6b208ad669b7d}{}\label{class_wasp_s_d_a02da5f3b0d7ad6d163d6b208ad669b7d}
+
+
+It writes an E\+OL in the specified file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+SD@{Wasp\+SD}!write\+SD@{write\+SD}}
+\index{write\+SD@{write\+SD}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{write\+S\+D(const char $\ast$filepath, const char $\ast$str, int32\+\_\+t offset)}{writeSD(const char *filepath, const char *str, int32_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::write\+SD (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{const char $\ast$}]{str, }
+\item[{int32\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{}\label{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}
+
+
+It writes strings to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em const} & char$\ast$ str \+: the string to write into the file \\
+\hline
+{\em int32\+\_\+t} & offset \+: amount of bytes to jump before start writing the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{write\+S\+D(const char$\ast$ filepath, uint8\+\_\+t$\ast$ str, int32\+\_\+t offset)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!write\+SD@{write\+SD}}
+\index{write\+SD@{write\+SD}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{write\+S\+D(const char $\ast$filepath, const char $\ast$str, int32\+\_\+t offset, uint16\+\_\+t length)}{writeSD(const char *filepath, const char *str, int32_t offset, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::write\+SD (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{const char $\ast$}]{str, }
+\item[{int32\+\_\+t}]{offset, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_af655e871a7e95f1fdc45b404242146e6}{}\label{class_wasp_s_d_af655e871a7e95f1fdc45b404242146e6}
+
+
+It writes strings to a file of a specific length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em const} & char$\ast$ str \+: the string to write into the file \\
+\hline
+{\em int32\+\_\+t} & offset \+: amount of bytes to jump before start writing the string \\
+\hline
+{\em int16\+\_\+t} & length \+: amount of bytes to write to the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset, int16\+\_\+t length) 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!write\+SD@{write\+SD}}
+\index{write\+SD@{write\+SD}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{write\+S\+D(const char $\ast$filepath, uint8\+\_\+t $\ast$str, int32\+\_\+t offset)}{writeSD(const char *filepath, uint8_t *str, int32_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::write\+SD (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint8\+\_\+t $\ast$}]{str, }
+\item[{int32\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}{}\label{class_wasp_s_d_ad79940d0888cc77dacb76d3b83ea390f}
+
+
+It writes integer array to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+{\em int32\+\_\+t} & offset \+: amount of bytes to jump before start writing the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+\end{DoxySeeAlso}
+\index{Wasp\+SD@{Wasp\+SD}!write\+SD@{write\+SD}}
+\index{write\+SD@{write\+SD}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{write\+S\+D(const char $\ast$filepath, uint8\+\_\+t $\ast$str, int32\+\_\+t offset, uint16\+\_\+t length)}{writeSD(const char *filepath, uint8_t *str, int32_t offset, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::write\+SD (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filepath, }
+\item[{uint8\+\_\+t $\ast$}]{str, }
+\item[{int32\+\_\+t}]{offset, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_d_a5c2e9b515f3e4539d7a0ae8f87354047}{}\label{class_wasp_s_d_a5c2e9b515f3e4539d7a0ae8f87354047}
+
+
+It writes integer array to a file indicating the length of the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ filepath \+: the file to write to \\
+\hline
+{\em uint8\+\_\+t$\ast$} & str \+: the integer array to write into the file \\
+\hline
+{\em int32\+\_\+t} & offset \+: amount of bytes to jump before start writing the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_s_d_aaafd1dc6c0962e06ff3287a83e5f8787}{write\+S\+D(const char$\ast$ filepath, const char$\ast$ str, int32\+\_\+t offset)} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+SD@{Wasp\+SD}!buffer@{buffer}}
+\index{buffer@{buffer}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{buffer}{buffer}}]{\setlength{\rightskip}{0pt plus 5cm}char Wasp\+S\+D\+::buffer\mbox{[}{\bf D\+O\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{class_wasp_s_d_ad33b244f29b0473b95e9367895dd0adf}{}\label{class_wasp_s_d_ad33b244f29b0473b95e9367895dd0adf}
+Variable \+: buffer containing the information coming from the card used to avoid calls to U\+A\+RT functions inside the library. Beware, there could be data longer than the buffer size \index{Wasp\+SD@{Wasp\+SD}!buffer\+Bin@{buffer\+Bin}}
+\index{buffer\+Bin@{buffer\+Bin}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{buffer\+Bin}{bufferBin}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+D\+::buffer\+Bin\mbox{[}{\bf B\+I\+N\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{class_wasp_s_d_a30858d4ea20d8f577bdda334f9fefaa9}{}\label{class_wasp_s_d_a30858d4ea20d8f577bdda334f9fefaa9}
+Variable \+: buffer containing the binary information coming from the card used to avoid calls to U\+A\+RT functions inside the library. Beware, there could be data longer than the buffer size \index{Wasp\+SD@{Wasp\+SD}!flag@{flag}}
+\index{flag@{flag}!Wasp\+SD@{Wasp\+SD}}
+\subsubsection[{\texorpdfstring{flag}{flag}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+S\+D\+::flag}\hypertarget{class_wasp_s_d_a8ca1aac8727a742cddb33e677c71faef}{}\label{class_wasp_s_d_a8ca1aac8727a742cddb33e677c71faef}
+Variable \+: flag storing the state of the SD card during initialization and operation 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_s_d_8h}{Wasp\+S\+D.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+S\+D.\+cpp\end{DoxyCompactItemize}

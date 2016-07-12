@@ -1,0 +1,265 @@
+\hypertarget{class_sd_volume}{}\section{Sd\+Volume Class Reference}
+\label{class_sd_volume}\index{Sd\+Volume@{Sd\+Volume}}
+
+
+Access F\+A\+T16 and F\+A\+T32 volumes on SD and S\+D\+HC cards.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Volume.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sd_volume_a30d4489087fbdce20b8fe1a624dbe658}{Sd\+Volume} ()
+\item 
+\hyperlink{unioncache__t}{cache\+\_\+t} $\ast$ \hyperlink{class_sd_volume_adaecef65fdf94d323597a461eb641f5e}{cache\+Clear} ()
+\item 
+bool \hyperlink{class_sd_volume_a0ac221eda119ddccae8ac6bc20a4b12d}{init} (\hyperlink{class_sd2_card}{Sd2\+Card} $\ast$dev)
+\item 
+bool \hyperlink{class_sd_volume_ae820ee8d9ea7ed01ce72ae3508a63cbf}{init} (\hyperlink{class_sd2_card}{Sd2\+Card} $\ast$dev, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_aa65f87792f271fc6cfa70980af6ac3dd}{part})
+\item 
+uint8\+\_\+t \hyperlink{class_sd_volume_affab4c57c98e41ee55b21c87f814804b}{blocks\+Per\+Cluster} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_volume_a87ed6542db9642ffa106def897a368c6}{blocks\+Per\+Fat} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_volume_a323adfb5ac395b769f30c31ce2618f22}{cluster\+Count} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd_volume_a50c8e198feb63b0ca26737f91bd3e139}{cluster\+Size\+Shift} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_volume_a99ca71035785948c42ade0863f91c9ab}{data\+Start\+Block} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd_volume_a5d4307584ef14e4a2fef85b4954b1aa2}{fat\+Count} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_volume_a9032ec5d3323ee67477c6bbf39821415}{fat\+Start\+Block} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd_volume_a3f7b12db1e9ec4b847cd41fbe46b7baf}{fat\+Type} () const 
+\item 
+int32\+\_\+t \hyperlink{class_sd_volume_a162efe707ab46847202300cb38739629}{free\+Cluster\+Count} ()
+\item 
+uint32\+\_\+t \hyperlink{class_sd_volume_a8573884a8056ab7c4c0d6e442f676cc4}{root\+Dir\+Entry\+Count} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_volume_aa1479f90c53bc9eac379664c5233d399}{root\+Dir\+Start} () const 
+\item 
+\hyperlink{class_sd2_card}{Sd2\+Card} $\ast$ \hyperlink{class_sd_volume_afe76a9f7c181458995518dc8530a1fad}{sd\+Card} ()
+\item 
+bool \hyperlink{class_sd_volume_a4dbcb7b34a83468b1c6f8c4556393526}{dbg\+Fat} (uint32\+\_\+t n, uint32\+\_\+t $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Sd\+Base\+File}\hypertarget{class_sd_volume_a05e466c179d34fec11c4406677fe0533}{}\label{class_sd_volume_a05e466c179d34fec11c4406677fe0533}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Access F\+A\+T16 and F\+A\+T32 volumes on SD and S\+D\+HC cards. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sd\+Volume@{Sd\+Volume}!Sd\+Volume@{Sd\+Volume}}
+\index{Sd\+Volume@{Sd\+Volume}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{Sd\+Volume()}{SdVolume()}}]{\setlength{\rightskip}{0pt plus 5cm}Sd\+Volume\+::\+Sd\+Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a30d4489087fbdce20b8fe1a624dbe658}{}\label{class_sd_volume_a30d4489087fbdce20b8fe1a624dbe658}
+Create an instance of \hyperlink{class_sd_volume}{Sd\+Volume} 
+
+\subsection{Member Function Documentation}
+\index{Sd\+Volume@{Sd\+Volume}!blocks\+Per\+Cluster@{blocks\+Per\+Cluster}}
+\index{blocks\+Per\+Cluster@{blocks\+Per\+Cluster}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{blocks\+Per\+Cluster() const }{blocksPerCluster() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd\+Volume\+::blocks\+Per\+Cluster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_affab4c57c98e41ee55b21c87f814804b}{}\label{class_sd_volume_affab4c57c98e41ee55b21c87f814804b}
+\begin{DoxyReturn}{Returns}
+The volume\textquotesingle{}s cluster size in blocks. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!blocks\+Per\+Fat@{blocks\+Per\+Fat}}
+\index{blocks\+Per\+Fat@{blocks\+Per\+Fat}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{blocks\+Per\+Fat() const }{blocksPerFat() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Volume\+::blocks\+Per\+Fat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a87ed6542db9642ffa106def897a368c6}{}\label{class_sd_volume_a87ed6542db9642ffa106def897a368c6}
+\begin{DoxyReturn}{Returns}
+The number of blocks in one F\+AT. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!cache\+Clear@{cache\+Clear}}
+\index{cache\+Clear@{cache\+Clear}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{cache\+Clear()}{cacheClear()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cache\+\_\+t}$\ast$ Sd\+Volume\+::cache\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_adaecef65fdf94d323597a461eb641f5e}{}\label{class_sd_volume_adaecef65fdf94d323597a461eb641f5e}
+Clear the cache and returns a pointer to the cache. Used by the Wave\+RP recorder to do raw write to the SD card. Not for normal apps. \begin{DoxyReturn}{Returns}
+A pointer to the cache buffer or zero if an error occurs. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!cluster\+Count@{cluster\+Count}}
+\index{cluster\+Count@{cluster\+Count}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{cluster\+Count() const }{clusterCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Volume\+::cluster\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a323adfb5ac395b769f30c31ce2618f22}{}\label{class_sd_volume_a323adfb5ac395b769f30c31ce2618f22}
+\begin{DoxyReturn}{Returns}
+The total number of clusters in the volume. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!cluster\+Size\+Shift@{cluster\+Size\+Shift}}
+\index{cluster\+Size\+Shift@{cluster\+Size\+Shift}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{cluster\+Size\+Shift() const }{clusterSizeShift() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd\+Volume\+::cluster\+Size\+Shift (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a50c8e198feb63b0ca26737f91bd3e139}{}\label{class_sd_volume_a50c8e198feb63b0ca26737f91bd3e139}
+\begin{DoxyReturn}{Returns}
+The shift count required to multiply by blocks\+Per\+Cluster. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!data\+Start\+Block@{data\+Start\+Block}}
+\index{data\+Start\+Block@{data\+Start\+Block}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{data\+Start\+Block() const }{dataStartBlock() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Volume\+::data\+Start\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a99ca71035785948c42ade0863f91c9ab}{}\label{class_sd_volume_a99ca71035785948c42ade0863f91c9ab}
+\begin{DoxyReturn}{Returns}
+The logical block number for the start of file data. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!dbg\+Fat@{dbg\+Fat}}
+\index{dbg\+Fat@{dbg\+Fat}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{dbg\+Fat(uint32\+\_\+t n, uint32\+\_\+t $\ast$v)}{dbgFat(uint32_t n, uint32_t *v)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Volume\+::dbg\+Fat (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{n, }
+\item[{uint32\+\_\+t $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a4dbcb7b34a83468b1c6f8c4556393526}{}\label{class_sd_volume_a4dbcb7b34a83468b1c6f8c4556393526}
+Debug access to F\+AT table
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & cluster number. \\
+\hline
+\mbox{\tt out}  & {\em v} & value of entry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true for success or false for failure 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!fat\+Count@{fat\+Count}}
+\index{fat\+Count@{fat\+Count}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{fat\+Count() const }{fatCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd\+Volume\+::fat\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a5d4307584ef14e4a2fef85b4954b1aa2}{}\label{class_sd_volume_a5d4307584ef14e4a2fef85b4954b1aa2}
+\begin{DoxyReturn}{Returns}
+The number of F\+AT structures on the volume. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!fat\+Start\+Block@{fat\+Start\+Block}}
+\index{fat\+Start\+Block@{fat\+Start\+Block}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{fat\+Start\+Block() const }{fatStartBlock() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Volume\+::fat\+Start\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a9032ec5d3323ee67477c6bbf39821415}{}\label{class_sd_volume_a9032ec5d3323ee67477c6bbf39821415}
+\begin{DoxyReturn}{Returns}
+The logical block number for the start of the first F\+AT. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!fat\+Type@{fat\+Type}}
+\index{fat\+Type@{fat\+Type}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{fat\+Type() const }{fatType() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd\+Volume\+::fat\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a3f7b12db1e9ec4b847cd41fbe46b7baf}{}\label{class_sd_volume_a3f7b12db1e9ec4b847cd41fbe46b7baf}
+\begin{DoxyReturn}{Returns}
+The F\+AT type of the volume. Values are 12, 16 or 32. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!free\+Cluster\+Count@{free\+Cluster\+Count}}
+\index{free\+Cluster\+Count@{free\+Cluster\+Count}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{free\+Cluster\+Count()}{freeClusterCount()}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Sd\+Volume\+::free\+Cluster\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_volume_a162efe707ab46847202300cb38739629}{}\label{class_sd_volume_a162efe707ab46847202300cb38739629}
+Volume free space in clusters.
+
+\begin{DoxyReturn}{Returns}
+Count of free clusters for success or -\/1 if an error occurs. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!init@{init}}
+\index{init@{init}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{init(\+Sd2\+Card $\ast$dev)}{init(Sd2Card *dev)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Volume\+::init (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd2\+Card} $\ast$}]{dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a0ac221eda119ddccae8ac6bc20a4b12d}{}\label{class_sd_volume_a0ac221eda119ddccae8ac6bc20a4b12d}
+Initialize a F\+AT volume. Try partition one first then try super floppy format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dev} & The \hyperlink{class_sd2_card}{Sd2\+Card} where the volume is located.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include not finding a valid partition, not finding a valid F\+AT file system or an I/O error. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!init@{init}}
+\index{init@{init}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{init(\+Sd2\+Card $\ast$dev, uint8\+\_\+t part)}{init(Sd2Card *dev, uint8_t part)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Volume\+::init (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd2\+Card} $\ast$}]{dev, }
+\item[{uint8\+\_\+t}]{part}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_volume_ae820ee8d9ea7ed01ce72ae3508a63cbf}{}\label{class_sd_volume_ae820ee8d9ea7ed01ce72ae3508a63cbf}
+Initialize a F\+AT volume.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dev} & The SD card where the volume is located.\\
+\hline
+\mbox{\tt in}  & {\em part} & The partition to be used. Legal values for {\itshape part} are 1-\/4 to use the corresponding partition on a device formatted with a M\+BR, Master Boot Record, or zero if the device is formatted as a super floppy with the F\+AT boot sector in block zero.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include not finding a valid partition, not finding a valid F\+AT file system in the specified partition or an I/O error. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!root\+Dir\+Entry\+Count@{root\+Dir\+Entry\+Count}}
+\index{root\+Dir\+Entry\+Count@{root\+Dir\+Entry\+Count}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{root\+Dir\+Entry\+Count() const }{rootDirEntryCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Volume\+::root\+Dir\+Entry\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_a8573884a8056ab7c4c0d6e442f676cc4}{}\label{class_sd_volume_a8573884a8056ab7c4c0d6e442f676cc4}
+\begin{DoxyReturn}{Returns}
+The number of entries in the root directory for F\+A\+T16 volumes. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!root\+Dir\+Start@{root\+Dir\+Start}}
+\index{root\+Dir\+Start@{root\+Dir\+Start}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{root\+Dir\+Start() const }{rootDirStart() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Volume\+::root\+Dir\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_aa1479f90c53bc9eac379664c5233d399}{}\label{class_sd_volume_aa1479f90c53bc9eac379664c5233d399}
+\begin{DoxyReturn}{Returns}
+The logical block number for the start of the root directory on F\+A\+T16 volumes or the first cluster number on F\+A\+T32 volumes. 
+\end{DoxyReturn}
+\index{Sd\+Volume@{Sd\+Volume}!sd\+Card@{sd\+Card}}
+\index{sd\+Card@{sd\+Card}!Sd\+Volume@{Sd\+Volume}}
+\subsubsection[{\texorpdfstring{sd\+Card()}{sdCard()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd2\+Card}$\ast$ Sd\+Volume\+::sd\+Card (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_volume_afe76a9f7c181458995518dc8530a1fad}{}\label{class_sd_volume_afe76a9f7c181458995518dc8530a1fad}
+\hyperlink{class_sd2_card}{Sd2\+Card} object for this volume \begin{DoxyReturn}{Returns}
+pointer to \hyperlink{class_sd2_card}{Sd2\+Card} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_volume_8h}{Sd\+Volume.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/Sd\+Volume.\+cpp\end{DoxyCompactItemize}

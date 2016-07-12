@@ -1,0 +1,172 @@
+\hypertarget{group__ctype}{}\section{$<$ctype.\+h$>$\+: Character Operations}
+\label{group__ctype}\index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsection*{Character classification routines}
+\label{_amgrp3cffbf32c02a5073ab67ade732f94ffb}%
+These functions perform character classification. They return true or false status depending whether the character passed to the function falls into the function\textquotesingle{}s classification (i.\+e. \hyperlink{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}{isdigit()} returns true if its argument is any value \textquotesingle{}0\textquotesingle{} though \textquotesingle{}9\textquotesingle{}, inclusive). If the input is not an unsigned char value, all of this function return false. \begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__ctype_gaebc8f9722cad75962de4053eda5c7ae3}{isalnum} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga3841660f03d72ad3f76fb5f8178fc236}{isalpha} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga28943008652a2c26c266c2f0572bb146}{isascii} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga2571d96058ec498e1c7493adeaff2e9d}{isblank} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga683dc5490fcbdbf149ffc5ae4701b34b}{iscntrl} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}{isdigit} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gafeb60935d2393d54a57545c3f54f9682}{isgraph} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gaaddb38a750886eca0847f6ad07dd90da}{islower} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga7d57debe23df28bf225dc8972b5c3667}{isprint} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga289e7ad4e56ddb01c40c5e36893d4e15}{ispunct} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gac83050abd09696d505838d772b910b37}{isspace} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gacf51dfd9a4ffe74117818cf7a4ab6600}{isupper} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gacd4734333ae16e853e0ffb4db4a96ba7}{isxdigit} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+\subsection*{Character convertion routines}
+\label{_amgrp4d241bbe011b857da7f54c9d3d4edf40}%
+This realization permits all possible values of integer argument. The \hyperlink{group__ctype_ga4a0c9dbccb29e29684958d68aa021e8a}{toascii()} function clears all highest bits. The \hyperlink{group__ctype_gad0cebcf69817481a96ee98b4e801edb5}{tolower()} and \hyperlink{group__ctype_ga3f6d808c2e5205a500cf573dfc698c75}{toupper()} functions return an input argument as is, if it is not an unsigned char value. \begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__ctype_ga4a0c9dbccb29e29684958d68aa021e8a}{toascii} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gad0cebcf69817481a96ee98b4e801edb5}{tolower} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga3f6d808c2e5205a500cf573dfc698c75}{toupper} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions perform various operations on characters.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{ctype_8h}{ctype.h}>}
+\end{DoxyCode}
+ 
+
+\subsection{Function Documentation}
+\index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isalnum@{isalnum}}
+\index{isalnum@{isalnum}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isalnum(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isalnum(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isalnum (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gaebc8f9722cad75962de4053eda5c7ae3}{}\label{group__ctype_gaebc8f9722cad75962de4053eda5c7ae3}
+Checks for an alphanumeric character. It is equivalent to {\ttfamily (isalpha(c) $\vert$$\vert$ isdigit(c))}. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isalpha@{isalpha}}
+\index{isalpha@{isalpha}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isalpha(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isalpha(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isalpha (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga3841660f03d72ad3f76fb5f8178fc236}{}\label{group__ctype_ga3841660f03d72ad3f76fb5f8178fc236}
+Checks for an alphabetic character. It is equivalent to {\ttfamily (isupper(c) $\vert$$\vert$ islower(c))}. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isascii@{isascii}}
+\index{isascii@{isascii}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isascii(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isascii(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isascii (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga28943008652a2c26c266c2f0572bb146}{}\label{group__ctype_ga28943008652a2c26c266c2f0572bb146}
+Checks whether {\ttfamily c} is a 7-\/bit unsigned char value that fits into the A\+S\+C\+II character set. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isblank@{isblank}}
+\index{isblank@{isblank}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isblank(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isblank(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isblank (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga2571d96058ec498e1c7493adeaff2e9d}{}\label{group__ctype_ga2571d96058ec498e1c7493adeaff2e9d}
+Checks for a blank character, that is, a space or a tab. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!iscntrl@{iscntrl}}
+\index{iscntrl@{iscntrl}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{iscntrl(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{iscntrl(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int iscntrl (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga683dc5490fcbdbf149ffc5ae4701b34b}{}\label{group__ctype_ga683dc5490fcbdbf149ffc5ae4701b34b}
+Checks for a control character. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isdigit@{isdigit}}
+\index{isdigit@{isdigit}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isdigit(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isdigit(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isdigit (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}{}\label{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}
+Checks for a digit (0 through 9). \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isgraph@{isgraph}}
+\index{isgraph@{isgraph}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isgraph(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isgraph(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isgraph (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gafeb60935d2393d54a57545c3f54f9682}{}\label{group__ctype_gafeb60935d2393d54a57545c3f54f9682}
+Checks for any printable character except space. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!islower@{islower}}
+\index{islower@{islower}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{islower(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{islower(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int islower (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gaaddb38a750886eca0847f6ad07dd90da}{}\label{group__ctype_gaaddb38a750886eca0847f6ad07dd90da}
+Checks for a lower-\/case character. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isprint@{isprint}}
+\index{isprint@{isprint}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isprint(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isprint(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isprint (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga7d57debe23df28bf225dc8972b5c3667}{}\label{group__ctype_ga7d57debe23df28bf225dc8972b5c3667}
+Checks for any printable character including space. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!ispunct@{ispunct}}
+\index{ispunct@{ispunct}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{ispunct(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{ispunct(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int ispunct (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga289e7ad4e56ddb01c40c5e36893d4e15}{}\label{group__ctype_ga289e7ad4e56ddb01c40c5e36893d4e15}
+Checks for any printable character which is not a space or an alphanumeric character. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isspace@{isspace}}
+\index{isspace@{isspace}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isspace(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isspace(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isspace (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gac83050abd09696d505838d772b910b37}{}\label{group__ctype_gac83050abd09696d505838d772b910b37}
+Checks for white-\/space characters. For the avr-\/libc library, these are\+: space, form-\/feed (\textquotesingle{}\textbackslash{}f\textquotesingle{}), newline (\textquotesingle{}\textbackslash{}n\textquotesingle{}), carriage return (\textquotesingle{}\textbackslash{}r\textquotesingle{}), horizontal tab (\textquotesingle{}\textbackslash{}t\textquotesingle{}), and vertical tab (\textquotesingle{}\textbackslash{}v\textquotesingle{}). \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isupper@{isupper}}
+\index{isupper@{isupper}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isupper(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isupper(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isupper (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gacf51dfd9a4ffe74117818cf7a4ab6600}{}\label{group__ctype_gacf51dfd9a4ffe74117818cf7a4ab6600}
+Checks for an uppercase letter. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!isxdigit@{isxdigit}}
+\index{isxdigit@{isxdigit}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{isxdigit(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{isxdigit(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int isxdigit (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gacd4734333ae16e853e0ffb4db4a96ba7}{}\label{group__ctype_gacd4734333ae16e853e0ffb4db4a96ba7}
+Checks for a hexadecimal digits, i.\+e. one of 0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!toascii@{toascii}}
+\index{toascii@{toascii}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{toascii(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{toascii(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int toascii (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga4a0c9dbccb29e29684958d68aa021e8a}{}\label{group__ctype_ga4a0c9dbccb29e29684958d68aa021e8a}
+Converts {\ttfamily c} to a 7-\/bit unsigned char value that fits into the A\+S\+C\+II character set, by clearing the high-\/order bits.
+
+\begin{DoxyWarning}{Warning}
+Many people will be unhappy if you use this function. This function will convert accented letters into random characters. 
+\end{DoxyWarning}
+\index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!tolower@{tolower}}
+\index{tolower@{tolower}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{tolower(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{tolower(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int tolower (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_gad0cebcf69817481a96ee98b4e801edb5}{}\label{group__ctype_gad0cebcf69817481a96ee98b4e801edb5}
+Converts the letter {\ttfamily c} to lower case, if possible. \index{$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}!toupper@{toupper}}
+\index{toupper@{toupper}!$<$ctype.\+h$>$\+: Character Operations@{$<$ctype.\+h$>$\+: Character Operations}}
+\subsubsection[{\texorpdfstring{toupper(int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}{toupper(int __c) __ATTR_CONST__}}]{\setlength{\rightskip}{0pt plus 5cm}int toupper (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+\_\+c}
+\end{DoxyParamCaption}
+)}\hypertarget{group__ctype_ga3f6d808c2e5205a500cf573dfc698c75}{}\label{group__ctype_ga3f6d808c2e5205a500cf573dfc698c75}
+Converts the letter {\ttfamily c} to upper case, if possible. 

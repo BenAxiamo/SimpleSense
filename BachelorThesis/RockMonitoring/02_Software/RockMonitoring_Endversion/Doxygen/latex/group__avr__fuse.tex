@@ -1,0 +1,130 @@
+\hypertarget{group__avr__fuse}{}\section{$<$avr/fuse.h$>$\+: Fuse Support}
+\label{group__avr__fuse}\index{$<$avr/fuse.\+h$>$\+: Fuse Support@{$<$avr/fuse.\+h$>$\+: Fuse Support}}
+\begin{DoxyParagraph}{Introduction}
+
+\end{DoxyParagraph}
+The Fuse A\+PI allows a user to specify the fuse settings for the specific A\+VR device they are compiling for. These fuse settings will be placed in a special section in the E\+LF output file, after linking.
+
+Programming tools can take advantage of the fuse information embedded in the E\+LF file, by extracting this information and determining if the fuses need to be programmed before programming the Flash and E\+E\+P\+R\+OM memories. This also allows a single E\+LF file to contain all the information needed to program an A\+VR.
+
+To use the Fuse A\+PI, include the $<$\hyperlink{io_8h}{avr/io.\+h}$>$ header file, which in turn automatically includes the individual I/O header file and the $<$\hyperlink{fuse_8h}{avr/fuse.\+h}$>$ file. These other two files provides everything necessary to set the A\+VR fuses.
+
+\begin{DoxyParagraph}{Fuse A\+PI}
+
+\end{DoxyParagraph}
+Each I/O header file must define the F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE macro which is defined to the number of fuse bytes that exist in the A\+VR device.
+
+A new type, \+\_\+\+\_\+fuse\+\_\+t, is defined as a structure. The number of fields in this structure are determined by the number of fuse bytes in the F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE macro.
+
+If F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE == 1, there is only a single field\+: byte, of type unsigned char.
+
+If F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE == 2, there are two fields\+: low, and high, of type unsigned char.
+
+If F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE == 3, there are three fields\+: low, high, and extended, of type unsigned char.
+
+If F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE $>$ 3, there is a single field\+: byte, which is an array of unsigned char with the size of the array being F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE.
+
+A convenience macro, F\+U\+S\+E\+M\+EM, is defined as a G\+CC attribute for a custom-\/named section of \char`\"{}.\+fuse\char`\"{}.
+
+A convenience macro, F\+U\+S\+ES, is defined that declares a variable, \+\_\+\+\_\+fuse, of type \+\_\+\+\_\+fuse\+\_\+t with the attribute defined by F\+U\+S\+E\+M\+EM. This variable allows the end user to easily set the fuse data.
+
+\begin{DoxyNote}{Note}
+If a device-\/specific I/O header file has previously defined F\+U\+S\+E\+M\+EM, then F\+U\+S\+E\+M\+EM is not redefined. If a device-\/specific I/O header file has previously defined F\+U\+S\+ES, then F\+U\+S\+ES is not redefined.
+\end{DoxyNote}
+Each A\+VR device I/O header file has a set of defined macros which specify the actual fuse bits available on that device. The A\+VR fuses have inverted values, logical 1 for an unprogrammed (disabled) bit and logical 0 for a programmed (enabled) bit. The defined macros for each individual fuse bit represent this in their definition by a bit-\/wise inversion of a mask. For example, the F\+U\+S\+E\+\_\+\+E\+E\+S\+A\+VE fuse in the A\+Tmega128 is defined as\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define FUSE\_EESAVE      ~\_BV(3)}
+\end{DoxyCode}
+ \begin{DoxyNote}{Note}
+The \+\_\+\+BV macro creates a bit mask from a bit number. It is then inverted to represent logical values for a fuse memory byte.
+\end{DoxyNote}
+To combine the fuse bits macros together to represent a whole fuse byte, use the bitwise A\+ND operator, like so\+: 
+\begin{DoxyCode}
+(FUSE\_BOOTSZ0 & FUSE\_BOOTSZ1 & FUSE\_EESAVE & FUSE\_SPIEN & FUSE\_JTAGEN)
+\end{DoxyCode}
+
+
+Each device I/O header file also defines macros that provide default values for each fuse byte that is available. L\+F\+U\+S\+E\+\_\+\+D\+E\+F\+A\+U\+LT is defined for a Low Fuse byte. H\+F\+U\+S\+E\+\_\+\+D\+E\+F\+A\+U\+LT is defined for a High Fuse byte. E\+F\+U\+S\+E\+\_\+\+D\+E\+F\+A\+U\+LT is defined for an Extended Fuse byte.
+
+If F\+U\+S\+E\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE $>$ 3, then the I/O header file defines macros that provide default values for each fuse byte like so\+: F\+U\+S\+E0\+\_\+\+D\+E\+F\+A\+U\+LT F\+U\+S\+E1\+\_\+\+D\+E\+F\+A\+U\+LT F\+U\+S\+E2\+\_\+\+D\+E\+F\+A\+U\+LT F\+U\+S\+E3\+\_\+\+D\+E\+F\+A\+U\+LT F\+U\+S\+E4\+\_\+\+D\+E\+F\+A\+U\+LT ....
+
+\begin{DoxyParagraph}{A\+PI Usage Example}
+
+\end{DoxyParagraph}
+Putting all of this together is easy. Using C99\textquotesingle{}s designated initializers\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+
+FUSES = 
+\{
+    .low = LFUSE\_DEFAULT,
+    .high = (FUSE\_BOOTSZ0 & FUSE\_BOOTSZ1 & FUSE\_EESAVE & FUSE\_SPIEN & FUSE\_JTAGEN),
+    .extended = EFUSE\_DEFAULT,
+\};
+
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})
+\{
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+Or, using the variable directly instead of the F\+U\+S\+ES macro,
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+
+\_\_fuse\_t \_\_fuse \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_}((section (\textcolor{stringliteral}{".fuse"}))) = 
+\{
+    .low = LFUSE\_DEFAULT,
+    .high = (FUSE\_BOOTSZ0 & FUSE\_BOOTSZ1 & FUSE\_EESAVE & FUSE\_SPIEN & FUSE\_JTAGEN),
+    .extended = EFUSE\_DEFAULT,
+\};
+
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})
+\{
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+If you are compiling in C++, you cannot use the designated intializers so you must do\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+
+FUSES = 
+\{
+    LFUSE\_DEFAULT, \textcolor{comment}{// .low}
+    (FUSE\_BOOTSZ0 & FUSE\_BOOTSZ1 & FUSE\_EESAVE & FUSE\_SPIEN & FUSE\_JTAGEN), \textcolor{comment}{// .high}
+    EFUSE\_DEFAULT, \textcolor{comment}{// .extended}
+\};
+
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})
+\{
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+However there are a number of caveats that you need to be aware of to use this A\+PI properly.
+
+Be sure to include $<$\hyperlink{io_8h}{avr/io.\+h}$>$ to get all of the definitions for the A\+PI. The F\+U\+S\+ES macro defines a global variable to store the fuse data. This variable is assigned to its own linker section. Assign the desired fuse values immediately in the variable initialization.
+
+The .fuse section in the E\+LF file will get its values from the initial variable assignment O\+N\+LY. This means that you can N\+OT assign values to this variable in functions and the new values will not be put into the E\+LF .fuse section.
+
+The global variable is declared in the F\+U\+S\+ES macro has two leading underscores, which means that it is reserved for the \char`\"{}implementation\char`\"{}, meaning the library, so it will not conflict with a user-\/named variable.
+
+You must initialize A\+LL fields in the \+\_\+\+\_\+fuse\+\_\+t structure. This is because the fuse bits in all bytes default to a logical 1, meaning unprogrammed. Normal uninitialized data defaults to all locgial zeros. So it is vital that all fuse bytes are initialized, even with default data. If they are not, then the fuse bits may not programmed to the desired settings.
+
+Be sure to have the -\/mmcu={\itshape device} flag in your compile command line and your linker command line to have the correct device selected and to have the correct I/O header file included when you include $<$\hyperlink{io_8h}{avr/io.\+h}$>$.
+
+You can print out the contents of the .fuse section in the E\+LF file by using this command line\+: 
+\begin{DoxyCode}
+avr-objdump -s -j .fuse <ELF file>
+\end{DoxyCode}
+ The section contents shows the address on the left, then the data going from lower address to a higher address, left to right. 

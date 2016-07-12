@@ -1,0 +1,2356 @@
+\hypertarget{class_wasp_g_p_r_s___pro__core}{}\section{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core Class Reference}
+\label{class_wasp_g_p_r_s___pro__core}\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+
+
+\hyperlink{class_wasp_g_p_r_s___pro__core}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core.\+h$>$}
+
+Inheritance diagram for Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_g_p_r_s___pro__core}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wasp_g_p_r_s___pro__core_1_1operators}{operators}
+\begin{DoxyCompactList}\small\item\em Variable \+: struct that stores the format and the name of the operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_g_p_r_s___pro__core_a208325254653e60af7bc5a641bd01eab}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aadc696486b9f21efc90b95b16054f7e4}{ON} ()
+\begin{DoxyCompactList}\small\item\em It opens U\+A\+R\+T1 and powers the S\+I\+M900 module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ade7f0f2ebcbd44780ea0476ad7cde380}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It closes U\+A\+R\+T1 and powers off the S\+I\+M900 module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_r_s___pro__core_a38aab9b0cbf3cfe9d73b600261c9ce8c}{begin} ()
+\begin{DoxyCompactList}\small\item\em It opens U\+A\+RT and sets multiplexer properly. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_r_s___pro__core_a351df158db7614f00755311200f31595}{close} ()
+\begin{DoxyCompactList}\small\item\em It closes U\+A\+RT and sets multiplexer properly. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a6b1567da3fc10d6dc944dc3d5bb69361}{set\+Mode} (uint8\+\_\+t pwr\+Mode)
+\begin{DoxyCompactList}\small\item\em It sets Power Mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aa33dd4f4c753ac5338da80c557a42355}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets Power Mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_acc76eed7a4aedac4f9cd3bf20b974f16}{set\+Time} ()
+\begin{DoxyCompactList}\small\item\em Sets time and date to G\+P\+R\+S\+\_\+\+Pro module from R\+TC. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a9bd2496ac41cd4aa13e5cd1023d35f44}{check} (unsigned long time)
+\begin{DoxyCompactList}\small\item\em It checks if G\+P\+RS is connected to the network. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a06cfe4943b776df22f42d76637eb5405}{set\+P\+IN} (const char $\ast$pin)
+\begin{DoxyCompactList}\small\item\em It sets P\+IN. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a5446bbc65535e2d49b0d6150622613e0}{change\+P\+IN} (const char $\ast$old\+\_\+pin, const char $\ast$new\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em changes P\+IN number to the S\+IM \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a2352de6378f424b47f619b8e8447e9f7}{get\+I\+M\+SI} ()
+\begin{DoxyCompactList}\small\item\em It gets the I\+M\+SI from the S\+IM card. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a942a8ab9572e99d576058e2a87cd0ba3}{get\+I\+M\+EI} ()
+\begin{DoxyCompactList}\small\item\em It gets the I\+M\+EI from the S\+IM card. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_afff6f4bab5d38195b86665e19df060c1}{make\+Call} (const char $\ast$tlf\+Number)
+\begin{DoxyCompactList}\small\item\em It makes a call to the specified number. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a32d4dfea68499c94a6a894351c0452a5}{make\+Lost\+Call} (const char $\ast$tlf\+Number, uint8\+\_\+t time\+Call)
+\begin{DoxyCompactList}\small\item\em It makes a lost call to the specified number. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a2b607585bce7e7dc8f6bb12c87186ed2}{set\+Info\+Incoming\+Call} ()
+\begin{DoxyCompactList}\small\item\em It sets the info shown when an incoming call is received. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a5ea9f1654c17cfeeaedf79069c77af75}{read\+Call} ()
+\begin{DoxyCompactList}\small\item\em It stores in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{} variable the telephone number of the incoming call. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a0080fde2dbbe4da270bdf5d9ef8929f1}{hang\+Up} ()
+\begin{DoxyCompactList}\small\item\em It hangs all the active calls up. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a1ae4f91fbbdb3dcd1476e7bc202476e9}{set\+Monitor\+Volume} (uint8\+\_\+t volume)
+\begin{DoxyCompactList}\small\item\em It sets the monitor speaker loudness. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af3bbadb785fc609d4327d545d4435ae2}{set\+Monitor\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets the monitor speaker mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a6418600f64377c34f5427610e2353937}{set\+C\+L\+I\+Presentation} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It enables or disables the presentation of the incoming call. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ab36cc06a602bd23476363d153f0f134a}{set\+C\+L\+I\+Restriction} (uint8\+\_\+t mode)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ab3ed9d83eff59be5783422f51651a0c4}{get\+Phone\+Act\+Status} ()
+\begin{DoxyCompactList}\small\item\em It gets the phone activity status. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a9390d09a69c3d60936e9f063d6ff9dc5}{set\+Loudspeaker\+Level} (uint8\+\_\+t volume)
+\begin{DoxyCompactList}\small\item\em It sets loudspeaker volume. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a4b79b34af0bfff9398fdd36d8d877029}{set\+Call\+Alert} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets the monitor speaker loudness. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a947b8feec066d896d4cd5c474677d7a1}{set\+Call\+Alert} (uint8\+\_\+t mode, uint8\+\_\+t sound\+\_\+type, uint8\+\_\+t ring\+\_\+level)
+\begin{DoxyCompactList}\small\item\em It sets the monitor speaker loudness. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a599548823bcc1931c2854d7622890d5c}{set\+Mute} (uint8\+\_\+t mute\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em It sets the monitor speaker loudness. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aa30b4e29d564cec8d2c7357b85b5d0a1}{set\+Text\+Mode\+S\+MS} ()
+\begin{DoxyCompactList}\small\item\em It sets \textquotesingle{}text mode\textquotesingle{} for sending S\+MS. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a6bf4719cbfeb2e8c4cc59fc721e9c87b}{send\+S\+MS} (const char $\ast$sms\+Text, const char $\ast$tlf\+Number)
+\begin{DoxyCompactList}\small\item\em It sends a S\+MS to the specified number. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a2a405547e7ebf394ec809920f2b77b2d}{set\+Info\+Incoming\+S\+MS} ()
+\begin{DoxyCompactList}\small\item\em It sets the info shown when an incoming S\+MS is received. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries incoming\+S\+MS} ()\hypertarget{class_wasp_g_p_r_s___pro__core_a6f7d07a417f4be40bce8f125012b3556}{}\label{class_wasp_g_p_r_s___pro__core_a6f7d07a417f4be40bce8f125012b3556}
+
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af482736672798d68648ebae1828bba71}{read\+S\+MS} (uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aa3c60bd3ba8a89f7bf3ff764df8776c6}{sms\+\_\+index})
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aac7ab8f9a7333777d3427a7389b4fef9}{get\+Total\+S\+MS} ()
+\begin{DoxyCompactList}\small\item\em It gets the number of total S\+MS stored in the S\+IM. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a14c06b1f5c2be5249b04b9bf5ad910d0}{delete\+S\+MS} (uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aa3c60bd3ba8a89f7bf3ff764df8776c6}{sms\+\_\+index})
+\begin{DoxyCompactList}\small\item\em It deletes a sms in the memory selected by sms\+\_\+index. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_acda8578497d2560b19035455e987b0e3}{manage\+Incoming\+Data} ()
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ab1183b63819064b2220cad9f168acb23}{switchto\+Data\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Resumes the connection and switches back from Command mode to data mode. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ae0358611d14efe3f7fcdcb132f216ca6}{switchto\+Command\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Switch From Data Mode Or P\+PP Online Mode To Command Mode. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ab313897127e634b96e6d6ed60a3d953a}{send\+Command} (const char $\ast$A\+Tcommand)
+\begin{DoxyCompactList}\small\item\em It sends any command to the G\+P\+RS module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af3a957f211fd83f5885fd792cc4c446d}{configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+TP} (uint8\+\_\+t n\+\_\+conf)
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a0f8ba2d548fe7cd57567d5843de2a8d6}{upload\+File} (const char $\ast$file, const char $\ast$path, const char $\ast$user, const char $\ast$passw, const char $\ast$ftp\+\_\+server, const char $\ast$ftp\+\_\+port, uint8\+\_\+t n\+\_\+conf)
+\begin{DoxyCompactList}\small\item\em It uploads a file to a F\+TP server. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a77bd5b0f6b1004f2e5c3846eef667a45}{download\+File} (const char $\ast$file, const char $\ast$path, const char $\ast$user, const char $\ast$passw, const char $\ast$ftp\+\_\+server, const char $\ast$ftp\+\_\+port, uint8\+\_\+t n\+\_\+conf)
+\begin{DoxyCompactList}\small\item\em It downloads a file from a F\+TP server. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_g_p_r_s___pro__core_a3a095a6c4ae6955955589342d2d6dc78}{read\+U\+RL} (const char $\ast$url, uint8\+\_\+t n\+\_\+conf)
+\begin{DoxyCompactList}\small\item\em It accesses to the specified U\+RL and stores the info read in \textquotesingle{}data\+\_\+\+U\+RL\textquotesingle{} variable. \end{DoxyCompactList}\item 
+int {\bfseries read\+U\+RL} (const char $\ast$url, uint8\+\_\+t $\ast$data, uint16\+\_\+t length, uint8\+\_\+t n\+\_\+conf)\hypertarget{class_wasp_g_p_r_s___pro__core_a8f2e167932a7f12ecf18a651d5339a19}{}\label{class_wasp_g_p_r_s___pro__core_a8f2e167932a7f12ecf18a651d5339a19}
+
+\item 
+int {\bfseries read\+U\+RL} (const char $\ast$url, const char $\ast$data, uint8\+\_\+t n\+\_\+conf)\hypertarget{class_wasp_g_p_r_s___pro__core_af924366da75f8cbcf3ab99b63a68f9ee}{}\label{class_wasp_g_p_r_s___pro__core_af924366da75f8cbcf3ab99b63a68f9ee}
+
+\item 
+int {\bfseries read\+U\+RL} (const char $\ast$url, uint8\+\_\+t $\ast$data, uint16\+\_\+t length, uint8\+\_\+t n\+\_\+conf, uint8\+\_\+t mode)\hypertarget{class_wasp_g_p_r_s___pro__core_ad8423fa9b9f53df83d09ba38dd9b1f07}{}\label{class_wasp_g_p_r_s___pro__core_ad8423fa9b9f53df83d09ba38dd9b1f07}
+
+\item 
+int {\bfseries read\+U\+RL} (const char $\ast$url, uint8\+\_\+t $\ast$data, uint16\+\_\+t length, uint8\+\_\+t n\+\_\+conf, uint8\+\_\+t mode, uint8\+\_\+t frame\+\_\+flag)\hypertarget{class_wasp_g_p_r_s___pro__core_af686de318ff54f51e56b5898dcb9c42a}{}\label{class_wasp_g_p_r_s___pro__core_af686de318ff54f51e56b5898dcb9c42a}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a425a3fba14da02a5d2748a4893a2fd18}{is\+Connected} (uint8\+\_\+t n\+\_\+conf)
+\begin{DoxyCompactList}\small\item\em It checks if the module is connected to network. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af9cf9dcf3c7e0e830e040d6cbe2865be}{getcurrent\+Operator} ()
+\begin{DoxyCompactList}\small\item\em It gets the currently selected operator from network. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a5c57fcdcf5758b2fc1b85fa8515eb1c1}{get\+Available\+Operators} ()
+\begin{DoxyCompactList}\small\item\em It gets the currently available operators from network. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aebd5532a001d860a236724047c4f9bfc}{set\+Preferred\+Operator} (int index, uint8\+\_\+t format, const char $\ast$preferred\+\_\+operator)
+\begin{DoxyCompactList}\small\item\em It sets the monitor speaker loudness. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ad92cd6dcee7089e4dba5d9dd821e7d67}{get\+Cell\+Info} ()
+\begin{DoxyCompactList}\small\item\em It gets info from the cell where the modules is connected. \end{DoxyCompactList}\item 
+int8\+\_\+t {\bfseries get\+Working\+Band} ()\hypertarget{class_wasp_g_p_r_s___pro__core_a772e5969dec7c7c7f0572606aa006043}{}\label{class_wasp_g_p_r_s___pro__core_a772e5969dec7c7c7f0572606aa006043}
+
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a9a0b42f7303601eea426007eeb5588c5}{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP} (uint8\+\_\+t mode\+\_\+connection)
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_afa42c6fd242fbdc25de03dc6b0dbe89c}{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP} (uint8\+\_\+t mode\+\_\+connection, uint8\+\_\+t app\+\_\+mode)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a302da2efcd5c3924d5bcb514fc677967}{set\+Local\+Port} (const char $\ast$mode, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em It sets the number of the internal port for T\+CP or U\+DP connections. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ae8fdf05f78ad63fad18aea3d2be537c9}{save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration} ()
+\begin{DoxyCompactList}\small\item\em It saves the configuration into the internal N\+V\+R\+AM of the G\+P\+RS module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a31d09c2f2a363555e612185f6c710caf}{create\+Socket} (uint8\+\_\+t working\+\_\+mode, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em It creates a T\+C\+P/\+IP connection to the specified IP and P\+O\+RT. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a729c4b7347826a4f570fe1c43e0eedfc}{create\+Socket} (uint8\+\_\+t working\+\_\+mode, const char $\ast$ip, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em It creates a T\+C\+P/\+IP connection to the specified IP and P\+O\+RT. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a71e4fcb0e8aaa72055298914e372ebfc}{create\+Socket} (uint8\+\_\+t working\+\_\+mode, uint8\+\_\+t n\+\_\+connection, const char $\ast$ip, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em It creates a T\+C\+P/\+IP connection to the specified IP and P\+O\+RT. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a0b5ba31b3407694e3c01f13aac35fed9}{send\+Data} (const char $\ast$data)
+\begin{DoxyCompactList}\small\item\em It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ac3455ab553a10ee07a7ad3c7a186b0a2}{send\+Data} (const char $\ast$data, uint8\+\_\+t n\+\_\+connection)
+\begin{DoxyCompactList}\small\item\em It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a2450936fb9295a548e729a076fd2ffed}{send\+Data} (uint8\+\_\+t $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a66cfe2f51d3291c6b878bca6071a4bae}{send\+Data} (uint8\+\_\+t $\ast$data, int length, uint8\+\_\+t n\+\_\+connection)
+\begin{DoxyCompactList}\small\item\em It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aaf471aa07561e6483a4402286a4f5882}{read\+I\+P\+Data} ()
+\begin{DoxyCompactList}\small\item\em Gets data receive from a T\+CP or U\+DP connection and stores it in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a3f94650f0e3219431dac477405ce9515}{close\+Socket} ()
+\begin{DoxyCompactList}\small\item\em It closes T\+C\+P/\+IP connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_abd7a75e3ce9cc6a0654cf2db0db4bd3a}{close\+Socket} (uint8\+\_\+t n\+\_\+connection)
+\begin{DoxyCompactList}\small\item\em It closes T\+C\+P/\+IP connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a7e687ee9101291bc5f70a49907a29876}{Quickclose\+Socket} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It enables/disables to close the connection quickly. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ab73363dfc1d1b34382267b2b0c686072}{get\+I\+Pfrom\+D\+NS} (const char $\ast$I\+P\+\_\+query)
+\begin{DoxyCompactList}\small\item\em It gets the IP direction from a U\+RL using D\+NS servers. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af8c0d32f7fb6f748f4aa89386f8922c2}{I\+P\+Header} (uint8\+\_\+t on\+\_\+off)
+\begin{DoxyCompactList}\small\item\em It adds an IP head at the beginning of a package received. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a16283d13cc922589dd783be4058e8bc2}{Set\+Auto\+Sending\+Timer} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets a timer when module is sending data. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a9a77748c18b9168a9fc4dfc0ade563bb}{Set\+Auto\+Sending\+Timer} (uint8\+\_\+t mode, uint8\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It sets a timer when module is sending data. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a4089decc35f21d548a9b37516fa1117d}{Show\+Remote\+IP} (uint8\+\_\+t on\+\_\+off)
+\begin{DoxyCompactList}\small\item\em It enables or disables to show remote IP address and port when received data. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_abb2048b854247e70cba6df718629f267}{Show\+Protocol\+Header} (uint8\+\_\+t on\+\_\+off)
+\begin{DoxyCompactList}\small\item\em It enables or disables to show transfer protocol in IP head when received data. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a5049366bf29796bcdfdabc55210d3795}{Discard\+Input\+A\+T\+Data} (uint8\+\_\+t on\+\_\+off)
+\begin{DoxyCompactList}\small\item\em It enables or disables to discard input AT data in T\+CP data send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a695a4ecf0d152e3fecad7ca9c0b46b9a}{Set\+Data\+Manually} (uint8\+\_\+t on\+\_\+off)
+\begin{DoxyCompactList}\small\item\em It enables or disables to get data manually from a T\+CP or U\+DP connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af5214554a8c5e0d21b91fe7cee3ac85f}{Set\+Data\+Manually} (uint8\+\_\+t on\+\_\+off, uint8\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em It enables or disables to get data manually from a T\+CP or U\+DP connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a44b5cdf64b8c22cede7141e2807e8913}{Get\+Data\+Manually} (uint16\+\_\+t data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em It gets data manually from a T\+CP or U\+DP connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_abe7eb30d99f322cbc3baf4e97aa4835c}{Get\+Data\+Manually} (uint16\+\_\+t data\+\_\+length, uint8\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em It gets data manually from a T\+CP or U\+DP connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a12d31906378b98aac24a691243f0851e}{set\+D\+NS} ()
+\begin{DoxyCompactList}\small\item\em It sets the directions of D\+NS servers from G\+P\+R\+S\+\_\+\+Proconstants.\+h. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aac394af71e7b50cac89c1786823070ff}{set\+D\+NS} (const char $\ast$D\+N\+S\+\_\+dir)
+\begin{DoxyCompactList}\small\item\em It sets the direction of D\+NS server. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a2e48d1533a7b13b508258337fd7d9e1d}{set\+D\+NS} (const char $\ast$D\+N\+S\+\_\+dir1, const char $\ast$D\+N\+S\+\_\+dir2)
+\begin{DoxyCompactList}\small\item\em It sets the directions of D\+NS servers. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a79998c55c1820cb4a9c917118e4e7390}{set\+Default} ()
+\begin{DoxyCompactList}\small\item\em It sets all current parameters to the manufacturer defined profile. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a366b0d3817b9156c065d113edc2acc01}{whoamI} ()
+\begin{DoxyCompactList}\small\item\em It gets the model of the module and saves it in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af7842ab06b765667e2d924ccf5edf80d}{firmware\+\_\+version} ()
+\begin{DoxyCompactList}\small\item\em It gets the firmware version of the module and saves it in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{}. \end{DoxyCompactList}\item 
+void {\bfseries set\+\_\+\+A\+PN} (char $\ast$apn)\hypertarget{class_wasp_g_p_r_s___pro__core_a18dd7c25f060b56022b90d705799612a}{}\label{class_wasp_g_p_r_s___pro__core_a18dd7c25f060b56022b90d705799612a}
+
+\item 
+void {\bfseries set\+\_\+\+A\+PN} (char $\ast$apn, char $\ast$login, char $\ast$password)\hypertarget{class_wasp_g_p_r_s___pro__core_ae93301497de288d2b2b517f6f9d9b604}{}\label{class_wasp_g_p_r_s___pro__core_ae93301497de288d2b2b517f6f9d9b604}
+
+\item 
+void \hyperlink{class_wasp_g_p_r_s___pro__core_a5885087c586ee1a05b75097735913934}{show\+\_\+\+A\+PN} ()
+\begin{DoxyCompactList}\small\item\em It shows the apn, login and password constants. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a4e7125d46b95008c3e36ab4fd0dc4e80}{request\+O\+TA} (const char $\ast$F\+T\+P\+\_\+server, const char $\ast$F\+T\+P\+\_\+port, const char $\ast$F\+T\+P\+\_\+username, const char $\ast$F\+T\+P\+\_\+password)
+\begin{DoxyCompactList}\small\item\em It downloads a new O\+TA file if O\+TA is necessary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wasp_g_p_r_s___pro__core_1_1operators}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::operators} {\bfseries operators\+\_\+list} \mbox{[}5\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_aeea2da99dc1753541bbfaded168fafad}{}\label{class_wasp_g_p_r_s___pro__core_aeea2da99dc1753541bbfaded168fafad}
+
+\item 
+int \hyperlink{class_wasp_g_p_r_s___pro__core_a39db9f922e8dca6aeef93010e42ae416}{flag}
+\begin{DoxyCompactList}\small\item\em Variable \+: status flag, used to see if there was an error while communicating with the module. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_r_s___pro__core_a5c7dbd0508b7369149ff29723a56a925}{tlf\+IN} \mbox{[}15\mbox{]}
+\begin{DoxyCompactList}\small\item\em Variable \+: last call or S\+MS received telephone number. \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_g_p_r_s___pro__core_a3bb5ca4f32bfe890bc1fa14cc5751381}{\+\_\+baud\+Rate}
+\begin{DoxyCompactList}\small\item\em Variable \+: baud rate used to communicate with the G\+P\+RS module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aba9ef2770a61f7e2114e5c84d4b25794}{\+\_\+pwr\+Mode}
+\begin{DoxyCompactList}\small\item\em Variable \+: power mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a88295f0945d2f69eef16e8ef71dbc0d1}{\+\_\+socket}
+\begin{DoxyCompactList}\small\item\em Variable \+: U\+A\+RT used by the G\+P\+RS module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a3afa2569c7057708bcb718c5d14adec5}{socket\+\_\+\+ID} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Variable \+: socket ID. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af3e0e2549b04b4372706b386d2eab3dc}{data\+\_\+read}\hypertarget{class_wasp_g_p_r_s___pro__core_af3e0e2549b04b4372706b386d2eab3dc}{}\label{class_wasp_g_p_r_s___pro__core_af3e0e2549b04b4372706b386d2eab3dc}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: amount of data read from an U\+RL or from a socket. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_r_s___pro__core_a7a861cc2ee2bc5d9dd6fa43665a29135}{cell\+ID} \mbox{[}5\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_a7a861cc2ee2bc5d9dd6fa43665a29135}{}\label{class_wasp_g_p_r_s___pro__core_a7a861cc2ee2bc5d9dd6fa43665a29135}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Cell ID number. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_g_p_r_s___pro__core_a67c5f199ea78f480b4ad23e20b4d1b33}{R\+S\+SI}\hypertarget{class_wasp_g_p_r_s___pro__core_a67c5f199ea78f480b4ad23e20b4d1b33}{}\label{class_wasp_g_p_r_s___pro__core_a67c5f199ea78f480b4ad23e20b4d1b33}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: R\+S\+SI value. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_r_s___pro__core_aa3c60bd3ba8a89f7bf3ff764df8776c6}{sms\+\_\+index} \mbox{[}4\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_aa3c60bd3ba8a89f7bf3ff764df8776c6}{}\label{class_wasp_g_p_r_s___pro__core_aa3c60bd3ba8a89f7bf3ff764df8776c6}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Last sms received index. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_r_s___pro__core_ad9eec39f8bb3fcb0776954d4e5aa8610}{I\+P\+\_\+dir} \mbox{[}16\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_ad9eec39f8bb3fcb0776954d4e5aa8610}{}\label{class_wasp_g_p_r_s___pro__core_ad9eec39f8bb3fcb0776954d4e5aa8610}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: IP direction. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a0e35adb0246e794e218f05af6dcca9b8}{I\+P\+\_\+app\+\_\+mode}
+\begin{DoxyCompactList}\small\item\em Variable \+: IP application mode. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_g_p_r_s___pro__core_ac9287498856001449a83b8892797408b}{C\+M\+E\+\_\+\+C\+M\+S\+\_\+code}\hypertarget{class_wasp_g_p_r_s___pro__core_ac9287498856001449a83b8892797408b}{}\label{class_wasp_g_p_r_s___pro__core_ac9287498856001449a83b8892797408b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores C\+ME or C\+MS error code. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_g_p_r_s___pro__core_a48c99ba69bf1fd4213733d5b528de353}{F\+T\+P\+\_\+error\+\_\+code}\hypertarget{class_wasp_g_p_r_s___pro__core_a48c99ba69bf1fd4213733d5b528de353}{}\label{class_wasp_g_p_r_s___pro__core_a48c99ba69bf1fd4213733d5b528de353}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores C\+ME or C\+MS error code. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ae43873d27e34f722254bac8c283d4d2b}{connected}
+\item 
+char {\bfseries buffer\+\_\+\+G\+P\+RS} \mbox{[}B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_a54e37530cf07e2284457503640627245}{}\label{class_wasp_g_p_r_s___pro__core_a54e37530cf07e2284457503640627245}
+
+\item 
+char {\bfseries buffer\+\_\+temporal} \mbox{[}100\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_a0a3101e7e9c58baa1679fbb198213ed2}{}\label{class_wasp_g_p_r_s___pro__core_a0a3101e7e9c58baa1679fbb198213ed2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ae8192bccff86aba09c59405fbe60ce13}{get\+IP} ()
+\begin{DoxyCompactList}\small\item\em Gets IP direction when configure a T\+C\+P/\+U\+DP profiles. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a2c652de61ad43bf2b70820b84d54cac0}{check\+I\+Pstatus} ()
+\begin{DoxyCompactList}\small\item\em It checks if G\+P\+RS connection is OK. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_r_s___pro__core_a9f8732589d29be63d986b1dd7d57e50c}{get\+If\+Ready} ()
+\begin{DoxyCompactList}\small\item\em It gets if G\+P\+RS module is ready or not. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a44720043bbc78c8183e128f7ddba6509}{check\+G\+P\+R\+S\+\_\+at} (unsigned long time)
+\begin{DoxyCompactList}\small\item\em It checks if G\+P\+RS connection is OK. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a8bcdd6d37c050d7a700059dc1f46c835}{check\+G\+P\+RS} (unsigned long time)
+\begin{DoxyCompactList}\small\item\em It checks if G\+P\+RS connection is OK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a19cbdbee2c77861de9ddbac98387dde3}{send\+Command1} (const char $\ast$the\+Text, const char $\ast$expected\+Answer1)
+\begin{DoxyCompactList}\small\item\em It sends an AT command to the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a265fd636005fe753adc7529b4f1b9fbc}{send\+Command1} (const char $\ast$the\+Text, const char $\ast$expected\+Answer, unsigned long max\+\_\+timeout, int send\+Once)
+\begin{DoxyCompactList}\small\item\em It sends an AT command to the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aa08d29826147849eac6c9d19199fe416}{send\+Command2} (const char $\ast$the\+Text, const char $\ast$expected\+Answer1, const char $\ast$expected\+Answer2)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a8a0df0dd77c9bdfa07ec658de91bc0a3}{send\+Command2} (const char $\ast$the\+Text, const char $\ast$expected\+Answer1, const char $\ast$expected\+Answer2, unsigned long max\+\_\+timeout, int send\+Once)
+\begin{DoxyCompactList}\small\item\em It sends an AT command to the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a49e3fa010a21ca47c77bce02b1cff6bd}{wait\+For\+Data} (const char $\ast$expected\+Answer, unsigned long max\+\_\+timeout, unsigned long timeout, int seconds)
+\begin{DoxyCompactList}\small\item\em It waits for data from the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_ac14207d3db5e900367598fcbbbdbf6d5}{wait\+For\+Data} (const char $\ast$expected\+Answer1, const char $\ast$expected\+Answer2, unsigned long max\+\_\+timeout, unsigned long timeout, int seconds, int n\+\_\+answers)
+\begin{DoxyCompactList}\small\item\em It waits for data from the module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_aa51ff7e51c694d9d27c6d56e98c24393}{send\+Data\+F\+TP} (const char $\ast$file, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em It sends data via F\+TP. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_abf39b04f5d110f82c23c81468d42397b}{open\+F\+T\+P\+P\+U\+Tconnection} ()
+\begin{DoxyCompactList}\small\item\em It opens the connection with the F\+TP server. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a76d831196c7f3221bf3a2301212397f1}{read\+Data\+F\+TP} (const char $\ast$file, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em It reads data via F\+TP. \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_g_p_r_s___pro__core_a9f97f2c31c895adabdc35dd7d5f4b0c8}{getfilesize\+F\+TP} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em It reads the size of a file into the F\+TP server. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af53ee6dec09dccc5c2ec0831ae8e7d71}{F\+T\+Pstatus} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_g_p_r_s___pro__core_af53ee6dec09dccc5c2ec0831ae8e7d71}{F\+T\+Pstatus()} -\/ Checks if the F\+TP is busy. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a4612da214868a0a0b5024f8c99bd9b7a}{close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection} (uint8\+\_\+t n\+\_\+conf)
+\begin{DoxyCompactList}\small\item\em It closes at opened connection for F\+TP or H\+T\+TP. \end{DoxyCompactList}\item 
+int8\+\_\+t {\bfseries open\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection} (uint8\+\_\+t n\+\_\+conf)\hypertarget{class_wasp_g_p_r_s___pro__core_a380641da3c2e5547d57b7e452ff795df}{}\label{class_wasp_g_p_r_s___pro__core_a380641da3c2e5547d57b7e452ff795df}
+
+\item 
+int8\+\_\+t {\bfseries init\+H\+T\+TP} (const char $\ast$url, uint8\+\_\+t $\ast$data, int length, uint8\+\_\+t n\+\_\+conf, uint8\+\_\+t frame\+\_\+flag)\hypertarget{class_wasp_g_p_r_s___pro__core_adf3439e76e9ca9887b37da080cd96860}{}\label{class_wasp_g_p_r_s___pro__core_adf3439e76e9ca9887b37da080cd96860}
+
+\item 
+int8\+\_\+t {\bfseries set\+P\+O\+S\+Tdata} (uint8\+\_\+t $\ast$P\+O\+S\+T\+\_\+data, int length, uint8\+\_\+t frame\+\_\+flag)\hypertarget{class_wasp_g_p_r_s___pro__core_a81e573d42a9cc8ca1d48c98a6024c9bb}{}\label{class_wasp_g_p_r_s___pro__core_a81e573d42a9cc8ca1d48c98a6024c9bb}
+
+\item 
+int {\bfseries send\+H\+T\+TP} (uint8\+\_\+t n\+\_\+conf, uint8\+\_\+t method)\hypertarget{class_wasp_g_p_r_s___pro__core_a93a5121298d7e53e98cf24d14e24f142}{}\label{class_wasp_g_p_r_s___pro__core_a93a5121298d7e53e98cf24d14e24f142}
+
+\item 
+int16\+\_\+t {\bfseries read\+H\+T\+TP} (uint16\+\_\+t H\+T\+T\+P\+\_\+total\+\_\+data, uint8\+\_\+t n\+\_\+conf)\hypertarget{class_wasp_g_p_r_s___pro__core_aa6d2481bd1120b19af335c942d34dfe7}{}\label{class_wasp_g_p_r_s___pro__core_aa6d2481bd1120b19af335c942d34dfe7}
+
+\item 
+int8\+\_\+t {\bfseries close\+H\+T\+TP} ()\hypertarget{class_wasp_g_p_r_s___pro__core_a35638aa68fbf42d4393152afd3dce1e8}{}\label{class_wasp_g_p_r_s___pro__core_a35638aa68fbf42d4393152afd3dce1e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_wasp_g_p_r_s___pro__core_ac36ea9c8f8b6ee0f64fe3224c74ac030}{str\+\_\+aux1} \mbox{[}20\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_ac36ea9c8f8b6ee0f64fe3224c74ac030}{}\label{class_wasp_g_p_r_s___pro__core_ac36ea9c8f8b6ee0f64fe3224c74ac030}
+
+\begin{DoxyCompactList}\small\item\em Variables\+: aux strings that store commands and answer extracted from flash memory. \end{DoxyCompactList}\item 
+char {\bfseries str\+\_\+aux2} \mbox{[}20\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_abcdcd62f3d94f97a110f07acc4ba4954}{}\label{class_wasp_g_p_r_s___pro__core_abcdcd62f3d94f97a110f07acc4ba4954}
+
+\item 
+char {\bfseries str\+\_\+aux3} \mbox{[}70\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_a6baf48d4ae4effe44d30579429018b40}{}\label{class_wasp_g_p_r_s___pro__core_a6baf48d4ae4effe44d30579429018b40}
+
+\item 
+char {\bfseries \+\_\+apn} \mbox{[}20\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_acf9c45c3752a3f066e7a50e2f81b8e2b}{}\label{class_wasp_g_p_r_s___pro__core_acf9c45c3752a3f066e7a50e2f81b8e2b}
+
+\item 
+char {\bfseries \+\_\+apn\+\_\+login} \mbox{[}20\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_a60f548092989d8989678545be318798b}{}\label{class_wasp_g_p_r_s___pro__core_a60f548092989d8989678545be318798b}
+
+\item 
+char {\bfseries \+\_\+apn\+\_\+password} \mbox{[}20\mbox{]}\hypertarget{class_wasp_g_p_r_s___pro__core_a3c438fcbafc656ae946352bf8ae00291}{}\label{class_wasp_g_p_r_s___pro__core_a3c438fcbafc656ae946352bf8ae00291}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_af89af5d758cde6cf4e0530d62979ae00}{not\+\_\+ready}\hypertarget{class_wasp_g_p_r_s___pro__core_af89af5d758cde6cf4e0530d62979ae00}{}\label{class_wasp_g_p_r_s___pro__core_af89af5d758cde6cf4e0530d62979ae00}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: stores if the module is ready or not (1\+:not ready, 0\+:ready) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___pro__core_a4f2d6f0c98da5734b9d0b4c6ff122fbd}{I\+P\+\_\+mode}\hypertarget{class_wasp_g_p_r_s___pro__core_a4f2d6f0c98da5734b9d0b4c6ff122fbd}{}\label{class_wasp_g_p_r_s___pro__core_a4f2d6f0c98da5734b9d0b4c6ff122fbd}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: stores the IP mode connection (1\+:multiple, 0\+:single) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_g_p_r_s___pro__core}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}. 
+
+\hyperlink{class_wasp_g_p_r_s___pro__core}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core} Class defines all the variables and functions used to manage G\+P\+RS module 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core()}{WaspGPRS_Pro_core()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a208325254653e60af7bc5a641bd01eab}{}\label{class_wasp_g_p_r_s___pro__core_a208325254653e60af7bc5a641bd01eab}
+
+
+class constructor 
+
+It initializes some variables 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!begin@{begin}}
+\index{begin@{begin}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a38aab9b0cbf3cfe9d73b600261c9ce8c}{}\label{class_wasp_g_p_r_s___pro__core_a38aab9b0cbf3cfe9d73b600261c9ce8c}
+
+
+It opens U\+A\+RT and sets multiplexer properly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!change\+P\+IN@{change\+P\+IN}}
+\index{change\+P\+IN@{change\+P\+IN}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{change\+P\+I\+N(const char $\ast$old\+\_\+pin, const char $\ast$new\+\_\+pin)}{changePIN(const char *old_pin, const char *new_pin)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::change\+P\+IN (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{old\+\_\+pin, }
+\item[{const char $\ast$}]{new\+\_\+pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a5446bbc65535e2d49b0d6150622613e0}{}\label{class_wasp_g_p_r_s___pro__core_a5446bbc65535e2d49b0d6150622613e0}
+
+
+changes P\+IN number to the S\+IM 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ old\+\_\+pin \+: the old S\+IM\textquotesingle{}s P\+IN \\
+\hline
+{\em const} & char$\ast$ new\+\_\+pin \+: the new S\+IM\textquotesingle{}s P\+IN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns \textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!check@{check}}
+\index{check@{check}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{check(unsigned long time)}{check(unsigned long time)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::check (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a9bd2496ac41cd4aa13e5cd1023d35f44}{}\label{class_wasp_g_p_r_s___pro__core_a9bd2496ac41cd4aa13e5cd1023d35f44}
+
+
+It checks if G\+P\+RS is connected to the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: time to wait \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} when connected, \textquotesingle{}0\textquotesingle{} if not registered and the module is not currently searching a new operator, \textquotesingle{}-\/2\textquotesingle{} if not registered, but the module is currently searching a new operator, \textquotesingle{}-\/3\textquotesingle{} if registration denied \textquotesingle{}-\/4\textquotesingle{} if the state is unknown 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!check\+G\+P\+RS@{check\+G\+P\+RS}}
+\index{check\+G\+P\+RS@{check\+G\+P\+RS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{check\+G\+P\+R\+S(unsigned long time)}{checkGPRS(unsigned long time)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::check\+G\+P\+RS (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a8bcdd6d37c050d7a700059dc1f46c835}{}\label{class_wasp_g_p_r_s___pro__core_a8bcdd6d37c050d7a700059dc1f46c835}
+
+
+It checks if G\+P\+RS connection is OK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} when connected, \textquotesingle{}0\textquotesingle{} if not registered and the module is not currently searching a new operator, \textquotesingle{}-\/2\textquotesingle{} if not registered, but the module is currently searching a new operator, \textquotesingle{}-\/3\textquotesingle{} if registration denied \textquotesingle{}-\/4\textquotesingle{} if the state is unknown 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!check\+G\+P\+R\+S\+\_\+at@{check\+G\+P\+R\+S\+\_\+at}}
+\index{check\+G\+P\+R\+S\+\_\+at@{check\+G\+P\+R\+S\+\_\+at}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{check\+G\+P\+R\+S\+\_\+at(unsigned long time)}{checkGPRS_at(unsigned long time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::check\+G\+P\+R\+S\+\_\+at (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a44720043bbc78c8183e128f7ddba6509}{}\label{class_wasp_g_p_r_s___pro__core_a44720043bbc78c8183e128f7ddba6509}
+
+
+It checks if G\+P\+RS connection is OK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!check\+I\+Pstatus@{check\+I\+Pstatus}}
+\index{check\+I\+Pstatus@{check\+I\+Pstatus}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{check\+I\+Pstatus()}{checkIPstatus()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::check\+I\+Pstatus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a2c652de61ad43bf2b70820b84d54cac0}{}\label{class_wasp_g_p_r_s___pro__core_a2c652de61ad43bf2b70820b84d54cac0}
+
+
+It checks if G\+P\+RS connection is OK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} IP I\+N\+I\+T\+I\+AL, \textquotesingle{}2\textquotesingle{} IP S\+T\+A\+RT, \textquotesingle{}3\textquotesingle{} IP C\+O\+N\+F\+IG, \textquotesingle{}4\textquotesingle{} IP G\+P\+R\+S\+A\+CT, \textquotesingle{}5\textquotesingle{} IP S\+T\+A\+T\+US, \textquotesingle{}6\textquotesingle{} T\+CP C\+O\+N\+N\+E\+C\+T\+I\+N\+G/\+U\+DP C\+O\+N\+N\+E\+C\+T\+I\+N\+G/\+S\+E\+R\+V\+ER L\+I\+S\+T\+E\+N\+I\+NG, \textquotesingle{}7\textquotesingle{} C\+O\+N\+N\+E\+CT OK, \textquotesingle{}8\textquotesingle{} T\+CP C\+L\+O\+S\+I\+N\+G/\+U\+DP C\+L\+O\+S\+I\+NG, \textquotesingle{}9\textquotesingle{} T\+CP C\+L\+O\+S\+E\+D/\+U\+DP C\+L\+O\+S\+ED, \textquotesingle{}10\textquotesingle{} P\+DP D\+E\+A\+CT, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!close@{close}}
+\index{close@{close}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a351df158db7614f00755311200f31595}{}\label{class_wasp_g_p_r_s___pro__core_a351df158db7614f00755311200f31595}
+
+
+It closes U\+A\+RT and sets multiplexer properly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection@{close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection}}
+\index{close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection@{close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection(uint8\+\_\+t n\+\_\+conf)}{closeGPRS_HTTP_FTP_connection(uint8_t n_conf)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::close\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P\+\_\+connection (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{n\+\_\+conf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a4612da214868a0a0b5024f8c99bd9b7a}{}\label{class_wasp_g_p_r_s___pro__core_a4612da214868a0a0b5024f8c99bd9b7a}
+
+
+It closes at opened connection for F\+TP or H\+T\+TP. 
+
+This function closes a G\+P\+RS connection with the carrier server to get access to the H\+T\+TP and F\+TP applications 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & n\+\_\+conf \+: number of the profile (1-\/3) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} error with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!close\+Socket@{close\+Socket}}
+\index{close\+Socket@{close\+Socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{close\+Socket()}{closeSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::close\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a3f94650f0e3219431dac477405ce9515}{}\label{class_wasp_g_p_r_s___pro__core_a3f94650f0e3219431dac477405ce9515}
+
+
+It closes T\+C\+P/\+IP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!close\+Socket@{close\+Socket}}
+\index{close\+Socket@{close\+Socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{close\+Socket(uint8\+\_\+t n\+\_\+connection)}{closeSocket(uint8_t n_connection)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::close\+Socket (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{n\+\_\+connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_abd7a75e3ce9cc6a0654cf2db0db4bd3a}{}\label{class_wasp_g_p_r_s___pro__core_abd7a75e3ce9cc6a0654cf2db0db4bd3a}
+
+
+It closes T\+C\+P/\+IP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & n\+\_\+connection\+: the connection\textquotesingle{}s number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+TP@{configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+TP}}
+\index{configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+TP@{configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+TP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+T\+P(uint8\+\_\+t n\+\_\+conf)}{configureGPRS_HTTP_FTP(uint8_t n_conf)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::configure\+G\+P\+R\+S\+\_\+\+H\+T\+T\+P\+\_\+\+F\+TP (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{n\+\_\+conf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af3a957f211fd83f5885fd792cc4c446d}{}\label{class_wasp_g_p_r_s___pro__core_af3a957f211fd83f5885fd792cc4c446d}
+It configures G\+P\+RS connection with login, password and some other parameters for use with H\+T\+TP and F\+TP functions \begin{DoxyVerb}It takes the configuration parameters from 'WaspGPRSconstants.h' file
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & n\+\_\+conf \+: number of the profile (1-\/3) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error \textquotesingle{}-\/2\textquotesingle{} if error setting the type of internet connection, \textquotesingle{}-\/3\textquotesingle{} if error setting the apn, \textquotesingle{}-\/4\textquotesingle{} if error setting the user name, \textquotesingle{}-\/5\textquotesingle{} if error setting the password \textquotesingle{}-\/6\textquotesingle{} if error saving the configuration 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP@{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP}}
+\index{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP@{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+P(uint8\+\_\+t mode\+\_\+connection)}{configureGPRS_TCP_UDP(uint8_t mode_connection)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode\+\_\+connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a9a0b42f7303601eea426007eeb5588c5}{}\label{class_wasp_g_p_r_s___pro__core_a9a0b42f7303601eea426007eeb5588c5}
+It configures G\+P\+RS connection with login, password and some other parameters for use with T\+CP or U\+DP connections
+
+It takes the configuration parameters from \textquotesingle{}Wasp\+G\+P\+R\+Sconstants.\+h\textquotesingle{} file 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: M\+U\+L\+T\+I\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/2\textquotesingle{} if error dettaching the G\+P\+RS connection, \textquotesingle{}-\/3\textquotesingle{} if error attaching the G\+P\+RS connection, \textquotesingle{}-\/4\textquotesingle{} if error setting the application mode, \textquotesingle{}-\/5\textquotesingle{} if error setting the connection mode, \textquotesingle{}-\/6\textquotesingle{} if error establishing the connection with the G\+P\+RS provider, \textquotesingle{}-\/15\textquotesingle{} if error dettaching the G\+P\+RS connection with C\+ME error code available, \textquotesingle{}-\/16\textquotesingle{} if error attaching the G\+P\+RS connection with C\+ME error code available. 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP@{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP}}
+\index{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP@{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+P(uint8\+\_\+t mode\+\_\+connection, uint8\+\_\+t app\+\_\+mode)}{configureGPRS_TCP_UDP(uint8_t mode_connection, uint8_t app_mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::configure\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+DP (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode\+\_\+connection, }
+\item[{uint8\+\_\+t}]{app\+\_\+mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_afa42c6fd242fbdc25de03dc6b0dbe89c}{}\label{class_wasp_g_p_r_s___pro__core_afa42c6fd242fbdc25de03dc6b0dbe89c}
+It configures G\+P\+RS connection with login, password and some other parameters for use with T\+CP or U\+DP connections
+
+It takes the configuration parameters from \textquotesingle{}Wasp\+G\+P\+R\+Sconstants.\+h\textquotesingle{} file 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode\+\_\+connection \+: S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON \\
+\hline
+{\em uint8\+\_\+t} & app\+\_\+mode \+: T\+R\+A\+N\+S\+P\+A\+R\+E\+NT mode or N\+O\+N\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+NT mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/2\textquotesingle{} if error dettaching the G\+P\+RS connection, \textquotesingle{}-\/3\textquotesingle{} if error attaching the G\+P\+RS connection, \textquotesingle{}-\/4\textquotesingle{} if error setting the application mode, \textquotesingle{}-\/5\textquotesingle{} if error setting the connection mode, \textquotesingle{}-\/6\textquotesingle{} if error establishing the connection with the G\+P\+RS provider, \textquotesingle{}-\/15\textquotesingle{} if error dettaching the G\+P\+RS connection with C\+ME error code available, \textquotesingle{}-\/16\textquotesingle{} if error attaching the G\+P\+RS connection with C\+ME error code available. 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!create\+Socket@{create\+Socket}}
+\index{create\+Socket@{create\+Socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{create\+Socket(uint8\+\_\+t working\+\_\+mode, const char $\ast$port)}{createSocket(uint8_t working_mode, const char *port)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::create\+Socket (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{working\+\_\+mode, }
+\item[{const char $\ast$}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a31d09c2f2a363555e612185f6c710caf}{}\label{class_wasp_g_p_r_s___pro__core_a31d09c2f2a363555e612185f6c710caf}
+
+
+It creates a T\+C\+P/\+IP connection to the specified IP and P\+O\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & working\+\_\+mode \+: T\+C\+P\+\_\+\+S\+E\+R\+V\+ER \\
+\hline
+{\em const} & char$\ast$ port \+: the P\+O\+RT to open a socket to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error setting the connection, \textquotesingle{}-\/2\textquotesingle{} if error setting the connection with C\+ME error code available and \textquotesingle{}-\/3\textquotesingle{} if time out waiting the connection 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!create\+Socket@{create\+Socket}}
+\index{create\+Socket@{create\+Socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{create\+Socket(uint8\+\_\+t working\+\_\+mode, const char $\ast$ip, const char $\ast$port)}{createSocket(uint8_t working_mode, const char *ip, const char *port)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::create\+Socket (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{working\+\_\+mode, }
+\item[{const char $\ast$}]{ip, }
+\item[{const char $\ast$}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a729c4b7347826a4f570fe1c43e0eedfc}{}\label{class_wasp_g_p_r_s___pro__core_a729c4b7347826a4f570fe1c43e0eedfc}
+
+
+It creates a T\+C\+P/\+IP connection to the specified IP and P\+O\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & working\+\_\+mode \+: T\+C\+P\+\_\+\+C\+L\+I\+E\+NT, U\+D\+P\+\_\+\+C\+L\+I\+E\+NT or U\+D\+P\+\_\+\+E\+X\+T\+E\+N\+D\+ED \\
+\hline
+{\em const} & char$\ast$ ip \+: the IP to open a socket to \\
+\hline
+{\em const} & char$\ast$ port \+: the P\+O\+RT to open a socket to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error setting the connection, \textquotesingle{}-\/2\textquotesingle{} if error setting the connection with C\+ME error code available \textquotesingle{}-\/3\textquotesingle{} if time out waiting the connection 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!create\+Socket@{create\+Socket}}
+\index{create\+Socket@{create\+Socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{create\+Socket(uint8\+\_\+t working\+\_\+mode, uint8\+\_\+t n\+\_\+connection, const char $\ast$ip, const char $\ast$port)}{createSocket(uint8_t working_mode, uint8_t n_connection, const char *ip, const char *port)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::create\+Socket (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{working\+\_\+mode, }
+\item[{uint8\+\_\+t}]{n\+\_\+connection, }
+\item[{const char $\ast$}]{ip, }
+\item[{const char $\ast$}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a71e4fcb0e8aaa72055298914e372ebfc}{}\label{class_wasp_g_p_r_s___pro__core_a71e4fcb0e8aaa72055298914e372ebfc}
+
+
+It creates a T\+C\+P/\+IP connection to the specified IP and P\+O\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & working\+\_\+mode \+: T\+C\+P\+\_\+\+C\+L\+I\+E\+NT, U\+D\+P\+\_\+\+C\+L\+I\+E\+NT or U\+D\+P\+\_\+\+E\+X\+T\+E\+N\+D\+ED \\
+\hline
+{\em uint8\+\_\+t} & n\+\_\+connection \+: number of the connection id to use (0-\/7) \\
+\hline
+{\em const} & char$\ast$ ip \+: the IP to open a socket to \\
+\hline
+{\em const} & char$\ast$ port \+: the P\+O\+RT to open a socket to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error setting the connection, \textquotesingle{}-\/2\textquotesingle{} if error setting the connection with C\+ME error code available \textquotesingle{}-\/3\textquotesingle{} if time out waiting the connection 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!delete\+S\+MS@{delete\+S\+MS}}
+\index{delete\+S\+MS@{delete\+S\+MS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{delete\+S\+M\+S(uint8\+\_\+t sms\+\_\+index)}{deleteSMS(uint8_t sms_index)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::delete\+S\+MS (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sms\+\_\+index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a14c06b1f5c2be5249b04b9bf5ad910d0}{}\label{class_wasp_g_p_r_s___pro__core_a14c06b1f5c2be5249b04b9bf5ad910d0}
+
+
+It deletes a sms in the memory selected by sms\+\_\+index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & sms\+\_\+index \+: index of the sms to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error \textquotesingle{}-\/2\textquotesingle{} if error with C\+MS error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Discard\+Input\+A\+T\+Data@{Discard\+Input\+A\+T\+Data}}
+\index{Discard\+Input\+A\+T\+Data@{Discard\+Input\+A\+T\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Discard\+Input\+A\+T\+Data(uint8\+\_\+t on\+\_\+off)}{DiscardInputATData(uint8_t on_off)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Discard\+Input\+A\+T\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{on\+\_\+off}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a5049366bf29796bcdfdabc55210d3795}{}\label{class_wasp_g_p_r_s___pro__core_a5049366bf29796bcdfdabc55210d3795}
+
+
+It enables or disables to discard input AT data in T\+CP data send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & on\+\_\+off \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!download\+File@{download\+File}}
+\index{download\+File@{download\+File}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{download\+File(const char $\ast$file, const char $\ast$path, const char $\ast$user, const char $\ast$passw, const char $\ast$ftp\+\_\+server, const char $\ast$ftp\+\_\+port, uint8\+\_\+t n\+\_\+conf)}{downloadFile(const char *file, const char *path, const char *user, const char *passw, const char *ftp_server, const char *ftp_port, uint8_t n_conf)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::download\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{path, }
+\item[{const char $\ast$}]{user, }
+\item[{const char $\ast$}]{passw, }
+\item[{const char $\ast$}]{ftp\+\_\+server, }
+\item[{const char $\ast$}]{ftp\+\_\+port, }
+\item[{uint8\+\_\+t}]{n\+\_\+conf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a77bd5b0f6b1004f2e5c3846eef667a45}{}\label{class_wasp_g_p_r_s___pro__core_a77bd5b0f6b1004f2e5c3846eef667a45}
+
+
+It downloads a file from a F\+TP server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ file \+: path in the F\+TP server where find the file to download \\
+\hline
+{\em const} & char$\ast$ path \+: path within SD card to store the file to download \\
+\hline
+{\em const} & char$\ast$ user \+: login to connect to the ftp server \\
+\hline
+{\em const} & char$\ast$ passw \+: password to connect to the ftp server \\
+\hline
+{\em const} & char$\ast$ ftp\+\_\+server \+: ftp server \\
+\hline
+{\em uint8\+\_\+t} & ftp\+\_\+port \+: ftp server port \\
+\hline
+{\em uint8\+\_\+t} & n\+\_\+conf \+: number of H\+T\+T\+P/\+F\+TP profile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success \textquotesingle{}0\textquotesingle{} if error opening connection with the G\+P\+RS provider, \textquotesingle{}-\/2\textquotesingle{} if error getting the IP address \textquotesingle{}-\/3\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID, \textquotesingle{}-\/4\textquotesingle{} if error setting the F\+TP mode, \textquotesingle{}-\/5\textquotesingle{} if error setting the F\+TP type, \textquotesingle{}-\/6\textquotesingle{} if error setting the F\+TP server, \textquotesingle{}-\/7\textquotesingle{} if error setting the F\+TP port, \textquotesingle{}-\/8\textquotesingle{} if error setting the user name, \textquotesingle{}-\/9\textquotesingle{} if error setting the password, \textquotesingle{}-\/12\textquotesingle{} if error setting the file name in the F\+TP server, \textquotesingle{}-\/13\textquotesingle{} if error setting the path of the file in the F\+TP server, \textquotesingle{}-\/14\textquotesingle{} if error opening the F\+TP session, \textquotesingle{}-\/15\textquotesingle{} if error starting the SD, \textquotesingle{}-\/16\textquotesingle{} if error creating the file, \textquotesingle{}-\/17\textquotesingle{} error requesting data to the F\+TP, \textquotesingle{}-\/18\textquotesingle{} if error saving data into the SD, \textquotesingle{}-\/19\textquotesingle{} if error requesting more data to the F\+TP, \textquotesingle{}-\/21\textquotesingle{} setting the file name in the F\+TP to get the file size \textquotesingle{}-\/22\textquotesingle{} setting the path in the F\+TP to get the file size, \textquotesingle{}-\/23\textquotesingle{} if error getting the file size \textquotesingle{}-\/41\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID with C\+ME error code available, \textquotesingle{}-\/42\textquotesingle{} if error setting the F\+TP mode with C\+ME error code available, \textquotesingle{}-\/43\textquotesingle{} if error setting the F\+TP type with C\+ME error code available, \textquotesingle{}-\/44\textquotesingle{} if error setting the F\+TP server with C\+ME error code available, \textquotesingle{}-\/45\textquotesingle{} if error setting the F\+TP port with C\+ME error code available, \textquotesingle{}-\/46\textquotesingle{} if error setting the user name with C\+ME error code available, \textquotesingle{}-\/47\textquotesingle{} if error setting the password with C\+ME error code available, \textquotesingle{}-\/48\textquotesingle{} if error setting the file name in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/49\textquotesingle{} if error setting the path of the file in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/50\textquotesingle{} if error opening the F\+TP session with C\+ME error code available, \textquotesingle{}-\/51\textquotesingle{} if error requesting data to the F\+TP with C\+ME error code available, \textquotesingle{}-\/52\textquotesingle{} if error requesting more data to the F\+TP with C\+ME error code available, \textquotesingle{}-\/53\textquotesingle{} setting the file name in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/54\textquotesingle{} setting the path in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/55\textquotesingle{} if error getting the file size with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!firmware\+\_\+version@{firmware\+\_\+version}}
+\index{firmware\+\_\+version@{firmware\+\_\+version}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{firmware\+\_\+version()}{firmware_version()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::firmware\+\_\+version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af7842ab06b765667e2d924ccf5edf80d}{}\label{class_wasp_g_p_r_s___pro__core_af7842ab06b765667e2d924ccf5edf80d}
+
+
+It gets the firmware version of the module and saves it in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!F\+T\+Pstatus@{F\+T\+Pstatus}}
+\index{F\+T\+Pstatus@{F\+T\+Pstatus}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{F\+T\+Pstatus()}{FTPstatus()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+F\+T\+Pstatus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_af53ee6dec09dccc5c2ec0831ae8e7d71}{}\label{class_wasp_g_p_r_s___pro__core_af53ee6dec09dccc5c2ec0831ae8e7d71}
+
+
+\hyperlink{class_wasp_g_p_r_s___pro__core_af53ee6dec09dccc5c2ec0831ae8e7d71}{F\+T\+Pstatus()} -\/ Checks if the F\+TP is busy. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}2\textquotesingle{} if F\+TP is busy, \textquotesingle{}1\textquotesingle{} if F\+TP is idle and \textquotesingle{}0\textquotesingle{} if error. 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+Available\+Operators@{get\+Available\+Operators}}
+\index{get\+Available\+Operators@{get\+Available\+Operators}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+Available\+Operators()}{getAvailableOperators()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+Available\+Operators (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a5c57fcdcf5758b2fc1b85fa8515eb1c1}{}\label{class_wasp_g_p_r_s___pro__core_a5c57fcdcf5758b2fc1b85fa8515eb1c1}
+
+
+It gets the currently available operators from network. 
+
+It stores it in operator\+\_\+list 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+Cell\+Info@{get\+Cell\+Info}}
+\index{get\+Cell\+Info@{get\+Cell\+Info}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+Cell\+Info()}{getCellInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+Cell\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ad92cd6dcee7089e4dba5d9dd821e7d67}{}\label{class_wasp_g_p_r_s___pro__core_ad92cd6dcee7089e4dba5d9dd821e7d67}
+
+
+It gets info from the cell where the modules is connected. 
+
+It stores in \textquotesingle{}R\+S\+SI\textquotesingle{} and \textquotesingle{}cell\+ID\textquotesingle{} variables the R\+S\+SI and the Cell ID \begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!getcurrent\+Operator@{getcurrent\+Operator}}
+\index{getcurrent\+Operator@{getcurrent\+Operator}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{getcurrent\+Operator()}{getcurrentOperator()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::getcurrent\+Operator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af9cf9dcf3c7e0e830e040d6cbe2865be}{}\label{class_wasp_g_p_r_s___pro__core_af9cf9dcf3c7e0e830e040d6cbe2865be}
+
+
+It gets the currently selected operator from network. 
+
+It stores it in operator\+\_\+name 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Get\+Data\+Manually@{Get\+Data\+Manually}}
+\index{Get\+Data\+Manually@{Get\+Data\+Manually}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Get\+Data\+Manually(uint16\+\_\+t data\+\_\+length)}{GetDataManually(uint16_t data_length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Get\+Data\+Manually (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{data\+\_\+length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a44b5cdf64b8c22cede7141e2807e8913}{}\label{class_wasp_g_p_r_s___pro__core_a44b5cdf64b8c22cede7141e2807e8913}
+
+
+It gets data manually from a T\+CP or U\+DP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & data\+\_\+length \+: the legth of the data to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error \textquotesingle{}2\textquotesingle{} if buffer\+\_\+\+G\+P\+RS is full. The answer from the server is limited by the length of buffer\+\_\+\+G\+P\+RS. To increase the length of the answer, increase the B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE constant. 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Get\+Data\+Manually@{Get\+Data\+Manually}}
+\index{Get\+Data\+Manually@{Get\+Data\+Manually}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Get\+Data\+Manually(uint16\+\_\+t data\+\_\+length, uint8\+\_\+t id)}{GetDataManually(uint16_t data_length, uint8_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Get\+Data\+Manually (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{data\+\_\+length, }
+\item[{uint8\+\_\+t}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_abe7eb30d99f322cbc3baf4e97aa4835c}{}\label{class_wasp_g_p_r_s___pro__core_abe7eb30d99f322cbc3baf4e97aa4835c}
+
+
+It gets data manually from a T\+CP or U\+DP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & data\+\_\+length \+: the legth of the data to get \\
+\hline
+{\em uint8\+\_\+t} & id \+: id connection number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error \textquotesingle{}2\textquotesingle{} if buffer\+\_\+\+G\+P\+RS is full. The answer from the server is limited by the length of buffer\+\_\+\+G\+P\+RS. To increase the length of the answer, increase the B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE constant. 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!getfilesize\+F\+TP@{getfilesize\+F\+TP}}
+\index{getfilesize\+F\+TP@{getfilesize\+F\+TP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{getfilesize\+F\+T\+P(const char $\ast$path)}{getfilesizeFTP(const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}long Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::getfilesize\+F\+TP (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a9f97f2c31c895adabdc35dd7d5f4b0c8}{}\label{class_wasp_g_p_r_s___pro__core_a9f97f2c31c895adabdc35dd7d5f4b0c8}
+
+
+It reads the size of a file into the F\+TP server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & path \+: path within SD card to store the file to download \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size or \textquotesingle{}-\/1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+If\+Ready@{get\+If\+Ready}}
+\index{get\+If\+Ready@{get\+If\+Ready}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+If\+Ready()}{getIfReady()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+If\+Ready (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a9f8732589d29be63d986b1dd7d57e50c}{}\label{class_wasp_g_p_r_s___pro__core_a9f8732589d29be63d986b1dd7d57e50c}
+
+
+It gets if G\+P\+RS module is ready or not. 
+
+\begin{DoxyReturn}{Returns}
+nothing. It changes the value of \textquotesingle{}not\+\_\+ready\textquotesingle{} 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+I\+M\+EI@{get\+I\+M\+EI}}
+\index{get\+I\+M\+EI@{get\+I\+M\+EI}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+I\+M\+E\+I()}{getIMEI()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+I\+M\+EI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a942a8ab9572e99d576058e2a87cd0ba3}{}\label{class_wasp_g_p_r_s___pro__core_a942a8ab9572e99d576058e2a87cd0ba3}
+
+
+It gets the I\+M\+EI from the S\+IM card. 
+
+It stores the I\+M\+EI into \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{} variable. \begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if connected, \textquotesingle{}0\textquotesingle{} if not 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+I\+M\+SI@{get\+I\+M\+SI}}
+\index{get\+I\+M\+SI@{get\+I\+M\+SI}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+I\+M\+S\+I()}{getIMSI()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+I\+M\+SI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a2352de6378f424b47f619b8e8447e9f7}{}\label{class_wasp_g_p_r_s___pro__core_a2352de6378f424b47f619b8e8447e9f7}
+
+
+It gets the I\+M\+SI from the S\+IM card. 
+
+It stores the I\+M\+SI into \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{} variable. \begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if connected, \textquotesingle{}0\textquotesingle{} if not 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+IP@{get\+IP}}
+\index{get\+IP@{get\+IP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+I\+P()}{getIP()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+IP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_ae8192bccff86aba09c59405fbe60ce13}{}\label{class_wasp_g_p_r_s___pro__core_ae8192bccff86aba09c59405fbe60ce13}
+
+
+Gets IP direction when configure a T\+C\+P/\+U\+DP profiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error. It stores IP direction in \textquotesingle{}I\+P\+\_\+direction\textquotesingle{} 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+I\+Pfrom\+D\+NS@{get\+I\+Pfrom\+D\+NS}}
+\index{get\+I\+Pfrom\+D\+NS@{get\+I\+Pfrom\+D\+NS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+I\+Pfrom\+D\+N\+S(const char $\ast$\+I\+P\+\_\+query)}{getIPfromDNS(const char *IP_query)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+I\+Pfrom\+D\+NS (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{I\+P\+\_\+query}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ab73363dfc1d1b34382267b2b0c686072}{}\label{class_wasp_g_p_r_s___pro__core_ab73363dfc1d1b34382267b2b0c686072}
+
+
+It gets the IP direction from a U\+RL using D\+NS servers. 
+
+It stores the direccion in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{} 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ I\+P\+\_\+query \+: U\+RL to obtain te IP direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+Mode()}{getMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aa33dd4f4c753ac5338da80c557a42355}{}\label{class_wasp_g_p_r_s___pro__core_aa33dd4f4c753ac5338da80c557a42355}
+
+
+It gets Power Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the power mode (G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+ON, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+F\+U\+LL, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+R\+F\+\_\+\+O\+FF, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+M\+IN, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+S\+L\+E\+EP, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+P\+O\+W\+E\+R\+\_\+\+O\+FF) 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+Phone\+Act\+Status@{get\+Phone\+Act\+Status}}
+\index{get\+Phone\+Act\+Status@{get\+Phone\+Act\+Status}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+Phone\+Act\+Status()}{getPhoneActStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+Phone\+Act\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ab3ed9d83eff59be5783422f51651a0c4}{}\label{class_wasp_g_p_r_s___pro__core_ab3ed9d83eff59be5783422f51651a0c4}
+
+
+It gets the phone activity status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!get\+Total\+S\+MS@{get\+Total\+S\+MS}}
+\index{get\+Total\+S\+MS@{get\+Total\+S\+MS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{get\+Total\+S\+M\+S()}{getTotalSMS()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::get\+Total\+S\+MS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aac7ab8f9a7333777d3427a7389b4fef9}{}\label{class_wasp_g_p_r_s___pro__core_aac7ab8f9a7333777d3427a7389b4fef9}
+
+
+It gets the number of total S\+MS stored in the S\+IM. 
+
+\begin{DoxyReturn}{Returns}
+the number of S\+MS or \textquotesingle{}-\/2\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!hang\+Up@{hang\+Up}}
+\index{hang\+Up@{hang\+Up}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{hang\+Up()}{hangUp()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::hang\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a0080fde2dbbe4da270bdf5d9ef8929f1}{}\label{class_wasp_g_p_r_s___pro__core_a0080fde2dbbe4da270bdf5d9ef8929f1}
+
+
+It hangs all the active calls up. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!I\+P\+Header@{I\+P\+Header}}
+\index{I\+P\+Header@{I\+P\+Header}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{I\+P\+Header(uint8\+\_\+t on\+\_\+off)}{IPHeader(uint8_t on_off)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+I\+P\+Header (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{on\+\_\+off}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af8c0d32f7fb6f748f4aa89386f8922c2}{}\label{class_wasp_g_p_r_s___pro__core_af8c0d32f7fb6f748f4aa89386f8922c2}
+
+
+It adds an IP head at the beginning of a package received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & on\+\_\+off \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{is\+Connected(uint8\+\_\+t n\+\_\+conf)}{isConnected(uint8_t n_conf)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::is\+Connected (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{n\+\_\+conf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a425a3fba14da02a5d2748a4893a2fd18}{}\label{class_wasp_g_p_r_s___pro__core_a425a3fba14da02a5d2748a4893a2fd18}
+
+
+It checks if the module is connected to network. 
+
+This function checks if the G\+P\+RS module is connected to the network and there is an IP address related to this module \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!make\+Call@{make\+Call}}
+\index{make\+Call@{make\+Call}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{make\+Call(const char $\ast$tlf\+Number)}{makeCall(const char *tlfNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::make\+Call (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{tlf\+Number}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_afff6f4bab5d38195b86665e19df060c1}{}\label{class_wasp_g_p_r_s___pro__core_afff6f4bab5d38195b86665e19df060c1}
+
+
+It makes a call to the specified number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ tlf\+Number \+: telephone number to call. It must be a telephone number with 9 digits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!make\+Lost\+Call@{make\+Lost\+Call}}
+\index{make\+Lost\+Call@{make\+Lost\+Call}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{make\+Lost\+Call(const char $\ast$tlf\+Number, uint8\+\_\+t time\+Call)}{makeLostCall(const char *tlfNumber, uint8_t timeCall)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::make\+Lost\+Call (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{tlf\+Number, }
+\item[{uint8\+\_\+t}]{time\+Call}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a32d4dfea68499c94a6a894351c0452a5}{}\label{class_wasp_g_p_r_s___pro__core_a32d4dfea68499c94a6a894351c0452a5}
+
+
+It makes a lost call to the specified number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ tlf\+Number \+: telephone number to call. It must be a telephone number with 9 digits. \\
+\hline
+{\em uint8\+\_\+t} & time\+Call \+: time the module is calling (in seconds) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!manage\+Incoming\+Data@{manage\+Incoming\+Data}}
+\index{manage\+Incoming\+Data@{manage\+Incoming\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{manage\+Incoming\+Data()}{manageIncomingData()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::manage\+Incoming\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_acda8578497d2560b19035455e987b0e3}{}\label{class_wasp_g_p_r_s___pro__core_acda8578497d2560b19035455e987b0e3}
+It manages incoming data from serial port, executing proper functions to store received data
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/1\textquotesingle{} if no memory 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ade7f0f2ebcbd44780ea0476ad7cde380}{}\label{class_wasp_g_p_r_s___pro__core_ade7f0f2ebcbd44780ea0476ad7cde380}
+
+
+It closes U\+A\+R\+T1 and powers off the S\+I\+M900 module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if success, \textquotesingle{}0\textquotesingle{} or \textquotesingle{}-\/2\textquotesingle{} if error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_g_p_r_s___pro__core_a351df158db7614f00755311200f31595}{close()}, \hyperlink{class_wasp_g_p_r_s___pro__core_a38aab9b0cbf3cfe9d73b600261c9ce8c}{begin()} 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!ON@{ON}}
+\index{ON@{ON}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aadc696486b9f21efc90b95b16054f7e4}{}\label{class_wasp_g_p_r_s___pro__core_aadc696486b9f21efc90b95b16054f7e4}
+
+
+It opens U\+A\+R\+T1 and powers the S\+I\+M900 module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if success, \textquotesingle{}0\textquotesingle{} or \textquotesingle{}-\/2\textquotesingle{} if error 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_g_p_r_s___pro__core_a351df158db7614f00755311200f31595}{close()}, \hyperlink{class_wasp_g_p_r_s___pro__core_a38aab9b0cbf3cfe9d73b600261c9ce8c}{begin()} 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!open\+F\+T\+P\+P\+U\+Tconnection@{open\+F\+T\+P\+P\+U\+Tconnection}}
+\index{open\+F\+T\+P\+P\+U\+Tconnection@{open\+F\+T\+P\+P\+U\+Tconnection}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{open\+F\+T\+P\+P\+U\+Tconnection()}{openFTPPUTconnection()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::open\+F\+T\+P\+P\+U\+Tconnection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_abf39b04f5d110f82c23c81468d42397b}{}\label{class_wasp_g_p_r_s___pro__core_abf39b04f5d110f82c23c81468d42397b}
+
+
+It opens the connection with the F\+TP server. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if OK \textquotesingle{}-\/15\textquotesingle{} if error opening the F\+TP session \textquotesingle{}-\/19\textquotesingle{} if error when setting Upload File with C\+ME error code available, \textquotesingle{}-\/50\textquotesingle{} if error opening the F\+TP session with C\+ME error code available, 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Quickclose\+Socket@{Quickclose\+Socket}}
+\index{Quickclose\+Socket@{Quickclose\+Socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Quickclose\+Socket(uint8\+\_\+t mode)}{QuickcloseSocket(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Quickclose\+Socket (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a7e687ee9101291bc5f70a49907a29876}{}\label{class_wasp_g_p_r_s___pro__core_a7e687ee9101291bc5f70a49907a29876}
+
+
+It enables/disables to close the connection quickly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode\+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!read\+Call@{read\+Call}}
+\index{read\+Call@{read\+Call}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{read\+Call()}{readCall()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::read\+Call (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a5ea9f1654c17cfeeaedf79069c77af75}{}\label{class_wasp_g_p_r_s___pro__core_a5ea9f1654c17cfeeaedf79069c77af75}
+
+
+It stores in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{} variable the telephone number of the incoming call. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!read\+Data\+F\+TP@{read\+Data\+F\+TP}}
+\index{read\+Data\+F\+TP@{read\+Data\+F\+TP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{read\+Data\+F\+T\+P(const char $\ast$file, const char $\ast$path)}{readDataFTP(const char *file, const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::read\+Data\+F\+TP (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a76d831196c7f3221bf3a2301212397f1}{}\label{class_wasp_g_p_r_s___pro__core_a76d831196c7f3221bf3a2301212397f1}
+
+
+It reads data via F\+TP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & file \+: path in the F\+TP server where find the file to download \\
+\hline
+{\em char$\ast$} & path \+: path within SD card to store the file to download \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/1\textquotesingle{} if no memory 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!read\+I\+P\+Data@{read\+I\+P\+Data}}
+\index{read\+I\+P\+Data@{read\+I\+P\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{read\+I\+P\+Data()}{readIPData()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::read\+I\+P\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aaf471aa07561e6483a4402286a4f5882}{}\label{class_wasp_g_p_r_s___pro__core_aaf471aa07561e6483a4402286a4f5882}
+
+
+Gets data receive from a T\+CP or U\+DP connection and stores it in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+IN \+: string of data with T\+C\+P/\+U\+DP info \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!read\+S\+MS@{read\+S\+MS}}
+\index{read\+S\+MS@{read\+S\+MS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{read\+S\+M\+S(uint8\+\_\+t sms\+\_\+index)}{readSMS(uint8_t sms_index)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::read\+S\+MS (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sms\+\_\+index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af482736672798d68648ebae1828bba71}{}\label{class_wasp_g_p_r_s___pro__core_af482736672798d68648ebae1828bba71}
+It stores in \textquotesingle{}tlf\+IN\textquotesingle{} and \textquotesingle{}sms\textquotesingle{} variables the telephone number and the text of the incoming S\+MS. It stores in \textquotesingle{}sms\+\_\+index\textquotesingle{} variable the last sms received index
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data \+: data returned by the module when an S\+MS is received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/1\textquotesingle{} if no memory 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!read\+U\+RL@{read\+U\+RL}}
+\index{read\+U\+RL@{read\+U\+RL}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{read\+U\+R\+L(const char $\ast$url, uint8\+\_\+t n\+\_\+conf)}{readURL(const char *url, uint8_t n_conf)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::read\+U\+RL (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url, }
+\item[{uint8\+\_\+t}]{n\+\_\+conf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a3a095a6c4ae6955955589342d2d6dc78}{}\label{class_wasp_g_p_r_s___pro__core_a3a095a6c4ae6955955589342d2d6dc78}
+
+
+It accesses to the specified U\+RL and stores the info read in \textquotesingle{}data\+\_\+\+U\+RL\textquotesingle{} variable. 
+
+It stores in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{} variable up to 255 bytes 
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ url \+: the U\+RL to get the information from \\
+\hline
+{\em uint8\+\_\+t$\ast$} & data\+: the pointer to a buffer with a frame, non A\+S\+C\+II data or a data for the P\+O\+ST request \\
+\hline
+{\em int} & length\+: the length of the frame or the non A\+S\+C\+II data \\
+\hline
+{\em uint8\+\_\+t} & n\+\_\+conf \+: number of H\+T\+T\+P/\+F\+TP profile \\
+\hline
+{\em uint8\+\_\+t} & mode \+: G\+ET or P\+O\+ST \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success \textquotesingle{}2\textquotesingle{} if buffer\+\_\+\+G\+P\+RS is full. The answer from the server is limited by the length of buffer\+\_\+\+G\+P\+RS. To increase the length of the answer, increase the B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE constant. \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/1\textquotesingle{} if no G\+P\+RS connection, \textquotesingle{}-\/2\textquotesingle{} if error opening the connection, \textquotesingle{}-\/3\textquotesingle{} if error getting the IP address, \textquotesingle{}-\/4\textquotesingle{} if error initializing the H\+T\+TP service, \textquotesingle{}-\/5\textquotesingle{} if error setting \hyperlink{struct_c_i_d}{C\+ID} the H\+T\+TP service, \textquotesingle{}-\/6\textquotesingle{} if error setting the url the H\+T\+TP service, \textquotesingle{}-\/7\textquotesingle{} if error setting the url the H\+T\+TP service, \textquotesingle{}-\/8\textquotesingle{} if error getting data from url, \textquotesingle{}-\/9\textquotesingle{} if error closing the H\+T\+TP service, \textquotesingle{}-\/10\textquotesingle{} if error initializing the H\+T\+TP service with C\+ME error code available, \textquotesingle{}-\/11\textquotesingle{} if error setting \hyperlink{struct_c_i_d}{C\+ID} the H\+T\+TP service with C\+ME error code available, \textquotesingle{}-\/12\textquotesingle{} if error setting the url the H\+T\+TP service with C\+ME error code available, \textquotesingle{}-\/13\textquotesingle{} if error setting the url the H\+T\+TP service with C\+ME error code available, \textquotesingle{}-\/14\textquotesingle{} if error getting data from url with C\+ME error code available, \textquotesingle{}-\/15\textquotesingle{} if error closing the H\+T\+TP service with C\+ME error code available, \textquotesingle{}-\/16\textquotesingle{} if error configuring the H\+T\+TP content parameter, \textquotesingle{}-\/17\textquotesingle{} if error configuring the H\+T\+TP content parameter with C\+ME error code available, \textquotesingle{}-\/18\textquotesingle{} if error sending the P\+O\+ST data, \textquotesingle{}-\/19\textquotesingle{} if error sending the P\+O\+ST data with C\+ME error code available, \textquotesingle{}-\/20\textquotesingle{} if error getting data from url with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!request\+O\+TA@{request\+O\+TA}}
+\index{request\+O\+TA@{request\+O\+TA}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{request\+O\+T\+A(const char $\ast$\+F\+T\+P\+\_\+server, const char $\ast$\+F\+T\+P\+\_\+port, const char $\ast$\+F\+T\+P\+\_\+username, const char $\ast$\+F\+T\+P\+\_\+password)}{requestOTA(const char *FTP_server, const char *FTP_port, const char *FTP_username, const char *FTP_password)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::request\+O\+TA (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{F\+T\+P\+\_\+server, }
+\item[{const char $\ast$}]{F\+T\+P\+\_\+port, }
+\item[{const char $\ast$}]{F\+T\+P\+\_\+username, }
+\item[{const char $\ast$}]{F\+T\+P\+\_\+password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a4e7125d46b95008c3e36ab4fd0dc4e80}{}\label{class_wasp_g_p_r_s___pro__core_a4e7125d46b95008c3e36ab4fd0dc4e80}
+
+
+It downloads a new O\+TA file if O\+TA is necessary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ F\+T\+P\+\_\+server\+: string with the server domain or IP \\
+\hline
+{\em const} & char$\ast$ F\+T\+P\+\_\+port\+:string with the F\+TP port \\
+\hline
+{\em const} & char$\ast$ F\+T\+P\+\_\+username\+:string with the user name \\
+\hline
+{\em const} & char$\ast$ F\+T\+P\+\_\+password\+:string with the F\+TP password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if success, \textquotesingle{}-\/2\textquotesingle{} if error \textquotesingle{}-\/4\textquotesingle{} if error setting the type of internet connection, \textquotesingle{}-\/5\textquotesingle{} if error setting the apn \textquotesingle{}-\/6\textquotesingle{} if error setting the user name \textquotesingle{}-\/7\textquotesingle{} if error setting the password \textquotesingle{}-\/8\textquotesingle{} if error saving the configuration \textquotesingle{}-\/9\textquotesingle{} if error opening connection with the G\+P\+RS provider \textquotesingle{}-\/10\textquotesingle{} error downloading O\+TA version file \textquotesingle{}-\/11\textquotesingle{} if error getting the IP address \textquotesingle{}-\/12\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID \textquotesingle{}-\/13\textquotesingle{} if error setting the F\+TP mode \textquotesingle{}-\/14\textquotesingle{} if error setting the F\+TP type \textquotesingle{}-\/15\textquotesingle{} if error setting the F\+TP server \textquotesingle{}-\/16\textquotesingle{} if error setting the F\+TP port \textquotesingle{}-\/17\textquotesingle{} if error setting the user name, \textquotesingle{}-\/18\textquotesingle{} if error setting the password \textquotesingle{}-\/21\textquotesingle{} if error setting the file name in the F\+TP server, \textquotesingle{}-\/22\textquotesingle{} if error setting the path of the file in the F\+TP server \textquotesingle{}-\/23\textquotesingle{} if error opening the F\+TP session \textquotesingle{}-\/24\textquotesingle{} if error starting the SD \textquotesingle{}-\/25\textquotesingle{} if error creating the file \textquotesingle{}-\/26\textquotesingle{} error requesting data to the F\+TP, \textquotesingle{}-\/27\textquotesingle{} if error saving data into the SD \textquotesingle{}-\/28\textquotesingle{} if error requesting more data to the F\+TP \textquotesingle{}-\/30\textquotesingle{} setting the file name in the F\+TP to get the file size \textquotesingle{}-\/31\textquotesingle{} setting the path in the F\+TP to get the file size \textquotesingle{}-\/32\textquotesingle{} if error getting the file size \textquotesingle{}-\/50\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID with C\+ME error code available \textquotesingle{}-\/51\textquotesingle{} if error setting the F\+TP mode with C\+ME error code available \textquotesingle{}-\/52\textquotesingle{} if error setting the F\+TP type with C\+ME error code available \textquotesingle{}-\/53\textquotesingle{} if error setting the F\+TP server with C\+ME error code available, \textquotesingle{}-\/54\textquotesingle{} if error setting the F\+TP port with C\+ME error code available \textquotesingle{}-\/55\textquotesingle{} if error setting the user name with C\+ME error code available, \textquotesingle{}-\/56\textquotesingle{} if error setting the password with C\+ME error code available \textquotesingle{}-\/57\textquotesingle{} if error setting the file name in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/58\textquotesingle{} if error setting the path of the file in the F\+TP server with C\+ME error code available \textquotesingle{}-\/59\textquotesingle{} if error opening the F\+TP session with C\+ME error code available, \textquotesingle{}-\/60\textquotesingle{} if error requesting data to the F\+TP with C\+ME error code available \textquotesingle{}-\/61\textquotesingle{} if error requesting more data to the F\+TP with C\+ME error code available, \textquotesingle{}-\/62 setting the file name in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/63\textquotesingle{} setting the path in the F\+TP to get the file size with C\+ME error code available \textquotesingle{}-\/64\textquotesingle{} if error getting the file size with C\+ME error code available, \textquotesingle{}-\/65\textquotesingle{} if F\+TP is busy \textquotesingle{}-\/66\textquotesingle{} if there isn\textquotesingle{}t F\+I\+LE tag \textquotesingle{}-\/67\textquotesingle{} if there isn\textquotesingle{}t P\+A\+TH tag \textquotesingle{}-\/68\textquotesingle{} if there isn\textquotesingle{}t V\+E\+R\+S\+I\+ON tag \textquotesingle{}-\/69\textquotesingle{} if O\+TA is not necessary, \textquotesingle{}-\/70\textquotesingle{} if O\+TA files are the same program version \textquotesingle{}-\/71\textquotesingle{} if error opening connection with the G\+P\+RS provider \textquotesingle{}-\/72\textquotesingle{} error downloading O\+TA file, \textquotesingle{}-\/73\textquotesingle{} if error getting the IP address \textquotesingle{}-\/74\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID \textquotesingle{}-\/75\textquotesingle{} if error setting the F\+TP mode \textquotesingle{}-\/76\textquotesingle{} if error setting the F\+TP type \textquotesingle{}-\/77\textquotesingle{} if error setting the F\+TP server \textquotesingle{}-\/78\textquotesingle{} if error setting the F\+TP port \textquotesingle{}-\/79\textquotesingle{} if error setting the user name \textquotesingle{}-\/80\textquotesingle{} if error setting the password \textquotesingle{}-\/83\textquotesingle{} if error setting the file name in the F\+TP server, \textquotesingle{}-\/84\textquotesingle{} if error setting the path of the file in the F\+TP server \textquotesingle{}-\/85\textquotesingle{} if error opening the F\+TP session \textquotesingle{}-\/86\textquotesingle{} if error starting the SD \textquotesingle{}-\/87\textquotesingle{} if error creating the file \textquotesingle{}-\/88\textquotesingle{} error requesting data to the F\+TP \textquotesingle{}-\/89\textquotesingle{} if error saving data into the SD \textquotesingle{}-\/90\textquotesingle{} if error requesting more data to the F\+TP \textquotesingle{}-\/92\textquotesingle{} setting the file name in the F\+TP to get the file size \textquotesingle{}-\/93\textquotesingle{} setting the path in the F\+TP to get the file size \textquotesingle{}-\/94\textquotesingle{} if error getting the file size \textquotesingle{}-\/112\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID with C\+ME error code available, \textquotesingle{}-\/113\textquotesingle{} if error setting the F\+TP mode with C\+ME error code available, \textquotesingle{}-\/114\textquotesingle{} if error setting the F\+TP type with C\+ME error code available, \textquotesingle{}-\/115\textquotesingle{} if error setting the F\+TP server with C\+ME error code available, \textquotesingle{}-\/116\textquotesingle{} if error setting the F\+TP port with C\+ME error code available, \textquotesingle{}-\/117\textquotesingle{} if error setting the user name with C\+ME error code available, \textquotesingle{}-\/118\textquotesingle{} if error setting the password with C\+ME error code available, \textquotesingle{}-\/119\textquotesingle{} if error setting the file name in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/120\textquotesingle{} if error setting the path of the file in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/121\textquotesingle{} if error opening the F\+TP session with C\+ME error code available, \textquotesingle{}-\/122\textquotesingle{} if error requesting data to the F\+TP with C\+ME error code available, \textquotesingle{}-\/123\textquotesingle{} if error requesting more data to the F\+TP with C\+ME error code available, \textquotesingle{}-\/124\textquotesingle{} setting the file name in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/125\textquotesingle{} setting the path in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/126\textquotesingle{} if error getting the file size with C\+ME error code available \textquotesingle{}-\/127\textquotesingle{} if F\+TP is busy 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration@{save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration}}
+\index{save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration@{save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration()}{saveGPRS_TCP_UDPconfiguration()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::save\+G\+P\+R\+S\+\_\+\+T\+C\+P\+\_\+\+U\+D\+Pconfiguration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ae8fdf05f78ad63fad18aea3d2be537c9}{}\label{class_wasp_g_p_r_s___pro__core_ae8fdf05f78ad63fad18aea3d2be537c9}
+
+
+It saves the configuration into the internal N\+V\+R\+AM of the G\+P\+RS module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Command(const char $\ast$\+A\+Tcommand)}{sendCommand(const char *ATcommand)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{A\+Tcommand}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ab313897127e634b96e6d6ed60a3d953a}{}\label{class_wasp_g_p_r_s___pro__core_ab313897127e634b96e6d6ed60a3d953a}
+
+
+It sends any command to the G\+P\+RS module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & A\+Tcommand \+: the command to send to the G\+P\+RS module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Command1@{send\+Command1}}
+\index{send\+Command1@{send\+Command1}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Command1(const char $\ast$the\+Text, const char $\ast$expected\+Answer1)}{sendCommand1(const char *theText, const char *expectedAnswer1)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Command1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{the\+Text, }
+\item[{const char $\ast$}]{expected\+Answer1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a19cbdbee2c77861de9ddbac98387dde3}{}\label{class_wasp_g_p_r_s___pro__core_a19cbdbee2c77861de9ddbac98387dde3}
+
+
+It sends an AT command to the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & the\+Text \+: string to send to the module \\
+\hline
+{\em char$\ast$} & expected\+Answer \+: string expected to be answered by the module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Command1@{send\+Command1}}
+\index{send\+Command1@{send\+Command1}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Command1(const char $\ast$the\+Text, const char $\ast$expected\+Answer, unsigned long max\+\_\+timeout, int send\+Once)}{sendCommand1(const char *theText, const char *expectedAnswer, unsigned long max_timeout, int sendOnce)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Command1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{the\+Text, }
+\item[{const char $\ast$}]{expected\+Answer, }
+\item[{unsigned long}]{max\+\_\+timeout, }
+\item[{int}]{send\+Once}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a265fd636005fe753adc7529b4f1b9fbc}{}\label{class_wasp_g_p_r_s___pro__core_a265fd636005fe753adc7529b4f1b9fbc}
+
+
+It sends an AT command to the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & the\+Text \+: string to send to the module \\
+\hline
+{\em char$\ast$} & end\+Of\+Command \+: string to send to the module \\
+\hline
+{\em char$\ast$} & expected\+Answer \+: string expected to be answered by the module \\
+\hline
+{\em unsigned} & long max\+\_\+timeout \+: specifies the maximum timeout \\
+\hline
+{\em int} & send\+Once \+: specifies if the data is sent once \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if expected\+Answer has been detected, \textquotesingle{}0\textquotesingle{} if not detected 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Command2@{send\+Command2}}
+\index{send\+Command2@{send\+Command2}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Command2(const char $\ast$the\+Text, const char $\ast$expected\+Answer1, const char $\ast$expected\+Answer2)}{sendCommand2(const char *theText, const char *expectedAnswer1, const char *expectedAnswer2)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Command2 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{the\+Text, }
+\item[{const char $\ast$}]{expected\+Answer1, }
+\item[{const char $\ast$}]{expected\+Answer2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_aa08d29826147849eac6c9d19199fe416}{}\label{class_wasp_g_p_r_s___pro__core_aa08d29826147849eac6c9d19199fe416}
+functions with two answers It sends an AT command to the module
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & the\+Text \+: string to send to the module \\
+\hline
+{\em char$\ast$} & expected\+Answer1 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & expected\+Answer2 \+: string expected to be answered by the module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if expected\+Answer1 has been detected, \textquotesingle{}2\textquotesingle{} if expected\+Answer2, \textquotesingle{}0\textquotesingle{} if not detected 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Command2@{send\+Command2}}
+\index{send\+Command2@{send\+Command2}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Command2(const char $\ast$the\+Text, const char $\ast$expected\+Answer1, const char $\ast$expected\+Answer2, unsigned long max\+\_\+timeout, int send\+Once)}{sendCommand2(const char *theText, const char *expectedAnswer1, const char *expectedAnswer2, unsigned long max_timeout, int sendOnce)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Command2 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{the\+Text, }
+\item[{const char $\ast$}]{expected\+Answer1, }
+\item[{const char $\ast$}]{expected\+Answer2, }
+\item[{unsigned long}]{max\+\_\+timeout, }
+\item[{int}]{send\+Once}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a8a0df0dd77c9bdfa07ec658de91bc0a3}{}\label{class_wasp_g_p_r_s___pro__core_a8a0df0dd77c9bdfa07ec658de91bc0a3}
+
+
+It sends an AT command to the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & the\+Text \+: string to send to the module \\
+\hline
+{\em char$\ast$} & end\+Of\+Command \+: string to send to the module \\
+\hline
+{\em char$\ast$} & expected\+Answer1 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & expected\+Answer2 \+: string expected to be answered by the module \\
+\hline
+{\em unsigned} & long max\+\_\+timeout \+: specifies the maximum timeout \\
+\hline
+{\em int} & send\+Once \+: specifies if the data is sent once \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if expected\+Answer1 has been detected, \textquotesingle{}2\textquotesingle{} if expected\+Answer2 has been detected, \textquotesingle{}0\textquotesingle{} if not detected 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Data(const char $\ast$data)}{sendData(const char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a0b5ba31b3407694e3c01f13aac35fed9}{}\label{class_wasp_g_p_r_s___pro__core_a0b5ba31b3407694e3c01f13aac35fed9}
+
+
+It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the data to send to the socket \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error waiting the response of the module, \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available \textquotesingle{}-\/3\textquotesingle{} if no feedback detected \textquotesingle{}-\/4\textquotesingle{} if the send fails 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Data(const char $\ast$data, uint8\+\_\+t n\+\_\+connection)}{sendData(const char *data, uint8_t n_connection)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{n\+\_\+connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ac3455ab553a10ee07a7ad3c7a186b0a2}{}\label{class_wasp_g_p_r_s___pro__core_ac3455ab553a10ee07a7ad3c7a186b0a2}
+
+
+It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the data to send to the socket \\
+\hline
+{\em uint8\+\_\+t} & n\+\_\+connection\+: the connection\textquotesingle{}s number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success \textquotesingle{}0\textquotesingle{} if error waiting the response of the module, \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available \textquotesingle{}-\/3\textquotesingle{} if no feedback detected \textquotesingle{}-\/4\textquotesingle{} if the send fails 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Data(uint8\+\_\+t $\ast$data, int length)}{sendData(uint8_t *data, int length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a2450936fb9295a548e729a076fd2ffed}{}\label{class_wasp_g_p_r_s___pro__core_a2450936fb9295a548e729a076fd2ffed}
+
+
+It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data \+: the data to send to the socket \\
+\hline
+{\em int} & length \+: the length of the data for send to the socket \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success \textquotesingle{}0\textquotesingle{} if error waiting the response of the module, \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available \textquotesingle{}-\/3\textquotesingle{} if no feedback detected \textquotesingle{}-\/4\textquotesingle{} if the send fails 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Data(uint8\+\_\+t $\ast$data, int length, uint8\+\_\+t n\+\_\+connection)}{sendData(uint8_t *data, int length, uint8_t n_connection)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{int}]{length, }
+\item[{uint8\+\_\+t}]{n\+\_\+connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a66cfe2f51d3291c6b878bca6071a4bae}{}\label{class_wasp_g_p_r_s___pro__core_a66cfe2f51d3291c6b878bca6071a4bae}
+
+
+It sends \textquotesingle{}data\textquotesingle{} to the specified \textquotesingle{}socket\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data \+: the data to send to the socket \\
+\hline
+{\em int} & length \+: the length of the data for send to the socket \\
+\hline
+{\em uint8\+\_\+t} & n\+\_\+connection\+: the connection\textquotesingle{}s number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error waiting the response of the module, \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available \textquotesingle{}-\/3\textquotesingle{} if no feedback detected \textquotesingle{}-\/4\textquotesingle{} if the send fails 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+Data\+F\+TP@{send\+Data\+F\+TP}}
+\index{send\+Data\+F\+TP@{send\+Data\+F\+TP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+Data\+F\+T\+P(const char $\ast$file, const char $\ast$path)}{sendDataFTP(const char *file, const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+Data\+F\+TP (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_aa51ff7e51c694d9d27c6d56e98c24393}{}\label{class_wasp_g_p_r_s___pro__core_aa51ff7e51c694d9d27c6d56e98c24393}
+
+
+It sends data via F\+TP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & file \+: path within SD card to find the file to upload \\
+\hline
+{\em char$\ast$} & path \+: path in the F\+TP server where store the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if OK \textquotesingle{}-\/13\textquotesingle{} if error setting the file name in the F\+TP server \textquotesingle{}-\/14\textquotesingle{} if error setting the path of the file in the F\+TP server \textquotesingle{}-\/15\textquotesingle{} if error opening the F\+TP session \textquotesingle{}-\/16\textquotesingle{} if error when request to send data \textquotesingle{}-\/17\textquotesingle{} if error sending data to the F\+TP, \textquotesingle{}-\/18\textquotesingle{} if error waiting for send more data \textquotesingle{}-\/19\textquotesingle{} if error when setting Upload File with C\+ME error code available, \textquotesingle{}-\/20\textquotesingle{} if error closing the F\+TP session \textquotesingle{}-\/24\textquotesingle{} if error opening SD file \textquotesingle{}-\/25\textquotesingle{} if error when setting pointer to the beginning of the file \textquotesingle{}-\/48\textquotesingle{} if error setting the file name in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/49\textquotesingle{} if error setting the path of the file in the F\+TP server with C\+ME error code available \textquotesingle{}-\/50\textquotesingle{} if error opening the F\+TP session with C\+ME error code available, \textquotesingle{}-\/51\textquotesingle{} if error closing the F\+TP session with C\+ME error code available \textquotesingle{}-\/57\textquotesingle{} if F\+TP is busy sending data 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!send\+S\+MS@{send\+S\+MS}}
+\index{send\+S\+MS@{send\+S\+MS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{send\+S\+M\+S(const char $\ast$sms\+Text, const char $\ast$tlf\+Number)}{sendSMS(const char *smsText, const char *tlfNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::send\+S\+MS (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sms\+Text, }
+\item[{const char $\ast$}]{tlf\+Number}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a6bf4719cbfeb2e8c4cc59fc721e9c87b}{}\label{class_wasp_g_p_r_s___pro__core_a6bf4719cbfeb2e8c4cc59fc721e9c87b}
+
+
+It sends a S\+MS to the specified number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ sms\+Text \+: S\+MS text (up to 80bytes) \\
+\hline
+{\em const} & char$\ast$ tlf\+Number \+: telephone number to send the S\+MS. It must be a telephone number with 9 digits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/2\textquotesingle{} if error sending the S\+MS \textquotesingle{}-\/3\textquotesingle{} if error sending the S\+MS with C\+MS error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Set\+Auto\+Sending\+Timer@{Set\+Auto\+Sending\+Timer}}
+\index{Set\+Auto\+Sending\+Timer@{Set\+Auto\+Sending\+Timer}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Set\+Auto\+Sending\+Timer(uint8\+\_\+t mode)}{SetAutoSendingTimer(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Set\+Auto\+Sending\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a16283d13cc922589dd783be4058e8bc2}{}\label{class_wasp_g_p_r_s___pro__core_a16283d13cc922589dd783be4058e8bc2}
+
+
+It sets a timer when module is sending data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Set\+Auto\+Sending\+Timer@{Set\+Auto\+Sending\+Timer}}
+\index{Set\+Auto\+Sending\+Timer@{Set\+Auto\+Sending\+Timer}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Set\+Auto\+Sending\+Timer(uint8\+\_\+t mode, uint8\+\_\+t time)}{SetAutoSendingTimer(uint8_t mode, uint8_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Set\+Auto\+Sending\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a9a77748c18b9168a9fc4dfc0ade563bb}{}\label{class_wasp_g_p_r_s___pro__core_a9a77748c18b9168a9fc4dfc0ade563bb}
+
+
+It sets a timer when module is sending data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+{\em uint8\+\_\+t} & time \+: time in seconds from 0 to 100 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Call\+Alert@{set\+Call\+Alert}}
+\index{set\+Call\+Alert@{set\+Call\+Alert}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Call\+Alert(uint8\+\_\+t mode)}{setCallAlert(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Call\+Alert (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a4b79b34af0bfff9398fdd36d8d877029}{}\label{class_wasp_g_p_r_s___pro__core_a4b79b34af0bfff9398fdd36d8d877029}
+
+
+It sets the monitor speaker loudness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+I\+L\+E\+N\+T\+\_\+\+M\+O\+DE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error setting the sound mode, \textquotesingle{}-\/2\textquotesingle{} if error setting the sound mode with C\+ME error code available, \textquotesingle{}-\/3\textquotesingle{} if error setting the sound type, \textquotesingle{}-\/4\textquotesingle{} if error setting the sound type with C\+ME error code available, \textquotesingle{}-\/5\textquotesingle{} if error setting the ring level, \textquotesingle{}-\/6\textquotesingle{} if error setting the ring level with C\+ME error code available, 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Call\+Alert@{set\+Call\+Alert}}
+\index{set\+Call\+Alert@{set\+Call\+Alert}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Call\+Alert(uint8\+\_\+t mode, uint8\+\_\+t sound\+\_\+type, uint8\+\_\+t ring\+\_\+level)}{setCallAlert(uint8_t mode, uint8_t sound_type, uint8_t ring_level)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Call\+Alert (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{sound\+\_\+type, }
+\item[{uint8\+\_\+t}]{ring\+\_\+level}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a947b8feec066d896d4cd5c474677d7a1}{}\label{class_wasp_g_p_r_s___pro__core_a947b8feec066d896d4cd5c474677d7a1}
+
+
+It sets the monitor speaker loudness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+DE or S\+I\+L\+E\+N\+T\+\_\+\+M\+O\+DE \\
+\hline
+{\em uint8\+\_\+t} & sound\+\_\+type \+: number for various melodies \\
+\hline
+{\em uint8\+\_\+t} & ring\+\_\+level \+: L\+E\+V\+E\+L\+\_\+\+O\+FF, L\+E\+V\+E\+L\+\_\+\+L\+OW, L\+E\+V\+E\+L\+\_\+\+M\+E\+D\+I\+UM, L\+E\+V\+E\+L\+\_\+\+H\+I\+GH or L\+E\+V\+E\+L\+\_\+\+C\+R\+E\+S\+C\+E\+N\+DO \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error setting the sound mode, \textquotesingle{}-\/2\textquotesingle{} if error setting the sound mode with C\+ME error code available, \textquotesingle{}-\/3\textquotesingle{} if error setting the sound type, \textquotesingle{}-\/4\textquotesingle{} if error setting the sound type with C\+ME error code available, \textquotesingle{}-\/5\textquotesingle{} if error setting the ring level, \textquotesingle{}-\/6\textquotesingle{} if error setting the ring level with C\+ME error code available, 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+C\+L\+I\+Presentation@{set\+C\+L\+I\+Presentation}}
+\index{set\+C\+L\+I\+Presentation@{set\+C\+L\+I\+Presentation}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+C\+L\+I\+Presentation(uint8\+\_\+t mode)}{setCLIPresentation(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+C\+L\+I\+Presentation (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a6418600f64377c34f5427610e2353937}{}\label{class_wasp_g_p_r_s___pro__core_a6418600f64377c34f5427610e2353937}
+
+
+It enables or disables the presentation of the incoming call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+C\+L\+I\+Restriction@{set\+C\+L\+I\+Restriction}}
+\index{set\+C\+L\+I\+Restriction@{set\+C\+L\+I\+Restriction}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+C\+L\+I\+Restriction(uint8\+\_\+t mode)}{setCLIRestriction(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+C\+L\+I\+Restriction (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ab36cc06a602bd23476363d153f0f134a}{}\label{class_wasp_g_p_r_s___pro__core_ab36cc06a602bd23476363d153f0f134a}
+It restricts or enables the presentation of the C\+LI to the called party when originating a call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+L\+IR, I\+N\+V\+O\+K\+E\+\_\+\+C\+L\+IR or S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+C\+L\+IR \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Set\+Data\+Manually@{Set\+Data\+Manually}}
+\index{Set\+Data\+Manually@{Set\+Data\+Manually}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Set\+Data\+Manually(uint8\+\_\+t on\+\_\+off)}{SetDataManually(uint8_t on_off)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Set\+Data\+Manually (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{on\+\_\+off}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a695a4ecf0d152e3fecad7ca9c0b46b9a}{}\label{class_wasp_g_p_r_s___pro__core_a695a4ecf0d152e3fecad7ca9c0b46b9a}
+
+
+It enables or disables to get data manually from a T\+CP or U\+DP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & on\+\_\+off \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Set\+Data\+Manually@{Set\+Data\+Manually}}
+\index{Set\+Data\+Manually@{Set\+Data\+Manually}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Set\+Data\+Manually(uint8\+\_\+t on\+\_\+off, uint8\+\_\+t id)}{SetDataManually(uint8_t on_off, uint8_t id)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Set\+Data\+Manually (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{on\+\_\+off, }
+\item[{uint8\+\_\+t}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af5214554a8c5e0d21b91fe7cee3ac85f}{}\label{class_wasp_g_p_r_s___pro__core_af5214554a8c5e0d21b91fe7cee3ac85f}
+
+
+It enables or disables to get data manually from a T\+CP or U\+DP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & on\+\_\+off \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+{\em uint8\+\_\+t} & id \+: id connection number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Default@{set\+Default}}
+\index{set\+Default@{set\+Default}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Default()}{setDefault()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a79998c55c1820cb4a9c917118e4e7390}{}\label{class_wasp_g_p_r_s___pro__core_a79998c55c1820cb4a9c917118e4e7390}
+
+
+It sets all current parameters to the manufacturer defined profile. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+D\+NS@{set\+D\+NS}}
+\index{set\+D\+NS@{set\+D\+NS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+D\+N\+S()}{setDNS()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+D\+NS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a12d31906378b98aac24a691243f0851e}{}\label{class_wasp_g_p_r_s___pro__core_a12d31906378b98aac24a691243f0851e}
+
+
+It sets the directions of D\+NS servers from G\+P\+R\+S\+\_\+\+Proconstants.\+h. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+D\+NS@{set\+D\+NS}}
+\index{set\+D\+NS@{set\+D\+NS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+D\+N\+S(const char $\ast$\+D\+N\+S\+\_\+dir)}{setDNS(const char *DNS_dir)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+D\+NS (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{D\+N\+S\+\_\+dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aac394af71e7b50cac89c1786823070ff}{}\label{class_wasp_g_p_r_s___pro__core_aac394af71e7b50cac89c1786823070ff}
+
+
+It sets the direction of D\+NS server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ D\+N\+S\+\_\+dir1 \+: D\+NS server direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+D\+NS@{set\+D\+NS}}
+\index{set\+D\+NS@{set\+D\+NS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+D\+N\+S(const char $\ast$\+D\+N\+S\+\_\+dir1, const char $\ast$\+D\+N\+S\+\_\+dir2)}{setDNS(const char *DNS_dir1, const char *DNS_dir2)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+D\+NS (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{D\+N\+S\+\_\+dir1, }
+\item[{const char $\ast$}]{D\+N\+S\+\_\+dir2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a2e48d1533a7b13b508258337fd7d9e1d}{}\label{class_wasp_g_p_r_s___pro__core_a2e48d1533a7b13b508258337fd7d9e1d}
+
+
+It sets the directions of D\+NS servers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ D\+N\+S\+\_\+dir1 \+: D\+NS server direction \\
+\hline
+{\em const} & char$\ast$ D\+N\+S\+\_\+dir2 \+: D\+NS server direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Info\+Incoming\+Call@{set\+Info\+Incoming\+Call}}
+\index{set\+Info\+Incoming\+Call@{set\+Info\+Incoming\+Call}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Info\+Incoming\+Call()}{setInfoIncomingCall()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Info\+Incoming\+Call (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a2b607585bce7e7dc8f6bb12c87186ed2}{}\label{class_wasp_g_p_r_s___pro__core_a2b607585bce7e7dc8f6bb12c87186ed2}
+
+
+It sets the info shown when an incoming call is received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Info\+Incoming\+S\+MS@{set\+Info\+Incoming\+S\+MS}}
+\index{set\+Info\+Incoming\+S\+MS@{set\+Info\+Incoming\+S\+MS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Info\+Incoming\+S\+M\+S()}{setInfoIncomingSMS()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Info\+Incoming\+S\+MS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a2a405547e7ebf394ec809920f2b77b2d}{}\label{class_wasp_g_p_r_s___pro__core_a2a405547e7ebf394ec809920f2b77b2d}
+
+
+It sets the info shown when an incoming S\+MS is received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Local\+Port@{set\+Local\+Port}}
+\index{set\+Local\+Port@{set\+Local\+Port}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Local\+Port(const char $\ast$mode, uint16\+\_\+t port)}{setLocalPort(const char *mode, uint16_t port)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Local\+Port (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{mode, }
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a302da2efcd5c3924d5bcb514fc677967}{}\label{class_wasp_g_p_r_s___pro__core_a302da2efcd5c3924d5bcb514fc677967}
+
+
+It sets the number of the internal port for T\+CP or U\+DP connections. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ mode \+: T\+CP or U\+DP \\
+\hline
+{\em uint16\+\_\+t} & port \+: P\+O\+RT number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Loudspeaker\+Level@{set\+Loudspeaker\+Level}}
+\index{set\+Loudspeaker\+Level@{set\+Loudspeaker\+Level}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Loudspeaker\+Level(uint8\+\_\+t volume)}{setLoudspeakerLevel(uint8_t volume)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Loudspeaker\+Level (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{volume}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a9390d09a69c3d60936e9f063d6ff9dc5}{}\label{class_wasp_g_p_r_s___pro__core_a9390d09a69c3d60936e9f063d6ff9dc5}
+
+
+It sets loudspeaker volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & volume \+: volume level between 0 and 100 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t pwr\+Mode)}{setMode(uint8_t pwrMode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pwr\+Mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a6b1567da3fc10d6dc944dc3d5bb69361}{}\label{class_wasp_g_p_r_s___pro__core_a6b1567da3fc10d6dc944dc3d5bb69361}
+
+
+It sets Power Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & pwr\+Mode \+: the desired power mode (G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+ON, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+F\+U\+LL, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+R\+F\+\_\+\+O\+FF, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+M\+IN, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+S\+L\+E\+EP, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+P\+O\+W\+E\+R\+\_\+\+O\+FF) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Monitor\+Mode@{set\+Monitor\+Mode}}
+\index{set\+Monitor\+Mode@{set\+Monitor\+Mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Monitor\+Mode(uint8\+\_\+t mode)}{setMonitorMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Monitor\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_af3bbadb785fc609d4327d545d4435ae2}{}\label{class_wasp_g_p_r_s___pro__core_af3bbadb785fc609d4327d545d4435ae2}
+
+
+It sets the monitor speaker mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: speaker mode between 0 and 9 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Monitor\+Volume@{set\+Monitor\+Volume}}
+\index{set\+Monitor\+Volume@{set\+Monitor\+Volume}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Monitor\+Volume(uint8\+\_\+t volume)}{setMonitorVolume(uint8_t volume)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Monitor\+Volume (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{volume}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a1ae4f91fbbdb3dcd1476e7bc202476e9}{}\label{class_wasp_g_p_r_s___pro__core_a1ae4f91fbbdb3dcd1476e7bc202476e9}
+
+
+It sets the monitor speaker loudness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & volume \+: volume level between 0 and 9 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Mute@{set\+Mute}}
+\index{set\+Mute@{set\+Mute}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Mute(uint8\+\_\+t mute\+\_\+mode)}{setMute(uint8_t mute_mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Mute (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mute\+\_\+mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a599548823bcc1931c2854d7622890d5c}{}\label{class_wasp_g_p_r_s___pro__core_a599548823bcc1931c2854d7622890d5c}
+
+
+It sets the monitor speaker loudness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mute\+\_\+mode \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+L\+BE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error, \textquotesingle{}-\/2\textquotesingle{} if error with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+P\+IN@{set\+P\+IN}}
+\index{set\+P\+IN@{set\+P\+IN}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+P\+I\+N(const char $\ast$pin)}{setPIN(const char *pin)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+P\+IN (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a06cfe4943b776df22f42d76637eb5405}{}\label{class_wasp_g_p_r_s___pro__core_a06cfe4943b776df22f42d76637eb5405}
+
+
+It sets P\+IN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ P\+IN \+: the S\+IM\textquotesingle{}s P\+IN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Preferred\+Operator@{set\+Preferred\+Operator}}
+\index{set\+Preferred\+Operator@{set\+Preferred\+Operator}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Preferred\+Operator(int index, uint8\+\_\+t format, const char $\ast$preferred\+\_\+operator)}{setPreferredOperator(int index, uint8_t format, const char *preferred_operator)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Preferred\+Operator (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{uint8\+\_\+t}]{format, }
+\item[{const char $\ast$}]{preferred\+\_\+operator}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aebd5532a001d860a236724047c4f9bfc}{}\label{class_wasp_g_p_r_s___pro__core_aebd5532a001d860a236724047c4f9bfc}
+
+
+It sets the monitor speaker loudness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & index \+: index in the list from 0 to 4 \\
+\hline
+{\em uint8\+\_\+t} & format\+: format of the operator names \\
+\hline
+{\em uint8\+\_\+t} & preferred\+\_\+operator \+: operator name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error and \textquotesingle{}-\/2\textquotesingle{} if C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Text\+Mode\+S\+MS@{set\+Text\+Mode\+S\+MS}}
+\index{set\+Text\+Mode\+S\+MS@{set\+Text\+Mode\+S\+MS}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Text\+Mode\+S\+M\+S()}{setTextModeSMS()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Text\+Mode\+S\+MS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_aa30b4e29d564cec8d2c7357b85b5d0a1}{}\label{class_wasp_g_p_r_s___pro__core_aa30b4e29d564cec8d2c7357b85b5d0a1}
+
+
+It sets \textquotesingle{}text mode\textquotesingle{} for sending S\+MS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{set\+Time()}{setTime()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::set\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_acc76eed7a4aedac4f9cd3bf20b974f16}{}\label{class_wasp_g_p_r_s___pro__core_acc76eed7a4aedac4f9cd3bf20b974f16}
+
+
+Sets time and date to G\+P\+R\+S\+\_\+\+Pro module from R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success , \textquotesingle{}0\textquotesingle{} or \textquotesingle{}-\/2\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!show\+\_\+\+A\+PN@{show\+\_\+\+A\+PN}}
+\index{show\+\_\+\+A\+PN@{show\+\_\+\+A\+PN}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{show\+\_\+\+A\+P\+N()}{show_APN()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::show\+\_\+\+A\+PN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a5885087c586ee1a05b75097735913934}{}\label{class_wasp_g_p_r_s___pro__core_a5885087c586ee1a05b75097735913934}
+
+
+It shows the apn, login and password constants. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Show\+Protocol\+Header@{Show\+Protocol\+Header}}
+\index{Show\+Protocol\+Header@{Show\+Protocol\+Header}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Show\+Protocol\+Header(uint8\+\_\+t on\+\_\+off)}{ShowProtocolHeader(uint8_t on_off)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Show\+Protocol\+Header (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{on\+\_\+off}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_abb2048b854247e70cba6df718629f267}{}\label{class_wasp_g_p_r_s___pro__core_abb2048b854247e70cba6df718629f267}
+
+
+It enables or disables to show transfer protocol in IP head when received data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & on\+\_\+off \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!Show\+Remote\+IP@{Show\+Remote\+IP}}
+\index{Show\+Remote\+IP@{Show\+Remote\+IP}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{Show\+Remote\+I\+P(uint8\+\_\+t on\+\_\+off)}{ShowRemoteIP(uint8_t on_off)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+Show\+Remote\+IP (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{on\+\_\+off}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a4089decc35f21d548a9b37516fa1117d}{}\label{class_wasp_g_p_r_s___pro__core_a4089decc35f21d548a9b37516fa1117d}
+
+
+It enables or disables to show remote IP address and port when received data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & on\+\_\+off \+: E\+N\+A\+B\+LE or D\+I\+S\+A\+B\+LE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!switchto\+Command\+Mode@{switchto\+Command\+Mode}}
+\index{switchto\+Command\+Mode@{switchto\+Command\+Mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{switchto\+Command\+Mode()}{switchtoCommandMode()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::switchto\+Command\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ae0358611d14efe3f7fcdcb132f216ca6}{}\label{class_wasp_g_p_r_s___pro__core_ae0358611d14efe3f7fcdcb132f216ca6}
+
+
+Switch From Data Mode Or P\+PP Online Mode To Command Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!switchto\+Data\+Mode@{switchto\+Data\+Mode}}
+\index{switchto\+Data\+Mode@{switchto\+Data\+Mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{switchto\+Data\+Mode()}{switchtoDataMode()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::switchto\+Data\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_ab1183b63819064b2220cad9f168acb23}{}\label{class_wasp_g_p_r_s___pro__core_ab1183b63819064b2220cad9f168acb23}
+
+
+Resumes the connection and switches back from Command mode to data mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error ,\textquotesingle{}2\textquotesingle{} if connection is not successfully resumed 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!upload\+File@{upload\+File}}
+\index{upload\+File@{upload\+File}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{upload\+File(const char $\ast$file, const char $\ast$path, const char $\ast$user, const char $\ast$passw, const char $\ast$ftp\+\_\+server, const char $\ast$ftp\+\_\+port, uint8\+\_\+t n\+\_\+conf)}{uploadFile(const char *file, const char *path, const char *user, const char *passw, const char *ftp_server, const char *ftp_port, uint8_t n_conf)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::upload\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{const char $\ast$}]{path, }
+\item[{const char $\ast$}]{user, }
+\item[{const char $\ast$}]{passw, }
+\item[{const char $\ast$}]{ftp\+\_\+server, }
+\item[{const char $\ast$}]{ftp\+\_\+port, }
+\item[{uint8\+\_\+t}]{n\+\_\+conf}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a0f8ba2d548fe7cd57567d5843de2a8d6}{}\label{class_wasp_g_p_r_s___pro__core_a0f8ba2d548fe7cd57567d5843de2a8d6}
+
+
+It uploads a file to a F\+TP server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ file \+: path within SD card to find the file to upload \\
+\hline
+{\em const} & char$\ast$ path \+: path in the F\+TP server where store the file \\
+\hline
+{\em const} & char$\ast$ user \+: login to connect to the ftp server \\
+\hline
+{\em const} & char$\ast$ passw \+: password to connect to the ftp server \\
+\hline
+{\em const} & char$\ast$ ftp\+\_\+server \+: ftp server \\
+\hline
+{\em uint8\+\_\+t} & ftp\+\_\+port \+: ftp server port \\
+\hline
+{\em uint8\+\_\+t} & n\+\_\+conf \+: number of H\+T\+T\+P/\+F\+TP profile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success \textquotesingle{}0\textquotesingle{} if error opening connection with the G\+P\+RS provider, \textquotesingle{}-\/1\textquotesingle{} if error opening the connection, \textquotesingle{}-\/2\textquotesingle{} if error getting the IP address \textquotesingle{}-\/3\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID, \textquotesingle{}-\/4\textquotesingle{} if error setting the F\+TP mode, \textquotesingle{}-\/5\textquotesingle{} if error setting the F\+TP type, \textquotesingle{}-\/6\textquotesingle{} if error setting the F\+TP server, \textquotesingle{}-\/7\textquotesingle{} if error setting the F\+TP port, \textquotesingle{}-\/8\textquotesingle{} if error setting the user name, \textquotesingle{}-\/9\textquotesingle{} if error setting the password, \textquotesingle{}-\/10\textquotesingle{} if error starting the SD, \textquotesingle{}-\/11\textquotesingle{} if error taking the file size in the SD, \textquotesingle{}-\/12\textquotesingle{} if error using the SD card \textquotesingle{}-\/13\textquotesingle{} if error setting the file name in the F\+TP server, \textquotesingle{}-\/14\textquotesingle{} if error setting the path of the file in the F\+TP server \textquotesingle{}-\/15\textquotesingle{} if error opening the F\+TP session, \textquotesingle{}-\/16\textquotesingle{} if error when request to send data, \textquotesingle{}-\/17\textquotesingle{} error sending data to the F\+TP, \textquotesingle{}-\/18\textquotesingle{} if error waiting for send more data, \textquotesingle{}-\/20\textquotesingle{} if error closing the F\+TP session, \textquotesingle{}-\/21\textquotesingle{} setting the file name in the F\+TP to get the file size \textquotesingle{}-\/22\textquotesingle{} setting the path in the F\+TP to get the file size, \textquotesingle{}-\/23\textquotesingle{} if error getting the file size \textquotesingle{}-\/40\textquotesingle{} if error from F\+TP when the module sends data with error code available, \textquotesingle{}-\/41\textquotesingle{} if error setting the F\+T\+P/\+H\+T\+TP ID with C\+ME error code available, \textquotesingle{}-\/42\textquotesingle{} if error setting the F\+TP mode with C\+ME error code available, \textquotesingle{}-\/43\textquotesingle{} if error setting the F\+TP type with C\+ME error code available, \textquotesingle{}-\/44\textquotesingle{} if error setting the F\+TP server with C\+ME error code available, \textquotesingle{}-\/45\textquotesingle{} if error setting the F\+TP port with C\+ME error code available, \textquotesingle{}-\/46\textquotesingle{} if error setting the user name with C\+ME error code available, \textquotesingle{}-\/47\textquotesingle{} if error setting the password with C\+ME error code available, \textquotesingle{}-\/48\textquotesingle{} if error setting the file name in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/49\textquotesingle{} if error setting the path of the file in the F\+TP server with C\+ME error code available, \textquotesingle{}-\/50\textquotesingle{} if error opening the F\+TP session with C\+ME error code available, \textquotesingle{}-\/51\textquotesingle{} if error closing the F\+TP session with C\+ME error code available, \textquotesingle{}-\/53\textquotesingle{} setting the file name in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/54\textquotesingle{} setting the path in the F\+TP to get the file size with C\+ME error code available, \textquotesingle{}-\/55\textquotesingle{} if error getting the file size with C\+ME error code available 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!wait\+For\+Data@{wait\+For\+Data}}
+\index{wait\+For\+Data@{wait\+For\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{wait\+For\+Data(const char $\ast$expected\+Answer, unsigned long max\+\_\+timeout, unsigned long timeout, int seconds)}{waitForData(const char *expectedAnswer, unsigned long max_timeout, unsigned long timeout, int seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::wait\+For\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{expected\+Answer, }
+\item[{unsigned long}]{max\+\_\+timeout, }
+\item[{unsigned long}]{timeout, }
+\item[{int}]{seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a49e3fa010a21ca47c77bce02b1cff6bd}{}\label{class_wasp_g_p_r_s___pro__core_a49e3fa010a21ca47c77bce02b1cff6bd}
+
+
+It waits for data from the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & expected\+Answer \+: string expected to be answered by the module \\
+\hline
+{\em unsigned} & long max\+\_\+timeout \+: specifies the maximum timeout \\
+\hline
+{\em unsigned} & long timeout \+: specifies the timeout \\
+\hline
+{\em int} & seconds \+: specifies the number of seconds to wait before listening to the module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if expected\+Answer has been detected, \textquotesingle{}0\textquotesingle{} if not detected 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!wait\+For\+Data@{wait\+For\+Data}}
+\index{wait\+For\+Data@{wait\+For\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{wait\+For\+Data(const char $\ast$expected\+Answer1, const char $\ast$expected\+Answer2, unsigned long max\+\_\+timeout, unsigned long timeout, int seconds, int n\+\_\+answers)}{waitForData(const char *expectedAnswer1, const char *expectedAnswer2, unsigned long max_timeout, unsigned long timeout, int seconds, int n_answers)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::wait\+For\+Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{expected\+Answer1, }
+\item[{const char $\ast$}]{expected\+Answer2, }
+\item[{unsigned long}]{max\+\_\+timeout, }
+\item[{unsigned long}]{timeout, }
+\item[{int}]{seconds, }
+\item[{int}]{n\+\_\+answers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_g_p_r_s___pro__core_ac14207d3db5e900367598fcbbbdbf6d5}{}\label{class_wasp_g_p_r_s___pro__core_ac14207d3db5e900367598fcbbbdbf6d5}
+
+
+It waits for data from the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ expected\+Answer1 \+: string 1 expected to be answered by the module \\
+\hline
+{\em const} & char$\ast$ expected\+Answer2 \+: string 2 expected to be answered by the module \\
+\hline
+{\em unsigned} & long max\+\_\+timeout \+: specifies the maximum timeout \\
+\hline
+{\em unsigned} & long timeout \+: specifies the timeout \\
+\hline
+{\em int} & seconds \+: specifies the number of seconds to wait before listening to the module \\
+\hline
+{\em int} & n\+\_\+answers \+: specifies the number of answers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if expected\+Answer1 has been detected, \textquotesingle{}2\textquotesingle{} if expected\+Answer2 has been detected, \textquotesingle{}0\textquotesingle{} if not detected 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!whoamI@{whoamI}}
+\index{whoamI@{whoamI}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{whoam\+I()}{whoamI()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::whoamI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___pro__core_a366b0d3817b9156c065d113edc2acc01}{}\label{class_wasp_g_p_r_s___pro__core_a366b0d3817b9156c065d113edc2acc01}
+
+
+It gets the model of the module and saves it in \textquotesingle{}buffer\+\_\+\+G\+P\+RS\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!\+\_\+baud\+Rate@{\+\_\+baud\+Rate}}
+\index{\+\_\+baud\+Rate@{\+\_\+baud\+Rate}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{\+\_\+baud\+Rate}{_baudRate}}]{\setlength{\rightskip}{0pt plus 5cm}long Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+\_\+baud\+Rate}\hypertarget{class_wasp_g_p_r_s___pro__core_a3bb5ca4f32bfe890bc1fa14cc5751381}{}\label{class_wasp_g_p_r_s___pro__core_a3bb5ca4f32bfe890bc1fa14cc5751381}
+
+
+Variable \+: baud rate used to communicate with the G\+P\+RS module. 
+
+By default, it is 57600bps \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!\+\_\+pwr\+Mode@{\+\_\+pwr\+Mode}}
+\index{\+\_\+pwr\+Mode@{\+\_\+pwr\+Mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{\+\_\+pwr\+Mode}{_pwrMode}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+\_\+pwr\+Mode}\hypertarget{class_wasp_g_p_r_s___pro__core_aba9ef2770a61f7e2114e5c84d4b25794}{}\label{class_wasp_g_p_r_s___pro__core_aba9ef2770a61f7e2114e5c84d4b25794}
+
+
+Variable \+: power mode. 
+
+Possible values are\+: G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+ON, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+F\+U\+LL, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+R\+F\+\_\+\+O\+FF, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+M\+IN, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+S\+L\+E\+EP, G\+P\+R\+S\+\_\+\+P\+R\+O\+\_\+\+O\+FF \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!\+\_\+socket@{\+\_\+socket}}
+\index{\+\_\+socket@{\+\_\+socket}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{\+\_\+socket}{_socket}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+\_\+socket}\hypertarget{class_wasp_g_p_r_s___pro__core_a88295f0945d2f69eef16e8ef71dbc0d1}{}\label{class_wasp_g_p_r_s___pro__core_a88295f0945d2f69eef16e8ef71dbc0d1}
+
+
+Variable \+: U\+A\+RT used by the G\+P\+RS module. 
+
+G\+P\+RS module is connected to the U\+A\+R\+T1 \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!connected@{connected}}
+\index{connected@{connected}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{connected}{connected}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::connected}\hypertarget{class_wasp_g_p_r_s___pro__core_ae43873d27e34f722254bac8c283d4d2b}{}\label{class_wasp_g_p_r_s___pro__core_ae43873d27e34f722254bac8c283d4d2b}
+Variable \+: specifies if the G\+P\+RS modules is connected to the network (1\+:connected ; 0\+:connected) \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!flag@{flag}}
+\index{flag@{flag}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{flag}{flag}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::flag}\hypertarget{class_wasp_g_p_r_s___pro__core_a39db9f922e8dca6aeef93010e42ae416}{}\label{class_wasp_g_p_r_s___pro__core_a39db9f922e8dca6aeef93010e42ae416}
+
+
+Variable \+: status flag, used to see if there was an error while communicating with the module. 
+
+Possible values are \+: G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+O\+W\+ER, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+LL, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+H\+A\+NG, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+MS, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+IN, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+L\+L\+I\+N\+FO, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+M\+S\+I\+N\+FO, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+NF, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+T\+T\+E\+RN, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+I\+M\+ER, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+R\+O\+F\+I\+LE, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+O\+C\+K\+ET, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+H\+E\+CK, G\+P\+R\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+L\+O\+SE \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!I\+P\+\_\+app\+\_\+mode@{I\+P\+\_\+app\+\_\+mode}}
+\index{I\+P\+\_\+app\+\_\+mode@{I\+P\+\_\+app\+\_\+mode}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{I\+P\+\_\+app\+\_\+mode}{IP_app_mode}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::\+I\+P\+\_\+app\+\_\+mode}\hypertarget{class_wasp_g_p_r_s___pro__core_a0e35adb0246e794e218f05af6dcca9b8}{}\label{class_wasp_g_p_r_s___pro__core_a0e35adb0246e794e218f05af6dcca9b8}
+
+
+Variable \+: IP application mode. 
+
+\textquotesingle{}0\textquotesingle{}= non transparent mode, \textquotesingle{}1\textquotesingle{}= transparent mode \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!socket\+\_\+\+ID@{socket\+\_\+\+ID}}
+\index{socket\+\_\+\+ID@{socket\+\_\+\+ID}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{socket\+\_\+\+ID}{socket_ID}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::socket\+\_\+\+ID\mbox{[}4\mbox{]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a3afa2569c7057708bcb718c5d14adec5}{}\label{class_wasp_g_p_r_s___pro__core_a3afa2569c7057708bcb718c5d14adec5}
+
+
+Variable \+: socket ID. 
+
+It stores the ID of the last socket opened \index{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}!tlf\+IN@{tlf\+IN}}
+\index{tlf\+IN@{tlf\+IN}!Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core@{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core}}
+\subsubsection[{\texorpdfstring{tlf\+IN}{tlfIN}}]{\setlength{\rightskip}{0pt plus 5cm}char Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core\+::tlf\+IN\mbox{[}15\mbox{]}}\hypertarget{class_wasp_g_p_r_s___pro__core_a5c7dbd0508b7369149ff29723a56a925}{}\label{class_wasp_g_p_r_s___pro__core_a5c7dbd0508b7369149ff29723a56a925}
+
+
+Variable \+: last call or S\+MS received telephone number. 
+
+It stores telephone numbers with country code if it appears 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_g_p_r_s___pro__core_8h}{Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+G\+P\+R\+S\+\_\+\+Pro\+\_\+core.\+cpp\end{DoxyCompactItemize}

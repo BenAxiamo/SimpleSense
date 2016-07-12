@@ -1,0 +1,750 @@
+\hypertarget{bignum_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+R\+S\+A/utility/bignum.h File Reference}
+\label{bignum_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+R\+S\+A/utility/bignum.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+R\+S\+A/utility/bignum.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmpi}{mpi}
+\begin{DoxyCompactList}\small\item\em M\+PI structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+F\+I\+L\+E\+\_\+\+I\+O\+\_\+\+E\+R\+R\+OR}~-\/0x0002\hypertarget{bignum_8h_a4f10c6e250b7a06f2fc01ce48a823fc8}{}\label{bignum_8h_a4f10c6e250b7a06f2fc01ce48a823fc8}
+
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA}~-\/0x0004\hypertarget{bignum_8h_aad5959617396031440786cd8ff24712a}{}\label{bignum_8h_aad5959617396031440786cd8ff24712a}
+
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER}~-\/0x0006\hypertarget{bignum_8h_af2d758961ae9e4085d2a43588ecb782a}{}\label{bignum_8h_af2d758961ae9e4085d2a43588ecb782a}
+
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+LL}~-\/0x0008\hypertarget{bignum_8h_ab0139fd8e0536a4bd1da18c9ea5bcb84}{}\label{bignum_8h_ab0139fd8e0536a4bd1da18c9ea5bcb84}
+
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+V\+A\+L\+UE}~-\/0x000A\hypertarget{bignum_8h_afbbffbd20b56d2b8f3db8edf76cdbdb4}{}\label{bignum_8h_afbbffbd20b56d2b8f3db8edf76cdbdb4}
+
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+B\+Y\+\_\+\+Z\+E\+RO}~-\/0x000C\hypertarget{bignum_8h_a96380f09df1ad46baba97af000b05466}{}\label{bignum_8h_a96380f09df1ad46baba97af000b05466}
+
+\item 
+\#define {\bfseries P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+N\+O\+T\+\_\+\+A\+C\+C\+E\+P\+T\+A\+B\+LE}~-\/0x000E\hypertarget{bignum_8h_ac42cb2c2b13df48182ee833de2e4adbf}{}\label{bignum_8h_ac42cb2c2b13df48182ee833de2e4adbf}
+
+\item 
+\#define {\bfseries M\+P\+I\+\_\+\+C\+HK}(f)~if( ( ret = f ) != 0 ) goto cleanup\hypertarget{bignum_8h_a024b186dd3608bcbcfc9dd36212a18ec}{}\label{bignum_8h_a024b186dd3608bcbcfc9dd36212a18ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned long {\bfseries t\+\_\+int}\hypertarget{bignum_8h_a0f34b565721b3f57a8507784c68eedb1}{}\label{bignum_8h_a0f34b565721b3f57a8507784c68eedb1}
+
+\item 
+typedef unsigned long long {\bfseries t\+\_\+dbl}\hypertarget{bignum_8h_abdba719b3142703b9643de114a4c6605}{}\label{bignum_8h_abdba719b3142703b9643de114a4c6605}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{bignum_8h_a688ff1cdda8c2676b1c05fee3fa05a83}{mpi\+\_\+init} (\hyperlink{structmpi}{mpi} $\ast$X,...)\hypertarget{bignum_8h_a688ff1cdda8c2676b1c05fee3fa05a83}{}\label{bignum_8h_a688ff1cdda8c2676b1c05fee3fa05a83}
+
+\begin{DoxyCompactList}\small\item\em Initialize one or more mpi. \end{DoxyCompactList}\item 
+void \hyperlink{bignum_8h_ac7798ce5cd2d39f4c8aab2f6775f9dc5}{mpi\+\_\+free} (\hyperlink{structmpi}{mpi} $\ast$X,...)\hypertarget{bignum_8h_ac7798ce5cd2d39f4c8aab2f6775f9dc5}{}\label{bignum_8h_ac7798ce5cd2d39f4c8aab2f6775f9dc5}
+
+\begin{DoxyCompactList}\small\item\em Unallocate one or more mpi. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_aabe2f2487b7198ee547e6ba6181831ab}{mpi\+\_\+grow} (\hyperlink{structmpi}{mpi} $\ast$X, int nblimbs)
+\begin{DoxyCompactList}\small\item\em Enlarge to the specified number of limbs. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a83cbe5102ce0d7ec19a48b54243808c5}{mpi\+\_\+copy} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$Y)
+\begin{DoxyCompactList}\small\item\em Copy the contents of Y into X. \end{DoxyCompactList}\item 
+void \hyperlink{bignum_8h_a5456193a9ebcfe612b93cfb509995a75}{mpi\+\_\+swap} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$Y)\hypertarget{bignum_8h_a5456193a9ebcfe612b93cfb509995a75}{}\label{bignum_8h_a5456193a9ebcfe612b93cfb509995a75}
+
+\begin{DoxyCompactList}\small\item\em Swap the contents of X and Y. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a07c9e7f3ad4ab72825c9d87e6bfeb752}{mpi\+\_\+lset} (\hyperlink{structmpi}{mpi} $\ast$X, int z)
+\begin{DoxyCompactList}\small\item\em Set value from integer. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a1a42cb28902a2f79a253358731a8cab0}{mpi\+\_\+lsb} (\hyperlink{structmpi}{mpi} $\ast$X)\hypertarget{bignum_8h_a1a42cb28902a2f79a253358731a8cab0}{}\label{bignum_8h_a1a42cb28902a2f79a253358731a8cab0}
+
+\begin{DoxyCompactList}\small\item\em Return the number of least significant bits. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_acfc9283c45ac1e2ffddcf25ac87d0b8b}{mpi\+\_\+msb} (\hyperlink{structmpi}{mpi} $\ast$X)\hypertarget{bignum_8h_acfc9283c45ac1e2ffddcf25ac87d0b8b}{}\label{bignum_8h_acfc9283c45ac1e2ffddcf25ac87d0b8b}
+
+\begin{DoxyCompactList}\small\item\em Return the number of most significant bits. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ab4a4ea112f01696a7697b283597de5d6}{mpi\+\_\+size} (\hyperlink{structmpi}{mpi} $\ast$X)\hypertarget{bignum_8h_ab4a4ea112f01696a7697b283597de5d6}{}\label{bignum_8h_ab4a4ea112f01696a7697b283597de5d6}
+
+\begin{DoxyCompactList}\small\item\em Return the total size in bytes. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a04f6766b620e96c79268ab183b60be3e}{mpi\+\_\+read\+\_\+string} (\hyperlink{structmpi}{mpi} $\ast$X, int radix, char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Import from an A\+S\+C\+II string. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a88842f78ee235c537466c17f09b9779e}{mpi\+\_\+write\+\_\+string} (\hyperlink{structmpi}{mpi} $\ast$X, int radix, char $\ast$s, int $\ast$slen)
+\begin{DoxyCompactList}\small\item\em Export into an A\+S\+C\+II string. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_aa3305289daa8dcc9e70fade0eaa1dc99}{mpi\+\_\+read\+\_\+file} (\hyperlink{structmpi}{mpi} $\ast$X, int radix, \hyperlink{group__avr__stdio_ga3e8cefeee58f762ff50bcef35fa12eec}{F\+I\+LE} $\ast$fin)
+\begin{DoxyCompactList}\small\item\em Read X from an opened file. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ab56cad4c3e8b9fd93f4162d0e9f38d96}{mpi\+\_\+write\+\_\+file} (char $\ast$p, \hyperlink{structmpi}{mpi} $\ast$X, int radix, \hyperlink{group__avr__stdio_ga3e8cefeee58f762ff50bcef35fa12eec}{F\+I\+LE} $\ast$fout)
+\begin{DoxyCompactList}\small\item\em Write X into an opened file, or stdout. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_aee83823822646a6653b479d265ffc7fa}{mpi\+\_\+read\+\_\+binary} (\hyperlink{structmpi}{mpi} $\ast$X, unsigned char $\ast$buf, int buflen)
+\begin{DoxyCompactList}\small\item\em Import X from unsigned binary data, big endian. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a43736f0ee83f68eb5d2649c96cf00f99}{mpi\+\_\+write\+\_\+binary} (\hyperlink{structmpi}{mpi} $\ast$X, unsigned char $\ast$buf, int buflen)
+\begin{DoxyCompactList}\small\item\em Export X into unsigned binary data, big endian. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ae2dc6046a79076a73e8cbee5b1126540}{mpi\+\_\+shift\+\_\+l} (\hyperlink{structmpi}{mpi} $\ast$X, int count)
+\begin{DoxyCompactList}\small\item\em Left-\/shift\+: X $<$$<$= count. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a394ee6f5b38e31c6871e23bba9c55b74}{mpi\+\_\+shift\+\_\+r} (\hyperlink{structmpi}{mpi} $\ast$X, int count)
+\begin{DoxyCompactList}\small\item\em Right-\/shift\+: X $>$$>$= count. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a2a991cbfe6e89700c16f3c3d940b0677}{mpi\+\_\+cmp\+\_\+abs} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$Y)
+\begin{DoxyCompactList}\small\item\em Compare unsigned values. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a561068257d96b2fb8d2ef164d896192f}{mpi\+\_\+cmp\+\_\+mpi} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$Y)
+\begin{DoxyCompactList}\small\item\em Compare signed values. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a34752048ef03a7498890ebd34063fd84}{mpi\+\_\+cmp\+\_\+int} (\hyperlink{structmpi}{mpi} $\ast$X, int z)
+\begin{DoxyCompactList}\small\item\em Compare signed values. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_aac387e9c22ae23b4c06b99181528b52c}{mpi\+\_\+add\+\_\+abs} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Unsigned addition\+: X = $\vert$\+A$\vert$ + $\vert$\+B$\vert$. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a3bb8202bc009f81e840b9e5e7eeaeb00}{mpi\+\_\+sub\+\_\+abs} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Unsigned substraction\+: X = $\vert$\+A$\vert$ -\/ $\vert$\+B$\vert$. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ababe9b8de333b9230f0e3058adddc962}{mpi\+\_\+add\+\_\+mpi} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Signed addition\+: X = A + B. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a252cf8c54cb8c39a4b8909ffe1390d23}{mpi\+\_\+sub\+\_\+mpi} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Signed substraction\+: X = A -\/ B. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_aae2a560268c972bd587f60fcb44a2100}{mpi\+\_\+add\+\_\+int} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, int b)
+\begin{DoxyCompactList}\small\item\em Signed addition\+: X = A + b. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a18e3abca9fdc9ef20a24240375d6f2cf}{mpi\+\_\+sub\+\_\+int} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, int b)
+\begin{DoxyCompactList}\small\item\em Signed substraction\+: X = A -\/ b. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_adfe8ede3cf285cbf4af47283ba5397b4}{mpi\+\_\+mul\+\_\+mpi} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Baseline multiplication\+: X = A $\ast$ B. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_aca57de6d53f0356c1908808f2a400da2}{mpi\+\_\+mul\+\_\+int} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, t\+\_\+int b)
+\begin{DoxyCompactList}\small\item\em Baseline multiplication\+: X = A $\ast$ b. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ab16899a4cb2fe4966d481d40bdc5a452}{mpi\+\_\+div\+\_\+mpi} (\hyperlink{structmpi}{mpi} $\ast$Q, \hyperlink{structmpi}{mpi} $\ast$R, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Division by mpi\+: A = Q $\ast$ B + R. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a57c24cdccaeb93f5a274eb3376264267}{mpi\+\_\+div\+\_\+int} (\hyperlink{structmpi}{mpi} $\ast$Q, \hyperlink{structmpi}{mpi} $\ast$R, \hyperlink{structmpi}{mpi} $\ast$A, int b)
+\begin{DoxyCompactList}\small\item\em Division by int\+: A = Q $\ast$ b + R. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_af1b04ce2d0b11dbd9972c23c8e48e80d}{mpi\+\_\+mod\+\_\+mpi} (\hyperlink{structmpi}{mpi} $\ast$R, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Modulo\+: R = A mod B. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a00b4fa5d135917792465b22caabcdff2}{mpi\+\_\+mod\+\_\+int} (t\+\_\+int $\ast$r, \hyperlink{structmpi}{mpi} $\ast$A, int b)
+\begin{DoxyCompactList}\small\item\em Modulo\+: r = A mod b. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a9209435fca2b5e394475b25505be2cec}{mpi\+\_\+exp\+\_\+mod} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$E, \hyperlink{structmpi}{mpi} $\ast$N, \hyperlink{structmpi}{mpi} $\ast$\+\_\+\+RR)
+\begin{DoxyCompactList}\small\item\em Sliding-\/window exponentiation\+: X = A$^\wedge$E mod N. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ac8fd2b57499e7324e0daf9f105ca22e9}{mpi\+\_\+gcd} (\hyperlink{structmpi}{mpi} $\ast$G, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Greatest common divisor\+: G = gcd(\+A, B) \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a2e7f2d85133b80e159e959d7ebb9cc2b}{mpi\+\_\+inv\+\_\+mod} (\hyperlink{structmpi}{mpi} $\ast$X, \hyperlink{structmpi}{mpi} $\ast$A, \hyperlink{structmpi}{mpi} $\ast$N)
+\begin{DoxyCompactList}\small\item\em Modular inverse\+: X = A$^\wedge$-\/1 mod N. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ae56de1a4201b7abdd162c31aa44d0b51}{mpi\+\_\+is\+\_\+prime} (\hyperlink{structmpi}{mpi} $\ast$X, int($\ast$f\+\_\+rng)(void $\ast$), void $\ast$p\+\_\+rng)
+\begin{DoxyCompactList}\small\item\em Miller-\/\+Rabin primality test. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_a7c19f6a87ef1ac0ff5a3e50acb2fa443}{mpi\+\_\+gen\+\_\+prime} (\hyperlink{structmpi}{mpi} $\ast$X, int nbits, int dh\+\_\+flag, int($\ast$f\+\_\+rng)(void $\ast$), void $\ast$p\+\_\+rng)
+\begin{DoxyCompactList}\small\item\em Prime number generation. \end{DoxyCompactList}\item 
+int \hyperlink{bignum_8h_ab21c92239348bc2c84513968a3e391b2}{mpi\+\_\+self\+\_\+test} (int verbose)
+\begin{DoxyCompactList}\small\item\em Checkup routine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Based on Xy\+S\+SL\+: Copyright (C) 2006-\/2008 Christophe Devine
+
+Copyright (C) 2009 Paul Bakker $<$polarssl\+\_\+maintainer at=\char`\"{}\char`\"{} polarssl=\char`\"{}\char`\"{} dot=\char`\"{}\char`\"{} org$>$=\char`\"{}\char`\"{}$>$
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met\+:
+
+
+\begin{DoxyItemize}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+\item Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+\item Neither the names of Polar\+S\+SL or Xy\+S\+SL nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+\end{DoxyItemize}
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED BY T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS A\+ND C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS \char`\"{}\+A\+S I\+S\char`\"{} A\+ND A\+NY E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, T\+HE I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+RE D\+I\+S\+C\+L\+A\+I\+M\+ED. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE C\+O\+P\+Y\+R\+I\+G\+HT O\+W\+N\+ER OR C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT, I\+N\+C\+I\+D\+E\+N\+T\+AL, S\+P\+E\+C\+I\+AL, E\+X\+E\+M\+P\+L\+A\+RY, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES (I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, P\+R\+O\+C\+U\+R\+E\+M\+E\+NT OF S\+U\+B\+S\+T\+I\+T\+U\+TE G\+O\+O\+DS OR S\+E\+R\+V\+I\+C\+ES; L\+O\+SS OF U\+SE, D\+A\+TA, OR P\+R\+O\+F\+I\+TS; OR B\+U\+S\+I\+N\+E\+SS I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+ON) H\+O\+W\+E\+V\+ER C\+A\+U\+S\+ED A\+ND ON A\+NY T\+H\+E\+O\+RY OF L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN C\+O\+N\+T\+R\+A\+CT, S\+T\+R\+I\+CT L\+I\+A\+B\+I\+L\+I\+TY, OR T\+O\+RT (I\+N\+C\+L\+U\+D\+I\+NG N\+E\+G\+L\+I\+G\+E\+N\+CE OR O\+T\+H\+E\+R\+W\+I\+SE) A\+R\+I\+S\+I\+NG IN A\+NY W\+AY O\+UT OF T\+HE U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE, E\+V\+EN IF A\+D\+V\+I\+S\+ED OF T\+HE P\+O\+S\+S\+I\+B\+I\+L\+I\+TY OF S\+U\+CH D\+A\+M\+A\+GE. 
+
+\subsection{Function Documentation}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+add\+\_\+abs@{mpi\+\_\+add\+\_\+abs}}
+\index{mpi\+\_\+add\+\_\+abs@{mpi\+\_\+add\+\_\+abs}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+add\+\_\+abs(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_add_abs(mpi *X, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+add\+\_\+abs (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_aac387e9c22ae23b4c06b99181528b52c}{}\label{bignum_8h_aac387e9c22ae23b4c06b99181528b52c}
+
+
+Unsigned addition\+: X = $\vert$\+A$\vert$ + $\vert$\+B$\vert$. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+add\+\_\+int@{mpi\+\_\+add\+\_\+int}}
+\index{mpi\+\_\+add\+\_\+int@{mpi\+\_\+add\+\_\+int}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+add\+\_\+int(mpi $\ast$\+X, mpi $\ast$\+A, int b)}{mpi_add_int(mpi *X, mpi *A, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+add\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_aae2a560268c972bd587f60fcb44a2100}{}\label{bignum_8h_aae2a560268c972bd587f60fcb44a2100}
+
+
+Signed addition\+: X = A + b. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+add\+\_\+mpi@{mpi\+\_\+add\+\_\+mpi}}
+\index{mpi\+\_\+add\+\_\+mpi@{mpi\+\_\+add\+\_\+mpi}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+add\+\_\+mpi(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_add_mpi(mpi *X, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+add\+\_\+mpi (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ababe9b8de333b9230f0e3058adddc962}{}\label{bignum_8h_ababe9b8de333b9230f0e3058adddc962}
+
+
+Signed addition\+: X = A + B. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+cmp\+\_\+abs@{mpi\+\_\+cmp\+\_\+abs}}
+\index{mpi\+\_\+cmp\+\_\+abs@{mpi\+\_\+cmp\+\_\+abs}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+cmp\+\_\+abs(mpi $\ast$\+X, mpi $\ast$\+Y)}{mpi_cmp_abs(mpi *X, mpi *Y)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+cmp\+\_\+abs (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{Y}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a2a991cbfe6e89700c16f3c3d940b0677}{}\label{bignum_8h_a2a991cbfe6e89700c16f3c3d940b0677}
+
+
+Compare unsigned values. 
+
+\begin{DoxyReturn}{Returns}
+1 if $\vert$\+X$\vert$ is greater than $\vert$\+Y$\vert$, -\/1 if $\vert$\+X$\vert$ is lesser than $\vert$\+Y$\vert$ or 0 if $\vert$\+X$\vert$ is equal to $\vert$\+Y$\vert$ 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+cmp\+\_\+int@{mpi\+\_\+cmp\+\_\+int}}
+\index{mpi\+\_\+cmp\+\_\+int@{mpi\+\_\+cmp\+\_\+int}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+cmp\+\_\+int(mpi $\ast$\+X, int z)}{mpi_cmp_int(mpi *X, int z)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+cmp\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a34752048ef03a7498890ebd34063fd84}{}\label{bignum_8h_a34752048ef03a7498890ebd34063fd84}
+
+
+Compare signed values. 
+
+\begin{DoxyReturn}{Returns}
+1 if X is greater than z, -\/1 if X is lesser than z or 0 if X is equal to z 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+cmp\+\_\+mpi@{mpi\+\_\+cmp\+\_\+mpi}}
+\index{mpi\+\_\+cmp\+\_\+mpi@{mpi\+\_\+cmp\+\_\+mpi}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+cmp\+\_\+mpi(mpi $\ast$\+X, mpi $\ast$\+Y)}{mpi_cmp_mpi(mpi *X, mpi *Y)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+cmp\+\_\+mpi (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{Y}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a561068257d96b2fb8d2ef164d896192f}{}\label{bignum_8h_a561068257d96b2fb8d2ef164d896192f}
+
+
+Compare signed values. 
+
+\begin{DoxyReturn}{Returns}
+1 if X is greater than Y, -\/1 if X is lesser than Y or 0 if X is equal to Y 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+copy@{mpi\+\_\+copy}}
+\index{mpi\+\_\+copy@{mpi\+\_\+copy}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+copy(mpi $\ast$\+X, mpi $\ast$\+Y)}{mpi_copy(mpi *X, mpi *Y)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+copy (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{Y}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a83cbe5102ce0d7ec19a48b54243808c5}{}\label{bignum_8h_a83cbe5102ce0d7ec19a48b54243808c5}
+
+
+Copy the contents of Y into X. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+div\+\_\+int@{mpi\+\_\+div\+\_\+int}}
+\index{mpi\+\_\+div\+\_\+int@{mpi\+\_\+div\+\_\+int}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+div\+\_\+int(mpi $\ast$\+Q, mpi $\ast$\+R, mpi $\ast$\+A, int b)}{mpi_div_int(mpi *Q, mpi *R, mpi *A, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+div\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{Q, }
+\item[{{\bf mpi} $\ast$}]{R, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a57c24cdccaeb93f5a274eb3376264267}{}\label{bignum_8h_a57c24cdccaeb93f5a274eb3376264267}
+
+
+Division by int\+: A = Q $\ast$ b + R. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+B\+Y\+\_\+\+Z\+E\+RO if b == 0
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Either Q or R can be N\+U\+LL. 
+\end{DoxyNote}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+div\+\_\+mpi@{mpi\+\_\+div\+\_\+mpi}}
+\index{mpi\+\_\+div\+\_\+mpi@{mpi\+\_\+div\+\_\+mpi}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+div\+\_\+mpi(mpi $\ast$\+Q, mpi $\ast$\+R, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_div_mpi(mpi *Q, mpi *R, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+div\+\_\+mpi (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{Q, }
+\item[{{\bf mpi} $\ast$}]{R, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ab16899a4cb2fe4966d481d40bdc5a452}{}\label{bignum_8h_ab16899a4cb2fe4966d481d40bdc5a452}
+
+
+Division by mpi\+: A = Q $\ast$ B + R. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+B\+Y\+\_\+\+Z\+E\+RO if B == 0
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Either Q or R can be N\+U\+LL. 
+\end{DoxyNote}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+exp\+\_\+mod@{mpi\+\_\+exp\+\_\+mod}}
+\index{mpi\+\_\+exp\+\_\+mod@{mpi\+\_\+exp\+\_\+mod}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+exp\+\_\+mod(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+E, mpi $\ast$\+N, mpi $\ast$\+\_\+\+R\+R)}{mpi_exp_mod(mpi *X, mpi *A, mpi *E, mpi *N, mpi *_RR)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+exp\+\_\+mod (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{E, }
+\item[{{\bf mpi} $\ast$}]{N, }
+\item[{{\bf mpi} $\ast$}]{\+\_\+\+RR}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a9209435fca2b5e394475b25505be2cec}{}\label{bignum_8h_a9209435fca2b5e394475b25505be2cec}
+
+
+Sliding-\/window exponentiation\+: X = A$^\wedge$E mod N. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA if N is negative or even
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\+\_\+\+RR is used to avoid re-\/computing R$\ast$R mod N across multiple calls, which speeds up things a bit. It can be set to N\+U\+LL if the extra performance is unneeded. 
+\end{DoxyNote}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+gcd@{mpi\+\_\+gcd}}
+\index{mpi\+\_\+gcd@{mpi\+\_\+gcd}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+gcd(mpi $\ast$\+G, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_gcd(mpi *G, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+gcd (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{G, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ac8fd2b57499e7324e0daf9f105ca22e9}{}\label{bignum_8h_ac8fd2b57499e7324e0daf9f105ca22e9}
+
+
+Greatest common divisor\+: G = gcd(\+A, B) 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+gen\+\_\+prime@{mpi\+\_\+gen\+\_\+prime}}
+\index{mpi\+\_\+gen\+\_\+prime@{mpi\+\_\+gen\+\_\+prime}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+gen\+\_\+prime(mpi $\ast$\+X, int nbits, int dh\+\_\+flag, int($\ast$f\+\_\+rng)(void $\ast$), void $\ast$p\+\_\+rng)}{mpi_gen_prime(mpi *X, int nbits, int dh_flag, int(*f_rng)(void *), void *p_rng)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+gen\+\_\+prime (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{nbits, }
+\item[{int}]{dh\+\_\+flag, }
+\item[{int($\ast$)(void $\ast$)}]{f\+\_\+rng, }
+\item[{void $\ast$}]{p\+\_\+rng}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a7c19f6a87ef1ac0ff5a3e50acb2fa443}{}\label{bignum_8h_a7c19f6a87ef1ac0ff5a3e50acb2fa443}
+
+
+Prime number generation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & destination mpi \\
+\hline
+{\em nbits} & required size of X in bits \\
+\hline
+{\em dh\+\_\+flag} & if 1, then (X-\/1)/2 will be prime too \\
+\hline
+{\em f\+\_\+rng} & R\+NG function \\
+\hline
+{\em p\+\_\+rng} & R\+NG parameter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful (probably prime), 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA if nbits is $<$ 3 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+grow@{mpi\+\_\+grow}}
+\index{mpi\+\_\+grow@{mpi\+\_\+grow}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+grow(mpi $\ast$\+X, int nblimbs)}{mpi_grow(mpi *X, int nblimbs)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+grow (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{nblimbs}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_aabe2f2487b7198ee547e6ba6181831ab}{}\label{bignum_8h_aabe2f2487b7198ee547e6ba6181831ab}
+
+
+Enlarge to the specified number of limbs. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+inv\+\_\+mod@{mpi\+\_\+inv\+\_\+mod}}
+\index{mpi\+\_\+inv\+\_\+mod@{mpi\+\_\+inv\+\_\+mod}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+inv\+\_\+mod(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+N)}{mpi_inv_mod(mpi *X, mpi *A, mpi *N)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+inv\+\_\+mod (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{N}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a2e7f2d85133b80e159e959d7ebb9cc2b}{}\label{bignum_8h_a2e7f2d85133b80e159e959d7ebb9cc2b}
+
+
+Modular inverse\+: X = A$^\wedge$-\/1 mod N. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA if N is negative or nil P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+N\+O\+T\+\_\+\+A\+C\+C\+E\+P\+T\+A\+B\+LE if A has no inverse mod N 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+is\+\_\+prime@{mpi\+\_\+is\+\_\+prime}}
+\index{mpi\+\_\+is\+\_\+prime@{mpi\+\_\+is\+\_\+prime}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+is\+\_\+prime(mpi $\ast$\+X, int($\ast$f\+\_\+rng)(void $\ast$), void $\ast$p\+\_\+rng)}{mpi_is_prime(mpi *X, int(*f_rng)(void *), void *p_rng)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+is\+\_\+prime (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int($\ast$)(void $\ast$)}]{f\+\_\+rng, }
+\item[{void $\ast$}]{p\+\_\+rng}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ae56de1a4201b7abdd162c31aa44d0b51}{}\label{bignum_8h_ae56de1a4201b7abdd162c31aa44d0b51}
+
+
+Miller-\/\+Rabin primality test. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful (probably prime), 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+N\+O\+T\+\_\+\+A\+C\+C\+E\+P\+T\+A\+B\+LE if X is not prime 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+lset@{mpi\+\_\+lset}}
+\index{mpi\+\_\+lset@{mpi\+\_\+lset}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+lset(mpi $\ast$\+X, int z)}{mpi_lset(mpi *X, int z)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+lset (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a07c9e7f3ad4ab72825c9d87e6bfeb752}{}\label{bignum_8h_a07c9e7f3ad4ab72825c9d87e6bfeb752}
+
+
+Set value from integer. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+mod\+\_\+int@{mpi\+\_\+mod\+\_\+int}}
+\index{mpi\+\_\+mod\+\_\+int@{mpi\+\_\+mod\+\_\+int}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+mod\+\_\+int(t\+\_\+int $\ast$r, mpi $\ast$\+A, int b)}{mpi_mod_int(t_int *r, mpi *A, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+mod\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{t\+\_\+int $\ast$}]{r, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a00b4fa5d135917792465b22caabcdff2}{}\label{bignum_8h_a00b4fa5d135917792465b22caabcdff2}
+
+
+Modulo\+: r = A mod b. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+B\+Y\+\_\+\+Z\+E\+RO if b == 0 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+mod\+\_\+mpi@{mpi\+\_\+mod\+\_\+mpi}}
+\index{mpi\+\_\+mod\+\_\+mpi@{mpi\+\_\+mod\+\_\+mpi}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+mod\+\_\+mpi(mpi $\ast$\+R, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_mod_mpi(mpi *R, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+mod\+\_\+mpi (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{R, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_af1b04ce2d0b11dbd9972c23c8e48e80d}{}\label{bignum_8h_af1b04ce2d0b11dbd9972c23c8e48e80d}
+
+
+Modulo\+: R = A mod B. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+D\+I\+V\+I\+S\+I\+O\+N\+\_\+\+B\+Y\+\_\+\+Z\+E\+RO if B == 0 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+mul\+\_\+int@{mpi\+\_\+mul\+\_\+int}}
+\index{mpi\+\_\+mul\+\_\+int@{mpi\+\_\+mul\+\_\+int}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+mul\+\_\+int(mpi $\ast$\+X, mpi $\ast$\+A, t\+\_\+int b)}{mpi_mul_int(mpi *X, mpi *A, t_int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+mul\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{t\+\_\+int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_aca57de6d53f0356c1908808f2a400da2}{}\label{bignum_8h_aca57de6d53f0356c1908808f2a400da2}
+
+
+Baseline multiplication\+: X = A $\ast$ b. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+mul\+\_\+mpi@{mpi\+\_\+mul\+\_\+mpi}}
+\index{mpi\+\_\+mul\+\_\+mpi@{mpi\+\_\+mul\+\_\+mpi}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+mul\+\_\+mpi(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_mul_mpi(mpi *X, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+mul\+\_\+mpi (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_adfe8ede3cf285cbf4af47283ba5397b4}{}\label{bignum_8h_adfe8ede3cf285cbf4af47283ba5397b4}
+
+
+Baseline multiplication\+: X = A $\ast$ B. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+read\+\_\+binary@{mpi\+\_\+read\+\_\+binary}}
+\index{mpi\+\_\+read\+\_\+binary@{mpi\+\_\+read\+\_\+binary}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+read\+\_\+binary(mpi $\ast$\+X, unsigned char $\ast$buf, int buflen)}{mpi_read_binary(mpi *X, unsigned char *buf, int buflen)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+read\+\_\+binary (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{unsigned char $\ast$}]{buf, }
+\item[{int}]{buflen}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_aee83823822646a6653b479d265ffc7fa}{}\label{bignum_8h_aee83823822646a6653b479d265ffc7fa}
+
+
+Import X from unsigned binary data, big endian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & destination mpi \\
+\hline
+{\em buf} & input buffer \\
+\hline
+{\em buflen} & input buffer size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+read\+\_\+file@{mpi\+\_\+read\+\_\+file}}
+\index{mpi\+\_\+read\+\_\+file@{mpi\+\_\+read\+\_\+file}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+read\+\_\+file(mpi $\ast$\+X, int radix, F\+I\+L\+E $\ast$fin)}{mpi_read_file(mpi *X, int radix, FILE *fin)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+read\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{radix, }
+\item[{{\bf F\+I\+LE} $\ast$}]{fin}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_aa3305289daa8dcc9e70fade0eaa1dc99}{}\label{bignum_8h_aa3305289daa8dcc9e70fade0eaa1dc99}
+
+
+Read X from an opened file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & destination mpi \\
+\hline
+{\em radix} & input numeric base \\
+\hline
+{\em fin} & input file handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or an P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+X\+XX error code 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+read\+\_\+string@{mpi\+\_\+read\+\_\+string}}
+\index{mpi\+\_\+read\+\_\+string@{mpi\+\_\+read\+\_\+string}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+read\+\_\+string(mpi $\ast$\+X, int radix, char $\ast$s)}{mpi_read_string(mpi *X, int radix, char *s)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+read\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{radix, }
+\item[{char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a04f6766b620e96c79268ab183b60be3e}{}\label{bignum_8h_a04f6766b620e96c79268ab183b60be3e}
+
+
+Import from an A\+S\+C\+II string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & destination mpi \\
+\hline
+{\em radix} & input numeric base \\
+\hline
+{\em s} & null-\/terminated string buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or an P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+X\+XX error code 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+self\+\_\+test@{mpi\+\_\+self\+\_\+test}}
+\index{mpi\+\_\+self\+\_\+test@{mpi\+\_\+self\+\_\+test}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+self\+\_\+test(int verbose)}{mpi_self_test(int verbose)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+self\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{int}]{verbose}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ab21c92239348bc2c84513968a3e391b2}{}\label{bignum_8h_ab21c92239348bc2c84513968a3e391b2}
+
+
+Checkup routine. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, or 1 if the test failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+shift\+\_\+l@{mpi\+\_\+shift\+\_\+l}}
+\index{mpi\+\_\+shift\+\_\+l@{mpi\+\_\+shift\+\_\+l}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+shift\+\_\+l(mpi $\ast$\+X, int count)}{mpi_shift_l(mpi *X, int count)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+shift\+\_\+l (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ae2dc6046a79076a73e8cbee5b1126540}{}\label{bignum_8h_ae2dc6046a79076a73e8cbee5b1126540}
+
+
+Left-\/shift\+: X $<$$<$= count. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+shift\+\_\+r@{mpi\+\_\+shift\+\_\+r}}
+\index{mpi\+\_\+shift\+\_\+r@{mpi\+\_\+shift\+\_\+r}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+shift\+\_\+r(mpi $\ast$\+X, int count)}{mpi_shift_r(mpi *X, int count)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+shift\+\_\+r (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a394ee6f5b38e31c6871e23bba9c55b74}{}\label{bignum_8h_a394ee6f5b38e31c6871e23bba9c55b74}
+
+
+Right-\/shift\+: X $>$$>$= count. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+sub\+\_\+abs@{mpi\+\_\+sub\+\_\+abs}}
+\index{mpi\+\_\+sub\+\_\+abs@{mpi\+\_\+sub\+\_\+abs}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+sub\+\_\+abs(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_sub_abs(mpi *X, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+sub\+\_\+abs (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a3bb8202bc009f81e840b9e5e7eeaeb00}{}\label{bignum_8h_a3bb8202bc009f81e840b9e5e7eeaeb00}
+
+
+Unsigned substraction\+: X = $\vert$\+A$\vert$ -\/ $\vert$\+B$\vert$. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+\_\+\+V\+A\+L\+UE if B is greater than A 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+sub\+\_\+int@{mpi\+\_\+sub\+\_\+int}}
+\index{mpi\+\_\+sub\+\_\+int@{mpi\+\_\+sub\+\_\+int}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+sub\+\_\+int(mpi $\ast$\+X, mpi $\ast$\+A, int b)}{mpi_sub_int(mpi *X, mpi *A, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+sub\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a18e3abca9fdc9ef20a24240375d6f2cf}{}\label{bignum_8h_a18e3abca9fdc9ef20a24240375d6f2cf}
+
+
+Signed substraction\+: X = A -\/ b. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+sub\+\_\+mpi@{mpi\+\_\+sub\+\_\+mpi}}
+\index{mpi\+\_\+sub\+\_\+mpi@{mpi\+\_\+sub\+\_\+mpi}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+sub\+\_\+mpi(mpi $\ast$\+X, mpi $\ast$\+A, mpi $\ast$\+B)}{mpi_sub_mpi(mpi *X, mpi *A, mpi *B)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+sub\+\_\+mpi (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{{\bf mpi} $\ast$}]{A, }
+\item[{{\bf mpi} $\ast$}]{B}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a252cf8c54cb8c39a4b8909ffe1390d23}{}\label{bignum_8h_a252cf8c54cb8c39a4b8909ffe1390d23}
+
+
+Signed substraction\+: X = A -\/ B. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, 1 if memory allocation failed 
+\end{DoxyReturn}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+write\+\_\+binary@{mpi\+\_\+write\+\_\+binary}}
+\index{mpi\+\_\+write\+\_\+binary@{mpi\+\_\+write\+\_\+binary}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+write\+\_\+binary(mpi $\ast$\+X, unsigned char $\ast$buf, int buflen)}{mpi_write_binary(mpi *X, unsigned char *buf, int buflen)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+write\+\_\+binary (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{unsigned char $\ast$}]{buf, }
+\item[{int}]{buflen}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a43736f0ee83f68eb5d2649c96cf00f99}{}\label{bignum_8h_a43736f0ee83f68eb5d2649c96cf00f99}
+
+
+Export X into unsigned binary data, big endian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & source mpi \\
+\hline
+{\em buf} & output buffer \\
+\hline
+{\em buflen} & output buffer size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+LL if buf isn\textquotesingle{}t large enough
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Call this function with $\ast$buflen = 0 to obtain the minimum required buffer size in $\ast$buflen. 
+\end{DoxyNote}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+write\+\_\+file@{mpi\+\_\+write\+\_\+file}}
+\index{mpi\+\_\+write\+\_\+file@{mpi\+\_\+write\+\_\+file}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+write\+\_\+file(char $\ast$p, mpi $\ast$\+X, int radix, F\+I\+L\+E $\ast$fout)}{mpi_write_file(char *p, mpi *X, int radix, FILE *fout)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+write\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p, }
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{radix, }
+\item[{{\bf F\+I\+LE} $\ast$}]{fout}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_ab56cad4c3e8b9fd93f4162d0e9f38d96}{}\label{bignum_8h_ab56cad4c3e8b9fd93f4162d0e9f38d96}
+
+
+Write X into an opened file, or stdout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & prefix, can be N\+U\+LL \\
+\hline
+{\em X} & source mpi \\
+\hline
+{\em radix} & output numeric base \\
+\hline
+{\em fout} & output file handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or an P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+X\+XX error code
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Set fout == N\+U\+LL to print X on the console. 
+\end{DoxyNote}
+\index{bignum.\+h@{bignum.\+h}!mpi\+\_\+write\+\_\+string@{mpi\+\_\+write\+\_\+string}}
+\index{mpi\+\_\+write\+\_\+string@{mpi\+\_\+write\+\_\+string}!bignum.\+h@{bignum.\+h}}
+\subsubsection[{\texorpdfstring{mpi\+\_\+write\+\_\+string(mpi $\ast$\+X, int radix, char $\ast$s, int $\ast$slen)}{mpi_write_string(mpi *X, int radix, char *s, int *slen)}}]{\setlength{\rightskip}{0pt plus 5cm}int mpi\+\_\+write\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{{\bf mpi} $\ast$}]{X, }
+\item[{int}]{radix, }
+\item[{char $\ast$}]{s, }
+\item[{int $\ast$}]{slen}
+\end{DoxyParamCaption}
+)}\hypertarget{bignum_8h_a88842f78ee235c537466c17f09b9779e}{}\label{bignum_8h_a88842f78ee235c537466c17f09b9779e}
+
+
+Export into an A\+S\+C\+II string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & source mpi \\
+\hline
+{\em radix} & output numeric base \\
+\hline
+{\em s} & string buffer \\
+\hline
+{\em slen} & string buffer size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, or an P\+O\+L\+A\+R\+S\+S\+L\+\_\+\+E\+R\+R\+\_\+\+M\+P\+I\+\_\+\+X\+XX error code
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Call this function with $\ast$slen = 0 to obtain the minimum required buffer size in $\ast$slen. 
+\end{DoxyNote}

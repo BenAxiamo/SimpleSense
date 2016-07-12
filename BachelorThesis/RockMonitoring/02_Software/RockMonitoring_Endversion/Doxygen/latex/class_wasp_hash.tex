@@ -1,0 +1,128 @@
+\hypertarget{class_wasp_hash}{}\section{Wasp\+Hash Class Reference}
+\label{class_wasp_hash}\index{Wasp\+Hash@{Wasp\+Hash}}
+
+
+\hyperlink{class_wasp_hash}{Wasp\+Hash} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Hash.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_hash_a4f2ee19ac5d0b313e73876903504384c}{Wasp\+Hash} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void {\bfseries print\+Message\+Digest} (char $\ast$algorithm, uint8\+\_\+t $\ast$hash, uint8\+\_\+t size)\hypertarget{class_wasp_hash_abd34104e56d2f7229cdef9a9fcc0a76e}{}\label{class_wasp_hash_abd34104e56d2f7229cdef9a9fcc0a76e}
+
+\item 
+void \hyperlink{class_wasp_hash_adbaf3ecc4ac812f13ea30d07a4ee554d}{md5} (uint8\+\_\+t hash\+\_\+message\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$message, uint32\+\_\+t size\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Its refers to calculate M\+D5 Algorithm. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_hash_a3040b506d6db05bde906d77518e97e2b}{sha} (uint8\+\_\+t alg, uint8\+\_\+t hash\+\_\+message\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$message, uint32\+\_\+t size\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Its refers to calculate S\+HA Algorithms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_hash}{Wasp\+Hash} Class. 
+
+\hyperlink{class_wasp_hash}{Wasp\+Hash} Class defines all the variables and functions used to manage different hash algorithm 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Hash@{Wasp\+Hash}!Wasp\+Hash@{Wasp\+Hash}}
+\index{Wasp\+Hash@{Wasp\+Hash}!Wasp\+Hash@{Wasp\+Hash}}
+\subsubsection[{\texorpdfstring{Wasp\+Hash()}{WaspHash()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Hash\+::\+Wasp\+Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_hash_a4f2ee19ac5d0b313e73876903504384c}{}\label{class_wasp_hash_a4f2ee19ac5d0b313e73876903504384c}
+
+
+class constructor 
+
+Constructors ///////////////////////////////////////////////////////.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Library for managing the H\+A\+SH encryption library
+
+Copyright (C) 2014 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+1 Design\+: David Gascón Implementation\+: Alvaro Gonzalez, Yuri Carmona 
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Hash@{Wasp\+Hash}!md5@{md5}}
+\index{md5@{md5}!Wasp\+Hash@{Wasp\+Hash}}
+\subsubsection[{\texorpdfstring{md5(uint8\+\_\+t hash\+\_\+message[], uint8\+\_\+t $\ast$message, uint32\+\_\+t size\+\_\+message)}{md5(uint8_t hash_message[], uint8_t *message, uint32_t size_message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Hash\+::md5 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{hash\+\_\+message\mbox{[}$\,$\mbox{]}, }
+\item[{uint8\+\_\+t $\ast$}]{message, }
+\item[{uint32\+\_\+t}]{size\+\_\+message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_hash_adbaf3ecc4ac812f13ea30d07a4ee554d}{}\label{class_wasp_hash_adbaf3ecc4ac812f13ea30d07a4ee554d}
+
+
+Its refers to calculate M\+D5 Algorithm. 
+
+takes as input a message of arbitrary length and produces as output a 128-\/bit \char`\"{}fingerprint\char`\"{} or \char`\"{}message digest\char`\"{} of the input
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+\_\+message} & variable which to store message digest \\
+\hline
+{\em message} & message original \\
+\hline
+{\em size\+\_\+message} & size of original message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Hash@{Wasp\+Hash}!sha@{sha}}
+\index{sha@{sha}!Wasp\+Hash@{Wasp\+Hash}}
+\subsubsection[{\texorpdfstring{sha(uint8\+\_\+t alg, uint8\+\_\+t hash\+\_\+message[], uint8\+\_\+t $\ast$message, uint32\+\_\+t size\+\_\+message)}{sha(uint8_t alg, uint8_t hash_message[], uint8_t *message, uint32_t size_message)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Hash\+::sha (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{alg, }
+\item[{uint8\+\_\+t}]{hash\+\_\+message\mbox{[}$\,$\mbox{]}, }
+\item[{uint8\+\_\+t $\ast$}]{message, }
+\item[{uint32\+\_\+t}]{size\+\_\+message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_hash_a3040b506d6db05bde906d77518e97e2b}{}\label{class_wasp_hash_a3040b506d6db05bde906d77518e97e2b}
+
+
+Its refers to calculate S\+HA Algorithms. 
+
+takes as input a message of arbitrary length and produces as output a 128-\/bit, 160-\/bit, 224-\/bit, 256-\/bit, 384-\/bit, 512-\/bit \char`\"{}fingerprint\char`\"{} or \char`\"{}message digest\char`\"{} of the input
+
+
+\begin{DoxyParams}{Parameters}
+{\em alg} & variable to select S\+HA Algoritm \\
+\hline
+{\em hash\+\_\+message} & variable which to store message digest \\
+\hline
+{\em message} & message original \\
+\hline
+{\em size\+\_\+message} & size of original message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/\hyperlink{_wasp_hash_8h}{Wasp\+Hash.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/Wasp\+Hash.\+cpp\end{DoxyCompactItemize}

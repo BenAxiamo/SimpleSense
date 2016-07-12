@@ -1,0 +1,16 @@
+\hypertarget{group__util__delay__basic}{}\section{$<$util/delay\+\_\+basic.h$>$\+: Basic busy-\/wait delay loops}
+\label{group__util__delay__basic}\index{$<$util/delay\+\_\+basic.\+h$>$\+: Basic busy-\/wait delay loops@{$<$util/delay\+\_\+basic.\+h$>$\+: Basic busy-\/wait delay loops}}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{delay__basic_8h}{util/delay\_basic.h}>}
+\end{DoxyCode}
+
+
+The functions in this header file implement simple delay loops that perform a busy-\/waiting. They are typically used to facilitate short delays in the program execution. They are implemented as count-\/down loops with a well-\/known C\+PU cycle count per loop iteration. As such, no other processing can occur simultaneously. It should be kept in mind that the functions described here do not disable interrupts.
+
+In general, for long delays, the use of hardware timers is much preferrable, as they free the C\+PU, and allow for concurrent processing of other events while the timer is running. However, in particular for very short delays, the overhead of setting up a hardware timer is too much compared to the overall delay time.
+
+Two inline functions are provided for the actual delay algorithms. 

@@ -1,0 +1,107 @@
+\hypertarget{group__avr__sleep}{}\section{$<$avr/sleep.h$>$\+: Power Management and Sleep Modes}
+\label{group__avr__sleep}\index{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes@{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}{sleep\+\_\+enable}()                      
+\item 
+\#define \hyperlink{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{sleep\+\_\+cpu}()                                                        
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{sleep_8h}{avr/sleep.h}>}
+\end{DoxyCode}
+
+
+Use of the {\ttfamily S\+L\+E\+EP} instruction can allow an application to reduce its power comsumption considerably. A\+VR devices can be put into different sleep modes. Refer to the datasheet for the details relating to the device you are using.
+
+There are several macros provided in this header file to actually put the device into sleep mode. The simplest way is to optionally set the desired sleep mode using {\ttfamily set\+\_\+sleep\+\_\+mode()} (it usually defaults to idle mode where the C\+PU is put on sleep but all peripheral clocks are still running), and then call {\ttfamily sleep\+\_\+mode()}. This macro automatically sets the sleep enable bit, goes to sleep, and clears the sleep enable bit.
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{sleep_8h}{avr/sleep.h}>}
+
+...
+  set\_sleep\_mode(<mode>);
+  sleep\_mode();
+\end{DoxyCode}
+
+
+Note that unless your purpose is to completely lock the C\+PU (until a hardware reset), interrupts need to be enabled before going to sleep.
+
+As the {\ttfamily sleep\+\_\+mode()} macro might cause race conditions in some situations, the individual steps of manipulating the sleep enable (SE) bit, and actually issuing the {\ttfamily S\+L\+E\+EP} instruction, are provided in the macros {\ttfamily \hyperlink{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}{sleep\+\_\+enable()}}, {\ttfamily sleep\+\_\+disable()}, and {\ttfamily \hyperlink{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{sleep\+\_\+cpu()}}. This also allows for test-\/and-\/sleep scenarios that take care of not missing the interrupt that will awake the device from sleep.
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{interrupt_8h}{avr/interrupt.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{sleep_8h}{avr/sleep.h}>}
+
+...
+  set\_sleep\_mode(<mode>);
+  cli();
+  \textcolor{keywordflow}{if} (some\_condition)
+  \{
+    \hyperlink{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}{sleep\_enable}();
+    sei();
+    \hyperlink{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{sleep\_cpu}();
+    sleep\_disable();
+  \}
+  sei();
+\end{DoxyCode}
+
+
+This sequence ensures an atomic test of {\ttfamily some\+\_\+condition} with interrupts being disabled. If the condition is met, sleep mode will be prepared, and the {\ttfamily S\+L\+E\+EP} instruction will be scheduled immediately after an {\ttfamily S\+EI} instruction. As the intruction right after the {\ttfamily S\+EI} is guaranteed to be executed before an interrupt could trigger, it is sure the device will really be put to sleep.
+
+Some devices have the ability to disable the Brown Out Detector (B\+OD) before going to sleep. This will also reduce power while sleeping. If the specific A\+VR device has this ability then an additional macro is defined\+: {\ttfamily sleep\+\_\+bod\+\_\+disable()}. This macro generates inlined assembly code that will correctly implement the timed sequence for disabling the B\+OD before sleeping. However, there is a limited number of cycles after the B\+OD has been disabled that the device can be put into sleep mode, otherwise the B\+OD will not truly be disabled. Recommended practice is to disable the B\+OD ({\ttfamily sleep\+\_\+bod\+\_\+disable()}), set the interrupts ({\ttfamily sei()}), and then put the device to sleep ({\ttfamily \hyperlink{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{sleep\+\_\+cpu()}}), like so\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{interrupt_8h}{avr/interrupt.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{sleep_8h}{avr/sleep.h}>}
+
+...
+  set\_sleep\_mode(<mode>);
+  cli();
+  \textcolor{keywordflow}{if} (some\_condition)
+  \{
+    \hyperlink{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}{sleep\_enable}();
+    sleep\_bod\_disable();
+    sei();
+    \hyperlink{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{sleep\_cpu}();
+    sleep\_disable();
+  \}
+  sei();
+\end{DoxyCode}
+ 
+
+\subsection{Macro Definition Documentation}
+\index{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes@{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes}!sleep\+\_\+cpu@{sleep\+\_\+cpu}}
+\index{sleep\+\_\+cpu@{sleep\+\_\+cpu}!$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes@{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes}}
+\subsubsection[{\texorpdfstring{sleep\+\_\+cpu}{sleep_cpu}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sleep\+\_\+cpu(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{}\label{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                             \(\backslash\)
+  \_\_asm\_\_ \_\_volatile\_\_ ( \textcolor{stringliteral}{"sleep"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"} :: );    \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Put the device into sleep mode. The SE bit must be set beforehand, and it is recommended to clear it afterwards. \index{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes@{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes}!sleep\+\_\+enable@{sleep\+\_\+enable}}
+\index{sleep\+\_\+enable@{sleep\+\_\+enable}!$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes@{$<$avr/sleep.\+h$>$\+: Power Management and Sleep Modes}}
+\subsubsection[{\texorpdfstring{sleep\+\_\+enable}{sleep_enable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sleep\+\_\+enable(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}{}\label{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                               \(\backslash\)
+  \_SLEEP\_CONTROL\_REG |= (uint8\_t)\_SLEEP\_ENABLE\_MASK;   \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+Put the device in sleep mode. How the device is brought out of sleep mode depends on the specific mode selected with the set\+\_\+sleep\+\_\+mode() function. See the data sheet for your device for more details. 

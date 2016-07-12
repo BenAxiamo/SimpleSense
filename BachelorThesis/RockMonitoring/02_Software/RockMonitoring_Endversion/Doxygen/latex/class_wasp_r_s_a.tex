@@ -1,0 +1,116 @@
+\hypertarget{class_wasp_r_s_a}{}\section{Wasp\+R\+SA Class Reference}
+\label{class_wasp_r_s_a}\index{Wasp\+R\+SA@{Wasp\+R\+SA}}
+
+
+\hyperlink{class_wasp_r_s_a}{Wasp\+R\+SA} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+R\+S\+A.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_r_s_a_af1707e0a117ed4d78494cd830ad58c05}{Wasp\+R\+SA} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_r_s_a_ae8e6ec90330e2a39ec481a2f31da077a}{encrypt} (char $\ast$message, char $\ast$exponent, char $\ast$modulus, char $\ast$encrypted\+\_\+message, int slen)
+\begin{DoxyCompactList}\small\item\em It encrypt a message with R\+SA algorithm. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_r_s_a_a1b5e867114d3ce36a9320bef1b31dec8}{encrypt} (uint8\+\_\+t $\ast$message, uint16\+\_\+t length, char $\ast$exponent, char $\ast$modulus, char $\ast$encrypted\+\_\+message, int slen)
+\item 
+void {\bfseries print\+Message} (char $\ast$encrypted\+\_\+message)\hypertarget{class_wasp_r_s_a_a59c8a1bc52d6cab1ea5ba13278f1e71b}{}\label{class_wasp_r_s_a_a59c8a1bc52d6cab1ea5ba13278f1e71b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_r_s_a}{Wasp\+R\+SA} Class. 
+
+\hyperlink{class_wasp_r_s_a}{Wasp\+R\+SA} Class defines all the variables and functions used for managing the R\+SA algorithm 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+R\+SA@{Wasp\+R\+SA}!Wasp\+R\+SA@{Wasp\+R\+SA}}
+\index{Wasp\+R\+SA@{Wasp\+R\+SA}!Wasp\+R\+SA@{Wasp\+R\+SA}}
+\subsubsection[{\texorpdfstring{Wasp\+R\+S\+A()}{WaspRSA()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+R\+S\+A\+::\+Wasp\+R\+SA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_s_a_af1707e0a117ed4d78494cd830ad58c05}{}\label{class_wasp_r_s_a_af1707e0a117ed4d78494cd830ad58c05}
+
+
+class constructor 
+
+It initializes some variables 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+R\+SA@{Wasp\+R\+SA}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Wasp\+R\+SA@{Wasp\+R\+SA}}
+\subsubsection[{\texorpdfstring{encrypt(char $\ast$message, char $\ast$exponent, char $\ast$modulus, char $\ast$encrypted\+\_\+message, int slen)}{encrypt(char *message, char *exponent, char *modulus, char *encrypted_message, int slen)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+R\+S\+A\+::encrypt (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{message, }
+\item[{char $\ast$}]{exponent, }
+\item[{char $\ast$}]{modulus, }
+\item[{char $\ast$}]{encrypted\+\_\+message, }
+\item[{int}]{slen}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_s_a_ae8e6ec90330e2a39ec481a2f31da077a}{}\label{class_wasp_r_s_a_ae8e6ec90330e2a39ec481a2f31da077a}
+
+
+It encrypt a message with R\+SA algorithm. 
+
+It gets the baud rate from \textquotesingle{}U\+S\+B\+\_\+\+R\+A\+TE\textquotesingle{} 
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & modulus\+: The modulus necesary to calculate encrypted message with R\+SA algorithm \\
+\hline
+{\em char$\ast$} & modulus\+: \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$\+: encrypted message 
+\end{DoxyReturn}
+Variables Declaration \textquotesingle{}M\textquotesingle{} for message \textquotesingle{}E\textquotesingle{} for R\+SA public exponent \textquotesingle{}N\textquotesingle{} for R\+SA public modulus \textquotesingle{}X\textquotesingle{} for encrypted result
+
+Variable initialization
+
+Plain Message
+
+Public Key
+
+Modulus
+
+X = M$^\wedge$E mod N \index{Wasp\+R\+SA@{Wasp\+R\+SA}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Wasp\+R\+SA@{Wasp\+R\+SA}}
+\subsubsection[{\texorpdfstring{encrypt(uint8\+\_\+t $\ast$message, uint16\+\_\+t length, char $\ast$exponent, char $\ast$modulus, char $\ast$encrypted\+\_\+message, int slen)}{encrypt(uint8_t *message, uint16_t length, char *exponent, char *modulus, char *encrypted_message, int slen)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+R\+S\+A\+::encrypt (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{message, }
+\item[{uint16\+\_\+t}]{length, }
+\item[{char $\ast$}]{exponent, }
+\item[{char $\ast$}]{modulus, }
+\item[{char $\ast$}]{encrypted\+\_\+message, }
+\item[{int}]{slen}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_s_a_a1b5e867114d3ce36a9320bef1b31dec8}{}\label{class_wasp_r_s_a_a1b5e867114d3ce36a9320bef1b31dec8}
+Variables Declaration \textquotesingle{}M\textquotesingle{} for message \textquotesingle{}E\textquotesingle{} for R\+SA public exponent \textquotesingle{}N\textquotesingle{} for R\+SA public modulus \textquotesingle{}X\textquotesingle{} for encrypted result
+
+Variable initialization
+
+Plain Message
+
+Public Key
+
+Modulus
+
+X = M$^\wedge$E mod N 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+R\+S\+A/\hyperlink{_wasp_r_s_a_8h}{Wasp\+R\+S\+A.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+R\+S\+A/\hyperlink{_wasp_r_s_a_8cpp}{Wasp\+R\+S\+A.\+cpp}\end{DoxyCompactItemize}

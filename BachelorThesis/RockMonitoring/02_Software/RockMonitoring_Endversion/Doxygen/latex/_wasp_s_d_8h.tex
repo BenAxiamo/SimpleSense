@@ -1,0 +1,98 @@
+\hypertarget{_wasp_s_d_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+SD.h File Reference}
+\label{_wasp_s_d_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+S\+D.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+S\+D.\+h}}
+
+
+Library for managing the SD Card.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$sd\+\_\+utilities/\+Sd2\+Card.\+h$>$}\\*
+{\ttfamily \#include $<$sd\+\_\+utilities/\+Sd\+Volume.\+h$>$}\\*
+{\ttfamily \#include $<$sd\+\_\+utilities/\+Sd\+File.\+h$>$}\\*
+{\ttfamily \#include $<$sd\+\_\+utilities/\+Sd\+Fat.\+h$>$}\\*
+{\ttfamily \#include $<$sd\+\_\+utilities/\+Sd\+Info.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_s_d}{Wasp\+SD}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_s_d}{Wasp\+SD} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_s_d_8h_adaae1302dbec4eb1121a41df1da511cc}{F\+I\+L\+E\+S\+Y\+S\+T\+E\+M\+\_\+\+L\+I\+N\+UX}\hypertarget{_wasp_s_d_8h_adaae1302dbec4eb1121a41df1da511cc}{}\label{_wasp_s_d_8h_adaae1302dbec4eb1121a41df1da511cc}
+
+\begin{DoxyCompactList}\small\item\em determines the type of E\+OL character, uncomment for Windows, leave for L\+I\+N/\+M\+AC \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a360cae4c2a7e6fda1662c344f2da12ba}{D\+O\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~256\hypertarget{_wasp_s_d_8h_a360cae4c2a7e6fda1662c344f2da12ba}{}\label{_wasp_s_d_8h_a360cae4c2a7e6fda1662c344f2da12ba}
+
+\begin{DoxyCompactList}\small\item\em Buffer size for storing data. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_ae0b2e231d682426d06cc13cc79d8a92d}{B\+I\+N\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}~100\hypertarget{_wasp_s_d_8h_ae0b2e231d682426d06cc13cc79d8a92d}{}\label{_wasp_s_d_8h_ae0b2e231d682426d06cc13cc79d8a92d}
+
+\begin{DoxyCompactList}\small\item\em Buffer size for storing binary data. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a8ce3b620256764cc0db8e8da6d13458b}{N\+O\+T\+H\+I\+N\+G\+\_\+\+F\+A\+I\+L\+ED}~0\hypertarget{_wasp_s_d_8h_a8ce3b620256764cc0db8e8da6d13458b}{}\label{_wasp_s_d_8h_a8ce3b620256764cc0db8e8da6d13458b}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Nothing failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a6425a1c17670c5edaacb20fde72aaebd}{C\+A\+R\+D\+\_\+\+N\+O\+T\+\_\+\+P\+R\+E\+S\+E\+NT}~1\hypertarget{_wasp_s_d_8h_a6425a1c17670c5edaacb20fde72aaebd}{}\label{_wasp_s_d_8h_a6425a1c17670c5edaacb20fde72aaebd}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Card not present in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a7e301ccf823587cc70939686040cd331}{I\+N\+I\+T\+\_\+\+F\+A\+I\+L\+ED}~2\hypertarget{_wasp_s_d_8h_a7e301ccf823587cc70939686040cd331}{}\label{_wasp_s_d_8h_a7e301ccf823587cc70939686040cd331}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Initialization failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_addeda36546e999167645f423f15f7b40}{V\+O\+L\+U\+M\+E\+\_\+\+F\+A\+I\+L\+ED}~4\hypertarget{_wasp_s_d_8h_addeda36546e999167645f423f15f7b40}{}\label{_wasp_s_d_8h_addeda36546e999167645f423f15f7b40}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Volume init failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a9d90fa025bbfbed9dcf760f525221401}{R\+O\+O\+T\+\_\+\+F\+A\+I\+L\+ED}~8\hypertarget{_wasp_s_d_8h_a9d90fa025bbfbed9dcf760f525221401}{}\label{_wasp_s_d_8h_a9d90fa025bbfbed9dcf760f525221401}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Opening root directory failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_aa0b8e6717825b563049535faad786783}{T\+R\+U\+N\+C\+A\+T\+E\+D\+\_\+\+D\+A\+TA}~16\hypertarget{_wasp_s_d_8h_aa0b8e6717825b563049535faad786783}{}\label{_wasp_s_d_8h_aa0b8e6717825b563049535faad786783}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Data has been truncated in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_abde48ee05fd7b864a4f44ed92afd066e}{F\+I\+L\+E\+\_\+\+O\+P\+E\+N\+\_\+\+E\+R\+R\+OR}~32\hypertarget{_wasp_s_d_8h_abde48ee05fd7b864a4f44ed92afd066e}{}\label{_wasp_s_d_8h_abde48ee05fd7b864a4f44ed92afd066e}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Opening a file failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a11ff5d56d21426a9289ef7dbd14a3061}{F\+I\+L\+E\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR}~64\hypertarget{_wasp_s_d_8h_a11ff5d56d21426a9289ef7dbd14a3061}{}\label{_wasp_s_d_8h_a11ff5d56d21426a9289ef7dbd14a3061}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Creating a file failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a5a60e8469dd00b4bac8fa363638585b5}{D\+I\+R\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR}~128\hypertarget{_wasp_s_d_8h_a5a60e8469dd00b4bac8fa363638585b5}{}\label{_wasp_s_d_8h_a5a60e8469dd00b4bac8fa363638585b5}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Creating a directory failed in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_aa9fbd52c59316dc4a20c7d4c660b2e14}{F\+I\+L\+E\+\_\+\+W\+R\+I\+T\+I\+N\+G\+\_\+\+E\+R\+R\+OR}~256\hypertarget{_wasp_s_d_8h_aa9fbd52c59316dc4a20c7d4c660b2e14}{}\label{_wasp_s_d_8h_aa9fbd52c59316dc4a20c7d4c660b2e14}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Writing a file failed in this case. \end{DoxyCompactList}\item 
+\#define {\bfseries F\+I\+L\+E\+\_\+\+S\+E\+E\+K\+I\+N\+G\+\_\+\+E\+R\+R\+OR}~512\hypertarget{_wasp_s_d_8h_a60dfb1d48142df07c93cef7a5808b110}{}\label{_wasp_s_d_8h_a60dfb1d48142df07c93cef7a5808b110}
+
+\item 
+\#define \hyperlink{_wasp_s_d_8h_a72f4de870dee4437d8ddd5e119fce25e}{C\+A\+R\+D\+\_\+\+N\+O\+T\+\_\+\+P\+R\+E\+S\+E\+N\+T\+\_\+em}~\char`\"{}no \hyperlink{_wasp_s_d_8h_a3e54945e7c5d714916d107b13a1ecb83}{SD}\char`\"{}\hypertarget{_wasp_s_d_8h_a72f4de870dee4437d8ddd5e119fce25e}{}\label{_wasp_s_d_8h_a72f4de870dee4437d8ddd5e119fce25e}
+
+\begin{DoxyCompactList}\small\item\em Flag possible values. Card not present in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_ab203d0f5a7e858ae7b7869dbdbf29a36}{S\+D\+\_\+\+ON}~1\hypertarget{_wasp_s_d_8h_ab203d0f5a7e858ae7b7869dbdbf29a36}{}\label{_wasp_s_d_8h_ab203d0f5a7e858ae7b7869dbdbf29a36}
+
+\begin{DoxyCompactList}\small\item\em SD Power Modes. ON in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a9fd6e75b8202ea0b1838edb215fe1848}{S\+D\+\_\+\+O\+FF}~2\hypertarget{_wasp_s_d_8h_a9fd6e75b8202ea0b1838edb215fe1848}{}\label{_wasp_s_d_8h_a9fd6e75b8202ea0b1838edb215fe1848}
+
+\begin{DoxyCompactList}\small\item\em SD Power Modes. O\+FF in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a9f7d3c65926b4e7832e1869c2cdaa5b2}{M\+A\+X\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+L\+EN}~50\hypertarget{_wasp_s_d_8h_a9f7d3c65926b4e7832e1869c2cdaa5b2}{}\label{_wasp_s_d_8h_a9f7d3c65926b4e7832e1869c2cdaa5b2}
+
+\begin{DoxyCompactList}\small\item\em Used in {\ttfamily get\+Next\+Path\+Component} function as maximum length. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_s_d_8h_a8bc0b75e519319c2cdaf07a96b817c2c}{P\+A\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}~\hyperlink{_wasp_s_d_8h_a9f7d3c65926b4e7832e1869c2cdaa5b2}{M\+A\+X\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+L\+EN}+1\hypertarget{_wasp_s_d_8h_a8bc0b75e519319c2cdaf07a96b817c2c}{}\label{_wasp_s_d_8h_a8bc0b75e519319c2cdaf07a96b817c2c}
+
+\begin{DoxyCompactList}\small\item\em Maximum length for path buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_s_d}{Wasp\+SD} \hyperlink{_wasp_s_d_8h_a3e54945e7c5d714916d107b13a1ecb83}{SD}\hypertarget{_wasp_s_d_8h_a3e54945e7c5d714916d107b13a1ecb83}{}\label{_wasp_s_d_8h_a3e54945e7c5d714916d107b13a1ecb83}
+
+\begin{DoxyCompactList}\small\item\em E\+ND F\+U\+N\+C\+T\+I\+O\+NS //////////////////////////////////////////////////////. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the SD Card. 
+
+Copyright (C) 2014 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+4 Design\+: David Gascón Implementation\+: David Cuartielles, Alberto Bielsa, Yuri Carmona 

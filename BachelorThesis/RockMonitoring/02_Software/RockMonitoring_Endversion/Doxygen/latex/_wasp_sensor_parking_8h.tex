@@ -1,0 +1,94 @@
+\hypertarget{_wasp_sensor_parking_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Parking/\+Wasp\+Sensor\+Parking.h File Reference}
+\label{_wasp_sensor_parking_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Parking/\+Wasp\+Sensor\+Parking.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Parking/\+Wasp\+Sensor\+Parking.\+h}}
+
+
+Library for managing the Parking Sensor Board.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$Wasp\+Constants.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_sensor_parking}{Wasp\+Sensor\+Parking}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_sensor_parking}{Wasp\+Sensor\+Parking} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a2637870fd30c950999b6778f93f13dd8}{S\+E\+N\+S\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+X}~A\+N\+A\+L\+O\+G1\hypertarget{_wasp_sensor_parking_8h_a2637870fd30c950999b6778f93f13dd8}{}\label{_wasp_sensor_parking_8h_a2637870fd30c950999b6778f93f13dd8}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking X axis input. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_aab6f56bf10fa001a532b808f59e90260}{S\+E\+N\+S\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+Y}~A\+N\+A\+L\+O\+G2\hypertarget{_wasp_sensor_parking_8h_aab6f56bf10fa001a532b808f59e90260}{}\label{_wasp_sensor_parking_8h_aab6f56bf10fa001a532b808f59e90260}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking Y axis input. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a738f91501265d7963af8e0f190e27dcd}{S\+E\+N\+S\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+Z}~A\+N\+A\+L\+O\+G5\hypertarget{_wasp_sensor_parking_8h_a738f91501265d7963af8e0f190e27dcd}{}\label{_wasp_sensor_parking_8h_a738f91501265d7963af8e0f190e27dcd}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking Z axis input. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a5843d7d00c7414526b685f08e626cc3e}{S\+E\+N\+S\+\_\+\+P\+A\+R\+K\+I\+N\+G\+\_\+T}~A\+N\+A\+L\+O\+G7\hypertarget{_wasp_sensor_parking_8h_a5843d7d00c7414526b685f08e626cc3e}{}\label{_wasp_sensor_parking_8h_a5843d7d00c7414526b685f08e626cc3e}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking Temperature input. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_ac3e28e3cb24d0298de6ce9b963ffcb0c}{P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+X}~D\+I\+G\+I\+T\+A\+L2\hypertarget{_wasp_sensor_parking_8h_ac3e28e3cb24d0298de6ce9b963ffcb0c}{}\label{_wasp_sensor_parking_8h_ac3e28e3cb24d0298de6ce9b963ffcb0c}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking X set/reset output. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a06a21ff978ffc2db7ba478720115cd43}{P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+Y}~D\+I\+G\+I\+T\+A\+L1\hypertarget{_wasp_sensor_parking_8h_a06a21ff978ffc2db7ba478720115cd43}{}\label{_wasp_sensor_parking_8h_a06a21ff978ffc2db7ba478720115cd43}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking Y set/reset output. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_afaf95f2f9b321da7d08c0823fe892635}{P\+A\+R\+K\+I\+N\+G\+\_\+\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+Z}~D\+I\+G\+I\+T\+A\+L3\hypertarget{_wasp_sensor_parking_8h_afaf95f2f9b321da7d08c0823fe892635}{}\label{_wasp_sensor_parking_8h_afaf95f2f9b321da7d08c0823fe892635}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Sensor Parking Z set/reset output. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a6b06944ea6627b06bf3f908e509a0dee}{P\+A\+R\+K\+I\+N\+G\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}~20\hypertarget{_wasp_sensor_parking_8h_a6b06944ea6627b06bf3f908e509a0dee}{}\label{_wasp_sensor_parking_8h_a6b06944ea6627b06bf3f908e509a0dee}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Reference Threshold for state estimation. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a29390fb1e69803cb9a6183ee5aca653d}{P\+A\+R\+K\+I\+N\+G\+\_\+\+E\+M\+P\+TY}~0\hypertarget{_wasp_sensor_parking_8h_a29390fb1e69803cb9a6183ee5aca653d}{}\label{_wasp_sensor_parking_8h_a29390fb1e69803cb9a6183ee5aca653d}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Empty lot state. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a61091aeb3c6ee8deede192d2e5d14c7a}{P\+A\+R\+K\+I\+N\+G\+\_\+\+O\+C\+C\+U\+P\+I\+ED}~1\hypertarget{_wasp_sensor_parking_8h_a61091aeb3c6ee8deede192d2e5d14c7a}{}\label{_wasp_sensor_parking_8h_a61091aeb3c6ee8deede192d2e5d14c7a}
+
+\begin{DoxyCompactList}\small\item\em Sensor Types. Occupied lot state. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a35f0ec7c58a1293ef0fd399c846f9cda}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+E\+F\+X2}~186;\hypertarget{_wasp_sensor_parking_8h_a35f0ec7c58a1293ef0fd399c846f9cda}{}\label{_wasp_sensor_parking_8h_a35f0ec7c58a1293ef0fd399c846f9cda}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. X axis degree two compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_ac32e4760166ce65457f78f822dad8e07}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+E\+F\+Y2}~190;\hypertarget{_wasp_sensor_parking_8h_ac32e4760166ce65457f78f822dad8e07}{}\label{_wasp_sensor_parking_8h_ac32e4760166ce65457f78f822dad8e07}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. Y axis degree two compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a62c64d12005d720197da7c6594fb5e24}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+E\+F\+Z2}~194;\hypertarget{_wasp_sensor_parking_8h_a62c64d12005d720197da7c6594fb5e24}{}\label{_wasp_sensor_parking_8h_a62c64d12005d720197da7c6594fb5e24}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. Z axis degree two compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_ac9cd815cc60ddced59f6320907c7bbc8}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+E\+FX}~198;\hypertarget{_wasp_sensor_parking_8h_ac9cd815cc60ddced59f6320907c7bbc8}{}\label{_wasp_sensor_parking_8h_ac9cd815cc60ddced59f6320907c7bbc8}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. X axis degree one compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_abf05adb2c2317da9378b9bf9e3b67e41}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+E\+FY}~202;\hypertarget{_wasp_sensor_parking_8h_abf05adb2c2317da9378b9bf9e3b67e41}{}\label{_wasp_sensor_parking_8h_abf05adb2c2317da9378b9bf9e3b67e41}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. Y axis degree one compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a708477b8e357e794440a58b8b0df2854}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+E\+FZ}~206;\hypertarget{_wasp_sensor_parking_8h_a708477b8e357e794440a58b8b0df2854}{}\label{_wasp_sensor_parking_8h_a708477b8e357e794440a58b8b0df2854}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. Z axis degree one compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_a24c0315b1e9068712c9ebad9c32cd1f0}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+N\+S\+TX}~210;\hypertarget{_wasp_sensor_parking_8h_a24c0315b1e9068712c9ebad9c32cd1f0}{}\label{_wasp_sensor_parking_8h_a24c0315b1e9068712c9ebad9c32cd1f0}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. X axis constant compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_aa22152f8c30c31f139cda900d12ea5b1}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+N\+S\+TY}~214;\hypertarget{_wasp_sensor_parking_8h_aa22152f8c30c31f139cda900d12ea5b1}{}\label{_wasp_sensor_parking_8h_aa22152f8c30c31f139cda900d12ea5b1}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. Y axis constant compensation coefficient Address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_parking_8h_ac5c340221e13d0a640476361f3007a01}{P\+A\+R\+K\+I\+N\+G\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+O\+N\+S\+TZ}~218;\hypertarget{_wasp_sensor_parking_8h_ac5c340221e13d0a640476361f3007a01}{}\label{_wasp_sensor_parking_8h_ac5c340221e13d0a640476361f3007a01}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address. Z axis constant compensation coefficient Address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_parking}{Wasp\+Sensor\+Parking} {\bfseries Sensor\+Parking}\hypertarget{_wasp_sensor_parking_8h_abaa93dae6e83dcc2e340fbc10aec1118}{}\label{_wasp_sensor_parking_8h_abaa93dae6e83dcc2e340fbc10aec1118}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the Parking Sensor Board. 
+
+Copyright (C) 2013 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+0 Design\+: David Gascón Implementation\+: Alberto Bielsa, Manuel Calahorra 

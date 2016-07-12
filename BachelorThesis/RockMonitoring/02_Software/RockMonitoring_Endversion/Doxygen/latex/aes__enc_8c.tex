@@ -1,0 +1,32 @@
+\hypertarget{aes__enc_8c}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes\+\_\+enc.c File Reference}
+\label{aes__enc_8c}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes\+\_\+enc.\+c@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes\+\_\+enc.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}aes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aes\+\_\+sbox.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aes\+\_\+enc.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\\*
+{\ttfamily \#include $<$pins\+\_\+waspmote.\+h$>$}\\*
+{\ttfamily \#include $<$wiring.\+h$>$}\\*
+{\ttfamily \#include $<$util/delay.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries aes\+\_\+shiftcol} (void $\ast$data, uint8\+\_\+t shift)\hypertarget{aes__enc_8c_a8c30f104a88e4f93e3868c954fbfe7c7}{}\label{aes__enc_8c_a8c30f104a88e4f93e3868c954fbfe7c7}
+
+\item 
+void {\bfseries aes\+\_\+encrypt\+\_\+core} (\hyperlink{structaes__cipher__state__t}{aes\+\_\+cipher\+\_\+state\+\_\+t} $\ast$state, const \hyperlink{structaes__genctx__t}{aes\+\_\+genctx\+\_\+t} $\ast$ks, uint8\+\_\+t rounds)\hypertarget{aes__enc_8c_a103e47641683159c74581fce931a26c5}{}\label{aes__enc_8c_a103e47641683159c74581fce931a26c5}
+
+\item 
+void {\bfseries gmix\+\_\+column} (uint8\+\_\+t $\ast$r)\hypertarget{aes__enc_8c_aa4747cf84ea3268b5db06c5fe56fa438}{}\label{aes__enc_8c_aa4747cf84ea3268b5db06c5fe56fa438}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\href{mailto:daniel.otte@rub.de}{\tt daniel.\+otte@rub.\+de} \begin{DoxyAuthor}{Author}
+Daniel Otte 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2008-\/12-\/30  G\+P\+Lv3 or later 
+\end{DoxyDate}

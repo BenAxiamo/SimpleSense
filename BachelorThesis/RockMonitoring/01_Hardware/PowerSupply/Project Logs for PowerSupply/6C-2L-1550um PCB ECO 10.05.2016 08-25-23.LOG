@@ -1,0 +1,5 @@
+Added Component: Designator=X5(LötPad)
+Added Pin To Net: NetName=NetU1_8 Pin=U1-8
+Added Pin To Net: NetName=NetU1_8 Pin=X5-1
+Added Net: Name=NetU1_8
+Added Member To Class: ClassName=power_supply Member=Component X5 LötPad

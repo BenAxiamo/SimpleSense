@@ -1,0 +1,117 @@
+\hypertarget{group__setjmp}{}\section{$<$setjmp.\+h$>$\+: Non-\/local goto}
+\label{group__setjmp}\index{$<$setjmp.\+h$>$\+: Non-\/local goto@{$<$setjmp.\+h$>$\+: Non-\/local goto}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp} (jmp\+\_\+buf \+\_\+\+\_\+jmpb)
+\begin{DoxyCompactList}\small\item\em Save stack context for non-\/local goto. \end{DoxyCompactList}\item 
+void \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp} (jmp\+\_\+buf \+\_\+\+\_\+jmpb, int \+\_\+\+\_\+ret) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+
+\begin{DoxyCompactList}\small\item\em Non-\/local jump to a saved stack context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+While the C language has the dreaded {\ttfamily goto} statement, it can only be used to jump to a label in the same (local) function. In order to jump directly to another (non-\/local) function, the C library provides the \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} and \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} functions. \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} and \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} are useful for dealing with errors and interrupts encountered in a low-\/level subroutine of a program.
+
+\begin{DoxyNote}{Note}
+\hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} and \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} make programs hard to understand and maintain. If possible, an alternative should be used.
+
+\hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} can destroy changes made to global register variables (see faq\+\_\+regbind).
+\end{DoxyNote}
+For a very detailed discussion of \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()}/longjmp(), see Chapter 7 of {\itshape Advanced Programming in the U\+N\+IX Environment}, by W. Richard Stevens.
+
+Example\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{setjmp_8h}{setjmp.h}>}
+
+jmp\_buf env;
+
+\textcolor{keywordtype}{int} main (\textcolor{keywordtype}{void})
+\{
+    \textcolor{keywordflow}{if} (\hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp} (env))
+    \{
+        ... handle error ...
+    \}
+
+    \textcolor{keywordflow}{while} (1)
+    \{
+       ... main processing loop which calls foo() some where ...
+    \}
+\}
+
+...
+
+\textcolor{keywordtype}{void} foo (\textcolor{keywordtype}{void})
+\{
+    ... blah, blah, blah ...
+
+    \textcolor{keywordflow}{if} (err)
+    \{
+        \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp} (env, 1);
+    \}
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Function Documentation}
+\index{$<$setjmp.\+h$>$\+: Non-\/local goto@{$<$setjmp.\+h$>$\+: Non-\/local goto}!longjmp@{longjmp}}
+\index{longjmp@{longjmp}!$<$setjmp.\+h$>$\+: Non-\/local goto@{$<$setjmp.\+h$>$\+: Non-\/local goto}}
+\subsubsection[{\texorpdfstring{longjmp(jmp\+\_\+buf \+\_\+\+\_\+jmpb, int \+\_\+\+\_\+ret) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+}{longjmp(jmp_buf __jmpb, int __ret) __ATTR_NORETURN__}}]{\setlength{\rightskip}{0pt plus 5cm}void longjmp (
+\begin{DoxyParamCaption}
+\item[{jmp\+\_\+buf}]{\+\_\+\+\_\+jmpb, }
+\item[{int}]{\+\_\+\+\_\+ret}
+\end{DoxyParamCaption}
+)}\hypertarget{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{}\label{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}
+
+
+Non-\/local jump to a saved stack context. 
+
+
+\begin{DoxyCode}
+1 #include <setjmp.h>
+\end{DoxyCode}
+
+
+\hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} restores the environment saved by the last call of \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} with the corresponding {\itshape \+\_\+\+\_\+jmpb} argument. After \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} is completed, program execution continues as if the corresponding call of \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} had just returned the value {\itshape \+\_\+\+\_\+ret}.
+
+\begin{DoxyNote}{Note}
+\hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} cannot cause 0 to be returned. If \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} is invoked with a second argument of 0, 1 will be returned instead.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+jmpb} & Information saved by a previous call to \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()}. \\
+\hline
+{\em \+\_\+\+\_\+ret} & Value to return to the caller of \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function never returns. 
+\end{DoxyReturn}
+\index{$<$setjmp.\+h$>$\+: Non-\/local goto@{$<$setjmp.\+h$>$\+: Non-\/local goto}!setjmp@{setjmp}}
+\index{setjmp@{setjmp}!$<$setjmp.\+h$>$\+: Non-\/local goto@{$<$setjmp.\+h$>$\+: Non-\/local goto}}
+\subsubsection[{\texorpdfstring{setjmp(jmp\+\_\+buf \+\_\+\+\_\+jmpb)}{setjmp(jmp_buf __jmpb)}}]{\setlength{\rightskip}{0pt plus 5cm}int setjmp (
+\begin{DoxyParamCaption}
+\item[{jmp\+\_\+buf}]{\+\_\+\+\_\+jmpb}
+\end{DoxyParamCaption}
+)}\hypertarget{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{}\label{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}
+
+
+Save stack context for non-\/local goto. 
+
+
+\begin{DoxyCode}
+1 #include <setjmp.h>
+\end{DoxyCode}
+
+
+\hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} saves the stack context/environment in {\itshape \+\_\+\+\_\+jmpb} for later use by \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()}. The stack context will be invalidated if the function which called \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+jmpb} & Variable of type {\ttfamily jmp\+\_\+buf} which holds the stack information such that the environment can be restored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp()} returns 0 if returning directly, and non-\/zero when returning from \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp()} using the saved context. 
+\end{DoxyReturn}

@@ -1,0 +1,163 @@
+\hypertarget{class_sd_file}{}\section{Sd\+File Class Reference}
+\label{class_sd_file}\index{Sd\+File@{Sd\+File}}
+
+
+\hyperlink{class_sd_base_file}{Sd\+Base\+File} with Print.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+File.\+h$>$}
+
+Inheritance diagram for Sd\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sd_file}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sd_file_acacaaf3201d9eb149183cf52f1f139a5}{Sd\+File} (const char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name}, uint8\+\_\+t oflag)
+\item 
+bool \hyperlink{class_sd_file_adfb128479bcdc998b09151b2c47e828f}{get\+Write\+Error} ()
+\item 
+void \hyperlink{class_sd_file_ac9898f5e004588267d8a31762ac47e60}{clear\+Write\+Error} ()
+\item 
+size\+\_\+t \hyperlink{class_sd_file_a67267a4b63d03a16e099195935613006}{write} (uint8\+\_\+t b)
+\item 
+int \hyperlink{class_sd_file_a489af4bffef36ee4c22d422ba68b1b00}{write} (const char $\ast$str)
+\item 
+int \hyperlink{class_sd_file_a7329a9bde292b3baad6d6dfbd72afe90}{write} (const void $\ast$buf, size\+\_\+t nbyte)
+\item 
+void \hyperlink{class_sd_file_adaa153fed109a0a03cfd545a259de4fe}{write\+\_\+P} (\hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P} str)
+\item 
+void \hyperlink{class_sd_file_ad760d51410f36fd1e1b005a754624954}{writeln\+\_\+P} (\hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P} str)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_sd_base_file}{Sd\+Base\+File} with Print. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sd\+File@{Sd\+File}!Sd\+File@{Sd\+File}}
+\index{Sd\+File@{Sd\+File}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{Sd\+File(const char $\ast$name, uint8\+\_\+t oflag)}{SdFile(const char *name, uint8_t oflag)}}]{\setlength{\rightskip}{0pt plus 5cm}Sd\+File\+::\+Sd\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{uint8\+\_\+t}]{oflag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_file_acacaaf3201d9eb149183cf52f1f139a5}{}\label{class_sd_file_acacaaf3201d9eb149183cf52f1f139a5}
+Create a file object and open it in the current working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for a file to be opened.\\
+\hline
+\mbox{\tt in}  & {\em oflag} & Values for {\itshape oflag} are constructed by a bitwise-\/inclusive OR of open flags. see \hyperlink{class_sd_base_file_a4b88be0d893bcada9b203bdd33fff8e2}{Sd\+Base\+File\+::open(\+Sd\+Base\+File$\ast$, const char$\ast$, uint8\+\_\+t)}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Sd\+File@{Sd\+File}!clear\+Write\+Error@{clear\+Write\+Error}}
+\index{clear\+Write\+Error@{clear\+Write\+Error}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{clear\+Write\+Error()}{clearWriteError()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+File\+::clear\+Write\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_file_ac9898f5e004588267d8a31762ac47e60}{}\label{class_sd_file_ac9898f5e004588267d8a31762ac47e60}
+Set write\+Error to zero \index{Sd\+File@{Sd\+File}!get\+Write\+Error@{get\+Write\+Error}}
+\index{get\+Write\+Error@{get\+Write\+Error}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{get\+Write\+Error()}{getWriteError()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+File\+::get\+Write\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_file_adfb128479bcdc998b09151b2c47e828f}{}\label{class_sd_file_adfb128479bcdc998b09151b2c47e828f}
+\begin{DoxyReturn}{Returns}
+value of write\+Error 
+\end{DoxyReturn}
+\index{Sd\+File@{Sd\+File}!write@{write}}
+\index{write@{write}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{write(uint8\+\_\+t b)}{write(uint8_t b)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Sd\+File\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_file_a67267a4b63d03a16e099195935613006}{}\label{class_sd_file_a67267a4b63d03a16e099195935613006}
+Write a byte to a file. Required by the Arduino Print class. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em b} & the byte to be written. Use get\+Write\+Error to check for errors. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 for success and 0 for failure. 
+\end{DoxyReturn}
+\index{Sd\+File@{Sd\+File}!write@{write}}
+\index{write@{write}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{write(const char $\ast$str)}{write(const char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sd\+File\+::write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_file_a489af4bffef36ee4c22d422ba68b1b00}{}\label{class_sd_file_a489af4bffef36ee4c22d422ba68b1b00}
+Write a string to a file. Used by the Arduino Print class. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & Pointer to the string. Use get\+Write\+Error to check for errors. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+count of characters written for success or -\/1 for failure. 
+\end{DoxyReturn}
+\index{Sd\+File@{Sd\+File}!write@{write}}
+\index{write@{write}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{write(const void $\ast$buf, size\+\_\+t nbyte)}{write(const void *buf, size_t nbyte)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sd\+File\+::write (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buf, }
+\item[{size\+\_\+t}]{nbyte}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_file_a7329a9bde292b3baad6d6dfbd72afe90}{}\label{class_sd_file_a7329a9bde292b3baad6d6dfbd72afe90}
+Write data to an open file.
+
+\begin{DoxyNote}{Note}
+Data is moved to the cache but may not be written to the storage device until \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} is called.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & Pointer to the location of the data to be written.\\
+\hline
+\mbox{\tt in}  & {\em nbyte} & Number of bytes to write.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+For success \hyperlink{class_sd_file_a67267a4b63d03a16e099195935613006}{write()} returns the number of bytes written, always {\itshape nbyte}. If an error occurs, \hyperlink{class_sd_file_a67267a4b63d03a16e099195935613006}{write()} returns -\/1. Possible errors include \hyperlink{class_sd_file_a67267a4b63d03a16e099195935613006}{write()} is called before a file has been opened, write is called for a read-\/only file, device is full, a corrupt file system or an I/O error. 
+\end{DoxyReturn}
+\index{Sd\+File@{Sd\+File}!write\+\_\+P@{write\+\_\+P}}
+\index{write\+\_\+P@{write\+\_\+P}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{write\+\_\+\+P(\+P\+G\+M\+\_\+\+P str)}{write_P(PGM_P str)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+File\+::write\+\_\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+G\+M\+\_\+P}}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_file_adaa153fed109a0a03cfd545a259de4fe}{}\label{class_sd_file_adaa153fed109a0a03cfd545a259de4fe}
+Write a P\+R\+O\+G\+M\+EM string to a file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & Pointer to the P\+R\+O\+G\+M\+EM string. Use get\+Write\+Error to check for errors. \\
+\hline
+\end{DoxyParams}
+\index{Sd\+File@{Sd\+File}!writeln\+\_\+P@{writeln\+\_\+P}}
+\index{writeln\+\_\+P@{writeln\+\_\+P}!Sd\+File@{Sd\+File}}
+\subsubsection[{\texorpdfstring{writeln\+\_\+\+P(\+P\+G\+M\+\_\+\+P str)}{writeln_P(PGM_P str)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+File\+::writeln\+\_\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+G\+M\+\_\+P}}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_file_ad760d51410f36fd1e1b005a754624954}{}\label{class_sd_file_ad760d51410f36fd1e1b005a754624954}
+Write a P\+R\+O\+G\+M\+EM string followed by C\+R/\+LF to a file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em str} & Pointer to the P\+R\+O\+G\+M\+EM string. Use get\+Write\+Error to check for errors. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_file_8h}{Sd\+File.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/Sd\+File.\+cpp\end{DoxyCompactItemize}

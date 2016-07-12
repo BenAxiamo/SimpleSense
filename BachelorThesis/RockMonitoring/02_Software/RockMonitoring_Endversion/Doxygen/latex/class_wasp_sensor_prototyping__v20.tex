@@ -1,0 +1,157 @@
+\hypertarget{class_wasp_sensor_prototyping__v20}{}\section{Wasp\+Sensor\+Prototyping\+\_\+v20 Class Reference}
+\label{class_wasp_sensor_prototyping__v20}\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+
+
+Wasp\+Sensor\+Prototyping Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Prototyping\+\_\+v20.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_prototyping__v20_a2c64aa3fb99ad909a1cc68a0444063e6}{Wasp\+Sensor\+Prototyping\+\_\+v20} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_prototyping__v20_ab6ddb4acbef1987395920e45c4a0325a}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_prototyping__v20_a4a9dc7367bef8a4646532bc67c36b058}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_prototyping__v20_a2613ede8780e32cbb1ffcbad1c53eff7}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets board power mode, setting O\+N/\+O\+FF 3v3 and 5V switches. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_prototyping__v20_a700d9d00d2629fbb5f870d8283838b83}{read\+A\+DC} (void)
+\begin{DoxyCompactList}\small\item\em It reads the Analogic-\/to-\/\+Digital Converter. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_prototyping__v20_aefedf8af5af2ed4c20e8f0da9bba45f4}{read\+Analog\+Sensor} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em It reads an analog sensor and returns its measured value in Volts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wasp\+Sensor\+Prototyping Class. 
+
+Wasp\+Sensor\+Prototyping Class defines all the variables and functions used for managing the Prototyping Sensor Board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Prototyping\+\_\+v20()}{WaspSensorPrototyping_v20()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Prototyping\+\_\+v20\+::\+Wasp\+Sensor\+Prototyping\+\_\+v20 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_prototyping__v20_a2c64aa3fb99ad909a1cc68a0444063e6}{}\label{class_wasp_sensor_prototyping__v20_a2c64aa3fb99ad909a1cc68a0444063e6}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Prototyping\+\_\+v20\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_prototyping__v20_a4a9dc7367bef8a4646532bc67c36b058}{}\label{class_wasp_sensor_prototyping__v20_a4a9dc7367bef8a4646532bc67c36b058}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Prototyping\+\_\+v20\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_prototyping__v20_ab6ddb4acbef1987395920e45c4a0325a}{}\label{class_wasp_sensor_prototyping__v20_ab6ddb4acbef1987395920e45c4a0325a}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!read\+A\+DC@{read\+A\+DC}}
+\index{read\+A\+DC@{read\+A\+DC}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+A\+D\+C(void)}{readADC(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Prototyping\+\_\+v20\+::read\+A\+DC (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_prototyping__v20_a700d9d00d2629fbb5f870d8283838b83}{}\label{class_wasp_sensor_prototyping__v20_a700d9d00d2629fbb5f870d8283838b83}
+
+
+It reads the Analogic-\/to-\/\+Digital Converter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value returned by the conversor 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!read\+Analog\+Sensor@{read\+Analog\+Sensor}}
+\index{read\+Analog\+Sensor@{read\+Analog\+Sensor}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Analog\+Sensor(uint8\+\_\+t pin)}{readAnalogSensor(uint8_t pin)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Prototyping\+\_\+v20\+::read\+Analog\+Sensor (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_prototyping__v20_aefedf8af5af2ed4c20e8f0da9bba45f4}{}\label{class_wasp_sensor_prototyping__v20_aefedf8af5af2ed4c20e8f0da9bba45f4}
+
+
+It reads an analog sensor and returns its measured value in Volts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & pin \+: specifies the analog pin where the sensor is connected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the measured value in Volts (range \mbox{[}0-\/3.\+3\mbox{]} Volts) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Prototyping\+\_\+v20@{Wasp\+Sensor\+Prototyping\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Prototyping\+\_\+v20\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_prototyping__v20_a2613ede8780e32cbb1ffcbad1c53eff7}{}\label{class_wasp_sensor_prototyping__v20_a2613ede8780e32cbb1ffcbad1c53eff7}
+
+
+It sets board power mode, setting O\+N/\+O\+FF 3v3 and 5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Prototyping\+\_\+v20/\hyperlink{_wasp_sensor_prototyping__v20_8h}{Wasp\+Sensor\+Prototyping\+\_\+v20.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Prototyping\+\_\+v20/Wasp\+Sensor\+Prototyping\+\_\+v20.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,499 @@
+\hypertarget{group__avr__stdint}{}\section{$<$stdint.\+h$>$\+: Standard Integer Types}
+\label{group__avr__stdint}\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsection*{Integer types capable of holding object pointers}
+\label{_amgrp634e8e938a287a603ae3b89f15fd78ff}%
+These allow you to declare variables of the same size as a pointer. \begin{DoxyCompactItemize}
+\item 
+typedef int16\+\_\+t \hyperlink{group__avr__stdint_ga9d283932a52e505ae3b2a4f902e8b53c}{intptr\+\_\+t}
+\item 
+typedef uint16\+\_\+t \hyperlink{group__avr__stdint_ga2c8c1b9f53772a86b0827ce7399b68aa}{uintptr\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Minimum-\/width integer types}
+\label{_amgrp570c0d4973aa87e4fa2f3fb2ce261d9d}%
+Integer types having at least the specified width \begin{DoxyCompactItemize}
+\item 
+typedef int8\+\_\+t \hyperlink{group__avr__stdint_gaadfd725efbf565422ab13db91ccca53c}{int\+\_\+least8\+\_\+t}
+\item 
+typedef uint8\+\_\+t \hyperlink{group__avr__stdint_gac76e2383debd5a3b100514044828961a}{uint\+\_\+least8\+\_\+t}
+\item 
+typedef int16\+\_\+t \hyperlink{group__avr__stdint_ga17f379713bed2a28ac431760401253cd}{int\+\_\+least16\+\_\+t}
+\item 
+typedef uint16\+\_\+t \hyperlink{group__avr__stdint_ga4f3f6e6631cb4aaeadf1c59ff597b2fb}{uint\+\_\+least16\+\_\+t}
+\item 
+typedef int32\+\_\+t \hyperlink{group__avr__stdint_ga2676b57a778795e5d0598970f1407f38}{int\+\_\+least32\+\_\+t}
+\item 
+typedef uint32\+\_\+t \hyperlink{group__avr__stdint_gac0af81082969e5e3f4d939b1de7002ac}{uint\+\_\+least32\+\_\+t}
+\item 
+typedef int64\+\_\+t \hyperlink{group__avr__stdint_ga2073b30b3170d509bc756bf5c7862caf}{int\+\_\+least64\+\_\+t}
+\item 
+typedef uint64\+\_\+t \hyperlink{group__avr__stdint_gab604f73dd823867b43702ae88b4f4445}{uint\+\_\+least64\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Fastest minimum-\/width integer types}
+\label{_amgrpb4a1523ab4c0d1159e7f4c2cec817601}%
+Integer types being usually fastest having at least the specified width \begin{DoxyCompactItemize}
+\item 
+typedef int8\+\_\+t \hyperlink{group__avr__stdint_ga880ed9ceb8621521452c81d03bd08cfb}{int\+\_\+fast8\+\_\+t}
+\item 
+typedef uint8\+\_\+t \hyperlink{group__avr__stdint_gad0fca8b15c218d2c687f8c373a71d228}{uint\+\_\+fast8\+\_\+t}
+\item 
+typedef int16\+\_\+t \hyperlink{group__avr__stdint_ga9b7386d4af0e20ee32296d9a158c9f3a}{int\+\_\+fast16\+\_\+t}
+\item 
+typedef uint16\+\_\+t \hyperlink{group__avr__stdint_ga6ed085329b153773ff76afa0702cf897}{uint\+\_\+fast16\+\_\+t}
+\item 
+typedef int32\+\_\+t \hyperlink{group__avr__stdint_ga920d4b149da0252281b6762375fb644a}{int\+\_\+fast32\+\_\+t}
+\item 
+typedef uint32\+\_\+t \hyperlink{group__avr__stdint_ga8f075c759c74e109e8184306c663809d}{uint\+\_\+fast32\+\_\+t}
+\item 
+typedef int64\+\_\+t \hyperlink{group__avr__stdint_gafd072b9a94c14417246175f6442422ae}{int\+\_\+fast64\+\_\+t}
+\item 
+typedef uint64\+\_\+t \hyperlink{group__avr__stdint_ga6fd055dddb7d91fab0635146851af8d5}{uint\+\_\+fast64\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Greatest-\/width integer types}
+\label{_amgrpc8e13fb8ae6d63225094a9992730a810}%
+Types designating integer data capable of representing any value of any integer type in the corresponding signed or unsigned category \begin{DoxyCompactItemize}
+\item 
+typedef int64\+\_\+t \hyperlink{group__avr__stdint_ga036cd61bb4b30bb510b9538af4cebd1d}{intmax\+\_\+t}
+\item 
+typedef uint64\+\_\+t \hyperlink{group__avr__stdint_ga2ba5f6c0633401558d277b2c0e4f758d}{uintmax\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Limits of specified-\/width integer types}
+\label{_amgrp1a245ec86aeba6984a97d3762813e8b6}%
+C++ implementations should define these macros only when \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS is defined before $<$\hyperlink{stdint_8h}{stdint.\+h}$>$ is included \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{I\+N\+T8\+\_\+\+M\+AX}~0x7f
+\item 
+\#define \hyperlink{group__avr__stdint_gaadcf2a81af243df333b31efa6461ab8e}{I\+N\+T8\+\_\+\+M\+IN}~(-\/\hyperlink{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{I\+N\+T8\+\_\+\+M\+AX} -\/ 1)
+\item 
+\#define \hyperlink{group__avr__stdint_gaeb4e270a084ee26fe73e799861bd0252}{U\+I\+N\+T8\+\_\+\+M\+AX}~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT(\hyperlink{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{I\+N\+T8\+\_\+\+M\+AX}, U) $\ast$ 2\+U + 1\+U)
+\item 
+\#define \hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}~0x7fff
+\item 
+\#define \hyperlink{group__avr__stdint_gad4e9955955b27624963643eac448118a}{I\+N\+T16\+\_\+\+M\+IN}~(-\/\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX} -\/ 1)
+\item 
+\#define \hyperlink{group__avr__stdint_ga3ea490c9b3617d4479bd80ef93cd5602}{U\+I\+N\+T16\+\_\+\+M\+AX}~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT(\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}, U) $\ast$ 2\+U + 1\+U)
+\item 
+\#define \hyperlink{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}{I\+N\+T32\+\_\+\+M\+AX}~0x7fffffffL
+\item 
+\#define \hyperlink{group__avr__stdint_ga688eb21a22db27c2b2bd5836943cdcbe}{I\+N\+T32\+\_\+\+M\+IN}~(-\/\hyperlink{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}{I\+N\+T32\+\_\+\+M\+AX} -\/ 1\+L)
+\item 
+\#define \hyperlink{group__avr__stdint_gab5eb23180f7cc12b7d6c04a8ec067fdd}{U\+I\+N\+T32\+\_\+\+M\+AX}~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT(\hyperlink{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}{I\+N\+T32\+\_\+\+M\+AX}, U) $\ast$ 2\+U\+L + 1\+U\+L)
+\item 
+\#define \hyperlink{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{I\+N\+T64\+\_\+\+M\+AX}~0x7fffffffffffffff\+LL
+\item 
+\#define \hyperlink{group__avr__stdint_gab21f12f372f67b8ff0aa3432336ede67}{I\+N\+T64\+\_\+\+M\+IN}~(-\/\hyperlink{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{I\+N\+T64\+\_\+\+M\+AX} -\/ 1\+L\+L)
+\item 
+\#define \hyperlink{group__avr__stdint_ga30654b4b67d97c42ca3f9b6052dda916}{U\+I\+N\+T64\+\_\+\+M\+AX}~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT(\hyperlink{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{I\+N\+T64\+\_\+\+M\+AX}, U) $\ast$ 2\+U\+L\+L + 1\+U\+L\+L)
+\end{DoxyCompactItemize}
+\subsection*{Limits of minimum-\/width integer types}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_gaa05109908fb2770f632d2b646b9f85bf}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{I\+N\+T8\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga3e986cad833f63f420962ff60eda87e5}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gaadcf2a81af243df333b31efa6461ab8e}{I\+N\+T8\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_ga2a80bde77ee1698d0f42f334adad4f2b}{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gaeb4e270a084ee26fe73e799861bd0252}{U\+I\+N\+T8\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga7eb2a8e2a1c65d6c9ad0f86154890baa}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga1f91bfd5820c2f27af3d260fc75813e1}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gad4e9955955b27624963643eac448118a}{I\+N\+T16\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_ga6ef6a1a518bbf516ca8b0180b11c358f}{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga3ea490c9b3617d4479bd80ef93cd5602}{U\+I\+N\+T16\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga5618711a0a54f722190a3a1219e278c2}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}{I\+N\+T32\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga2360a536116dd734820a6b5b3d560ce7}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_ga688eb21a22db27c2b2bd5836943cdcbe}{I\+N\+T32\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_ga70cad8bacc9a6db301e1cdc86cc8d571}{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gab5eb23180f7cc12b7d6c04a8ec067fdd}{U\+I\+N\+T32\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga35d0f98a2e507fd1be779d49da92724e}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{I\+N\+T64\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_gac12b4f6966b57ad82feb683b284b4060}{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gab21f12f372f67b8ff0aa3432336ede67}{I\+N\+T64\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_gaab530113fa96e280e49c3c138b0f917d}{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga30654b4b67d97c42ca3f9b6052dda916}{U\+I\+N\+T64\+\_\+\+M\+AX}
+\end{DoxyCompactItemize}
+\subsection*{Limits of fastest minimum-\/width integer types}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_gacbcdb3bee0f5f904da5df8de69a80ca3}{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{I\+N\+T8\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_gaad8fb982cb19143efd5ee9a1a7a89390}{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gaadcf2a81af243df333b31efa6461ab8e}{I\+N\+T8\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_ga2c6f97ea2d76d0cf6260c84046cdb44e}{U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gaeb4e270a084ee26fe73e799861bd0252}{U\+I\+N\+T8\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga2fd35d0ea091e04caec504ff0042cf00}{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga169460a4e2a79138723d68d99372d958}{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gad4e9955955b27624963643eac448118a}{I\+N\+T16\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_gaed28ca63d9b222f6f1377358fe73a183}{U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga3ea490c9b3617d4479bd80ef93cd5602}{U\+I\+N\+T16\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_gac96fa0f41b19e89f109e4f9913ca6635}{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}{I\+N\+T32\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_gad93df1652ed0635513d5efe4f1219926}{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_ga688eb21a22db27c2b2bd5836943cdcbe}{I\+N\+T32\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_gad51246a178143208b2db3315efd21c45}{U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gab5eb23180f7cc12b7d6c04a8ec067fdd}{U\+I\+N\+T32\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga13c95cf9c209d8daacb36cbf0d5ba275}{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{I\+N\+T64\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga50f0fdcb00ea2500cec0f3d6d45c36f3}{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gab21f12f372f67b8ff0aa3432336ede67}{I\+N\+T64\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_gaeb74410af7781bc84b5f64ae7a8f4a17}{U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga30654b4b67d97c42ca3f9b6052dda916}{U\+I\+N\+T64\+\_\+\+M\+AX}
+\end{DoxyCompactItemize}
+\subsection*{Limits of integer types capable of holding object pointers}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_ga9e5742f2bae4a5283431a3c03499e3a9}{I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga2aaa6d3aa1d7d1e0e326955aa24db752}{I\+N\+T\+P\+T\+R\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gad4e9955955b27624963643eac448118a}{I\+N\+T16\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_gab2355300ea19395357e62d780f4dd073}{U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga3ea490c9b3617d4479bd80ef93cd5602}{U\+I\+N\+T16\+\_\+\+M\+AX}
+\end{DoxyCompactItemize}
+\subsection*{Limits of greatest-\/width integer types}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_ga022b9b0a3564d786244a4631847c37a3}{I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{I\+N\+T64\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga2b0a3edfc672154f606dc3ad26277b61}{I\+N\+T\+M\+A\+X\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gab21f12f372f67b8ff0aa3432336ede67}{I\+N\+T64\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_gaa54fd5210434219e9027bfa0f0e325c8}{U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_ga30654b4b67d97c42ca3f9b6052dda916}{U\+I\+N\+T64\+\_\+\+M\+AX}
+\end{DoxyCompactItemize}
+\subsection*{Limits of other integer types}
+\label{_amgrp9984b0713e1f5c3fda339ad15323de94}%
+C++ implementations should define these macros only when \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS is defined before $<$\hyperlink{stdint_8h}{stdint.\+h}$>$ is included \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_gadd2ef7bffac19cfdd1f4b5495409672f}{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_gad9b88ba2fb858f98b50b38e49875d90e}{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gad4e9955955b27624963643eac448118a}{I\+N\+T16\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_ga1f5fe9445d0ad0bee21bab1de4cc3e58}{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX}~\hyperlink{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{I\+N\+T8\+\_\+\+M\+AX}
+\item 
+\#define \hyperlink{group__avr__stdint_ga21e605b9ac3a03b6de93cdf5a69e129f}{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN}~\hyperlink{group__avr__stdint_gaadcf2a81af243df333b31efa6461ab8e}{I\+N\+T8\+\_\+\+M\+IN}
+\item 
+\#define \hyperlink{group__avr__stdint_ga3c75bb398badb69c7577b21486f9963f}{S\+I\+Z\+E\+\_\+\+M\+AX}~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT(\hyperlink{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{I\+N\+T16\+\_\+\+M\+AX}, U))
+\end{DoxyCompactItemize}
+\subsection*{Macros for integer constants}
+\label{_amgrp7245dc5f9df3601bffee6d6bc1eb6a98}%
+C++ implementations should define these macros only when \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+M\+A\+C\+R\+OS is defined before $<$\hyperlink{stdint_8h}{stdint.\+h}$>$ is included.
+
+These definitions are valid for integer constants without suffix and for macros defined as integer constant without suffix \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdint_gacc666d136a198406538bafb8288f9c1b}{I\+N\+T8\+\_\+C}(value)~((int8\+\_\+t) value)
+\item 
+\#define \hyperlink{group__avr__stdint_gacb579905e23358f9a5035b075c57ffcd}{U\+I\+N\+T8\+\_\+C}(value)~((uint8\+\_\+t) \+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U))
+\item 
+\#define \hyperlink{group__avr__stdint_ga1e6d0a954851b2f07b54a2178dc6eb40}{I\+N\+T16\+\_\+C}(value)~value
+\item 
+\#define \hyperlink{group__avr__stdint_gab93c67f535ddedd6e88a9a8030b333f1}{U\+I\+N\+T16\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U)
+\item 
+\#define \hyperlink{group__avr__stdint_ga1ddf83530d986214005d1e766f036b28}{I\+N\+T32\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, L)
+\item 
+\#define \hyperlink{group__avr__stdint_gad76f76a71e9ffc13963ee895d1828b2c}{U\+I\+N\+T32\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, UL)
+\item 
+\#define \hyperlink{group__avr__stdint_gaab7df05e4698e14dbef512294ff39203}{I\+N\+T64\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, LL)
+\item 
+\#define \hyperlink{group__avr__stdint_gae770776c04e6d959364d2612ddfce99d}{U\+I\+N\+T64\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U\+LL)
+\item 
+\#define \hyperlink{group__avr__stdint_gaefea1274b2789b420969856ac1a8f19e}{I\+N\+T\+M\+A\+X\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, LL)
+\item 
+\#define \hyperlink{group__avr__stdint_ga97a030e600e111b2b5981b4c39265ab6}{U\+I\+N\+T\+M\+A\+X\+\_\+C}(value)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U\+LL)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{stdint_8h}{stdint.h}>} 
+\end{DoxyCode}
+
+
+Use \mbox{[}u\mbox{]}int\+N\+\_\+t if you need exactly N bits.
+
+Since these typedefs are mandated by the C99 standard, they are preferred over rolling your own typedefs. 
+
+\subsection{Macro Definition Documentation}
+\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T16\+\_\+C@{I\+N\+T16\+\_\+C}}
+\index{I\+N\+T16\+\_\+C@{I\+N\+T16\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T16\+\_\+C}{INT16_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T16\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~value}\hypertarget{group__avr__stdint_ga1e6d0a954851b2f07b54a2178dc6eb40}{}\label{group__avr__stdint_ga1e6d0a954851b2f07b54a2178dc6eb40}
+define a constant of type int16\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T16\+\_\+\+M\+AX@{I\+N\+T16\+\_\+\+M\+AX}}
+\index{I\+N\+T16\+\_\+\+M\+AX@{I\+N\+T16\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T16\+\_\+\+M\+AX}{INT16_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T16\+\_\+\+M\+AX~0x7fff}\hypertarget{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}{}\label{group__avr__stdint_gac58f2c111cc9989c86db2a7dc4fd84ca}
+largest positive value an int16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T16\+\_\+\+M\+IN@{I\+N\+T16\+\_\+\+M\+IN}}
+\index{I\+N\+T16\+\_\+\+M\+IN@{I\+N\+T16\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T16\+\_\+\+M\+IN}{INT16_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T16\+\_\+\+M\+IN~(-\/{\bf I\+N\+T16\+\_\+\+M\+AX} -\/ 1)}\hypertarget{group__avr__stdint_gad4e9955955b27624963643eac448118a}{}\label{group__avr__stdint_gad4e9955955b27624963643eac448118a}
+smallest negative value an int16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T32\+\_\+C@{I\+N\+T32\+\_\+C}}
+\index{I\+N\+T32\+\_\+C@{I\+N\+T32\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T32\+\_\+C}{INT32_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T32\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, L)}\hypertarget{group__avr__stdint_ga1ddf83530d986214005d1e766f036b28}{}\label{group__avr__stdint_ga1ddf83530d986214005d1e766f036b28}
+define a constant of type int32\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T32\+\_\+\+M\+AX@{I\+N\+T32\+\_\+\+M\+AX}}
+\index{I\+N\+T32\+\_\+\+M\+AX@{I\+N\+T32\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T32\+\_\+\+M\+AX}{INT32_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T32\+\_\+\+M\+AX~0x7fffffffL}\hypertarget{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}{}\label{group__avr__stdint_ga181807730d4a375f848ba139813ce04f}
+largest positive value an int32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T32\+\_\+\+M\+IN@{I\+N\+T32\+\_\+\+M\+IN}}
+\index{I\+N\+T32\+\_\+\+M\+IN@{I\+N\+T32\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T32\+\_\+\+M\+IN}{INT32_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T32\+\_\+\+M\+IN~(-\/{\bf I\+N\+T32\+\_\+\+M\+AX} -\/ 1\+L)}\hypertarget{group__avr__stdint_ga688eb21a22db27c2b2bd5836943cdcbe}{}\label{group__avr__stdint_ga688eb21a22db27c2b2bd5836943cdcbe}
+smallest negative value an int32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T64\+\_\+C@{I\+N\+T64\+\_\+C}}
+\index{I\+N\+T64\+\_\+C@{I\+N\+T64\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T64\+\_\+C}{INT64_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T64\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, LL)}\hypertarget{group__avr__stdint_gaab7df05e4698e14dbef512294ff39203}{}\label{group__avr__stdint_gaab7df05e4698e14dbef512294ff39203}
+define a constant of type int64\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T64\+\_\+\+M\+AX@{I\+N\+T64\+\_\+\+M\+AX}}
+\index{I\+N\+T64\+\_\+\+M\+AX@{I\+N\+T64\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T64\+\_\+\+M\+AX}{INT64_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T64\+\_\+\+M\+AX~0x7fffffffffffffff\+LL}\hypertarget{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}{}\label{group__avr__stdint_gad0d744f05898e32d01f73f8af3cd2071}
+largest positive value an int64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T64\+\_\+\+M\+IN@{I\+N\+T64\+\_\+\+M\+IN}}
+\index{I\+N\+T64\+\_\+\+M\+IN@{I\+N\+T64\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T64\+\_\+\+M\+IN}{INT64_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T64\+\_\+\+M\+IN~(-\/{\bf I\+N\+T64\+\_\+\+M\+AX} -\/ 1\+L\+L)}\hypertarget{group__avr__stdint_gab21f12f372f67b8ff0aa3432336ede67}{}\label{group__avr__stdint_gab21f12f372f67b8ff0aa3432336ede67}
+smallest negative value an int64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T8\+\_\+C@{I\+N\+T8\+\_\+C}}
+\index{I\+N\+T8\+\_\+C@{I\+N\+T8\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T8\+\_\+C}{INT8_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T8\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~((int8\+\_\+t) value)}\hypertarget{group__avr__stdint_gacc666d136a198406538bafb8288f9c1b}{}\label{group__avr__stdint_gacc666d136a198406538bafb8288f9c1b}
+define a constant of type int8\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T8\+\_\+\+M\+AX@{I\+N\+T8\+\_\+\+M\+AX}}
+\index{I\+N\+T8\+\_\+\+M\+AX@{I\+N\+T8\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T8\+\_\+\+M\+AX}{INT8_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T8\+\_\+\+M\+AX~0x7f}\hypertarget{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}{}\label{group__avr__stdint_gaaf7f29f45f1a513b4748a4e5014ddf6a}
+largest positive value an int8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T8\+\_\+\+M\+IN@{I\+N\+T8\+\_\+\+M\+IN}}
+\index{I\+N\+T8\+\_\+\+M\+IN@{I\+N\+T8\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T8\+\_\+\+M\+IN}{INT8_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T8\+\_\+\+M\+IN~(-\/{\bf I\+N\+T8\+\_\+\+M\+AX} -\/ 1)}\hypertarget{group__avr__stdint_gaadcf2a81af243df333b31efa6461ab8e}{}\label{group__avr__stdint_gaadcf2a81af243df333b31efa6461ab8e}
+smallest negative value an int8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}{INT_FAST16_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX~{\bf I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga2fd35d0ea091e04caec504ff0042cf00}{}\label{group__avr__stdint_ga2fd35d0ea091e04caec504ff0042cf00}
+largest positive value an int\+\_\+fast16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN}{INT_FAST16_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+IN~{\bf I\+N\+T16\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga169460a4e2a79138723d68d99372d958}{}\label{group__avr__stdint_ga169460a4e2a79138723d68d99372d958}
+smallest negative value an int\+\_\+fast16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}{INT_FAST32_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX~{\bf I\+N\+T32\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gac96fa0f41b19e89f109e4f9913ca6635}{}\label{group__avr__stdint_gac96fa0f41b19e89f109e4f9913ca6635}
+largest positive value an int\+\_\+fast32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN}{INT_FAST32_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+IN~{\bf I\+N\+T32\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_gad93df1652ed0635513d5efe4f1219926}{}\label{group__avr__stdint_gad93df1652ed0635513d5efe4f1219926}
+smallest negative value an int\+\_\+fast32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}{INT_FAST64_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX~{\bf I\+N\+T64\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga13c95cf9c209d8daacb36cbf0d5ba275}{}\label{group__avr__stdint_ga13c95cf9c209d8daacb36cbf0d5ba275}
+largest positive value an int\+\_\+fast64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN}{INT_FAST64_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+IN~{\bf I\+N\+T64\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga50f0fdcb00ea2500cec0f3d6d45c36f3}{}\label{group__avr__stdint_ga50f0fdcb00ea2500cec0f3d6d45c36f3}
+smallest negative value an int\+\_\+fast64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}{INT_FAST8_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX~{\bf I\+N\+T8\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gacbcdb3bee0f5f904da5df8de69a80ca3}{}\label{group__avr__stdint_gacbcdb3bee0f5f904da5df8de69a80ca3}
+largest positive value an int\+\_\+fast8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN}{INT_FAST8_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+IN~{\bf I\+N\+T8\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_gaad8fb982cb19143efd5ee9a1a7a89390}{}\label{group__avr__stdint_gaad8fb982cb19143efd5ee9a1a7a89390}
+smallest negative value an int\+\_\+fast8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}{INT_LEAST16_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX~{\bf I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga7eb2a8e2a1c65d6c9ad0f86154890baa}{}\label{group__avr__stdint_ga7eb2a8e2a1c65d6c9ad0f86154890baa}
+largest positive value an int\+\_\+least16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN}{INT_LEAST16_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+IN~{\bf I\+N\+T16\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga1f91bfd5820c2f27af3d260fc75813e1}{}\label{group__avr__stdint_ga1f91bfd5820c2f27af3d260fc75813e1}
+smallest negative value an int\+\_\+least16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}{INT_LEAST32_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX~{\bf I\+N\+T32\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga5618711a0a54f722190a3a1219e278c2}{}\label{group__avr__stdint_ga5618711a0a54f722190a3a1219e278c2}
+largest positive value an int\+\_\+least32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN}{INT_LEAST32_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+IN~{\bf I\+N\+T32\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga2360a536116dd734820a6b5b3d560ce7}{}\label{group__avr__stdint_ga2360a536116dd734820a6b5b3d560ce7}
+smallest negative value an int\+\_\+least32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}{INT_LEAST64_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX~{\bf I\+N\+T64\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga35d0f98a2e507fd1be779d49da92724e}{}\label{group__avr__stdint_ga35d0f98a2e507fd1be779d49da92724e}
+largest positive value an int\+\_\+least64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN}{INT_LEAST64_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+IN~{\bf I\+N\+T64\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_gac12b4f6966b57ad82feb683b284b4060}{}\label{group__avr__stdint_gac12b4f6966b57ad82feb683b284b4060}
+smallest negative value an int\+\_\+least64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}{INT_LEAST8_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX~{\bf I\+N\+T8\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gaa05109908fb2770f632d2b646b9f85bf}{}\label{group__avr__stdint_gaa05109908fb2770f632d2b646b9f85bf}
+largest positive value an int\+\_\+least8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN}}
+\index{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN@{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN}{INT_LEAST8_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+IN~{\bf I\+N\+T8\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga3e986cad833f63f420962ff60eda87e5}{}\label{group__avr__stdint_ga3e986cad833f63f420962ff60eda87e5}
+smallest negative value an int\+\_\+least8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+M\+A\+X\+\_\+C@{I\+N\+T\+M\+A\+X\+\_\+C}}
+\index{I\+N\+T\+M\+A\+X\+\_\+C@{I\+N\+T\+M\+A\+X\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+M\+A\+X\+\_\+C}{INTMAX_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+M\+A\+X\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, LL)}\hypertarget{group__avr__stdint_gaefea1274b2789b420969856ac1a8f19e}{}\label{group__avr__stdint_gaefea1274b2789b420969856ac1a8f19e}
+define a constant of type intmax\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+M\+A\+X\+\_\+\+M\+AX@{I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}}
+\index{I\+N\+T\+M\+A\+X\+\_\+\+M\+AX@{I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}{INTMAX_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+M\+A\+X\+\_\+\+M\+AX~{\bf I\+N\+T64\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga022b9b0a3564d786244a4631847c37a3}{}\label{group__avr__stdint_ga022b9b0a3564d786244a4631847c37a3}
+largest positive value an intmax\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+M\+A\+X\+\_\+\+M\+IN@{I\+N\+T\+M\+A\+X\+\_\+\+M\+IN}}
+\index{I\+N\+T\+M\+A\+X\+\_\+\+M\+IN@{I\+N\+T\+M\+A\+X\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+M\+A\+X\+\_\+\+M\+IN}{INTMAX_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+M\+A\+X\+\_\+\+M\+IN~{\bf I\+N\+T64\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga2b0a3edfc672154f606dc3ad26277b61}{}\label{group__avr__stdint_ga2b0a3edfc672154f606dc3ad26277b61}
+smallest negative value an intmax\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+P\+T\+R\+\_\+\+M\+AX@{I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}}
+\index{I\+N\+T\+P\+T\+R\+\_\+\+M\+AX@{I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}{INTPTR_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+P\+T\+R\+\_\+\+M\+AX~{\bf I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga9e5742f2bae4a5283431a3c03499e3a9}{}\label{group__avr__stdint_ga9e5742f2bae4a5283431a3c03499e3a9}
+largest positive value an intptr\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!I\+N\+T\+P\+T\+R\+\_\+\+M\+IN@{I\+N\+T\+P\+T\+R\+\_\+\+M\+IN}}
+\index{I\+N\+T\+P\+T\+R\+\_\+\+M\+IN@{I\+N\+T\+P\+T\+R\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+P\+T\+R\+\_\+\+M\+IN}{INTPTR_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+P\+T\+R\+\_\+\+M\+IN~{\bf I\+N\+T16\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga2aaa6d3aa1d7d1e0e326955aa24db752}{}\label{group__avr__stdint_ga2aaa6d3aa1d7d1e0e326955aa24db752}
+smallest negative value an intptr\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX@{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX}}
+\index{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX@{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX}{PTRDIFF_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+AX~{\bf I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gadd2ef7bffac19cfdd1f4b5495409672f}{}\label{group__avr__stdint_gadd2ef7bffac19cfdd1f4b5495409672f}
+largest positive value a ptrdiff\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN@{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN}}
+\index{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN@{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN}{PTRDIFF_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+T\+R\+D\+I\+F\+F\+\_\+\+M\+IN~{\bf I\+N\+T16\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_gad9b88ba2fb858f98b50b38e49875d90e}{}\label{group__avr__stdint_gad9b88ba2fb858f98b50b38e49875d90e}
+smallest negative value a ptrdiff\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX@{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX}}
+\index{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX@{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX}{SIG_ATOMIC_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+AX~{\bf I\+N\+T8\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga1f5fe9445d0ad0bee21bab1de4cc3e58}{}\label{group__avr__stdint_ga1f5fe9445d0ad0bee21bab1de4cc3e58}
+largest positive value a sig\+\_\+atomic\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN@{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN}}
+\index{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN@{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN}{SIG_ATOMIC_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+I\+G\+\_\+\+A\+T\+O\+M\+I\+C\+\_\+\+M\+IN~{\bf I\+N\+T8\+\_\+\+M\+IN}}\hypertarget{group__avr__stdint_ga21e605b9ac3a03b6de93cdf5a69e129f}{}\label{group__avr__stdint_ga21e605b9ac3a03b6de93cdf5a69e129f}
+smallest negative value a sig\+\_\+atomic\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!S\+I\+Z\+E\+\_\+\+M\+AX@{S\+I\+Z\+E\+\_\+\+M\+AX}}
+\index{S\+I\+Z\+E\+\_\+\+M\+AX@{S\+I\+Z\+E\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{S\+I\+Z\+E\+\_\+\+M\+AX}{SIZE_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+I\+Z\+E\+\_\+\+M\+AX~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT({\bf I\+N\+T16\+\_\+\+M\+AX}, U))}\hypertarget{group__avr__stdint_ga3c75bb398badb69c7577b21486f9963f}{}\label{group__avr__stdint_ga3c75bb398badb69c7577b21486f9963f}
+largest value a size\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T16\+\_\+C@{U\+I\+N\+T16\+\_\+C}}
+\index{U\+I\+N\+T16\+\_\+C@{U\+I\+N\+T16\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T16\+\_\+C}{UINT16_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T16\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U)}\hypertarget{group__avr__stdint_gab93c67f535ddedd6e88a9a8030b333f1}{}\label{group__avr__stdint_gab93c67f535ddedd6e88a9a8030b333f1}
+define a constant of type uint16\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T16\+\_\+\+M\+AX@{U\+I\+N\+T16\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T16\+\_\+\+M\+AX@{U\+I\+N\+T16\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T16\+\_\+\+M\+AX}{UINT16_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T16\+\_\+\+M\+AX~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT({\bf I\+N\+T16\+\_\+\+M\+AX}, U) $\ast$ 2\+U + 1\+U)}\hypertarget{group__avr__stdint_ga3ea490c9b3617d4479bd80ef93cd5602}{}\label{group__avr__stdint_ga3ea490c9b3617d4479bd80ef93cd5602}
+largest value an uint16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T32\+\_\+C@{U\+I\+N\+T32\+\_\+C}}
+\index{U\+I\+N\+T32\+\_\+C@{U\+I\+N\+T32\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T32\+\_\+C}{UINT32_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T32\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, UL)}\hypertarget{group__avr__stdint_gad76f76a71e9ffc13963ee895d1828b2c}{}\label{group__avr__stdint_gad76f76a71e9ffc13963ee895d1828b2c}
+define a constant of type uint32\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T32\+\_\+\+M\+AX@{U\+I\+N\+T32\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T32\+\_\+\+M\+AX@{U\+I\+N\+T32\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T32\+\_\+\+M\+AX}{UINT32_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T32\+\_\+\+M\+AX~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT({\bf I\+N\+T32\+\_\+\+M\+AX}, U) $\ast$ 2\+U\+L + 1\+U\+L)}\hypertarget{group__avr__stdint_gab5eb23180f7cc12b7d6c04a8ec067fdd}{}\label{group__avr__stdint_gab5eb23180f7cc12b7d6c04a8ec067fdd}
+largest value an uint32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T64\+\_\+C@{U\+I\+N\+T64\+\_\+C}}
+\index{U\+I\+N\+T64\+\_\+C@{U\+I\+N\+T64\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T64\+\_\+C}{UINT64_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T64\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U\+LL)}\hypertarget{group__avr__stdint_gae770776c04e6d959364d2612ddfce99d}{}\label{group__avr__stdint_gae770776c04e6d959364d2612ddfce99d}
+define a constant of type uint64\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T64\+\_\+\+M\+AX@{U\+I\+N\+T64\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T64\+\_\+\+M\+AX@{U\+I\+N\+T64\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T64\+\_\+\+M\+AX}{UINT64_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T64\+\_\+\+M\+AX~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT({\bf I\+N\+T64\+\_\+\+M\+AX}, U) $\ast$ 2\+U\+L\+L + 1\+U\+L\+L)}\hypertarget{group__avr__stdint_ga30654b4b67d97c42ca3f9b6052dda916}{}\label{group__avr__stdint_ga30654b4b67d97c42ca3f9b6052dda916}
+largest value an uint64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T8\+\_\+C@{U\+I\+N\+T8\+\_\+C}}
+\index{U\+I\+N\+T8\+\_\+C@{U\+I\+N\+T8\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T8\+\_\+C}{UINT8_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T8\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~((uint8\+\_\+t) \+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U))}\hypertarget{group__avr__stdint_gacb579905e23358f9a5035b075c57ffcd}{}\label{group__avr__stdint_gacb579905e23358f9a5035b075c57ffcd}
+define a constant of type uint8\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T8\+\_\+\+M\+AX@{U\+I\+N\+T8\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T8\+\_\+\+M\+AX@{U\+I\+N\+T8\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T8\+\_\+\+M\+AX}{UINT8_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T8\+\_\+\+M\+AX~(\+\_\+\+\_\+\+C\+O\+N\+C\+AT({\bf I\+N\+T8\+\_\+\+M\+AX}, U) $\ast$ 2\+U + 1\+U)}\hypertarget{group__avr__stdint_gaeb4e270a084ee26fe73e799861bd0252}{}\label{group__avr__stdint_gaeb4e270a084ee26fe73e799861bd0252}
+largest value an uint8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX}{UINT_FAST16_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+F\+A\+S\+T16\+\_\+\+M\+AX~{\bf U\+I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gaed28ca63d9b222f6f1377358fe73a183}{}\label{group__avr__stdint_gaed28ca63d9b222f6f1377358fe73a183}
+largest value an uint\+\_\+fast16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX}{UINT_FAST32_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+F\+A\+S\+T32\+\_\+\+M\+AX~{\bf U\+I\+N\+T32\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gad51246a178143208b2db3315efd21c45}{}\label{group__avr__stdint_gad51246a178143208b2db3315efd21c45}
+largest value an uint\+\_\+fast32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX}{UINT_FAST64_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+M\+AX~{\bf U\+I\+N\+T64\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gaeb74410af7781bc84b5f64ae7a8f4a17}{}\label{group__avr__stdint_gaeb74410af7781bc84b5f64ae7a8f4a17}
+largest value an uint\+\_\+fast64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX}{UINT_FAST8_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+F\+A\+S\+T8\+\_\+\+M\+AX~{\bf U\+I\+N\+T8\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga2c6f97ea2d76d0cf6260c84046cdb44e}{}\label{group__avr__stdint_ga2c6f97ea2d76d0cf6260c84046cdb44e}
+largest value an uint\+\_\+fast8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX}{UINT_LEAST16_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T16\+\_\+\+M\+AX~{\bf U\+I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga6ef6a1a518bbf516ca8b0180b11c358f}{}\label{group__avr__stdint_ga6ef6a1a518bbf516ca8b0180b11c358f}
+largest value an uint\+\_\+least16\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX}{UINT_LEAST32_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T32\+\_\+\+M\+AX~{\bf U\+I\+N\+T32\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga70cad8bacc9a6db301e1cdc86cc8d571}{}\label{group__avr__stdint_ga70cad8bacc9a6db301e1cdc86cc8d571}
+largest value an uint\+\_\+least32\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX}{UINT_LEAST64_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T64\+\_\+\+M\+AX~{\bf U\+I\+N\+T64\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gaab530113fa96e280e49c3c138b0f917d}{}\label{group__avr__stdint_gaab530113fa96e280e49c3c138b0f917d}
+largest value an uint\+\_\+least64\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX@{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX}{UINT_LEAST8_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+\_\+\+L\+E\+A\+S\+T8\+\_\+\+M\+AX~{\bf U\+I\+N\+T8\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_ga2a80bde77ee1698d0f42f334adad4f2b}{}\label{group__avr__stdint_ga2a80bde77ee1698d0f42f334adad4f2b}
+largest value an uint\+\_\+least8\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+M\+A\+X\+\_\+C@{U\+I\+N\+T\+M\+A\+X\+\_\+C}}
+\index{U\+I\+N\+T\+M\+A\+X\+\_\+C@{U\+I\+N\+T\+M\+A\+X\+\_\+C}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+M\+A\+X\+\_\+C}{UINTMAX_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+M\+A\+X\+\_\+C(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+\+C\+O\+N\+C\+AT(value, U\+LL)}\hypertarget{group__avr__stdint_ga97a030e600e111b2b5981b4c39265ab6}{}\label{group__avr__stdint_ga97a030e600e111b2b5981b4c39265ab6}
+define a constant of type uintmax\+\_\+t \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX@{U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX@{U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX}{UINTMAX_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+M\+A\+X\+\_\+\+M\+AX~{\bf U\+I\+N\+T64\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gaa54fd5210434219e9027bfa0f0e325c8}{}\label{group__avr__stdint_gaa54fd5210434219e9027bfa0f0e325c8}
+largest value an uintmax\+\_\+t can hold. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX@{U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}}
+\index{U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX@{U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX}{UINTPTR_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+I\+N\+T\+P\+T\+R\+\_\+\+M\+AX~{\bf U\+I\+N\+T16\+\_\+\+M\+AX}}\hypertarget{group__avr__stdint_gab2355300ea19395357e62d780f4dd073}{}\label{group__avr__stdint_gab2355300ea19395357e62d780f4dd073}
+largest value an uintptr\+\_\+t can hold. 
+
+\subsection{Typedef Documentation}
+\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+fast16\+\_\+t@{int\+\_\+fast16\+\_\+t}}
+\index{int\+\_\+fast16\+\_\+t@{int\+\_\+fast16\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+fast16\+\_\+t}{int_fast16_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int16\+\_\+t {\bf int\+\_\+fast16\+\_\+t}}\hypertarget{group__avr__stdint_ga9b7386d4af0e20ee32296d9a158c9f3a}{}\label{group__avr__stdint_ga9b7386d4af0e20ee32296d9a158c9f3a}
+fastest signed int with at least 16 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+fast32\+\_\+t@{int\+\_\+fast32\+\_\+t}}
+\index{int\+\_\+fast32\+\_\+t@{int\+\_\+fast32\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+fast32\+\_\+t}{int_fast32_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int32\+\_\+t {\bf int\+\_\+fast32\+\_\+t}}\hypertarget{group__avr__stdint_ga920d4b149da0252281b6762375fb644a}{}\label{group__avr__stdint_ga920d4b149da0252281b6762375fb644a}
+fastest signed int with at least 32 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+fast64\+\_\+t@{int\+\_\+fast64\+\_\+t}}
+\index{int\+\_\+fast64\+\_\+t@{int\+\_\+fast64\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+fast64\+\_\+t}{int_fast64_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int64\+\_\+t {\bf int\+\_\+fast64\+\_\+t}}\hypertarget{group__avr__stdint_gafd072b9a94c14417246175f6442422ae}{}\label{group__avr__stdint_gafd072b9a94c14417246175f6442422ae}
+fastest signed int with at least 64 bits. \begin{DoxyNote}{Note}
+This type is not available when the compiler option -\/mint8 is in effect. 
+\end{DoxyNote}
+\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+fast8\+\_\+t@{int\+\_\+fast8\+\_\+t}}
+\index{int\+\_\+fast8\+\_\+t@{int\+\_\+fast8\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+fast8\+\_\+t}{int_fast8_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int8\+\_\+t {\bf int\+\_\+fast8\+\_\+t}}\hypertarget{group__avr__stdint_ga880ed9ceb8621521452c81d03bd08cfb}{}\label{group__avr__stdint_ga880ed9ceb8621521452c81d03bd08cfb}
+fastest signed int with at least 8 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+least16\+\_\+t@{int\+\_\+least16\+\_\+t}}
+\index{int\+\_\+least16\+\_\+t@{int\+\_\+least16\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+least16\+\_\+t}{int_least16_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int16\+\_\+t {\bf int\+\_\+least16\+\_\+t}}\hypertarget{group__avr__stdint_ga17f379713bed2a28ac431760401253cd}{}\label{group__avr__stdint_ga17f379713bed2a28ac431760401253cd}
+signed int with at least 16 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+least32\+\_\+t@{int\+\_\+least32\+\_\+t}}
+\index{int\+\_\+least32\+\_\+t@{int\+\_\+least32\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+least32\+\_\+t}{int_least32_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int32\+\_\+t {\bf int\+\_\+least32\+\_\+t}}\hypertarget{group__avr__stdint_ga2676b57a778795e5d0598970f1407f38}{}\label{group__avr__stdint_ga2676b57a778795e5d0598970f1407f38}
+signed int with at least 32 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+least64\+\_\+t@{int\+\_\+least64\+\_\+t}}
+\index{int\+\_\+least64\+\_\+t@{int\+\_\+least64\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+least64\+\_\+t}{int_least64_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int64\+\_\+t {\bf int\+\_\+least64\+\_\+t}}\hypertarget{group__avr__stdint_ga2073b30b3170d509bc756bf5c7862caf}{}\label{group__avr__stdint_ga2073b30b3170d509bc756bf5c7862caf}
+signed int with at least 64 bits. \begin{DoxyNote}{Note}
+This type is not available when the compiler option -\/mint8 is in effect. 
+\end{DoxyNote}
+\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!int\+\_\+least8\+\_\+t@{int\+\_\+least8\+\_\+t}}
+\index{int\+\_\+least8\+\_\+t@{int\+\_\+least8\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{int\+\_\+least8\+\_\+t}{int_least8_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int8\+\_\+t {\bf int\+\_\+least8\+\_\+t}}\hypertarget{group__avr__stdint_gaadfd725efbf565422ab13db91ccca53c}{}\label{group__avr__stdint_gaadfd725efbf565422ab13db91ccca53c}
+signed int with at least 8 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!intmax\+\_\+t@{intmax\+\_\+t}}
+\index{intmax\+\_\+t@{intmax\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{intmax\+\_\+t}{intmax_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int64\+\_\+t {\bf intmax\+\_\+t}}\hypertarget{group__avr__stdint_ga036cd61bb4b30bb510b9538af4cebd1d}{}\label{group__avr__stdint_ga036cd61bb4b30bb510b9538af4cebd1d}
+largest signed int available. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!intptr\+\_\+t@{intptr\+\_\+t}}
+\index{intptr\+\_\+t@{intptr\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{intptr\+\_\+t}{intptr_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int16\+\_\+t {\bf intptr\+\_\+t}}\hypertarget{group__avr__stdint_ga9d283932a52e505ae3b2a4f902e8b53c}{}\label{group__avr__stdint_ga9d283932a52e505ae3b2a4f902e8b53c}
+Signed pointer compatible type. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+fast16\+\_\+t@{uint\+\_\+fast16\+\_\+t}}
+\index{uint\+\_\+fast16\+\_\+t@{uint\+\_\+fast16\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+fast16\+\_\+t}{uint_fast16_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint16\+\_\+t {\bf uint\+\_\+fast16\+\_\+t}}\hypertarget{group__avr__stdint_ga6ed085329b153773ff76afa0702cf897}{}\label{group__avr__stdint_ga6ed085329b153773ff76afa0702cf897}
+fastest unsigned int with at least 16 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+fast32\+\_\+t@{uint\+\_\+fast32\+\_\+t}}
+\index{uint\+\_\+fast32\+\_\+t@{uint\+\_\+fast32\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+fast32\+\_\+t}{uint_fast32_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\+\_\+t {\bf uint\+\_\+fast32\+\_\+t}}\hypertarget{group__avr__stdint_ga8f075c759c74e109e8184306c663809d}{}\label{group__avr__stdint_ga8f075c759c74e109e8184306c663809d}
+fastest unsigned int with at least 32 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+fast64\+\_\+t@{uint\+\_\+fast64\+\_\+t}}
+\index{uint\+\_\+fast64\+\_\+t@{uint\+\_\+fast64\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+fast64\+\_\+t}{uint_fast64_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint64\+\_\+t {\bf uint\+\_\+fast64\+\_\+t}}\hypertarget{group__avr__stdint_ga6fd055dddb7d91fab0635146851af8d5}{}\label{group__avr__stdint_ga6fd055dddb7d91fab0635146851af8d5}
+fastest unsigned int with at least 64 bits. \begin{DoxyNote}{Note}
+This type is not available when the compiler option -\/mint8 is in effect. 
+\end{DoxyNote}
+\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+fast8\+\_\+t@{uint\+\_\+fast8\+\_\+t}}
+\index{uint\+\_\+fast8\+\_\+t@{uint\+\_\+fast8\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+fast8\+\_\+t}{uint_fast8_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint8\+\_\+t {\bf uint\+\_\+fast8\+\_\+t}}\hypertarget{group__avr__stdint_gad0fca8b15c218d2c687f8c373a71d228}{}\label{group__avr__stdint_gad0fca8b15c218d2c687f8c373a71d228}
+fastest unsigned int with at least 8 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+least16\+\_\+t@{uint\+\_\+least16\+\_\+t}}
+\index{uint\+\_\+least16\+\_\+t@{uint\+\_\+least16\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+least16\+\_\+t}{uint_least16_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint16\+\_\+t {\bf uint\+\_\+least16\+\_\+t}}\hypertarget{group__avr__stdint_ga4f3f6e6631cb4aaeadf1c59ff597b2fb}{}\label{group__avr__stdint_ga4f3f6e6631cb4aaeadf1c59ff597b2fb}
+unsigned int with at least 16 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+least32\+\_\+t@{uint\+\_\+least32\+\_\+t}}
+\index{uint\+\_\+least32\+\_\+t@{uint\+\_\+least32\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+least32\+\_\+t}{uint_least32_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\+\_\+t {\bf uint\+\_\+least32\+\_\+t}}\hypertarget{group__avr__stdint_gac0af81082969e5e3f4d939b1de7002ac}{}\label{group__avr__stdint_gac0af81082969e5e3f4d939b1de7002ac}
+unsigned int with at least 32 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+least64\+\_\+t@{uint\+\_\+least64\+\_\+t}}
+\index{uint\+\_\+least64\+\_\+t@{uint\+\_\+least64\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+least64\+\_\+t}{uint_least64_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint64\+\_\+t {\bf uint\+\_\+least64\+\_\+t}}\hypertarget{group__avr__stdint_gab604f73dd823867b43702ae88b4f4445}{}\label{group__avr__stdint_gab604f73dd823867b43702ae88b4f4445}
+unsigned int with at least 64 bits. \begin{DoxyNote}{Note}
+This type is not available when the compiler option -\/mint8 is in effect. 
+\end{DoxyNote}
+\index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uint\+\_\+least8\+\_\+t@{uint\+\_\+least8\+\_\+t}}
+\index{uint\+\_\+least8\+\_\+t@{uint\+\_\+least8\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uint\+\_\+least8\+\_\+t}{uint_least8_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint8\+\_\+t {\bf uint\+\_\+least8\+\_\+t}}\hypertarget{group__avr__stdint_gac76e2383debd5a3b100514044828961a}{}\label{group__avr__stdint_gac76e2383debd5a3b100514044828961a}
+unsigned int with at least 8 bits. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uintmax\+\_\+t@{uintmax\+\_\+t}}
+\index{uintmax\+\_\+t@{uintmax\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uintmax\+\_\+t}{uintmax_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint64\+\_\+t {\bf uintmax\+\_\+t}}\hypertarget{group__avr__stdint_ga2ba5f6c0633401558d277b2c0e4f758d}{}\label{group__avr__stdint_ga2ba5f6c0633401558d277b2c0e4f758d}
+largest unsigned int available. \index{$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}!uintptr\+\_\+t@{uintptr\+\_\+t}}
+\index{uintptr\+\_\+t@{uintptr\+\_\+t}!$<$stdint.\+h$>$\+: Standard Integer Types@{$<$stdint.\+h$>$\+: Standard Integer Types}}
+\subsubsection[{\texorpdfstring{uintptr\+\_\+t}{uintptr_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint16\+\_\+t {\bf uintptr\+\_\+t}}\hypertarget{group__avr__stdint_ga2c8c1b9f53772a86b0827ce7399b68aa}{}\label{group__avr__stdint_ga2c8c1b9f53772a86b0827ce7399b68aa}
+Unsigned pointer compatible type. 

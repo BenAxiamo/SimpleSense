@@ -1,0 +1,230 @@
+\hypertarget{class_leds}{}\section{Leds Class Reference}
+\label{class_leds}\index{Leds@{Leds}}
+
+
+Class that handles the \hyperlink{class_leds}{Leds}.  
+
+
+
+
+{\ttfamily \#include $<$Leds.\+h$>$}
+
+
+
+Collaboration diagram for Leds\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_leds__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_leds_a240103486293e11969e1260e96fd6801}{Leds} ()
+\item 
+void \hyperlink{class_leds_a343c2d2ef1ea2060351dc51a4340fbec}{init} ()
+\begin{DoxyCompactList}\small\item\em This method initializes the output pins for the leds and clears both led. \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_a0f2d6c3b835457eac3e6201d03174e78}{Led\+Green\+On} ()
+\begin{DoxyCompactList}\small\item\em This method turns the green led on. \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_a7330a7a45cf40e4dc9b72a1ac745aa16}{Led\+Green\+Off} ()
+\begin{DoxyCompactList}\small\item\em This method turns the green led off. \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_ac57ffee4cd4c4dfa5ae59d272be9fff0}{Led\+Button\+On} ()
+\begin{DoxyCompactList}\small\item\em This method turns the led on the button on. \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_ade51287af3bee08008bd355f2c18c649}{Led\+Button\+Off} ()
+\begin{DoxyCompactList}\small\item\em This method turns the led on the button off. \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_a52430ba19085c90a65454ba297c101cb}{Led\+Green\+Blink\+Once} ()
+\begin{DoxyCompactList}\small\item\em This method lets the green led blink once (blocks program for 300ms) \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_a5dd629b0da04c13f39a9bb5e976a8a80}{Led\+Button\+Blink\+Once} ()
+\begin{DoxyCompactList}\small\item\em This method lets the led on the button blink once (blocks program for 300ms) \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_af45c80c9f183d1bd1118e637cd7b1a22}{Both\+Blink\+Once} ()
+\begin{DoxyCompactList}\small\item\em This method lets both leds blink once (blocks program for 300ms) \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_adc3b7a662d1220995989ccfc34a6aa1e}{Led\+Green\+Blink4seconds} ()
+\begin{DoxyCompactList}\small\item\em This method lets the green led blink for 4 seconds (blocks program for 4s) \end{DoxyCompactList}\item 
+void \hyperlink{class_leds_a0f0adcc3c0bf2165fafc27f93d8e0dd3}{Blink\+Akku} (uint8\+\_\+t bat\+Level)
+\begin{DoxyCompactList}\small\item\em This method sets the button led on or in blink state for 5 seconds (depending on battery level) (blocks program for 5s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles the \hyperlink{class_leds}{Leds}. 
+
+Definition at line 12 of file Leds.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Leds@{Leds}!Leds@{Leds}}
+\index{Leds@{Leds}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Leds()}{Leds()}}]{\setlength{\rightskip}{0pt plus 5cm}Leds\+::\+Leds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a240103486293e11969e1260e96fd6801}{}\label{class_leds_a240103486293e11969e1260e96fd6801}
+
+
+Definition at line 5 of file Leds.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Leds@{Leds}!Blink\+Akku@{Blink\+Akku}}
+\index{Blink\+Akku@{Blink\+Akku}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Blink\+Akku(uint8\+\_\+t bat\+Level)}{BlinkAkku(uint8_t batLevel)}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Blink\+Akku (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{bat\+Level}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a0f0adcc3c0bf2165fafc27f93d8e0dd3}{}\label{class_leds_a0f0adcc3c0bf2165fafc27f93d8e0dd3}
+
+
+This method sets the button led on or in blink state for 5 seconds (depending on battery level) (blocks program for 5s) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & bat\+Level, battery level \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Both\+Blink\+Once@{Both\+Blink\+Once}}
+\index{Both\+Blink\+Once@{Both\+Blink\+Once}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Both\+Blink\+Once()}{BothBlinkOnce()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Both\+Blink\+Once (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_af45c80c9f183d1bd1118e637cd7b1a22}{}\label{class_leds_af45c80c9f183d1bd1118e637cd7b1a22}
+
+
+This method lets both leds blink once (blocks program for 300ms) 
+
+
+
+Definition at line 54 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!init@{init}}
+\index{init@{init}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a343c2d2ef1ea2060351dc51a4340fbec}{}\label{class_leds_a343c2d2ef1ea2060351dc51a4340fbec}
+
+
+This method initializes the output pins for the leds and clears both led. 
+
+
+
+Definition at line 9 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Button\+Blink\+Once@{Led\+Button\+Blink\+Once}}
+\index{Led\+Button\+Blink\+Once@{Led\+Button\+Blink\+Once}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Button\+Blink\+Once()}{LedButtonBlinkOnce()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Button\+Blink\+Once (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a5dd629b0da04c13f39a9bb5e976a8a80}{}\label{class_leds_a5dd629b0da04c13f39a9bb5e976a8a80}
+
+
+This method lets the led on the button blink once (blocks program for 300ms) 
+
+
+
+Definition at line 47 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Button\+Off@{Led\+Button\+Off}}
+\index{Led\+Button\+Off@{Led\+Button\+Off}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Button\+Off()}{LedButtonOff()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Button\+Off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_ade51287af3bee08008bd355f2c18c649}{}\label{class_leds_ade51287af3bee08008bd355f2c18c649}
+
+
+This method turns the led on the button off. 
+
+
+
+Definition at line 34 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Button\+On@{Led\+Button\+On}}
+\index{Led\+Button\+On@{Led\+Button\+On}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Button\+On()}{LedButtonOn()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Button\+On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_ac57ffee4cd4c4dfa5ae59d272be9fff0}{}\label{class_leds_ac57ffee4cd4c4dfa5ae59d272be9fff0}
+
+
+This method turns the led on the button on. 
+
+
+
+Definition at line 29 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Green\+Blink4seconds@{Led\+Green\+Blink4seconds}}
+\index{Led\+Green\+Blink4seconds@{Led\+Green\+Blink4seconds}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Green\+Blink4seconds()}{LedGreenBlink4seconds()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Green\+Blink4seconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_adc3b7a662d1220995989ccfc34a6aa1e}{}\label{class_leds_adc3b7a662d1220995989ccfc34a6aa1e}
+
+
+This method lets the green led blink for 4 seconds (blocks program for 4s) 
+
+
+
+Definition at line 64 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Green\+Blink\+Once@{Led\+Green\+Blink\+Once}}
+\index{Led\+Green\+Blink\+Once@{Led\+Green\+Blink\+Once}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Green\+Blink\+Once()}{LedGreenBlinkOnce()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Green\+Blink\+Once (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a52430ba19085c90a65454ba297c101cb}{}\label{class_leds_a52430ba19085c90a65454ba297c101cb}
+
+
+This method lets the green led blink once (blocks program for 300ms) 
+
+
+
+Definition at line 40 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Green\+Off@{Led\+Green\+Off}}
+\index{Led\+Green\+Off@{Led\+Green\+Off}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Green\+Off()}{LedGreenOff()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Green\+Off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a7330a7a45cf40e4dc9b72a1ac745aa16}{}\label{class_leds_a7330a7a45cf40e4dc9b72a1ac745aa16}
+
+
+This method turns the green led off. 
+
+
+
+Definition at line 24 of file Leds.\+cpp.
+
+\index{Leds@{Leds}!Led\+Green\+On@{Led\+Green\+On}}
+\index{Led\+Green\+On@{Led\+Green\+On}!Leds@{Leds}}
+\subsubsection[{\texorpdfstring{Led\+Green\+On()}{LedGreenOn()}}]{\setlength{\rightskip}{0pt plus 5cm}void Leds\+::\+Led\+Green\+On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_leds_a0f2d6c3b835457eac3e6201d03174e78}{}\label{class_leds_a0f2d6c3b835457eac3e6201d03174e78}
+
+
+This method turns the green led on. 
+
+
+
+Definition at line 19 of file Leds.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_leds_8h}{Leds.\+h}\item 
+\hyperlink{_leds_8cpp}{Leds.\+cpp}\end{DoxyCompactItemize}

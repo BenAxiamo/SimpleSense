@@ -1,0 +1,117 @@
+\hypertarget{interrupt_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/interrupt.h File Reference}
+\label{interrupt_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/interrupt.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/interrupt.\+h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+S\+T\+R\+I\+N\+G\+I\+FY}(x)~\#x\hypertarget{interrupt_8h_afb45806c1c9e5a9574e690d5a23e5e35}{}\label{interrupt_8h_afb45806c1c9e5a9574e690d5a23e5e35}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Global manipulation of the interrupt flag}\par
+{\em The global interrupt flag is maintained in the I bit of the status register (S\+R\+EG).
+
+Handling interrupts frequently requires attention regarding atomic access to objects that could be altered by code running within an interrupt context, see $<$\hyperlink{atomic_8h}{util/atomic.\+h}$>$.
+
+Frequently, interrupts are being disabled for periods of time in order to perform certain operations without being disturbed; see optim\+\_\+code\+\_\+reorder for things to be taken into account with respect to compiler optimizations. }\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries sei}()~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+ (\char`\"{}sei\char`\"{} \+::: \char`\"{}memory\char`\"{})\hypertarget{interrupt_8h_aad5ebd34cb344c26ac87594f79b06b73}{}\label{interrupt_8h_aad5ebd34cb344c26ac87594f79b06b73}
+
+\item 
+\#define {\bfseries cli}()~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+ (\char`\"{}cli\char`\"{} \+::: \char`\"{}memory\char`\"{})\hypertarget{interrupt_8h_a68c330e94fe121eba993e5a5973c3162}{}\label{interrupt_8h_a68c330e94fe121eba993e5a5973c3162}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Macros for writing interrupt handler functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+I\+N\+T\+R\+\_\+\+A\+T\+T\+RS}~used\hypertarget{interrupt_8h_a65483663c17f94d50d9e24e277bd7bbb}{}\label{interrupt_8h_a65483663c17f94d50d9e24e277bd7bbb}
+
+\item 
+\#define {\bfseries I\+SR}(vector, ...)                    
+\item 
+\#define {\bfseries S\+I\+G\+N\+AL}(vector)
+\item 
+\#define {\bfseries E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}(vector)                            
+\item 
+\#define {\bfseries I\+S\+R\+\_\+\+A\+L\+I\+AS}(vector,  tgt)
+\item 
+\#define {\bfseries reti}()~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+ (\char`\"{}reti\char`\"{} \+::)\hypertarget{interrupt_8h_a3b991e8168db8fc866e31f9a6d10533b}{}\label{interrupt_8h_a3b991e8168db8fc866e31f9a6d10533b}
+
+\item 
+\#define {\bfseries B\+A\+D\+I\+S\+R\+\_\+vect}~\+\_\+\+\_\+vector\+\_\+default\hypertarget{interrupt_8h_a1f6459a85cda682b2163a20af03ac744}{}\label{interrupt_8h_a1f6459a85cda682b2163a20af03ac744}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf I\+SR attributes}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+R\+\_\+\+B\+L\+O\+CK}\hypertarget{interrupt_8h_a5fc50a0507a58e16aca4c70345ddac6a}{}\label{interrupt_8h_a5fc50a0507a58e16aca4c70345ddac6a}
+
+\item 
+\#define {\bfseries I\+S\+R\+\_\+\+N\+O\+B\+L\+O\+CK}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((interrupt))\hypertarget{interrupt_8h_a44569cb914d2aaf8fbb436f8f7c4ca68}{}\label{interrupt_8h_a44569cb914d2aaf8fbb436f8f7c4ca68}
+
+\item 
+\#define {\bfseries I\+S\+R\+\_\+\+N\+A\+K\+ED}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((naked))\hypertarget{interrupt_8h_a8b4c7e44627db0a60d676213add42d64}{}\label{interrupt_8h_a8b4c7e44627db0a60d676213add42d64}
+
+\item 
+\#define {\bfseries I\+S\+R\+\_\+\+A\+L\+I\+A\+S\+OF}(v)~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((alias(\+\_\+\+\_\+\+S\+T\+R\+I\+N\+G\+I\+FY(v))))\hypertarget{interrupt_8h_a0e57d3f41ea16c8f10afc92bf6a41ebd}{}\label{interrupt_8h_a0e57d3f41ea16c8f10afc92bf6a41ebd}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+@\{ 
+
+\subsection{Macro Definition Documentation}
+\index{interrupt.\+h@{interrupt.\+h}!E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}}
+\index{E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}!interrupt.\+h@{interrupt.\+h}}
+\subsubsection[{\texorpdfstring{E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}{EMPTY_INTERRUPT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT(
+\begin{DoxyParamCaption}
+\item[{}]{vector}
+\end{DoxyParamCaption}
+)}\hypertarget{interrupt_8h_af770dc4b91ba7ed20e4e0587a4b23247}{}\label{interrupt_8h_af770dc4b91ba7ed20e4e0587a4b23247}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void}) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_} ((signal,naked,\_\_INTR\_ATTRS));    \(\backslash\)
+    \textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void}) \{ \_\_asm\_\_ \_\_volatile\_\_ (\textcolor{stringliteral}{"reti"} ::); \}
+\end{DoxyCode}
+\index{interrupt.\+h@{interrupt.\+h}!I\+SR@{I\+SR}}
+\index{I\+SR@{I\+SR}!interrupt.\+h@{interrupt.\+h}}
+\subsubsection[{\texorpdfstring{I\+SR}{ISR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+SR(
+\begin{DoxyParamCaption}
+\item[{}]{vector, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{interrupt_8h_acc6b0e2c42fdcb76dd4d15c97aaf2dde}{}\label{interrupt_8h_acc6b0e2c42fdcb76dd4d15c97aaf2dde}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void}) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_} ((signal,\_\_INTR\_ATTRS)) \_\_VA\_ARGS\_\_; \(\backslash\)
+    \textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void})
+\end{DoxyCode}
+\index{interrupt.\+h@{interrupt.\+h}!I\+S\+R\+\_\+\+A\+L\+I\+AS@{I\+S\+R\+\_\+\+A\+L\+I\+AS}}
+\index{I\+S\+R\+\_\+\+A\+L\+I\+AS@{I\+S\+R\+\_\+\+A\+L\+I\+AS}!interrupt.\+h@{interrupt.\+h}}
+\subsubsection[{\texorpdfstring{I\+S\+R\+\_\+\+A\+L\+I\+AS}{ISR_ALIAS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+R\+\_\+\+A\+L\+I\+AS(
+\begin{DoxyParamCaption}
+\item[{}]{vector, }
+\item[{}]{tgt}
+\end{DoxyParamCaption}
+)}\hypertarget{interrupt_8h_adcb937fec55370cbf0c5b31d6d499ebe}{}\label{interrupt_8h_adcb937fec55370cbf0c5b31d6d499ebe}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void}) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\(\backslash\)}
+\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{    \_\_attribute\_\_}((signal, naked, \_\_INTR\_ATTRS)); \(\backslash\)
+    void vector (\textcolor{keywordtype}{void}) \{ \textcolor{keyword}{asm} \textcolor{keyword}{volatile} (\textcolor{stringliteral}{"rjmp "} \_\_STRINGIFY(tgt) ::); \}
+\end{DoxyCode}
+\index{interrupt.\+h@{interrupt.\+h}!S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}}
+\index{S\+I\+G\+N\+AL@{S\+I\+G\+N\+AL}!interrupt.\+h@{interrupt.\+h}}
+\subsubsection[{\texorpdfstring{S\+I\+G\+N\+AL}{SIGNAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+I\+G\+N\+AL(
+\begin{DoxyParamCaption}
+\item[{}]{vector}
+\end{DoxyParamCaption}
+)}\hypertarget{interrupt_8h_a67cd0dea412157775c2f2a3ffe9fb8ff}{}\label{interrupt_8h_a67cd0dea412157775c2f2a3ffe9fb8ff}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void}) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_} ((signal, \_\_INTR\_ATTRS));     \(\backslash\)
+    \textcolor{keywordtype}{void} vector (\textcolor{keywordtype}{void})
+\end{DoxyCode}

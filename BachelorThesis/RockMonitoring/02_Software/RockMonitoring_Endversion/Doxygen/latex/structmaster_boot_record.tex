@@ -1,0 +1,57 @@
+\hypertarget{structmaster_boot_record}{}\section{master\+Boot\+Record Struct Reference}
+\label{structmaster_boot_record}\index{master\+Boot\+Record@{master\+Boot\+Record}}
+
+
+Master Boot Record.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Fat\+Structs.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structmaster_boot_record_a26ca1fb4ebbff2cc1a54153b1dfcd688}{code\+Area} \mbox{[}440\mbox{]}
+\item 
+uint32\+\_\+t \hyperlink{structmaster_boot_record_a77151c641444c0653ff71a253f0423ef}{disk\+Signature}
+\item 
+uint16\+\_\+t \hyperlink{structmaster_boot_record_afacfc863e98f64053cd9459c6dec948f}{usually\+Zero}
+\item 
+\hyperlink{_sd_fat_structs_8h_a37251e7d5c69a159be727a3fc8c9d0e6}{part\+\_\+t} \hyperlink{structmaster_boot_record_aa4e294e50f311635c10c92f4c99227c5}{part} \mbox{[}4\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{structmaster_boot_record_a42b0b413ecb21ac5314d4f6bca05308f}{mbr\+Sig0}
+\item 
+uint8\+\_\+t \hyperlink{structmaster_boot_record_aafbbcb4f6a2d1181c6458d4c9603df4f}{mbr\+Sig1}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Master Boot Record. 
+
+The first block of a storage device that is formatted with a M\+BR. 
+
+\subsection{Member Data Documentation}
+\index{master\+Boot\+Record@{master\+Boot\+Record}!code\+Area@{code\+Area}}
+\index{code\+Area@{code\+Area}!master\+Boot\+Record@{master\+Boot\+Record}}
+\subsubsection[{\texorpdfstring{code\+Area}{codeArea}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t master\+Boot\+Record\+::code\+Area\mbox{[}440\mbox{]}}\hypertarget{structmaster_boot_record_a26ca1fb4ebbff2cc1a54153b1dfcd688}{}\label{structmaster_boot_record_a26ca1fb4ebbff2cc1a54153b1dfcd688}
+Code Area for master boot program. \index{master\+Boot\+Record@{master\+Boot\+Record}!disk\+Signature@{disk\+Signature}}
+\index{disk\+Signature@{disk\+Signature}!master\+Boot\+Record@{master\+Boot\+Record}}
+\subsubsection[{\texorpdfstring{disk\+Signature}{diskSignature}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t master\+Boot\+Record\+::disk\+Signature}\hypertarget{structmaster_boot_record_a77151c641444c0653ff71a253f0423ef}{}\label{structmaster_boot_record_a77151c641444c0653ff71a253f0423ef}
+Optional Windows NT disk signature. May contain boot code. \index{master\+Boot\+Record@{master\+Boot\+Record}!mbr\+Sig0@{mbr\+Sig0}}
+\index{mbr\+Sig0@{mbr\+Sig0}!master\+Boot\+Record@{master\+Boot\+Record}}
+\subsubsection[{\texorpdfstring{mbr\+Sig0}{mbrSig0}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t master\+Boot\+Record\+::mbr\+Sig0}\hypertarget{structmaster_boot_record_a42b0b413ecb21ac5314d4f6bca05308f}{}\label{structmaster_boot_record_a42b0b413ecb21ac5314d4f6bca05308f}
+First M\+BR signature byte. Must be 0\+X55 \index{master\+Boot\+Record@{master\+Boot\+Record}!mbr\+Sig1@{mbr\+Sig1}}
+\index{mbr\+Sig1@{mbr\+Sig1}!master\+Boot\+Record@{master\+Boot\+Record}}
+\subsubsection[{\texorpdfstring{mbr\+Sig1}{mbrSig1}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t master\+Boot\+Record\+::mbr\+Sig1}\hypertarget{structmaster_boot_record_aafbbcb4f6a2d1181c6458d4c9603df4f}{}\label{structmaster_boot_record_aafbbcb4f6a2d1181c6458d4c9603df4f}
+Second M\+BR signature byte. Must be 0\+X\+AA \index{master\+Boot\+Record@{master\+Boot\+Record}!part@{part}}
+\index{part@{part}!master\+Boot\+Record@{master\+Boot\+Record}}
+\subsubsection[{\texorpdfstring{part}{part}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf part\+\_\+t} master\+Boot\+Record\+::part\mbox{[}4\mbox{]}}\hypertarget{structmaster_boot_record_aa4e294e50f311635c10c92f4c99227c5}{}\label{structmaster_boot_record_aa4e294e50f311635c10c92f4c99227c5}
+Partition tables. \index{master\+Boot\+Record@{master\+Boot\+Record}!usually\+Zero@{usually\+Zero}}
+\index{usually\+Zero@{usually\+Zero}!master\+Boot\+Record@{master\+Boot\+Record}}
+\subsubsection[{\texorpdfstring{usually\+Zero}{usuallyZero}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t master\+Boot\+Record\+::usually\+Zero}\hypertarget{structmaster_boot_record_afacfc863e98f64053cd9459c6dec948f}{}\label{structmaster_boot_record_afacfc863e98f64053cd9459c6dec948f}
+Usually zero but may be more boot code. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_fat_structs_8h}{Sd\+Fat\+Structs.\+h}\end{DoxyCompactItemize}

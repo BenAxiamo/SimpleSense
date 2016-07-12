@@ -1,0 +1,821 @@
+\hypertarget{class_wasp_u_s_b}{}\section{Wasp\+U\+SB Class Reference}
+\label{class_wasp_u_s_b}\index{Wasp\+U\+SB@{Wasp\+U\+SB}}
+
+
+\hyperlink{class_wasp_u_s_b}{Wasp\+U\+SB} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+U\+S\+B.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_u_s_b_a9ebe26bdbbfd93f5167b65d031716aa1}{Wasp\+U\+SB} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a95f2630ed077735e742db92300f86736}{ON} ()
+\begin{DoxyCompactList}\small\item\em It opens U\+A\+R\+T0 to be able to communicate with the F\+T\+DI conversor. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a70ada98efa6ea6309c9e323cdca6768a}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It closes the previously opened U\+A\+R\+T0. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_s_b_a265fc1a0c2036c353eebed95ab00eeb6}{available} ()
+\begin{DoxyCompactList}\small\item\em It checks if there is available data waiting to be read. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_u_s_b_ab9635136bbf8bb0911434a543b44aaff}{read} ()
+\begin{DoxyCompactList}\small\item\em It reads a byte from the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_aa9b5b58cc89424ca30fd269baf7fe3df}{flush} ()
+\begin{DoxyCompactList}\small\item\em It clears the U\+A\+RT buffer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a5389582bec205db84d73343d83ab64d7}{print} (char c)
+\begin{DoxyCompactList}\small\item\em It prints a character. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a69256440353991662e47f87ca7e9de91}{print} (const char\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em It prints a string. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a2e644d10832552b0683cf75efcf73364}{print} (uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em It prints an unsigned 8-\/bit integer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a64175df998af81d1cb8267a8b6d003e9}{print} (uint16\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em It prints an unsigned 16-\/bit integer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a3e13e6c385b42c8054161ba7c9fd8d3d}{print} (int n)
+\begin{DoxyCompactList}\small\item\em It prints an integer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a9e5edc353722483d3c645c1853671a90}{print} (long n)
+\begin{DoxyCompactList}\small\item\em It prints a long integer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_af1806551de1377607e3afae872e38c76}{print} (unsigned long n)
+\begin{DoxyCompactList}\small\item\em It prints an unsigned long integer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_af3012847997947e01e9864125769f294}{print} (long n, int base)
+\begin{DoxyCompactList}\small\item\em It prints a long number in the specified base. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_ad41096946034b6704b5ea7d50476afb3}{print\+Hex} (char n)
+\begin{DoxyCompactList}\small\item\em It prints a byte as a hexadecimal (\%2X) format. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a1f6c618fa2dd59988d4dd502775bc904}{print} (double n)
+\begin{DoxyCompactList}\small\item\em It prints a double number. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a581e7c5abeab6944be18cdf75025428e}{print} (uint64\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em It prints a 64-\/bit number. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_ad40be5131f94c3cc0e273cd93bf17ae5}{println} ()
+\begin{DoxyCompactList}\small\item\em It prints an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a4a237cb192a12e71e2cd3e2f95e60248}{println} (char c)
+\begin{DoxyCompactList}\small\item\em It prints a character adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a5707c6972428dca29b158b6004b7e1c6}{println} (const char\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em It prints a string adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_aee211c527c8a9b8debbc4c944b794cb4}{println} (uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em It prints an unsigned 8-\/bit integer adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_aec207e8ffda9adb29bb22cfaf4d789e8}{println} (uint16\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em It prints an unsigned 16-\/bit integer adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_af8b8845b2a32b1d346f5173948b72e09}{println} (int n)
+\begin{DoxyCompactList}\small\item\em It prints an integer adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_ad18e47947018f4290a6e765ba3929e6a}{println} (long n)
+\begin{DoxyCompactList}\small\item\em It prints a long integer adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_adc9c958cf0b4dfed7f0c840a5049df31}{println} (unsigned long n)
+\begin{DoxyCompactList}\small\item\em It prints an unsigned long integer adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a8702439e3b1619b5264f2bcf3f3b73f5}{println} (long n, int base)
+\item 
+void \hyperlink{class_wasp_u_s_b_af2c8f07a15502d6019c0a656aeb8d473}{println} (double n)
+\begin{DoxyCompactList}\small\item\em It prints a double number adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a7420294baca46c7b8790c0c227229b26}{println} (uint64\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em It prints a 64-\/bit number adding an E\+OL and a carriage return. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_wasp_u_s_b_a0f1b0ade8268eb66c67d43c8e6dd0d70}{print} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$)
+\begin{DoxyCompactList}\small\item\em It prints a string from Flash memory. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_wasp_u_s_b_a65bc1500730ffefca6ed6d78bf35e5d4}{println} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$)
+\begin{DoxyCompactList}\small\item\em It prints a string from Flash memory adding an E\+OL. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_ace305f71dd8a0a28c3d01e7c20a18cdb}{printf} (char $\ast$fmt,...)
+\begin{DoxyCompactList}\small\item\em It prints a sequence of data formatted as the format argument specifies. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a56f23ade3e4777186b924792e047073b}{print\+Float} (double number, uint8\+\_\+t digits)
+\begin{DoxyCompactList}\small\item\em It prints a \textquotesingle{}float\textquotesingle{} number. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_abae6626a79de5133ee4cf3d748ab687f}{print} (uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It prints a buffer specifying the length of the buffer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a525ed14d2e553bdf940a22d856d97952}{println} (uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It prints a buffer specifying the length of the buffer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a182f4452a07af8b3ea8cf0bb03a8f038}{print\+Hex} (uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It prints a buffer in H\+EX format specifying the length of the buffer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_a2125d30fd9b9a228b6f5ff68f5f2fe40}{print\+Hexln} (uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It prints a buffer in H\+EX format specifying the length of the buffer. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_af8e58b3bdb7ee38b50459e3922b93190}{secure\+Begin} ()\hypertarget{class_wasp_u_s_b_af8e58b3bdb7ee38b50459e3922b93190}{}\label{class_wasp_u_s_b_af8e58b3bdb7ee38b50459e3922b93190}
+
+\begin{DoxyCompactList}\small\item\em It prepares the U\+A\+R\+T0 for U\+SB port securely. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_s_b_af337e6e991dde4c8c2b42106347b9d93}{secure\+End} ()\hypertarget{class_wasp_u_s_b_af337e6e991dde4c8c2b42106347b9d93}{}\label{class_wasp_u_s_b_af337e6e991dde4c8c2b42106347b9d93}
+
+\begin{DoxyCompactList}\small\item\em It sets the U\+A\+R\+T0 to the previous settings before using U\+SB port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_u_s_b}{Wasp\+U\+SB} Class. 
+
+\hyperlink{class_wasp_u_s_b}{Wasp\+U\+SB} Class defines all the variables and functions used for managing the U\+SB interface 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{Wasp\+U\+S\+B()}{WaspUSB()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+U\+S\+B\+::\+Wasp\+U\+SB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a9ebe26bdbbfd93f5167b65d031716aa1}{}\label{class_wasp_u_s_b_a9ebe26bdbbfd93f5167b65d031716aa1}
+
+
+class constructor 
+
+Constructors ///////////////////////////////////////////////////////////////.
+
+It initializes some variables 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!available@{available}}
+\index{available@{available}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+S\+B\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a265fc1a0c2036c353eebed95ab00eeb6}{}\label{class_wasp_u_s_b_a265fc1a0c2036c353eebed95ab00eeb6}
+
+
+It checks if there is available data waiting to be read. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if there is available data, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!flush@{flush}}
+\index{flush@{flush}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{flush()}{flush()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::flush (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_aa9b5b58cc89424ca30fd269baf7fe3df}{}\label{class_wasp_u_s_b_aa9b5b58cc89424ca30fd269baf7fe3df}
+
+
+It clears the U\+A\+RT buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a70ada98efa6ea6309c9e323cdca6768a}{}\label{class_wasp_u_s_b_a70ada98efa6ea6309c9e323cdca6768a}
+
+
+It closes the previously opened U\+A\+R\+T0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!ON@{ON}}
+\index{ON@{ON}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a95f2630ed077735e742db92300f86736}{}\label{class_wasp_u_s_b_a95f2630ed077735e742db92300f86736}
+
+
+It opens U\+A\+R\+T0 to be able to communicate with the F\+T\+DI conversor. 
+
+Public Methods /////////////////////////////////////////////////////////////.
+
+It gets the baud rate from \textquotesingle{}U\+S\+B\+\_\+\+R\+A\+TE\textquotesingle{} 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(char c)}{print(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a5389582bec205db84d73343d83ab64d7}{}\label{class_wasp_u_s_b_a5389582bec205db84d73343d83ab64d7}
+
+
+It prints a character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & c \+: the character to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(const char[])}{print(const char[])}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{const char}]{c\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a69256440353991662e47f87ca7e9de91}{}\label{class_wasp_u_s_b_a69256440353991662e47f87ca7e9de91}
+
+
+It prints a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char\mbox{[}\mbox{]} c \+: the string to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(uint8\+\_\+t b)}{print(uint8_t b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a2e644d10832552b0683cf75efcf73364}{}\label{class_wasp_u_s_b_a2e644d10832552b0683cf75efcf73364}
+
+
+It prints an unsigned 8-\/bit integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & b \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(uint16\+\_\+t n)}{print(uint16_t n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a64175df998af81d1cb8267a8b6d003e9}{}\label{class_wasp_u_s_b_a64175df998af81d1cb8267a8b6d003e9}
+
+
+It prints an unsigned 16-\/bit integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(int n)}{print(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a3e13e6c385b42c8054161ba7c9fd8d3d}{}\label{class_wasp_u_s_b_a3e13e6c385b42c8054161ba7c9fd8d3d}
+
+
+It prints an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(long n)}{print(long n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{long}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a9e5edc353722483d3c645c1853671a90}{}\label{class_wasp_u_s_b_a9e5edc353722483d3c645c1853671a90}
+
+
+It prints a long integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(unsigned long n)}{print(unsigned long n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_af1806551de1377607e3afae872e38c76}{}\label{class_wasp_u_s_b_af1806551de1377607e3afae872e38c76}
+
+
+It prints an unsigned long integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(long n, int base)}{print(long n, int base)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{long}]{n, }
+\item[{int}]{base}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_af3012847997947e01e9864125769f294}{}\label{class_wasp_u_s_b_af3012847997947e01e9864125769f294}
+
+
+It prints a long number in the specified base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & n \+: the number to print \\
+\hline
+{\em int} & base \+: the base for printing the number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(double n)}{print(double n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{double}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a1f6c618fa2dd59988d4dd502775bc904}{}\label{class_wasp_u_s_b_a1f6c618fa2dd59988d4dd502775bc904}
+
+
+It prints a double number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(uint64\+\_\+t n)}{print(uint64_t n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a581e7c5abeab6944be18cdf75025428e}{}\label{class_wasp_u_s_b_a581e7c5abeab6944be18cdf75025428e}
+
+
+It prints a 64-\/bit number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint64\+\_\+t} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$)}{print(const __FlashStringHelper *)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{ifsh}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a0f1b0ade8268eb66c67d43c8e6dd0d70}{}\label{class_wasp_u_s_b_a0f1b0ade8268eb66c67d43c8e6dd0d70}
+
+
+It prints a string from Flash memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$ \+: pointer to the string in the flash \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t \textquotesingle{}0\textquotesingle{} 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print@{print}}
+\index{print@{print}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print(uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)}{print(uint8_t *pointer, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{pointer, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_abae6626a79de5133ee4cf3d748ab687f}{}\label{class_wasp_u_s_b_abae6626a79de5133ee4cf3d748ab687f}
+
+
+It prints a buffer specifying the length of the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & pointer \+: pointer to data to be printed \\
+\hline
+{\em uint16\+\_\+t} & length \+: length of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!printf@{printf}}
+\index{printf@{printf}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{printf(char $\ast$fmt,...)}{printf(char *fmt,...)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::printf (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_ace305f71dd8a0a28c3d01e7c20a18cdb}{}\label{class_wasp_u_s_b_ace305f71dd8a0a28c3d01e7c20a18cdb}
+
+
+It prints a sequence of data formatted as the format argument specifies. 
+
+This function emulates the \hyperlink{stdio_8h}{stdio.\+h} \hyperlink{class_wasp_u_s_b_ace305f71dd8a0a28c3d01e7c20a18cdb}{printf()} functionality in C and will send the output to the Serial connection using print\+Byte(). The resulting string sent over serial is limited to 128 chars. 
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$fmt \+: is the format string to be printed \\
+\hline
+{\em ...} & \+: additional arguments as specified in format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print\+Float@{print\+Float}}
+\index{print\+Float@{print\+Float}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print\+Float(double number, uint8\+\_\+t digits)}{printFloat(double number, uint8_t digits)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print\+Float (
+\begin{DoxyParamCaption}
+\item[{double}]{number, }
+\item[{uint8\+\_\+t}]{digits}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a56f23ade3e4777186b924792e047073b}{}\label{class_wasp_u_s_b_a56f23ade3e4777186b924792e047073b}
+
+
+It prints a \textquotesingle{}float\textquotesingle{} number. 
+
+Private Methods ////////////////////////////////////////////////////////////.
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & number \+: the number to print \\
+\hline
+{\em uint8\+\_\+t} & digits \+: the number of non-\/integer part digits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print\+Hex@{print\+Hex}}
+\index{print\+Hex@{print\+Hex}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print\+Hex(char n)}{printHex(char n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print\+Hex (
+\begin{DoxyParamCaption}
+\item[{char}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_ad41096946034b6704b5ea7d50476afb3}{}\label{class_wasp_u_s_b_ad41096946034b6704b5ea7d50476afb3}
+
+
+It prints a byte as a hexadecimal (\%2X) format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & n \+: the byte to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print\+Hex@{print\+Hex}}
+\index{print\+Hex@{print\+Hex}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print\+Hex(uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)}{printHex(uint8_t *pointer, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print\+Hex (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{pointer, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a182f4452a07af8b3ea8cf0bb03a8f038}{}\label{class_wasp_u_s_b_a182f4452a07af8b3ea8cf0bb03a8f038}
+
+
+It prints a buffer in H\+EX format specifying the length of the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & pointer \+: pointer to data to be printed \\
+\hline
+{\em uint16\+\_\+t} & length \+: length of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!print\+Hexln@{print\+Hexln}}
+\index{print\+Hexln@{print\+Hexln}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{print\+Hexln(uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)}{printHexln(uint8_t *pointer, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::print\+Hexln (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{pointer, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a2125d30fd9b9a228b6f5ff68f5f2fe40}{}\label{class_wasp_u_s_b_a2125d30fd9b9a228b6f5ff68f5f2fe40}
+
+
+It prints a buffer in H\+EX format specifying the length of the buffer. 
+
+This function adds an End Of Line after printing the buffer 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & pointer \+: pointer to data to be printed \\
+\hline
+{\em uint16\+\_\+t} & length \+: length of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println()}{println()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_ad40be5131f94c3cc0e273cd93bf17ae5}{}\label{class_wasp_u_s_b_ad40be5131f94c3cc0e273cd93bf17ae5}
+
+
+It prints an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(char c)}{println(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a4a237cb192a12e71e2cd3e2f95e60248}{}\label{class_wasp_u_s_b_a4a237cb192a12e71e2cd3e2f95e60248}
+
+
+It prints a character adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & c \+: the character to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(const char[])}{println(const char[])}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{const char}]{c\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a5707c6972428dca29b158b6004b7e1c6}{}\label{class_wasp_u_s_b_a5707c6972428dca29b158b6004b7e1c6}
+
+
+It prints a string adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char\mbox{[}\mbox{]} c \+: the string to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(uint8\+\_\+t b)}{println(uint8_t b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_aee211c527c8a9b8debbc4c944b794cb4}{}\label{class_wasp_u_s_b_aee211c527c8a9b8debbc4c944b794cb4}
+
+
+It prints an unsigned 8-\/bit integer adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & b \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(uint16\+\_\+t n)}{println(uint16_t n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_aec207e8ffda9adb29bb22cfaf4d789e8}{}\label{class_wasp_u_s_b_aec207e8ffda9adb29bb22cfaf4d789e8}
+
+
+It prints an unsigned 16-\/bit integer adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(int n)}{println(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_af8b8845b2a32b1d346f5173948b72e09}{}\label{class_wasp_u_s_b_af8b8845b2a32b1d346f5173948b72e09}
+
+
+It prints an integer adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(long n)}{println(long n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{long}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_ad18e47947018f4290a6e765ba3929e6a}{}\label{class_wasp_u_s_b_ad18e47947018f4290a6e765ba3929e6a}
+
+
+It prints a long integer adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(unsigned long n)}{println(unsigned long n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_adc9c958cf0b4dfed7f0c840a5049df31}{}\label{class_wasp_u_s_b_adc9c958cf0b4dfed7f0c840a5049df31}
+
+
+It prints an unsigned long integer adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(long n, int base)}{println(long n, int base)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{long}]{n, }
+\item[{int}]{base}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a8702439e3b1619b5264f2bcf3f3b73f5}{}\label{class_wasp_u_s_b_a8702439e3b1619b5264f2bcf3f3b73f5}
+It prints a long number in the specified base adding an E\+OL and a carriage return
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & n \+: the number to print \\
+\hline
+{\em int} & base \+: the base for printing the number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(double n)}{println(double n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{double}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_af2c8f07a15502d6019c0a656aeb8d473}{}\label{class_wasp_u_s_b_af2c8f07a15502d6019c0a656aeb8d473}
+
+
+It prints a double number adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(uint64\+\_\+t n)}{println(uint64_t n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a7420294baca46c7b8790c0c227229b26}{}\label{class_wasp_u_s_b_a7420294baca46c7b8790c0c227229b26}
+
+
+It prints a 64-\/bit number adding an E\+OL and a carriage return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint64\+\_\+t} & n \+: the number to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$)}{println(const __FlashStringHelper *)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{ifsh}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a65bc1500730ffefca6ed6d78bf35e5d4}{}\label{class_wasp_u_s_b_a65bc1500730ffefca6ed6d78bf35e5d4}
+
+
+It prints a string from Flash memory adding an E\+OL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+Flash\+String\+Helper} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t \textquotesingle{}0\textquotesingle{} 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!println@{println}}
+\index{println@{println}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{println(uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)}{println(uint8_t *pointer, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+S\+B\+::println (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{pointer, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_a525ed14d2e553bdf940a22d856d97952}{}\label{class_wasp_u_s_b_a525ed14d2e553bdf940a22d856d97952}
+
+
+It prints a buffer specifying the length of the buffer. 
+
+This function adds an End Of Line after printing the buffer 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & pointer \+: pointer to data to be printed \\
+\hline
+{\em uint16\+\_\+t} & length \+: length of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+U\+SB@{Wasp\+U\+SB}!read@{read}}
+\index{read@{read}!Wasp\+U\+SB@{Wasp\+U\+SB}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+U\+S\+B\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_s_b_ab9635136bbf8bb0911434a543b44aaff}{}\label{class_wasp_u_s_b_ab9635136bbf8bb0911434a543b44aaff}
+
+
+It reads a byte from the U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the read byte or \textquotesingle{}-\/1\textquotesingle{} if no data is available 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_u_s_b_8h}{Wasp\+U\+S\+B.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+U\+S\+B.\+cpp\end{DoxyCompactItemize}

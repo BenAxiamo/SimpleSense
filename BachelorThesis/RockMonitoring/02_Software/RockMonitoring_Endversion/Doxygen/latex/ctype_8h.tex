@@ -1,0 +1,49 @@
+\hypertarget{ctype_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/ctype.h File Reference}
+\label{ctype_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/ctype.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/ctype.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+const\+\_\+\+\_\+))\hypertarget{ctype_8h_a87f6b1b3880d945610873b9da382e5d4}{}\label{ctype_8h_a87f6b1b3880d945610873b9da382e5d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Character classification routines}\par
+{\em These functions perform character classification. They return true or false status depending whether the character passed to the function falls into the function\textquotesingle{}s classification (i.\+e. \hyperlink{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}{isdigit()} returns true if its argument is any value \textquotesingle{}0\textquotesingle{} though \textquotesingle{}9\textquotesingle{}, inclusive). If the input is not an unsigned char value, all of this function return false. }\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__ctype_gaebc8f9722cad75962de4053eda5c7ae3}{isalnum} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga3841660f03d72ad3f76fb5f8178fc236}{isalpha} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga28943008652a2c26c266c2f0572bb146}{isascii} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga2571d96058ec498e1c7493adeaff2e9d}{isblank} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga683dc5490fcbdbf149ffc5ae4701b34b}{iscntrl} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}{isdigit} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gafeb60935d2393d54a57545c3f54f9682}{isgraph} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gaaddb38a750886eca0847f6ad07dd90da}{islower} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga7d57debe23df28bf225dc8972b5c3667}{isprint} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga289e7ad4e56ddb01c40c5e36893d4e15}{ispunct} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gac83050abd09696d505838d772b910b37}{isspace} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gacf51dfd9a4ffe74117818cf7a4ab6600}{isupper} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gacd4734333ae16e853e0ffb4db4a96ba7}{isxdigit} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Character convertion routines}\par
+{\em This realization permits all possible values of integer argument. The \hyperlink{group__ctype_ga4a0c9dbccb29e29684958d68aa021e8a}{toascii()} function clears all highest bits. The \hyperlink{group__ctype_gad0cebcf69817481a96ee98b4e801edb5}{tolower()} and \hyperlink{group__ctype_ga3f6d808c2e5205a500cf573dfc698c75}{toupper()} functions return an input argument as is, if it is not an unsigned char value. }\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__ctype_ga4a0c9dbccb29e29684958d68aa021e8a}{toascii} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_gad0cebcf69817481a96ee98b4e801edb5}{tolower} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+int \hyperlink{group__ctype_ga3f6d808c2e5205a500cf573dfc698c75}{toupper} (int \+\_\+\+\_\+c) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+\end{Indent}

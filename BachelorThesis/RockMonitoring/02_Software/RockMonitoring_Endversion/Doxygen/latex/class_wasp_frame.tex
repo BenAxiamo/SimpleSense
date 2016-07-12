@@ -1,0 +1,349 @@
+\hypertarget{class_wasp_frame}{}\section{Wasp\+Frame Class Reference}
+\label{class_wasp_frame}\index{Wasp\+Frame@{Wasp\+Frame}}
+
+
+\hyperlink{class_wasp_frame}{Wasp\+Frame} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Frame.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_frame_ac3e1f27f05dbf1ce26f5955bdfc3a56a}{Wasp\+Frame} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_a47ddf440ea4ef74d406f1233b8dd2576}{set\+Frame\+Size} (uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Function \+: set the frame maximum size. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_a9541d92cf2093307e73117870f435619}{set\+Frame\+Size} (uint8\+\_\+t protocol, uint8\+\_\+t link\+Encryption, uint8\+\_\+t A\+E\+S\+Encryption)
+\begin{DoxyCompactList}\small\item\em Function \+: set the frame maximum size. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_aba2fd4916e78117d11b5ac7f68f4c50b}{set\+Frame\+Size} (uint8\+\_\+t protocol, uint8\+\_\+t addressing, uint8\+\_\+t link\+Encryption, uint8\+\_\+t A\+E\+S\+Encryption)
+\begin{DoxyCompactList}\small\item\em Function \+: set the frame maximum size. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_frame_abf0862100b36d8a9523b4733cbd7298b}{get\+Frame\+Size} (void)
+\begin{DoxyCompactList}\small\item\em Function \+: get the frame maximum size. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_af8d3c753741d91c8a81c7fd154ebb9d0}{create\+Frame} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Function \+: creates a new frame. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_a729ef7bf28291ef4119a1edc549d9dec}{create\+Frame} (uint8\+\_\+t mode, char $\ast$mote\+ID)
+\begin{DoxyCompactList}\small\item\em Function \+: creates a new frame. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_frame_a20bae50eb9160ba9e675d6824bb21fc6}{encrypt\+Frame} (uint16\+\_\+t A\+E\+Smode, char $\ast$password)
+\begin{DoxyCompactList}\small\item\em Function \+: creates a encrypted frame. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_a32769034ed6b5908e9a843523435fd2a}{set\+Frame\+Type} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em Function \+: set the frame type. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_frame_a66927201adb1147c61b149b3f7efd8a7}{show\+Frame} (void)
+\begin{DoxyCompactList}\small\item\em Function \+: shows the frame. \end{DoxyCompactList}\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, int value)\hypertarget{class_wasp_frame_aa58efc64c584f728b1a2842690a68481}{}\label{class_wasp_frame_aa58efc64c584f728b1a2842690a68481}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, unsigned long value)\hypertarget{class_wasp_frame_a79c271fc197fdebb9305400724e815be}{}\label{class_wasp_frame_a79c271fc197fdebb9305400724e815be}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, double value)\hypertarget{class_wasp_frame_a3e3d14117ca1dc2651dc918adfe5d5e2}{}\label{class_wasp_frame_a3e3d14117ca1dc2651dc918adfe5d5e2}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, double value, int N)\hypertarget{class_wasp_frame_ab35ae61a6e820ba4e6bf84b4bf1a2c03}{}\label{class_wasp_frame_ab35ae61a6e820ba4e6bf84b4bf1a2c03}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, char $\ast$str)\hypertarget{class_wasp_frame_ad66a9af967b89148ce2b941db9f0fe35}{}\label{class_wasp_frame_ad66a9af967b89148ce2b941db9f0fe35}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, double val1, double val2)\hypertarget{class_wasp_frame_aafd7f7dc8da714532ac36abd2e353b8e}{}\label{class_wasp_frame_aafd7f7dc8da714532ac36abd2e353b8e}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, unsigned long val1, unsigned long val2)\hypertarget{class_wasp_frame_af2ac6f48ae6353c3b3444b1db96b23bb}{}\label{class_wasp_frame_af2ac6f48ae6353c3b3444b1db96b23bb}
+
+\item 
+int8\+\_\+t \hyperlink{class_wasp_frame_ad81626097aaa216960f51b917085dcee}{add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, uint8\+\_\+t val1, uint8\+\_\+t val2, uint8\+\_\+t val3)
+\item 
+int8\+\_\+t \hyperlink{class_wasp_frame_adf0963a7b3bee30545c50a43d830aaea}{add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, uint8\+\_\+t val1, uint8\+\_\+t val2, uint8\+\_\+t val3, int val4)
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, int val1, int val2, int val3)\hypertarget{class_wasp_frame_aa8cde1dd751ade0ba5cdfa7debb71bcc}{}\label{class_wasp_frame_aa8cde1dd751ade0ba5cdfa7debb71bcc}
+
+\item 
+int8\+\_\+t {\bfseries add\+Sensor} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, double val1, double val2, double val3)\hypertarget{class_wasp_frame_a763cd50fa50bb9e11f27e3e089e31056}{}\label{class_wasp_frame_a763cd50fa50bb9e11f27e3e089e31056}
+
+\item 
+int8\+\_\+t {\bfseries check\+Fields} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, uint8\+\_\+t type\+Val, uint8\+\_\+t fields)\hypertarget{class_wasp_frame_a10207aef11325295b063dd71b0d33a61}{}\label{class_wasp_frame_a10207aef11325295b063dd71b0d33a61}
+
+\item 
+void {\bfseries set\+ID} (char $\ast$mote\+ID)\hypertarget{class_wasp_frame_a70a3da91fe77ced1139fc51e23014fea}{}\label{class_wasp_frame_a70a3da91fe77ced1139fc51e23014fea}
+
+\item 
+void {\bfseries get\+ID} (char $\ast$mote\+ID)\hypertarget{class_wasp_frame_ab1ac1a5af48b7bd6dfcd149a8415a76f}{}\label{class_wasp_frame_ab1ac1a5af48b7bd6dfcd149a8415a76f}
+
+\item 
+void {\bfseries decrement\+Sequence} (void)\hypertarget{class_wasp_frame_ac8f030a175f6ab911287cd3db9a1ea0f}{}\label{class_wasp_frame_ac8f030a175f6ab911287cd3db9a1ea0f}
+
+\item 
+int8\+\_\+t {\bfseries add\+Timestamp} (void)\hypertarget{class_wasp_frame_a3fdad43f903829247a413bb795627bb0}{}\label{class_wasp_frame_a3fdad43f903829247a413bb795627bb0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_frame_a85189b90e448e7de179dcb908d4fe3d2}{buffer} \mbox{[}\hyperlink{_wasp_frame_8h_a99a8aeb9f036381a1f4b1c1a1e4fe9e4}{M\+A\+X\+\_\+\+F\+R\+A\+ME}+1\mbox{]}\hypertarget{class_wasp_frame_a85189b90e448e7de179dcb908d4fe3d2}{}\label{class_wasp_frame_a85189b90e448e7de179dcb908d4fe3d2}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: buffer where the frame is created in. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_frame_a40d14449bd0e77f7f355f6d2b6a43788}{length}\hypertarget{class_wasp_frame_a40d14449bd0e77f7f355f6d2b6a43788}{}\label{class_wasp_frame_a40d14449bd0e77f7f355f6d2b6a43788}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: length of the frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_frame}{Wasp\+Frame} Class. 
+
+\hyperlink{class_wasp_frame}{Wasp\+Frame} Class defines all the variables and functions used to create the sensor frames in Waspmote 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Frame@{Wasp\+Frame}!Wasp\+Frame@{Wasp\+Frame}}
+\index{Wasp\+Frame@{Wasp\+Frame}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{Wasp\+Frame()}{WaspFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Frame\+::\+Wasp\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_ac3e1f27f05dbf1ce26f5955bdfc3a56a}{}\label{class_wasp_frame_ac3e1f27f05dbf1ce26f5955bdfc3a56a}
+
+
+class constructor 
+
+Constructors ///////////////////////////////////////////////////////////////.
+
+Initialize the class attributes 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+This code should be used when Hibernate feature is used instead of the previous store\+Sequence(0) calling 
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Frame@{Wasp\+Frame}!add\+Sensor@{add\+Sensor}}
+\index{add\+Sensor@{add\+Sensor}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{add\+Sensor(uint8\+\_\+t type, uint8\+\_\+t val1, uint8\+\_\+t val2, uint8\+\_\+t val3)}{addSensor(uint8_t type, uint8_t val1, uint8_t val2, uint8_t val3)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Frame\+::add\+Sensor (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{type, }
+\item[{uint8\+\_\+t}]{val1, }
+\item[{uint8\+\_\+t}]{val2, }
+\item[{uint8\+\_\+t}]{val3}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_ad81626097aaa216960f51b917085dcee}{}\label{class_wasp_frame_ad81626097aaa216960f51b917085dcee}
+A\+S\+C\+II
+
+B\+I\+N\+A\+RY \index{Wasp\+Frame@{Wasp\+Frame}!add\+Sensor@{add\+Sensor}}
+\index{add\+Sensor@{add\+Sensor}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{add\+Sensor(uint8\+\_\+t type, uint8\+\_\+t val1, uint8\+\_\+t val2, uint8\+\_\+t val3, int val4)}{addSensor(uint8_t type, uint8_t val1, uint8_t val2, uint8_t val3, int val4)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Frame\+::add\+Sensor (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{type, }
+\item[{uint8\+\_\+t}]{val1, }
+\item[{uint8\+\_\+t}]{val2, }
+\item[{uint8\+\_\+t}]{val3, }
+\item[{int}]{val4}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_adf0963a7b3bee30545c50a43d830aaea}{}\label{class_wasp_frame_adf0963a7b3bee30545c50a43d830aaea}
+A\+S\+C\+II
+
+B\+I\+N\+A\+RY \index{Wasp\+Frame@{Wasp\+Frame}!create\+Frame@{create\+Frame}}
+\index{create\+Frame@{create\+Frame}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{create\+Frame(uint8\+\_\+t mode)}{createFrame(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::create\+Frame (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_af8d3c753741d91c8a81c7fd154ebb9d0}{}\label{class_wasp_frame_af8d3c753741d91c8a81c7fd154ebb9d0}
+
+
+Function \+: creates a new frame. 
+
+This function creates a new A\+S\+C\+II frame getting the mote ID from the E\+E\+P\+R\+OM memory. A\+S\+C\+II F\+R\+A\+ME
+
+B\+I\+N\+A\+RY F\+R\+A\+ME \index{Wasp\+Frame@{Wasp\+Frame}!create\+Frame@{create\+Frame}}
+\index{create\+Frame@{create\+Frame}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{create\+Frame(uint8\+\_\+t mode, char $\ast$mote\+I\+D)}{createFrame(uint8_t mode, char *moteID)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::create\+Frame (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{char $\ast$}]{mote\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_a729ef7bf28291ef4119a1edc549d9dec}{}\label{class_wasp_frame_a729ef7bf28291ef4119a1edc549d9dec}
+
+
+Function \+: creates a new frame. 
+
+This function creates a new frame. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode specifies the frame mode\+: B\+I\+N\+A\+RY or A\+S\+C\+II \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ mote\+ID defines the mote Identifier 
+\end{DoxyReturn}
+\index{Wasp\+Frame@{Wasp\+Frame}!encrypt\+Frame@{encrypt\+Frame}}
+\index{encrypt\+Frame@{encrypt\+Frame}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{encrypt\+Frame(uint16\+\_\+t A\+E\+Smode, char $\ast$password)}{encryptFrame(uint16_t AESmode, char *password)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Frame\+::encrypt\+Frame (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{A\+E\+Smode, }
+\item[{char $\ast$}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_a20bae50eb9160ba9e675d6824bb21fc6}{}\label{class_wasp_frame_a20bae50eb9160ba9e675d6824bb21fc6}
+
+
+Function \+: creates a encrypted frame. 
+
+This function creates a new frame, encrypting the actual contents of the Waspmote Frame with the A\+E\+S-\/key specified as input. The encrypted message becomes the payload of the new encapsultad frame 
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & A\+E\+Smode\+: specifies the A\+ES key mode\+: 128, 192 or 256 \\
+\hline
+{\em char$\ast$} & password\+: specifies the A\+ES key as a string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if OK; \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+Frame@{Wasp\+Frame}!get\+Frame\+Size@{get\+Frame\+Size}}
+\index{get\+Frame\+Size@{get\+Frame\+Size}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{get\+Frame\+Size(void)}{getFrameSize(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Frame\+::get\+Frame\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_abf0862100b36d8a9523b4733cbd7298b}{}\label{class_wasp_frame_abf0862100b36d8a9523b4733cbd7298b}
+
+
+Function \+: get the frame maximum size. 
+
+This function gets the frame maximum size \begin{DoxyReturn}{Returns}
+uint8\+\_\+t indicating the value of \+\_\+max\+Size 
+\end{DoxyReturn}
+\index{Wasp\+Frame@{Wasp\+Frame}!set\+Frame\+Size@{set\+Frame\+Size}}
+\index{set\+Frame\+Size@{set\+Frame\+Size}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{set\+Frame\+Size(uint8\+\_\+t size)}{setFrameSize(uint8_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::set\+Frame\+Size (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_a47ddf440ea4ef74d406f1233b8dd2576}{}\label{class_wasp_frame_a47ddf440ea4ef74d406f1233b8dd2576}
+
+
+Function \+: set the frame maximum size. 
+
+Public Methods /////////////////////////////////////////////////////////////.
+
+This function sets the frame maximum size 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & size size to set as maximum size. It can\textquotesingle{}t exceed the M\+A\+X\+\_\+\+F\+R\+A\+ME constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Frame@{Wasp\+Frame}!set\+Frame\+Size@{set\+Frame\+Size}}
+\index{set\+Frame\+Size@{set\+Frame\+Size}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{set\+Frame\+Size(uint8\+\_\+t protocol, uint8\+\_\+t link\+Encryption, uint8\+\_\+t A\+E\+S\+Encryption)}{setFrameSize(uint8_t protocol, uint8_t linkEncryption, uint8_t AESEncryption)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::set\+Frame\+Size (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{protocol, }
+\item[{uint8\+\_\+t}]{link\+Encryption, }
+\item[{uint8\+\_\+t}]{A\+E\+S\+Encryption}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_a9541d92cf2093307e73117870f435619}{}\label{class_wasp_frame_a9541d92cf2093307e73117870f435619}
+
+
+Function \+: set the frame maximum size. 
+
+This function sets the frame maximum size depending on the protocol, addressing, link\+Encryption mode, A\+E\+S\+Encryption. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & protocol defines the procotol used \\
+\hline
+{\em uint8\+\_\+t} & link\+Encryption defines if X\+Bee encryption is enabled or not \\
+\hline
+{\em uint8\+\_\+t} & A\+E\+S\+Encryption defines if A\+ES encryption is used or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Frame@{Wasp\+Frame}!set\+Frame\+Size@{set\+Frame\+Size}}
+\index{set\+Frame\+Size@{set\+Frame\+Size}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{set\+Frame\+Size(uint8\+\_\+t protocol, uint8\+\_\+t addressing, uint8\+\_\+t link\+Encryption, uint8\+\_\+t A\+E\+S\+Encryption)}{setFrameSize(uint8_t protocol, uint8_t addressing, uint8_t linkEncryption, uint8_t AESEncryption)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::set\+Frame\+Size (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{protocol, }
+\item[{uint8\+\_\+t}]{addressing, }
+\item[{uint8\+\_\+t}]{link\+Encryption, }
+\item[{uint8\+\_\+t}]{A\+E\+S\+Encryption}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_aba2fd4916e78117d11b5ac7f68f4c50b}{}\label{class_wasp_frame_aba2fd4916e78117d11b5ac7f68f4c50b}
+
+
+Function \+: set the frame maximum size. 
+
+This function sets the frame maximum size depending on the protocol, addressing, link\+Encryption mode, A\+E\+S\+Encryption. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & protocol defines the procotol used \\
+\hline
+{\em uint8\+\_\+t} & addressing defines the addressing used \\
+\hline
+{\em uint8\+\_\+t} & link\+Encryption defines if X\+Bee encryption is enabled or not \\
+\hline
+{\em uint8\+\_\+t} & A\+E\+S\+Encryption defines if A\+ES encryption is used or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+A\+ES disabled
+
+X\+B\+E\+E\+\_\+802\+\_\+15\+\_\+4 ////////////////
+
+Z\+I\+G\+B\+EE /////////////////////
+
+D\+I\+G\+I\+M\+E\+SH /////////////////////
+
+X\+B\+E\+E\+\_\+900 /////////////////////
+
+X\+B\+E\+E\+\_\+868 /////////////////////
+
+A\+ES enabled
+
+X\+B\+E\+E\+\_\+802\+\_\+15\+\_\+4 ////////////////
+
+Z\+I\+G\+B\+EE /////////////////////
+
+D\+I\+G\+I\+M\+E\+SH /////////////////////
+
+X\+B\+E\+E\+\_\+900 /////////////////////
+
+X\+B\+E\+E\+\_\+868 /////////////////////
+
+No limit \index{Wasp\+Frame@{Wasp\+Frame}!set\+Frame\+Type@{set\+Frame\+Type}}
+\index{set\+Frame\+Type@{set\+Frame\+Type}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{set\+Frame\+Type(uint8\+\_\+t type)}{setFrameType(uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::set\+Frame\+Type (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_a32769034ed6b5908e9a843523435fd2a}{}\label{class_wasp_frame_a32769034ed6b5908e9a843523435fd2a}
+
+
+Function \+: set the frame type. 
+
+This function sets the frame type (fourth byte of the frame header) 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & type specifies the frame type\+: E\+X\+A\+M\+P\+L\+E\+\_\+\+F\+R\+A\+ME T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+A\+ME E\+V\+E\+N\+T\+\_\+\+F\+R\+A\+ME A\+L\+A\+R\+M\+\_\+\+F\+R\+A\+ME S\+E\+R\+V\+I\+C\+E1\+\_\+\+F\+R\+A\+ME S\+E\+R\+V\+I\+C\+E2\+\_\+\+F\+R\+A\+ME \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Frame@{Wasp\+Frame}!show\+Frame@{show\+Frame}}
+\index{show\+Frame@{show\+Frame}!Wasp\+Frame@{Wasp\+Frame}}
+\subsubsection[{\texorpdfstring{show\+Frame(void)}{showFrame(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Frame\+::show\+Frame (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_frame_a66927201adb1147c61b149b3f7efd8a7}{}\label{class_wasp_frame_a66927201adb1147c61b149b3f7efd8a7}
+
+
+Function \+: shows the frame. 
+
+This function prints the actual frame 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Frame/\hyperlink{_wasp_frame_8h}{Wasp\+Frame.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Frame/Wasp\+Frame.\+cpp\end{DoxyCompactItemize}

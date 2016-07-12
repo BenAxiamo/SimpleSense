@@ -1,0 +1,329 @@
+\hypertarget{class_l_m_p91000}{}\section{L\+M\+P91000 Class Reference}
+\label{class_l_m_p91000}\index{L\+M\+P91000@{L\+M\+P91000}}
+
+
+\hyperlink{class_l_m_p91000}{L\+M\+P91000} Class.  
+
+
+
+
+{\ttfamily \#include $<$L\+M\+P91000.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_l_m_p91000_aa4d633f5110b5b348978ea36c2fddc7d}{check} ()
+\begin{DoxyCompactList}\small\item\em This function checks if the \hyperlink{class_l_m_p91000}{L\+M\+P91000} can is ready. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_m_p91000_a0d6f9c83cfc7ad7f932a16c8884ee96a}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em This function sets the \hyperlink{class_l_m_p91000}{L\+M\+P91000} to deep sleep mode and shorts the F\+ET. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a32f6e928b7dc0b73915d898cb1397535}{lock\+\_\+reg} ()
+\begin{DoxyCompactList}\small\item\em This function sets to 1 the lock bit from lock register. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a961745db6875b9955726ea7a931961a9}{unlock\+\_\+reg} ()
+\begin{DoxyCompactList}\small\item\em This function sets to 0 the lock bit from lock register. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a47394a2f74c13bd97d3573c8fc8419e3}{get\+Rgain} ()
+\begin{DoxyCompactList}\small\item\em This function reads the Rgain selected. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a98ecad87ede37d32e5ad0f655345349f}{set\+Rgain} (uint8\+\_\+t R\+\_\+gain)
+\begin{DoxyCompactList}\small\item\em This function sets the resistor for the transimpedance stage. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_aad55b04b5d5bcb41b2e67b35931d32ce}{get\+Internal\+Zero} ()
+\begin{DoxyCompactList}\small\item\em This function reads the internal zero selection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_ace1e29af8b2094ae00fc175af900dac0}{set\+Internal\+Zero} (uint8\+\_\+t Internal\+Zero\+Percentaje)
+\begin{DoxyCompactList}\small\item\em This function sets the internal zero voltage from reference source. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a1df22b02be3e25886c5310b30653c543}{get\+Ref\+Source} ()
+\begin{DoxyCompactList}\small\item\em This function reads the reference source selection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a53dd59cce7311191d33a9fcec5f5be2f}{set\+Ref\+Source} (uint8\+\_\+t Reference\+Source)
+\begin{DoxyCompactList}\small\item\em This function sets the reference voltage source. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_l_m_p91000_a59992fd5a676028dec8188789bafa6d3}{get\+T\+I\+A\+Con\+Reg} ()
+\begin{DoxyCompactList}\small\item\em This function reads the T\+IA control register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_l_m_p91000_a3ccee6196c5e05a5e8e193f36ce5fa53}{get\+Ref\+Con\+Reg} ()
+\begin{DoxyCompactList}\small\item\em This function reads the reference control register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_l_m_p91000_a7d337c75abdacdc8237ec6daa65c1891}{get\+Mode\+Reg} ()
+\begin{DoxyCompactList}\small\item\em This function reads the mode control register. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_a6d658368abdaf9c56c8c263ac771fc3b}{set\+T\+I\+A\+Con\+Reg} (uint8\+\_\+t R\+\_\+gain, uint8\+\_\+t R\+\_\+load)
+\begin{DoxyCompactList}\small\item\em This function sets the T\+IA control register. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_aa5050a7641bceb40565ed4066d2b6fb7}{set\+Ref\+Con\+Reg} (uint8\+\_\+t ref\+\_\+source, uint8\+\_\+t int\+\_\+zero, uint8\+\_\+t B\+I\+A\+S\+\_\+perc, uint8\+\_\+t B\+I\+A\+S\+\_\+sign)
+\begin{DoxyCompactList}\small\item\em This function sets the reference control register. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_l_m_p91000_af61a6bd514d35dead0523eef049ebffe}{set\+Mode\+Reg} (uint8\+\_\+t F\+E\+T\+\_\+short, uint8\+\_\+t op\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em This function sets the mode control register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_l_m_p91000}{L\+M\+P91000} Class. 
+
+\hyperlink{class_l_m_p91000}{L\+M\+P91000} Class defines all the variables and functions used to manage \hyperlink{class_l_m_p91000}{L\+M\+P91000} 
+
+\subsection{Member Function Documentation}
+\index{L\+M\+P91000@{L\+M\+P91000}!check@{check}}
+\index{check@{check}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{check()}{check()}}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+M\+P91000\+::check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_aa4d633f5110b5b348978ea36c2fddc7d}{}\label{class_l_m_p91000_aa4d633f5110b5b348978ea36c2fddc7d}
+
+
+This function checks if the \hyperlink{class_l_m_p91000}{L\+M\+P91000} can is ready. 
+
+\begin{DoxyReturn}{Returns}
+1 if ready, 0 if not ready 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!get\+Internal\+Zero@{get\+Internal\+Zero}}
+\index{get\+Internal\+Zero@{get\+Internal\+Zero}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{get\+Internal\+Zero()}{getInternalZero()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::get\+Internal\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_aad55b04b5d5bcb41b2e67b35931d32ce}{}\label{class_l_m_p91000_aad55b04b5d5bcb41b2e67b35931d32ce}
+
+
+This function reads the internal zero selection. 
+
+\begin{DoxyReturn}{Returns}
+0 for 20\% of Vref 1 for 50\% of Vref 2 for 67\% of Vref 3 for bypassed -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!get\+Mode\+Reg@{get\+Mode\+Reg}}
+\index{get\+Mode\+Reg@{get\+Mode\+Reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{get\+Mode\+Reg()}{getModeReg()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+M\+P91000\+::get\+Mode\+Reg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a7d337c75abdacdc8237ec6daa65c1891}{}\label{class_l_m_p91000_a7d337c75abdacdc8237ec6daa65c1891}
+
+
+This function reads the mode control register. 
+
+\begin{DoxyReturn}{Returns}
+The mode control reg or 255 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!get\+Ref\+Con\+Reg@{get\+Ref\+Con\+Reg}}
+\index{get\+Ref\+Con\+Reg@{get\+Ref\+Con\+Reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{get\+Ref\+Con\+Reg()}{getRefConReg()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+M\+P91000\+::get\+Ref\+Con\+Reg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a3ccee6196c5e05a5e8e193f36ce5fa53}{}\label{class_l_m_p91000_a3ccee6196c5e05a5e8e193f36ce5fa53}
+
+
+This function reads the reference control register. 
+
+\begin{DoxyReturn}{Returns}
+The reference control reg or 255 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!get\+Ref\+Source@{get\+Ref\+Source}}
+\index{get\+Ref\+Source@{get\+Ref\+Source}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{get\+Ref\+Source()}{getRefSource()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::get\+Ref\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a1df22b02be3e25886c5310b30653c543}{}\label{class_l_m_p91000_a1df22b02be3e25886c5310b30653c543}
+
+
+This function reads the reference source selection. 
+
+\begin{DoxyReturn}{Returns}
+0 for internal Vref 1 for external Vref -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!get\+Rgain@{get\+Rgain}}
+\index{get\+Rgain@{get\+Rgain}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{get\+Rgain()}{getRgain()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::get\+Rgain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a47394a2f74c13bd97d3573c8fc8419e3}{}\label{class_l_m_p91000_a47394a2f74c13bd97d3573c8fc8419e3}
+
+
+This function reads the Rgain selected. 
+
+\begin{DoxyReturn}{Returns}
+0 for external resistor 1 for 2\+K75 resistor 2 for 3\+K5 resistor 3 for 7K resistor 4 for 14K resistor 5 for 35K resistor 6 for 120K resistor 7 for 350K resistor -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!get\+T\+I\+A\+Con\+Reg@{get\+T\+I\+A\+Con\+Reg}}
+\index{get\+T\+I\+A\+Con\+Reg@{get\+T\+I\+A\+Con\+Reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{get\+T\+I\+A\+Con\+Reg()}{getTIAConReg()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+M\+P91000\+::get\+T\+I\+A\+Con\+Reg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a59992fd5a676028dec8188789bafa6d3}{}\label{class_l_m_p91000_a59992fd5a676028dec8188789bafa6d3}
+
+
+This function reads the T\+IA control register. 
+
+\begin{DoxyReturn}{Returns}
+The T\+IA control reg or 255 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!lock\+\_\+reg@{lock\+\_\+reg}}
+\index{lock\+\_\+reg@{lock\+\_\+reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{lock\+\_\+reg()}{lock_reg()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::lock\+\_\+reg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a32f6e928b7dc0b73915d898cb1397535}{}\label{class_l_m_p91000_a32f6e928b7dc0b73915d898cb1397535}
+
+
+This function sets to 1 the lock bit from lock register. 
+
+\begin{DoxyReturn}{Returns}
+1 if OK, -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+M\+P91000\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a0d6f9c83cfc7ad7f932a16c8884ee96a}{}\label{class_l_m_p91000_a0d6f9c83cfc7ad7f932a16c8884ee96a}
+
+
+This function sets the \hyperlink{class_l_m_p91000}{L\+M\+P91000} to deep sleep mode and shorts the F\+ET. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!set\+Internal\+Zero@{set\+Internal\+Zero}}
+\index{set\+Internal\+Zero@{set\+Internal\+Zero}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{set\+Internal\+Zero(uint8\+\_\+t Internal\+Zero\+Percentaje)}{setInternalZero(uint8_t InternalZeroPercentaje)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::set\+Internal\+Zero (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{Internal\+Zero\+Percentaje}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_ace1e29af8b2094ae00fc175af900dac0}{}\label{class_l_m_p91000_ace1e29af8b2094ae00fc175af900dac0}
+
+
+This function sets the internal zero voltage from reference source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & Internal\+Zero\+Percentaje\+: L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+20 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+50 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+67 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+\+B\+Y\+P\+A\+S\+S\+ED \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!set\+Mode\+Reg@{set\+Mode\+Reg}}
+\index{set\+Mode\+Reg@{set\+Mode\+Reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{set\+Mode\+Reg(uint8\+\_\+t F\+E\+T\+\_\+short, uint8\+\_\+t op\+\_\+mode)}{setModeReg(uint8_t FET_short, uint8_t op_mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::set\+Mode\+Reg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{F\+E\+T\+\_\+short, }
+\item[{uint8\+\_\+t}]{op\+\_\+mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_af61a6bd514d35dead0523eef049ebffe}{}\label{class_l_m_p91000_af61a6bd514d35dead0523eef049ebffe}
+
+
+This function sets the mode control register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & F\+E\+T\+\_\+short\+: enables or disables de shorting F\+ET L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+F\+E\+T\+\_\+\+N\+O\+T\+\_\+\+S\+H\+O\+R\+T\+ED L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+F\+E\+T\+\_\+\+S\+H\+O\+R\+T\+ED \\
+\hline
+{\em uint8\+\_\+t} & op\+\_\+mode\+: working mode L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+E\+P\+\_\+\+S\+L\+E\+EP L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+2\+\_\+\+L\+E\+A\+D\+\_\+\+G\+A\+L\+V\+A\+N\+IC L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+N\+D\+\_\+\+BY L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+3\+\_\+\+L\+E\+A\+D\+\_\+\+A\+M\+P\+E\+R\+I\+O\+M\+E\+T\+R\+IC L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+M\+P\+\_\+\+T\+I\+A\+\_\+\+O\+FF L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+M\+P\+\_\+\+T\+I\+A\+\_\+\+ON L\+M\+P91000\+\_\+\+M\+O\+D\+E\+C\+\_\+\+R\+E\+G\+\_\+\+P\+W\+R\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+C\+H\+A\+N\+GE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!set\+Ref\+Con\+Reg@{set\+Ref\+Con\+Reg}}
+\index{set\+Ref\+Con\+Reg@{set\+Ref\+Con\+Reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{set\+Ref\+Con\+Reg(uint8\+\_\+t ref\+\_\+source, uint8\+\_\+t int\+\_\+zero, uint8\+\_\+t B\+I\+A\+S\+\_\+perc, uint8\+\_\+t B\+I\+A\+S\+\_\+sign)}{setRefConReg(uint8_t ref_source, uint8_t int_zero, uint8_t BIAS_perc, uint8_t BIAS_sign)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::set\+Ref\+Con\+Reg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ref\+\_\+source, }
+\item[{uint8\+\_\+t}]{int\+\_\+zero, }
+\item[{uint8\+\_\+t}]{B\+I\+A\+S\+\_\+perc, }
+\item[{uint8\+\_\+t}]{B\+I\+A\+S\+\_\+sign}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_aa5050a7641bceb40565ed4066d2b6fb7}{}\label{class_l_m_p91000_aa5050a7641bceb40565ed4066d2b6fb7}
+
+
+This function sets the reference control register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & ref\+\_\+source\+: voltage reference source L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+EF L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+R\+EF \\
+\hline
+{\em uint8\+\_\+t} & int\+\_\+zero\+: internal zero percentage from reference source L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+20 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+50 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+67 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+I\+N\+T\+\_\+\+Z\+\_\+\+B\+Y\+P\+A\+S\+S\+ED \\
+\hline
+{\em uint8\+\_\+t} & B\+I\+A\+S\+\_\+perc\+: bias percentage from reference source L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+0 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+1 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+2 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+4 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+6 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+8 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+10 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+12 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+14 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+16 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+18 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+20 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+22 L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+B\+I\+A\+S\+\_\+\+P\+E\+R\+C\+\_\+24 \\
+\hline
+{\em uint8\+\_\+t} & B\+I\+A\+S\+\_\+sign\+: polarity for bias voltage L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y\+\_\+\+N\+E\+G\+A\+T\+I\+VE L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y\+\_\+\+P\+O\+S\+I\+T\+I\+VE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!set\+Ref\+Source@{set\+Ref\+Source}}
+\index{set\+Ref\+Source@{set\+Ref\+Source}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{set\+Ref\+Source(uint8\+\_\+t Reference\+Source)}{setRefSource(uint8_t ReferenceSource)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::set\+Ref\+Source (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{Reference\+Source}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a53dd59cce7311191d33a9fcec5f5be2f}{}\label{class_l_m_p91000_a53dd59cce7311191d33a9fcec5f5be2f}
+
+
+This function sets the reference voltage source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & Reference\+Source\+: L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+EF L\+M\+P91000\+\_\+\+R\+E\+F\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+R\+EF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!set\+Rgain@{set\+Rgain}}
+\index{set\+Rgain@{set\+Rgain}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{set\+Rgain(uint8\+\_\+t R\+\_\+gain)}{setRgain(uint8_t R_gain)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::set\+Rgain (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{R\+\_\+gain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a98ecad87ede37d32e5ad0f655345349f}{}\label{class_l_m_p91000_a98ecad87ede37d32e5ad0f655345349f}
+
+
+This function sets the resistor for the transimpedance stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & R\+\_\+gain\+: L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+\+E\+XT L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+2\+K75 L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+3\+K5 L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+7K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+14K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+35K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+120K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+350K \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 if error 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!set\+T\+I\+A\+Con\+Reg@{set\+T\+I\+A\+Con\+Reg}}
+\index{set\+T\+I\+A\+Con\+Reg@{set\+T\+I\+A\+Con\+Reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{set\+T\+I\+A\+Con\+Reg(uint8\+\_\+t R\+\_\+gain, uint8\+\_\+t R\+\_\+load)}{setTIAConReg(uint8_t R_gain, uint8_t R_load)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::set\+T\+I\+A\+Con\+Reg (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{R\+\_\+gain, }
+\item[{uint8\+\_\+t}]{R\+\_\+load}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a6d658368abdaf9c56c8c263ac771fc3b}{}\label{class_l_m_p91000_a6d658368abdaf9c56c8c263ac771fc3b}
+
+
+This function sets the T\+IA control register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & R\+\_\+gain\+: gain resistor for the transimpedance amplifier L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+\+E\+XT L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+2\+K75 L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+3\+K5 L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+7K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+14K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+35K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+120K L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+G\+A\+I\+N\+\_\+350K \\
+\hline
+{\em uint8\+\_\+t} & R\+\_\+load\+: load resistor for the sensor L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+L\+O\+A\+D\+\_\+10R L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+L\+O\+A\+D\+\_\+33R L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+L\+O\+A\+D\+\_\+50R L\+M\+P91000\+\_\+\+T\+I\+A\+C\+\_\+\+R\+E\+G\+\_\+\+R\+E\+F\+\_\+\+R\+\_\+\+L\+O\+A\+D\+\_\+100R \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+\index{L\+M\+P91000@{L\+M\+P91000}!unlock\+\_\+reg@{unlock\+\_\+reg}}
+\index{unlock\+\_\+reg@{unlock\+\_\+reg}!L\+M\+P91000@{L\+M\+P91000}}
+\subsubsection[{\texorpdfstring{unlock\+\_\+reg()}{unlock_reg()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t L\+M\+P91000\+::unlock\+\_\+reg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_m_p91000_a961745db6875b9955726ea7a931961a9}{}\label{class_l_m_p91000_a961745db6875b9955726ea7a931961a9}
+
+
+This function sets to 0 the lock bit from lock register. 
+
+\begin{DoxyReturn}{Returns}
+1 if OK, -\/1 if error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\hyperlink{_l_m_p91000_8h}{L\+M\+P91000.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/L\+M\+P91000.\+cpp\end{DoxyCompactItemize}

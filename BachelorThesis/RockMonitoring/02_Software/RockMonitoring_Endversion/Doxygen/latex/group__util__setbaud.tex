@@ -1,0 +1,56 @@
+\hypertarget{group__util__setbaud}{}\section{$<$util/setbaud.h$>$\+: Helper macros for baud rate calculations}
+\label{group__util__setbaud}\index{$<$util/setbaud.\+h$>$\+: Helper macros for baud rate calculations@{$<$util/setbaud.\+h$>$\+: Helper macros for baud rate calculations}}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define F\_CPU 11059200}
+\textcolor{preprocessor}{#define BAUD 38400}
+\textcolor{preprocessor}{#include <util/setbaud.h>}
+\end{DoxyCode}
+
+
+This header file requires that on entry values are already defined for F\+\_\+\+C\+PU and B\+A\+UD. In addition, the macro B\+A\+U\+D\+\_\+\+T\+OL will define the baud rate tolerance (in percent) that is acceptable during the calculations. The value of B\+A\+U\+D\+\_\+\+T\+OL will default to 2 \%.
+
+This header file defines macros suitable to setup the U\+A\+RT baud rate prescaler registers of an A\+VR. All calculations are done using the C preprocessor. Including this header file causes no other side effects so it is possible to include this file more than once (supposedly, with different values for the B\+A\+UD parameter), possibly even within the same function.
+
+Assuming that the requested B\+A\+UD is valid for the given F\+\_\+\+C\+PU then the macro U\+B\+R\+R\+\_\+\+V\+A\+L\+UE is set to the required prescaler value. Two additional macros are provided for the low and high bytes of the prescaler, respectively\+: U\+B\+R\+R\+L\+\_\+\+V\+A\+L\+UE is set to the lower byte of the U\+B\+R\+R\+\_\+\+V\+A\+L\+UE and U\+B\+R\+R\+H\+\_\+\+V\+A\+L\+UE is set to the upper byte. An additional macro U\+S\+E\+\_\+2X will be defined. Its value is set to 1 if the desired B\+A\+UD rate within the given tolerance could only be achieved by setting the U2X bit in the U\+A\+RT configuration. It will be defined to 0 if U2X is not needed.
+
+Example usage\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+
+\textcolor{preprocessor}{#define F\_CPU 4000000}
+
+\textcolor{keyword}{static} \textcolor{keywordtype}{void}
+uart\_9600(\textcolor{keywordtype}{void})
+\{
+\textcolor{preprocessor}{#define BAUD 9600}
+\textcolor{preprocessor}{#include <\hyperlink{setbaud_8h}{util/setbaud.h}>}
+UBRRH = UBRRH\_VALUE;
+UBRRL = UBRRL\_VALUE;
+\textcolor{preprocessor}{#if USE\_2X}
+UCSRA |= (1 << U2X);
+\textcolor{preprocessor}{#else}
+UCSRA &= ~(1 << U2X);
+\textcolor{preprocessor}{#endif}
+\}
+
+\textcolor{keyword}{static} \textcolor{keywordtype}{void}
+uart\_38400(\textcolor{keywordtype}{void})
+\{
+\textcolor{preprocessor}{#undef BAUD  // avoid compiler warning}
+\textcolor{preprocessor}{#define BAUD 38400}
+\textcolor{preprocessor}{#include <\hyperlink{setbaud_8h}{util/setbaud.h}>}
+UBRRH = UBRRH\_VALUE;
+UBRRL = UBRRL\_VALUE;
+\textcolor{preprocessor}{#if USE\_2X}
+UCSRA |= (1 << U2X);
+\textcolor{preprocessor}{#else}
+UCSRA &= ~(1 << U2X);
+\textcolor{preprocessor}{#endif}
+\textcolor{preprocessor}{\}}
+\end{DoxyCode}
+
+
+In this example, two functions are defined to setup the U\+A\+RT to run at 9600 Bd, and 38400 Bd, respectively. Using a C\+PU clock of 4 M\+Hz, 9600 Bd can be achieved with an acceptable tolerance without setting U2X (prescaler 25), while 38400 Bd require U2X to be set (prescaler 12). 

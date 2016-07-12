@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=NetC?_1 Pin=D?-2
+Removed Pin From Net: NetName=GND Pin=R?-1
+Removed Pin From Net: NetName=NetR?_1 Pin=R?-1
+Removed Pin From Net: NetName=NetR?_1 Pin=R?-2
+Removed Pin From Net: NetName=NetR?_1 Pin=U?-7
+Change Component Footprint: Designator=R? Old Footprint=AXIAL-0.4 New Footprint=0402
+Change Component Footprint: Designator=C? Old Footprint=C1206 New Footprint=0402
+Change Component Footprint: Designator=C? Old Footprint=C1206 New Footprint=0402
+Change Component Footprint: Designator=C? Old Footprint=C1206 New Footprint=0402
+Change Component Footprint: Designator=C? Old Footprint=C1206 New Footprint=0402
+Added Component: Designator=R?(0402)
+Added Component: Designator=R?(0402)
+Added Component: Designator=R?(0402)
+Added Component: Designator=X?(Wasp_Connector)
+Added Component: Designator=X?(Battery_Connector)
+Added Component: Designator=X?(Solar_Connector)
+Added Pin To Net: NetName=NetC?_1 Pin=D?-2
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-2
+Added Pin To Net: NetName=NetR?_1 Pin=U?-2
+Added Pin To Net: NetName=VIN Pin=X?-1
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Member To Class: ClassName=power_supply Member=Component X? WaspConnector
+Added Room: Name=power_supply

@@ -1,0 +1,267 @@
+\hypertarget{class_wasp_sensor_event__v20}{}\section{Wasp\+Sensor\+Event\+\_\+v20 Class Reference}
+\label{class_wasp_sensor_event__v20}\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+
+
+Wasp\+Sensor\+Event\+V20 Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Event\+\_\+v20.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_event__v20_ac36e9b631e982cf5c86d0d06d1081a0d}{Wasp\+Sensor\+Event\+\_\+v20} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_event__v20_aaa1a2db3cc3f660d2645721c96ce3cb5}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_event__v20_a8847c124d3c49f9004d986fb63c0c5bf}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_event__v20_af4eb926dd1f9b820a47551f1caa4ee60}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the 3\+V3/5V switches. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_event__v20_ab66fc54464f591e08e48634565ce8003}{set\+Threshold} (uint8\+\_\+t sensor, float threshold)
+\begin{DoxyCompactList}\small\item\em It sets threshold configuring digipots. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_event__v20_a60a1b6e08fdd2eb8190212337ea11a10}{read\+Value} (uint8\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_event__v20_a3873a72ece0934479bdf6c0abe1efdfa}{read\+Value} (uint8\+\_\+t sensor, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor and converts the value. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_event__v20_ac8b1497760f35b409f3c1e4fdc2b1eac}{attach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It attaches the interruption. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_event__v20_a6353f8ed49e33358a43a626a55c403c1}{detach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It detaches the interruption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sensor_event__v20_a4a0bbca6600156fb49661512ea019e21}{load\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It loads the parallel shift register to check the sensor that has generated the interruption. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_sensor_event__v20_ad0229309369664b9aacc1d4da580db1a}{int\+Flag}
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the sensor that has generated the interruption. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wasp\+Sensor\+Event\+V20 Class. 
+
+Wasp\+Sensor\+Event\+V20 Class defines all the variables and functions used for managing the Events Sensor Board V2.\+0 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Event\+\_\+v20()}{WaspSensorEvent_v20()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Event\+\_\+v20\+::\+Wasp\+Sensor\+Event\+\_\+v20 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_ac36e9b631e982cf5c86d0d06d1081a0d}{}\label{class_wasp_sensor_event__v20_ac36e9b631e982cf5c86d0d06d1081a0d}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!attach\+Int@{attach\+Int}}
+\index{attach\+Int@{attach\+Int}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{attach\+Int(void)}{attachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Event\+\_\+v20\+::attach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_ac8b1497760f35b409f3c1e4fdc2b1eac}{}\label{class_wasp_sensor_event__v20_ac8b1497760f35b409f3c1e4fdc2b1eac}
+
+
+It attaches the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!detach\+Int@{detach\+Int}}
+\index{detach\+Int@{detach\+Int}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{detach\+Int(void)}{detachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Event\+\_\+v20\+::detach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_a6353f8ed49e33358a43a626a55c403c1}{}\label{class_wasp_sensor_event__v20_a6353f8ed49e33358a43a626a55c403c1}
+
+
+It detaches the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!load\+Int@{load\+Int}}
+\index{load\+Int@{load\+Int}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{load\+Int(void)}{loadInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sensor\+Event\+\_\+v20\+::load\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_a4a0bbca6600156fb49661512ea019e21}{}\label{class_wasp_sensor_event__v20_a4a0bbca6600156fb49661512ea019e21}
+
+
+It loads the parallel shift register to check the sensor that has generated the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the flag to check the sensor that has generated the interruption 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Event\+\_\+v20\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_a8847c124d3c49f9004d986fb63c0c5bf}{}\label{class_wasp_sensor_event__v20_a8847c124d3c49f9004d986fb63c0c5bf}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Event\+\_\+v20\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_aaa1a2db3cc3f660d2645721c96ce3cb5}{}\label{class_wasp_sensor_event__v20_aaa1a2db3cc3f660d2645721c96ce3cb5}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint8\+\_\+t sensor)}{readValue(uint8_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Event\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_a60a1b6e08fdd2eb8190212337ea11a10}{}\label{class_wasp_sensor_event__v20_a60a1b6e08fdd2eb8190212337ea11a10}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & sensor \+: specifies the socket (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+TX\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read in volts 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint8\+\_\+t sensor, uint8\+\_\+t type)}{readValue(uint8_t sensor, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Event\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sensor, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_a3873a72ece0934479bdf6c0abe1efdfa}{}\label{class_wasp_sensor_event__v20_a3873a72ece0934479bdf6c0abe1efdfa}
+
+
+It reads the value measured by the sensor and converts the value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & sensor \+: specifies the socket (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+TX\textquotesingle{}) \\
+\hline
+{\em uint8\+\_\+t} & type \+: specifies the type of sensor connected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Event\+\_\+v20\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_af4eb926dd1f9b820a47551f1caa4ee60}{}\label{class_wasp_sensor_event__v20_af4eb926dd1f9b820a47551f1caa4ee60}
+
+
+It sets O\+N/\+O\+FF the 3\+V3/5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!set\+Threshold@{set\+Threshold}}
+\index{set\+Threshold@{set\+Threshold}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Threshold(uint8\+\_\+t sensor, float threshold)}{setThreshold(uint8_t sensor, float threshold)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Event\+\_\+v20\+::set\+Threshold (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sensor, }
+\item[{float}]{threshold}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_event__v20_ab66fc54464f591e08e48634565ce8003}{}\label{class_wasp_sensor_event__v20_ab66fc54464f591e08e48634565ce8003}
+
+
+It sets threshold configuring digipots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & sensor \+: specifies the socket to set the threshold to (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+TX\textquotesingle{}) \\
+\hline
+{\em float} & threshold \+: the threshold to set (0-\/3.\+3V) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}!int\+Flag@{int\+Flag}}
+\index{int\+Flag@{int\+Flag}!Wasp\+Sensor\+Event\+\_\+v20@{Wasp\+Sensor\+Event\+\_\+v20}}
+\subsubsection[{\texorpdfstring{int\+Flag}{intFlag}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sensor\+Event\+\_\+v20\+::int\+Flag}\hypertarget{class_wasp_sensor_event__v20_ad0229309369664b9aacc1d4da580db1a}{}\label{class_wasp_sensor_event__v20_ad0229309369664b9aacc1d4da580db1a}
+
+
+Variable \+: specifies the sensor that has generated the interruption. 
+
+It specifies the socket that has generated the interruption, activating the corresponding flag position using the \textquotesingle{}S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+TX\textquotesingle{} definitions (X range \mbox{[}1-\/8\mbox{]}) \begin{DoxySeeAlso}{See also}
+\hyperlink{_wasp_sensor_event__v20_8h_a14566794dbceea6d98f0f03348637843}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T4}, \hyperlink{_wasp_sensor_event__v20_8h_ad077868897ca675b609d06214ab444d6}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T3}, \hyperlink{_wasp_sensor_event__v20_8h_a3db83a0ba9d04a58f9db27bc33cfe737}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T6}, \hyperlink{_wasp_sensor_event__v20_8h_a6e2abf1e3b82801f87ad80ba7c73384e}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T5}, \hyperlink{_wasp_sensor_event__v20_8h_a80a69204778b380dd9a3a82e9e79acba}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T1}, \hyperlink{_wasp_sensor_event__v20_8h_a7c1020bdea8fb6f46c12b895ce89e0cb}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T2}, \hyperlink{_wasp_sensor_event__v20_8h_afc70ecba67ba0a5c1734fc1ac2365e89}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T7}, \hyperlink{_wasp_sensor_event__v20_8h_a8a93aede80e7fca7c43644716f0aea69}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T8} 
+
+ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ S\+\_\+8 $\vert$ S\+\_\+7 $\vert$ S\+\_\+2 $\vert$ S\+\_\+1 $\vert$ S\+\_\+5 $\vert$ S\+\_\+6 $\vert$ S\+\_\+3 $\vert$ S\+\_\+4 $\vert$ $\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+$\vert$ 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Event\+\_\+v20/\hyperlink{_wasp_sensor_event__v20_8h}{Wasp\+Sensor\+Event\+\_\+v20.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Event\+\_\+v20/Wasp\+Sensor\+Event\+\_\+v20.\+cpp\end{DoxyCompactItemize}

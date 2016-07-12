@@ -1,0 +1,277 @@
+\hypertarget{class_sensor_stab}{}\section{Sensor\+Stab Class Reference}
+\label{class_sensor_stab}\index{Sensor\+Stab@{Sensor\+Stab}}
+
+
+{\ttfamily \#include $<$Sensor\+Stab.\+h$>$}
+
+
+
+Collaboration diagram for Sensor\+Stab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sensor_stab__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sensor_stab_a193dcd1ab48ee477d9f1538d97b940ac}{Sensor\+Stab} ()
+\item 
+int8\+\_\+t \hyperlink{class_sensor_stab_a7e38f5dab7ced64f4bc7afad756b9edf}{init} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sensor_stab_afe4902b857f2f16175a2f26ecc6f0436}{send\+Data\+To\+Gateway} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sensor_stab_a6d9bb52609855eda37c2436765cc1309}{make\+Measurment} (void)
+\item 
+void \hyperlink{class_sensor_stab_a8fcf0abce0941e18a28af79deccd945d}{convert\+Time} (uint32\+\_\+t time)
+\item 
+uint8\+\_\+t \hyperlink{class_sensor_stab_a1113905c693a1f600f257a49832a7ba7}{deep\+Sleep\+Command} (void)
+\item 
+void \hyperlink{class_sensor_stab_a3dc9368e342da67f49d83fbf3993d60c}{deep\+Sleep} (void)
+\item 
+int8\+\_\+t \hyperlink{class_sensor_stab_aa642f127f14d2deea1ec674dab3ceac6}{wake\+Up} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sensor_stab_a2fae9331da147abfde691a430131c75c}{measure\+Battery} (void)
+\item 
+void \hyperlink{class_sensor_stab_a4394ab5f892c8f1f7920f14674be5d69}{run} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} \hyperlink{class_sensor_stab_abf7a8586c865cfd3e3155392323d5b8a}{my\+Sensor\+Struct}
+\item 
+char \hyperlink{class_sensor_stab_aded3f5795a5d2ded34d6f92b0fbc2f15}{time\+String} \mbox{[}12\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{class_sensor_stab_accf54181552ac1003ec399401b0a61be}{not\+Sleep\+Cnt} =0
+\item 
+\hyperlink{class_lora}{Lora} \hyperlink{class_sensor_stab_a512a8b4918901f8326475caf6ed9ed7b}{my\+Lora}
+\item 
+\hyperlink{class_connection3_g}{Connection3G} \hyperlink{class_sensor_stab_a6f4f4186b2a8aa2f80e626bbdd181ad1}{my3G}
+\item 
+\hyperlink{class_sensors}{Sensors} \hyperlink{class_sensor_stab_af8b2172b2218888adf62f95b4aa4b72d}{my\+Sensors}
+\item 
+\hyperlink{class_leds}{Leds} \hyperlink{class_sensor_stab_a039887cb4d0ae1f2358318686ffd6deb}{my\+Leds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Sensor\+Stab.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sensor\+Stab@{Sensor\+Stab}!Sensor\+Stab@{Sensor\+Stab}}
+\index{Sensor\+Stab@{Sensor\+Stab}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{Sensor\+Stab()}{SensorStab()}}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+Stab\+::\+Sensor\+Stab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a193dcd1ab48ee477d9f1538d97b940ac}{}\label{class_sensor_stab_a193dcd1ab48ee477d9f1538d97b940ac}
+creates an object from \hyperlink{class_lora}{Lora}, \hyperlink{class_sensors}{Sensors} and \hyperlink{class_connection3_g}{Connection3G}
+
+Definition at line 17 of file Sensor\+Stab.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Sensor\+Stab@{Sensor\+Stab}!convert\+Time@{convert\+Time}}
+\index{convert\+Time@{convert\+Time}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{convert\+Time(uint32\+\_\+t time)}{convertTime(uint32_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Stab\+::convert\+Time (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a8fcf0abce0941e18a28af79deccd945d}{}\label{class_sensor_stab_a8fcf0abce0941e18a28af79deccd945d}
+This method converts a time into a uint8\+\_\+t array 
+\begin{DoxyParams}{Parameters}
+{\em time} & to be converted\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!deep\+Sleep@{deep\+Sleep}}
+\index{deep\+Sleep@{deep\+Sleep}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{deep\+Sleep(void)}{deepSleep(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Stab\+::deep\+Sleep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a3dc9368e342da67f49d83fbf3993d60c}{}\label{class_sensor_stab_a3dc9368e342da67f49d83fbf3993d60c}
+Turns off all the sensors and modules used in order to safe energy 
+\begin{DoxyParams}{Parameters}
+{\em time} & is the number of seconds the sensornode should rest in deep\+Sleep\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!deep\+Sleep\+Command@{deep\+Sleep\+Command}}
+\index{deep\+Sleep\+Command@{deep\+Sleep\+Command}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{deep\+Sleep\+Command(void)}{deepSleepCommand(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+Stab\+::deep\+Sleep\+Command (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a1113905c693a1f600f257a49832a7ba7}{}\label{class_sensor_stab_a1113905c693a1f600f257a49832a7ba7}
+Waits for the deep\+Sleep\+Command from the gateway \begin{DoxyReturn}{Returns}
+0 received a deep\+Sleep\+Command 
+
+1 not received a deep\+Sleep\+Command
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!init@{init}}
+\index{init@{init}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{init(void)}{init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Sensor\+Stab\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a7e38f5dab7ced64f4bc7afad756b9edf}{}\label{class_sensor_stab_a7e38f5dab7ced64f4bc7afad756b9edf}
+This method initializes all the components of the sensornode \begin{DoxyReturn}{Returns}
+0 all settings are done correctly 
+
+1 error during settings
+\end{DoxyReturn}
+
+
+Definition at line 25 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!make\+Measurment@{make\+Measurment}}
+\index{make\+Measurment@{make\+Measurment}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{make\+Measurment(void)}{makeMeasurment(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+Stab\+::make\+Measurment (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a6d9bb52609855eda37c2436765cc1309}{}\label{class_sensor_stab_a6d9bb52609855eda37c2436765cc1309}
+Gets the values from all accelerometer and saves them in the struct \begin{DoxyReturn}{Returns}
+0 measurement successful 
+
+1 error with accelerometer 
+
+2 error with temp\+Sensors
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!measure\+Battery@{measure\+Battery}}
+\index{measure\+Battery@{measure\+Battery}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{measure\+Battery(void)}{measureBattery(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+Stab\+::measure\+Battery (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a2fae9331da147abfde691a430131c75c}{}\label{class_sensor_stab_a2fae9331da147abfde691a430131c75c}
+This method shuts down the battery charger and measures the battery level \begin{DoxyReturn}{Returns}
+returns the battery level
+\end{DoxyReturn}
+
+
+Definition at line 178 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!run@{run}}
+\index{run@{run}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{run(void)}{run(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Stab\+::run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_a4394ab5f892c8f1f7920f14674be5d69}{}\label{class_sensor_stab_a4394ab5f892c8f1f7920f14674be5d69}
+structures the procedure of the sensor-\/node
+
+Definition at line 191 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!send\+Data\+To\+Gateway@{send\+Data\+To\+Gateway}}
+\index{send\+Data\+To\+Gateway@{send\+Data\+To\+Gateway}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{send\+Data\+To\+Gateway(void)}{sendDataToGateway(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+Stab\+::send\+Data\+To\+Gateway (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_afe4902b857f2f16175a2f26ecc6f0436}{}\label{class_sensor_stab_afe4902b857f2f16175a2f26ecc6f0436}
+This method waits for the Data\+Request of the gateway and sends the requested data via Lo\+Ra back to the gateway \begin{DoxyReturn}{Returns}
+0 Data has been sent and gateway has acknowledged 
+
+1 Data has not been sent
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Sensor\+Stab.\+cpp.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{wake\+Up(void)}{wakeUp(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Sensor\+Stab\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_stab_aa642f127f14d2deea1ec674dab3ceac6}{}\label{class_sensor_stab_aa642f127f14d2deea1ec674dab3ceac6}
+Turns ON all the modules and reconfigures them if necessary \begin{DoxyReturn}{Returns}
+0 all modules have woken up successfully 
+
+1 not all modules have woken up successfully
+\end{DoxyReturn}
+
+
+Definition at line 145 of file Sensor\+Stab.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Sensor\+Stab@{Sensor\+Stab}!my3G@{my3G}}
+\index{my3G@{my3G}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{my3G}{my3G}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection3G} Sensor\+Stab\+::my3G\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_a6f4f4186b2a8aa2f80e626bbdd181ad1}{}\label{class_sensor_stab_a6f4f4186b2a8aa2f80e626bbdd181ad1}
+
+
+Definition at line 30 of file Sensor\+Stab.\+h.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!my\+Leds@{my\+Leds}}
+\index{my\+Leds@{my\+Leds}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{my\+Leds}{myLeds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Leds} Sensor\+Stab\+::my\+Leds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_a039887cb4d0ae1f2358318686ffd6deb}{}\label{class_sensor_stab_a039887cb4d0ae1f2358318686ffd6deb}
+
+
+Definition at line 32 of file Sensor\+Stab.\+h.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!my\+Lora@{my\+Lora}}
+\index{my\+Lora@{my\+Lora}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{my\+Lora}{myLora}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lora} Sensor\+Stab\+::my\+Lora\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_a512a8b4918901f8326475caf6ed9ed7b}{}\label{class_sensor_stab_a512a8b4918901f8326475caf6ed9ed7b}
+
+
+Definition at line 29 of file Sensor\+Stab.\+h.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!my\+Sensors@{my\+Sensors}}
+\index{my\+Sensors@{my\+Sensors}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{my\+Sensors}{mySensors}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensors} Sensor\+Stab\+::my\+Sensors\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_af8b2172b2218888adf62f95b4aa4b72d}{}\label{class_sensor_stab_af8b2172b2218888adf62f95b4aa4b72d}
+
+
+Definition at line 31 of file Sensor\+Stab.\+h.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!my\+Sensor\+Struct@{my\+Sensor\+Struct}}
+\index{my\+Sensor\+Struct@{my\+Sensor\+Struct}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{my\+Sensor\+Struct}{mySensorStruct}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensors\+::struct\+Sensors} Sensor\+Stab\+::my\+Sensor\+Struct\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_abf7a8586c865cfd3e3155392323d5b8a}{}\label{class_sensor_stab_abf7a8586c865cfd3e3155392323d5b8a}
+
+
+Definition at line 25 of file Sensor\+Stab.\+h.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!not\+Sleep\+Cnt@{not\+Sleep\+Cnt}}
+\index{not\+Sleep\+Cnt@{not\+Sleep\+Cnt}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{not\+Sleep\+Cnt}{notSleepCnt}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensor\+Stab\+::not\+Sleep\+Cnt =0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_accf54181552ac1003ec399401b0a61be}{}\label{class_sensor_stab_accf54181552ac1003ec399401b0a61be}
+
+
+Definition at line 27 of file Sensor\+Stab.\+h.
+
+\index{Sensor\+Stab@{Sensor\+Stab}!time\+String@{time\+String}}
+\index{time\+String@{time\+String}!Sensor\+Stab@{Sensor\+Stab}}
+\subsubsection[{\texorpdfstring{time\+String}{timeString}}]{\setlength{\rightskip}{0pt plus 5cm}char Sensor\+Stab\+::time\+String\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensor_stab_aded3f5795a5d2ded34d6f92b0fbc2f15}{}\label{class_sensor_stab_aded3f5795a5d2ded34d6f92b0fbc2f15}
+
+
+Definition at line 26 of file Sensor\+Stab.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sensor_stab_8h}{Sensor\+Stab.\+h}\item 
+\hyperlink{_sensor_stab_8cpp}{Sensor\+Stab.\+cpp}\end{DoxyCompactItemize}

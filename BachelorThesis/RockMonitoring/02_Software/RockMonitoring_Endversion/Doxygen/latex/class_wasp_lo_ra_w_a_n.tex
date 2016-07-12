@@ -1,0 +1,1916 @@
+\hypertarget{class_wasp_lo_ra_w_a_n}{}\section{Wasp\+Lo\+Ra\+W\+AN Class Reference}
+\label{class_wasp_lo_ra_w_a_n}\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+Inheritance diagram for Wasp\+Lo\+Ra\+W\+AN\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_lo_ra_w_a_n}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ab0548a7036908e951d505014cb34a1e1}{ON} (uint8\+\_\+t socket)
+\begin{DoxyCompactList}\small\item\em This function powers on the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a3315ca2f4cf72e1da5a88a00237b8677}{O\+FF} (uint8\+\_\+t socket)
+\begin{DoxyCompactList}\small\item\em This function powers down the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_af203684a732d1cf7294ee69de6c30d85}{reset} ()
+\begin{DoxyCompactList}\small\item\em This function resets and restart the stored internal configurations will be loaded upon reboot and saves modules version. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_afcea57ea0d97106b353c6166b711a03c}{factory\+Reset} ()
+\begin{DoxyCompactList}\small\item\em This function resets the module\textquotesingle{}s configuration data and user E\+E\+P\+R\+OM to factory default values, restarts the module and saves modules version. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ad9348efd062e4feea102ad61c5fa27a0}{get\+E\+UI} ()
+\begin{DoxyCompactList}\small\item\em This function gets hardware E\+UI from the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a70fcea0bc5798a61f600de1b18ae4409}{get\+Addr} ()
+\begin{DoxyCompactList}\small\item\em This function gets hardware E\+UI from the module nad stores last 4 byte as dev\+Addres. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a488a55369702ffe38bfc5cd19ae4add2}{get\+Supply\+Power} ()
+\begin{DoxyCompactList}\small\item\em This functions gets supply power from the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_afdac73ef011d33f83d79db4210d55817}{check} ()
+\begin{DoxyCompactList}\small\item\em Checks if module is ready to use and saves which kind of module has been plugged to Waspmote, either R\+N2483 or R\+N2903. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a1d24183427ec43e5e342252358d554ce}{reset\+Mac\+Config} (char $\ast$band)
+\begin{DoxyCompactList}\small\item\em This function is used to reset Lo\+Ra\+W\+AN configuration and set working band. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ad4fe27fdc474674ea0a3f00afb82212b}{set\+Device\+E\+UI} ()
+\begin{DoxyCompactList}\small\item\em This function gets hardware E\+UI and sets M\+AC dev\+E\+UI. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ad56e46484106fecc6fd09ed4aac212a6}{set\+Device\+E\+UI} (char $\ast$eui)
+\begin{DoxyCompactList}\small\item\em This function sets M\+AC dev\+E\+UI. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a0e97dfe736a997be52cb8d1b4ee3e0c9}{get\+Device\+E\+UI} ()
+\begin{DoxyCompactList}\small\item\em This function gets the M\+AC device E\+UI from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ab067b666eb32caedbf6a6ae84ed117f0}{set\+Device\+Addr} ()
+\begin{DoxyCompactList}\small\item\em This function gets hardware E\+UI and sets M\+AC dev\+Address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a0c3b481052a84e75ec9f93b942acd05f}{set\+Device\+Addr} (char $\ast$addr)
+\begin{DoxyCompactList}\small\item\em This function sets M\+AC dev\+Address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_af73f4b4c7ed1147e7096302b459449f0}{get\+Device\+Addr} ()
+\begin{DoxyCompactList}\small\item\em This function gets the M\+AC device Address from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a690d125487b207e6aa78383f3bd16d65}{set\+Nwk\+Session\+Key} (char $\ast$key)
+\begin{DoxyCompactList}\small\item\em This function sets M\+AC Network Session Key. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a60ff224c40fa7e455b00676f4268e609}{set\+App\+E\+UI} (char $\ast$eui)
+\begin{DoxyCompactList}\small\item\em This function sets M\+AC app\+E\+UI. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ace1dbb3c003130c3fbeac7b939c47ec4}{get\+App\+E\+UI} ()
+\begin{DoxyCompactList}\small\item\em This function gets the M\+AC App\+E\+UI from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_afde650898fe1dcd03eff640a123dc13a}{set\+App\+Key} (char $\ast$key)
+\begin{DoxyCompactList}\small\item\em This function sets M\+AC App Key. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a6715e1c8645523efe5efb6710ed25629}{set\+App\+Session\+Key} (char $\ast$key)
+\begin{DoxyCompactList}\small\item\em This function sets M\+AC App Session Key. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a47eb3c84e7edc5fe5dcec03bb4a8434e}{set\+Power} (uint8\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em This function is used to configure the Lo\+Ra\+W\+AN RF power level. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ae81e4e760467d7a39815cdc87a80b3ff}{get\+Power} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the power index from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a5c8cfbfe49432d26a56d27100f748f47}{set\+Data\+Rate} (uint8\+\_\+t datarate)
+\begin{DoxyCompactList}\small\item\em This function is used to configure the Lo\+Ra\+W\+AN RF data rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_acd1b1ae93f145a608e1481bdb5aa497d}{get\+Data\+Rate} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the data rate from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a98c4324d952d16243f5ca324ce6a2a0d}{save\+Config} ()
+\begin{DoxyCompactList}\small\item\em This function saves config set into module\textquotesingle{}s E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aea55cdf82446087c531aca5abebe5d1c}{join\+A\+BP} ()
+\begin{DoxyCompactList}\small\item\em This function joins module to a network. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a51fb25b397d971c7af02c393575ad243}{join\+O\+T\+AA} ()
+\begin{DoxyCompactList}\small\item\em This function joins module to a network. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a59953e5c7fc93bf89570cc88f3976ab9}{send\+Confirmed} (uint8\+\_\+t port, char $\ast$payload)
+\begin{DoxyCompactList}\small\item\em This function sends a Lo\+Ra\+W\+AN packet and waits for A\+CK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aa0eda53f971c525e0375bf6425705dae}{send\+Unconfirmed} (uint8\+\_\+t port, char $\ast$payload)
+\begin{DoxyCompactList}\small\item\em This function sends a Lo\+Ra\+W\+AN packet without A\+CK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a0ce32dad81c1c4683dcdf1bda28b6711}{set\+A\+DR} (char $\ast$state)
+\begin{DoxyCompactList}\small\item\em This function is used to set the A\+DR status from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a97f1860a5cbd2984ca695b572d05a6e8}{get\+A\+DR} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the A\+DR status from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a97f908380a6d9957a888abda2a30be99}{get\+Duty\+Cycle\+Prescaler} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the duty cycle prescaler from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a5a54dadb2d5a49af135069bfda53e93c}{mac\+Pause} ()
+\begin{DoxyCompactList}\small\item\em This function pauses M\+AC functionality so the module is able to use radio functions. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aee5c255942407b5616efe774bca9d9b1}{mac\+Resume} ()
+\begin{DoxyCompactList}\small\item\em This function resumes M\+AC functionality. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a735cc86e2f5b8a1eafdc52cd45374775}{set\+Channel\+Freq} (uint8\+\_\+t channel, uint32\+\_\+t freq)
+\begin{DoxyCompactList}\small\item\em This function sets the frequency on the given channel ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_abbe5f5d96028f9f4a06bbf2596152a5e}{get\+Channel\+Freq} (uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em This function gets the operating frequency on the given channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aec59f2e23ba9f70bc55a39d2b4c68da8}{set\+Channel\+Duty\+Cycle} (uint8\+\_\+t channel, uint16\+\_\+t dcycle)
+\begin{DoxyCompactList}\small\item\em This function sets the duty cycle on the given channel ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a9d2ba71b7570269c9c46301bc4747c78}{get\+Channel\+Duty\+Cycle} (uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em This function gets the operating duty channel on the given channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a62affcaabcc35e4abe857570d0050231}{set\+Channel\+D\+R\+Range} (uint8\+\_\+t channel, uint8\+\_\+t min\+DR, uint8\+\_\+t max\+DR)
+\begin{DoxyCompactList}\small\item\em This function sets the data rate range on the given channel ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_add26dfe412e43476e4cd4be1ca7b6c9a}{get\+Channel\+D\+R\+Range} (uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em This function gets the data rate range on the given channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a482c198da0a459455315a81310110d81}{set\+Channel\+Status} (uint8\+\_\+t channel, char $\ast$state)
+\begin{DoxyCompactList}\small\item\em This function sets the status on the given channel ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aead9cee2fd6d03f6c25118ca3ff190de}{get\+Channel\+Status} (uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em This function gets the status of the given channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a7a5d0579fa9c58b4690a0e891faf4b56}{set\+Retries} (uint8\+\_\+t retries)
+\begin{DoxyCompactList}\small\item\em This function is used to configure number of retransmisions for an uplink confirmed packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a64854a7e37fd60414afe00f67577298b}{get\+Retries} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the power index from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a8fa6460dfeed04e88f2d55bb1b45a891}{get\+Band} ()
+\begin{DoxyCompactList}\small\item\em This function gets current band of operation. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a0ea02db435640d7a7396b366ce87b52b}{get\+Margin} ()
+\begin{DoxyCompactList}\small\item\em This function gets the demodulation margin from the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ae31d8f481714ac4ff05ae9a6b5e4316e}{get\+Gateway\+Number} ()
+\begin{DoxyCompactList}\small\item\em This function gets the number of gateways that successfully received the last Linck Check Request from the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a973b8e71957ff75158d4e648633ebf6e}{set\+Up\+Counter} (uint32\+\_\+t counter)
+\begin{DoxyCompactList}\small\item\em This function sets the value of the uplink frame counter that will be used for the next uplink transmission. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a584ed69c7e3604d86315ab94b5609cf0}{get\+Up\+Counter} ()
+\begin{DoxyCompactList}\small\item\em This function is used to get the value of the uplink frame counter that will be used for the next uplink transmission. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a585f169558b604d4b2d3bfbbef690acc}{set\+Down\+Counter} (uint32\+\_\+t counter)
+\begin{DoxyCompactList}\small\item\em This function sets the value of the downlink frame counter that will be used for the next downlink transmission. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_af5392fe747fb14e5ee0e68a7ee6613e5}{get\+Down\+Counter} ()
+\begin{DoxyCompactList}\small\item\em This function is used to get the value of the downlink frame counter that will be used for the next downlink transmission. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_afe89905f87186beeb698203a281c0040}{set\+R\+X2\+Parameters} (uint8\+\_\+t datarate, uint32\+\_\+t frequency)
+\begin{DoxyCompactList}\small\item\em This function sets data rate and frecuency used for the second receive window. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a665d79a3bf34db15e8d5f41bd0093f19}{set\+R\+X1\+Delay} (uint16\+\_\+t delay)
+\begin{DoxyCompactList}\small\item\em This function sets the delay used for the first receive window. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a4709b7d46412f7d3c6e08c774fb27e79}{send\+Radio} (char $\ast$buff)
+\begin{DoxyCompactList}\small\item\em Send a packet via radio. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a44fecfcdfa1bf3b2da520032c2657ed4}{receive\+Radio} (uint32\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Receive a packet via radio. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_af38a2f1e064c7f5cfeb5b649f1e08933}{test\+\_\+\+ON} ()
+\begin{DoxyCompactList}\small\item\em This function is used to radiate continuous wave without any modulation. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_abce067423ebddb2c08659fab3aacb197}{test\+\_\+\+O\+FF} ()
+\begin{DoxyCompactList}\small\item\em Stops the continuous wave mode, this function works with module identical to \char`\"{}reset()\char`\"{}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a939771a7592fc8e06297f40eeb452aa7}{get\+Radio\+S\+NR} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the S\+NR for the last receive packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a44d315882f2299e748686065bd923522}{set\+Radio\+SF} (char $\ast$sprfact)
+\begin{DoxyCompactList}\small\item\em This function sets spreading factor for radio mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a0c7e50411d1689dadb289588bca4e6cf}{get\+Radio\+SF} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating radio spreading factor from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aa72d4cf2afad70d40f0a85ad4078f990}{set\+Radio\+Power} (int8\+\_\+t pwr)
+\begin{DoxyCompactList}\small\item\em This function sets tx power for radio mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a26c4264112173c8035a3b8676b11503a}{get\+Radio\+Power} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating radio power from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_adea6dfc9f89ca08fe8a60843d284fcf4}{set\+Radio\+Freq} (uint32\+\_\+t freq)
+\begin{DoxyCompactList}\small\item\em This function sets the operating frequency for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a4b4b5abe5f866383f4aa496e54265ca3}{get\+Radio\+Freq} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating radio frequency from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_afff6ba66788badd53bd093e702ba40d2}{set\+Radio\+Mode} (char $\ast$mode)
+\begin{DoxyCompactList}\small\item\em This function sets the operating mode for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a1f7397691a2baac895d30d470ba409f4}{get\+Radio\+Mode} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating radio mode from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a542b3a4602bfbca66ebfbf0c7404ba2a}{set\+Radio\+Receiving\+BW} (float bandwidth)
+\begin{DoxyCompactList}\small\item\em This function sets the signal bandwidth for receiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ada44238eb38e54b057f6659e7fc93c57}{get\+Radio\+Receiving\+BW} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating receiving bandwidth from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ace29a7ccd8c85ea98453a1d7e793a40a}{set\+Radio\+Bit\+Rate\+F\+SK} (uint32\+\_\+t bitrate)
+\begin{DoxyCompactList}\small\item\em This function sets the F\+SK bit rate value for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a1c30c959e4d71286ed406b360cbae244}{get\+Radio\+Bit\+Rate\+F\+SK} ()
+\begin{DoxyCompactList}\small\item\em This function gets the bit rate for F\+SK modulation from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a3b89f81185d512dfb17babe9622014b0}{set\+Radio\+Freq\+Deviation} (uint32\+\_\+t freqdeviation)
+\begin{DoxyCompactList}\small\item\em This function sets the frequency deviation for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a2a5d3afe9d00116dfa7cb217ac6a2163}{get\+Radio\+Freq\+Deviation} ()
+\begin{DoxyCompactList}\small\item\em This function gets the frequency deviation from the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a1da844661c3003c683823e3096c9d74e}{set\+Radio\+C\+RC} (char $\ast$state)
+\begin{DoxyCompactList}\small\item\em This function sets the C\+RC header state for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a0fb7464a8a8cf6887a3559677b9be300}{get\+Radio\+C\+RC} ()
+\begin{DoxyCompactList}\small\item\em This function gets the C\+RC header state from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a4987a72e6dd6322e3abcd000783022cf}{set\+Radio\+Preamble} (uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function sets the preamble length for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a8f1e1fb190423d377204fb3e0243edeb}{get\+Radio\+Preamble} ()
+\begin{DoxyCompactList}\small\item\em This function gets the preamble length from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_ad2b1277646c9989a86eb56fd28f08e3a}{set\+Radio\+CR} (char $\ast$codingrate)
+\begin{DoxyCompactList}\small\item\em This function sets the coding rate for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a95238b0b809cd302767b814d1c311112}{get\+Radio\+CR} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating coding rate from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a89531d205fabd7f2e72c4b6240627f5e}{set\+Radio\+W\+DT} (uint32\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em This function sets the time for the radio watch dog timer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a011452f8b75f6a6571a43fd0290b7e4a}{get\+Radio\+W\+DT} ()
+\begin{DoxyCompactList}\small\item\em This function gets the watch dog timer\textquotesingle{}s time from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a2ac8547e494a7f032a78e773664bdb3b}{set\+Radio\+BW} (uint16\+\_\+t bandwidth)
+\begin{DoxyCompactList}\small\item\em This function sets the bandwidth for transceiver use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_aacdadecb332215bd7c74ada41a5816ff}{get\+Radio\+BW} ()
+\begin{DoxyCompactList}\small\item\em This function gets the operating radio bandwidth from module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_lo_ra_w_a_n_a77395926a42b1ebffc0b0ff4997743b4}{set\+Link\+Check} (uint16\+\_\+t counter)
+\begin{DoxyCompactList}\small\item\em This function sets the time interval for the link check process to be triggered periodically. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+adr}\hypertarget{class_wasp_lo_ra_w_a_n_a55d3cb075cdf80cd8e29dedf969d0615}{}\label{class_wasp_lo_ra_w_a_n_a55d3cb075cdf80cd8e29dedf969d0615}
+
+\item 
+char {\bfseries \+\_\+eui} \mbox{[}17\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a606637d11119dfcad4d598619929b832}{}\label{class_wasp_lo_ra_w_a_n_a606637d11119dfcad4d598619929b832}
+
+\item 
+char {\bfseries \+\_\+dev\+E\+UI} \mbox{[}17\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a760add3bf891ec7b7e223fc8285f614f}{}\label{class_wasp_lo_ra_w_a_n_a760add3bf891ec7b7e223fc8285f614f}
+
+\item 
+char {\bfseries \+\_\+app\+E\+UI} \mbox{[}17\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_af050b6674bd52882bf4abce5a28be0b0}{}\label{class_wasp_lo_ra_w_a_n_af050b6674bd52882bf4abce5a28be0b0}
+
+\item 
+char {\bfseries \+\_\+nwk\+S\+Key} \mbox{[}33\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_ab18dc9341c62f038b3d7d3340f0dd4f9}{}\label{class_wasp_lo_ra_w_a_n_ab18dc9341c62f038b3d7d3340f0dd4f9}
+
+\item 
+char {\bfseries \+\_\+app\+S\+Key} \mbox{[}33\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a709d25f118c3d0e6964c702bcbe1ee1e}{}\label{class_wasp_lo_ra_w_a_n_a709d25f118c3d0e6964c702bcbe1ee1e}
+
+\item 
+char {\bfseries \+\_\+app\+Key} \mbox{[}33\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_ad53e65b2713eb53cd3cac81154f44a94}{}\label{class_wasp_lo_ra_w_a_n_ad53e65b2713eb53cd3cac81154f44a94}
+
+\item 
+char {\bfseries \+\_\+dev\+Addr} \mbox{[}9\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a4b242560dbd911eccfa7d6dd19db20c1}{}\label{class_wasp_lo_ra_w_a_n_a4b242560dbd911eccfa7d6dd19db20c1}
+
+\item 
+char {\bfseries \+\_\+band} \mbox{[}4\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a4e0cab77f6f1879b79a9cc64470cfc32}{}\label{class_wasp_lo_ra_w_a_n_a4e0cab77f6f1879b79a9cc64470cfc32}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+retries}\hypertarget{class_wasp_lo_ra_w_a_n_a7267d9da7dc3180d4caf38d57cedd90c}{}\label{class_wasp_lo_ra_w_a_n_a7267d9da7dc3180d4caf38d57cedd90c}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+margin}\hypertarget{class_wasp_lo_ra_w_a_n_a006431ddc2b94630d113163c4dc78084}{}\label{class_wasp_lo_ra_w_a_n_a006431ddc2b94630d113163c4dc78084}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+gw\+Number}\hypertarget{class_wasp_lo_ra_w_a_n_a86fceba87120e7af1acd281b830e36c0}{}\label{class_wasp_lo_ra_w_a_n_a86fceba87120e7af1acd281b830e36c0}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+freq} \mbox{[}16\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_aedce560b03faa6ec84a62968bbdb19ba}{}\label{class_wasp_lo_ra_w_a_n_aedce560b03faa6ec84a62968bbdb19ba}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+radio\+Freq}\hypertarget{class_wasp_lo_ra_w_a_n_aa64ecaa408e0b17eaae08b76be1f2318}{}\label{class_wasp_lo_ra_w_a_n_aa64ecaa408e0b17eaae08b76be1f2318}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+radio\+Freq\+Dev}\hypertarget{class_wasp_lo_ra_w_a_n_a401494424173541e394fd8738b436ad0}{}\label{class_wasp_lo_ra_w_a_n_a401494424173541e394fd8738b436ad0}
+
+\item 
+uint16\+\_\+t {\bfseries \+\_\+preamble\+Length}\hypertarget{class_wasp_lo_ra_w_a_n_ae7cc1a0fde45388a448875e716254303}{}\label{class_wasp_lo_ra_w_a_n_ae7cc1a0fde45388a448875e716254303}
+
+\item 
+uint16\+\_\+t {\bfseries \+\_\+d\+Cycle} \mbox{[}16\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_ade75f390e2b8975540d63b94600837c1}{}\label{class_wasp_lo_ra_w_a_n_ade75f390e2b8975540d63b94600837c1}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+drr\+Min} \mbox{[}72\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_ac82bcd5aebffa5eb5e47461973ee0ae4}{}\label{class_wasp_lo_ra_w_a_n_ac82bcd5aebffa5eb5e47461973ee0ae4}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+drr\+Max} \mbox{[}72\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a3c1b8292566fba4dccfe83fd22bc201e}{}\label{class_wasp_lo_ra_w_a_n_a3c1b8292566fba4dccfe83fd22bc201e}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+d\+Cycle\+PS}\hypertarget{class_wasp_lo_ra_w_a_n_a234dfcb4b50d56197c47c7fc855c9f3f}{}\label{class_wasp_lo_ra_w_a_n_a234dfcb4b50d56197c47c7fc855c9f3f}
+
+\item 
+char {\bfseries \+\_\+radio\+Mode} \mbox{[}5\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_ad1e49580d170a63d07022557f089761d}{}\label{class_wasp_lo_ra_w_a_n_ad1e49580d170a63d07022557f089761d}
+
+\item 
+bool {\bfseries \+\_\+crc\+Status}\hypertarget{class_wasp_lo_ra_w_a_n_a5a57b7c4fd949ebfb213f44e25d216bc}{}\label{class_wasp_lo_ra_w_a_n_a5a57b7c4fd949ebfb213f44e25d216bc}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+power\+Index}\hypertarget{class_wasp_lo_ra_w_a_n_adcf3586349435e6e561114611855f771}{}\label{class_wasp_lo_ra_w_a_n_adcf3586349435e6e561114611855f771}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+data\+Rate}\hypertarget{class_wasp_lo_ra_w_a_n_ad643b610a379ba9d17c905cd2f838324}{}\label{class_wasp_lo_ra_w_a_n_ad643b610a379ba9d17c905cd2f838324}
+
+\item 
+int8\+\_\+t {\bfseries \+\_\+radio\+Power}\hypertarget{class_wasp_lo_ra_w_a_n_a04d8dcec7606fee8bc8aa207cec19e60}{}\label{class_wasp_lo_ra_w_a_n_a04d8dcec7606fee8bc8aa207cec19e60}
+
+\item 
+char {\bfseries \+\_\+radio\+SF} \mbox{[}5\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_af2098b173aa6c37263ae4fbc8c889b43}{}\label{class_wasp_lo_ra_w_a_n_af2098b173aa6c37263ae4fbc8c889b43}
+
+\item 
+float {\bfseries \+\_\+radio\+Rx\+BW}\hypertarget{class_wasp_lo_ra_w_a_n_a600589e29c02f7cae73bccbe3d170f2f}{}\label{class_wasp_lo_ra_w_a_n_a600589e29c02f7cae73bccbe3d170f2f}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+radio\+Bit\+Rate}\hypertarget{class_wasp_lo_ra_w_a_n_a06e213cd19b417d7847a26940d29b130}{}\label{class_wasp_lo_ra_w_a_n_a06e213cd19b417d7847a26940d29b130}
+
+\item 
+char {\bfseries \+\_\+radio\+CR} \mbox{[}4\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_aae6b957bf06016436b1d58545dc0d4e6}{}\label{class_wasp_lo_ra_w_a_n_aae6b957bf06016436b1d58545dc0d4e6}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+radio\+W\+DT}\hypertarget{class_wasp_lo_ra_w_a_n_a7e103ed82dafeb713ce3ab59d93a17e1}{}\label{class_wasp_lo_ra_w_a_n_a7e103ed82dafeb713ce3ab59d93a17e1}
+
+\item 
+uint16\+\_\+t {\bfseries \+\_\+radio\+BW}\hypertarget{class_wasp_lo_ra_w_a_n_ac8b3e8c1a52dc4d7c300bb6b6bee461c}{}\label{class_wasp_lo_ra_w_a_n_ac8b3e8c1a52dc4d7c300bb6b6bee461c}
+
+\item 
+int8\+\_\+t {\bfseries \+\_\+radio\+S\+NR}\hypertarget{class_wasp_lo_ra_w_a_n_a0e79a05fc2264b5c28b63bbb9b370997}{}\label{class_wasp_lo_ra_w_a_n_a0e79a05fc2264b5c28b63bbb9b370997}
+
+\item 
+bool {\bfseries \+\_\+status} \mbox{[}72\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_a1b92c1fed171d4ef5bc313261efce737}{}\label{class_wasp_lo_ra_w_a_n_a1b92c1fed171d4ef5bc313261efce737}
+
+\item 
+uint16\+\_\+t {\bfseries \+\_\+supply\+Power}\hypertarget{class_wasp_lo_ra_w_a_n_ab343147f1ed01c6bb0a515cea521cdcb}{}\label{class_wasp_lo_ra_w_a_n_ab343147f1ed01c6bb0a515cea521cdcb}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+up\+Counter}\hypertarget{class_wasp_lo_ra_w_a_n_ad18f79c72edd617b8c1bf7a6466329fb}{}\label{class_wasp_lo_ra_w_a_n_ad18f79c72edd617b8c1bf7a6466329fb}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+down\+Counter}\hypertarget{class_wasp_lo_ra_w_a_n_a2af6997afd495b0de924102658d489a4}{}\label{class_wasp_lo_ra_w_a_n_a2af6997afd495b0de924102658d489a4}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+port}\hypertarget{class_wasp_lo_ra_w_a_n_a67990b42ff56bcef5aedce9d4aa623ae}{}\label{class_wasp_lo_ra_w_a_n_a67990b42ff56bcef5aedce9d4aa623ae}
+
+\item 
+char {\bfseries \+\_\+data} \mbox{[}101\mbox{]}\hypertarget{class_wasp_lo_ra_w_a_n_aecee041aff621899e493fb11ddf376b6}{}\label{class_wasp_lo_ra_w_a_n_aecee041aff621899e493fb11ddf376b6}
+
+\item 
+bool {\bfseries \+\_\+data\+Received}\hypertarget{class_wasp_lo_ra_w_a_n_af3150dcd4fe0d0378cae5f0ea6dbf341}{}\label{class_wasp_lo_ra_w_a_n_af3150dcd4fe0d0378cae5f0ea6dbf341}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+rx2\+Data\+Rate}\hypertarget{class_wasp_lo_ra_w_a_n_a7f7ef32f9777131722f97b28611c5ce9}{}\label{class_wasp_lo_ra_w_a_n_a7f7ef32f9777131722f97b28611c5ce9}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+rx2\+Frequency}\hypertarget{class_wasp_lo_ra_w_a_n_aecf69f760e3dd26bf014336e991a74fe}{}\label{class_wasp_lo_ra_w_a_n_aecf69f760e3dd26bf014336e991a74fe}
+
+\item 
+uint16\+\_\+t {\bfseries \+\_\+rx1\+Delay}\hypertarget{class_wasp_lo_ra_w_a_n_ae0f0b9d34347705adc168f757b74c101}{}\label{class_wasp_lo_ra_w_a_n_ae0f0b9d34347705adc168f757b74c101}
+
+\item 
+uint8\+\_\+t {\bfseries \+\_\+version}\hypertarget{class_wasp_lo_ra_w_a_n_a47ca693490b7dbc6cbc762aeb33fed46}{}\label{class_wasp_lo_ra_w_a_n_a47ca693490b7dbc6cbc762aeb33fed46}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!check@{check}}
+\index{check@{check}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{check()}{check()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_afdac73ef011d33f83d79db4210d55817}{}\label{class_wasp_lo_ra_w_a_n_afdac73ef011d33f83d79db4210d55817}
+
+
+Checks if module is ready to use and saves which kind of module has been plugged to Waspmote, either R\+N2483 or R\+N2903. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!factory\+Reset@{factory\+Reset}}
+\index{factory\+Reset@{factory\+Reset}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{factory\+Reset()}{factoryReset()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::factory\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_afcea57ea0d97106b353c6166b711a03c}{}\label{class_wasp_lo_ra_w_a_n_afcea57ea0d97106b353c6166b711a03c}
+
+
+This function resets the module\textquotesingle{}s configuration data and user E\+E\+P\+R\+OM to factory default values, restarts the module and saves modules version. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Addr@{get\+Addr}}
+\index{get\+Addr@{get\+Addr}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Addr()}{getAddr()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Addr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a70fcea0bc5798a61f600de1b18ae4409}{}\label{class_wasp_lo_ra_w_a_n_a70fcea0bc5798a61f600de1b18ae4409}
+
+
+This function gets hardware E\+UI from the module nad stores last 4 byte as dev\+Addres. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+A\+DR@{get\+A\+DR}}
+\index{get\+A\+DR@{get\+A\+DR}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+A\+D\+R()}{getADR()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+A\+DR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a97f1860a5cbd2984ca695b572d05a6e8}{}\label{class_wasp_lo_ra_w_a_n_a97f1860a5cbd2984ca695b572d05a6e8}
+
+
+This function is used to read the A\+DR status from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+App\+E\+UI@{get\+App\+E\+UI}}
+\index{get\+App\+E\+UI@{get\+App\+E\+UI}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+App\+E\+U\+I()}{getAppEUI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+App\+E\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ace1dbb3c003130c3fbeac7b939c47ec4}{}\label{class_wasp_lo_ra_w_a_n_ace1dbb3c003130c3fbeac7b939c47ec4}
+
+
+This function gets the M\+AC App\+E\+UI from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Band@{get\+Band}}
+\index{get\+Band@{get\+Band}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Band()}{getBand()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Band (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a8fa6460dfeed04e88f2d55bb1b45a891}{}\label{class_wasp_lo_ra_w_a_n_a8fa6460dfeed04e88f2d55bb1b45a891}
+
+
+This function gets current band of operation. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}8\textquotesingle{} module does not support function \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Channel\+D\+R\+Range@{get\+Channel\+D\+R\+Range}}
+\index{get\+Channel\+D\+R\+Range@{get\+Channel\+D\+R\+Range}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Channel\+D\+R\+Range(uint8\+\_\+t channel)}{getChannelDRRange(uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Channel\+D\+R\+Range (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_add26dfe412e43476e4cd4be1ca7b6c9a}{}\label{class_wasp_lo_ra_w_a_n_add26dfe412e43476e4cd4be1ca7b6c9a}
+
+
+This function gets the data rate range on the given channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & channel For R\+N2483\+: channel \mbox{[}0..15\mbox{]} For R\+N2903\+: channel \mbox{[}0..71\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Channel\+Duty\+Cycle@{get\+Channel\+Duty\+Cycle}}
+\index{get\+Channel\+Duty\+Cycle@{get\+Channel\+Duty\+Cycle}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Channel\+Duty\+Cycle(uint8\+\_\+t channel)}{getChannelDutyCycle(uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Channel\+Duty\+Cycle (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a9d2ba71b7570269c9c46301bc4747c78}{}\label{class_wasp_lo_ra_w_a_n_a9d2ba71b7570269c9c46301bc4747c78}
+
+
+This function gets the operating duty channel on the given channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & channel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The \char`\"{}dcycle\char`\"{} value obtained from the module helps us to calculate duty cycle percentage \char`\"{}\+X\char`\"{} using the following formula\+: dcycle = (100/X) – 1
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}8\textquotesingle{} module does not support function \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Channel\+Freq@{get\+Channel\+Freq}}
+\index{get\+Channel\+Freq@{get\+Channel\+Freq}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Channel\+Freq(uint8\+\_\+t channel)}{getChannelFreq(uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Channel\+Freq (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_abbe5f5d96028f9f4a06bbf2596152a5e}{}\label{class_wasp_lo_ra_w_a_n_abbe5f5d96028f9f4a06bbf2596152a5e}
+
+
+This function gets the operating frequency on the given channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & channel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} if unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Channel\+Status@{get\+Channel\+Status}}
+\index{get\+Channel\+Status@{get\+Channel\+Status}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Channel\+Status(uint8\+\_\+t channel)}{getChannelStatus(uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Channel\+Status (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aead9cee2fd6d03f6c25118ca3ff190de}{}\label{class_wasp_lo_ra_w_a_n_aead9cee2fd6d03f6c25118ca3ff190de}
+
+
+This function gets the status of the given channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & channel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Data\+Rate@{get\+Data\+Rate}}
+\index{get\+Data\+Rate@{get\+Data\+Rate}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Data\+Rate()}{getDataRate()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Data\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_acd1b1ae93f145a608e1481bdb5aa497d}{}\label{class_wasp_lo_ra_w_a_n_acd1b1ae93f145a608e1481bdb5aa497d}
+
+
+This function is used to read the data rate from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Device\+Addr@{get\+Device\+Addr}}
+\index{get\+Device\+Addr@{get\+Device\+Addr}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Device\+Addr()}{getDeviceAddr()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Device\+Addr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_af73f4b4c7ed1147e7096302b459449f0}{}\label{class_wasp_lo_ra_w_a_n_af73f4b4c7ed1147e7096302b459449f0}
+
+
+This function gets the M\+AC device Address from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Device\+E\+UI@{get\+Device\+E\+UI}}
+\index{get\+Device\+E\+UI@{get\+Device\+E\+UI}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Device\+E\+U\+I()}{getDeviceEUI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Device\+E\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a0e97dfe736a997be52cb8d1b4ee3e0c9}{}\label{class_wasp_lo_ra_w_a_n_a0e97dfe736a997be52cb8d1b4ee3e0c9}
+
+
+This function gets the M\+AC device E\+UI from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Down\+Counter@{get\+Down\+Counter}}
+\index{get\+Down\+Counter@{get\+Down\+Counter}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Down\+Counter()}{getDownCounter()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Down\+Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_af5392fe747fb14e5ee0e68a7ee6613e5}{}\label{class_wasp_lo_ra_w_a_n_af5392fe747fb14e5ee0e68a7ee6613e5}
+
+
+This function is used to get the value of the downlink frame counter that will be used for the next downlink transmission. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Duty\+Cycle\+Prescaler@{get\+Duty\+Cycle\+Prescaler}}
+\index{get\+Duty\+Cycle\+Prescaler@{get\+Duty\+Cycle\+Prescaler}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Duty\+Cycle\+Prescaler()}{getDutyCyclePrescaler()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Duty\+Cycle\+Prescaler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a97f908380a6d9957a888abda2a30be99}{}\label{class_wasp_lo_ra_w_a_n_a97f908380a6d9957a888abda2a30be99}
+
+
+This function is used to read the duty cycle prescaler from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+E\+UI@{get\+E\+UI}}
+\index{get\+E\+UI@{get\+E\+UI}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+E\+U\+I()}{getEUI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+E\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ad9348efd062e4feea102ad61c5fa27a0}{}\label{class_wasp_lo_ra_w_a_n_ad9348efd062e4feea102ad61c5fa27a0}
+
+
+This function gets hardware E\+UI from the module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Gateway\+Number@{get\+Gateway\+Number}}
+\index{get\+Gateway\+Number@{get\+Gateway\+Number}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Gateway\+Number()}{getGatewayNumber()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Gateway\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ae31d8f481714ac4ff05ae9a6b5e4316e}{}\label{class_wasp_lo_ra_w_a_n_ae31d8f481714ac4ff05ae9a6b5e4316e}
+
+
+This function gets the number of gateways that successfully received the last Linck Check Request from the module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Margin@{get\+Margin}}
+\index{get\+Margin@{get\+Margin}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Margin()}{getMargin()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Margin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a0ea02db435640d7a7396b366ce87b52b}{}\label{class_wasp_lo_ra_w_a_n_a0ea02db435640d7a7396b366ce87b52b}
+
+
+This function gets the demodulation margin from the module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Power@{get\+Power}}
+\index{get\+Power@{get\+Power}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Power()}{getPower()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ae81e4e760467d7a39815cdc87a80b3ff}{}\label{class_wasp_lo_ra_w_a_n_ae81e4e760467d7a39815cdc87a80b3ff}
+
+
+This function is used to read the power index from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Bit\+Rate\+F\+SK@{get\+Radio\+Bit\+Rate\+F\+SK}}
+\index{get\+Radio\+Bit\+Rate\+F\+SK@{get\+Radio\+Bit\+Rate\+F\+SK}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Bit\+Rate\+F\+S\+K()}{getRadioBitRateFSK()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Bit\+Rate\+F\+SK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a1c30c959e4d71286ed406b360cbae244}{}\label{class_wasp_lo_ra_w_a_n_a1c30c959e4d71286ed406b360cbae244}
+
+
+This function gets the bit rate for F\+SK modulation from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+BW@{get\+Radio\+BW}}
+\index{get\+Radio\+BW@{get\+Radio\+BW}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+B\+W()}{getRadioBW()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+BW (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aacdadecb332215bd7c74ada41a5816ff}{}\label{class_wasp_lo_ra_w_a_n_aacdadecb332215bd7c74ada41a5816ff}
+
+
+This function gets the operating radio bandwidth from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+CR@{get\+Radio\+CR}}
+\index{get\+Radio\+CR@{get\+Radio\+CR}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+C\+R()}{getRadioCR()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+CR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a95238b0b809cd302767b814d1c311112}{}\label{class_wasp_lo_ra_w_a_n_a95238b0b809cd302767b814d1c311112}
+
+
+This function gets the operating coding rate from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+C\+RC@{get\+Radio\+C\+RC}}
+\index{get\+Radio\+C\+RC@{get\+Radio\+C\+RC}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+C\+R\+C()}{getRadioCRC()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+C\+RC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a0fb7464a8a8cf6887a3559677b9be300}{}\label{class_wasp_lo_ra_w_a_n_a0fb7464a8a8cf6887a3559677b9be300}
+
+
+This function gets the C\+RC header state from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Freq@{get\+Radio\+Freq}}
+\index{get\+Radio\+Freq@{get\+Radio\+Freq}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Freq()}{getRadioFreq()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Freq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a4b4b5abe5f866383f4aa496e54265ca3}{}\label{class_wasp_lo_ra_w_a_n_a4b4b5abe5f866383f4aa496e54265ca3}
+
+
+This function gets the operating radio frequency from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Freq\+Deviation@{get\+Radio\+Freq\+Deviation}}
+\index{get\+Radio\+Freq\+Deviation@{get\+Radio\+Freq\+Deviation}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Freq\+Deviation()}{getRadioFreqDeviation()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Freq\+Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a2a5d3afe9d00116dfa7cb217ac6a2163}{}\label{class_wasp_lo_ra_w_a_n_a2a5d3afe9d00116dfa7cb217ac6a2163}
+
+
+This function gets the frequency deviation from the module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Mode@{get\+Radio\+Mode}}
+\index{get\+Radio\+Mode@{get\+Radio\+Mode}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Mode()}{getRadioMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a1f7397691a2baac895d30d470ba409f4}{}\label{class_wasp_lo_ra_w_a_n_a1f7397691a2baac895d30d470ba409f4}
+
+
+This function gets the operating radio mode from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Power@{get\+Radio\+Power}}
+\index{get\+Radio\+Power@{get\+Radio\+Power}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Power()}{getRadioPower()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a26c4264112173c8035a3b8676b11503a}{}\label{class_wasp_lo_ra_w_a_n_a26c4264112173c8035a3b8676b11503a}
+
+
+This function gets the operating radio power from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Preamble@{get\+Radio\+Preamble}}
+\index{get\+Radio\+Preamble@{get\+Radio\+Preamble}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Preamble()}{getRadioPreamble()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Preamble (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a8f1e1fb190423d377204fb3e0243edeb}{}\label{class_wasp_lo_ra_w_a_n_a8f1e1fb190423d377204fb3e0243edeb}
+
+
+This function gets the preamble length from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+Receiving\+BW@{get\+Radio\+Receiving\+BW}}
+\index{get\+Radio\+Receiving\+BW@{get\+Radio\+Receiving\+BW}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+Receiving\+B\+W()}{getRadioReceivingBW()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+Receiving\+BW (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ada44238eb38e54b057f6659e7fc93c57}{}\label{class_wasp_lo_ra_w_a_n_ada44238eb38e54b057f6659e7fc93c57}
+
+
+This function gets the operating receiving bandwidth from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+SF@{get\+Radio\+SF}}
+\index{get\+Radio\+SF@{get\+Radio\+SF}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+S\+F()}{getRadioSF()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+SF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a0c7e50411d1689dadb289588bca4e6cf}{}\label{class_wasp_lo_ra_w_a_n_a0c7e50411d1689dadb289588bca4e6cf}
+
+
+This function gets the operating radio spreading factor from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+S\+NR@{get\+Radio\+S\+NR}}
+\index{get\+Radio\+S\+NR@{get\+Radio\+S\+NR}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+S\+N\+R()}{getRadioSNR()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+S\+NR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a939771a7592fc8e06297f40eeb452aa7}{}\label{class_wasp_lo_ra_w_a_n_a939771a7592fc8e06297f40eeb452aa7}
+
+
+This function is used to read the S\+NR for the last receive packet. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Radio\+W\+DT@{get\+Radio\+W\+DT}}
+\index{get\+Radio\+W\+DT@{get\+Radio\+W\+DT}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Radio\+W\+D\+T()}{getRadioWDT()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Radio\+W\+DT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a011452f8b75f6a6571a43fd0290b7e4a}{}\label{class_wasp_lo_ra_w_a_n_a011452f8b75f6a6571a43fd0290b7e4a}
+
+
+This function gets the watch dog timer\textquotesingle{}s time from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Retries@{get\+Retries}}
+\index{get\+Retries@{get\+Retries}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Retries()}{getRetries()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Retries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a64854a7e37fd60414afe00f67577298b}{}\label{class_wasp_lo_ra_w_a_n_a64854a7e37fd60414afe00f67577298b}
+
+
+This function is used to read the power index from module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Supply\+Power@{get\+Supply\+Power}}
+\index{get\+Supply\+Power@{get\+Supply\+Power}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Supply\+Power()}{getSupplyPower()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Supply\+Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a488a55369702ffe38bfc5cd19ae4add2}{}\label{class_wasp_lo_ra_w_a_n_a488a55369702ffe38bfc5cd19ae4add2}
+
+
+This functions gets supply power from the module. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!get\+Up\+Counter@{get\+Up\+Counter}}
+\index{get\+Up\+Counter@{get\+Up\+Counter}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{get\+Up\+Counter()}{getUpCounter()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::get\+Up\+Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a584ed69c7e3604d86315ab94b5609cf0}{}\label{class_wasp_lo_ra_w_a_n_a584ed69c7e3604d86315ab94b5609cf0}
+
+
+This function is used to get the value of the uplink frame counter that will be used for the next uplink transmission. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!join\+A\+BP@{join\+A\+BP}}
+\index{join\+A\+BP@{join\+A\+BP}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{join\+A\+B\+P()}{joinABP()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::join\+A\+BP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aea55cdf82446087c531aca5abebe5d1c}{}\label{class_wasp_lo_ra_w_a_n_aea55cdf82446087c531aca5abebe5d1c}
+
+
+This function joins module to a network. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}3\textquotesingle{} if keys were not initiated \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!join\+O\+T\+AA@{join\+O\+T\+AA}}
+\index{join\+O\+T\+AA@{join\+O\+T\+AA}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{join\+O\+T\+A\+A()}{joinOTAA()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::join\+O\+T\+AA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a51fb25b397d971c7af02c393575ad243}{}\label{class_wasp_lo_ra_w_a_n_a51fb25b397d971c7af02c393575ad243}
+
+
+This function joins module to a network. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}3\textquotesingle{} if keys were not initiated \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!mac\+Pause@{mac\+Pause}}
+\index{mac\+Pause@{mac\+Pause}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{mac\+Pause()}{macPause()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::mac\+Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a5a54dadb2d5a49af135069bfda53e93c}{}\label{class_wasp_lo_ra_w_a_n_a5a54dadb2d5a49af135069bfda53e93c}
+
+
+This function pauses M\+AC functionality so the module is able to use radio functions. 
+
+\begin{DoxyRemark}{Remarks}
+This function must be called before using radio RX and TX
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!mac\+Resume@{mac\+Resume}}
+\index{mac\+Resume@{mac\+Resume}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{mac\+Resume()}{macResume()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::mac\+Resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aee5c255942407b5616efe774bca9d9b1}{}\label{class_wasp_lo_ra_w_a_n_aee5c255942407b5616efe774bca9d9b1}
+
+
+This function resumes M\+AC functionality. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{O\+F\+F(uint8\+\_\+t socket)}{OFF(uint8_t socket)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{socket}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a3315ca2f4cf72e1da5a88a00237b8677}{}\label{class_wasp_lo_ra_w_a_n_a3315ca2f4cf72e1da5a88a00237b8677}
+
+
+This function powers down the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & socket\+: socket to be used\+: S\+O\+C\+K\+E\+T0 or S\+O\+C\+K\+E\+T1\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t socket)}{ON(uint8_t socket)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{socket}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ab0548a7036908e951d505014cb34a1e1}{}\label{class_wasp_lo_ra_w_a_n_ab0548a7036908e951d505014cb34a1e1}
+
+
+This function powers on the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & socket\+: socket to be used\+: S\+O\+C\+K\+E\+T0 or S\+O\+C\+K\+E\+T1\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!receive\+Radio@{receive\+Radio}}
+\index{receive\+Radio@{receive\+Radio}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{receive\+Radio(uint32\+\_\+t timeout)}{receiveRadio(uint32_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::receive\+Radio (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a44fecfcdfa1bf3b2da520032c2657ed4}{}\label{class_wasp_lo_ra_w_a_n_a44fecfcdfa1bf3b2da520032c2657ed4}
+
+
+Receive a packet via radio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & timeout\+: time to wait for data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if there was an error \item \textquotesingle{}2\textquotesingle{} it no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!reset@{reset}}
+\index{reset@{reset}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_af203684a732d1cf7294ee69de6c30d85}{}\label{class_wasp_lo_ra_w_a_n_af203684a732d1cf7294ee69de6c30d85}
+
+
+This function resets and restart the stored internal configurations will be loaded upon reboot and saves modules version. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!reset\+Mac\+Config@{reset\+Mac\+Config}}
+\index{reset\+Mac\+Config@{reset\+Mac\+Config}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{reset\+Mac\+Config(char $\ast$band)}{resetMacConfig(char *band)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::reset\+Mac\+Config (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{band}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a1d24183427ec43e5e342252358d554ce}{}\label{class_wasp_lo_ra_w_a_n_a1d24183427ec43e5e342252358d554ce}
+
+
+This function is used to reset Lo\+Ra\+W\+AN configuration and set working band. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & band\+: working Lo\+Ra\+W\+AN band\+: \char`\"{}433\char`\"{},\char`\"{}868\char`\"{} or \char`\"{}900\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!save\+Config@{save\+Config}}
+\index{save\+Config@{save\+Config}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{save\+Config()}{saveConfig()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::save\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a98c4324d952d16243f5ca324ce6a2a0d}{}\label{class_wasp_lo_ra_w_a_n_a98c4324d952d16243f5ca324ce6a2a0d}
+
+
+This function saves config set into module\textquotesingle{}s E\+E\+P\+R\+OM. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!send\+Confirmed@{send\+Confirmed}}
+\index{send\+Confirmed@{send\+Confirmed}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{send\+Confirmed(uint8\+\_\+t port, char $\ast$payload)}{sendConfirmed(uint8_t port, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::send\+Confirmed (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{port, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a59953e5c7fc93bf89570cc88f3976ab9}{}\label{class_wasp_lo_ra_w_a_n_a59953e5c7fc93bf89570cc88f3976ab9}
+
+
+This function sends a Lo\+Ra\+W\+AN packet and waits for A\+CK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: data to be sent uint8\+\_\+t port\+: port number to send data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+data is a sequence of digit representing the value of byte stream expressed in hexadecimal value (i.\+e.\+: payload =12\+A435 – the payload is composed by the following byte stream\+: 0x12, 0x\+A4, 0x35 – 6 digit converted in 3 bytes). The maximum length of frame is 584 digit (292 Bytes). User can check \+\_\+datareceived to know if a downlink was performed
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}4\textquotesingle{} if data length error \item \textquotesingle{}5\textquotesingle{} if error when sending data \item \textquotesingle{}6\textquotesingle{} if module hasn\textquotesingle{}t joined to a network \item \textquotesingle{}7\textquotesingle{} if input port parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!send\+Radio@{send\+Radio}}
+\index{send\+Radio@{send\+Radio}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{send\+Radio(char $\ast$buff)}{sendRadio(char *buff)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::send\+Radio (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a4709b7d46412f7d3c6e08c774fb27e79}{}\label{class_wasp_lo_ra_w_a_n_a4709b7d46412f7d3c6e08c774fb27e79}
+
+
+Send a packet via radio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & message\+: char array that will be send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+data is a sequence of digit representing the value of byte stream expressed in hexadecimal value (i.\+e. radio tx 12\+A435 – the payload is composed by the following byte stream\+: 0x12, 0x\+A4, 0x35 – 6 digit converted in 3 bytes). The maximum length of frame is 510 digit (255 Bytes) for Lo\+Ra modulation and 128 digit (64 bytes) F\+SK modulation
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if there was an error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!send\+Unconfirmed@{send\+Unconfirmed}}
+\index{send\+Unconfirmed@{send\+Unconfirmed}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{send\+Unconfirmed(uint8\+\_\+t port, char $\ast$payload)}{sendUnconfirmed(uint8_t port, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::send\+Unconfirmed (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{port, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aa0eda53f971c525e0375bf6425705dae}{}\label{class_wasp_lo_ra_w_a_n_aa0eda53f971c525e0375bf6425705dae}
+
+
+This function sends a Lo\+Ra\+W\+AN packet without A\+CK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: data to be sent uint8\+\_\+t port\+: port number to send data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+data is a sequence of digit representing the value of byte stream expressed in hexadecimal value (i.\+e.\+: payload =12\+A435 – the payload is composed by the following byte stream\+: 0x12, 0x\+A4, 0x35 – 6 digit converted in 3 bytes). The maximum length of frame is 584 digit (292 Bytes). User can check \+\_\+datareceived to know if a downlink was performed
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}4\textquotesingle{} if data length error \item \textquotesingle{}5\textquotesingle{} if error when sending data \item \textquotesingle{}6\textquotesingle{} if module hasn\textquotesingle{}t joined to a network \item \textquotesingle{}7\textquotesingle{} if input port parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+A\+DR@{set\+A\+DR}}
+\index{set\+A\+DR@{set\+A\+DR}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+A\+D\+R(char $\ast$state)}{setADR(char *state)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+A\+DR (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a0ce32dad81c1c4683dcdf1bda28b6711}{}\label{class_wasp_lo_ra_w_a_n_a0ce32dad81c1c4683dcdf1bda28b6711}
+
+
+This function is used to set the A\+DR status from module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & state\+: \char`\"{}on\char`\"{}/\char`\"{}off\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+App\+E\+UI@{set\+App\+E\+UI}}
+\index{set\+App\+E\+UI@{set\+App\+E\+UI}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+App\+E\+U\+I(char $\ast$eui)}{setAppEUI(char *eui)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+App\+E\+UI (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{eui}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a60ff224c40fa7e455b00676f4268e609}{}\label{class_wasp_lo_ra_w_a_n_a60ff224c40fa7e455b00676f4268e609}
+
+
+This function sets M\+AC app\+E\+UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & E\+UI\+: E\+UI to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+E\+UI is a sequence of digit representing the value of app\+E\+UI expressed in hexadecimal value (i.\+e.\+: E\+UI = 0001020304050607 16 digit converted in 8 bytes).
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+App\+Key@{set\+App\+Key}}
+\index{set\+App\+Key@{set\+App\+Key}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+App\+Key(char $\ast$key)}{setAppKey(char *key)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+App\+Key (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_afde650898fe1dcd03eff640a123dc13a}{}\label{class_wasp_lo_ra_w_a_n_afde650898fe1dcd03eff640a123dc13a}
+
+
+This function sets M\+AC App Key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & key\+: key to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+key is a sequence of digit representing the value of App\+Key expressed in hexadecimal value (i.\+e.\+: key = 000102030405060708091011121314 32 digit converted in 16 bytes).
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+App\+Session\+Key@{set\+App\+Session\+Key}}
+\index{set\+App\+Session\+Key@{set\+App\+Session\+Key}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+App\+Session\+Key(char $\ast$key)}{setAppSessionKey(char *key)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+App\+Session\+Key (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a6715e1c8645523efe5efb6710ed25629}{}\label{class_wasp_lo_ra_w_a_n_a6715e1c8645523efe5efb6710ed25629}
+
+
+This function sets M\+AC App Session Key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & key\+: key to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+key is a sequence of digit representing the value of App\+S\+Key expressed in hexadecimal value (i.\+e.\+: key = 000102030405060708091011121314 32 digit converted in 16 bytes).
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Channel\+D\+R\+Range@{set\+Channel\+D\+R\+Range}}
+\index{set\+Channel\+D\+R\+Range@{set\+Channel\+D\+R\+Range}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Channel\+D\+R\+Range(uint8\+\_\+t channel, uint8\+\_\+t min\+D\+R, uint8\+\_\+t max\+D\+R)}{setChannelDRRange(uint8_t channel, uint8_t minDR, uint8_t maxDR)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Channel\+D\+R\+Range (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel, }
+\item[{uint8\+\_\+t}]{min\+DR, }
+\item[{uint8\+\_\+t}]{max\+DR}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a62affcaabcc35e4abe857570d0050231}{}\label{class_wasp_lo_ra_w_a_n_a62affcaabcc35e4abe857570d0050231}
+
+
+This function sets the data rate range on the given channel ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & min\+DR\+: datarate to be set uint8\+\_\+t max\+DR\+: datarate to be set uint8\+\_\+t channel\+: channel to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+For R\+N2483\+: min\+DR \mbox{[}0..5\mbox{]} max\+DR \mbox{[}0..5\mbox{]} channel \mbox{[}0..15\mbox{]} For R\+N2903\+: min\+DR \mbox{[}0..3\mbox{]} max\+DR \mbox{[}0..3\mbox{]} channel \mbox{[}0..63\mbox{]} 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Channel\+Duty\+Cycle@{set\+Channel\+Duty\+Cycle}}
+\index{set\+Channel\+Duty\+Cycle@{set\+Channel\+Duty\+Cycle}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Channel\+Duty\+Cycle(uint8\+\_\+t channel, uint16\+\_\+t dcycle)}{setChannelDutyCycle(uint8_t channel, uint16_t dcycle)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Channel\+Duty\+Cycle (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel, }
+\item[{uint16\+\_\+t}]{dcycle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aec59f2e23ba9f70bc55a39d2b4c68da8}{}\label{class_wasp_lo_ra_w_a_n_aec59f2e23ba9f70bc55a39d2b4c68da8}
+
+
+This function sets the duty cycle on the given channel ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & dcycle\+: frequency to be set \mbox{[}0..65535\mbox{]} uint8\+\_\+t channel\+: channel to be set \mbox{[}0..15\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The \char`\"{}dcycle\char`\"{} value that needs to be configured can be obtained from the actual duty cycle X (in percentage) using the following formula\+: dcycle = (100/X) – 1
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input channel parameter error \item \textquotesingle{}8\textquotesingle{} module does not support function \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Channel\+Freq@{set\+Channel\+Freq}}
+\index{set\+Channel\+Freq@{set\+Channel\+Freq}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Channel\+Freq(uint8\+\_\+t channel, uint32\+\_\+t freq)}{setChannelFreq(uint8_t channel, uint32_t freq)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Channel\+Freq (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel, }
+\item[{uint32\+\_\+t}]{freq}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a735cc86e2f5b8a1eafdc52cd45374775}{}\label{class_wasp_lo_ra_w_a_n_a735cc86e2f5b8a1eafdc52cd45374775}
+
+
+This function sets the frequency on the given channel ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & freq\+: frequency to be set \mbox{[}863250000..869750000\mbox{]} \mbox{[}433250000..434550000\mbox{]} uint8\+\_\+t channel\+: channel to be set \mbox{[}3..15\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} if module does not support function \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Channel\+Status@{set\+Channel\+Status}}
+\index{set\+Channel\+Status@{set\+Channel\+Status}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Channel\+Status(uint8\+\_\+t channel, char $\ast$state)}{setChannelStatus(uint8_t channel, char *state)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Channel\+Status (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel, }
+\item[{char $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a482c198da0a459455315a81310110d81}{}\label{class_wasp_lo_ra_w_a_n_a482c198da0a459455315a81310110d81}
+
+
+This function sets the status on the given channel ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & state\+: state \char`\"{}on\char`\"{}/\char`\"{}off\char`\"{} uint8\+\_\+t channel\+: channel to be set \mbox{[}0..15\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Data\+Rate@{set\+Data\+Rate}}
+\index{set\+Data\+Rate@{set\+Data\+Rate}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Data\+Rate(uint8\+\_\+t datarate)}{setDataRate(uint8_t datarate)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Data\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{datarate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a5c8cfbfe49432d26a56d27100f748f47}{}\label{class_wasp_lo_ra_w_a_n_a5c8cfbfe49432d26a56d27100f748f47}
+
+
+This function is used to configure the Lo\+Ra\+W\+AN RF data rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & index\+: data rate to be set \mbox{[}0..7\mbox{]} (R\+N2483) \begin{DoxyItemize}
+\item 0 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 12 / 125 k\+Hz Bit/s\+: 250 \item 1 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 11 / 125 k\+Hz Bit/s\+: 440 \item 2 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 10 / 125 k\+Hz Bit/s\+: 980 \item 3 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 9 / 125 k\+Hz Bit/s\+: 1760 \item 4 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 8 / 125 k\+Hz Bit/s\+: 3125 \item 5 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 7 / 125 k\+Hz Bit/s\+: 5470 \item 6 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 7 / 250 k\+Hz Bit/s\+: 11000 \item 7 -\/$>$ F\+SK\+: 50kbps \begin{DoxyVerb}    uint8_t index: data rate to be set [0..4] (RN2903)  
+\end{DoxyVerb}
+ \item 0 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 10 / 125 k\+Hz Bit/s\+: 980 \item 1 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 9 / 125 k\+Hz Bit/s\+: 1760 \item 2 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 8 / 125 k\+Hz Bit/s\+: 3125 \item 3 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 7 / 125 k\+Hz Bit/s\+: 5470 \item 4 -\/$>$ \hyperlink{class_lora}{Lora}\+: SF 8 / 500 k\+Hz Bit/s\+: 12500\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} if unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Device\+Addr@{set\+Device\+Addr}}
+\index{set\+Device\+Addr@{set\+Device\+Addr}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Device\+Addr()}{setDeviceAddr()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Device\+Addr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ab067b666eb32caedbf6a6ae84ed117f0}{}\label{class_wasp_lo_ra_w_a_n_ab067b666eb32caedbf6a6ae84ed117f0}
+
+
+This function gets hardware E\+UI and sets M\+AC dev\+Address. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Device\+Addr@{set\+Device\+Addr}}
+\index{set\+Device\+Addr@{set\+Device\+Addr}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Device\+Addr(char $\ast$addr)}{setDeviceAddr(char *addr)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Device\+Addr (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a0c3b481052a84e75ec9f93b942acd05f}{}\label{class_wasp_lo_ra_w_a_n_a0c3b481052a84e75ec9f93b942acd05f}
+
+
+This function sets M\+AC dev\+Address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & addr\+: addr to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+addr is a sequence of digit representing the value of addres expressed in hexadecimal value (i.\+e. addr = 001\+A836D – address is composed by the following byte stream\+: 0x00, 0x1A, 0x83, 0x6D – 8 digit converted in 4 bytes).
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Device\+E\+UI@{set\+Device\+E\+UI}}
+\index{set\+Device\+E\+UI@{set\+Device\+E\+UI}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Device\+E\+U\+I()}{setDeviceEUI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Device\+E\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ad4fe27fdc474674ea0a3f00afb82212b}{}\label{class_wasp_lo_ra_w_a_n_ad4fe27fdc474674ea0a3f00afb82212b}
+
+
+This function gets hardware E\+UI and sets M\+AC dev\+E\+UI. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Device\+E\+UI@{set\+Device\+E\+UI}}
+\index{set\+Device\+E\+UI@{set\+Device\+E\+UI}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Device\+E\+U\+I(char $\ast$eui)}{setDeviceEUI(char *eui)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Device\+E\+UI (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{eui}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ad56e46484106fecc6fd09ed4aac212a6}{}\label{class_wasp_lo_ra_w_a_n_ad56e46484106fecc6fd09ed4aac212a6}
+
+
+This function sets M\+AC dev\+E\+UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & E\+UI\+: E\+UI to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+E\+UI is a sequence of digit representing the value of dev\+E\+UI expressed in hexadecimal value (i.\+e. E\+UI = 0004\+A30\+B001\+A836D – address is composed by the following byte stream\+: 0x00, 0x04, 0x\+A3, 0x0B, 0x00, 0x1A, 0x83, 0x6D -\/ 16 digit converted in 8 bytes).
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Down\+Counter@{set\+Down\+Counter}}
+\index{set\+Down\+Counter@{set\+Down\+Counter}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Down\+Counter(uint32\+\_\+t counter)}{setDownCounter(uint32_t counter)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Down\+Counter (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{counter}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a585f169558b604d4b2d3bfbbef690acc}{}\label{class_wasp_lo_ra_w_a_n_a585f169558b604d4b2d3bfbbef690acc}
+
+
+This function sets the value of the downlink frame counter that will be used for the next downlink transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & counter\+:\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Link\+Check@{set\+Link\+Check}}
+\index{set\+Link\+Check@{set\+Link\+Check}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Link\+Check(uint16\+\_\+t counter)}{setLinkCheck(uint16_t counter)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Link\+Check (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a77395926a42b1ebffc0b0ff4997743b4}{}\label{class_wasp_lo_ra_w_a_n_a77395926a42b1ebffc0b0ff4997743b4}
+
+
+This function sets the time interval for the link check process to be triggered periodically. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & counter\+:\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Nwk\+Session\+Key@{set\+Nwk\+Session\+Key}}
+\index{set\+Nwk\+Session\+Key@{set\+Nwk\+Session\+Key}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Nwk\+Session\+Key(char $\ast$key)}{setNwkSessionKey(char *key)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Nwk\+Session\+Key (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a690d125487b207e6aa78383f3bd16d65}{}\label{class_wasp_lo_ra_w_a_n_a690d125487b207e6aa78383f3bd16d65}
+
+
+This function sets M\+AC Network Session Key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & key\+: key to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+key is a sequence of digit representing the value of Nwk\+S\+Key expressed in hexadecimal value (i.\+e. key = 000102030405060708091011121314 32 digit converted in 16 bytes).
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Power@{set\+Power}}
+\index{set\+Power@{set\+Power}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Power(uint8\+\_\+t index)}{setPower(uint8_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a47eb3c84e7edc5fe5dcec03bb4a8434e}{}\label{class_wasp_lo_ra_w_a_n_a47eb3c84e7edc5fe5dcec03bb4a8434e}
+
+
+This function is used to configure the Lo\+Ra\+W\+AN RF power level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & index\+: power level to be set \mbox{[}0..5\mbox{]} for 433 M\+Hz, \mbox{[}1..5\mbox{]} for 868 M\+Hz and \mbox{[}5..10\mbox{]} for 900\\
+\hline
+\end{DoxyParams}
+\begin{DoxyItemize}
+\item 0 -\/$>$ 20 d\+Bm (if supported) \item 1 -\/$>$ 14 d\+Bm \item 2 -\/$>$ 11 d\+Bm \item 3 -\/$>$ 8 d\+Bm \item 4 -\/$>$ 5 d\+Bm \item 5 -\/$>$ 2 d\+Bm\end{DoxyItemize}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} if unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Bit\+Rate\+F\+SK@{set\+Radio\+Bit\+Rate\+F\+SK}}
+\index{set\+Radio\+Bit\+Rate\+F\+SK@{set\+Radio\+Bit\+Rate\+F\+SK}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Bit\+Rate\+F\+S\+K(uint32\+\_\+t bitrate)}{setRadioBitRateFSK(uint32_t bitrate)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Bit\+Rate\+F\+SK (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{bitrate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ace29a7ccd8c85ea98453a1d7e793a40a}{}\label{class_wasp_lo_ra_w_a_n_ace29a7ccd8c85ea98453a1d7e793a40a}
+
+
+This function sets the F\+SK bit rate value for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & bitrate\+: \mbox{[}0..65535\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+BW@{set\+Radio\+BW}}
+\index{set\+Radio\+BW@{set\+Radio\+BW}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+B\+W(uint16\+\_\+t bandwidth)}{setRadioBW(uint16_t bandwidth)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+BW (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{bandwidth}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a2ac8547e494a7f032a78e773664bdb3b}{}\label{class_wasp_lo_ra_w_a_n_a2ac8547e494a7f032a78e773664bdb3b}
+
+
+This function sets the bandwidth for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & bandwitdh\+: 125,250,500\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+CR@{set\+Radio\+CR}}
+\index{set\+Radio\+CR@{set\+Radio\+CR}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+C\+R(char $\ast$codingrate)}{setRadioCR(char *codingrate)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+CR (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{codingrate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_ad2b1277646c9989a86eb56fd28f08e3a}{}\label{class_wasp_lo_ra_w_a_n_ad2b1277646c9989a86eb56fd28f08e3a}
+
+
+This function sets the coding rate for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & codingrate\+: \char`\"{}4/5\char`\"{},\char`\"{}4/6\char`\"{},\char`\"{}4/7\char`\"{},\char`\"{}4/8\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+C\+RC@{set\+Radio\+C\+RC}}
+\index{set\+Radio\+C\+RC@{set\+Radio\+C\+RC}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+C\+R\+C(char $\ast$state)}{setRadioCRC(char *state)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+C\+RC (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a1da844661c3003c683823e3096c9d74e}{}\label{class_wasp_lo_ra_w_a_n_a1da844661c3003c683823e3096c9d74e}
+
+
+This function sets the C\+RC header state for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & state\+: \char`\"{}on\char`\"{}/\char`\"{}off\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Freq@{set\+Radio\+Freq}}
+\index{set\+Radio\+Freq@{set\+Radio\+Freq}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Freq(uint32\+\_\+t freq)}{setRadioFreq(uint32_t freq)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Freq (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{freq}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_adea6dfc9f89ca08fe8a60843d284fcf4}{}\label{class_wasp_lo_ra_w_a_n_adea6dfc9f89ca08fe8a60843d284fcf4}
+
+
+This function sets the operating frequency for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & freq\+: operating frequency \mbox{[}863250000..869750000\mbox{]} (R\+N2483) \mbox{[}433250000..434550000\mbox{]} uint32\+\_\+t freq\+: operating frequency \mbox{[}923550000..927250000\mbox{]} (R\+N2903) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Freq\+Deviation@{set\+Radio\+Freq\+Deviation}}
+\index{set\+Radio\+Freq\+Deviation@{set\+Radio\+Freq\+Deviation}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Freq\+Deviation(uint32\+\_\+t freqdeviation)}{setRadioFreqDeviation(uint32_t freqdeviation)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Freq\+Deviation (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{freqdeviation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a3b89f81185d512dfb17babe9622014b0}{}\label{class_wasp_lo_ra_w_a_n_a3b89f81185d512dfb17babe9622014b0}
+
+
+This function sets the frequency deviation for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & freqdeviation\+: \mbox{[}0..65535\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Mode@{set\+Radio\+Mode}}
+\index{set\+Radio\+Mode@{set\+Radio\+Mode}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Mode(char $\ast$mode)}{setRadioMode(char *mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Mode (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_afff6ba66788badd53bd093e702ba40d2}{}\label{class_wasp_lo_ra_w_a_n_afff6ba66788badd53bd093e702ba40d2}
+
+
+This function sets the operating mode for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mode\+: \char`\"{}lora\char`\"{}/\char`\"{}fsk\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Power@{set\+Radio\+Power}}
+\index{set\+Radio\+Power@{set\+Radio\+Power}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Power(int8\+\_\+t pwr)}{setRadioPower(int8_t pwr)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Power (
+\begin{DoxyParamCaption}
+\item[{int8\+\_\+t}]{pwr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_aa72d4cf2afad70d40f0a85ad4078f990}{}\label{class_wasp_lo_ra_w_a_n_aa72d4cf2afad70d40f0a85ad4078f990}
+
+
+This function sets tx power for radio mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & pwr\+: power to be set \mbox{[}-\/3..15\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Preamble@{set\+Radio\+Preamble}}
+\index{set\+Radio\+Preamble@{set\+Radio\+Preamble}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Preamble(uint16\+\_\+t length)}{setRadioPreamble(uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Preamble (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a4987a72e6dd6322e3abcd000783022cf}{}\label{class_wasp_lo_ra_w_a_n_a4987a72e6dd6322e3abcd000783022cf}
+
+
+This function sets the preamble length for transceiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & length\+: preamble length \mbox{[}0..65535\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+Receiving\+BW@{set\+Radio\+Receiving\+BW}}
+\index{set\+Radio\+Receiving\+BW@{set\+Radio\+Receiving\+BW}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+Receiving\+B\+W(float bandwidth)}{setRadioReceivingBW(float bandwidth)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+Receiving\+BW (
+\begin{DoxyParamCaption}
+\item[{float}]{bandwidth}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a542b3a4602bfbca66ebfbf0c7404ba2a}{}\label{class_wasp_lo_ra_w_a_n_a542b3a4602bfbca66ebfbf0c7404ba2a}
+
+
+This function sets the signal bandwidth for receiver use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & bandwidth\+: \mbox{[}250,125,62.\+5,31.\+3,15.\+6,7.\+8,3.\+9,200,100,50,25, 12.\+5,6.\+3,3.\+1,166.\+7,83.\+3,41.\+7,20.\+8,10.\+4,5.\+2,2.\+6\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+SF@{set\+Radio\+SF}}
+\index{set\+Radio\+SF@{set\+Radio\+SF}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+S\+F(char $\ast$sprfact)}{setRadioSF(char *sprfact)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+SF (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sprfact}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a44d315882f2299e748686065bd923522}{}\label{class_wasp_lo_ra_w_a_n_a44d315882f2299e748686065bd923522}
+
+
+This function sets spreading factor for radio mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & sprfact\+: spreading factor to be set \mbox{[}S\+F7..S\+F12\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Radio\+W\+DT@{set\+Radio\+W\+DT}}
+\index{set\+Radio\+W\+DT@{set\+Radio\+W\+DT}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Radio\+W\+D\+T(uint32\+\_\+t time)}{setRadioWDT(uint32_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Radio\+W\+DT (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a89531d205fabd7f2e72c4b6240627f5e}{}\label{class_wasp_lo_ra_w_a_n_a89531d205fabd7f2e72c4b6240627f5e}
+
+
+This function sets the time for the radio watch dog timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & time\+: \mbox{[}0..4294967295\mbox{]} time in milliseconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Retries@{set\+Retries}}
+\index{set\+Retries@{set\+Retries}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Retries(uint8\+\_\+t retries)}{setRetries(uint8_t retries)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{retries}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a7a5d0579fa9c58b4690a0e891faf4b56}{}\label{class_wasp_lo_ra_w_a_n_a7a5d0579fa9c58b4690a0e891faf4b56}
+
+
+This function is used to configure number of retransmisions for an uplink confirmed packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & retries\+: number of retries \mbox{[}0..255\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+R\+X1\+Delay@{set\+R\+X1\+Delay}}
+\index{set\+R\+X1\+Delay@{set\+R\+X1\+Delay}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+R\+X1\+Delay(uint16\+\_\+t delay)}{setRX1Delay(uint16_t delay)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+R\+X1\+Delay (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{delay}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a665d79a3bf34db15e8d5f41bd0093f19}{}\label{class_wasp_lo_ra_w_a_n_a665d79a3bf34db15e8d5f41bd0093f19}
+
+
+This function sets the delay used for the first receive window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & delay\+: delay to be set \mbox{[}0..65535\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The \char`\"{}dcycle\char`\"{} value that needs to be configured can be obtained from the actual duty cycle X (in percentage) using the following formula\+: dcycle = (100/X) – 1
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+R\+X2\+Parameters@{set\+R\+X2\+Parameters}}
+\index{set\+R\+X2\+Parameters@{set\+R\+X2\+Parameters}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+R\+X2\+Parameters(uint8\+\_\+t datarate, uint32\+\_\+t frequency)}{setRX2Parameters(uint8_t datarate, uint32_t frequency)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+R\+X2\+Parameters (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{datarate, }
+\item[{uint32\+\_\+t}]{frequency}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_afe89905f87186beeb698203a281c0040}{}\label{class_wasp_lo_ra_w_a_n_afe89905f87186beeb698203a281c0040}
+
+
+This function sets data rate and frecuency used for the second receive window. 
+
+\begin{DoxyRemark}{Remarks}
+The configuration of the receive window parameters should be in concordance with the server configuration
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & datarate\+: datarate to be set \mbox{[}0..5\mbox{]} uint32\+\_\+t frequency\+: frequency to be set \mbox{[}863000000..870000000\mbox{]} \mbox{[}433050000..434790000\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \item \textquotesingle{}7\textquotesingle{} if input parameter error \item \textquotesingle{}8\textquotesingle{} unrecognized module \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!set\+Up\+Counter@{set\+Up\+Counter}}
+\index{set\+Up\+Counter@{set\+Up\+Counter}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{set\+Up\+Counter(uint32\+\_\+t counter)}{setUpCounter(uint32_t counter)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::set\+Up\+Counter (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{counter}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_a973b8e71957ff75158d4e648633ebf6e}{}\label{class_wasp_lo_ra_w_a_n_a973b8e71957ff75158d4e648633ebf6e}
+
+
+This function sets the value of the uplink frame counter that will be used for the next uplink transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & counter\+:\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!test\+\_\+\+O\+FF@{test\+\_\+\+O\+FF}}
+\index{test\+\_\+\+O\+FF@{test\+\_\+\+O\+FF}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{test\+\_\+\+O\+F\+F()}{test_OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::test\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_abce067423ebddb2c08659fab3aacb197}{}\label{class_wasp_lo_ra_w_a_n_abce067423ebddb2c08659fab3aacb197}
+
+
+Stops the continuous wave mode, this function works with module identical to \char`\"{}reset()\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} it no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}!test\+\_\+\+ON@{test\+\_\+\+ON}}
+\index{test\+\_\+\+ON@{test\+\_\+\+ON}!Wasp\+Lo\+Ra\+W\+AN@{Wasp\+Lo\+Ra\+W\+AN}}
+\subsubsection[{\texorpdfstring{test\+\_\+\+O\+N()}{test_ON()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Lo\+Ra\+W\+A\+N\+::test\+\_\+\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_lo_ra_w_a_n_af38a2f1e064c7f5cfeb5b649f1e08933}{}\label{class_wasp_lo_ra_w_a_n_af38a2f1e064c7f5cfeb5b649f1e08933}
+
+
+This function is used to radiate continuous wave without any modulation. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if OK \item \textquotesingle{}1\textquotesingle{} if error \item \textquotesingle{}2\textquotesingle{} it no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Lo\+Ra\+W\+A\+N/\hyperlink{_wasp_lo_ra_w_a_n_8h}{Wasp\+Lo\+Ra\+W\+A\+N.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Lo\+Ra\+W\+A\+N/Wasp\+Lo\+Ra\+W\+A\+N.\+cpp\end{DoxyCompactItemize}

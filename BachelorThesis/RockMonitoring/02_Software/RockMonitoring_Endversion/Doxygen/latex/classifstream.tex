@@ -1,0 +1,90 @@
+\hypertarget{classifstream}{}\section{ifstream Class Reference}
+\label{classifstream}\index{ifstream@{ifstream}}
+
+
+SD file input stream.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Stream.\+h$>$}
+
+Inheritance diagram for ifstream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classifstream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classifstream_a11f4bfaa5c37cfcf8878c367fd861a88}{ifstream} (const char $\ast$path, \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} mode=\hyperlink{classios__base_ae5432e3c269064480652c4602f5f74ad}{in})
+\item 
+void \hyperlink{classifstream_ac5892f472afdef6160f5fe2401b16dce}{close} ()
+\item 
+bool \hyperlink{classifstream_aaa16c6422ea371995d02159f2e6707b2}{is\+\_\+open} ()
+\item 
+void \hyperlink{classifstream_a169694d6535fd551fd6db48a2867590e}{open} (const char $\ast$path, \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} mode=\hyperlink{classios__base_ae5432e3c269064480652c4602f5f74ad}{in})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+SD file input stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ifstream@{ifstream}!ifstream@{ifstream}}
+\index{ifstream@{ifstream}!ifstream@{ifstream}}
+\subsubsection[{\texorpdfstring{ifstream(const char $\ast$path, openmode mode=in)}{ifstream(const char *path, openmode mode=in)}}]{\setlength{\rightskip}{0pt plus 5cm}ifstream\+::ifstream (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{{\bf openmode}}]{mode = {\ttfamily {\bf in}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classifstream_a11f4bfaa5c37cfcf8878c367fd861a88}{}\label{classifstream_a11f4bfaa5c37cfcf8878c367fd861a88}
+Constructor with open 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & file to open \\
+\hline
+\mbox{\tt in}  & {\em mode} & open mode \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ifstream@{ifstream}!close@{close}}
+\index{close@{close}!ifstream@{ifstream}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void ifstream\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classifstream_ac5892f472afdef6160f5fe2401b16dce}{}\label{classifstream_ac5892f472afdef6160f5fe2401b16dce}
+Close a file and force cached data and directory information to be written to the storage device. \index{ifstream@{ifstream}!is\+\_\+open@{is\+\_\+open}}
+\index{is\+\_\+open@{is\+\_\+open}!ifstream@{ifstream}}
+\subsubsection[{\texorpdfstring{is\+\_\+open()}{is_open()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ifstream\+::is\+\_\+open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classifstream_aaa16c6422ea371995d02159f2e6707b2}{}\label{classifstream_aaa16c6422ea371995d02159f2e6707b2}
+\begin{DoxyReturn}{Returns}
+True if stream is open else false. 
+\end{DoxyReturn}
+\index{ifstream@{ifstream}!open@{open}}
+\index{open@{open}!ifstream@{ifstream}}
+\subsubsection[{\texorpdfstring{open(const char $\ast$path, openmode mode=in)}{open(const char *path, openmode mode=in)}}]{\setlength{\rightskip}{0pt plus 5cm}void ifstream\+::open (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{{\bf openmode}}]{mode = {\ttfamily {\bf in}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classifstream_a169694d6535fd551fd6db48a2867590e}{}\label{classifstream_a169694d6535fd551fd6db48a2867590e}
+Open an ifstream 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & file to open \\
+\hline
+\mbox{\tt in}  & {\em mode} & open mode\\
+\hline
+\end{DoxyParams}
+{\itshape mode} See \hyperlink{classfstream_a85b24d94552991f33caf4c3a83420879}{fstream\+::open()} for valid modes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_stream_8h}{Sd\+Stream.\+h}\end{DoxyCompactItemize}

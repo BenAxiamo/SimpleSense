@@ -1,0 +1,636 @@
+\hypertarget{class_wasp_b_t___pro}{}\section{Wasp\+B\+T\+\_\+\+Pro Class Reference}
+\label{class_wasp_b_t___pro}\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+
+
+\hyperlink{class_wasp_b_t___pro}{Wasp\+B\+T\+\_\+\+Pro} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+B\+T\+\_\+\+Pro.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_b_t___pro_acd8eda62ef48a3e719e9bfa7e8520626}{Wasp\+B\+T\+\_\+\+Pro} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_t___pro_a936de5d37dda87f7eca272a1264cc16b}{ON} ()
+\begin{DoxyCompactList}\small\item\em It opens the U\+A\+RT and powers the module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_t___pro_a8fea382c6fb6a0e999abe33ab255a1a7}{ON} (uint8\+\_\+t Uart\+Mode)
+\begin{DoxyCompactList}\small\item\em It opens the U\+A\+RT and powers the module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_b_t___pro_a8b12a1fb5c9fbc5ab0052db9a9301628}{O\+FF} ()\hypertarget{class_wasp_b_t___pro_a8b12a1fb5c9fbc5ab0052db9a9301628}{}\label{class_wasp_b_t___pro_a8b12a1fb5c9fbc5ab0052db9a9301628}
+
+\begin{DoxyCompactList}\small\item\em It closes the U\+A\+RT and powers off the module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_b_t___pro_a578cd48324a8c4c686367cb7f71b0cd2}{sleep} ()\hypertarget{class_wasp_b_t___pro_a578cd48324a8c4c686367cb7f71b0cd2}{}\label{class_wasp_b_t___pro_a578cd48324a8c4c686367cb7f71b0cd2}
+
+\begin{DoxyCompactList}\small\item\em Turns bluetotoh module into sleep mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a052614e1f3aa0d8d589bf9989e793d93}{wake\+Up} ()
+\begin{DoxyCompactList}\small\item\em Wakes up Bluetotoh module from Sleep mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_abdda1f9a9e1b319de171e808c37d4462}{reset} ()
+\begin{DoxyCompactList}\small\item\em It resets the module. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_b_t___pro_aaedf7f199f43e41b9c9926be8d4ef1d2}{get\+Node\+ID} ()
+\begin{DoxyCompactList}\small\item\em Reads Bluetooth \hyperlink{struct_node}{Node} Identifier. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_b_t___pro_a43cbd39e9509fcc97b6acc0598669801}{set\+Node\+ID} (char $\ast$ID)
+\begin{DoxyCompactList}\small\item\em Saves Bluetooth \hyperlink{struct_node}{Node} indentifier into E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_b_t___pro_accfe52843100a73b49bd8def8a91b29f}{get\+Own\+Mac} ()
+\begin{DoxyCompactList}\small\item\em Gets own bluetooth module Mac address. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_b_t___pro_a50ec94e0c5a81483e3ff5881c0cade06}{get\+Own\+Name} ()
+\begin{DoxyCompactList}\small\item\em Gets own Bluetooth module friendly name. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a2703d774a0483a6afca4c050f5b5b292}{set\+Own\+Name} (char $\ast$public\+Name)
+\begin{DoxyCompactList}\small\item\em Sets Bluetooth module friendly name. $\ast$ $\ast$ Spaces are not allowed. \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_b_t___pro_a7d3b313e676b8400bcf2f642436b0a47}{get\+Temp} ()
+\begin{DoxyCompactList}\small\item\em Reads temperature from internal module sensor. Internal sensor is not accurante and refreshing rate is not too high. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_t___pro_a16da72ad19b43b765a52a0cfebde84b6}{scan\+Network} (uint8\+\_\+t time, int8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em It scans looking for devices. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_t___pro_a5ea1228e074289071dce0a2e78f919b6}{scan\+Network\+Name} (uint8\+\_\+t time, int8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em It scans looking for devices, including friendly name. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_t___pro_a8d26875acfe796ed883e2b23b15f21eb}{scan\+Network\+Limited} (uint16\+\_\+t M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+ES, int8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em It scans network and stops when finds \char`\"{}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+S\char`\"{}. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_b_t___pro_ae9e76f22894c6a8f63faf92203509067}{scan\+Device} (char $\ast$Mac, uint8\+\_\+t max\+Time, int8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em It scans looking for devices showing R\+S\+SI. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_ab5cd9f7b1c7c23d8f7de116b54fbf82e}{print\+Inquiry} ()
+\begin{DoxyCompactList}\small\item\em Prints data of last inquiry. Function for debugging purposes only. This function becomes slows after some time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_ad95450a20c5d97e4de17b9b9fe25306d}{create\+Connection} (char $\ast$mac)
+\begin{DoxyCompactList}\small\item\em Creates a transparent connection with other bluetooth module using serial port profile. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a88f3829874a48a363caf569afb7f3d0c}{remove\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Removes a transparent connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a94a0511c1890255911e3b2abfd6f03f7}{send\+Data} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Sends data trough a transparent connection with other bluetooth module using serial port profile. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a9e9f5b1ce15d59060e1c82d604aa89f7}{send\+Data} (uint8\+\_\+t $\ast$data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends data trough a transparent connection with other bluetooth module using serial port profile. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_ace55d3a3000973394e34d9137e574eb0}{enter\+Command\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Enters command mode of bluetooth module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a2862d5f6b4e1fa1e78f4a0f091666bb8}{return\+To\+Data\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Switches from command mode to data mode. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_t___pro_a1d2e8a424ab3ae6ff1a5c845d193e8ed}{check\+Active\+Connections} ()
+\begin{DoxyCompactList}\small\item\em Checks if there are active conenctions. Maximun connections are 7. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_ac72a4214a289c89a4deeb2670b1a9036}{get\+R\+S\+SI} ()
+\begin{DoxyCompactList}\small\item\em Updates the Receiver Signal Strength Indication of the variable link\+R\+S\+SI. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a7d8347e8d02c60304f34b5d7024887da}{get\+R\+S\+SI} (uint8\+\_\+t link\+ID)
+\begin{DoxyCompactList}\small\item\em Updates the Receiver Signal Strength Indication of the variable link\+R\+S\+SI of the link given as a parameter. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_ab8ed7f1e628d84c635a301d049b98d37}{pair} (char $\ast$mac\+Address)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a2da5c037e4206213881c68888f3d9629}{pair} (char $\ast$mac\+Address, char $\ast$pin\+Code)
+\item 
+void \hyperlink{class_wasp_b_t___pro_a2281e52754f6adbce8b2bf93dcae574b}{remove\+Paired\+Devices} ()
+\begin{DoxyCompactList}\small\item\em removes al paired devices \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a3e127aedbb5989d50a428054ed5ed952}{is\+Paired} (char $\ast$device\+Mac)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_b_t___pro_a3c4b8c279a897e5ab380d047425e2322}{num\+Lines\+Before}\hypertarget{class_wasp_b_t___pro_a3c4b8c279a897e5ab380d047425e2322}{}\label{class_wasp_b_t___pro_a3c4b8c279a897e5ab380d047425e2322}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores number of lines of devices file before inquiry. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_wasp_b_t___pro_a6f64d90b33f4f9c76d7603754546b80a}{num\+Lines\+After}\hypertarget{class_wasp_b_t___pro_a6f64d90b33f4f9c76d7603754546b80a}{}\label{class_wasp_b_t___pro_a6f64d90b33f4f9c76d7603754546b80a}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores number of lines of devices file after inquiry. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_t___pro_addc4d326f53efb1f07918482924935e8}{number\+Of\+Devices}\hypertarget{class_wasp_b_t___pro_addc4d326f53efb1f07918482924935e8}{}\label{class_wasp_b_t___pro_addc4d326f53efb1f07918482924935e8}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores number of discovered devices during an inquiry. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a460f1975ea6ae8fcfe79a845bc973563}{command\+Mode}
+\begin{DoxyCompactList}\small\item\em Variable \+: Variable to know if module is in data or command mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_t___pro_a56d671babb13f0944c66de5e5b331819}{active\+Connections}\hypertarget{class_wasp_b_t___pro_a56d671babb13f0944c66de5e5b331819}{}\label{class_wasp_b_t___pro_a56d671babb13f0944c66de5e5b331819}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Variable to store number of active connections. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_b_t___pro_af9f737ff46c90795d3139259fd33c355}{link\+R\+S\+SI} \mbox{[}4\mbox{]}\hypertarget{class_wasp_b_t___pro_af9f737ff46c90795d3139259fd33c355}{}\label{class_wasp_b_t___pro_af9f737ff46c90795d3139259fd33c355}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Variable to store R\+S\+SI of a transparent link. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_b_t___pro_a2d13e0e2907991a361b9314b2b4aebf0}{friendly\+Name} \mbox{[}24\mbox{]}\hypertarget{class_wasp_b_t___pro_a2d13e0e2907991a361b9314b2b4aebf0}{}\label{class_wasp_b_t___pro_a2d13e0e2907991a361b9314b2b4aebf0}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Variable to store the own name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_b_t___pro}{Wasp\+B\+T\+\_\+\+Pro} Class. 
+
+\hyperlink{class_wasp_b_t___pro}{Wasp\+B\+T\+\_\+\+Pro} Class defines all the variables and functions used for managing the Bluetooth Board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{Wasp\+B\+T\+\_\+\+Pro()}{WaspBT_Pro()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+B\+T\+\_\+\+Pro\+::\+Wasp\+B\+T\+\_\+\+Pro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_acd8eda62ef48a3e719e9bfa7e8520626}{}\label{class_wasp_b_t___pro_acd8eda62ef48a3e719e9bfa7e8520626}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!check\+Active\+Connections@{check\+Active\+Connections}}
+\index{check\+Active\+Connections@{check\+Active\+Connections}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{check\+Active\+Connections()}{checkActiveConnections()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::check\+Active\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a1d2e8a424ab3ae6ff1a5c845d193e8ed}{}\label{class_wasp_b_t___pro_a1d2e8a424ab3ae6ff1a5c845d193e8ed}
+
+
+Checks if there are active conenctions. Maximun connections are 7. 
+
+\begin{DoxyReturn}{Returns}
+0-\/7 number of active connections, -\/1 error entering command mode. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!create\+Connection@{create\+Connection}}
+\index{create\+Connection@{create\+Connection}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{create\+Connection(char $\ast$mac)}{createConnection(char *mac)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::create\+Connection (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mac}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_ad95450a20c5d97e4de17b9b9fe25306d}{}\label{class_wasp_b_t___pro_ad95450a20c5d97e4de17b9b9fe25306d}
+
+
+Creates a transparent connection with other bluetooth module using serial port profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mac\+: device mac address to be connected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success. \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!enter\+Command\+Mode@{enter\+Command\+Mode}}
+\index{enter\+Command\+Mode@{enter\+Command\+Mode}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{enter\+Command\+Mode()}{enterCommandMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::enter\+Command\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_ace55d3a3000973394e34d9137e574eb0}{}\label{class_wasp_b_t___pro_ace55d3a3000973394e34d9137e574eb0}
+
+
+Enters command mode of bluetooth module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Mac\+: Mac of device to discover \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success. \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!get\+Node\+ID@{get\+Node\+ID}}
+\index{get\+Node\+ID@{get\+Node\+ID}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{get\+Node\+I\+D()}{getNodeID()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+B\+T\+\_\+\+Pro\+::get\+Node\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_aaedf7f199f43e41b9c9926be8d4ef1d2}{}\label{class_wasp_b_t___pro_aaedf7f199f43e41b9c9926be8d4ef1d2}
+
+
+Reads Bluetooth \hyperlink{struct_node}{Node} Identifier. 
+
+\begin{DoxyReturn}{Returns}
+Bluetooth node identifier stored in E\+E\+P\+R\+OM 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!get\+Own\+Mac@{get\+Own\+Mac}}
+\index{get\+Own\+Mac@{get\+Own\+Mac}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{get\+Own\+Mac()}{getOwnMac()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+B\+T\+\_\+\+Pro\+::get\+Own\+Mac (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_accfe52843100a73b49bd8def8a91b29f}{}\label{class_wasp_b_t___pro_accfe52843100a73b49bd8def8a91b29f}
+
+
+Gets own bluetooth module Mac address. 
+
+\begin{DoxyReturn}{Returns}
+Own mac Address of bluetooth module. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!get\+Own\+Name@{get\+Own\+Name}}
+\index{get\+Own\+Name@{get\+Own\+Name}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{get\+Own\+Name()}{getOwnName()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+B\+T\+\_\+\+Pro\+::get\+Own\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a50ec94e0c5a81483e3ff5881c0cade06}{}\label{class_wasp_b_t___pro_a50ec94e0c5a81483e3ff5881c0cade06}
+
+
+Gets own Bluetooth module friendly name. 
+
+\begin{DoxyReturn}{Returns}
+public name of bluetooth device. Max length manually limited to 20 characters. Hardware allows til 256 chars. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!get\+R\+S\+SI@{get\+R\+S\+SI}}
+\index{get\+R\+S\+SI@{get\+R\+S\+SI}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+I()}{getRSSI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::get\+R\+S\+SI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_ac72a4214a289c89a4deeb2670b1a9036}{}\label{class_wasp_b_t___pro_ac72a4214a289c89a4deeb2670b1a9036}
+
+
+Updates the Receiver Signal Strength Indication of the variable link\+R\+S\+SI. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if R\+S\+SI obtained, \textquotesingle{}0\textquotesingle{} if no connections, \textquotesingle{}-\/1\textquotesingle{} if error in command mode, \textquotesingle{}-\/2\textquotesingle{} if link not active. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!get\+R\+S\+SI@{get\+R\+S\+SI}}
+\index{get\+R\+S\+SI@{get\+R\+S\+SI}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+I(uint8\+\_\+t link\+I\+D)}{getRSSI(uint8_t linkID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::get\+R\+S\+SI (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{link\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a7d8347e8d02c60304f34b5d7024887da}{}\label{class_wasp_b_t___pro_a7d8347e8d02c60304f34b5d7024887da}
+
+
+Updates the Receiver Signal Strength Indication of the variable link\+R\+S\+SI of the link given as a parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & link\+ID\+: link ID of the connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if R\+S\+SI obtained, \textquotesingle{}0\textquotesingle{} if no connections, \textquotesingle{}-\/1\textquotesingle{} if error in command mode, \textquotesingle{}-\/2\textquotesingle{} if link not active. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{get\+Temp()}{getTemp()}}]{\setlength{\rightskip}{0pt plus 5cm}long Wasp\+B\+T\+\_\+\+Pro\+::get\+Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a7d3b313e676b8400bcf2f642436b0a47}{}\label{class_wasp_b_t___pro_a7d3b313e676b8400bcf2f642436b0a47}
+
+
+Reads temperature from internal module sensor. Internal sensor is not accurante and refreshing rate is not too high. 
+
+\begin{DoxyReturn}{Returns}
+Temperature 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!is\+Paired@{is\+Paired}}
+\index{is\+Paired@{is\+Paired}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{is\+Paired(char $\ast$device\+Mac)}{isPaired(char *deviceMac)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::is\+Paired (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{device\+Mac}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a3e127aedbb5989d50a428054ed5ed952}{}\label{class_wasp_b_t___pro_a3e127aedbb5989d50a428054ed5ed952}
+removes all paired devices. mac address must not have capital leters\+: ok --$>$ \char`\"{}00\+:1a\+:f0\+:90\+:b3\+:c8\char`\"{} wrong --$>$ \char`\"{}00\+:1\+A\+:\+F0\+:90\+:\+B3\+:\+C8\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$ device\+Mac\+: mac of device to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns \textquotesingle{}1\textquotesingle{} if pared, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!ON@{ON}}
+\index{ON@{ON}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a936de5d37dda87f7eca272a1264cc16b}{}\label{class_wasp_b_t___pro_a936de5d37dda87f7eca272a1264cc16b}
+
+
+It opens the U\+A\+RT and powers the module. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} os success, \textquotesingle{}0\textquotesingle{} error reset, \textquotesingle{}-\/1\textquotesingle{} error init 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!ON@{ON}}
+\index{ON@{ON}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t Uart\+Mode)}{ON(uint8_t UartMode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{Uart\+Mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a8fea382c6fb6a0e999abe33ab255a1a7}{}\label{class_wasp_b_t___pro_a8fea382c6fb6a0e999abe33ab255a1a7}
+
+
+It opens the U\+A\+RT and powers the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & Uart\+Mode\+: Uart\+Mode should be 0 for S\+O\+C\+K\+E\+T0 and 1 for S\+O\+C\+K\+E\+T1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} os success, \textquotesingle{}0\textquotesingle{} error reset, \textquotesingle{}-\/1\textquotesingle{} error init 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!pair@{pair}}
+\index{pair@{pair}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{pair(char $\ast$mac\+Address)}{pair(char *macAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::pair (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mac\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_ab8ed7f1e628d84c635a301d049b98d37}{}\label{class_wasp_b_t___pro_ab8ed7f1e628d84c635a301d049b98d37}
+Pair with other module, with default pin code 123456. It has a timeout of 20 seconds. Note\+: the A\+U\+TH event can be enabled to see when a device is trying to pair.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mac\+Address\+: Mac address of the device to pair. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if pairing ok, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!pair@{pair}}
+\index{pair@{pair}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{pair(char $\ast$mac\+Address, char $\ast$pin\+Code)}{pair(char *macAddress, char *pinCode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::pair (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mac\+Address, }
+\item[{char $\ast$}]{pin\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a2da5c037e4206213881c68888f3d9629}{}\label{class_wasp_b_t___pro_a2da5c037e4206213881c68888f3d9629}
+Pair with other module, specifying Pin code. It has a timeout of 20 seconds. Note\+: the A\+U\+TH event can be enabled to see when a device is trying to pair.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mac\+Address\+: Mac address of the device to pair. \\
+\hline
+{\em char} & $\ast$ pincode\+: P\+IN code for pairing process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if pairing ok, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!print\+Inquiry@{print\+Inquiry}}
+\index{print\+Inquiry@{print\+Inquiry}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{print\+Inquiry()}{printInquiry()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::print\+Inquiry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_ab5cd9f7b1c7c23d8f7de116b54fbf82e}{}\label{class_wasp_b_t___pro_ab5cd9f7b1c7c23d8f7de116b54fbf82e}
+
+
+Prints data of last inquiry. Function for debugging purposes only. This function becomes slows after some time. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!remove\+Connection@{remove\+Connection}}
+\index{remove\+Connection@{remove\+Connection}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{remove\+Connection()}{removeConnection()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::remove\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a88f3829874a48a363caf569afb7f3d0c}{}\label{class_wasp_b_t___pro_a88f3829874a48a363caf569afb7f3d0c}
+
+
+Removes a transparent connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!remove\+Paired\+Devices@{remove\+Paired\+Devices}}
+\index{remove\+Paired\+Devices@{remove\+Paired\+Devices}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{remove\+Paired\+Devices()}{removePairedDevices()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+B\+T\+\_\+\+Pro\+::remove\+Paired\+Devices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a2281e52754f6adbce8b2bf93dcae574b}{}\label{class_wasp_b_t___pro_a2281e52754f6adbce8b2bf93dcae574b}
+
+
+removes al paired devices 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!reset@{reset}}
+\index{reset@{reset}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_abdda1f9a9e1b319de171e808c37d4462}{}\label{class_wasp_b_t___pro_abdda1f9a9e1b319de171e808c37d4462}
+
+
+It resets the module. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!return\+To\+Data\+Mode@{return\+To\+Data\+Mode}}
+\index{return\+To\+Data\+Mode@{return\+To\+Data\+Mode}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{return\+To\+Data\+Mode()}{returnToDataMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::return\+To\+Data\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a2862d5f6b4e1fa1e78f4a0f091666bb8}{}\label{class_wasp_b_t___pro_a2862d5f6b4e1fa1e78f4a0f091666bb8}
+
+
+Switches from command mode to data mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Mac\+: Mac of device to discover \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success. \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!scan\+Device@{scan\+Device}}
+\index{scan\+Device@{scan\+Device}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{scan\+Device(char $\ast$\+Mac, uint8\+\_\+t max\+Time, int8\+\_\+t power)}{scanDevice(char *Mac, uint8_t maxTime, int8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::scan\+Device (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Mac, }
+\item[{uint8\+\_\+t}]{max\+Time, }
+\item[{int8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_ae9e76f22894c6a8f63faf92203509067}{}\label{class_wasp_b_t___pro_ae9e76f22894c6a8f63faf92203509067}
+
+
+It scans looking for devices showing R\+S\+SI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Mac\+: Mac of device to discover \\
+\hline
+{\em uint8\+\_\+t} & max\+Time\+: Maximum time searching device \\
+\hline
+{\em int8\+\_\+t} & power\+: Allowed TX power levels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if not found. \textquotesingle{}1\textquotesingle{} if found 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!scan\+Network@{scan\+Network}}
+\index{scan\+Network@{scan\+Network}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{scan\+Network(uint8\+\_\+t time, int8\+\_\+t power)}{scanNetwork(uint8_t time, int8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::scan\+Network (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time, }
+\item[{int8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a16da72ad19b43b765a52a0cfebde84b6}{}\label{class_wasp_b_t___pro_a16da72ad19b43b765a52a0cfebde84b6}
+
+
+It scans looking for devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: Inquiry time. \\
+\hline
+{\em int8\+\_\+t} & power\+: Allowed TX power levels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns number of devices found. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!scan\+Network\+Limited@{scan\+Network\+Limited}}
+\index{scan\+Network\+Limited@{scan\+Network\+Limited}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Limited(uint16\+\_\+t M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+S, int8\+\_\+t power)}{scanNetworkLimited(uint16_t MAX_DEVICES, int8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::scan\+Network\+Limited (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+ES, }
+\item[{int8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a8d26875acfe796ed883e2b23b15f21eb}{}\label{class_wasp_b_t___pro_a8d26875acfe796ed883e2b23b15f21eb}
+
+
+It scans network and stops when finds \char`\"{}\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+S\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+ES\+: Maximum number of devices to find. \\
+\hline
+{\em int8\+\_\+t} & power\+: Allowed TX power levels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns number of devices found. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!scan\+Network\+Name@{scan\+Network\+Name}}
+\index{scan\+Network\+Name@{scan\+Network\+Name}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Name(uint8\+\_\+t time, int8\+\_\+t power)}{scanNetworkName(uint8_t time, int8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::scan\+Network\+Name (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time, }
+\item[{int8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a5ea1228e074289071dce0a2e78f919b6}{}\label{class_wasp_b_t___pro_a5ea1228e074289071dce0a2e78f919b6}
+
+
+It scans looking for devices, including friendly name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: Inquiry time. \\
+\hline
+{\em int8\+\_\+t} & power\+: Allowed TX power levels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns number of devices found. 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{send\+Data(char $\ast$data)}{sendData(char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a94a0511c1890255911e3b2abfd6f03f7}{}\label{class_wasp_b_t___pro_a94a0511c1890255911e3b2abfd6f03f7}
+
+
+Sends data trough a transparent connection with other bluetooth module using serial port profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: data to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success. \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{send\+Data(uint8\+\_\+t $\ast$data, uint16\+\_\+t length)}{sendData(uint8_t *data, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a9e9f5b1ce15d59060e1c82d604aa89f7}{}\label{class_wasp_b_t___pro_a9e9f5b1ce15d59060e1c82d604aa89f7}
+
+
+Sends data trough a transparent connection with other bluetooth module using serial port profile. 
+
+length is defined by an input parameter 
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: data to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success. \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!set\+Node\+ID@{set\+Node\+ID}}
+\index{set\+Node\+ID@{set\+Node\+ID}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{set\+Node\+I\+D(char $\ast$\+I\+D)}{setNodeID(char *ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+B\+T\+\_\+\+Pro\+::set\+Node\+ID (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a43cbd39e9509fcc97b6acc0598669801}{}\label{class_wasp_b_t___pro_a43cbd39e9509fcc97b6acc0598669801}
+
+
+Saves Bluetooth \hyperlink{struct_node}{Node} indentifier into E\+E\+P\+R\+OM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & ID\+: Bluetootn \hyperlink{struct_node}{Node} identifier. It must be 8 char length \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!set\+Own\+Name@{set\+Own\+Name}}
+\index{set\+Own\+Name@{set\+Own\+Name}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{set\+Own\+Name(char $\ast$public\+Name)}{setOwnName(char *publicName)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::set\+Own\+Name (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{public\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a2703d774a0483a6afca4c050f5b5b292}{}\label{class_wasp_b_t___pro_a2703d774a0483a6afca4c050f5b5b292}
+
+
+Sets Bluetooth module friendly name. $\ast$ $\ast$ Spaces are not allowed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & public\+Name\+: Visible name of bluetooth device. Use short names without spaces \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{wake\+Up()}{wakeUp()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_t___pro_a052614e1f3aa0d8d589bf9989e793d93}{}\label{class_wasp_b_t___pro_a052614e1f3aa0d8d589bf9989e793d93}
+
+
+Wakes up Bluetotoh module from Sleep mode. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}!command\+Mode@{command\+Mode}}
+\index{command\+Mode@{command\+Mode}!Wasp\+B\+T\+\_\+\+Pro@{Wasp\+B\+T\+\_\+\+Pro}}
+\subsubsection[{\texorpdfstring{command\+Mode}{commandMode}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+T\+\_\+\+Pro\+::command\+Mode}\hypertarget{class_wasp_b_t___pro_a460f1975ea6ae8fcfe79a845bc973563}{}\label{class_wasp_b_t___pro_a460f1975ea6ae8fcfe79a845bc973563}
+
+
+Variable \+: Variable to know if module is in data or command mode. 
+
+0 = data mode, 1 = command mode 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+B\+T\+\_\+\+Pro/Wasp\+B\+T\+\_\+\+Pro.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+B\+T\+\_\+\+Pro/Wasp\+B\+T\+\_\+\+Pro.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,275 @@
+\hypertarget{class_two_wire}{}\section{Two\+Wire Class Reference}
+\label{class_two_wire}\index{Two\+Wire@{Two\+Wire}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries begin} ()\hypertarget{class_two_wire_ada85a7a8663ec8af0a1248b659be2f18}{}\label{class_two_wire_ada85a7a8663ec8af0a1248b659be2f18}
+
+\item 
+void {\bfseries begin} (uint8\+\_\+t)\hypertarget{class_two_wire_a28bca087ed188781ef15e72622d3b1fb}{}\label{class_two_wire_a28bca087ed188781ef15e72622d3b1fb}
+
+\item 
+void {\bfseries begin} (int)\hypertarget{class_two_wire_a2806aa5684d36d7d20bf7c51cab3e602}{}\label{class_two_wire_a2806aa5684d36d7d20bf7c51cab3e602}
+
+\item 
+void {\bfseries begin\+Transmission} (uint8\+\_\+t)\hypertarget{class_two_wire_a8d55f00ea8ac3d7427d62e0c71e95ec2}{}\label{class_two_wire_a8d55f00ea8ac3d7427d62e0c71e95ec2}
+
+\item 
+void {\bfseries begin\+Transmission} (int)\hypertarget{class_two_wire_a4da95eb4adced5dad152344243e57aad}{}\label{class_two_wire_a4da95eb4adced5dad152344243e57aad}
+
+\item 
+uint8\+\_\+t {\bfseries end\+Transmission} (void)\hypertarget{class_two_wire_af80f9a7b85a3a81a035ca94c95bcdc1d}{}\label{class_two_wire_af80f9a7b85a3a81a035ca94c95bcdc1d}
+
+\item 
+uint8\+\_\+t {\bfseries request\+From} (uint8\+\_\+t, uint8\+\_\+t)\hypertarget{class_two_wire_ae27d0936487551a05a1e9901bc456599}{}\label{class_two_wire_ae27d0936487551a05a1e9901bc456599}
+
+\item 
+uint8\+\_\+t {\bfseries request\+From} (int, int)\hypertarget{class_two_wire_ad40a27213d0bb32f7b819aa8962fccd3}{}\label{class_two_wire_ad40a27213d0bb32f7b819aa8962fccd3}
+
+\item 
+void {\bfseries send} (uint8\+\_\+t)\hypertarget{class_two_wire_abf1f8c96f02a03e299e65cea8ec4a3a8}{}\label{class_two_wire_abf1f8c96f02a03e299e65cea8ec4a3a8}
+
+\item 
+void {\bfseries send} (uint8\+\_\+t $\ast$, uint8\+\_\+t)\hypertarget{class_two_wire_aa2da0927462c938515009378f841c1cb}{}\label{class_two_wire_aa2da0927462c938515009378f841c1cb}
+
+\item 
+void {\bfseries send} (int)\hypertarget{class_two_wire_a4841a3c5ced724dbb0f393a222162bce}{}\label{class_two_wire_a4841a3c5ced724dbb0f393a222162bce}
+
+\item 
+void {\bfseries send} (char $\ast$)\hypertarget{class_two_wire_ae3c6123ecf8ece5d4107e73226a370a0}{}\label{class_two_wire_ae3c6123ecf8ece5d4107e73226a370a0}
+
+\item 
+uint8\+\_\+t {\bfseries available} (void)\hypertarget{class_two_wire_a10112cdd27d6be706aa6c2a1610fd6db}{}\label{class_two_wire_a10112cdd27d6be706aa6c2a1610fd6db}
+
+\item 
+uint8\+\_\+t {\bfseries receive} (void)\hypertarget{class_two_wire_a7e8eb61d435aa54b47e19af27e91b69a}{}\label{class_two_wire_a7e8eb61d435aa54b47e19af27e91b69a}
+
+\item 
+void {\bfseries on\+Receive} (void($\ast$)(int))\hypertarget{class_two_wire_a860d97eb825c6fdca388f2f0577cc34a}{}\label{class_two_wire_a860d97eb825c6fdca388f2f0577cc34a}
+
+\item 
+void {\bfseries on\+Request} (void($\ast$)(void))\hypertarget{class_two_wire_a224bf8799dda398fc0db223801852ca5}{}\label{class_two_wire_a224bf8799dda398fc0db223801852ca5}
+
+\item 
+void {\bfseries close} ()\hypertarget{class_two_wire_a63235e37416ed6b6e011190dad5984b7}{}\label{class_two_wire_a63235e37416ed6b6e011190dad5984b7}
+
+\item 
+void {\bfseries secure\+Begin} ()\hypertarget{class_two_wire_a377a6fc269cae6a61e2f53c129c70591}{}\label{class_two_wire_a377a6fc269cae6a61e2f53c129c70591}
+
+\item 
+void {\bfseries secure\+End} ()\hypertarget{class_two_wire_aa53d417ee025d31ae11bff08b934a93c}{}\label{class_two_wire_aa53d417ee025d31ae11bff08b934a93c}
+
+\item 
+int8\+\_\+t \hyperlink{class_two_wire_ac3ae5db1c5ad782970f57ec50db0a482}{write\+Bit} (uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, bool data, uint8\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em This function writes a bit via I2C. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_two_wire_ac2ef260e405e4955285eed3e4af96f1a}{write\+Bits} (uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t data, uint8\+\_\+t pos, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function writes some bits via I2C. \end{DoxyCompactList}\item 
+void \hyperlink{class_two_wire_a65aed36b0d20c1a29c70adffeac01348}{write\+Bytes} (uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function writes bytes via I2C. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_two_wire_a4a72b6fd3b348406490454ae79c248a7}{read\+Bit} (uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em This function reads a bit via I2C. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_two_wire_aa345518109c89abe7456a97cdf049c8c}{read\+Bits} (uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t pos, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function reads some bits via I2C. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_two_wire_a309b244b50c243c0bf27fc6a810c6b46}{read\+Bytes} (uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function reads bytes via I2C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries I2\+C\+\_\+\+ON}\hypertarget{class_two_wire_a037a1086aa01064db5ccb824640a4c7c}{}\label{class_two_wire_a037a1086aa01064db5ccb824640a4c7c}
+
+\item 
+bool \hyperlink{class_two_wire_a6915c54dc2103d1a48d97012ceab4b31}{is\+Board}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when Sensor Board is being powered on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Two\+Wire@{Two\+Wire}!read\+Bit@{read\+Bit}}
+\index{read\+Bit@{read\+Bit}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{read\+Bit(uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t pos)}{readBit(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint8_t pos)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Two\+Wire\+::read\+Bit (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dev\+Addr, }
+\item[{uint8\+\_\+t}]{reg\+Addr, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_two_wire_a4a72b6fd3b348406490454ae79c248a7}{}\label{class_two_wire_a4a72b6fd3b348406490454ae79c248a7}
+
+
+This function reads a bit via I2C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dev\+Addr\+: I2C address of the device \\
+\hline
+{\em uint8\+\_\+t} & reg\+Addr\+: I2C register \\
+\hline
+{\em uint8\+\_\+t} & $\ast$data\+: buffer to store the data \\
+\hline
+{\em uint8\+\_\+t} & pos\+: position of the bit to read \mbox{[}7$\vert$6$\vert$5$\vert$4$\vert$3$\vert$2$\vert$1$\vert$0\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bytes read -\/1 if error 
+\end{DoxyReturn}
+\index{Two\+Wire@{Two\+Wire}!read\+Bits@{read\+Bits}}
+\index{read\+Bits@{read\+Bits}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{read\+Bits(uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t pos, uint8\+\_\+t length)}{readBits(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint8_t pos, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Two\+Wire\+::read\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dev\+Addr, }
+\item[{uint8\+\_\+t}]{reg\+Addr, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{pos, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_two_wire_aa345518109c89abe7456a97cdf049c8c}{}\label{class_two_wire_aa345518109c89abe7456a97cdf049c8c}
+
+
+This function reads some bits via I2C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dev\+Addr\+: I2C address of the device \\
+\hline
+{\em uint8\+\_\+t} & reg\+Addr\+: I2C register \\
+\hline
+{\em uint8\+\_\+t} & data\+: buffer to store the data \\
+\hline
+{\em uint8\+\_\+t} & pos\+: first position of the bits to read starting by the L\+Sb \mbox{[}7$\vert$6$\vert$5$\vert$4$\vert$3$\vert$2$\vert$1$\vert$0\mbox{]} \\
+\hline
+{\em uint8\+\_\+t} & length\+: number of bits to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bytes read -\/1 if error 
+\end{DoxyReturn}
+\index{Two\+Wire@{Two\+Wire}!read\+Bytes@{read\+Bytes}}
+\index{read\+Bytes@{read\+Bytes}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{read\+Bytes(uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)}{readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Two\+Wire\+::read\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dev\+Addr, }
+\item[{uint8\+\_\+t}]{reg\+Addr, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_two_wire_a309b244b50c243c0bf27fc6a810c6b46}{}\label{class_two_wire_a309b244b50c243c0bf27fc6a810c6b46}
+
+
+This function reads bytes via I2C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dev\+Addr\+: I2C address of the device \\
+\hline
+{\em uint8\+\_\+t} & reg\+Addr\+: I2C register \\
+\hline
+{\em uint8\+\_\+t} & data\+: buffer to store the data \\
+\hline
+{\em uint8\+\_\+t} & length\+: number of bytes to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bytes read -\/1 if error 
+\end{DoxyReturn}
+\index{Two\+Wire@{Two\+Wire}!write\+Bit@{write\+Bit}}
+\index{write\+Bit@{write\+Bit}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{write\+Bit(uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, bool data, uint8\+\_\+t pos)}{writeBit(uint8_t devAddr, uint8_t regAddr, bool data, uint8_t pos)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Two\+Wire\+::write\+Bit (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dev\+Addr, }
+\item[{uint8\+\_\+t}]{reg\+Addr, }
+\item[{bool}]{data, }
+\item[{uint8\+\_\+t}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_two_wire_ac3ae5db1c5ad782970f57ec50db0a482}{}\label{class_two_wire_ac3ae5db1c5ad782970f57ec50db0a482}
+
+
+This function writes a bit via I2C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dev\+Addr\+: I2C address of the device \\
+\hline
+{\em uint8\+\_\+t} & reg\+Addr\+: I2C register \\
+\hline
+{\em uint8\+\_\+t} & data\+: data to send \\
+\hline
+{\em uint8\+\_\+t} & pos\+: position of the bit to write \mbox{[}7$\vert$6$\vert$5$\vert$4$\vert$3$\vert$2$\vert$1$\vert$0\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 if error 
+\end{DoxyReturn}
+\index{Two\+Wire@{Two\+Wire}!write\+Bits@{write\+Bits}}
+\index{write\+Bits@{write\+Bits}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{write\+Bits(uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t data, uint8\+\_\+t pos, uint8\+\_\+t length)}{writeBits(uint8_t devAddr, uint8_t regAddr, uint8_t data, uint8_t pos, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Two\+Wire\+::write\+Bits (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dev\+Addr, }
+\item[{uint8\+\_\+t}]{reg\+Addr, }
+\item[{uint8\+\_\+t}]{data, }
+\item[{uint8\+\_\+t}]{pos, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_two_wire_ac2ef260e405e4955285eed3e4af96f1a}{}\label{class_two_wire_ac2ef260e405e4955285eed3e4af96f1a}
+
+
+This function writes some bits via I2C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dev\+Addr\+: I2C address of the device \\
+\hline
+{\em uint8\+\_\+t} & reg\+Addr\+: I2C register \\
+\hline
+{\em uint8\+\_\+t} & data\+: data to send \\
+\hline
+{\em uint8\+\_\+t} & pos\+: first position of the bits to write starting by the L\+Sb \mbox{[}7$\vert$6$\vert$5$\vert$4$\vert$3$\vert$2$\vert$1$\vert$0\mbox{]} \\
+\hline
+{\em uint8\+\_\+t} & length\+: number of bits to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 if error 
+\end{DoxyReturn}
+\index{Two\+Wire@{Two\+Wire}!write\+Bytes@{write\+Bytes}}
+\index{write\+Bytes@{write\+Bytes}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{write\+Bytes(uint8\+\_\+t dev\+Addr, uint8\+\_\+t reg\+Addr, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)}{writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Two\+Wire\+::write\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dev\+Addr, }
+\item[{uint8\+\_\+t}]{reg\+Addr, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_two_wire_a65aed36b0d20c1a29c70adffeac01348}{}\label{class_two_wire_a65aed36b0d20c1a29c70adffeac01348}
+
+
+This function writes bytes via I2C. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dev\+Addr\+: I2C address of the device \\
+\hline
+{\em uint8\+\_\+t} & reg\+Addr\+: I2C register \\
+\hline
+{\em uint8\+\_\+t} & $\ast$data\+: data to send \\
+\hline
+{\em uint8\+\_\+t} & length\+: number of bytes to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 if error 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Two\+Wire@{Two\+Wire}!is\+Board@{is\+Board}}
+\index{is\+Board@{is\+Board}!Two\+Wire@{Two\+Wire}}
+\subsubsection[{\texorpdfstring{is\+Board}{isBoard}}]{\setlength{\rightskip}{0pt plus 5cm}bool Two\+Wire\+::is\+Board}\hypertarget{class_two_wire_a6915c54dc2103d1a48d97012ceab4b31}{}\label{class_two_wire_a6915c54dc2103d1a48d97012ceab4b31}
+
+
+Variable \+: indicates when Sensor Board is being powered on. 
+
+true\+: ON; false\+: O\+FF 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wire_8h}{Wire.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wire.\+cpp\end{DoxyCompactItemize}

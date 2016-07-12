@@ -1,0 +1,40 @@
+\hypertarget{aes128__dec_8c}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes128\+\_\+dec.c File Reference}
+\label{aes128__dec_8c}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes128\+\_\+dec.\+c@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes128\+\_\+dec.\+c}}
+{\ttfamily \#include \char`\"{}aes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aes\+\_\+dec.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{aes128__dec_8c_a6b0ae0f2589e86c16ab561ea59e33079}{aes128\+\_\+dec} (void $\ast$buffer, \hyperlink{structaes128__ctx__t}{aes128\+\_\+ctx\+\_\+t} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em decrypt with 128 bit key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\href{mailto:daniel.otte@rub.de}{\tt daniel.\+otte@rub.\+de} \begin{DoxyAuthor}{Author}
+Daniel Otte 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2008-\/12-\/30  G\+P\+Lv3 or later 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{aes128\+\_\+dec.\+c@{aes128\+\_\+dec.\+c}!aes128\+\_\+dec@{aes128\+\_\+dec}}
+\index{aes128\+\_\+dec@{aes128\+\_\+dec}!aes128\+\_\+dec.\+c@{aes128\+\_\+dec.\+c}}
+\subsubsection[{\texorpdfstring{aes128\+\_\+dec(void $\ast$buffer, aes128\+\_\+ctx\+\_\+t $\ast$ctx)}{aes128_dec(void *buffer, aes128_ctx_t *ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}void aes128\+\_\+dec (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{{\bf aes128\+\_\+ctx\+\_\+t} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}\hypertarget{aes128__dec_8c_a6b0ae0f2589e86c16ab561ea59e33079}{}\label{aes128__dec_8c_a6b0ae0f2589e86c16ab561ea59e33079}
+
+
+decrypt with 128 bit key. 
+
+This function decrypts one block with the A\+ES algorithm under control of a keyschedule produced from a 128 bit key. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & pointer to the block to decrypt \\
+\hline
+{\em ctx} & pointer to the key schedule \\
+\hline
+\end{DoxyParams}

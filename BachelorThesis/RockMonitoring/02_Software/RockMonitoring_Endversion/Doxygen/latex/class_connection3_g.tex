@@ -1,0 +1,168 @@
+\hypertarget{class_connection3_g}{}\section{Connection3G Class Reference}
+\label{class_connection3_g}\index{Connection3G@{Connection3G}}
+
+
+Class that handles the communication over 3G.  
+
+
+
+
+{\ttfamily \#include $<$Connection3\+G.\+h$>$}
+
+
+
+Collaboration diagram for Connection3G\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_connection3_g__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_connection3_g_a1a6499e5d025396d57e4ff935aa95d75}{Connection3G} ()
+\item 
+void \hyperlink{class_connection3_g_a1c38e7c819ccf12f3638ae4c39dff0f5}{init} ()
+\begin{DoxyCompactList}\small\item\em This method initializes the operator parameters that are necessary for 3G connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_connection3_g_ac676f9d075914082acee1bcb3424f043}{send\+Data} (\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$sensors)
+\begin{DoxyCompactList}\small\item\em This method sends all the sensor information from the struct to the webserver. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_connection3_g_ad40ffacfd208db41d4780dd4732b9a5c}{send\+Data} (\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$data, uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em This method sends the information of the sensors in the array to the webserver the parameter size tells the function how many sensors from the array should be uploaded. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_connection3_g_a069de56dfa1e851057cae8c0a0ccf37a}{check\+Connection} ()
+\begin{DoxyCompactList}\small\item\em This method checks if a connection to the 3G network can be established. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{class_connection3_g_a61fdd6b524f3602a33cfb0fdb00416ac}{sim\+Pin} = \char`\"{}5858\char`\"{}
+\item 
+const char $\ast$ \hyperlink{class_connection3_g_acdd951b9aced5ec660a4844be385757a}{http\+Stream\+Address} = \char`\"{}rockmonitoring.\+netpresence.\+ch\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles the communication over 3G. 
+
+Definition at line 15 of file Connection3\+G.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Connection3G@{Connection3G}!Connection3G@{Connection3G}}
+\index{Connection3G@{Connection3G}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{Connection3\+G()}{Connection3G()}}]{\setlength{\rightskip}{0pt plus 5cm}Connection3\+G\+::\+Connection3G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_connection3_g_a1a6499e5d025396d57e4ff935aa95d75}{}\label{class_connection3_g_a1a6499e5d025396d57e4ff935aa95d75}
+
+
+Definition at line 5 of file Connection3\+G.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Connection3G@{Connection3G}!check\+Connection@{check\+Connection}}
+\index{check\+Connection@{check\+Connection}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{check\+Connection()}{checkConnection()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Connection3\+G\+::check\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_connection3_g_a069de56dfa1e851057cae8c0a0ccf37a}{}\label{class_connection3_g_a069de56dfa1e851057cae8c0a0ccf37a}
+
+
+This method checks if a connection to the 3G network can be established. 
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, 0 when 3G Connection could be established, 1 when connection could not be established 
+\end{DoxyReturn}
+
+
+Definition at line 188 of file Connection3\+G.\+cpp.
+
+\index{Connection3G@{Connection3G}!init@{init}}
+\index{init@{init}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void Connection3\+G\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_connection3_g_a1c38e7c819ccf12f3638ae4c39dff0f5}{}\label{class_connection3_g_a1c38e7c819ccf12f3638ae4c39dff0f5}
+
+
+This method initializes the operator parameters that are necessary for 3G connection. 
+
+
+
+Definition at line 9 of file Connection3\+G.\+cpp.
+
+\index{Connection3G@{Connection3G}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{send\+Data(\+Sensors\+::struct\+Sensors $\ast$sensors)}{sendData(Sensors::structSensors *sensors)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Connection3\+G\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_connection3_g_ac676f9d075914082acee1bcb3424f043}{}\label{class_connection3_g_ac676f9d075914082acee1bcb3424f043}
+
+
+This method sends all the sensor information from the struct to the webserver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors}} & $\ast$ data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, 0 when sent, 1 when send failed 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file Connection3\+G.\+cpp.
+
+\index{Connection3G@{Connection3G}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{send\+Data(\+Sensors\+::struct\+Sensors $\ast$data, uint8\+\_\+t size)}{sendData(Sensors::structSensors *data, uint8_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Connection3\+G\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors} $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_connection3_g_ad40ffacfd208db41d4780dd4732b9a5c}{}\label{class_connection3_g_ad40ffacfd208db41d4780dd4732b9a5c}
+
+
+This method sends the information of the sensors in the array to the webserver the parameter size tells the function how many sensors from the array should be uploaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors}} & $\ast$ data , data of the sensors~\newline
+ uint8\+\_\+t size, number of sensors to upload to webserver\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, 0 when sent, 1 when send failed 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Connection3\+G.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Connection3G@{Connection3G}!http\+Stream\+Address@{http\+Stream\+Address}}
+\index{http\+Stream\+Address@{http\+Stream\+Address}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{http\+Stream\+Address}{httpStreamAddress}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Connection3\+G\+::http\+Stream\+Address = \char`\"{}rockmonitoring.\+netpresence.\+ch\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_connection3_g_acdd951b9aced5ec660a4844be385757a}{}\label{class_connection3_g_acdd951b9aced5ec660a4844be385757a}
+
+
+Definition at line 28 of file Connection3\+G.\+h.
+
+\index{Connection3G@{Connection3G}!sim\+Pin@{sim\+Pin}}
+\index{sim\+Pin@{sim\+Pin}!Connection3G@{Connection3G}}
+\subsubsection[{\texorpdfstring{sim\+Pin}{simPin}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Connection3\+G\+::sim\+Pin = \char`\"{}5858\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_connection3_g_a61fdd6b524f3602a33cfb0fdb00416ac}{}\label{class_connection3_g_a61fdd6b524f3602a33cfb0fdb00416ac}
+
+
+Definition at line 27 of file Connection3\+G.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_connection3_g_8h}{Connection3\+G.\+h}\item 
+\hyperlink{_connection3_g_8cpp}{Connection3\+G.\+cpp}\end{DoxyCompactItemize}

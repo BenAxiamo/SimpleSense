@@ -1,0 +1,137 @@
+\hypertarget{string_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/string.h File Reference}
+\label{string_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/string.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/string.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+need\+\_\+\+N\+U\+LL}\hypertarget{string_8h_a6c27666e43b87c08fa8b2e8aa324601c}{}\label{string_8h_a6c27666e43b87c08fa8b2e8aa324601c}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+need\+\_\+size\+\_\+t}\hypertarget{string_8h_a2898830827f947f003d187388f7e6c72}{}\label{string_8h_a2898830827f947f003d187388f7e6c72}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+pure\+\_\+\+\_\+))\hypertarget{string_8h_a536d41f7767c0a501c4f9aa625ef0c58}{}\label{string_8h_a536d41f7767c0a501c4f9aa625ef0c58}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+const\+\_\+\+\_\+))\hypertarget{string_8h_a87f6b1b3880d945610873b9da382e5d4}{}\label{string_8h_a87f6b1b3880d945610873b9da382e5d4}
+
+\item 
+\#define \hyperlink{group__avr__string_gaedb0e7bb7333d6122472acddb5df20ac}{\+\_\+\+F\+FS}(x)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries ffs} (int \+\_\+\+\_\+val) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{string_8h_a17c230c50ba7d3fdfff29b595d1b4e94}{}\label{string_8h_a17c230c50ba7d3fdfff29b595d1b4e94}
+
+\item 
+int {\bfseries ffsl} (long \+\_\+\+\_\+val) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{string_8h_ac38f0f9838649d68a73ae95de3de4c10}{}\label{string_8h_ac38f0f9838649d68a73ae95de3de4c10}
+
+\item 
+\+\_\+\+\_\+extension\+\_\+\+\_\+ int {\bfseries ffsll} (long long \+\_\+\+\_\+val) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{string_8h_a4164f7e8da43de7106deda36c2e7ea17}{}\label{string_8h_a4164f7e8da43de7106deda36c2e7ea17}
+
+\item 
+void $\ast$ {\bfseries memccpy} (void $\ast$, const void $\ast$, int, size\+\_\+t)\hypertarget{string_8h_a242692b1bc991978ebe1fd84e7d4e7a6}{}\label{string_8h_a242692b1bc991978ebe1fd84e7d4e7a6}
+
+\item 
+void $\ast$ {\bfseries memchr} (const void $\ast$, int, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_aaebb34628f40e0388736ceb739677095}{}\label{string_8h_aaebb34628f40e0388736ceb739677095}
+
+\item 
+int {\bfseries memcmp} (const void $\ast$, const void $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a4cd54dc9109f0d3da49d9c35e6441b61}{}\label{string_8h_a4cd54dc9109f0d3da49d9c35e6441b61}
+
+\item 
+void $\ast$ {\bfseries memcpy} (void $\ast$, const void $\ast$, size\+\_\+t)\hypertarget{string_8h_a0a3e682eff8f0c6e8adc371f54cc9f3f}{}\label{string_8h_a0a3e682eff8f0c6e8adc371f54cc9f3f}
+
+\item 
+void $\ast$ {\bfseries memmem} (const void $\ast$, size\+\_\+t, const void $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a5cd5332e1e00cad0092a7533a0c0f68f}{}\label{string_8h_a5cd5332e1e00cad0092a7533a0c0f68f}
+
+\item 
+void $\ast$ {\bfseries memmove} (void $\ast$, const void $\ast$, size\+\_\+t)\hypertarget{string_8h_a04322b22ff8bcfdcdcbfe87690683545}{}\label{string_8h_a04322b22ff8bcfdcdcbfe87690683545}
+
+\item 
+void $\ast$ {\bfseries memrchr} (const void $\ast$, int, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_ae2b5e77fdb17bfca860581b923029d25}{}\label{string_8h_ae2b5e77fdb17bfca860581b923029d25}
+
+\item 
+void $\ast$ {\bfseries memset} (void $\ast$, int, size\+\_\+t)\hypertarget{string_8h_a68d2b40ef2213b9227a1ce3b81997ae5}{}\label{string_8h_a68d2b40ef2213b9227a1ce3b81997ae5}
+
+\item 
+char $\ast$ {\bfseries strcat} (char $\ast$, const char $\ast$)\hypertarget{string_8h_a6f5ce1c3abaccb0f62ff60c0ac31a219}{}\label{string_8h_a6f5ce1c3abaccb0f62ff60c0ac31a219}
+
+\item 
+char $\ast$ {\bfseries strchr} (const char $\ast$, int) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a0fe1ec130c3e8406d599484a1777b728}{}\label{string_8h_a0fe1ec130c3e8406d599484a1777b728}
+
+\item 
+char $\ast$ {\bfseries strchrnul} (const char $\ast$, int) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a4946cf5bf861ee53a05544c298e5cce4}{}\label{string_8h_a4946cf5bf861ee53a05544c298e5cce4}
+
+\item 
+int {\bfseries strcmp} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a46f3cbd2de457c0fb340a1f379fc33ba}{}\label{string_8h_a46f3cbd2de457c0fb340a1f379fc33ba}
+
+\item 
+char $\ast$ {\bfseries strcpy} (char $\ast$, const char $\ast$)\hypertarget{string_8h_a55e123beb3d7f96e25e024a13582d987}{}\label{string_8h_a55e123beb3d7f96e25e024a13582d987}
+
+\item 
+int {\bfseries strcasecmp} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_aea3f5ad280b6d689b5f9937ef6f0d805}{}\label{string_8h_aea3f5ad280b6d689b5f9937ef6f0d805}
+
+\item 
+char $\ast$ {\bfseries strcasestr} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a8588234f8f1c66804790b24eaa54315a}{}\label{string_8h_a8588234f8f1c66804790b24eaa54315a}
+
+\item 
+size\+\_\+t {\bfseries strcspn} (const char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+reject) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a53e212c1732d63bc80f649e542aff120}{}\label{string_8h_a53e212c1732d63bc80f649e542aff120}
+
+\item 
+char $\ast$ {\bfseries strdup} (const char $\ast$s1)\hypertarget{string_8h_a2f3e20a0045f504401650132a344a530}{}\label{string_8h_a2f3e20a0045f504401650132a344a530}
+
+\item 
+size\+\_\+t {\bfseries strlcat} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{string_8h_a63e609bfa0d354dcd7e35b297c2e6fdd}{}\label{string_8h_a63e609bfa0d354dcd7e35b297c2e6fdd}
+
+\item 
+size\+\_\+t {\bfseries strlcpy} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{string_8h_a64bc119cf084d1ecfd95098994597f12}{}\label{string_8h_a64bc119cf084d1ecfd95098994597f12}
+
+\item 
+size\+\_\+t {\bfseries strlen} (const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a7fd4936b86eb6b87e98587044c562715}{}\label{string_8h_a7fd4936b86eb6b87e98587044c562715}
+
+\item 
+char $\ast$ {\bfseries strlwr} (char $\ast$)\hypertarget{string_8h_aeaf5d7233e3a49349b447488d08c1ce8}{}\label{string_8h_aeaf5d7233e3a49349b447488d08c1ce8}
+
+\item 
+char $\ast$ {\bfseries strncat} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{string_8h_ae70c2f2466417d663c49a9653e706fdd}{}\label{string_8h_ae70c2f2466417d663c49a9653e706fdd}
+
+\item 
+int {\bfseries strncmp} (const char $\ast$, const char $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a36cc0ab27fbcc70615214170ae79fbf7}{}\label{string_8h_a36cc0ab27fbcc70615214170ae79fbf7}
+
+\item 
+char $\ast$ {\bfseries strncpy} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{string_8h_abde7e7bf2ba3e1567f130fe7d8481319}{}\label{string_8h_abde7e7bf2ba3e1567f130fe7d8481319}
+
+\item 
+int {\bfseries strncasecmp} (const char $\ast$, const char $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a60b6f90e97d0574c5f5725d9db15cd9d}{}\label{string_8h_a60b6f90e97d0574c5f5725d9db15cd9d}
+
+\item 
+size\+\_\+t {\bfseries strnlen} (const char $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a3d3e512a095039a7e2f86859537d761b}{}\label{string_8h_a3d3e512a095039a7e2f86859537d761b}
+
+\item 
+char $\ast$ {\bfseries strpbrk} (const char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+accept) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_add999ae2dc67aaede4721574f959bc84}{}\label{string_8h_add999ae2dc67aaede4721574f959bc84}
+
+\item 
+char $\ast$ {\bfseries strrchr} (const char $\ast$, int) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_a145a696fc0c5ae727d7f42bbc7b3c50a}{}\label{string_8h_a145a696fc0c5ae727d7f42bbc7b3c50a}
+
+\item 
+char $\ast$ {\bfseries strrev} (char $\ast$)\hypertarget{string_8h_adb77716440a7cd5dfc07cc5a495f7f40}{}\label{string_8h_adb77716440a7cd5dfc07cc5a495f7f40}
+
+\item 
+char $\ast$ {\bfseries strsep} (char $\ast$$\ast$, const char $\ast$)\hypertarget{string_8h_a43b18d90e8f5a0521cc7b922a4b79eef}{}\label{string_8h_a43b18d90e8f5a0521cc7b922a4b79eef}
+
+\item 
+size\+\_\+t {\bfseries strspn} (const char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+accept) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_acbc51d76d5f8f4cacf27238494d866d8}{}\label{string_8h_acbc51d76d5f8f4cacf27238494d866d8}
+
+\item 
+char $\ast$ {\bfseries strstr} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{string_8h_afa02507263ee6bc1e3d7b68c3df8f175}{}\label{string_8h_afa02507263ee6bc1e3d7b68c3df8f175}
+
+\item 
+char $\ast$ {\bfseries strtok} (char $\ast$, const char $\ast$)\hypertarget{string_8h_a982a35856962b3ac6151cdc0b6e893f6}{}\label{string_8h_a982a35856962b3ac6151cdc0b6e893f6}
+
+\item 
+char $\ast$ {\bfseries strtok\+\_\+r} (char $\ast$, const char $\ast$, char $\ast$$\ast$)\hypertarget{string_8h_a9c6b43fd17114c06a5b35d60e8b7727b}{}\label{string_8h_a9c6b43fd17114c06a5b35d60e8b7727b}
+
+\item 
+char $\ast$ {\bfseries strupr} (char $\ast$)\hypertarget{string_8h_a9e8c1633a00c96c41192f18cc55caa53}{}\label{string_8h_a9e8c1633a00c96c41192f18cc55caa53}
+
+\end{DoxyCompactItemize}

@@ -1,0 +1,794 @@
+\hypertarget{class_wasp_sigfox}{}\section{Wasp\+Sigfox Class Reference}
+\label{class_wasp_sigfox}\index{Wasp\+Sigfox@{Wasp\+Sigfox}}
+Inheritance diagram for Wasp\+Sigfox\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_sigfox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sigfox_ad7b6ac8a4b3e1e17b40c02f8d3015595}{Wasp\+Sigfox} ()\hypertarget{class_wasp_sigfox_ad7b6ac8a4b3e1e17b40c02f8d3015595}{}\label{class_wasp_sigfox_ad7b6ac8a4b3e1e17b40c02f8d3015595}
+
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_ab78838f6ddfec09ffcd32a25d7cf319f}{ON} (uint8\+\_\+t socket)
+\begin{DoxyCompactList}\small\item\em This function powers on the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a610d849290be2fa628f36ac600a2fde0}{O\+FF} (uint8\+\_\+t socket)
+\begin{DoxyCompactList}\small\item\em This function powers down the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a2055732b51652822c3aca0b2c88e939f}{check} ()
+\begin{DoxyCompactList}\small\item\em Checks if T\+D1207 module is ready. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a2e8425f17dd6a64cedfd888ea1a2d180}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the module\textquotesingle{}s id. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a482844b56ed98a2e3c4e75fa912cc2aa}{send} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em This function sends a S\+I\+G\+F\+OX packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_aeea39eca699df0df353d40b4117d677f}{send} (uint8\+\_\+t $\ast$data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function sends a S\+I\+G\+F\+OX packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_adebf4ec240b7771e237a865fc080b30f}{send\+A\+CK} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em This function sends a S\+I\+G\+F\+OX packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a6d9082a677a35653647724edbaf6ba72}{send\+A\+CK} (uint8\+\_\+t $\ast$data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em This function sends a S\+I\+G\+F\+OX packet waiting for an A\+CK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a59c6d95b9462c3e498df47244f50c69c}{test\+Transmit} (uint16\+\_\+t count, uint16\+\_\+t period, int channel)
+\begin{DoxyCompactList}\small\item\em This function is used to send a test S\+I\+G\+F\+OX frame across a specific channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_aec73b37fd38be39f37b0d9f592e518e3}{show\+Firmware} ()
+\begin{DoxyCompactList}\small\item\em This function displays the library version number as follows\+: S\+O\+F\+Txxxx, where \textquotesingle{}xxxx\textquotesingle{} is the version number. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_abd98c9030d1a228b5638d866f8d99e5c}{set\+Power} (uint8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em This function is used to configure the Sigfox RF power level in d\+Bm. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a10edfb9d2762361574a9302226b4084a}{get\+Power} ()
+\begin{DoxyCompactList}\small\item\em This function is used to read the configuration of the module\textquotesingle{}s RF power level in d\+Bm. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_adc1b4ec26bbefe815352e3ae5cf8444a}{send\+Keep\+Alive} ()
+\begin{DoxyCompactList}\small\item\em This function sends a Keep-\/\+Alive message. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_aa3c81e47a585929117befdb41db965a4}{send\+Keep\+Alive} (uint8\+\_\+t period)
+\begin{DoxyCompactList}\small\item\em This function sends a Keep-\/\+Alive message. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a7bce20b6947e9e00eea9d88a0dae9191}{continuos\+Wave} (uint32\+\_\+t freq, bool enable)
+\begin{DoxyCompactList}\small\item\em This function is used to radiate continuous wave without any modulation. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a944d6d4c0325663cee0a14d63346ca59}{save\+Settings} ()
+\begin{DoxyCompactList}\small\item\em This function stores the current settings in module\textquotesingle{}s memory. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a7cca655a5954b01c824ab2f8c3df36e4}{factory\+Settings} ()
+\begin{DoxyCompactList}\small\item\em set factory configuration \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a3fe86a506ad8d8d629a02d13c3961ceb}{default\+Configuration} ()
+\begin{DoxyCompactList}\small\item\em set default configuration previously stored in module\textquotesingle{}s memory \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_ab6fb65e0427ffcc9daf32b60a701cf38}{set\+Address\+L\+AN} (uint32\+\_\+t naddress)
+\begin{DoxyCompactList}\small\item\em set L\+AN address and save settings \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a8e49ad8d04663e7cdf4ff9af83800c9a}{get\+Address\+L\+AN} ()
+\begin{DoxyCompactList}\small\item\em get L\+AN address from module in decimal format \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a1e5577698705243a55a59c7600d74190}{set\+Mask} (uint32\+\_\+t naddress)
+\begin{DoxyCompactList}\small\item\em set Mask and save settings \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_afa5ac9df8a8b0d6a45ba7bc5aaf37bf8}{get\+Mask} ()
+\begin{DoxyCompactList}\small\item\em get Mask from module in decimal format \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a728ed26957044affbfe6fe687a14875b}{set\+Frequency} (uint32\+\_\+t frec)
+\begin{DoxyCompactList}\small\item\em set frequency and save settings \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a332d1f2a56b57552f4e21d0a2e72583a}{get\+Frequency} ()
+\begin{DoxyCompactList}\small\item\em get frequency from module \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_ac12668ff4de9e82df8e1ac74e6a8f616}{set\+Power\+L\+AN} (int power)
+\begin{DoxyCompactList}\small\item\em set powel level for RF transmissions \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a4c0c467f2aacd4c8687728cde74fd300}{get\+Power\+L\+AN} ()
+\begin{DoxyCompactList}\small\item\em get Power level from module in decimal format \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_ab32d236e767b0afc33968d21ee2b8299}{parse\+Packet\+L\+AN} ()
+\begin{DoxyCompactList}\small\item\em Parse the contents of the \textquotesingle{}\+\_\+buffer\textquotesingle{} structure to detect a new incoming packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_afdacc0865476dec08911615a8df5d052}{send\+L\+AN} (uint8\+\_\+t $\ast$data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Send a packet from one T\+D1207 to another T\+D1207 module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_adefc4b60ec2f3367b718e5f7c176474d}{send\+L\+AN} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Send a packet from one T\+D1207 to another T\+D1207 module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a545dd58cc9f9fc2ea94fbd33f35f2a49}{receive} (uint32\+\_\+t wait)
+\begin{DoxyCompactList}\small\item\em Receive packets from another T\+D1207 module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sigfox_abeeaf5b3802b89b94cfa70b25e1d951d}{show\+Packet} ()
+\begin{DoxyCompactList}\small\item\em Prints data received through U\+SB. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_ab97ba0717709997713935886ff83e69c}{disable\+RX} ()
+\begin{DoxyCompactList}\small\item\em disable rx mode \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a074e102ec0db1603811f0f64baacb578}{set\+Multi\+Packet} ()
+\begin{DoxyCompactList}\small\item\em set receiving mode to continuous rx mode \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a5225e31f27b90be16316ff021aeea342}{get\+Multi\+Packet} (uint32\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Wait for a new incoming packet. When a packet is received, the contents are copied to \textquotesingle{}\+\_\+packet\textquotesingle{} structure. If no packet is received after \textquotesingle{}time\textquotesingle{} seconds, the function returns error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_sigfox_a38f7ee3421760c13f078d885fbb36528}{\+\_\+power}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_sigfox_af85ecdd24a98829e0e0ebec50ff0363c}{\+\_\+id}
+\item 
+char \hyperlink{class_wasp_sigfox_a0c12325b55f9576f7e6b8bda25064eaa}{\+\_\+firmware} \mbox{[}10\mbox{]}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_sigfox_a862a3f4d31688e55b8ae4abedad73ff6}{\+\_\+address}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_sigfox_a22ea5bda7954717c4e57880c2ca890eb}{\+\_\+mask}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_sigfox_a7e22c7c2a41f2f0363db5cdb330c1afd}{\+\_\+frequency}
+\item 
+int \hyperlink{class_wasp_sigfox_ab28fc2a3de3d225b34415febccd0a64a}{\+\_\+power\+L\+AN}
+\item 
+char \hyperlink{class_wasp_sigfox_aaf5e5e719c7fde306d87c3826153408c}{\+\_\+packet} \mbox{[}35\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!check@{check}}
+\index{check@{check}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{check()}{check()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a2055732b51652822c3aca0b2c88e939f}{}\label{class_wasp_sigfox_a2055732b51652822c3aca0b2c88e939f}
+
+
+Checks if T\+D1207 module is ready. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!continuos\+Wave@{continuos\+Wave}}
+\index{continuos\+Wave@{continuos\+Wave}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{continuos\+Wave(uint32\+\_\+t freq, bool enable)}{continuosWave(uint32_t freq, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::continuos\+Wave (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{freq, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a7bce20b6947e9e00eea9d88a0dae9191}{}\label{class_wasp_sigfox_a7bce20b6947e9e00eea9d88a0dae9191}
+
+
+This function is used to radiate continuous wave without any modulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & freq\+: center frequency for carrier \\
+\hline
+{\em bool} & enable\+: \textquotesingle{}1\textquotesingle{}=enable; \textquotesingle{}0\textquotesingle{}=disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!default\+Configuration@{default\+Configuration}}
+\index{default\+Configuration@{default\+Configuration}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{default\+Configuration()}{defaultConfiguration()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::default\+Configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a3fe86a506ad8d8d629a02d13c3961ceb}{}\label{class_wasp_sigfox_a3fe86a506ad8d8d629a02d13c3961ceb}
+
+
+set default configuration previously stored in module\textquotesingle{}s memory 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!disable\+RX@{disable\+RX}}
+\index{disable\+RX@{disable\+RX}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{disable\+R\+X()}{disableRX()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::disable\+RX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_ab97ba0717709997713935886ff83e69c}{}\label{class_wasp_sigfox_ab97ba0717709997713935886ff83e69c}
+
+
+disable rx mode 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!factory\+Settings@{factory\+Settings}}
+\index{factory\+Settings@{factory\+Settings}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{factory\+Settings()}{factorySettings()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::factory\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a7cca655a5954b01c824ab2f8c3df36e4}{}\label{class_wasp_sigfox_a7cca655a5954b01c824ab2f8c3df36e4}
+
+
+set factory configuration 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+Address\+L\+AN@{get\+Address\+L\+AN}}
+\index{get\+Address\+L\+AN@{get\+Address\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+Address\+L\+A\+N()}{getAddressLAN()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+Address\+L\+AN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a8e49ad8d04663e7cdf4ff9af83800c9a}{}\label{class_wasp_sigfox_a8e49ad8d04663e7cdf4ff9af83800c9a}
+
+
+get L\+AN address from module in decimal format 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+Frequency@{get\+Frequency}}
+\index{get\+Frequency@{get\+Frequency}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+Frequency()}{getFrequency()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a332d1f2a56b57552f4e21d0a2e72583a}{}\label{class_wasp_sigfox_a332d1f2a56b57552f4e21d0a2e72583a}
+
+
+get frequency from module 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+I\+D()}{getID()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a2e8425f17dd6a64cedfd888ea1a2d180}{}\label{class_wasp_sigfox_a2e8425f17dd6a64cedfd888ea1a2d180}
+
+
+This function is used to read the module\textquotesingle{}s id. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+Mask@{get\+Mask}}
+\index{get\+Mask@{get\+Mask}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+Mask()}{getMask()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_afa5ac9df8a8b0d6a45ba7bc5aaf37bf8}{}\label{class_wasp_sigfox_afa5ac9df8a8b0d6a45ba7bc5aaf37bf8}
+
+
+get Mask from module in decimal format 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+Multi\+Packet@{get\+Multi\+Packet}}
+\index{get\+Multi\+Packet@{get\+Multi\+Packet}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+Multi\+Packet(uint32\+\_\+t time)}{getMultiPacket(uint32_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+Multi\+Packet (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a5225e31f27b90be16316ff021aeea342}{}\label{class_wasp_sigfox_a5225e31f27b90be16316ff021aeea342}
+
+
+Wait for a new incoming packet. When a packet is received, the contents are copied to \textquotesingle{}\+\_\+packet\textquotesingle{} structure. If no packet is received after \textquotesingle{}time\textquotesingle{} seconds, the function returns error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & time\+: time to wait for new incoming packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+Power@{get\+Power}}
+\index{get\+Power@{get\+Power}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+Power()}{getPower()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a10edfb9d2762361574a9302226b4084a}{}\label{class_wasp_sigfox_a10edfb9d2762361574a9302226b4084a}
+
+
+This function is used to read the configuration of the module\textquotesingle{}s RF power level in d\+Bm. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!get\+Power\+L\+AN@{get\+Power\+L\+AN}}
+\index{get\+Power\+L\+AN@{get\+Power\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{get\+Power\+L\+A\+N()}{getPowerLAN()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::get\+Power\+L\+AN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a4c0c467f2aacd4c8687728cde74fd300}{}\label{class_wasp_sigfox_a4c0c467f2aacd4c8687728cde74fd300}
+
+
+get Power level from module in decimal format 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{O\+F\+F(uint8\+\_\+t socket)}{OFF(uint8_t socket)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{socket}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a610d849290be2fa628f36ac600a2fde0}{}\label{class_wasp_sigfox_a610d849290be2fa628f36ac600a2fde0}
+
+
+This function powers down the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & socket\+: socket to be used\+: S\+O\+C\+K\+E\+T0 or S\+O\+C\+K\+E\+T1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t socket)}{ON(uint8_t socket)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{socket}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_ab78838f6ddfec09ffcd32a25d7cf319f}{}\label{class_wasp_sigfox_ab78838f6ddfec09ffcd32a25d7cf319f}
+
+
+This function powers on the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & socket\+: socket to be used\+: S\+O\+C\+K\+E\+T0 or S\+O\+C\+K\+E\+T1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!parse\+Packet\+L\+AN@{parse\+Packet\+L\+AN}}
+\index{parse\+Packet\+L\+AN@{parse\+Packet\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{parse\+Packet\+L\+A\+N()}{parsePacketLAN()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::parse\+Packet\+L\+AN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_ab32d236e767b0afc33968d21ee2b8299}{}\label{class_wasp_sigfox_ab32d236e767b0afc33968d21ee2b8299}
+
+
+Parse the contents of the \textquotesingle{}\+\_\+buffer\textquotesingle{} structure to detect a new incoming packet. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!receive@{receive}}
+\index{receive@{receive}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{receive(uint32\+\_\+t wait)}{receive(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::receive (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a545dd58cc9f9fc2ea94fbd33f35f2a49}{}\label{class_wasp_sigfox_a545dd58cc9f9fc2ea94fbd33f35f2a49}
+
+
+Receive packets from another T\+D1207 module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait\+: time to wait for data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!save\+Settings@{save\+Settings}}
+\index{save\+Settings@{save\+Settings}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{save\+Settings()}{saveSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::save\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a944d6d4c0325663cee0a14d63346ca59}{}\label{class_wasp_sigfox_a944d6d4c0325663cee0a14d63346ca59}
+
+
+This function stores the current settings in module\textquotesingle{}s memory. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send@{send}}
+\index{send@{send}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send(char $\ast$data)}{send(char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a482844b56ed98a2e3c4e75fa912cc2aa}{}\label{class_wasp_sigfox_a482844b56ed98a2e3c4e75fa912cc2aa}
+
+
+This function sends a S\+I\+G\+F\+OX packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: data to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+data is a sequence of digit representing the value of byte stream expressed in hexadecimal value (i.\+e.\+: AT\$\+SF=12\+A435,0 – the payload is composed by the following byte stream\+: 0x12, 0x\+A4, 0x35 – 6 digit converted in 3 bytes). The maximum length of frame is 24 digit (12\+Bytes)
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send@{send}}
+\index{send@{send}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send(uint8\+\_\+t $\ast$data, uint16\+\_\+t length)}{send(uint8_t *data, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_aeea39eca699df0df353d40b4117d677f}{}\label{class_wasp_sigfox_aeea39eca699df0df353d40b4117d677f}
+
+
+This function sends a S\+I\+G\+F\+OX packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+: pointer to the data to be sent \\
+\hline
+{\em uint16\+\_\+t} & length\+: length of the buffer to send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send\+A\+CK@{send\+A\+CK}}
+\index{send\+A\+CK@{send\+A\+CK}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send\+A\+C\+K(char $\ast$data)}{sendACK(char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_adebf4ec240b7771e237a865fc080b30f}{}\label{class_wasp_sigfox_adebf4ec240b7771e237a865fc080b30f}
+
+
+This function sends a S\+I\+G\+F\+OX packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: data to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+data is a sequence of digit representing the value of byte stream expressed in hexadecimal value (i.\+e.\+: AT\$\+SF=12\+A435,0 – the payload is composed by the following byte stream\+: 0x12, 0x\+A4, 0x35 – 6 digit converted in 3 bytes). The maximum length of frame is 24 digit (12\+Bytes) 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send\+A\+CK@{send\+A\+CK}}
+\index{send\+A\+CK@{send\+A\+CK}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send\+A\+C\+K(uint8\+\_\+t $\ast$data, uint16\+\_\+t length)}{sendACK(uint8_t *data, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a6d9082a677a35653647724edbaf6ba72}{}\label{class_wasp_sigfox_a6d9082a677a35653647724edbaf6ba72}
+
+
+This function sends a S\+I\+G\+F\+OX packet waiting for an A\+CK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+: pointer to the data to be sent \\
+\hline
+{\em uint16\+\_\+t} & length\+: length of the buffer to send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send\+Keep\+Alive@{send\+Keep\+Alive}}
+\index{send\+Keep\+Alive@{send\+Keep\+Alive}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send\+Keep\+Alive()}{sendKeepAlive()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send\+Keep\+Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_adc1b4ec26bbefe815352e3ae5cf8444a}{}\label{class_wasp_sigfox_adc1b4ec26bbefe815352e3ae5cf8444a}
+
+
+This function sends a Keep-\/\+Alive message. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send\+Keep\+Alive@{send\+Keep\+Alive}}
+\index{send\+Keep\+Alive@{send\+Keep\+Alive}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send\+Keep\+Alive(uint8\+\_\+t period)}{sendKeepAlive(uint8_t period)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send\+Keep\+Alive (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{period}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_aa3c81e47a585929117befdb41db965a4}{}\label{class_wasp_sigfox_aa3c81e47a585929117befdb41db965a4}
+
+
+This function sends a Keep-\/\+Alive message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & period\+: Number of hours. 0 Disable S\+I\+G\+F\+OX keepalive RF messages. 1..127 Period between 2 S\+I\+G\+F\+OX keepalive RF messages in hours (default value is 24) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send\+L\+AN@{send\+L\+AN}}
+\index{send\+L\+AN@{send\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send\+L\+A\+N(uint8\+\_\+t $\ast$data, uint16\+\_\+t length)}{sendLAN(uint8_t *data, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send\+L\+AN (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_afdacc0865476dec08911615a8df5d052}{}\label{class_wasp_sigfox_afdacc0865476dec08911615a8df5d052}
+
+
+Send a packet from one T\+D1207 to another T\+D1207 module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+: pointer to data \\
+\hline
+{\em uint16\+\_\+t} & length\+: length of the array of bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!send\+L\+AN@{send\+L\+AN}}
+\index{send\+L\+AN@{send\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{send\+L\+A\+N(char $\ast$data)}{sendLAN(char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::send\+L\+AN (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_adefc4b60ec2f3367b718e5f7c176474d}{}\label{class_wasp_sigfox_adefc4b60ec2f3367b718e5f7c176474d}
+
+
+Send a packet from one T\+D1207 to another T\+D1207 module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data\+: string to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!set\+Address\+L\+AN@{set\+Address\+L\+AN}}
+\index{set\+Address\+L\+AN@{set\+Address\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{set\+Address\+L\+A\+N(uint32\+\_\+t naddress)}{setAddressLAN(uint32_t naddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::set\+Address\+L\+AN (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{naddress}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_ab6fb65e0427ffcc9daf32b60a701cf38}{}\label{class_wasp_sigfox_ab6fb65e0427ffcc9daf32b60a701cf38}
+
+
+set L\+AN address and save settings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & naddress\+: new address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!set\+Frequency@{set\+Frequency}}
+\index{set\+Frequency@{set\+Frequency}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{set\+Frequency(uint32\+\_\+t frec)}{setFrequency(uint32_t frec)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::set\+Frequency (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{freq}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a728ed26957044affbfe6fe687a14875b}{}\label{class_wasp_sigfox_a728ed26957044affbfe6fe687a14875b}
+
+
+set frequency and save settings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & freq\+: new working frequency \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!set\+Mask@{set\+Mask}}
+\index{set\+Mask@{set\+Mask}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{set\+Mask(uint32\+\_\+t naddress)}{setMask(uint32_t naddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::set\+Mask (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{nmask}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a1e5577698705243a55a59c7600d74190}{}\label{class_wasp_sigfox_a1e5577698705243a55a59c7600d74190}
+
+
+set Mask and save settings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & nmask\+: new mask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!set\+Multi\+Packet@{set\+Multi\+Packet}}
+\index{set\+Multi\+Packet@{set\+Multi\+Packet}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{set\+Multi\+Packet()}{setMultiPacket()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::set\+Multi\+Packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a074e102ec0db1603811f0f64baacb578}{}\label{class_wasp_sigfox_a074e102ec0db1603811f0f64baacb578}
+
+
+set receiving mode to continuous rx mode 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!set\+Power@{set\+Power}}
+\index{set\+Power@{set\+Power}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{set\+Power(uint8\+\_\+t power)}{setPower(uint8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::set\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_abd98c9030d1a228b5638d866f8d99e5c}{}\label{class_wasp_sigfox_abd98c9030d1a228b5638d866f8d99e5c}
+
+
+This function is used to configure the Sigfox RF power level in d\+Bm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & power\+: power level to be set in d\+Bm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!set\+Power\+L\+AN@{set\+Power\+L\+AN}}
+\index{set\+Power\+L\+AN@{set\+Power\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{set\+Power\+L\+A\+N(int power)}{setPowerLAN(int power)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::set\+Power\+L\+AN (
+\begin{DoxyParamCaption}
+\item[{int}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_ac12668ff4de9e82df8e1ac74e6a8f616}{}\label{class_wasp_sigfox_ac12668ff4de9e82df8e1ac74e6a8f616}
+
+
+set powel level for RF transmissions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & power\+: power level to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!show\+Firmware@{show\+Firmware}}
+\index{show\+Firmware@{show\+Firmware}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{show\+Firmware()}{showFirmware()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::show\+Firmware (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_aec73b37fd38be39f37b0d9f592e518e3}{}\label{class_wasp_sigfox_aec73b37fd38be39f37b0d9f592e518e3}
+
+
+This function displays the library version number as follows\+: S\+O\+F\+Txxxx, where \textquotesingle{}xxxx\textquotesingle{} is the version number. 
+
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!show\+Packet@{show\+Packet}}
+\index{show\+Packet@{show\+Packet}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{show\+Packet()}{showPacket()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sigfox\+::show\+Packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_abeeaf5b3802b89b94cfa70b25e1d951d}{}\label{class_wasp_sigfox_abeeaf5b3802b89b94cfa70b25e1d951d}
+
+
+Prints data received through U\+SB. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!test\+Transmit@{test\+Transmit}}
+\index{test\+Transmit@{test\+Transmit}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{test\+Transmit(uint16\+\_\+t count, uint16\+\_\+t period, int channel)}{testTransmit(uint16_t count, uint16_t period, int channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::test\+Transmit (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{count, }
+\item[{uint16\+\_\+t}]{period, }
+\item[{int}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sigfox_a59c6d95b9462c3e498df47244f50c69c}{}\label{class_wasp_sigfox_a59c6d95b9462c3e498df47244f50c69c}
+
+
+This function is used to send a test S\+I\+G\+F\+OX frame across a specific channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & count = 0..65535\+: Count of S\+I\+G\+F\+O\+X™ test RF messages. Default\+: 10 \\
+\hline
+{\em uint16\+\_\+t} & period = 1..255 Period in seconds between Sigfox test RF messages. Default\+: 10 \\
+\hline
+{\em int} & channel = 0..180 or 220..400 or -\/1 Use automatic channel selection (default) Channel number to use for S\+I\+G\+F\+O\+X™ test RF messages. Channels have a fixed 100 Hz bandwidth, starting at 868.\+180 M\+Hz for channel 0, ending at 868.\+198 Mhz for channel 180, restarting at 868.\+202 M\+Hz for channel 220 and ending at 868.\+220 M\+Hz for channel 400.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+OK\textquotesingle{} if OK \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+A\+N\+S\+W\+E\+R\+\_\+\+E\+R\+R\+OR\textquotesingle{} if error \item \textquotesingle{}S\+I\+G\+F\+O\+X\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER\textquotesingle{} if no answer \end{DoxyItemize}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+address@{\+\_\+address}}
+\index{\+\_\+address@{\+\_\+address}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+address}{_address}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+Sigfox\+::\+\_\+address}\hypertarget{class_wasp_sigfox_a862a3f4d31688e55b8ae4abedad73ff6}{}\label{class_wasp_sigfox_a862a3f4d31688e55b8ae4abedad73ff6}
+L\+AN address \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+firmware@{\+\_\+firmware}}
+\index{\+\_\+firmware@{\+\_\+firmware}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+firmware}{_firmware}}]{\setlength{\rightskip}{0pt plus 5cm}char Wasp\+Sigfox\+::\+\_\+firmware\mbox{[}10\mbox{]}}\hypertarget{class_wasp_sigfox_a0c12325b55f9576f7e6b8bda25064eaa}{}\label{class_wasp_sigfox_a0c12325b55f9576f7e6b8bda25064eaa}
+Module firmware version \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+frequency@{\+\_\+frequency}}
+\index{\+\_\+frequency@{\+\_\+frequency}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+frequency}{_frequency}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+Sigfox\+::\+\_\+frequency}\hypertarget{class_wasp_sigfox_a7e22c7c2a41f2f0363db5cdb330c1afd}{}\label{class_wasp_sigfox_a7e22c7c2a41f2f0363db5cdb330c1afd}
+Frequency \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+id@{\+\_\+id}}
+\index{\+\_\+id@{\+\_\+id}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+id}{_id}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+Sigfox\+::\+\_\+id}\hypertarget{class_wasp_sigfox_af85ecdd24a98829e0e0ebec50ff0363c}{}\label{class_wasp_sigfox_af85ecdd24a98829e0e0ebec50ff0363c}
+Sigfox module id \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+mask@{\+\_\+mask}}
+\index{\+\_\+mask@{\+\_\+mask}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+mask}{_mask}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+Sigfox\+::\+\_\+mask}\hypertarget{class_wasp_sigfox_a22ea5bda7954717c4e57880c2ca890eb}{}\label{class_wasp_sigfox_a22ea5bda7954717c4e57880c2ca890eb}
+Mask address \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+packet@{\+\_\+packet}}
+\index{\+\_\+packet@{\+\_\+packet}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+packet}{_packet}}]{\setlength{\rightskip}{0pt plus 5cm}char Wasp\+Sigfox\+::\+\_\+packet\mbox{[}35\mbox{]}}\hypertarget{class_wasp_sigfox_aaf5e5e719c7fde306d87c3826153408c}{}\label{class_wasp_sigfox_aaf5e5e719c7fde306d87c3826153408c}
+L\+AN packet structure \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+power@{\+\_\+power}}
+\index{\+\_\+power@{\+\_\+power}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+power}{_power}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sigfox\+::\+\_\+power}\hypertarget{class_wasp_sigfox_a38f7ee3421760c13f078d885fbb36528}{}\label{class_wasp_sigfox_a38f7ee3421760c13f078d885fbb36528}
+Sigfox tx power (in d\+Bm) \index{Wasp\+Sigfox@{Wasp\+Sigfox}!\+\_\+power\+L\+AN@{\+\_\+power\+L\+AN}}
+\index{\+\_\+power\+L\+AN@{\+\_\+power\+L\+AN}!Wasp\+Sigfox@{Wasp\+Sigfox}}
+\subsubsection[{\texorpdfstring{\+\_\+power\+L\+AN}{_powerLAN}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Sigfox\+::\+\_\+power\+L\+AN}\hypertarget{class_wasp_sigfox_ab28fc2a3de3d225b34415febccd0a64a}{}\label{class_wasp_sigfox_ab28fc2a3de3d225b34415febccd0a64a}
+L\+AN tx power (in d\+Bm) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sigfox/\hyperlink{_wasp_sigfox_8h}{Wasp\+Sigfox.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sigfox/\hyperlink{_wasp_sigfox_8cpp}{Wasp\+Sigfox.\+cpp}\end{DoxyCompactItemize}

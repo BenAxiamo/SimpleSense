@@ -1,0 +1,40 @@
+\hypertarget{istream_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/istream.h File Reference}
+\label{istream_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/istream.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/istream.\+h}}
+
+
+\hyperlink{classistream}{istream} class  
+
+
+{\ttfamily \#include \char`\"{}ios.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classistream}{istream}
+\begin{DoxyCompactList}\small\item\em Input Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries in\+\_\+range}(c,  lo,  up)~((uint8\+\_\+t)c $>$= lo \&\& (uint8\+\_\+t)c $<$= up)\hypertarget{istream_8h_afa26f4ff41cd4f7d61b1f0cbd6911057}{}\label{istream_8h_afa26f4ff41cd4f7d61b1f0cbd6911057}
+
+\item 
+\#define {\bfseries isprint}(c)                  ~in\+\_\+range(c, 0x20, 0x7f)\hypertarget{istream_8h_ac13bb881ad192d94596305231b42198f}{}\label{istream_8h_ac13bb881ad192d94596305231b42198f}
+
+\item 
+\#define {\bfseries isdigit}(c)                  ~in\+\_\+range(c, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}9\textquotesingle{})\hypertarget{istream_8h_a8dc5ce1c60a898d36051f09a12206b1c}{}\label{istream_8h_a8dc5ce1c60a898d36051f09a12206b1c}
+
+\item 
+\#define {\bfseries isxdigit}(c)                ~(\hyperlink{group__ctype_ga1676d7cad802db5e3e83813ce83ab9a0}{isdigit}(c) $\vert$$\vert$ in\+\_\+range(c, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}f\textquotesingle{}) $\vert$$\vert$ in\+\_\+range(c, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}F\textquotesingle{}))\hypertarget{istream_8h_a78f89e7deadb82adb6978daa4b855fd8}{}\label{istream_8h_a78f89e7deadb82adb6978daa4b855fd8}
+
+\item 
+\#define {\bfseries islower}(c)                  ~in\+\_\+range(c, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}z\textquotesingle{})\hypertarget{istream_8h_aa160fd8173a4c0bc5b0e4285f79dfde2}{}\label{istream_8h_aa160fd8173a4c0bc5b0e4285f79dfde2}
+
+\item 
+\#define {\bfseries isspace}(c)                  ~(c == \textquotesingle{} \textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}f\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}n\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}r\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}t\textquotesingle{} $\vert$$\vert$ c == \textquotesingle{}\textbackslash{}v\textquotesingle{})\hypertarget{istream_8h_afcf71b318933ff375ac916d3e5613c65}{}\label{istream_8h_afcf71b318933ff375ac916d3e5613c65}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classistream}{istream} class 
+

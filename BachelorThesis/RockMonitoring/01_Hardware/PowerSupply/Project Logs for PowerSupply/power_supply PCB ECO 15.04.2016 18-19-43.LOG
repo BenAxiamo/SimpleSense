@@ -1,0 +1,95 @@
+Added Component: Designator=*(NOTIFICATION_CONNECTOR)
+Added Component: Designator=C1(C1210)
+Added Component: Designator=C2(C1210)
+Added Component: Designator=C3(C1210)
+Added Component: Designator=C4(0402)
+Added Component: Designator=D1(SMB)
+Added Component: Designator=D2(SMB)
+Added Component: Designator=D4(SOD-123)
+Added Component: Designator=L1(INDC1608L)
+Added Component: Designator=R1(0603)
+Added Component: Designator=R2(0402)
+Added Component: Designator=R2(0603)
+Added Component: Designator=R3(0603)
+Added Component: Designator=R4(0603)
+Added Component: Designator=R5(0603)
+Added Component: Designator=R6(0402)
+Added Component: Designator=U1(LT-MSE-12-EDP_N)
+Added Component: Designator=U?(Z03A)
+Added Component: Designator=X1(Solar_Connector)
+Added Component: Designator=X2(Wasp_Connector)
+Added Component: Designator=X3(Battery_Connector)
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=VIN Pin=D1-1
+Added Pin To Net: NetName=NetC1_2 Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=NetC2_2 Pin=D2-2
+Added Pin To Net: NetName=NetC3_2 Pin=D4-1
+Added Pin To Net: NetName=NetC2_1 Pin=D4-2
+Added Pin To Net: NetName=NetC2_2 Pin=L1-1
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetC1_2 Pin=R1-2
+Added Pin To Net: NetName=NetC3_2 Pin=R2-1
+Added Pin To Net: NetName=NetR1_1 Pin=R2-1
+Added Pin To Net: NetName=NetL1_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=NetR1_1 Pin=R3-2
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetC3_2 Pin=R4-2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR4_1 Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=NetR5_1 Pin=R6-2
+Added Pin To Net: NetName=NetC1_2 Pin=U1-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-2
+Added Pin To Net: NetName=NetC1_2 Pin=U1-3
+Added Pin To Net: NetName=Net*_1 Pin=U1-4
+Added Pin To Net: NetName=Net*_2 Pin=U1-5
+Added Pin To Net: NetName=NetC4_2 Pin=U1-6
+Added Pin To Net: NetName=NetR5_1 Pin=U1-7
+Added Pin To Net: NetName=NetC3_2 Pin=U1-9
+Added Pin To Net: NetName=NetL1_2 Pin=U1-10
+Added Pin To Net: NetName=NetC2_1 Pin=U1-11
+Added Pin To Net: NetName=NetC2_2 Pin=U1-12
+Added Pin To Net: NetName=GND Pin=U1-13
+Added Pin To Net: NetName=NetC1_2 Pin=U?-1
+Added Pin To Net: NetName=NetR2_2 Pin=U?-2
+Added Pin To Net: NetName=NetR1_1 Pin=U?-3
+Added Pin To Net: NetName=VIN Pin=X1-1
+Added Pin To Net: NetName=GND Pin=X1-2
+Added Pin To Net: NetName=NetC3_2 Pin=X2-1
+Added Pin To Net: NetName=GND Pin=X2-2
+Added Pin To Net: NetName=NetC3_2 Pin=X3-1
+Added Pin To Net: NetName=GND Pin=X3-2
+Added Member To Class: ClassName=power_supply Member=Component * Notification
+Added Member To Class: ClassName=power_supply Member=Component C1 Cap Semi
+Added Member To Class: ClassName=power_supply Member=Component C2 Cap Semi
+Added Member To Class: ClassName=power_supply Member=Component C3 Cap Semi
+Added Member To Class: ClassName=power_supply Member=Component C4 Cap Semi
+Added Member To Class: ClassName=power_supply Member=Component D1 D Schottky
+Added Member To Class: ClassName=power_supply Member=Component D2 D Schottky
+Added Member To Class: ClassName=power_supply Member=Component D4 Diode
+Added Member To Class: ClassName=power_supply Member=Component L1 Inductor
+Added Member To Class: ClassName=power_supply Member=Component R1 Res2
+Added Member To Class: ClassName=power_supply Member=Component R2 Res2
+Added Member To Class: ClassName=power_supply Member=Component R3 Res2
+Added Member To Class: ClassName=power_supply Member=Component R4 Res2
+Added Member To Class: ClassName=power_supply Member=Component R5 Res2
+Added Member To Class: ClassName=power_supply Member=Component R6 Res2
+Added Member To Class: ClassName=power_supply Member=Component U1 LT3652EMSE#PBF
+Added Member To Class: ClassName=power_supply Member=Component U? LM234Z-3
+Added Member To Class: ClassName=power_supply Member=Component X1 SolarConnector
+Added Member To Class: ClassName=power_supply Member=Component X2 WaspConnector
+Added Member To Class: ClassName=power_supply Member=Component X3 BatteryConnector
+Added Room: Name=power_supply

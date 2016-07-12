@@ -1,0 +1,109 @@
+\hypertarget{_wasp_sensor_gas__v20_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+v20/\+Wasp\+Sensor\+Gas\+\_\+v20.h File Reference}
+\label{_wasp_sensor_gas__v20_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+v20/\+Wasp\+Sensor\+Gas\+\_\+v20.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+v20/\+Wasp\+Sensor\+Gas\+\_\+v20.\+h}}
+
+
+Library for managing the \hyperlink{class_gas}{Gas} Sensor Board.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_sensor_gas__v20}{Wasp\+Sensor\+Gas\+\_\+v20}
+\begin{DoxyCompactList}\small\item\em Wasp\+Sensor\+Gas\+V20 Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a0bb17192b9efc4bb67945529a45f4e4f}{S\+E\+N\+S\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}~0\hypertarget{_wasp_sensor_gas__v20_8h_a0bb17192b9efc4bb67945529a45f4e4f}{}\label{_wasp_sensor_gas__v20_8h_a0bb17192b9efc4bb67945529a45f4e4f}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Temperature sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a2668c588a47d544ba8f4dd6cb9b3a3d0}{S\+E\+N\+S\+\_\+\+H\+U\+M\+I\+D\+I\+TY}~1\hypertarget{_wasp_sensor_gas__v20_8h_a2668c588a47d544ba8f4dd6cb9b3a3d0}{}\label{_wasp_sensor_gas__v20_8h_a2668c588a47d544ba8f4dd6cb9b3a3d0}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Humidity sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a5e325883472a193db223f93cf23e4458}{S\+E\+N\+S\+\_\+\+P\+R\+E\+S\+S\+U\+RE}~2\hypertarget{_wasp_sensor_gas__v20_8h_a5e325883472a193db223f93cf23e4458}{}\label{_wasp_sensor_gas__v20_8h_a5e325883472a193db223f93cf23e4458}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Pressure sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_ac12b1a5e823d28d0e99658af6fddf035}{S\+E\+N\+S\+\_\+\+C\+O2}~4\hypertarget{_wasp_sensor_gas__v20_8h_ac12b1a5e823d28d0e99658af6fddf035}{}\label{_wasp_sensor_gas__v20_8h_ac12b1a5e823d28d0e99658af6fddf035}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. C\+O2 sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a2a87e6e7f6d2a5be6b353165af0d6553}{S\+E\+N\+S\+\_\+\+O2}~8\hypertarget{_wasp_sensor_gas__v20_8h_a2a87e6e7f6d2a5be6b353165af0d6553}{}\label{_wasp_sensor_gas__v20_8h_a2a87e6e7f6d2a5be6b353165af0d6553}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. O2 sensor in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_aeaded2685bce945626647f6857189bb8}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T2A}~16\hypertarget{_wasp_sensor_gas__v20_8h_aeaded2685bce945626647f6857189bb8}{}\label{_wasp_sensor_gas__v20_8h_aeaded2685bce945626647f6857189bb8}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Socket2A sensor in this case (many sensors can be connected to this socket) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_aa867dc938cfa2e652129e0e29c6349d6}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T2B}~32\hypertarget{_wasp_sensor_gas__v20_8h_aa867dc938cfa2e652129e0e29c6349d6}{}\label{_wasp_sensor_gas__v20_8h_aa867dc938cfa2e652129e0e29c6349d6}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Socket2A sensor in this case (N\+O2, O3 or V\+OC sensors can be connected to this socket) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_aeadd9e2b93458302a902f990c4c3280b}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T3A}~64\hypertarget{_wasp_sensor_gas__v20_8h_aeadd9e2b93458302a902f990c4c3280b}{}\label{_wasp_sensor_gas__v20_8h_aeadd9e2b93458302a902f990c4c3280b}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Socket3A sensor in this case (many sensors can be connected to this socket) \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T3\+CO}~128\hypertarget{_wasp_sensor_gas__v20_8h_ae24894c257ef3941ccdd0302f43e3b7e}{}\label{_wasp_sensor_gas__v20_8h_ae24894c257ef3941ccdd0302f43e3b7e}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T3\+N\+H3}~256\hypertarget{_wasp_sensor_gas__v20_8h_a59fff4fa41d3f5b78e69af9d5a7dae3c}{}\label{_wasp_sensor_gas__v20_8h_a59fff4fa41d3f5b78e69af9d5a7dae3c}
+
+\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_ad4778e68365e46e4407a5408e4b5acc1}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T3B}~4096\hypertarget{_wasp_sensor_gas__v20_8h_ad4778e68365e46e4407a5408e4b5acc1}{}\label{_wasp_sensor_gas__v20_8h_ad4778e68365e46e4407a5408e4b5acc1}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Socket3B sensor in this case (many sensors can be connected to this socket) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_aebbee41470cb3d49c918a508f8eac74e}{S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T4A}~512\hypertarget{_wasp_sensor_gas__v20_8h_aebbee41470cb3d49c918a508f8eac74e}{}\label{_wasp_sensor_gas__v20_8h_aebbee41470cb3d49c918a508f8eac74e}
+
+\begin{DoxyCompactList}\small\item\em Sensor types. Socket4A sensor in this case (many sensors can be connected to this socket) \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T4\+CO}~1024\hypertarget{_wasp_sensor_gas__v20_8h_a05e34025cba53e5a30f69bce93aae95f}{}\label{_wasp_sensor_gas__v20_8h_a05e34025cba53e5a30f69bce93aae95f}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+S\+O\+C\+K\+E\+T4\+N\+H3}~2048\hypertarget{_wasp_sensor_gas__v20_8h_acc57c040c5dcd8f5e5714204d3ae586a}{}\label{_wasp_sensor_gas__v20_8h_acc57c040c5dcd8f5e5714204d3ae586a}
+
+\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_ac122d0853f9f014eb808cb00ba42908f}{N\+O2\+\_\+\+ON}~1\hypertarget{_wasp_sensor_gas__v20_8h_ac122d0853f9f014eb808cb00ba42908f}{}\label{_wasp_sensor_gas__v20_8h_ac122d0853f9f014eb808cb00ba42908f}
+
+\begin{DoxyCompactList}\small\item\em N\+O2 sensor powered. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a4eabf49fff5553d24ddd7b784c72e869}{N\+O2\+\_\+\+O\+FF}~0\hypertarget{_wasp_sensor_gas__v20_8h_a4eabf49fff5553d24ddd7b784c72e869}{}\label{_wasp_sensor_gas__v20_8h_a4eabf49fff5553d24ddd7b784c72e869}
+
+\begin{DoxyCompactList}\small\item\em N\+O2 sensor unpowered. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a10001e5493c5fa0041cb94b1326e6102}{S\+E\+N\+S\+\_\+\+A\+M\+P\+L\+I1}~0\hypertarget{_wasp_sensor_gas__v20_8h_a10001e5493c5fa0041cb94b1326e6102}{}\label{_wasp_sensor_gas__v20_8h_a10001e5493c5fa0041cb94b1326e6102}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Amplifier1 in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_ae4486afed37aa713016a673e3ee5bc62}{S\+E\+N\+S\+\_\+\+A\+M\+P\+L\+I2}~1\hypertarget{_wasp_sensor_gas__v20_8h_ae4486afed37aa713016a673e3ee5bc62}{}\label{_wasp_sensor_gas__v20_8h_ae4486afed37aa713016a673e3ee5bc62}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Amplifier2 in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_abdbcbe493de2856c397cc0ad9c665ec2}{S\+E\+N\+S\+\_\+\+A\+M\+P\+L\+I3}~2\hypertarget{_wasp_sensor_gas__v20_8h_abdbcbe493de2856c397cc0ad9c665ec2}{}\label{_wasp_sensor_gas__v20_8h_abdbcbe493de2856c397cc0ad9c665ec2}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Amplifier3 in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a1b1ef564b91aa9e2717ed0cd0a09e7bd}{S\+E\+N\+S\+\_\+\+A\+M\+P\+L\+I4}~4\hypertarget{_wasp_sensor_gas__v20_8h_a1b1ef564b91aa9e2717ed0cd0a09e7bd}{}\label{_wasp_sensor_gas__v20_8h_a1b1ef564b91aa9e2717ed0cd0a09e7bd}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Amplifier4 in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_ae2c24633110166a9cfb11b87a3d37e0a}{S\+E\+N\+S\+\_\+\+R1}~8\hypertarget{_wasp_sensor_gas__v20_8h_ae2c24633110166a9cfb11b87a3d37e0a}{}\label{_wasp_sensor_gas__v20_8h_ae2c24633110166a9cfb11b87a3d37e0a}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Resistor1 in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_ad481eb3ab75fbbe13be39e9bff15143c}{S\+E\+N\+S\+\_\+\+R2}~16\hypertarget{_wasp_sensor_gas__v20_8h_ad481eb3ab75fbbe13be39e9bff15143c}{}\label{_wasp_sensor_gas__v20_8h_ad481eb3ab75fbbe13be39e9bff15143c}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Resistor2 in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_gas__v20_8h_a8efd2e5a7d8e249e797e074f50d5c36c}{S\+E\+N\+S\+\_\+\+R3}~32\hypertarget{_wasp_sensor_gas__v20_8h_a8efd2e5a7d8e249e797e074f50d5c36c}{}\label{_wasp_sensor_gas__v20_8h_a8efd2e5a7d8e249e797e074f50d5c36c}
+
+\begin{DoxyCompactList}\small\item\em Sensor amplifiers and resistors. Resistor3 in this case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_gas__v20}{Wasp\+Sensor\+Gas\+\_\+v20} {\bfseries Sensor\+Gasv20}\hypertarget{_wasp_sensor_gas__v20_8h_a6433d268d48e344c8d9120401205c9fb}{}\label{_wasp_sensor_gas__v20_8h_a6433d268d48e344c8d9120401205c9fb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the \hyperlink{class_gas}{Gas} Sensor Board. 
+
+Copyright (C) 2013 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+0
+
+Design\+: David Gascón
+
+Implementation\+: Alberto Bielsa, Manuel Calahorra 

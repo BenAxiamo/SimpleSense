@@ -1,0 +1,99 @@
+\hypertarget{class_wasp232}{}\section{Wasp232 Class Reference}
+\label{class_wasp232}\index{Wasp232@{Wasp232}}
+Inheritance diagram for Wasp232\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp232}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp232_ae518c085e8c0d9629f2b773487122995}{Wasp232} ()\hypertarget{class_wasp232_ae518c085e8c0d9629f2b773487122995}{}\label{class_wasp232_ae518c085e8c0d9629f2b773487122995}
+
+\begin{DoxyCompactList}\small\item\em Class Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_af447a5aa0399002a3c11fa09650d337c}{ON} (char socket)\hypertarget{class_wasp232_af447a5aa0399002a3c11fa09650d337c}{}\label{class_wasp232_af447a5aa0399002a3c11fa09650d337c}
+
+\begin{DoxyCompactList}\small\item\em Powers the 232 module and opens the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a51aab6b549c61ef6e46313ab8d9451a6}{O\+FF} (void)\hypertarget{class_wasp232_a51aab6b549c61ef6e46313ab8d9451a6}{}\label{class_wasp232_a51aab6b549c61ef6e46313ab8d9451a6}
+
+\begin{DoxyCompactList}\small\item\em Switches off the module and closes the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a2e0701d26495fe403a9a0203430a13c4}{baud\+Rate\+Config} (unsigned long speed)\hypertarget{class_wasp232_a2e0701d26495fe403a9a0203430a13c4}{}\label{class_wasp232_a2e0701d26495fe403a9a0203430a13c4}
+
+\begin{DoxyCompactList}\small\item\em Baud-\/\+Rate configuration. It sets the speed of asynchronous communication. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp232_ab4042118e9843786d2eda0641b7fa40f}{read} (void)\hypertarget{class_wasp232_ab4042118e9843786d2eda0641b7fa40f}{}\label{class_wasp232_ab4042118e9843786d2eda0641b7fa40f}
+
+\begin{DoxyCompactList}\small\item\em Receives data through the U\+A\+RT. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp232_a54438f3cb0abcafae5ad7e3fde87e7e3}{receive} (void)\hypertarget{class_wasp232_a54438f3cb0abcafae5ad7e3fde87e7e3}{}\label{class_wasp232_a54438f3cb0abcafae5ad7e3fde87e7e3}
+
+\begin{DoxyCompactList}\small\item\em Receive data. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a40f316c2030eb1919a202258574c96e5}{send} (uint8\+\_\+t n)\hypertarget{class_wasp232_a40f316c2030eb1919a202258574c96e5}{}\label{class_wasp232_a40f316c2030eb1919a202258574c96e5}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It sends a char n. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a477a3b28efcb735fc8b196545b8b4fd5}{send} (const char $\ast$s)\hypertarget{class_wasp232_a477a3b28efcb735fc8b196545b8b4fd5}{}\label{class_wasp232_a477a3b28efcb735fc8b196545b8b4fd5}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It sends a string s. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a90de5e77fa872071edea9034ddfd8f67}{send} (int n)\hypertarget{class_wasp232_a90de5e77fa872071edea9034ddfd8f67}{}\label{class_wasp232_a90de5e77fa872071edea9034ddfd8f67}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It sends an int n. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_aed7b4729afd9bf90b92e16eb3dba4f21}{send} (unsigned int n)\hypertarget{class_wasp232_aed7b4729afd9bf90b92e16eb3dba4f21}{}\label{class_wasp232_aed7b4729afd9bf90b92e16eb3dba4f21}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It sends an unsigned int n. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a8c6ffd1aa3eb04ede825a3d47bec1838}{send} (long n)\hypertarget{class_wasp232_a8c6ffd1aa3eb04ede825a3d47bec1838}{}\label{class_wasp232_a8c6ffd1aa3eb04ede825a3d47bec1838}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It sends a long n. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a75fc1cbb03c406fce9802dc0fe2546ac}{send} (unsigned long n)\hypertarget{class_wasp232_a75fc1cbb03c406fce9802dc0fe2546ac}{}\label{class_wasp232_a75fc1cbb03c406fce9802dc0fe2546ac}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It sends an unsigned long n. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_a24cc0f0de0e766457b254658e9e83b03}{send} (long n, int base)\hypertarget{class_wasp232_a24cc0f0de0e766457b254658e9e83b03}{}\label{class_wasp232_a24cc0f0de0e766457b254658e9e83b03}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the U\+A\+RT. It prints a long number in the specified base. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp232_ae0c0db4861a14721b9b2bc3dd2a7c5ee}{available} (void)\hypertarget{class_wasp232_ae0c0db4861a14721b9b2bc3dd2a7c5ee}{}\label{class_wasp232_ae0c0db4861a14721b9b2bc3dd2a7c5ee}
+
+\begin{DoxyCompactList}\small\item\em Get the number of bytes (characters) available for reading from the serial port. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_aa5596d3d17f15aa6173b245af060022e}{flush} (void)\hypertarget{class_wasp232_aa5596d3d17f15aa6173b245af060022e}{}\label{class_wasp232_aa5596d3d17f15aa6173b245af060022e}
+
+\begin{DoxyCompactList}\small\item\em It flushes the buffer of incoming serial data. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_af94bef74c629aa5d1beac6eba44eec4a}{parity\+Bit} (uint8\+\_\+t state)\hypertarget{class_wasp232_af94bef74c629aa5d1beac6eba44eec4a}{}\label{class_wasp232_af94bef74c629aa5d1beac6eba44eec4a}
+
+\begin{DoxyCompactList}\small\item\em Enables or disables the parity bit. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp232_ad40b0a64a165d6b60c7279dd918d4696}{stop\+Bit\+Config} (uint8\+\_\+t num\+Stop\+Bits)\hypertarget{class_wasp232_ad40b0a64a165d6b60c7279dd918d4696}{}\label{class_wasp232_ad40b0a64a165d6b60c7279dd918d4696}
+
+\begin{DoxyCompactList}\small\item\em Selects the number of stop bits to be inserted by the Transmitter. The Receiver ignores this setting. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp232_a1c7a1f370170ee74c6cba88e149a8f96}{error} (void)
+\begin{DoxyCompactList}\small\item\em Detects a transmission error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp232@{Wasp232}!error@{error}}
+\index{error@{error}!Wasp232@{Wasp232}}
+\subsubsection[{\texorpdfstring{error(void)}{error(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp232\+::error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp232_a1c7a1f370170ee74c6cba88e149a8f96}{}\label{class_wasp232_a1c7a1f370170ee74c6cba88e149a8f96}
+
+
+Detects a transmission error. 
+
+No error
+
+Frame error
+
+Data over run
+
+Parity error
+
+No error
+
+Frame error
+
+Data over run
+
+Parity error 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+R\+S232/\hyperlink{_wasp232_8h}{Wasp232.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+R\+S232/\hyperlink{_wasp232_8cpp}{Wasp232.\+cpp}\end{DoxyCompactItemize}

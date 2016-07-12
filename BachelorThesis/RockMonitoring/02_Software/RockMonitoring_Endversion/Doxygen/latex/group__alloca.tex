@@ -1,0 +1,32 @@
+\hypertarget{group__alloca}{}\section{$<$alloca.\+h$>$\+: Allocate space in the stack}
+\label{group__alloca}\index{$<$alloca.\+h$>$\+: Allocate space in the stack@{$<$alloca.\+h$>$\+: Allocate space in the stack}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}{alloca} (size\+\_\+t \+\_\+\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Allocate {\itshape \+\_\+\+\_\+size} bytes of space in the stack frame of the caller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{$<$alloca.\+h$>$\+: Allocate space in the stack@{$<$alloca.\+h$>$\+: Allocate space in the stack}!alloca@{alloca}}
+\index{alloca@{alloca}!$<$alloca.\+h$>$\+: Allocate space in the stack@{$<$alloca.\+h$>$\+: Allocate space in the stack}}
+\subsubsection[{\texorpdfstring{alloca(size\+\_\+t \+\_\+\+\_\+size)}{alloca(size_t __size)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ alloca (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}{}\label{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}
+
+
+Allocate {\itshape \+\_\+\+\_\+size} bytes of space in the stack frame of the caller. 
+
+This temporary space is automatically freed when the function that called \hyperlink{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}{alloca()} returns to its caller. Avr-\/libc defines the \hyperlink{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}{alloca()} as a macro, which is translated into the inlined {\ttfamily \+\_\+\+\_\+builtin\+\_\+alloca()} function. The fact that the code is inlined, means that it is impossible to take the address of this function, or to change its behaviour by linking with a different library.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}{alloca()} returns a pointer to the beginning of the allocated space. If the allocation causes stack overflow, program behaviour is undefined.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Avoid use \hyperlink{group__alloca_gabdd78c9d072e9d390bed0e8b79087a85}{alloca()} inside the list of arguments of a function call. 
+\end{DoxyWarning}

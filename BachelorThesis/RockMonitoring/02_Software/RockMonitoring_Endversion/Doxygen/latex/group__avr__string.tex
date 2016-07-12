@@ -1,0 +1,58 @@
+\hypertarget{group__avr__string}{}\section{$<$string.\+h$>$\+: Strings}
+\label{group__avr__string}\index{$<$string.\+h$>$\+: Strings@{$<$string.\+h$>$\+: Strings}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__string_gaedb0e7bb7333d6122472acddb5df20ac}{\+\_\+\+F\+FS}(x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{string_8h}{string.h}>} 
+\end{DoxyCode}
+
+
+The string functions perform string operations on N\+U\+LL terminated strings.
+
+\begin{DoxyNote}{Note}
+If the strings you are working on resident in program space (flash), you will need to use the string functions described in \hyperlink{group__avr__pgmspace}{$<$avr/pgmspace.\+h$>$\+: Program Space Utilities}. 
+\end{DoxyNote}
+
+
+\subsection{Macro Definition Documentation}
+\index{$<$string.\+h$>$\+: Strings@{$<$string.\+h$>$\+: Strings}!\+\_\+\+F\+FS@{\+\_\+\+F\+FS}}
+\index{\+\_\+\+F\+FS@{\+\_\+\+F\+FS}!$<$string.\+h$>$\+: Strings@{$<$string.\+h$>$\+: Strings}}
+\subsubsection[{\texorpdfstring{\+\_\+\+F\+FS}{_FFS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+F\+FS(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__string_gaedb0e7bb7333d6122472acddb5df20ac}{}\label{group__avr__string_gaedb0e7bb7333d6122472acddb5df20ac}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(1              \(\backslash\)
+     + (((x) & 1) == 0)     \(\backslash\)
+     + (((x) & 3) == 0)     \(\backslash\)
+     + (((x) & 7) == 0)     \(\backslash\)
+     + (((x) & 017) == 0)       \(\backslash\)
+     + (((x) & 037) == 0)       \(\backslash\)
+     + (((x) & 077) == 0)       \(\backslash\)
+     + (((x) & 0177) == 0)      \(\backslash\)
+     + (((x) & 0377) == 0)      \(\backslash\)
+     + (((x) & 0777) == 0)      \(\backslash\)
+     + (((x) & 01777) == 0)     \(\backslash\)
+     + (((x) & 03777) == 0)     \(\backslash\)
+     + (((x) & 07777) == 0)     \(\backslash\)
+     + (((x) & 017777) == 0)    \(\backslash\)
+     + (((x) & 037777) == 0)    \(\backslash\)
+     + (((x) & 077777) == 0)    \(\backslash\)
+     - (((x) & 0177777) == 0) * 16)
+\end{DoxyCode}
+This macro finds the first (least significant) bit set in the input value.
+
+This macro is very similar to the function ffs() except that it evaluates its argument at compile-\/time, so it should only be applied to compile-\/time constant expressions where it will reduce to a constant itself. Application of this macro to expressions that are not constant at compile-\/time is not recommended, and might result in a huge amount of code generated.
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{group__avr__string_gaedb0e7bb7333d6122472acddb5df20ac}{\+\_\+\+F\+F\+S()} macro returns the position of the first (least significant) bit set in the word val, or 0 if no bits are set. The least significant bit is position 1. Only 16 bits of argument are evaluted. 
+\end{DoxyReturn}

@@ -1,0 +1,213 @@
+\hypertarget{class_wasp_stack_e_e_p_r_o_m}{}\section{Wasp\+Stack\+E\+E\+P\+R\+OM Class Reference}
+\label{class_wasp_stack_e_e_p_r_o_m}\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+
+
+\hyperlink{class_wasp_stack_e_e_p_r_o_m}{Wasp\+Stack\+E\+E\+P\+R\+OM} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Stack\+E\+E\+P\+R\+O\+M.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_stack_e_e_p_r_o_m_a11b1a13e50f3906979f81ab490858ed1}{Wasp\+Stack\+E\+E\+P\+R\+OM} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_stack_e_e_p_r_o_m_aa350b0e8a9b11eb0644b9e00c506464c}{init\+Block\+Size} (uint8\+\_\+t blocksize)
+\begin{DoxyCompactList}\small\item\em It initializes the block size for the stack. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_stack_e_e_p_r_o_m_ab3679c6ed95bf08af180b22179cd6fef}{init\+Stack} ()
+\begin{DoxyCompactList}\small\item\em It initializes the stack. \end{DoxyCompactList}\item 
+bool {\bfseries init\+Stack} (uint8\+\_\+t mode)\hypertarget{class_wasp_stack_e_e_p_r_o_m_ad8ec52f0e0f3d18058af252e3d1b494f}{}\label{class_wasp_stack_e_e_p_r_o_m_ad8ec52f0e0f3d18058af252e3d1b494f}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_stack_e_e_p_r_o_m_ad20ab7a6f936a442882bc8c62ae7701c}{push} (uint8\+\_\+t $\ast$data, uint8\+\_\+t data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em It pushes a new block of data into the stack. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries push\+\_\+front} (uint8\+\_\+t $\ast$data, uint8\+\_\+t data\+\_\+length)\hypertarget{class_wasp_stack_e_e_p_r_o_m_a357a75cfddfb09b131470c04400af7a3}{}\label{class_wasp_stack_e_e_p_r_o_m_a357a75cfddfb09b131470c04400af7a3}
+
+\item 
+uint8\+\_\+t {\bfseries push\+\_\+back} (uint8\+\_\+t $\ast$data, uint8\+\_\+t data\+\_\+length)\hypertarget{class_wasp_stack_e_e_p_r_o_m_ad19ce1879f8f5a9d450be7e89452ea79}{}\label{class_wasp_stack_e_e_p_r_o_m_ad19ce1879f8f5a9d450be7e89452ea79}
+
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_stack_e_e_p_r_o_m_a47861055ac9b04db93cae2fcc7341506}{pop} (uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em It gets a block from the stack. \end{DoxyCompactList}\item 
+uint16\+\_\+t {\bfseries pop\+\_\+front} (uint8\+\_\+t $\ast$data)\hypertarget{class_wasp_stack_e_e_p_r_o_m_a5d14a59afbe8c0fd20014b488c058e3c}{}\label{class_wasp_stack_e_e_p_r_o_m_a5d14a59afbe8c0fd20014b488c058e3c}
+
+\item 
+uint16\+\_\+t {\bfseries pop\+\_\+back} (uint8\+\_\+t $\ast$data)\hypertarget{class_wasp_stack_e_e_p_r_o_m_af318d0a17f0de94f380cf2f4b84e7fb2}{}\label{class_wasp_stack_e_e_p_r_o_m_af318d0a17f0de94f380cf2f4b84e7fb2}
+
+\item 
+bool \hyperlink{class_wasp_stack_e_e_p_r_o_m_a62755251d485e722419fbe35989bffce}{is\+Full} ()
+\begin{DoxyCompactList}\small\item\em It checks if the stack is full. If full then stop writing. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_stack_e_e_p_r_o_m_a6ef53bf5e4053128aff1478b597f257d}{is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em It checks if the stack is empty. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_stack_e_e_p_r_o_m_a022f66081c94aa33aa3072975d556a87}{get\+Stored\+Frames} ()
+\begin{DoxyCompactList}\small\item\em It gets the number of stored frames inside Stack. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_stack_e_e_p_r_o_m_a1f93925f609a16d139d192d823621682}{get\+Max\+Frames} ()
+\begin{DoxyCompactList}\small\item\em It returnsthe maximum number of frames that fit inside the Stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_stack_e_e_p_r_o_m}{Wasp\+Stack\+E\+E\+P\+R\+OM} Class. 
+
+\hyperlink{class_wasp_stack_e_e_p_r_o_m}{Wasp\+Stack\+E\+E\+P\+R\+OM} Class defines all the variables and functions used to store data in E\+E\+P\+R\+OM 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{Wasp\+Stack\+E\+E\+P\+R\+O\+M()}{WaspStackEEPROM()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::\+Wasp\+Stack\+E\+E\+P\+R\+OM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_a11b1a13e50f3906979f81ab490858ed1}{}\label{class_wasp_stack_e_e_p_r_o_m_a11b1a13e50f3906979f81ab490858ed1}
+
+
+class constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!get\+Max\+Frames@{get\+Max\+Frames}}
+\index{get\+Max\+Frames@{get\+Max\+Frames}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{get\+Max\+Frames()}{getMaxFrames()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::get\+Max\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_a1f93925f609a16d139d192d823621682}{}\label{class_wasp_stack_e_e_p_r_o_m_a1f93925f609a16d139d192d823621682}
+
+
+It returnsthe maximum number of frames that fit inside the Stack. 
+
+\begin{DoxyReturn}{Returns}
+number of maximum possible frames 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!get\+Stored\+Frames@{get\+Stored\+Frames}}
+\index{get\+Stored\+Frames@{get\+Stored\+Frames}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{get\+Stored\+Frames()}{getStoredFrames()}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::get\+Stored\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_a022f66081c94aa33aa3072975d556a87}{}\label{class_wasp_stack_e_e_p_r_o_m_a022f66081c94aa33aa3072975d556a87}
+
+
+It gets the number of stored frames inside Stack. 
+
+\begin{DoxyReturn}{Returns}
+number of stored frames 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!init\+Block\+Size@{init\+Block\+Size}}
+\index{init\+Block\+Size@{init\+Block\+Size}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{init\+Block\+Size(uint8\+\_\+t blocksize)}{initBlockSize(uint8_t blocksize)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::init\+Block\+Size (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{blocksize}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_aa350b0e8a9b11eb0644b9e00c506464c}{}\label{class_wasp_stack_e_e_p_r_o_m_aa350b0e8a9b11eb0644b9e00c506464c}
+
+
+It initializes the block size for the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & blocksize\+: Block size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!init\+Stack@{init\+Stack}}
+\index{init\+Stack@{init\+Stack}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{init\+Stack()}{initStack()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::init\+Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_ab3679c6ed95bf08af180b22179cd6fef}{}\label{class_wasp_stack_e_e_p_r_o_m_ab3679c6ed95bf08af180b22179cd6fef}
+
+
+It initializes the stack. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on succes, \textquotesingle{}0\textquotesingle{} error 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_a6ef53bf5e4053128aff1478b597f257d}{}\label{class_wasp_stack_e_e_p_r_o_m_a6ef53bf5e4053128aff1478b597f257d}
+
+
+It checks if the stack is empty. 
+
+\begin{DoxyReturn}{Returns}
+returns 1 if the stack is empty or 0 if not. 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!is\+Full@{is\+Full}}
+\index{is\+Full@{is\+Full}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{is\+Full()}{isFull()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::is\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_a62755251d485e722419fbe35989bffce}{}\label{class_wasp_stack_e_e_p_r_o_m_a62755251d485e722419fbe35989bffce}
+
+
+It checks if the stack is full. If full then stop writing. 
+
+\begin{DoxyReturn}{Returns}
+returns 1 if the stack is full or 0 if not. 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!pop@{pop}}
+\index{pop@{pop}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{pop(uint8\+\_\+t $\ast$data)}{pop(uint8_t *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::pop (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_a47861055ac9b04db93cae2fcc7341506}{}\label{class_wasp_stack_e_e_p_r_o_m_a47861055ac9b04db93cae2fcc7341506}
+
+
+It gets a block from the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+: position of the data that is going to take. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if empty, \textquotesingle{}1\textquotesingle{} error reading, \textquotesingle{}2\textquotesingle{} if error updating the new pointer value positive value means the number of bytes read. 
+\end{DoxyReturn}
+\index{Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}!push@{push}}
+\index{push@{push}!Wasp\+Stack\+E\+E\+P\+R\+OM@{Wasp\+Stack\+E\+E\+P\+R\+OM}}
+\subsubsection[{\texorpdfstring{push(uint8\+\_\+t $\ast$data, uint8\+\_\+t data\+\_\+length)}{push(uint8_t *data, uint8_t data_length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Stack\+E\+E\+P\+R\+O\+M\+::push (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{data\+\_\+length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_stack_e_e_p_r_o_m_ad20ab7a6f936a442882bc8c62ae7701c}{}\label{class_wasp_stack_e_e_p_r_o_m_ad20ab7a6f936a442882bc8c62ae7701c}
+
+
+It pushes a new block of data into the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+: vector with the data to store \\
+\hline
+{\em uint8\+\_\+t} & data\+\_\+length\+: length of data to store \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success \textquotesingle{}0\textquotesingle{} error writing \textquotesingle{}2\textquotesingle{}is full \textquotesingle{}3\textquotesingle{} block size small. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Stack\+E\+E\+P\+R\+O\+M/Wasp\+Stack\+E\+E\+P\+R\+O\+M.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Stack\+E\+E\+P\+R\+O\+M/Wasp\+Stack\+E\+E\+P\+R\+O\+M.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,386 @@
+\hypertarget{group__avr__boot}{}\section{$<$avr/boot.h$>$\+: Bootloader Support Utilities}
+\label{group__avr__boot}\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__boot_ga8a60eb0985d40ff71c42bb18f0f5789e}{B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((section (\char`\"{}.bootloader\char`\"{})))
+\item 
+\#define \hyperlink{group__avr__boot_ga5b1c861e7ea2d0289b1922d458137a93}{boot\+\_\+spm\+\_\+interrupt\+\_\+enable}()  ~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG $\vert$= (uint8\+\_\+t)\+\_\+\+BV(S\+P\+M\+IE))
+\item 
+\#define \hyperlink{group__avr__boot_gaf1e01d09c839793a6c0c990b1c5ae8b3}{boot\+\_\+spm\+\_\+interrupt\+\_\+disable}()~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \&= (uint8\+\_\+t)$\sim$\+\_\+\+BV(S\+P\+M\+IE))
+\item 
+\#define \hyperlink{group__avr__boot_gac6179ee69a73970e370af11f5d9aec73}{boot\+\_\+is\+\_\+spm\+\_\+interrupt}()          ~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \& (uint8\+\_\+t)\+\_\+\+BV(S\+P\+M\+IE))
+\item 
+\#define \hyperlink{group__avr__boot_ga68addb59347531960dcdbfe6c8425e04}{boot\+\_\+rww\+\_\+busy}()                ~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \& (uint8\+\_\+t)\+\_\+\+BV(\+\_\+\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+A\+SB))
+\item 
+\#define \hyperlink{group__avr__boot_gaad75076ad14371bbe9d811a19db0ef79}{boot\+\_\+spm\+\_\+busy}()                          ~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \& (uint8\+\_\+t)\+\_\+\+BV(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+E\+N\+A\+B\+LE))
+\item 
+\#define \hyperlink{group__avr__boot_gada801d48596bd6e0119b310ea5887247}{boot\+\_\+spm\+\_\+busy\+\_\+wait}()                ~do\{\}while(\hyperlink{group__avr__boot_gaad75076ad14371bbe9d811a19db0ef79}{boot\+\_\+spm\+\_\+busy}())
+\item 
+\#define \hyperlink{group__avr__boot_gac68c37ecf2354ba2af6e08379d65899f}{G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}~(0x0000)
+\item 
+\#define \hyperlink{group__avr__boot_gae12d288a22cfbfa9d0cde12b1a779bfe}{G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS}~(0x0001)
+\item 
+\#define \hyperlink{group__avr__boot_gaf08aabaebbd69da659357f402d4d28ce}{G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}~(0x0002)
+\item 
+\#define \hyperlink{group__avr__boot_ga44e70c9662e7ac06484144c15bc69aea}{G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}~(0x0003)
+\item 
+\#define \hyperlink{group__avr__boot_ga37ce7078335dd85f04d150a52a01d6ad}{boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get}(address)                                  
+\item 
+\#define \hyperlink{group__avr__boot_gaf375d2543ba38dc56697b4f4bc37a717}{boot\+\_\+signature\+\_\+byte\+\_\+get}(addr)
+\item 
+\#define \hyperlink{group__avr__boot_ga61add108c778273ff68233d044c3acca}{boot\+\_\+page\+\_\+fill}(address,  data)~\+\_\+\+\_\+boot\+\_\+page\+\_\+fill\+\_\+normal(address, data)
+\item 
+\#define \hyperlink{group__avr__boot_ga8c128c031cee4e82ea4950873048db14}{boot\+\_\+page\+\_\+erase}(address)        ~\+\_\+\+\_\+boot\+\_\+page\+\_\+erase\+\_\+normal(address)
+\item 
+\#define \hyperlink{group__avr__boot_ga8764dc7bdbd459e5d850bafaa0a6e41a}{boot\+\_\+page\+\_\+write}(address)        ~\+\_\+\+\_\+boot\+\_\+page\+\_\+write\+\_\+normal(address)
+\item 
+\#define \hyperlink{group__avr__boot_ga5ce9d92fa9c0b2b79c62a09980909f1f}{boot\+\_\+rww\+\_\+enable}()                      ~\+\_\+\+\_\+boot\+\_\+rww\+\_\+enable()
+\item 
+\#define \hyperlink{group__avr__boot_gadaa352690ac1c82c535da9d8faf77590}{boot\+\_\+lock\+\_\+bits\+\_\+set}(lock\+\_\+bits)~\+\_\+\+\_\+boot\+\_\+lock\+\_\+bits\+\_\+set(lock\+\_\+bits)
+\item 
+\#define \hyperlink{group__avr__boot_ga3f549e2ef9ca0f119a7070064c4dc372}{boot\+\_\+page\+\_\+fill\+\_\+safe}(address,  data)
+\item 
+\#define \hyperlink{group__avr__boot_ga5c345350a2fb349619b859dcf0dc0466}{boot\+\_\+page\+\_\+erase\+\_\+safe}(address)
+\item 
+\#define \hyperlink{group__avr__boot_ga107ad4c789e5c498062947d394ed98d5}{boot\+\_\+page\+\_\+write\+\_\+safe}(address)
+\item 
+\#define \hyperlink{group__avr__boot_gaeb0dba1dd9d338516a94c0bd8a8db78a}{boot\+\_\+rww\+\_\+enable\+\_\+safe}()
+\item 
+\#define \hyperlink{group__avr__boot_gac80bd4f863ff7645204adb0eda3556ea}{boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe}(lock\+\_\+bits)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{boot_8h}{avr/boot.h}>}
+\end{DoxyCode}
+
+
+The macros in this module provide a C language interface to the bootloader support functionality of certain A\+VR processors. These macros are designed to work with all sizes of flash memory.
+
+Global interrupts are not automatically disabled for these macros. It is left up to the programmer to do this. See the code example below. Also see the processor datasheet for caveats on having global interrupts enabled during writing of the Flash.
+
+\begin{DoxyNote}{Note}
+Not all A\+VR processors provide bootloader support. See your processor datasheet to see if it provides bootloader support.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]From email with Marek\+: On smaller devices (all except A\+Tmega64/128), \+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG is in the I/O space, accessible with the shorter \char`\"{}in\char`\"{} and \char`\"{}out\char`\"{} instructions -\/ since the boot loader has a limited size, this could be an important optimization.\end{DoxyRefDesc}
+
+
+\begin{DoxyParagraph}{A\+PI Usage Example}
+The following code shows typical usage of the boot A\+PI.
+\end{DoxyParagraph}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{inttypes_8h}{inttypes.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{interrupt_8h}{avr/interrupt.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{pgmspace_8h}{avr/pgmspace.h}>}
+
+\textcolor{keywordtype}{void} boot\_program\_page (uint32\_t page, uint8\_t *buf)
+\{
+    uint16\_t i;
+    uint8\_t sreg;
+
+    \textcolor{comment}{// Disable interrupts.}
+
+    sreg = SREG;
+    cli();
+
+    eeprom\_busy\_wait ();
+
+    \hyperlink{group__avr__boot_ga8c128c031cee4e82ea4950873048db14}{boot\_page\_erase} (page);
+    \hyperlink{group__avr__boot_gada801d48596bd6e0119b310ea5887247}{boot\_spm\_busy\_wait} ();      \textcolor{comment}{// Wait until the memory is erased.}
+
+    \textcolor{keywordflow}{for} (i=0; i<SPM\_PAGESIZE; i+=2)
+    \{
+        \textcolor{comment}{// Set up little-endian word.}
+
+        uint16\_t w = *buf++;
+        w += (*buf++) << 8;
+    
+        \hyperlink{group__avr__boot_ga61add108c778273ff68233d044c3acca}{boot\_page\_fill} (page + i, w);
+    \}
+
+    \hyperlink{group__avr__boot_ga8764dc7bdbd459e5d850bafaa0a6e41a}{boot\_page\_write} (page);     \textcolor{comment}{// Store buffer in flash page.}
+    \hyperlink{group__avr__boot_gada801d48596bd6e0119b310ea5887247}{boot\_spm\_busy\_wait}();       \textcolor{comment}{// Wait until the memory is written.}
+
+    \textcolor{comment}{// Reenable RWW-section again. We need this if we want to jump back}
+    \textcolor{comment}{// to the application after bootloading.}
+
+    \hyperlink{group__avr__boot_ga5ce9d92fa9c0b2b79c62a09980909f1f}{boot\_rww\_enable} ();
+
+    \textcolor{comment}{// Re-enable interrupts (if they were ever enabled).}
+
+    SREG = sreg;
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Macro Definition Documentation}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+is\+\_\+spm\+\_\+interrupt@{boot\+\_\+is\+\_\+spm\+\_\+interrupt}}
+\index{boot\+\_\+is\+\_\+spm\+\_\+interrupt@{boot\+\_\+is\+\_\+spm\+\_\+interrupt}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+is\+\_\+spm\+\_\+interrupt}{boot_is_spm_interrupt}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+is\+\_\+spm\+\_\+interrupt(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \& (uint8\+\_\+t)\+\_\+\+BV(S\+P\+M\+IE))}\hypertarget{group__avr__boot_gac6179ee69a73970e370af11f5d9aec73}{}\label{group__avr__boot_gac6179ee69a73970e370af11f5d9aec73}
+Check if the S\+PM interrupt is enabled. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+lock\+\_\+bits\+\_\+set@{boot\+\_\+lock\+\_\+bits\+\_\+set}}
+\index{boot\+\_\+lock\+\_\+bits\+\_\+set@{boot\+\_\+lock\+\_\+bits\+\_\+set}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+lock\+\_\+bits\+\_\+set}{boot_lock_bits_set}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+lock\+\_\+bits\+\_\+set(
+\begin{DoxyParamCaption}
+\item[{}]{lock\+\_\+bits}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+boot\+\_\+lock\+\_\+bits\+\_\+set(lock\+\_\+bits)}\hypertarget{group__avr__boot_gadaa352690ac1c82c535da9d8faf77590}{}\label{group__avr__boot_gadaa352690ac1c82c535da9d8faf77590}
+Set the bootloader lock bits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock\+\_\+bits} & A mask of which Boot Loader Lock Bits to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+In this context, a \textquotesingle{}set bit\textquotesingle{} will be written to a zero value. Note also that only B\+L\+Bxx bits can be programmed by this command.
+\end{DoxyNote}
+For example, to disallow the S\+PM instruction from writing to the Boot Loader memory section of flash, you would use this macro as such\+:
+
+
+\begin{DoxyCode}
+1 boot\_lock\_bits\_set (\_BV (BLB11));
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+Like any lock bits, the Boot Loader Lock Bits, once set, cannot be cleared again except by a chip erase which will in turn also erase the boot loader itself. 
+\end{DoxyNote}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe@{boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe}}
+\index{boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe@{boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe}{boot_lock_bits_set_safe}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+lock\+\_\+bits\+\_\+set\+\_\+safe(
+\begin{DoxyParamCaption}
+\item[{}]{lock\+\_\+bits}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_gac80bd4f863ff7645204adb0eda3556ea}{}\label{group__avr__boot_gac80bd4f863ff7645204adb0eda3556ea}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    boot\_spm\_busy\_wait();                       \(\backslash\)
+    eeprom\_busy\_wait();                         \(\backslash\)
+    boot\_lock\_bits\_set (lock\_bits);             \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Same as \hyperlink{group__avr__boot_gadaa352690ac1c82c535da9d8faf77590}{boot\+\_\+lock\+\_\+bits\+\_\+set()} except waits for eeprom and spm operations to complete before setting the lock bits. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get@{boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get}}
+\index{boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get@{boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get}{boot_lock_fuse_bits_get}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get(
+\begin{DoxyParamCaption}
+\item[{}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_ga37ce7078335dd85f04d150a52a01d6ad}{}\label{group__avr__boot_ga37ce7078335dd85f04d150a52a01d6ad}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                                           \(\backslash\)
+    uint8\_t \_\_result;                                      \(\backslash\)
+    \_\_asm\_\_ \_\_volatile\_\_                                   \(\backslash\)
+    (                                                      \(\backslash\)
+        \textcolor{stringliteral}{"sts %1, %2\(\backslash\)n\(\backslash\)t"}                                   \(\backslash\)
+        \textcolor{stringliteral}{"lpm %0, Z\(\backslash\)n\(\backslash\)t"}                                    \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result)                                  \(\backslash\)
+        : \textcolor{stringliteral}{"i"} (\_SFR\_MEM\_ADDR(\_\_SPM\_REG)),                  \(\backslash\)
+          \textcolor{stringliteral}{"r"} ((uint8\_t)(\_\_BOOT\_LOCK\_BITS\_SET)),           \(\backslash\)
+          \textcolor{stringliteral}{"z"} ((uint16\_t)(address))                        \(\backslash\)
+    );                                                     \(\backslash\)
+    \_\_result;                                              \(\backslash\)
+\}))
+\end{DoxyCode}
+Read the lock or fuse bits at {\ttfamily address}.
+
+Parameter {\ttfamily address} can be any of G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS, G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS, G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS, or G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS.
+
+\begin{DoxyNote}{Note}
+The lock and fuse bits returned are the physical values, i.\+e. a bit returned as 0 means the corresponding fuse or lock bit is programmed. 
+\end{DoxyNote}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+page\+\_\+erase@{boot\+\_\+page\+\_\+erase}}
+\index{boot\+\_\+page\+\_\+erase@{boot\+\_\+page\+\_\+erase}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+page\+\_\+erase}{boot_page_erase}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+page\+\_\+erase(
+\begin{DoxyParamCaption}
+\item[{}]{address}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+boot\+\_\+page\+\_\+erase\+\_\+normal(address)}\hypertarget{group__avr__boot_ga8c128c031cee4e82ea4950873048db14}{}\label{group__avr__boot_ga8c128c031cee4e82ea4950873048db14}
+Erase the flash page that contains address.
+
+\begin{DoxyNote}{Note}
+address is a byte address in flash, not a word address. 
+\end{DoxyNote}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+page\+\_\+erase\+\_\+safe@{boot\+\_\+page\+\_\+erase\+\_\+safe}}
+\index{boot\+\_\+page\+\_\+erase\+\_\+safe@{boot\+\_\+page\+\_\+erase\+\_\+safe}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+page\+\_\+erase\+\_\+safe}{boot_page_erase_safe}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+page\+\_\+erase\+\_\+safe(
+\begin{DoxyParamCaption}
+\item[{}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_ga5c345350a2fb349619b859dcf0dc0466}{}\label{group__avr__boot_ga5c345350a2fb349619b859dcf0dc0466}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    boot\_spm\_busy\_wait();                       \(\backslash\)
+    eeprom\_busy\_wait();                         \(\backslash\)
+    boot\_page\_erase (address);                  \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Same as \hyperlink{group__avr__boot_ga8c128c031cee4e82ea4950873048db14}{boot\+\_\+page\+\_\+erase()} except it waits for eeprom and spm operations to complete before erasing the page. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+page\+\_\+fill@{boot\+\_\+page\+\_\+fill}}
+\index{boot\+\_\+page\+\_\+fill@{boot\+\_\+page\+\_\+fill}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+page\+\_\+fill}{boot_page_fill}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+page\+\_\+fill(
+\begin{DoxyParamCaption}
+\item[{}]{address, }
+\item[{}]{data}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+boot\+\_\+page\+\_\+fill\+\_\+normal(address, data)}\hypertarget{group__avr__boot_ga61add108c778273ff68233d044c3acca}{}\label{group__avr__boot_ga61add108c778273ff68233d044c3acca}
+Fill the bootloader temporary page buffer for flash address with data word.
+
+\begin{DoxyNote}{Note}
+The address is a byte address. The data is a word. The A\+VR writes data to the buffer a word at a time, but addresses the buffer per byte! So, increment your address by 2 between calls, and send 2 data bytes in a word format! The L\+SB of the data is written to the lower address; the M\+SB of the data is written to the higher address. 
+\end{DoxyNote}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+page\+\_\+fill\+\_\+safe@{boot\+\_\+page\+\_\+fill\+\_\+safe}}
+\index{boot\+\_\+page\+\_\+fill\+\_\+safe@{boot\+\_\+page\+\_\+fill\+\_\+safe}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+page\+\_\+fill\+\_\+safe}{boot_page_fill_safe}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+page\+\_\+fill\+\_\+safe(
+\begin{DoxyParamCaption}
+\item[{}]{address, }
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_ga3f549e2ef9ca0f119a7070064c4dc372}{}\label{group__avr__boot_ga3f549e2ef9ca0f119a7070064c4dc372}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    boot\_spm\_busy\_wait();                       \(\backslash\)
+    eeprom\_busy\_wait();                         \(\backslash\)
+    boot\_page\_fill(address, data);              \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Same as \hyperlink{group__avr__boot_ga61add108c778273ff68233d044c3acca}{boot\+\_\+page\+\_\+fill()} except it waits for eeprom and spm operations to complete before filling the page. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+page\+\_\+write@{boot\+\_\+page\+\_\+write}}
+\index{boot\+\_\+page\+\_\+write@{boot\+\_\+page\+\_\+write}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+page\+\_\+write}{boot_page_write}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+page\+\_\+write(
+\begin{DoxyParamCaption}
+\item[{}]{address}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+boot\+\_\+page\+\_\+write\+\_\+normal(address)}\hypertarget{group__avr__boot_ga8764dc7bdbd459e5d850bafaa0a6e41a}{}\label{group__avr__boot_ga8764dc7bdbd459e5d850bafaa0a6e41a}
+Write the bootloader temporary page buffer to flash page that contains address.
+
+\begin{DoxyNote}{Note}
+address is a byte address in flash, not a word address. 
+\end{DoxyNote}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+page\+\_\+write\+\_\+safe@{boot\+\_\+page\+\_\+write\+\_\+safe}}
+\index{boot\+\_\+page\+\_\+write\+\_\+safe@{boot\+\_\+page\+\_\+write\+\_\+safe}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+page\+\_\+write\+\_\+safe}{boot_page_write_safe}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+page\+\_\+write\+\_\+safe(
+\begin{DoxyParamCaption}
+\item[{}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_ga107ad4c789e5c498062947d394ed98d5}{}\label{group__avr__boot_ga107ad4c789e5c498062947d394ed98d5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    boot\_spm\_busy\_wait();                       \(\backslash\)
+    eeprom\_busy\_wait();                         \(\backslash\)
+    boot\_page\_write (address);                  \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Same as \hyperlink{group__avr__boot_ga8764dc7bdbd459e5d850bafaa0a6e41a}{boot\+\_\+page\+\_\+write()} except it waits for eeprom and spm operations to complete before writing the page. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+rww\+\_\+busy@{boot\+\_\+rww\+\_\+busy}}
+\index{boot\+\_\+rww\+\_\+busy@{boot\+\_\+rww\+\_\+busy}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+rww\+\_\+busy}{boot_rww_busy}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+rww\+\_\+busy(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \& (uint8\+\_\+t)\+\_\+\+BV(\+\_\+\+\_\+\+C\+O\+M\+M\+O\+N\+\_\+\+A\+SB))}\hypertarget{group__avr__boot_ga68addb59347531960dcdbfe6c8425e04}{}\label{group__avr__boot_ga68addb59347531960dcdbfe6c8425e04}
+Check if the R\+WW section is busy. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+rww\+\_\+enable@{boot\+\_\+rww\+\_\+enable}}
+\index{boot\+\_\+rww\+\_\+enable@{boot\+\_\+rww\+\_\+enable}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+rww\+\_\+enable}{boot_rww_enable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+rww\+\_\+enable(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+boot\+\_\+rww\+\_\+enable()}\hypertarget{group__avr__boot_ga5ce9d92fa9c0b2b79c62a09980909f1f}{}\label{group__avr__boot_ga5ce9d92fa9c0b2b79c62a09980909f1f}
+Enable the Read-\/\+While-\/\+Write memory section. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+rww\+\_\+enable\+\_\+safe@{boot\+\_\+rww\+\_\+enable\+\_\+safe}}
+\index{boot\+\_\+rww\+\_\+enable\+\_\+safe@{boot\+\_\+rww\+\_\+enable\+\_\+safe}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+rww\+\_\+enable\+\_\+safe}{boot_rww_enable_safe}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+rww\+\_\+enable\+\_\+safe(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_gaeb0dba1dd9d338516a94c0bd8a8db78a}{}\label{group__avr__boot_gaeb0dba1dd9d338516a94c0bd8a8db78a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    boot\_spm\_busy\_wait();                       \(\backslash\)
+    eeprom\_busy\_wait();                         \(\backslash\)
+    boot\_rww\_enable();                          \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+Same as \hyperlink{group__avr__boot_ga5ce9d92fa9c0b2b79c62a09980909f1f}{boot\+\_\+rww\+\_\+enable()} except waits for eeprom and spm operations to complete before enabling the R\+WW mameory. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+signature\+\_\+byte\+\_\+get@{boot\+\_\+signature\+\_\+byte\+\_\+get}}
+\index{boot\+\_\+signature\+\_\+byte\+\_\+get@{boot\+\_\+signature\+\_\+byte\+\_\+get}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+signature\+\_\+byte\+\_\+get}{boot_signature_byte_get}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+signature\+\_\+byte\+\_\+get(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__boot_gaf375d2543ba38dc56697b4f4bc37a717}{}\label{group__avr__boot_gaf375d2543ba38dc56697b4f4bc37a717}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                      \(\backslash\)
+      uint8\_t \_\_result;                         \(\backslash\)
+      \_\_asm\_\_ \_\_volatile\_\_                      \(\backslash\)
+      (                                         \(\backslash\)
+        \textcolor{stringliteral}{"sts %1, %2\(\backslash\)n\(\backslash\)t"}                        \(\backslash\)
+        \textcolor{stringliteral}{"lpm %0, Z"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}                      \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result)                       \(\backslash\)
+        : \textcolor{stringliteral}{"i"} (\_SFR\_MEM\_ADDR(\_\_SPM\_REG)),       \(\backslash\)
+          \textcolor{stringliteral}{"r"} ((uint8\_t)(\_\_BOOT\_SIGROW\_READ)),  \(\backslash\)
+          \textcolor{stringliteral}{"z"} ((uint16\_t)(addr))                \(\backslash\)
+      );                                        \(\backslash\)
+      \_\_result;                                 \(\backslash\)
+\}))
+\end{DoxyCode}
+Read the Signature Row byte at {\ttfamily address}. For some M\+CU types, this function can also retrieve the factory-\/stored oscillator calibration bytes.
+
+Parameter {\ttfamily address} can be 0-\/0x1f as documented by the datasheet. \begin{DoxyNote}{Note}
+The values are M\+CU type dependent. 
+\end{DoxyNote}
+\index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+spm\+\_\+busy@{boot\+\_\+spm\+\_\+busy}}
+\index{boot\+\_\+spm\+\_\+busy@{boot\+\_\+spm\+\_\+busy}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+spm\+\_\+busy}{boot_spm_busy}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+spm\+\_\+busy(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \& (uint8\+\_\+t)\+\_\+\+BV(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+E\+N\+A\+B\+LE))}\hypertarget{group__avr__boot_gaad75076ad14371bbe9d811a19db0ef79}{}\label{group__avr__boot_gaad75076ad14371bbe9d811a19db0ef79}
+Check if the S\+PM instruction is busy. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+spm\+\_\+busy\+\_\+wait@{boot\+\_\+spm\+\_\+busy\+\_\+wait}}
+\index{boot\+\_\+spm\+\_\+busy\+\_\+wait@{boot\+\_\+spm\+\_\+busy\+\_\+wait}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+spm\+\_\+busy\+\_\+wait}{boot_spm_busy_wait}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+spm\+\_\+busy\+\_\+wait(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~do\{\}while({\bf boot\+\_\+spm\+\_\+busy}())}\hypertarget{group__avr__boot_gada801d48596bd6e0119b310ea5887247}{}\label{group__avr__boot_gada801d48596bd6e0119b310ea5887247}
+Wait while the S\+PM instruction is busy. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+spm\+\_\+interrupt\+\_\+disable@{boot\+\_\+spm\+\_\+interrupt\+\_\+disable}}
+\index{boot\+\_\+spm\+\_\+interrupt\+\_\+disable@{boot\+\_\+spm\+\_\+interrupt\+\_\+disable}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+spm\+\_\+interrupt\+\_\+disable}{boot_spm_interrupt_disable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+spm\+\_\+interrupt\+\_\+disable(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG \&= (uint8\+\_\+t)$\sim$\+\_\+\+BV(S\+P\+M\+IE))}\hypertarget{group__avr__boot_gaf1e01d09c839793a6c0c990b1c5ae8b3}{}\label{group__avr__boot_gaf1e01d09c839793a6c0c990b1c5ae8b3}
+Disable the S\+PM interrupt. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!boot\+\_\+spm\+\_\+interrupt\+\_\+enable@{boot\+\_\+spm\+\_\+interrupt\+\_\+enable}}
+\index{boot\+\_\+spm\+\_\+interrupt\+\_\+enable@{boot\+\_\+spm\+\_\+interrupt\+\_\+enable}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{boot\+\_\+spm\+\_\+interrupt\+\_\+enable}{boot_spm_interrupt_enable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define boot\+\_\+spm\+\_\+interrupt\+\_\+enable(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\+\_\+\+\_\+\+S\+P\+M\+\_\+\+R\+EG $\vert$= (uint8\+\_\+t)\+\_\+\+BV(S\+P\+M\+IE))}\hypertarget{group__avr__boot_ga5b1c861e7ea2d0289b1922d458137a93}{}\label{group__avr__boot_ga5b1c861e7ea2d0289b1922d458137a93}
+Enable the S\+PM interrupt. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON@{B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON}}
+\index{B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON@{B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON}{BOOTLOADER_SECTION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+T\+L\+O\+A\+D\+E\+R\+\_\+\+S\+E\+C\+T\+I\+ON~{\bf \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((section (\char`\"{}.bootloader\char`\"{})))}\hypertarget{group__avr__boot_ga8a60eb0985d40ff71c42bb18f0f5789e}{}\label{group__avr__boot_ga8a60eb0985d40ff71c42bb18f0f5789e}
+Used to declare a function or variable to be placed into a new section called .bootloader. This section and its contents can then be relocated to any address (such as the bootloader N\+R\+WW area) at link-\/time. \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}}
+\index{G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}{GET_EXTENDED_FUSE_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS~(0x0002)}\hypertarget{group__avr__boot_gaf08aabaebbd69da659357f402d4d28ce}{}\label{group__avr__boot_gaf08aabaebbd69da659357f402d4d28ce}
+address to read the extended fuse bits, using boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}}
+\index{G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}{GET_HIGH_FUSE_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+\_\+\+H\+I\+G\+H\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS~(0x0003)}\hypertarget{group__avr__boot_ga44e70c9662e7ac06484144c15bc69aea}{}\label{group__avr__boot_ga44e70c9662e7ac06484144c15bc69aea}
+address to read the high fuse bits, using boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS}}
+\index{G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS}{GET_LOCK_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+TS~(0x0001)}\hypertarget{group__avr__boot_gae12d288a22cfbfa9d0cde12b1a779bfe}{}\label{group__avr__boot_gae12d288a22cfbfa9d0cde12b1a779bfe}
+address to read the lock bits, using boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get \index{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}!G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}}
+\index{G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS@{G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}!$<$avr/boot.\+h$>$\+: Bootloader Support Utilities@{$<$avr/boot.\+h$>$\+: Bootloader Support Utilities}}
+\subsubsection[{\texorpdfstring{G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS}{GET_LOW_FUSE_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+T\+\_\+\+L\+O\+W\+\_\+\+F\+U\+S\+E\+\_\+\+B\+I\+TS~(0x0000)}\hypertarget{group__avr__boot_gac68c37ecf2354ba2af6e08379d65899f}{}\label{group__avr__boot_gac68c37ecf2354ba2af6e08379d65899f}
+address to read the low fuse bits, using boot\+\_\+lock\+\_\+fuse\+\_\+bits\+\_\+get 

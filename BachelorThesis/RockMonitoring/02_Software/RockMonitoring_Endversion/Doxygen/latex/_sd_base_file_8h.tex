@@ -1,0 +1,202 @@
+\hypertarget{_sd_base_file_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\+Sd\+Base\+File.h File Reference}
+\label{_sd_base_file_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\+Sd\+Base\+File.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\+Sd\+Base\+File.\+h}}
+
+
+\hyperlink{class_sd_base_file}{Sd\+Base\+File} class.  
+
+
+{\ttfamily \#include \char`\"{}Sd\+Fat\+Config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sd\+Volume.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Wasp\+U\+S\+B.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_fat_pos__t}{Fat\+Pos\+\_\+t}
+\begin{DoxyCompactList}\small\item\em internal type for istream do not use in user apps \end{DoxyCompactList}\item 
+class \hyperlink{class_sd_base_file}{Sd\+Base\+File}
+\begin{DoxyCompactList}\small\item\em Base class for \hyperlink{class_sd_file}{Sd\+File} with Print and C++ streams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{P\+G\+M\+\_\+P}~const char$\ast$
+\item 
+\#define \hyperlink{_sd_base_file_8h_a9c00057fd19e916cc1aa0a5949336beb}{P\+S\+TR}(x)~(x)
+\item 
+\#define \hyperlink{_sd_base_file_8h_a48c60b057902adf805797f183286728d}{pgm\+\_\+read\+\_\+byte}(addr)~($\ast$(const unsigned char$\ast$)(addr))
+\item 
+\#define \hyperlink{_sd_base_file_8h_a910fb5f01313d339d3b835d45e1e5ad0}{pgm\+\_\+read\+\_\+word}(addr)~($\ast$(const uint16\+\_\+t$\ast$)(addr))
+\item 
+\#define \hyperlink{_sd_base_file_8h_a75acaba9e781937468d0911423bc0c35}{P\+R\+O\+G\+M\+EM}~const
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}{O\+\_\+\+R\+E\+AD} = 0\+X01
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_ac13ca62d7e6f8f6d657d4607474652bf}{O\+\_\+\+R\+D\+O\+N\+LY} = \hyperlink{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}{O\+\_\+\+R\+E\+AD}
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a44c1620ada13f6318ab39b9fa38ef55a}{O\+\_\+\+W\+R\+I\+TE} = 0\+X02
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a782767ee2580bb1566048017b254281d}{O\+\_\+\+W\+R\+O\+N\+LY} = \hyperlink{_sd_base_file_8h_a44c1620ada13f6318ab39b9fa38ef55a}{O\+\_\+\+W\+R\+I\+TE}
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_ad79c5a45cb5e4855b771629fc15d78f6}{O\+\_\+\+R\+D\+WR} = (\hyperlink{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}{O\+\_\+\+R\+E\+AD} $\vert$ \hyperlink{_sd_base_file_8h_a44c1620ada13f6318ab39b9fa38ef55a}{O\+\_\+\+W\+R\+I\+TE})
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a4efda39151f5ef2dc7fbd138be51336a}{O\+\_\+\+A\+C\+C\+M\+O\+DE} = (\hyperlink{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}{O\+\_\+\+R\+E\+AD} $\vert$ \hyperlink{_sd_base_file_8h_a44c1620ada13f6318ab39b9fa38ef55a}{O\+\_\+\+W\+R\+I\+TE})
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a4242b37e810af3a6485adda0e08a9a2b}{O\+\_\+\+A\+P\+P\+E\+ND} = 0\+X04
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a3066c471d52b056dec13fa567f7bbd9d}{O\+\_\+\+S\+Y\+NC} = 0\+X08
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a9dc438ff90d0c8af452331c339dbc08e}{O\+\_\+\+T\+R\+U\+NC} = 0\+X10
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a409d6381c7eafaf7d8978e53b736b966}{O\+\_\+\+A\+T\+\_\+\+E\+ND} = 0\+X20
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a20d0ef801486dd02de6ee482de731193}{O\+\_\+\+C\+R\+E\+AT} = 0\+X40
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_ab5635d4288cb294c1ed000fa183e072b}{O\+\_\+\+E\+X\+CL} = 0\+X80
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_ac78cfe032599ef1f5723c62106017fcd}{L\+S\+\_\+\+D\+A\+TE} = 1
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a8170e56f2df0139f3acd73c35636fa7f}{L\+S\+\_\+\+S\+I\+ZE} = 2
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_af90ecd4124f4c2563b37174be91e76f9}{L\+S\+\_\+R} = 4
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a5f34ce6e95713d872ca6a640c8783462}{T\+\_\+\+A\+C\+C\+E\+SS} = 1
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a533dc316f5a59209ac5e9c630d2df4c4}{T\+\_\+\+C\+R\+E\+A\+TE} = 2
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a2a6192fd0f5847783868deed6de53d1e}{T\+\_\+\+W\+R\+I\+TE} = 4
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a4da8c96e256b06356321e81705494010}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED} = 0
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a666774999b9afd627fdad75471101581}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL} = 1
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a1bb2e8f6b6f90bbf4d02608cd267af42}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED} = 2
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_a9a1a07cb1d09cfdb3cc53183c6e5dc57}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32} = 3
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_ac301b0465fdd7953c6e110b9896cc9fd}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR} = 4
+\item 
+uint8\+\_\+t const \hyperlink{_sd_base_file_8h_abc9b0906aeeedfe122b0ca629bac889b}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR} = \hyperlink{_sd_base_file_8h_a1bb2e8f6b6f90bbf4d02608cd267af42}{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED}
+\item 
+uint16\+\_\+t const \hyperlink{_sd_base_file_8h_a441bb1bc5f52d512656de3b86a279948}{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE} = ((2000 -\/ 1980) $<$$<$ 9) $\vert$ (1 $<$$<$ 5) $\vert$ 1
+\item 
+uint16\+\_\+t const \hyperlink{_sd_base_file_8h_a00451fc2d3563a2255797bd1f40507fb}{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME} = (1 $<$$<$ 11)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_sd_base_file}{Sd\+Base\+File} class. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!P\+G\+M\+\_\+P@{P\+G\+M\+\_\+P}}
+\index{P\+G\+M\+\_\+P@{P\+G\+M\+\_\+P}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{P\+G\+M\+\_\+P}{PGM_P}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+G\+M\+\_\+P~const char$\ast$}\hypertarget{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}{}\label{_sd_base_file_8h_a963f816fc88a5d8479c285ed4c630229}
+pointer to flash for A\+RM \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!pgm\+\_\+read\+\_\+byte@{pgm\+\_\+read\+\_\+byte}}
+\index{pgm\+\_\+read\+\_\+byte@{pgm\+\_\+read\+\_\+byte}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{pgm\+\_\+read\+\_\+byte}{pgm_read_byte}}]{\setlength{\rightskip}{0pt plus 5cm}\#define pgm\+\_\+read\+\_\+byte(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)~($\ast$(const unsigned char$\ast$)(addr))}\hypertarget{_sd_base_file_8h_a48c60b057902adf805797f183286728d}{}\label{_sd_base_file_8h_a48c60b057902adf805797f183286728d}
+read 8-\/bits from flash for A\+RM \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!pgm\+\_\+read\+\_\+word@{pgm\+\_\+read\+\_\+word}}
+\index{pgm\+\_\+read\+\_\+word@{pgm\+\_\+read\+\_\+word}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{pgm\+\_\+read\+\_\+word}{pgm_read_word}}]{\setlength{\rightskip}{0pt plus 5cm}\#define pgm\+\_\+read\+\_\+word(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)~($\ast$(const uint16\+\_\+t$\ast$)(addr))}\hypertarget{_sd_base_file_8h_a910fb5f01313d339d3b835d45e1e5ad0}{}\label{_sd_base_file_8h_a910fb5f01313d339d3b835d45e1e5ad0}
+read 16-\/bits from flash for A\+RM \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!P\+R\+O\+G\+M\+EM@{P\+R\+O\+G\+M\+EM}}
+\index{P\+R\+O\+G\+M\+EM@{P\+R\+O\+G\+M\+EM}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+G\+M\+EM}{PROGMEM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+G\+M\+EM~const}\hypertarget{_sd_base_file_8h_a75acaba9e781937468d0911423bc0c35}{}\label{_sd_base_file_8h_a75acaba9e781937468d0911423bc0c35}
+store in flash for A\+RM \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!P\+S\+TR@{P\+S\+TR}}
+\index{P\+S\+TR@{P\+S\+TR}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{P\+S\+TR}{PSTR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+S\+TR(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(x)}\hypertarget{_sd_base_file_8h_a9c00057fd19e916cc1aa0a5949336beb}{}\label{_sd_base_file_8h_a9c00057fd19e916cc1aa0a5949336beb}
+store literal string in flash for A\+RM 
+
+\subsection{Variable Documentation}
+\index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE@{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE}}
+\index{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE@{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE}{FAT_DEFAULT_DATE}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t const F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+TE = ((2000 -\/ 1980) $<$$<$ 9) $\vert$ (1 $<$$<$ 5) $\vert$ 1}\hypertarget{_sd_base_file_8h_a441bb1bc5f52d512656de3b86a279948}{}\label{_sd_base_file_8h_a441bb1bc5f52d512656de3b86a279948}
+Default date for file timestamps is 1 Jan 2000 \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME@{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME}}
+\index{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME@{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME}{FAT_DEFAULT_TIME}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t const F\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+I\+ME = (1 $<$$<$ 11)}\hypertarget{_sd_base_file_8h_a00451fc2d3563a2255797bd1f40507fb}{}\label{_sd_base_file_8h_a00451fc2d3563a2255797bd1f40507fb}
+Default time for file timestamp is 1 am \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED}}
+\index{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED}{FAT_FILE_TYPE_CLOSED}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+L\+O\+S\+ED = 0}\hypertarget{_sd_base_file_8h_a4da8c96e256b06356321e81705494010}{}\label{_sd_base_file_8h_a4da8c96e256b06356321e81705494010}
+This file has not been opened. \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR}}
+\index{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR}{FAT_FILE_TYPE_MIN_DIR}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+N\+\_\+\+D\+IR = {\bf F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED}}\hypertarget{_sd_base_file_8h_abc9b0906aeeedfe122b0ca629bac889b}{}\label{_sd_base_file_8h_abc9b0906aeeedfe122b0ca629bac889b}
+Test value for directory type \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL}}
+\index{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL}{FAT_FILE_TYPE_NORMAL}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL = 1}\hypertarget{_sd_base_file_8h_a666774999b9afd627fdad75471101581}{}\label{_sd_base_file_8h_a666774999b9afd627fdad75471101581}
+A normal file \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32}}
+\index{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32}{FAT_FILE_TYPE_ROOT32}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T32 = 3}\hypertarget{_sd_base_file_8h_a9a1a07cb1d09cfdb3cc53183c6e5dc57}{}\label{_sd_base_file_8h_a9a1a07cb1d09cfdb3cc53183c6e5dc57}
+A F\+A\+T32 root directory \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED}}
+\index{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED}{FAT_FILE_TYPE_ROOT_FIXED}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+O\+T\+\_\+\+F\+I\+X\+ED = 2}\hypertarget{_sd_base_file_8h_a1bb2e8f6b6f90bbf4d02608cd267af42}{}\label{_sd_base_file_8h_a1bb2e8f6b6f90bbf4d02608cd267af42}
+A F\+A\+T12 or F\+A\+T16 root directory \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR}}
+\index{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR@{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR}{FAT_FILE_TYPE_SUBDIR}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const F\+A\+T\+\_\+\+F\+I\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+U\+B\+D\+IR = 4}\hypertarget{_sd_base_file_8h_ac301b0465fdd7953c6e110b9896cc9fd}{}\label{_sd_base_file_8h_ac301b0465fdd7953c6e110b9896cc9fd}
+A subdirectory file \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!L\+S\+\_\+\+D\+A\+TE@{L\+S\+\_\+\+D\+A\+TE}}
+\index{L\+S\+\_\+\+D\+A\+TE@{L\+S\+\_\+\+D\+A\+TE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{L\+S\+\_\+\+D\+A\+TE}{LS_DATE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const L\+S\+\_\+\+D\+A\+TE = 1}\hypertarget{_sd_base_file_8h_ac78cfe032599ef1f5723c62106017fcd}{}\label{_sd_base_file_8h_ac78cfe032599ef1f5723c62106017fcd}
+ls() flag to print modify date \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!L\+S\+\_\+R@{L\+S\+\_\+R}}
+\index{L\+S\+\_\+R@{L\+S\+\_\+R}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{L\+S\+\_\+R}{LS_R}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const L\+S\+\_\+R = 4}\hypertarget{_sd_base_file_8h_af90ecd4124f4c2563b37174be91e76f9}{}\label{_sd_base_file_8h_af90ecd4124f4c2563b37174be91e76f9}
+ls() flag for recursive list of subdirectories \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!L\+S\+\_\+\+S\+I\+ZE@{L\+S\+\_\+\+S\+I\+ZE}}
+\index{L\+S\+\_\+\+S\+I\+ZE@{L\+S\+\_\+\+S\+I\+ZE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{L\+S\+\_\+\+S\+I\+ZE}{LS_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const L\+S\+\_\+\+S\+I\+ZE = 2}\hypertarget{_sd_base_file_8h_a8170e56f2df0139f3acd73c35636fa7f}{}\label{_sd_base_file_8h_a8170e56f2df0139f3acd73c35636fa7f}
+ls() flag to print file size \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+A\+C\+C\+M\+O\+DE@{O\+\_\+\+A\+C\+C\+M\+O\+DE}}
+\index{O\+\_\+\+A\+C\+C\+M\+O\+DE@{O\+\_\+\+A\+C\+C\+M\+O\+DE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+A\+C\+C\+M\+O\+DE}{O_ACCMODE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+A\+C\+C\+M\+O\+DE = ({\bf O\+\_\+\+R\+E\+AD} $\vert$ {\bf O\+\_\+\+W\+R\+I\+TE})}\hypertarget{_sd_base_file_8h_a4efda39151f5ef2dc7fbd138be51336a}{}\label{_sd_base_file_8h_a4efda39151f5ef2dc7fbd138be51336a}
+open() oflag mask for access modes \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+A\+P\+P\+E\+ND@{O\+\_\+\+A\+P\+P\+E\+ND}}
+\index{O\+\_\+\+A\+P\+P\+E\+ND@{O\+\_\+\+A\+P\+P\+E\+ND}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+A\+P\+P\+E\+ND}{O_APPEND}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+A\+P\+P\+E\+ND = 0\+X04}\hypertarget{_sd_base_file_8h_a4242b37e810af3a6485adda0e08a9a2b}{}\label{_sd_base_file_8h_a4242b37e810af3a6485adda0e08a9a2b}
+The file offset shall be set to the end of the file prior to each write. \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+A\+T\+\_\+\+E\+ND@{O\+\_\+\+A\+T\+\_\+\+E\+ND}}
+\index{O\+\_\+\+A\+T\+\_\+\+E\+ND@{O\+\_\+\+A\+T\+\_\+\+E\+ND}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+A\+T\+\_\+\+E\+ND}{O_AT_END}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+A\+T\+\_\+\+E\+ND = 0\+X20}\hypertarget{_sd_base_file_8h_a409d6381c7eafaf7d8978e53b736b966}{}\label{_sd_base_file_8h_a409d6381c7eafaf7d8978e53b736b966}
+set the initial position at the end of the file \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+C\+R\+E\+AT@{O\+\_\+\+C\+R\+E\+AT}}
+\index{O\+\_\+\+C\+R\+E\+AT@{O\+\_\+\+C\+R\+E\+AT}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+C\+R\+E\+AT}{O_CREAT}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+C\+R\+E\+AT = 0\+X40}\hypertarget{_sd_base_file_8h_a20d0ef801486dd02de6ee482de731193}{}\label{_sd_base_file_8h_a20d0ef801486dd02de6ee482de731193}
+create the file if nonexistent \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+E\+X\+CL@{O\+\_\+\+E\+X\+CL}}
+\index{O\+\_\+\+E\+X\+CL@{O\+\_\+\+E\+X\+CL}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+E\+X\+CL}{O_EXCL}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+E\+X\+CL = 0\+X80}\hypertarget{_sd_base_file_8h_ab5635d4288cb294c1ed000fa183e072b}{}\label{_sd_base_file_8h_ab5635d4288cb294c1ed000fa183e072b}
+If O\+\_\+\+C\+R\+E\+AT and O\+\_\+\+E\+X\+CL are set, open() shall fail if the file exists \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+R\+D\+O\+N\+LY@{O\+\_\+\+R\+D\+O\+N\+LY}}
+\index{O\+\_\+\+R\+D\+O\+N\+LY@{O\+\_\+\+R\+D\+O\+N\+LY}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+R\+D\+O\+N\+LY}{O_RDONLY}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+R\+D\+O\+N\+LY = {\bf O\+\_\+\+R\+E\+AD}}\hypertarget{_sd_base_file_8h_ac13ca62d7e6f8f6d657d4607474652bf}{}\label{_sd_base_file_8h_ac13ca62d7e6f8f6d657d4607474652bf}
+open() oflag -\/ same as O\+\_\+\+IN \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+R\+D\+WR@{O\+\_\+\+R\+D\+WR}}
+\index{O\+\_\+\+R\+D\+WR@{O\+\_\+\+R\+D\+WR}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+R\+D\+WR}{O_RDWR}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+R\+D\+WR = ({\bf O\+\_\+\+R\+E\+AD} $\vert$ {\bf O\+\_\+\+W\+R\+I\+TE})}\hypertarget{_sd_base_file_8h_ad79c5a45cb5e4855b771629fc15d78f6}{}\label{_sd_base_file_8h_ad79c5a45cb5e4855b771629fc15d78f6}
+open() oflag for reading and writing \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+R\+E\+AD@{O\+\_\+\+R\+E\+AD}}
+\index{O\+\_\+\+R\+E\+AD@{O\+\_\+\+R\+E\+AD}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+R\+E\+AD}{O_READ}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+R\+E\+AD = 0\+X01}\hypertarget{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}{}\label{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}
+open() oflag for reading \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+S\+Y\+NC@{O\+\_\+\+S\+Y\+NC}}
+\index{O\+\_\+\+S\+Y\+NC@{O\+\_\+\+S\+Y\+NC}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+S\+Y\+NC}{O_SYNC}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+S\+Y\+NC = 0\+X08}\hypertarget{_sd_base_file_8h_a3066c471d52b056dec13fa567f7bbd9d}{}\label{_sd_base_file_8h_a3066c471d52b056dec13fa567f7bbd9d}
+synchronous writes -\/ call sync() after each write \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+T\+R\+U\+NC@{O\+\_\+\+T\+R\+U\+NC}}
+\index{O\+\_\+\+T\+R\+U\+NC@{O\+\_\+\+T\+R\+U\+NC}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+T\+R\+U\+NC}{O_TRUNC}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+T\+R\+U\+NC = 0\+X10}\hypertarget{_sd_base_file_8h_a9dc438ff90d0c8af452331c339dbc08e}{}\label{_sd_base_file_8h_a9dc438ff90d0c8af452331c339dbc08e}
+truncate the file to zero length \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+W\+R\+I\+TE@{O\+\_\+\+W\+R\+I\+TE}}
+\index{O\+\_\+\+W\+R\+I\+TE@{O\+\_\+\+W\+R\+I\+TE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+W\+R\+I\+TE}{O_WRITE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+W\+R\+I\+TE = 0\+X02}\hypertarget{_sd_base_file_8h_a44c1620ada13f6318ab39b9fa38ef55a}{}\label{_sd_base_file_8h_a44c1620ada13f6318ab39b9fa38ef55a}
+open() oflag for write \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!O\+\_\+\+W\+R\+O\+N\+LY@{O\+\_\+\+W\+R\+O\+N\+LY}}
+\index{O\+\_\+\+W\+R\+O\+N\+LY@{O\+\_\+\+W\+R\+O\+N\+LY}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{O\+\_\+\+W\+R\+O\+N\+LY}{O_WRONLY}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const O\+\_\+\+W\+R\+O\+N\+LY = {\bf O\+\_\+\+W\+R\+I\+TE}}\hypertarget{_sd_base_file_8h_a782767ee2580bb1566048017b254281d}{}\label{_sd_base_file_8h_a782767ee2580bb1566048017b254281d}
+open() oflag -\/ same as O\+\_\+\+W\+R\+I\+TE \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!T\+\_\+\+A\+C\+C\+E\+SS@{T\+\_\+\+A\+C\+C\+E\+SS}}
+\index{T\+\_\+\+A\+C\+C\+E\+SS@{T\+\_\+\+A\+C\+C\+E\+SS}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{T\+\_\+\+A\+C\+C\+E\+SS}{T_ACCESS}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const T\+\_\+\+A\+C\+C\+E\+SS = 1}\hypertarget{_sd_base_file_8h_a5f34ce6e95713d872ca6a640c8783462}{}\label{_sd_base_file_8h_a5f34ce6e95713d872ca6a640c8783462}
+set the file\textquotesingle{}s last access date \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!T\+\_\+\+C\+R\+E\+A\+TE@{T\+\_\+\+C\+R\+E\+A\+TE}}
+\index{T\+\_\+\+C\+R\+E\+A\+TE@{T\+\_\+\+C\+R\+E\+A\+TE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{T\+\_\+\+C\+R\+E\+A\+TE}{T_CREATE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const T\+\_\+\+C\+R\+E\+A\+TE = 2}\hypertarget{_sd_base_file_8h_a533dc316f5a59209ac5e9c630d2df4c4}{}\label{_sd_base_file_8h_a533dc316f5a59209ac5e9c630d2df4c4}
+set the file\textquotesingle{}s creation date and time \index{Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}!T\+\_\+\+W\+R\+I\+TE@{T\+\_\+\+W\+R\+I\+TE}}
+\index{T\+\_\+\+W\+R\+I\+TE@{T\+\_\+\+W\+R\+I\+TE}!Sd\+Base\+File.\+h@{Sd\+Base\+File.\+h}}
+\subsubsection[{\texorpdfstring{T\+\_\+\+W\+R\+I\+TE}{T_WRITE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const T\+\_\+\+W\+R\+I\+TE = 4}\hypertarget{_sd_base_file_8h_a2a6192fd0f5847783868deed6de53d1e}{}\label{_sd_base_file_8h_a2a6192fd0f5847783868deed6de53d1e}
+Set the file\textquotesingle{}s write date and time 

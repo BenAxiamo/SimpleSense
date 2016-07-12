@@ -1,0 +1,241 @@
+\hypertarget{_wasp_sensor_ambient_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Ambient/\+Wasp\+Sensor\+Ambient.h File Reference}
+\label{_wasp_sensor_ambient_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Ambient/\+Wasp\+Sensor\+Ambient.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Ambient/\+Wasp\+Sensor\+Ambient.\+h}}
+
+
+Library for environmental \hyperlink{class_sensors}{Sensors}.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$Wasp\+Constants.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_sensor_ambient}{Wasp\+Sensor\+Ambient}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_sensor_ambient}{Wasp\+Sensor\+Ambient} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+D\+E\+B\+UG}\hypertarget{_wasp_sensor_ambient_8h_ae9cbcdca7743c35a7e37190a539b33b9}{}\label{_wasp_sensor_ambient_8h_ae9cbcdca7743c35a7e37190a539b33b9}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+S\+E\+N\+S\+I\+R\+I\+O\+N\+\_\+\+P\+WR}~15\hypertarget{_wasp_sensor_ambient_8h_a396e437a9eb15b002f3929c5e1f59e8c}{}\label{_wasp_sensor_ambient_8h_a396e437a9eb15b002f3929c5e1f59e8c}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+S\+E\+N\+S\+I\+R\+I\+O\+N\+\_\+\+D\+A\+TA}~17\hypertarget{_wasp_sensor_ambient_8h_a65ae9f1468bfe7bcb03b96c868a54d14}{}\label{_wasp_sensor_ambient_8h_a65ae9f1468bfe7bcb03b96c868a54d14}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+L\+D\+R\+\_\+\+O\+UT}~A\+N\+A\+L\+O\+G6\hypertarget{_wasp_sensor_ambient_8h_adb1820bf90907ea8f152c03c203453e4}{}\label{_wasp_sensor_ambient_8h_adb1820bf90907ea8f152c03c203453e4}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+S\+E\+N\+S\+I\+R\+I\+O\+N\+\_\+\+C\+LK}~D\+I\+G\+I\+T\+A\+L2\hypertarget{_wasp_sensor_ambient_8h_acb081b6c1124bb68e62fd30d539a3ef5}{}\label{_wasp_sensor_ambient_8h_acb081b6c1124bb68e62fd30d539a3ef5}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+L\+D\+R\+\_\+\+P\+WR}~D\+I\+G\+I\+T\+A\+L4\hypertarget{_wasp_sensor_ambient_8h_a542c26faa56d31595dd6ad4cf517cad9}{}\label{_wasp_sensor_ambient_8h_a542c26faa56d31595dd6ad4cf517cad9}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+S\+E\+N\+S\+I\+R\+I\+O\+N\+\_\+\+G\+ND}~D\+I\+G\+I\+T\+A\+L6\hypertarget{_wasp_sensor_ambient_8h_a9dcebe4bba9a7a5ef25a65cc344c2db7}{}\label{_wasp_sensor_ambient_8h_a9dcebe4bba9a7a5ef25a65cc344c2db7}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+L\+D\+R\+\_\+\+G\+ND}~D\+I\+G\+I\+T\+A\+L8\hypertarget{_wasp_sensor_ambient_8h_a582579518cda391b9f8d819030d8b614}{}\label{_wasp_sensor_ambient_8h_a582579518cda391b9f8d819030d8b614}
+
+\item 
+\#define \hyperlink{_wasp_sensor_ambient_8h_a97a540f9e4a9d9870f122ed2782b3316}{S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}~1\hypertarget{_wasp_sensor_ambient_8h_a97a540f9e4a9d9870f122ed2782b3316}{}\label{_wasp_sensor_ambient_8h_a97a540f9e4a9d9870f122ed2782b3316}
+
+\begin{DoxyCompactList}\small\item\em Sensirion temperature. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_ambient_8h_a2cd2eb59832d9692b3cbf07add5bb9f1}{S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+H\+U\+M\+I\+D\+I\+TY}~2\hypertarget{_wasp_sensor_ambient_8h_a2cd2eb59832d9692b3cbf07add5bb9f1}{}\label{_wasp_sensor_ambient_8h_a2cd2eb59832d9692b3cbf07add5bb9f1}
+
+\begin{DoxyCompactList}\small\item\em Sensirion humidity. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+L\+DR}~4\hypertarget{_wasp_sensor_ambient_8h_a94c97888a2e24359b55e09477b3fe530}{}\label{_wasp_sensor_ambient_8h_a94c97888a2e24359b55e09477b3fe530}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+L\+UX}~8\hypertarget{_wasp_sensor_ambient_8h_a5db39631a786fe1cc9a5b86c0ca7e3e0}{}\label{_wasp_sensor_ambient_8h_a5db39631a786fe1cc9a5b86c0ca7e3e0}
+
+\item 
+\#define \hyperlink{_wasp_sensor_ambient_8h_a7021b8be97769916f747edd7a9ef704e}{S\+E\+N\+S\+\_\+\+P\+R\+E\+C\+\_\+\+H\+I\+GH}~1\hypertarget{_wasp_sensor_ambient_8h_a7021b8be97769916f747edd7a9ef704e}{}\label{_wasp_sensor_ambient_8h_a7021b8be97769916f747edd7a9ef704e}
+
+\begin{DoxyCompactList}\small\item\em Sensirion High Precision. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_sensor_ambient_8h_a6b784799acc754985adc11f112016c30}{S\+E\+N\+S\+\_\+\+P\+R\+E\+C\+\_\+\+L\+OW}~0\hypertarget{_wasp_sensor_ambient_8h_a6b784799acc754985adc11f112016c30}{}\label{_wasp_sensor_ambient_8h_a6b784799acc754985adc11f112016c30}
+
+\begin{DoxyCompactList}\small\item\em Sensirion Low Precision. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+T\+S\+L2561\+\_\+\+H\+\_\+}\hypertarget{_wasp_sensor_ambient_8h_aa008be3b600aa0f5e618b927edf5196b}{}\label{_wasp_sensor_ambient_8h_aa008be3b600aa0f5e618b927edf5196b}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE}~2\hypertarget{_wasp_sensor_ambient_8h_a4161237608b9ad014b6fc7e76affb6cb}{}\label{_wasp_sensor_ambient_8h_a4161237608b9ad014b6fc7e76affb6cb}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED}~1\hypertarget{_wasp_sensor_ambient_8h_a65c7b3d2a51f0a8b6879b2b6d4ee7870}{}\label{_wasp_sensor_ambient_8h_a65c7b3d2a51f0a8b6879b2b6d4ee7870}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM}~0\hypertarget{_wasp_sensor_ambient_8h_a7476846e073c7f982c33c1832cee381e}{}\label{_wasp_sensor_ambient_8h_a7476846e073c7f982c33c1832cee381e}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}~0x39\hypertarget{_wasp_sensor_ambient_8h_ac7cc83a3f07e3073fe2c17deb84e8cfc}{}\label{_wasp_sensor_ambient_8h_ac7cc83a3f07e3073fe2c17deb84e8cfc}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL}\hypertarget{_wasp_sensor_ambient_8h_abeaff1c31984430865135952cb6f8fe2}{}\label{_wasp_sensor_ambient_8h_abeaff1c31984430865135952cb6f8fe2}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+R\+E\+A\+D\+B\+IT}~(0x01)\hypertarget{_wasp_sensor_ambient_8h_ada61c1a97bbcf908ddd0b8b5557ddd1d}{}\label{_wasp_sensor_ambient_8h_ada61c1a97bbcf908ddd0b8b5557ddd1d}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}~(0x80)\hypertarget{_wasp_sensor_ambient_8h_a79b7f57e5b18fa44ecd3f6f0cf46dffc}{}\label{_wasp_sensor_ambient_8h_a79b7f57e5b18fa44ecd3f6f0cf46dffc}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT}~(0x40)\hypertarget{_wasp_sensor_ambient_8h_af62178966502d4c4eecb09824fa19bfa}{}\label{_wasp_sensor_ambient_8h_af62178966502d4c4eecb09824fa19bfa}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT}~(0x20)\hypertarget{_wasp_sensor_ambient_8h_adb0ddd7f64255780596d7be8e02d7745}{}\label{_wasp_sensor_ambient_8h_adb0ddd7f64255780596d7be8e02d7745}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT}~(0x10)\hypertarget{_wasp_sensor_ambient_8h_aac8bd42f5795a24d44d030f6022f93b7}{}\label{_wasp_sensor_ambient_8h_aac8bd42f5795a24d44d030f6022f93b7}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON}~(0x03)\hypertarget{_wasp_sensor_ambient_8h_a1465abbd34c333983420f5644f239fd7}{}\label{_wasp_sensor_ambient_8h_a1465abbd34c333983420f5644f239fd7}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF}~(0x00)\hypertarget{_wasp_sensor_ambient_8h_aedfdafae91b044746ef8da6bb89b66ec}{}\label{_wasp_sensor_ambient_8h_aedfdafae91b044746ef8da6bb89b66ec}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE}~(14)\hypertarget{_wasp_sensor_ambient_8h_a6444753786cd6af180a38fa5a10f6829}{}\label{_wasp_sensor_ambient_8h_a6444753786cd6af180a38fa5a10f6829}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE}~(9)\hypertarget{_wasp_sensor_ambient_8h_a3155eac331a5f5946d097c1bf0cc65b9}{}\label{_wasp_sensor_ambient_8h_a3155eac331a5f5946d097c1bf0cc65b9}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE}~(10)\hypertarget{_wasp_sensor_ambient_8h_aff6d851aed7d3a64a6ef5f7b99c7d916}{}\label{_wasp_sensor_ambient_8h_aff6d851aed7d3a64a6ef5f7b99c7d916}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0}~(0x7517)\hypertarget{_wasp_sensor_ambient_8h_a3d24db000dcaa1f9dfb2e610c19fdce1}{}\label{_wasp_sensor_ambient_8h_a3d24db000dcaa1f9dfb2e610c19fdce1}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1}~(0x0\+F\+E7)\hypertarget{_wasp_sensor_ambient_8h_ab0487a56c1c55f0bb7460895df3e840c}{}\label{_wasp_sensor_ambient_8h_ab0487a56c1c55f0bb7460895df3e840c}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T}~(0x0040)\hypertarget{_wasp_sensor_ambient_8h_af60c10ff6e676fad517009d63b46fec3}{}\label{_wasp_sensor_ambient_8h_af60c10ff6e676fad517009d63b46fec3}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T}~(0x01f2)\hypertarget{_wasp_sensor_ambient_8h_a5616f586cc9bef37fe8b8d7deac39945}{}\label{_wasp_sensor_ambient_8h_a5616f586cc9bef37fe8b8d7deac39945}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T}~(0x01be)\hypertarget{_wasp_sensor_ambient_8h_ab613a4b2b8d312667d3f51d121a6a2c0}{}\label{_wasp_sensor_ambient_8h_ab613a4b2b8d312667d3f51d121a6a2c0}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T}~(0x0080)\hypertarget{_wasp_sensor_ambient_8h_a0b3a7f72cd8086ce30c194d4a421aace}{}\label{_wasp_sensor_ambient_8h_a0b3a7f72cd8086ce30c194d4a421aace}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T}~(0x0214)\hypertarget{_wasp_sensor_ambient_8h_ac6e96f5cf30e279a67673dcbdaeb1b30}{}\label{_wasp_sensor_ambient_8h_ac6e96f5cf30e279a67673dcbdaeb1b30}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T}~(0x02d1)\hypertarget{_wasp_sensor_ambient_8h_a86ccc9bbd9d4a6108c74ecb0775c141d}{}\label{_wasp_sensor_ambient_8h_a86ccc9bbd9d4a6108c74ecb0775c141d}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T}~(0x00c0)\hypertarget{_wasp_sensor_ambient_8h_acd083de11e526ae1e0ac26bbbf81cf65}{}\label{_wasp_sensor_ambient_8h_acd083de11e526ae1e0ac26bbbf81cf65}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T}~(0x023f)\hypertarget{_wasp_sensor_ambient_8h_a438019626b45bbcdc11fa9d980929ffc}{}\label{_wasp_sensor_ambient_8h_a438019626b45bbcdc11fa9d980929ffc}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T}~(0x037b)\hypertarget{_wasp_sensor_ambient_8h_ac25244168d07b7dbc8ec72b580291a04}{}\label{_wasp_sensor_ambient_8h_ac25244168d07b7dbc8ec72b580291a04}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T}~(0x0100)\hypertarget{_wasp_sensor_ambient_8h_ae5fd5107304643a7b18d6226e4f6fccb}{}\label{_wasp_sensor_ambient_8h_ae5fd5107304643a7b18d6226e4f6fccb}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T}~(0x0270)\hypertarget{_wasp_sensor_ambient_8h_a942a646c02c386b0fa86a8e1e3676e0c}{}\label{_wasp_sensor_ambient_8h_a942a646c02c386b0fa86a8e1e3676e0c}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T}~(0x03fe)\hypertarget{_wasp_sensor_ambient_8h_a1ec7ad75708aa4f4a7c74fbefeee7664}{}\label{_wasp_sensor_ambient_8h_a1ec7ad75708aa4f4a7c74fbefeee7664}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T}~(0x0138)\hypertarget{_wasp_sensor_ambient_8h_aac19bb4ed796e63d7d6b7dffcbfd2e84}{}\label{_wasp_sensor_ambient_8h_aac19bb4ed796e63d7d6b7dffcbfd2e84}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T}~(0x016f)\hypertarget{_wasp_sensor_ambient_8h_ad87efe789095858d8b2a0be80bb3152f}{}\label{_wasp_sensor_ambient_8h_ad87efe789095858d8b2a0be80bb3152f}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T}~(0x01fc)\hypertarget{_wasp_sensor_ambient_8h_a9ad281ceb8ced6e4f1f7194fcc59426b}{}\label{_wasp_sensor_ambient_8h_a9ad281ceb8ced6e4f1f7194fcc59426b}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T}~(0x019a)\hypertarget{_wasp_sensor_ambient_8h_ad8e97f6722bd5b66236437451dd61d73}{}\label{_wasp_sensor_ambient_8h_ad8e97f6722bd5b66236437451dd61d73}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T}~(0x00d2)\hypertarget{_wasp_sensor_ambient_8h_a0d3feafd2d09a8970b0a83eeefc8d6bd}{}\label{_wasp_sensor_ambient_8h_a0d3feafd2d09a8970b0a83eeefc8d6bd}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T}~(0x00fb)\hypertarget{_wasp_sensor_ambient_8h_a24b1fea2c6918d70fc9f145839471fd2}{}\label{_wasp_sensor_ambient_8h_a24b1fea2c6918d70fc9f145839471fd2}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T}~(0x029a)\hypertarget{_wasp_sensor_ambient_8h_a8de4ec79d68cb0d2a0a43c8e6d3596b7}{}\label{_wasp_sensor_ambient_8h_a8de4ec79d68cb0d2a0a43c8e6d3596b7}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T}~(0x0018)\hypertarget{_wasp_sensor_ambient_8h_ae4c0086763efeac75af8fb8d1bdb4994}{}\label{_wasp_sensor_ambient_8h_ae4c0086763efeac75af8fb8d1bdb4994}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T}~(0x0012)\hypertarget{_wasp_sensor_ambient_8h_aa2c105ab6187ccdc04218f8181d42778}{}\label{_wasp_sensor_ambient_8h_aa2c105ab6187ccdc04218f8181d42778}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T}~(0x029a)\hypertarget{_wasp_sensor_ambient_8h_ac80851ebf368258a3caa537201091d22}{}\label{_wasp_sensor_ambient_8h_ac80851ebf368258a3caa537201091d22}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T}~(0x0000)\hypertarget{_wasp_sensor_ambient_8h_aae101cbba5a5ab9dfb653000516e78b1}{}\label{_wasp_sensor_ambient_8h_aae101cbba5a5ab9dfb653000516e78b1}
+
+\item 
+\#define {\bfseries T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T}~(0x0000)\hypertarget{_wasp_sensor_ambient_8h_a0e6cacf4765a8592166ae3eabce341ad}{}\label{_wasp_sensor_ambient_8h_a0e6cacf4765a8592166ae3eabce341ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL} = 0x00, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG} = 0x01, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW} = 0x02, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH} = 0x03, 
+\\*
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW} = 0x04, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH} = 0x05, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT} = 0x06, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC} = 0x08, 
+\\*
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID} = 0x0A, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW} = 0x0C, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH} = 0x0D, 
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW} = 0x0E, 
+\\*
+{\bfseries T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH} = 0x0F
+ \}\hypertarget{_wasp_sensor_ambient_8h_abc5c98fcc1211af2b80116dd6e0a035d}{}\label{_wasp_sensor_ambient_8h_abc5c98fcc1211af2b80116dd6e0a035d}
+
+\item 
+enum {\bfseries tsl2561\+Integration\+Time\+\_\+t} \{ {\bfseries T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS} = 0x00, 
+{\bfseries T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS} = 0x01, 
+{\bfseries T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS} = 0x02
+ \}\hypertarget{_wasp_sensor_ambient_8h_a541f87fb512c1fd213e23c3a8b23264a}{}\label{_wasp_sensor_ambient_8h_a541f87fb512c1fd213e23c3a8b23264a}
+
+\item 
+enum {\bfseries tsl2561\+Gain\+\_\+t} \{ {\bfseries T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+0X} = 0x00, 
+{\bfseries T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X} = 0x10
+ \}\hypertarget{_wasp_sensor_ambient_8h_a8051d9eb664d757f67c0c5ce371cd9d0}{}\label{_wasp_sensor_ambient_8h_a8051d9eb664d757f67c0c5ce371cd9d0}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_ambient}{Wasp\+Sensor\+Ambient} {\bfseries Sensor\+Ambient}\hypertarget{_wasp_sensor_ambient_8h_ac936810b744440f57fe1c2c286da15ee}{}\label{_wasp_sensor_ambient_8h_ac936810b744440f57fe1c2c286da15ee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for environmental \hyperlink{class_sensors}{Sensors}. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+3 Design\+: David Gascón Implementation\+: Alberto Bielsa, Manuel Calahorra, Yuri Carmona, Jorge Casanova, Javier Siscart
+
+Based on K. Townsend Library. 

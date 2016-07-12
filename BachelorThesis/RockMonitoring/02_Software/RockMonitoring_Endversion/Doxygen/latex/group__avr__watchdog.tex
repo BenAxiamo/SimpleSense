@@ -1,0 +1,152 @@
+\hypertarget{group__avr__watchdog}{}\section{$<$avr/wdt.h$>$\+: Watchdog timer handling}
+\label{group__avr__watchdog}\index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__watchdog_ga9e52c54d10b6a6a7ce04aaaa4abea51f}{wdt\+\_\+reset}()~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+ (\char`\"{}wdr\char`\"{})
+\item 
+\#define \hyperlink{group__avr__watchdog_ga14508e42cbce6fc63763730669f29974}{wdt\+\_\+enable}(value)  
+\item 
+\#define \hyperlink{group__avr__watchdog_gab3784e1b871d61ed338da5658184b725}{wdt\+\_\+disable}()
+\item 
+\#define \hyperlink{group__avr__watchdog_gad45893280f49113ffc2e67e1d741f29d}{W\+D\+T\+O\+\_\+15\+MS}~0
+\item 
+\#define \hyperlink{group__avr__watchdog_ga057dd21dc54e71de0e20d8bd5734915d}{W\+D\+T\+O\+\_\+30\+MS}~1
+\item 
+\#define \hyperlink{group__avr__watchdog_ga7a5b072c51c05a34cc38111f0e6724e5}{W\+D\+T\+O\+\_\+60\+MS}~2
+\item 
+\#define \hyperlink{group__avr__watchdog_ga7d028bcdb4a4103549fc6fb4ec07fbcd}{W\+D\+T\+O\+\_\+120\+MS}~3
+\item 
+\#define \hyperlink{group__avr__watchdog_ga66d5f50cc76b92c76900d77ef577d53e}{W\+D\+T\+O\+\_\+250\+MS}~4
+\item 
+\#define \hyperlink{group__avr__watchdog_gacf89fc5fb6c8aa9efaadb86872cfbcdf}{W\+D\+T\+O\+\_\+500\+MS}~5
+\item 
+\#define \hyperlink{group__avr__watchdog_ga36302e15f38a4eeb8a328724bb8165e9}{W\+D\+T\+O\+\_\+1S}~6
+\item 
+\#define \hyperlink{group__avr__watchdog_ga05fc682d276a36d8cc4e9178340ff004}{W\+D\+T\+O\+\_\+2S}~7
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{wdt_8h}{avr/wdt.h}>} 
+\end{DoxyCode}
+
+
+This header file declares the interface to some inline macros handling the watchdog timer present in many A\+VR devices. In order to prevent the watchdog timer configuration from being accidentally altered by a crashing application, a special timed sequence is required in order to change it. The macros within this header file handle the required sequence automatically before changing any value. Interrupts will be disabled during the manipulation.
+
+\begin{DoxyNote}{Note}
+Depending on the fuse configuration of the particular device, further restrictions might apply, in particular it might be disallowed to turn off the watchdog timer.
+\end{DoxyNote}
+Note that for newer devices (A\+Tmega88 and newer, effectively any A\+VR that has the option to also generate interrupts), the watchdog timer remains active even after a system reset (except a power-\/on condition), using the fastest prescaler value (approximately 15 ms). It is therefore required to turn off the watchdog early during program startup, the datasheet recommends a sequence like the following\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{stdint_8h}{stdint.h}>}
+\textcolor{preprocessor}{#include <\hyperlink{wdt_8h}{avr/wdt.h}>}
+
+uint8\_t mcusr\_mirror \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_} ((section (\textcolor{stringliteral}{".noinit"})));
+
+\textcolor{keywordtype}{void} get\_mcusr(\textcolor{keywordtype}{void}) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\(\backslash\)}
+\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{  \_\_attribute\_\_}((naked)) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\(\backslash\)}
+\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{  \_\_attribute\_\_}((section(\textcolor{stringliteral}{".init3"})));
+\textcolor{keywordtype}{void} get\_mcusr(\textcolor{keywordtype}{void})
+\{
+  mcusr\_mirror = MCUSR;
+  MCUSR = 0;
+  \hyperlink{group__avr__watchdog_gab3784e1b871d61ed338da5658184b725}{wdt\_disable}();
+\}
+\end{DoxyCode}
+
+
+Saving the value of M\+C\+U\+SR in {\ttfamily mcusr\+\_\+mirror} is only needed if the application later wants to examine the reset source, but in particular, clearing the watchdog reset flag before disabling the watchdog is required, according to the datasheet. 
+
+\subsection{Macro Definition Documentation}
+\index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!wdt\+\_\+disable@{wdt\+\_\+disable}}
+\index{wdt\+\_\+disable@{wdt\+\_\+disable}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{wdt\+\_\+disable}{wdt_disable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define wdt\+\_\+disable(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__watchdog_gab3784e1b871d61ed338da5658184b725}{}\label{group__avr__watchdog_gab3784e1b871d61ed338da5658184b725}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\_\_asm\_\_ \_\_volatile\_\_ (  \(\backslash\)
+    \textcolor{stringliteral}{"in \_\_tmp\_reg\_\_, \_\_SREG\_\_"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"} \(\backslash\)
+     \textcolor{stringliteral}{"cli"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"} \(\backslash\)
+    \textcolor{stringliteral}{"out %0, %1"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"} \(\backslash\)
+    \textcolor{stringliteral}{"out %0, \_\_zero\_reg\_\_"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"} \(\backslash\)
+    \textcolor{stringliteral}{"out \_\_SREG\_\_,\_\_tmp\_reg\_\_"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"} \(\backslash\)
+    : \textcolor{comment}{/* no outputs */} \(\backslash\)
+    : \textcolor{stringliteral}{"I"} (\_SFR\_IO\_ADDR(\_WD\_CONTROL\_REG)), \(\backslash\)
+    \textcolor{stringliteral}{"r"} ((uint8\_t)(\_BV(\_WD\_CHANGE\_BIT) | \_BV(WDE))) \(\backslash\)
+    : \textcolor{stringliteral}{"r0"} \(\backslash\)
+)
+\end{DoxyCode}
+Disable the watchdog timer, if possible. This attempts to turn off the Enable bit in the watchdog control register. See the datasheet for details. \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!wdt\+\_\+enable@{wdt\+\_\+enable}}
+\index{wdt\+\_\+enable@{wdt\+\_\+enable}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{wdt\+\_\+enable}{wdt_enable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define wdt\+\_\+enable(
+\begin{DoxyParamCaption}
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__watchdog_ga14508e42cbce6fc63763730669f29974}{}\label{group__avr__watchdog_ga14508e42cbce6fc63763730669f29974}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\_\_asm\_\_ \_\_volatile\_\_ (  \(\backslash\)
+        \textcolor{stringliteral}{"in \_\_tmp\_reg\_\_,\_\_SREG\_\_"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+        \textcolor{stringliteral}{"cli"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+        \textcolor{stringliteral}{"wdr"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+        \textcolor{stringliteral}{"out %0,%1"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}  \(\backslash\)
+        \textcolor{stringliteral}{"out \_\_SREG\_\_,\_\_tmp\_reg\_\_"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}   \(\backslash\)
+        \textcolor{stringliteral}{"out %0,%2"} \(\backslash\)
+        : \textcolor{comment}{/* no outputs */}  \(\backslash\)
+        : \textcolor{stringliteral}{"I"} (\_SFR\_IO\_ADDR(\_WD\_CONTROL\_REG)), \(\backslash\)
+        \textcolor{stringliteral}{"r"} (\_BV(\_WD\_CHANGE\_BIT) | \_BV(WDE)),   \(\backslash\)
+        \textcolor{stringliteral}{"r"} ((uint8\_t) ((value & 0x08 ? \_WD\_PS3\_MASK : 0x00) | \(\backslash\)
+            \_BV(WDE) | (value & 0x07)) ) \(\backslash\)
+        : \textcolor{stringliteral}{"r0"}  \(\backslash\)
+    )
+\end{DoxyCode}
+Enable the watchdog timer, configuring it for expiry after {\ttfamily timeout} (which is a combination of the {\ttfamily W\+D\+P0} through {\ttfamily W\+D\+P2} bits to write into the {\ttfamily W\+D\+T\+CR} register; For those devices that have a {\ttfamily W\+D\+T\+C\+SR} register, it uses the combination of the {\ttfamily W\+D\+P0} through {\ttfamily W\+D\+P3} bits).
+
+See also the symbolic constants {\ttfamily W\+D\+T\+O\+\_\+15\+MS} et al. \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!wdt\+\_\+reset@{wdt\+\_\+reset}}
+\index{wdt\+\_\+reset@{wdt\+\_\+reset}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{wdt\+\_\+reset}{wdt_reset}}]{\setlength{\rightskip}{0pt plus 5cm}\#define wdt\+\_\+reset(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+asm\+\_\+\+\_\+ \+\_\+\+\_\+volatile\+\_\+\+\_\+ (\char`\"{}wdr\char`\"{})}\hypertarget{group__avr__watchdog_ga9e52c54d10b6a6a7ce04aaaa4abea51f}{}\label{group__avr__watchdog_ga9e52c54d10b6a6a7ce04aaaa4abea51f}
+Reset the watchdog timer. When the watchdog timer is enabled, a call to this instruction is required before the timer expires, otherwise a watchdog-\/initiated device reset will occur. \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+120\+MS@{W\+D\+T\+O\+\_\+120\+MS}}
+\index{W\+D\+T\+O\+\_\+120\+MS@{W\+D\+T\+O\+\_\+120\+MS}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+120\+MS}{WDTO_120MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+120\+MS~3}\hypertarget{group__avr__watchdog_ga7d028bcdb4a4103549fc6fb4ec07fbcd}{}\label{group__avr__watchdog_ga7d028bcdb4a4103549fc6fb4ec07fbcd}
+See {\ttfamily W\+D\+T0\+\_\+15\+MS} \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+15\+MS@{W\+D\+T\+O\+\_\+15\+MS}}
+\index{W\+D\+T\+O\+\_\+15\+MS@{W\+D\+T\+O\+\_\+15\+MS}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+15\+MS}{WDTO_15MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+15\+MS~0}\hypertarget{group__avr__watchdog_gad45893280f49113ffc2e67e1d741f29d}{}\label{group__avr__watchdog_gad45893280f49113ffc2e67e1d741f29d}
+Symbolic constants for the watchdog timeout. Since the watchdog timer is based on a free-\/running RC oscillator, the times are approximate only and apply to a supply voltage of 5 V. At lower supply voltages, the times will increase. For older devices, the times will be as large as three times when operating at Vcc = 3 V, while the newer devices (e. g. A\+Tmega128, A\+Tmega8) only experience a negligible change.
+
+Possible timeout values are\+: 15 ms, 30 ms, 60 ms, 120 ms, 250 ms, 500 ms, 1 s, 2 s. (Some devices also allow for 4 s and 8 s.) Symbolic constants are formed by the prefix {\ttfamily W\+D\+T\+O\+\_\+}, followed by the time.
+
+Example that would select a watchdog timer expiry of approximately 500 ms\+: 
+\begin{DoxyCode}
+1 wdt\_enable(WDTO\_500MS);
+\end{DoxyCode}
+ \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+1S@{W\+D\+T\+O\+\_\+1S}}
+\index{W\+D\+T\+O\+\_\+1S@{W\+D\+T\+O\+\_\+1S}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+1S}{WDTO_1S}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+1S~6}\hypertarget{group__avr__watchdog_ga36302e15f38a4eeb8a328724bb8165e9}{}\label{group__avr__watchdog_ga36302e15f38a4eeb8a328724bb8165e9}
+See {\ttfamily W\+D\+T0\+\_\+15\+MS} \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+250\+MS@{W\+D\+T\+O\+\_\+250\+MS}}
+\index{W\+D\+T\+O\+\_\+250\+MS@{W\+D\+T\+O\+\_\+250\+MS}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+250\+MS}{WDTO_250MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+250\+MS~4}\hypertarget{group__avr__watchdog_ga66d5f50cc76b92c76900d77ef577d53e}{}\label{group__avr__watchdog_ga66d5f50cc76b92c76900d77ef577d53e}
+See {\ttfamily W\+D\+T0\+\_\+15\+MS} \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+2S@{W\+D\+T\+O\+\_\+2S}}
+\index{W\+D\+T\+O\+\_\+2S@{W\+D\+T\+O\+\_\+2S}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+2S}{WDTO_2S}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+2S~7}\hypertarget{group__avr__watchdog_ga05fc682d276a36d8cc4e9178340ff004}{}\label{group__avr__watchdog_ga05fc682d276a36d8cc4e9178340ff004}
+See {\ttfamily W\+D\+T0\+\_\+15\+MS} \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+30\+MS@{W\+D\+T\+O\+\_\+30\+MS}}
+\index{W\+D\+T\+O\+\_\+30\+MS@{W\+D\+T\+O\+\_\+30\+MS}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+30\+MS}{WDTO_30MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+30\+MS~1}\hypertarget{group__avr__watchdog_ga057dd21dc54e71de0e20d8bd5734915d}{}\label{group__avr__watchdog_ga057dd21dc54e71de0e20d8bd5734915d}
+See {\ttfamily W\+D\+T0\+\_\+15\+MS} \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+500\+MS@{W\+D\+T\+O\+\_\+500\+MS}}
+\index{W\+D\+T\+O\+\_\+500\+MS@{W\+D\+T\+O\+\_\+500\+MS}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+500\+MS}{WDTO_500MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+500\+MS~5}\hypertarget{group__avr__watchdog_gacf89fc5fb6c8aa9efaadb86872cfbcdf}{}\label{group__avr__watchdog_gacf89fc5fb6c8aa9efaadb86872cfbcdf}
+See {\ttfamily W\+D\+T0\+\_\+15\+MS} \index{$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}!W\+D\+T\+O\+\_\+60\+MS@{W\+D\+T\+O\+\_\+60\+MS}}
+\index{W\+D\+T\+O\+\_\+60\+MS@{W\+D\+T\+O\+\_\+60\+MS}!$<$avr/wdt.\+h$>$\+: Watchdog timer handling@{$<$avr/wdt.\+h$>$\+: Watchdog timer handling}}
+\subsubsection[{\texorpdfstring{W\+D\+T\+O\+\_\+60\+MS}{WDTO_60MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+D\+T\+O\+\_\+60\+MS~2}\hypertarget{group__avr__watchdog_ga7a5b072c51c05a34cc38111f0e6724e5}{}\label{group__avr__watchdog_ga7a5b072c51c05a34cc38111f0e6724e5}
+{\ttfamily W\+D\+T0\+\_\+15\+MS} 

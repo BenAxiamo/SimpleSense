@@ -1,0 +1,107 @@
+\hypertarget{_turbidity_sensor_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+S\+W/\+Turbidity\+Sensor.h File Reference}
+\label{_turbidity_sensor_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+S\+W/\+Turbidity\+Sensor.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+S\+W/\+Turbidity\+Sensor.\+h}}
+
+
+Library for managing the Smart Water Turbidity Sensor Board.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}../\+R\+S485/\+Wasp485.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../\+Modbus\+Master485/\+Modbus\+Master485.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classturbidity_sensor_class}{turbidity\+Sensor\+Class}
+\begin{DoxyCompactList}\small\item\em Turbidity Sensor Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries A\+D\+D\+R\+E\+S\+S\+\_\+\+R\+EG}~0x00\+A3\hypertarget{_turbidity_sensor_8h_ab3c151cbb3879c262ba8ffeea0ca27f2}{}\label{_turbidity_sensor_8h_ab3c151cbb3879c262ba8ffeea0ca27f2}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+R\+EG}~0x0053\hypertarget{_turbidity_sensor_8h_a98a8eec58fe5e17ec8aef6c5dba8faa6}{}\label{_turbidity_sensor_8h_a98a8eec58fe5e17ec8aef6c5dba8faa6}
+
+\item 
+\#define {\bfseries T\+U\+R\+B\+\_\+\+V\+A\+L\+U\+E\+\_\+\+R\+EG}~0x0055\hypertarget{_turbidity_sensor_8h_a6f7b7b83e2387b2c44bdc19729f50d85}{}\label{_turbidity_sensor_8h_a6f7b7b83e2387b2c44bdc19729f50d85}
+
+\item 
+\#define {\bfseries R\+E\+S\+E\+T\+\_\+\+R\+EG}~0x0002\hypertarget{_turbidity_sensor_8h_a7cdd48a4218a992cff0505923edc52fe}{}\label{_turbidity_sensor_8h_a7cdd48a4218a992cff0505923edc52fe}
+
+\item 
+\#define {\bfseries C\+O\+M\+P\+\_\+\+T\+E\+M\+P\+\_\+\+R\+EG}~0x005D\hypertarget{_turbidity_sensor_8h_a70f8a95ff5b20b05e3ab79a62291afd4}{}\label{_turbidity_sensor_8h_a70f8a95ff5b20b05e3ab79a62291afd4}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+M\+E\+A\+S\+\_\+\+S\+T\+A\+T\+US}~0x0064\hypertarget{_turbidity_sensor_8h_ade2583f31922a3c4ec17e00d701d33ba}{}\label{_turbidity_sensor_8h_ade2583f31922a3c4ec17e00d701d33ba}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+C\+O\+E\+F\+\_\+\+R\+EG}~0x014C\hypertarget{_turbidity_sensor_8h_a62a36cc0d29081a3d970912aa3bc8c2a}{}\label{_turbidity_sensor_8h_a62a36cc0d29081a3d970912aa3bc8c2a}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+C\+A\+L1\+\_\+\+R\+EG}~0x0200\hypertarget{_turbidity_sensor_8h_a4b4cc9bd76c04a9bf2e159c40bafc5a4}{}\label{_turbidity_sensor_8h_a4b4cc9bd76c04a9bf2e159c40bafc5a4}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+C\+A\+L2\+\_\+\+R\+EG}~0x0202\hypertarget{_turbidity_sensor_8h_a94b1111a494cda6b191b42ffcb3d0ad2}{}\label{_turbidity_sensor_8h_a94b1111a494cda6b191b42ffcb3d0ad2}
+
+\item 
+\#define {\bfseries O\+P\+E\+R\+\_\+\+N\+A\+M\+E\+\_\+\+R\+EG}~0x027E\hypertarget{_turbidity_sensor_8h_ad5327ad83fc58711fccad17ddffd87cf}{}\label{_turbidity_sensor_8h_ad5327ad83fc58711fccad17ddffd87cf}
+
+\item 
+\#define {\bfseries D\+A\+T\+E\+\_\+\+T\+E\+M\+P\+\_\+\+R\+EG}~0x0286\hypertarget{_turbidity_sensor_8h_a47fa6a0ed15d49ed503624f3c9545a49}{}\label{_turbidity_sensor_8h_a47fa6a0ed15d49ed503624f3c9545a49}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+ON}~0x00\+A5\hypertarget{_turbidity_sensor_8h_a78437692c654f1167dc2c379993b274f}{}\label{_turbidity_sensor_8h_a78437692c654f1167dc2c379993b274f}
+
+\item 
+\#define {\bfseries T\+U\+R\+B\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+ON}~0x00\+A6\hypertarget{_turbidity_sensor_8h_a4c43d5a7c995a0659b47e00a97617d12}{}\label{_turbidity_sensor_8h_a4c43d5a7c995a0659b47e00a97617d12}
+
+\item 
+\#define {\bfseries A\+V\+R\+G\+\_\+\+P\+A\+R\+A\+\_\+\+R\+EG}~0x00\+AA\hypertarget{_turbidity_sensor_8h_a4c63c5899d24aff9a3c1bf7fa29e9f8d}{}\label{_turbidity_sensor_8h_a4c63c5899d24aff9a3c1bf7fa29e9f8d}
+
+\item 
+\#define {\bfseries D\+I\+S\+A\+B\+L\+ED}~0x0000\hypertarget{_turbidity_sensor_8h_abd5c8ab57c190a6522ccdbf0ed7577da}{}\label{_turbidity_sensor_8h_abd5c8ab57c190a6522ccdbf0ed7577da}
+
+\item 
+\#define {\bfseries T\+U\+R\+B\+\_\+\+M\+E\+A\+S\+\_\+\+S\+T\+A\+T\+US}~0x0065\hypertarget{_turbidity_sensor_8h_ae909367faa199e25eb1571e4e81a1055}{}\label{_turbidity_sensor_8h_ae909367faa199e25eb1571e4e81a1055}
+
+\item 
+\#define {\bfseries N\+E\+W\+\_\+\+M\+E\+A\+S\+\_\+\+R\+EG}~0x0001\hypertarget{_turbidity_sensor_8h_a472276351bf339cd290eb4cdd2768297}{}\label{_turbidity_sensor_8h_a472276351bf339cd290eb4cdd2768297}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+\+N\+E\+W\+\_\+\+M\+E\+AS}~0x0001\hypertarget{_turbidity_sensor_8h_a98d3b173424f15883da8f5b4acddaaf8}{}\label{_turbidity_sensor_8h_a98d3b173424f15883da8f5b4acddaaf8}
+
+\item 
+\#define {\bfseries T\+U\+R\+B\+\_\+\+N\+E\+W\+\_\+\+M\+E\+AS}~0x0002\hypertarget{_turbidity_sensor_8h_a8ddfbd11c8d702ac1d5cef7d90229f11}{}\label{_turbidity_sensor_8h_a8ddfbd11c8d702ac1d5cef7d90229f11}
+
+\item 
+\#define {\bfseries O\+F\+F\+S\+E\+T\+\_\+0}~0x0001\hypertarget{_turbidity_sensor_8h_a9184a9b4adf05727b4c84b724f3bdec7}{}\label{_turbidity_sensor_8h_a9184a9b4adf05727b4c84b724f3bdec7}
+
+\item 
+\#define {\bfseries T\+E\+M\+P\+\_\+25}~0x0002\hypertarget{_turbidity_sensor_8h_ac4d3ce36c375f77393a9ca4a722b5300}{}\label{_turbidity_sensor_8h_ac4d3ce36c375f77393a9ca4a722b5300}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0001\hypertarget{_turbidity_sensor_8h_a62b5c8928ce3ebc6127be2ce681dcdb0}{}\label{_turbidity_sensor_8h_a62b5c8928ce3ebc6127be2ce681dcdb0}
+
+\item 
+\#define {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0000\hypertarget{_turbidity_sensor_8h_a838ee749ec1dfd8d73187bb32e9ec427}{}\label{_turbidity_sensor_8h_a838ee749ec1dfd8d73187bb32e9ec427}
+
+\item 
+\#define {\bfseries D\+E\+B\+U\+G\+\_\+\+M\+O\+DE}~0\hypertarget{_turbidity_sensor_8h_ac80a3592e72fd96b772ee47a7d8e0d0a}{}\label{_turbidity_sensor_8h_ac80a3592e72fd96b772ee47a7d8e0d0a}
+
+\item 
+\#define {\bfseries filter\+Samples}~11\hypertarget{_turbidity_sensor_8h_a1f50c7e3993d870ea1fa562e2066c9dc}{}\label{_turbidity_sensor_8h_a1f50c7e3993d870ea1fa562e2066c9dc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the Smart Water Turbidity Sensor Board. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+2 Design\+: David Gascón Implementation\+: Ahmad Saad 

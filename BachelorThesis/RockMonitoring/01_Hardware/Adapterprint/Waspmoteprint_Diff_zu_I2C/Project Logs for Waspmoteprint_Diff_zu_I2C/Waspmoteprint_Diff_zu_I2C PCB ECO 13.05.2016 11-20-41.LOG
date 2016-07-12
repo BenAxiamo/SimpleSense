@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=DSDAM Pin=X2-4
+Added Pin To Net: NetName=DSCLM Pin=X2-6
+Change Net Name : Old Net Name=DSCLM New Net Name=DSCL_N
+Change Net Name : Old Net Name=DSDAM New Net Name=DSDA_N
+Added Differential Pair: Name=DSCL
+Added Differential Pair: Name=DSDA

@@ -1,0 +1,108 @@
+\hypertarget{_p_c_t2075_8h}{}\section{P\+C\+T2075.\+h File Reference}
+\label{_p_c_t2075_8h}\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+{\ttfamily \#include \char`\"{}Wasp\+U\+S\+B.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$util/twi.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Wire.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}printable.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Waspmote.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../\+Constants/\+Constants.\+h\char`\"{}}\\*
+Include dependency graph for P\+C\+T2075.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_p_c_t2075_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_p_c_t2075_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_p_c_t2075}{P\+C\+T2075}
+\begin{DoxyCompactList}\small\item\em Class that handles the communication to the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a6e51107a3f2e14fbaf82044b9623ed84}{P\+C\+T2075\+\_\+\+C\+O\+NF}~0x01
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a61782ef042c317ecbff02f9956e57c8f}{P\+C\+T2075\+\_\+\+T\+E\+MP}~0x00
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a61024c0147d567b5aff220fb789eb2d9}{P\+C\+T2075\+\_\+\+T\+OS}~0x03
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a6adb57d1d2919369b5f61083211f4fbe}{P\+C\+T2075\+\_\+\+T\+H\+Y\+ST}~0x02
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a231b2a9816a56da2592d249791e2bb31}{P\+C\+T2075\+\_\+\+T\+I\+D\+LE}~0x04
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a2499ef588b25f24517bee91085ee57ec}{P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}~1
+\item 
+\#define \hyperlink{_p_c_t2075_8h_a9eec9e2a2ffc5f3c7a1bfbe1ba4a4c2b}{R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR}~1
+\item 
+\#define \hyperlink{_p_c_t2075_8h_ab747ac432edef91062f2946bb521e49f}{R\+E\+T\+U\+R\+N\+\_\+\+OK}~0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!P\+C\+T2075\+\_\+\+C\+O\+NF@{P\+C\+T2075\+\_\+\+C\+O\+NF}}
+\index{P\+C\+T2075\+\_\+\+C\+O\+NF@{P\+C\+T2075\+\_\+\+C\+O\+NF}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075\+\_\+\+C\+O\+NF}{PCT2075_CONF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+T2075\+\_\+\+C\+O\+NF~0x01}\hypertarget{_p_c_t2075_8h_a6e51107a3f2e14fbaf82044b9623ed84}{}\label{_p_c_t2075_8h_a6e51107a3f2e14fbaf82044b9623ed84}
+
+
+Definition at line 7 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN@{P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}}
+\index{P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN@{P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}{PCT2075_READ_LEN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+T2075\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN~1}\hypertarget{_p_c_t2075_8h_a2499ef588b25f24517bee91085ee57ec}{}\label{_p_c_t2075_8h_a2499ef588b25f24517bee91085ee57ec}
+
+
+Definition at line 14 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!P\+C\+T2075\+\_\+\+T\+E\+MP@{P\+C\+T2075\+\_\+\+T\+E\+MP}}
+\index{P\+C\+T2075\+\_\+\+T\+E\+MP@{P\+C\+T2075\+\_\+\+T\+E\+MP}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075\+\_\+\+T\+E\+MP}{PCT2075_TEMP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+T2075\+\_\+\+T\+E\+MP~0x00}\hypertarget{_p_c_t2075_8h_a61782ef042c317ecbff02f9956e57c8f}{}\label{_p_c_t2075_8h_a61782ef042c317ecbff02f9956e57c8f}
+
+
+Definition at line 8 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!P\+C\+T2075\+\_\+\+T\+H\+Y\+ST@{P\+C\+T2075\+\_\+\+T\+H\+Y\+ST}}
+\index{P\+C\+T2075\+\_\+\+T\+H\+Y\+ST@{P\+C\+T2075\+\_\+\+T\+H\+Y\+ST}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075\+\_\+\+T\+H\+Y\+ST}{PCT2075_THYST}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+T2075\+\_\+\+T\+H\+Y\+ST~0x02}\hypertarget{_p_c_t2075_8h_a6adb57d1d2919369b5f61083211f4fbe}{}\label{_p_c_t2075_8h_a6adb57d1d2919369b5f61083211f4fbe}
+
+
+Definition at line 10 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!P\+C\+T2075\+\_\+\+T\+I\+D\+LE@{P\+C\+T2075\+\_\+\+T\+I\+D\+LE}}
+\index{P\+C\+T2075\+\_\+\+T\+I\+D\+LE@{P\+C\+T2075\+\_\+\+T\+I\+D\+LE}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075\+\_\+\+T\+I\+D\+LE}{PCT2075_TIDLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+T2075\+\_\+\+T\+I\+D\+LE~0x04}\hypertarget{_p_c_t2075_8h_a231b2a9816a56da2592d249791e2bb31}{}\label{_p_c_t2075_8h_a231b2a9816a56da2592d249791e2bb31}
+
+
+Definition at line 11 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!P\+C\+T2075\+\_\+\+T\+OS@{P\+C\+T2075\+\_\+\+T\+OS}}
+\index{P\+C\+T2075\+\_\+\+T\+OS@{P\+C\+T2075\+\_\+\+T\+OS}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075\+\_\+\+T\+OS}{PCT2075_TOS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+C\+T2075\+\_\+\+T\+OS~0x03}\hypertarget{_p_c_t2075_8h_a61024c0147d567b5aff220fb789eb2d9}{}\label{_p_c_t2075_8h_a61024c0147d567b5aff220fb789eb2d9}
+
+
+Definition at line 9 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR@{R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR}}
+\index{R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR@{R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR}{RETURN_ERROR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+T\+U\+R\+N\+\_\+\+E\+R\+R\+OR~1}\hypertarget{_p_c_t2075_8h_a9eec9e2a2ffc5f3c7a1bfbe1ba4a4c2b}{}\label{_p_c_t2075_8h_a9eec9e2a2ffc5f3c7a1bfbe1ba4a4c2b}
+
+
+Definition at line 26 of file P\+C\+T2075.\+h.
+
+\index{P\+C\+T2075.\+h@{P\+C\+T2075.\+h}!R\+E\+T\+U\+R\+N\+\_\+\+OK@{R\+E\+T\+U\+R\+N\+\_\+\+OK}}
+\index{R\+E\+T\+U\+R\+N\+\_\+\+OK@{R\+E\+T\+U\+R\+N\+\_\+\+OK}!P\+C\+T2075.\+h@{P\+C\+T2075.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+T\+U\+R\+N\+\_\+\+OK}{RETURN_OK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+T\+U\+R\+N\+\_\+\+OK~0}\hypertarget{_p_c_t2075_8h_ab747ac432edef91062f2946bb521e49f}{}\label{_p_c_t2075_8h_ab747ac432edef91062f2946bb521e49f}
+
+
+Definition at line 27 of file P\+C\+T2075.\+h.
+

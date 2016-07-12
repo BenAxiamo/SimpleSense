@@ -1,0 +1,146 @@
+\hypertarget{sha1_8c}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha1.c File Reference}
+\label{sha1_8c}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha1.\+c@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha1.\+c}}
+
+
+S\+H\+A-\/1 implementation.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}sha1.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries L\+I\+T\+T\+L\+E\+\_\+\+E\+N\+D\+I\+AN}\hypertarget{sha1_8c_a8782a401fbf55261460863fc2f8df1ce}{}\label{sha1_8c_a8782a401fbf55261460863fc2f8df1ce}
+
+\item 
+\#define \hyperlink{sha1_8c_ae7520c5477c11965aabeedc033c9862b}{M\+A\+SK}~0x0000000f\hypertarget{sha1_8c_ae7520c5477c11965aabeedc033c9862b}{}\label{sha1_8c_ae7520c5477c11965aabeedc033c9862b}
+
+\begin{DoxyCompactList}\small\item\em \char`\"{}add\char`\"{} a block to the hash This is the core function of the hash algorithm. To understand how it\textquotesingle{}s working and what thoese variables do, take a look at F\+I\+P\+S-\/182. This is an \char`\"{}alternativ\char`\"{} implementation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t($\ast$ {\bfseries pf\+\_\+t}) (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t z)\hypertarget{sha1_8c_ac01bc17a278ff9759228d940d92f312a}{}\label{sha1_8c_ac01bc17a278ff9759228d940d92f312a}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sha1_8c_a7fda3e6995224d357ec178fad062d575}{sha1\+\_\+init} (\hyperlink{structsha1__ctx__t}{sha1\+\_\+ctx\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em initialises given S\+H\+A-\/1 context \end{DoxyCompactList}\item 
+uint32\+\_\+t {\bfseries rotl32} (uint32\+\_\+t n, uint8\+\_\+t bits)\hypertarget{sha1_8c_a88af25c64a8d9a65a4780056b4e7250a}{}\label{sha1_8c_a88af25c64a8d9a65a4780056b4e7250a}
+
+\item 
+uint32\+\_\+t {\bfseries change\+\_\+endian32} (uint32\+\_\+t x)\hypertarget{sha1_8c_a7ee6203567175c34dba94ecd8437f9a0}{}\label{sha1_8c_a7ee6203567175c34dba94ecd8437f9a0}
+
+\item 
+uint32\+\_\+t {\bfseries ch} (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t z)\hypertarget{sha1_8c_a69c60f6062e02ffe0cbd3d064e114fac}{}\label{sha1_8c_a69c60f6062e02ffe0cbd3d064e114fac}
+
+\item 
+uint32\+\_\+t {\bfseries maj} (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t z)\hypertarget{sha1_8c_afaf82e097a79c6c91b53fe24eedaa786}{}\label{sha1_8c_afaf82e097a79c6c91b53fe24eedaa786}
+
+\item 
+uint32\+\_\+t {\bfseries parity} (uint32\+\_\+t x, uint32\+\_\+t y, uint32\+\_\+t z)\hypertarget{sha1_8c_aa6cc9e1678bd41359d7d1d484b0f6f34}{}\label{sha1_8c_aa6cc9e1678bd41359d7d1d484b0f6f34}
+
+\item 
+void \hyperlink{sha1_8c_ae02e6fb7f0408d26a13c194c2a09ffc3}{sha1\+\_\+next\+Block} (\hyperlink{structsha1__ctx__t}{sha1\+\_\+ctx\+\_\+t} $\ast$state, const void $\ast$block)
+\begin{DoxyCompactList}\small\item\em process one input block This function processes one input block and updates the hash context accordingly \end{DoxyCompactList}\item 
+void \hyperlink{sha1_8c_a4022144b76e3eb39fc8d2845c48265b0}{sha1\+\_\+last\+Block} (\hyperlink{structsha1__ctx__t}{sha1\+\_\+ctx\+\_\+t} $\ast$state, const void $\ast$block, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em processes the given block and finalizes the context This function processes the last block in a S\+H\+A-\/1 hashing process. The block should have a maximum length of a single input block. \end{DoxyCompactList}\item 
+void \hyperlink{sha1_8c_a455d5d8931360252282353b4b45f35b6}{sha1\+\_\+ctx2hash} (\hyperlink{sha1_8h_a8c63d87c6839f74aef34405d2e0e92c6}{sha1\+\_\+hash\+\_\+t} $\ast$dest, \hyperlink{structsha1__ctx__t}{sha1\+\_\+ctx\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em convert a state variable into an actual hash value Writes the hash value corresponding to the state to the memory pointed by dest. \end{DoxyCompactList}\item 
+void {\bfseries sha1\+\_\+1} (\hyperlink{sha1_8h_a8c63d87c6839f74aef34405d2e0e92c6}{sha1\+\_\+hash\+\_\+t} $\ast$dest, const void $\ast$msg, uint32\+\_\+t length)\hypertarget{sha1_8c_afe1e73294e09d6b97df01b381c82d9fc}{}\label{sha1_8c_afe1e73294e09d6b97df01b381c82d9fc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+H\+A-\/1 implementation. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Otte 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/10-\/08  G\+P\+Lv3 or later 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{sha1.\+c@{sha1.\+c}!sha1\+\_\+ctx2hash@{sha1\+\_\+ctx2hash}}
+\index{sha1\+\_\+ctx2hash@{sha1\+\_\+ctx2hash}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{\texorpdfstring{sha1\+\_\+ctx2hash(sha1\+\_\+hash\+\_\+t $\ast$dest, sha1\+\_\+ctx\+\_\+t $\ast$state)}{sha1_ctx2hash(sha1_hash_t *dest, sha1_ctx_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}sha1\+\_\+ctx2hash (
+\begin{DoxyParamCaption}
+\item[{{\bf sha1\+\_\+hash\+\_\+t} $\ast$}]{dest, }
+\item[{{\bf sha1\+\_\+ctx\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_a455d5d8931360252282353b4b45f35b6}{}\label{sha1_8c_a455d5d8931360252282353b4b45f35b6}
+
+
+convert a state variable into an actual hash value Writes the hash value corresponding to the state to the memory pointed by dest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & pointer to the hash value destination \\
+\hline
+{\em state} & pointer to the hash context \\
+\hline
+\end{DoxyParams}
+\index{sha1.\+c@{sha1.\+c}!sha1\+\_\+init@{sha1\+\_\+init}}
+\index{sha1\+\_\+init@{sha1\+\_\+init}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{\texorpdfstring{sha1\+\_\+init(sha1\+\_\+ctx\+\_\+t $\ast$state)}{sha1_init(sha1_ctx_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}sha1\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf sha1\+\_\+ctx\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_a7fda3e6995224d357ec178fad062d575}{}\label{sha1_8c_a7fda3e6995224d357ec178fad062d575}
+
+
+initialises given S\+H\+A-\/1 context 
+
+initializes a S\+H\+A-\/1 context This function sets a \hyperlink{structsha1__ctx__t}{sha1\+\_\+ctx\+\_\+t} variable to the initialization vector for S\+H\+A-\/1 hashing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/1 context variable \\
+\hline
+\end{DoxyParams}
+\index{sha1.\+c@{sha1.\+c}!sha1\+\_\+last\+Block@{sha1\+\_\+last\+Block}}
+\index{sha1\+\_\+last\+Block@{sha1\+\_\+last\+Block}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{\texorpdfstring{sha1\+\_\+last\+Block(sha1\+\_\+ctx\+\_\+t $\ast$state, const void $\ast$block, uint16\+\_\+t length)}{sha1_lastBlock(sha1_ctx_t *state, const void *block, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}sha1\+\_\+last\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf sha1\+\_\+ctx\+\_\+t} $\ast$}]{state, }
+\item[{const void $\ast$}]{block, }
+\item[{uint16\+\_\+t}]{length\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_a4022144b76e3eb39fc8d2845c48265b0}{}\label{sha1_8c_a4022144b76e3eb39fc8d2845c48265b0}
+
+
+processes the given block and finalizes the context This function processes the last block in a S\+H\+A-\/1 hashing process. The block should have a maximum length of a single input block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the state variable to update and finalize \\
+\hline
+{\em block} & pointer to themessage block to process \\
+\hline
+{\em length\+\_\+b} & length of the message block in bits \\
+\hline
+\end{DoxyParams}
+\index{sha1.\+c@{sha1.\+c}!sha1\+\_\+next\+Block@{sha1\+\_\+next\+Block}}
+\index{sha1\+\_\+next\+Block@{sha1\+\_\+next\+Block}!sha1.\+c@{sha1.\+c}}
+\subsubsection[{\texorpdfstring{sha1\+\_\+next\+Block(sha1\+\_\+ctx\+\_\+t $\ast$state, const void $\ast$block)}{sha1_nextBlock(sha1_ctx_t *state, const void *block)}}]{\setlength{\rightskip}{0pt plus 5cm}sha1\+\_\+next\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf sha1\+\_\+ctx\+\_\+t} $\ast$}]{state, }
+\item[{const void $\ast$}]{block}
+\end{DoxyParamCaption}
+)}\hypertarget{sha1_8c_ae02e6fb7f0408d26a13c194c2a09ffc3}{}\label{sha1_8c_ae02e6fb7f0408d26a13c194c2a09ffc3}
+
+
+process one input block This function processes one input block and updates the hash context accordingly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the state variable to update \\
+\hline
+{\em block} & pointer to the message block to process \\
+\hline
+\end{DoxyParams}

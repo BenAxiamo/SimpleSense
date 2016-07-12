@@ -1,0 +1,33 @@
+\hypertarget{group__avr__errno}{}\section{$<$errno.\+h$>$\+: System Errors}
+\label{group__avr__errno}\index{$<$errno.\+h$>$\+: System Errors@{$<$errno.\+h$>$\+: System Errors}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__errno_ga5fe247e079b591a68e0fdbf7caec5b70}{E\+D\+OM}~33
+\item 
+\#define \hyperlink{group__avr__errno_gaa1591a4f3a86360108de5b9ba34980ca}{E\+R\+A\+N\+GE}~34
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{errno_8h}{errno.h}>}
+\end{DoxyCode}
+
+
+Some functions in the library set the global variable {\ttfamily errno} when an error occurs. The file, {\ttfamily $<$\hyperlink{errno_8h}{errno.\+h}$>$}, provides symbolic names for various error codes.
+
+\begin{DoxyWarning}{Warning}
+The {\ttfamily errno} global variable is not safe to use in a threaded or multi-\/task system. A race condition can occur if a task is interrupted between the call which sets {\ttfamily error} and when the task examines {\ttfamily errno}. If another task changes {\ttfamily errno} during this time, the result will be incorrect for the interrupted task. 
+\end{DoxyWarning}
+
+
+\subsection{Macro Definition Documentation}
+\index{$<$errno.\+h$>$\+: System Errors@{$<$errno.\+h$>$\+: System Errors}!E\+D\+OM@{E\+D\+OM}}
+\index{E\+D\+OM@{E\+D\+OM}!$<$errno.\+h$>$\+: System Errors@{$<$errno.\+h$>$\+: System Errors}}
+\subsubsection[{\texorpdfstring{E\+D\+OM}{EDOM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+D\+OM~33}\hypertarget{group__avr__errno_ga5fe247e079b591a68e0fdbf7caec5b70}{}\label{group__avr__errno_ga5fe247e079b591a68e0fdbf7caec5b70}
+Domain error. \index{$<$errno.\+h$>$\+: System Errors@{$<$errno.\+h$>$\+: System Errors}!E\+R\+A\+N\+GE@{E\+R\+A\+N\+GE}}
+\index{E\+R\+A\+N\+GE@{E\+R\+A\+N\+GE}!$<$errno.\+h$>$\+: System Errors@{$<$errno.\+h$>$\+: System Errors}}
+\subsubsection[{\texorpdfstring{E\+R\+A\+N\+GE}{ERANGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+A\+N\+GE~34}\hypertarget{group__avr__errno_gaa1591a4f3a86360108de5b9ba34980ca}{}\label{group__avr__errno_gaa1591a4f3a86360108de5b9ba34980ca}
+Range error. 

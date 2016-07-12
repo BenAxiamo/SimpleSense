@@ -1,0 +1,59 @@
+\hypertarget{group__avr__version}{}\section{$<$avr/version.h$>$\+: avr-\/libc version macros}
+\label{group__avr__version}\index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__version_gaace584c6d368436814b4fe12d71230f9}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}~\char`\"{}1.\+8.\+0svn\char`\"{}
+\item 
+\#define \hyperlink{group__avr__version_ga161e98ee1c31a16eeb71fc87dc73526f}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+}~10800\+UL
+\item 
+\#define \hyperlink{group__avr__version_gadecde61fc0ef6e31f4dd6c732913aba8}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}~\char`\"{}20111229\char`\"{}
+\item 
+\#define \hyperlink{group__avr__version_ga09c3581176726e46963330ae12270bf6}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+}~20111229\+UL
+\item 
+\#define \hyperlink{group__avr__version_ga8a657f9b659536d9c0c3c03ca441bb00}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+}~1
+\item 
+\#define \hyperlink{group__avr__version_gaaabd42be463ab59be357639b50bd722c}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+}~8
+\item 
+\#define \hyperlink{group__avr__version_ga45476ad3a5db9be5a45d098bb1b093b1}{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+}~0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <avr/version.h>} 
+\end{DoxyCode}
+
+
+This header file defines macros that contain version numbers and strings describing the current version of avr-\/libc.
+
+The version number itself basically consists of three pieces that are separated by a dot\+: the major number, the minor number, and the revision number. For development versions (which use an odd minor number), the string representation additionally gets the date code (Y\+Y\+Y\+Y\+M\+M\+DD) appended.
+
+This file will also be included by {\ttfamily $<$\hyperlink{io_8h}{avr/io.\+h}$>$}. That way, portable tests can be implemented using {\ttfamily $<$\hyperlink{io_8h}{avr/io.\+h}$>$} that can be used in code that wants to remain backwards-\/compatible to library versions prior to the date when the library version A\+PI had been added, as referenced but undefined C preprocessor macros automatically evaluate to 0. 
+
+\subsection{Macro Definition Documentation}
+\index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+}{__AVR_LIBC_DATE_}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+~20111229\+UL}\hypertarget{group__avr__version_ga09c3581176726e46963330ae12270bf6}{}\label{group__avr__version_ga09c3581176726e46963330ae12270bf6}
+Numerical representation of the release date. \index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}{__AVR_LIBC_DATE_STRING__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+D\+A\+T\+E\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+~\char`\"{}20111229\char`\"{}}\hypertarget{group__avr__version_gadecde61fc0ef6e31f4dd6c732913aba8}{}\label{group__avr__version_gadecde61fc0ef6e31f4dd6c732913aba8}
+\hyperlink{class_string}{String} literal representation of the release date. \index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+}{__AVR_LIBC_MAJOR__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+\_\+~1}\hypertarget{group__avr__version_ga8a657f9b659536d9c0c3c03ca441bb00}{}\label{group__avr__version_ga8a657f9b659536d9c0c3c03ca441bb00}
+Library major version number. \index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+}{__AVR_LIBC_MINOR__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+~8}\hypertarget{group__avr__version_gaaabd42be463ab59be357639b50bd722c}{}\label{group__avr__version_gaaabd42be463ab59be357639b50bd722c}
+Library minor version number. \index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+}{__AVR_LIBC_REVISION__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+\_\+~0}\hypertarget{group__avr__version_ga45476ad3a5db9be5a45d098bb1b093b1}{}\label{group__avr__version_ga45476ad3a5db9be5a45d098bb1b093b1}
+Library revision number. \index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+}{__AVR_LIBC_VERSION__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+\_\+~10800\+UL}\hypertarget{group__avr__version_ga161e98ee1c31a16eeb71fc87dc73526f}{}\label{group__avr__version_ga161e98ee1c31a16eeb71fc87dc73526f}
+Numerical representation of the current library version.
+
+In the numerical representation, the major number is multiplied by 10000, the minor number by 100, and all three parts are then added. It is intented to provide a monotonically increasing numerical value that can easily be used in numerical checks. \index{$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}!\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+@{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}!$<$avr/version.\+h$>$\+: avr-\/libc version macros@{$<$avr/version.\+h$>$\+: avr-\/libc version macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+}{__AVR_LIBC_VERSION_STRING__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+A\+V\+R\+\_\+\+L\+I\+B\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+\_\+~\char`\"{}1.\+8.\+0svn\char`\"{}}\hypertarget{group__avr__version_gaace584c6d368436814b4fe12d71230f9}{}\label{group__avr__version_gaace584c6d368436814b4fe12d71230f9}
+\hyperlink{class_string}{String} literal representation of the current library version. 

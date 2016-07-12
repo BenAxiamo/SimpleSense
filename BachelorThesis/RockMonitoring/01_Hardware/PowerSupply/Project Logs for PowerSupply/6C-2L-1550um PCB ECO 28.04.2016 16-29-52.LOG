@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetC1_2 Pin=U1-3
+Change Component Library : Designator=X4 Old Library=powerSupply.SCHLIB New Library=PowerSupply_v1.1.SCHLIB
+Added Component: Designator=Q?(E3)
+Added Component: Designator=R8(0402)
+Added Pin To Net: NetName=GND Pin=Q?-3
+Added Pin To Net: NetName=NetC1_2 Pin=R8-2
+Added Pin To Net: NetName=NetQ?_1 Pin=Q?-1
+Added Pin To Net: NetName=NetQ?_1 Pin=R8-1
+Added Pin To Net: NetName=NetQ?_1 Pin=U1-3
+Added Net: Name=NetQ?_1
+Added Pin To Net: NetName=NetQ?_2 Pin=Q?-2
+Added Net: Name=NetQ?_2
+Added Member To Class: ClassName=power_supply Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=power_supply Member=Component R8 Res2

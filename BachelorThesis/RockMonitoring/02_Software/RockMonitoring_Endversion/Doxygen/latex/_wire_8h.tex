@@ -1,0 +1,120 @@
+\hypertarget{_wire_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wire.h File Reference}
+\label{_wire_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wire.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wire.\+h}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_two_wire}{Two\+Wire}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH}~32\hypertarget{_wire_8h_af7b7dc9a200cb1404c280bd500fd1551}{}\label{_wire_8h_af7b7dc9a200cb1404c280bd500fd1551}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+T\+I\+M\+E\+O\+UT}~250\hypertarget{_wire_8h_afa3215f0aa766367f5d34bee80929152}{}\label{_wire_8h_afa3215f0aa766367f5d34bee80929152}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+W\+A\+S\+P\+\_\+\+A\+CC}~0x19\hypertarget{_wire_8h_a839f6f14263709e9cedd0951a8d7b5a5}{}\label{_wire_8h_a839f6f14263709e9cedd0951a8d7b5a5}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+W\+A\+S\+P\+\_\+\+R\+TC}~0x68\hypertarget{_wire_8h_a5eff65fa05e07e4799d3d5b40734c172}{}\label{_wire_8h_a5eff65fa05e07e4799d3d5b40734c172}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+D\+I\+G\+I\+P\+O\+T1}~0x28\hypertarget{_wire_8h_ac1c60faade4751cf827ab25378f74432}{}\label{_wire_8h_ac1c60faade4751cf827ab25378f74432}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+D\+I\+G\+I\+P\+O\+T2}~0x2C\hypertarget{_wire_8h_ab3b65717a79447e0c3f6f04d2a98d387}{}\label{_wire_8h_ab3b65717a79447e0c3f6f04d2a98d387}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+E\+V\+E\+N\+T\+S\+\_\+\+D\+I\+G\+I\+P\+O\+T3}~0x2A\hypertarget{_wire_8h_a015fe9d39027f4d2cf470da60b53e30c}{}\label{_wire_8h_a015fe9d39027f4d2cf470da60b53e30c}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+A\+G\+R\+\_\+\+D\+E\+N\+D\+R\+O\+M\+E\+T\+ER}~0x16\hypertarget{_wire_8h_a3a489702aea7c9b22e42feb34fceec55}{}\label{_wire_8h_a3a489702aea7c9b22e42feb34fceec55}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+A\+G\+R\+\_\+\+P\+T1000}~0x16\hypertarget{_wire_8h_ad3f2afb5dc82ac8b15f385099940e04e}{}\label{_wire_8h_ad3f2afb5dc82ac8b15f385099940e04e}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+A\+G\+R\+\_\+\+R\+A\+D\+I\+A\+T\+I\+ON}~0x14\hypertarget{_wire_8h_a17239233b15c578794ac6a39c3db0e85}{}\label{_wire_8h_a17239233b15c578794ac6a39c3db0e85}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+E\+S\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+1\+A\+\_\+1B}~0x28\hypertarget{_wire_8h_a38db8abc586e70893ca6dab4d531eabe}{}\label{_wire_8h_a38db8abc586e70893ca6dab4d531eabe}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+E\+S\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+4}~0x2A\hypertarget{_wire_8h_a393b9e6479b17c4aee6db5c0085a6629}{}\label{_wire_8h_a393b9e6479b17c4aee6db5c0085a6629}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+E\+S\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+2\+A\+\_\+2B}~0x2C\hypertarget{_wire_8h_a2ea529a4d5f421ae32ee84fe0d54d2c7}{}\label{_wire_8h_a2ea529a4d5f421ae32ee84fe0d54d2c7}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+E\+S\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+3\+\_\+3B}~0x2E\hypertarget{_wire_8h_af85d3471ac5f41574434d66922e1da32}{}\label{_wire_8h_af85d3471ac5f41574434d66922e1da32}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+S\+E\+N\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+D\+U\+ST}~0\+X2A\hypertarget{_wire_8h_a5760c72109c4d3d9da6ed37e76a6508d}{}\label{_wire_8h_a5760c72109c4d3d9da6ed37e76a6508d}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+LD}~0\+X28\hypertarget{_wire_8h_a0dd14b195c073fc446959a4ddf7bdd22}{}\label{_wire_8h_a0dd14b195c073fc446959a4ddf7bdd22}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+A\+U\+D\+IO}~0\+X2A\hypertarget{_wire_8h_a79ea6aab8574bc722839a32b743cd805}{}\label{_wire_8h_a79ea6aab8574bc722839a32b743cd805}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+G\+A\+IN}~0\+X2E\hypertarget{_wire_8h_a61e9f21aaa374773896ad70d579d88f0}{}\label{_wire_8h_a61e9f21aaa374773896ad70d579d88f0}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+H\+U\+M\+I\+D\+I\+TY}~0\+X2F\hypertarget{_wire_8h_ac6dc506087b3428f07642d5f31db72f8}{}\label{_wire_8h_ac6dc506087b3428f07642d5f31db72f8}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}~0\+X2C\hypertarget{_wire_8h_a625764366a026aacdfd1ecadca85e3d8}{}\label{_wire_8h_a625764366a026aacdfd1ecadca85e3d8}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+U\+L\+T\+R\+A\+\_\+5V}~0\+X2F\hypertarget{_wire_8h_a4a1f535d394a7a26690225cd2c029f04}{}\label{_wire_8h_a4a1f535d394a7a26690225cd2c029f04}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+U\+L\+T\+R\+A\+\_\+3\+V3}~0\+X2C\hypertarget{_wire_8h_a59210e9981d24b2669dc4743197c4295}{}\label{_wire_8h_a59210e9981d24b2669dc4743197c4295}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+L\+DR}~0\+X2C\hypertarget{_wire_8h_ae202e56b443b840cd61a161625be76e0}{}\label{_wire_8h_ae202e56b443b840cd61a161625be76e0}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+CD}~0\+X2C\hypertarget{_wire_8h_a15bbe0d2c258ecb5d8274708fcd91e79}{}\label{_wire_8h_a15bbe0d2c258ecb5d8274708fcd91e79}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+C\+I\+T\+I\+E\+S\+\_\+\+CP}~0\+X2C\hypertarget{_wire_8h_ad03f1aaf6dd559aa4f358c7bc61904c9}{}\label{_wire_8h_ad03f1aaf6dd559aa4f358c7bc61904c9}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+P\+R\+O\+\_\+\+B\+M\+E280}~0x77\hypertarget{_wire_8h_a6fba3cbdde46ee353b929771d475fbef}{}\label{_wire_8h_a6fba3cbdde46ee353b929771d475fbef}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+P\+R\+O\+\_\+\+L\+M\+P91000}~0x48\hypertarget{_wire_8h_a188ca6e80fdf6f0ff8c825ef4fb37bb6}{}\label{_wire_8h_a188ca6e80fdf6f0ff8c825ef4fb37bb6}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+P\+R\+O\+\_\+\+M\+C\+P3421}~0x69\hypertarget{_wire_8h_ab6b913a2e41d0a0ac0e73c337d1d1a46}{}\label{_wire_8h_ab6b913a2e41d0a0ac0e73c337d1d1a46}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+P\+R\+O\+\_\+\+E2\+P\+R\+OM}~0x50\hypertarget{_wire_8h_a9cd6c7904a6f86efffa723d8d2939f27}{}\label{_wire_8h_a9cd6c7904a6f86efffa723d8d2939f27}
+
+\item 
+\#define {\bfseries I2\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+G\+A\+S\+P\+R\+O\+\_\+\+M\+C\+P4146}~0x2A\hypertarget{_wire_8h_af9c7d0bbb1418153ad5161120b374b96}{}\label{_wire_8h_af9c7d0bbb1418153ad5161120b374b96}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_two_wire}{Two\+Wire} {\bfseries Wire}\hypertarget{_wire_8h_a35bd3de386d23ba02c35f820303db472}{}\label{_wire_8h_a35bd3de386d23ba02c35f820303db472}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVersion}{Version}
+1.\+1
+\end{DoxyVersion}
+Modified for Waspmote by Libelium, 2009-\/2015 Copyright (c) 2006 Nicholas Zambetti. All right reserved.
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. 

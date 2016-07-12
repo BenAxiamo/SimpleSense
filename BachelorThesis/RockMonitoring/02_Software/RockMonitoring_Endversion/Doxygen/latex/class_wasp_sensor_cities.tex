@@ -1,0 +1,328 @@
+\hypertarget{class_wasp_sensor_cities}{}\section{Wasp\+Sensor\+Cities Class Reference}
+\label{class_wasp_sensor_cities}\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+
+
+\hyperlink{class_wasp_sensor_cities}{Wasp\+Sensor\+Cities} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Cities.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_cities_a8f5ce2155eafb8ebe732e946443d7174}{Wasp\+Sensor\+Cities} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_cities_ad504a0572a9039674f364aa7f964394e}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_cities_a065eb04d2af79f52b45aa5c9dfa6017b}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_cities_a3ac9a9dcd0ea8f591f15a27940dfed19}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the 3\+V3/5V switches. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_cities_a9fff43ca0600a66b4c3862cf303e2ad3}{set\+Sensor\+Mode} (uint8\+\_\+t mode, uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the different sensor switches. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_cities_a3a2cae0d42f7d34b6665874638be9668}{set\+Threshold} (uint16\+\_\+t sensor, float threshold)
+\begin{DoxyCompactList}\small\item\em It sets threshold configuring digipots. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_cities_a0f7694be4c8347702ac5007e8b86e01f}{set\+Audio\+Gain} (uint8\+\_\+t value1, float value2)
+\begin{DoxyCompactList}\small\item\em It sets the value of the gain of the amplifiers in the microphone adaption stage. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_cities_a4528e9a9bbd5c90e63aa0a6b51cdfba2}{read\+Value} (uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_cities_a9b8842ffe856a3325488f3d4c710c633}{read\+Value} (uint16\+\_\+t sensor, uint8\+\_\+t model)
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_cities_a244f02367345dd1c828ff023d8b7ff49}{attach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It attaches the interruption. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_cities_a6c4a172eeea66e9dc0461cbc6028641d}{detach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It detaches the interruption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sensor_cities_a97f0737c3478a7b8353abbc72a537317}{load\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It loads the parallel shift register to check the sensor that has generated the interruption. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_sensor_cities_a6901c4228066c4501161bb4a09760f2c}{int\+Flag}
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the sensor that has generated the interruption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_sensor_cities_af1b4cd1f1ca6126d7ecd5fcd2fd7be01}{gain1}
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the gain of the input amplifier. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_cities_a61bbb4272c2703d788c1a6f961513d70}{gain2}
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the gain of the output amplifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_sensor_cities}{Wasp\+Sensor\+Cities} Class. 
+
+\hyperlink{class_wasp_sensor_cities}{Wasp\+Sensor\+Cities} Class defines all the variables and functions used for managing the Smart Cities Sensor Board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Cities()}{WaspSensorCities()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Cities\+::\+Wasp\+Sensor\+Cities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a8f5ce2155eafb8ebe732e946443d7174}{}\label{class_wasp_sensor_cities_a8f5ce2155eafb8ebe732e946443d7174}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!attach\+Int@{attach\+Int}}
+\index{attach\+Int@{attach\+Int}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{attach\+Int(void)}{attachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Cities\+::attach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a244f02367345dd1c828ff023d8b7ff49}{}\label{class_wasp_sensor_cities_a244f02367345dd1c828ff023d8b7ff49}
+
+
+It attaches the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!detach\+Int@{detach\+Int}}
+\index{detach\+Int@{detach\+Int}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{detach\+Int(void)}{detachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Cities\+::detach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a6c4a172eeea66e9dc0461cbc6028641d}{}\label{class_wasp_sensor_cities_a6c4a172eeea66e9dc0461cbc6028641d}
+
+
+It detaches the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!load\+Int@{load\+Int}}
+\index{load\+Int@{load\+Int}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{load\+Int(void)}{loadInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sensor\+Cities\+::load\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a97f0737c3478a7b8353abbc72a537317}{}\label{class_wasp_sensor_cities_a97f0737c3478a7b8353abbc72a537317}
+
+
+It loads the parallel shift register to check the sensor that has generated the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the flag to check the sensor that has generated the interruption 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Cities\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a065eb04d2af79f52b45aa5c9dfa6017b}{}\label{class_wasp_sensor_cities_a065eb04d2af79f52b45aa5c9dfa6017b}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Cities\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_ad504a0572a9039674f364aa7f964394e}{}\label{class_wasp_sensor_cities_ad504a0572a9039674f364aa7f964394e}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor)}{readValue(uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Cities\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a4528e9a9bbd5c90e63aa0a6b51cdfba2}{}\label{class_wasp_sensor_cities_a4528e9a9bbd5c90e63aa0a6b51cdfba2}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: specifies the socket to set the threshold to (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+M\+A\+R\+T\+\_\+X\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor, uint8\+\_\+t model)}{readValue(uint16_t sensor, uint8_t model)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Cities\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{uint8\+\_\+t}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a9b8842ffe856a3325488f3d4c710c633}{}\label{class_wasp_sensor_cities_a9b8842ffe856a3325488f3d4c710c633}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: specifies the socket to set the threshold to (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+M\+A\+R\+T\+\_\+X\textquotesingle{}) \\
+\hline
+{\em uint8\+\_\+t} & type \+: the type sensor connected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!set\+Audio\+Gain@{set\+Audio\+Gain}}
+\index{set\+Audio\+Gain@{set\+Audio\+Gain}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{set\+Audio\+Gain(uint8\+\_\+t value1, float value2)}{setAudioGain(uint8_t value1, float value2)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Cities\+::set\+Audio\+Gain (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{value1, }
+\item[{float}]{value2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a0f7694be4c8347702ac5007e8b86e01f}{}\label{class_wasp_sensor_cities_a0f7694be4c8347702ac5007e8b86e01f}
+
+
+It sets the value of the gain of the amplifiers in the microphone adaption stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & value \+: the value to set the input amplifier to \\
+\hline
+{\em float} & value \+: the value to set the output amplifier to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Cities\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a3ac9a9dcd0ea8f591f15a27940dfed19}{}\label{class_wasp_sensor_cities_a3ac9a9dcd0ea8f591f15a27940dfed19}
+
+
+It sets O\+N/\+O\+FF the 3\+V3/5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!set\+Sensor\+Mode@{set\+Sensor\+Mode}}
+\index{set\+Sensor\+Mode@{set\+Sensor\+Mode}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{set\+Sensor\+Mode(uint8\+\_\+t mode, uint16\+\_\+t sensor)}{setSensorMode(uint8_t mode, uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Cities\+::set\+Sensor\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a9fff43ca0600a66b4c3862cf303e2ad3}{}\label{class_wasp_sensor_cities_a9fff43ca0600a66b4c3862cf303e2ad3}
+
+
+It sets O\+N/\+O\+FF the different sensor switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+{\em uint16\+\_\+t} & sensor \+: the sensor to set O\+N/\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!set\+Threshold@{set\+Threshold}}
+\index{set\+Threshold@{set\+Threshold}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{set\+Threshold(uint16\+\_\+t sensor, float threshold)}{setThreshold(uint16_t sensor, float threshold)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Cities\+::set\+Threshold (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{float}]{threshold}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_cities_a3a2cae0d42f7d34b6665874638be9668}{}\label{class_wasp_sensor_cities_a3a2cae0d42f7d34b6665874638be9668}
+
+
+It sets threshold configuring digipots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: specifies the socket to set the threshold to (\textquotesingle{}S\+E\+N\+S\+\_\+\+S\+M\+A\+R\+T\+\_\+X\textquotesingle{}) \\
+\hline
+{\em float} & threshold \+: the threshold to set (0-\/3.\+3V) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!gain1@{gain1}}
+\index{gain1@{gain1}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{gain1}{gain1}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sensor\+Cities\+::gain1}\hypertarget{class_wasp_sensor_cities_af1b4cd1f1ca6126d7ecd5fcd2fd7be01}{}\label{class_wasp_sensor_cities_af1b4cd1f1ca6126d7ecd5fcd2fd7be01}
+
+
+Variable \+: specifies the gain of the input amplifier. 
+
+It specifies the gain of the input amplifier of the microphone adaption stage \index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!gain2@{gain2}}
+\index{gain2@{gain2}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{gain2}{gain2}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Cities\+::gain2}\hypertarget{class_wasp_sensor_cities_a61bbb4272c2703d788c1a6f961513d70}{}\label{class_wasp_sensor_cities_a61bbb4272c2703d788c1a6f961513d70}
+
+
+Variable \+: specifies the gain of the output amplifier. 
+
+It specifies the gain of the output amplifier of the microphone adaption stage \index{Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}!int\+Flag@{int\+Flag}}
+\index{int\+Flag@{int\+Flag}!Wasp\+Sensor\+Cities@{Wasp\+Sensor\+Cities}}
+\subsubsection[{\texorpdfstring{int\+Flag}{intFlag}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Sensor\+Cities\+::int\+Flag}\hypertarget{class_wasp_sensor_cities_a6901c4228066c4501161bb4a09760f2c}{}\label{class_wasp_sensor_cities_a6901c4228066c4501161bb4a09760f2c}
+
+
+Variable \+: specifies the sensor that has generated the interruption. 
+
+It specifies the socket that has generated the interruption, activating the corresponding flag position 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Cities/\hyperlink{_wasp_sensor_cities_8h}{Wasp\+Sensor\+Cities.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Cities/Wasp\+Sensor\+Cities.\+cpp\end{DoxyCompactItemize}

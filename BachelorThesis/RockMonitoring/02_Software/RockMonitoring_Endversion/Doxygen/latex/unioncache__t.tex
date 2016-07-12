@@ -1,0 +1,65 @@
+\hypertarget{unioncache__t}{}\section{cache\+\_\+t Union Reference}
+\label{unioncache__t}\index{cache\+\_\+t@{cache\+\_\+t}}
+
+
+Cache for an SD data block.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Volume.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{unioncache__t_ae675b7a3a87d809070de111d1d1f1d81}{data} \mbox{[}512\mbox{]}
+\item 
+uint16\+\_\+t \hyperlink{unioncache__t_a8f3a4e9392a7d8ace954fc44c57df887}{fat16} \mbox{[}256\mbox{]}
+\item 
+uint32\+\_\+t \hyperlink{unioncache__t_a57e16421bf460d1ba6cb9ce9a23a4a83}{fat32} \mbox{[}128\mbox{]}
+\item 
+\hyperlink{_sd_fat_structs_8h_a803db59d4e16a0c54a647afc6a7954e3}{dir\+\_\+t} \hyperlink{unioncache__t_a7396fdbdb7c52bd1d72c5329ff32acd1}{dir} \mbox{[}16\mbox{]}
+\item 
+\hyperlink{_sd_fat_structs_8h_a7c429e5097f101c8c97663d6c4155bd9}{mbr\+\_\+t} \hyperlink{unioncache__t_a6ac10bfb1ebb1139c448456679663bb6}{mbr}
+\item 
+\hyperlink{_sd_fat_structs_8h_aedac4595ee08198da26c14b9891a07d5}{fat\+\_\+boot\+\_\+t} \hyperlink{unioncache__t_ad1a4f1c0e8b8ca4d530427dbc920c764}{fbs}
+\item 
+\hyperlink{_sd_fat_structs_8h_a38fa081d004647a828095d31b07ec491}{fat32\+\_\+boot\+\_\+t} \hyperlink{unioncache__t_ad0613173ed4e83920eedfeb33102848a}{fbs32}
+\item 
+\hyperlink{_sd_fat_structs_8h_a6030ed0fce3a819326a2548407fc8556}{fat32\+\_\+fsinfo\+\_\+t} \hyperlink{unioncache__t_a46c7b14586a6248824a97101111cbae1}{fsinfo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cache for an SD data block. 
+
+\subsection{Member Data Documentation}
+\index{cache\+\_\+t@{cache\+\_\+t}!data@{data}}
+\index{data@{data}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t cache\+\_\+t\+::data\mbox{[}512\mbox{]}}\hypertarget{unioncache__t_ae675b7a3a87d809070de111d1d1f1d81}{}\label{unioncache__t_ae675b7a3a87d809070de111d1d1f1d81}
+Used to access cached file data blocks. \index{cache\+\_\+t@{cache\+\_\+t}!dir@{dir}}
+\index{dir@{dir}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{dir}{dir}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dir\+\_\+t} cache\+\_\+t\+::dir\mbox{[}16\mbox{]}}\hypertarget{unioncache__t_a7396fdbdb7c52bd1d72c5329ff32acd1}{}\label{unioncache__t_a7396fdbdb7c52bd1d72c5329ff32acd1}
+Used to access cached directory entries. \index{cache\+\_\+t@{cache\+\_\+t}!fat16@{fat16}}
+\index{fat16@{fat16}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{fat16}{fat16}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t cache\+\_\+t\+::fat16\mbox{[}256\mbox{]}}\hypertarget{unioncache__t_a8f3a4e9392a7d8ace954fc44c57df887}{}\label{unioncache__t_a8f3a4e9392a7d8ace954fc44c57df887}
+Used to access cached F\+A\+T16 entries. \index{cache\+\_\+t@{cache\+\_\+t}!fat32@{fat32}}
+\index{fat32@{fat32}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{fat32}{fat32}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t cache\+\_\+t\+::fat32\mbox{[}128\mbox{]}}\hypertarget{unioncache__t_a57e16421bf460d1ba6cb9ce9a23a4a83}{}\label{unioncache__t_a57e16421bf460d1ba6cb9ce9a23a4a83}
+Used to access cached F\+A\+T32 entries. \index{cache\+\_\+t@{cache\+\_\+t}!fbs@{fbs}}
+\index{fbs@{fbs}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{fbs}{fbs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fat\+\_\+boot\+\_\+t} cache\+\_\+t\+::fbs}\hypertarget{unioncache__t_ad1a4f1c0e8b8ca4d530427dbc920c764}{}\label{unioncache__t_ad1a4f1c0e8b8ca4d530427dbc920c764}
+Used to access to a cached F\+AT boot sector. \index{cache\+\_\+t@{cache\+\_\+t}!fbs32@{fbs32}}
+\index{fbs32@{fbs32}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{fbs32}{fbs32}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fat32\+\_\+boot\+\_\+t} cache\+\_\+t\+::fbs32}\hypertarget{unioncache__t_ad0613173ed4e83920eedfeb33102848a}{}\label{unioncache__t_ad0613173ed4e83920eedfeb33102848a}
+Used to access to a cached F\+A\+T32 boot sector. \index{cache\+\_\+t@{cache\+\_\+t}!fsinfo@{fsinfo}}
+\index{fsinfo@{fsinfo}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{fsinfo}{fsinfo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fat32\+\_\+fsinfo\+\_\+t} cache\+\_\+t\+::fsinfo}\hypertarget{unioncache__t_a46c7b14586a6248824a97101111cbae1}{}\label{unioncache__t_a46c7b14586a6248824a97101111cbae1}
+Used to access to a cached F\+A\+T32 F\+S\+I\+N\+FO sector. \index{cache\+\_\+t@{cache\+\_\+t}!mbr@{mbr}}
+\index{mbr@{mbr}!cache\+\_\+t@{cache\+\_\+t}}
+\subsubsection[{\texorpdfstring{mbr}{mbr}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mbr\+\_\+t} cache\+\_\+t\+::mbr}\hypertarget{unioncache__t_a6ac10bfb1ebb1139c448456679663bb6}{}\label{unioncache__t_a6ac10bfb1ebb1139c448456679663bb6}
+Used to access a cached Master Boot Record. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_volume_8h}{Sd\+Volume.\+h}\end{DoxyCompactItemize}

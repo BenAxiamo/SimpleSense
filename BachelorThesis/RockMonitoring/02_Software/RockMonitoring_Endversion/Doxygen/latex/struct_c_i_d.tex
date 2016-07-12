@@ -1,0 +1,80 @@
+\hypertarget{struct_c_i_d}{}\section{C\+ID Struct Reference}
+\label{struct_c_i_d}\index{C\+ID@{C\+ID}}
+
+
+{\ttfamily \#include $<$Sd\+Info.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_c_i_d_aa77436aa64a8a0e80573ade765039d2f}{mid}
+\item 
+char \hyperlink{struct_c_i_d_a12cb950aa46c62c8af1e530006f97031}{oid} \mbox{[}2\mbox{]}
+\item 
+char \hyperlink{struct_c_i_d_a6484cd56fc4bacfa815c12d8682129ba}{pnm} \mbox{[}5\mbox{]}
+\item 
+unsigned char \hyperlink{struct_c_i_d_a142fd792bb74d7af1f0fb62833ae053b}{prv\+\_\+m}\+: 4
+\item 
+unsigned char \hyperlink{struct_c_i_d_ae50f389a50daf99d15d1ea7ce2d426cf}{prv\+\_\+n}\+: 4
+\item 
+uint32\+\_\+t \hyperlink{struct_c_i_d_ada215f8541fa46078461d8da9574fc5e}{psn}
+\item 
+unsigned char \hyperlink{struct_c_i_d_a6b16c5e74b48af39036aa831fca4cb46}{mdt\+\_\+year\+\_\+high}\+: 4
+\item 
+unsigned char \hyperlink{struct_c_i_d_a7d489455802a3a9728a5cec60927a7c7}{reserved}\+: 4
+\item 
+unsigned char \hyperlink{struct_c_i_d_a60e35d4b824da135dc2a9197c5544929}{mdt\+\_\+month}\+: 4
+\item 
+unsigned char \hyperlink{struct_c_i_d_afe44a84b416bea68dea9bad27c172c3d}{mdt\+\_\+year\+\_\+low}\+:4
+\item 
+unsigned char \hyperlink{struct_c_i_d_ae9d4ba51ed4102255aa87bb92882f119}{always1}\+: 1
+\item 
+unsigned char \hyperlink{struct_c_i_d_aa10cfc5aef8e979e47009474dfa3d940}{crc}\+: 7
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Card I\+Dentification (\hyperlink{struct_c_i_d}{C\+ID}) register 
+
+\subsection{Member Data Documentation}
+\index{C\+ID@{C\+ID}!always1@{always1}}
+\index{always1@{always1}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{always1}{always1}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::always1}\hypertarget{struct_c_i_d_ae9d4ba51ed4102255aa87bb92882f119}{}\label{struct_c_i_d_ae9d4ba51ed4102255aa87bb92882f119}
+not used always 1 \index{C\+ID@{C\+ID}!crc@{crc}}
+\index{crc@{crc}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{crc}{crc}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::crc}\hypertarget{struct_c_i_d_aa10cfc5aef8e979e47009474dfa3d940}{}\label{struct_c_i_d_aa10cfc5aef8e979e47009474dfa3d940}
+C\+R\+C7 checksum \index{C\+ID@{C\+ID}!mdt\+\_\+month@{mdt\+\_\+month}}
+\index{mdt\+\_\+month@{mdt\+\_\+month}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{mdt\+\_\+month}{mdt_month}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::mdt\+\_\+month}\hypertarget{struct_c_i_d_a60e35d4b824da135dc2a9197c5544929}{}\label{struct_c_i_d_a60e35d4b824da135dc2a9197c5544929}
+Manufacturing date month \index{C\+ID@{C\+ID}!mdt\+\_\+year\+\_\+high@{mdt\+\_\+year\+\_\+high}}
+\index{mdt\+\_\+year\+\_\+high@{mdt\+\_\+year\+\_\+high}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{mdt\+\_\+year\+\_\+high}{mdt_year_high}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::mdt\+\_\+year\+\_\+high}\hypertarget{struct_c_i_d_a6b16c5e74b48af39036aa831fca4cb46}{}\label{struct_c_i_d_a6b16c5e74b48af39036aa831fca4cb46}
+Manufacturing date year low digit \index{C\+ID@{C\+ID}!mdt\+\_\+year\+\_\+low@{mdt\+\_\+year\+\_\+low}}
+\index{mdt\+\_\+year\+\_\+low@{mdt\+\_\+year\+\_\+low}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{mdt\+\_\+year\+\_\+low}{mdt_year_low}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::mdt\+\_\+year\+\_\+low}\hypertarget{struct_c_i_d_afe44a84b416bea68dea9bad27c172c3d}{}\label{struct_c_i_d_afe44a84b416bea68dea9bad27c172c3d}
+Manufacturing date year low digit \index{C\+ID@{C\+ID}!mid@{mid}}
+\index{mid@{mid}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{mid}{mid}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::mid}\hypertarget{struct_c_i_d_aa77436aa64a8a0e80573ade765039d2f}{}\label{struct_c_i_d_aa77436aa64a8a0e80573ade765039d2f}
+Manufacturer ID \index{C\+ID@{C\+ID}!oid@{oid}}
+\index{oid@{oid}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{oid}{oid}}]{\setlength{\rightskip}{0pt plus 5cm}char C\+I\+D\+::oid\mbox{[}2\mbox{]}}\hypertarget{struct_c_i_d_a12cb950aa46c62c8af1e530006f97031}{}\label{struct_c_i_d_a12cb950aa46c62c8af1e530006f97031}
+O\+E\+M/\+Application ID \index{C\+ID@{C\+ID}!pnm@{pnm}}
+\index{pnm@{pnm}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{pnm}{pnm}}]{\setlength{\rightskip}{0pt plus 5cm}char C\+I\+D\+::pnm\mbox{[}5\mbox{]}}\hypertarget{struct_c_i_d_a6484cd56fc4bacfa815c12d8682129ba}{}\label{struct_c_i_d_a6484cd56fc4bacfa815c12d8682129ba}
+Product name \index{C\+ID@{C\+ID}!prv\+\_\+m@{prv\+\_\+m}}
+\index{prv\+\_\+m@{prv\+\_\+m}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{prv\+\_\+m}{prv_m}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::prv\+\_\+m}\hypertarget{struct_c_i_d_a142fd792bb74d7af1f0fb62833ae053b}{}\label{struct_c_i_d_a142fd792bb74d7af1f0fb62833ae053b}
+Product revision least significant digit \index{C\+ID@{C\+ID}!prv\+\_\+n@{prv\+\_\+n}}
+\index{prv\+\_\+n@{prv\+\_\+n}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{prv\+\_\+n}{prv_n}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::prv\+\_\+n}\hypertarget{struct_c_i_d_ae50f389a50daf99d15d1ea7ce2d426cf}{}\label{struct_c_i_d_ae50f389a50daf99d15d1ea7ce2d426cf}
+Product revision most significant digit \index{C\+ID@{C\+ID}!psn@{psn}}
+\index{psn@{psn}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{psn}{psn}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+I\+D\+::psn}\hypertarget{struct_c_i_d_ada215f8541fa46078461d8da9574fc5e}{}\label{struct_c_i_d_ada215f8541fa46078461d8da9574fc5e}
+Product serial number \index{C\+ID@{C\+ID}!reserved@{reserved}}
+\index{reserved@{reserved}!C\+ID@{C\+ID}}
+\subsubsection[{\texorpdfstring{reserved}{reserved}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char C\+I\+D\+::reserved}\hypertarget{struct_c_i_d_a7d489455802a3a9728a5cec60927a7c7}{}\label{struct_c_i_d_a7d489455802a3a9728a5cec60927a7c7}
+not used 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/Sd\+Info.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{stdlib_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/stdlib.h File Reference}
+\label{stdlib_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/stdlib.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/stdlib.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdiv__t}{div\+\_\+t}
+\item 
+struct \hyperlink{structldiv__t}{ldiv\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+need\+\_\+\+N\+U\+LL}\hypertarget{stdlib_8h_a6c27666e43b87c08fa8b2e8aa324601c}{}\label{stdlib_8h_a6c27666e43b87c08fa8b2e8aa324601c}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+need\+\_\+size\+\_\+t}\hypertarget{stdlib_8h_a2898830827f947f003d187388f7e6c72}{}\label{stdlib_8h_a2898830827f947f003d187388f7e6c72}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+need\+\_\+wchar\+\_\+t}\hypertarget{stdlib_8h_a6171e467aa571bcff475ecf0402330e3}{}\label{stdlib_8h_a6171e467aa571bcff475ecf0402330e3}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+ptr\+\_\+t}~void $\ast$\hypertarget{stdlib_8h_a97c2ff9da355218a9f2cefb0e9097855}{}\label{stdlib_8h_a97c2ff9da355218a9f2cefb0e9097855}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+const\+\_\+\+\_\+))
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+malloc\+\_\+\+\_\+))
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+noreturn\+\_\+\+\_\+))
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+pure\+\_\+\+\_\+))
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+}
+\item 
+\#define {\bfseries abs}(\+\_\+\+\_\+i)~\+\_\+\+\_\+builtin\+\_\+abs(\+\_\+\+\_\+i)
+\item 
+\#define {\bfseries labs}(\+\_\+\+\_\+i)~\+\_\+\+\_\+builtin\+\_\+labs(\+\_\+\+\_\+i)
+\item 
+\#define \hyperlink{group__avr__stdlib_ga690f251553b39fd4f31894826141b61a}{R\+A\+N\+D\+\_\+\+M\+AX}~0x7\+F\+FF
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{group__avr__stdlib_ga35e28bfcc8d641e0eebd66f4dc559a3f}{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t}) (const void $\ast$, const void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}{abort} (void) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+
+\item 
+int \hyperlink{group__avr__stdlib_ga11edd4c08baed8ed669f5ac9fc1eab7d}{abs} (int \+\_\+\+\_\+i) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+long \hyperlink{group__avr__stdlib_ga1556348100e21b1a1b5ffec3c8b3dc76}{labs} (long \+\_\+\+\_\+i) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_ga885c1ccefb716ff16ab73a57003140be}{bsearch} (const void $\ast$\+\_\+\+\_\+key, const void $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+nmemb, size\+\_\+t \+\_\+\+\_\+size, int($\ast$\+\_\+\+\_\+compar)(const void $\ast$, const void $\ast$))
+\item 
+\hyperlink{structdiv__t}{div\+\_\+t} \hyperlink{group__avr__stdlib_ga63314983c7ee996c09f9e521eda5d399}{div} (int \+\_\+\+\_\+num, int \+\_\+\+\_\+denom) \+\_\+\+\_\+asm\+\_\+\+\_\+(\char`\"{}\+\_\+\+\_\+divmodhi4\char`\"{}) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+\hyperlink{structldiv__t}{ldiv\+\_\+t} \hyperlink{group__avr__stdlib_ga51399546cb1492103d553abf43ff6bd6}{ldiv} (long \+\_\+\+\_\+num, long \+\_\+\+\_\+denom) \+\_\+\+\_\+asm\+\_\+\+\_\+(\char`\"{}\+\_\+\+\_\+divmodsi4\char`\"{}) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+
+\item 
+void \hyperlink{group__avr__stdlib_gafd4bf2faec43342e7ad3d2ab37bac1fe}{qsort} (void $\ast$\+\_\+\+\_\+base, size\+\_\+t \+\_\+\+\_\+nmemb, size\+\_\+t \+\_\+\+\_\+size, \hyperlink{group__avr__stdlib_ga35e28bfcc8d641e0eebd66f4dc559a3f}{\+\_\+\+\_\+compar\+\_\+fn\+\_\+t} \+\_\+\+\_\+compar)
+\item 
+long \hyperlink{group__avr__stdlib_gaf8ce3b8dae3d45c34c3b172de503f7b3}{strtol} (const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr, int \+\_\+\+\_\+base)
+\item 
+unsigned long \hyperlink{group__avr__stdlib_gaea44aa48bda8261f794dcb2d1e7ab2b2}{strtoul} (const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr, int \+\_\+\+\_\+base)
+\item 
+long \hyperlink{group__avr__stdlib_ga764de49bd918caf24ce1caf3a10b3823}{atol} (const char $\ast$\+\_\+\+\_\+s) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+
+\item 
+int \hyperlink{group__avr__stdlib_ga3a1fe00c1327bbabc76688a7a1d73370}{atoi} (const char $\ast$\+\_\+\+\_\+s) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+
+\item 
+void \hyperlink{group__avr__stdlib_ga137096a48cc0c731052cadfb69c39b34}{exit} (int \+\_\+\+\_\+status) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_ga4996af830ebe744d9678e5251dfd3ebd}{malloc} (size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+
+\item 
+void \hyperlink{group__avr__stdlib_gafb8699abb1f51d920a176e695ff3be8a}{free} (void $\ast$\+\_\+\+\_\+ptr)
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_ga51ac965dacbc9daf922f469bdcfe00c2}{calloc} (size\+\_\+t \+\_\+\+\_\+nele, size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+
+\item 
+void $\ast$ \hyperlink{group__avr__stdlib_gafd300bad8b4dd2e88b07d464d76c92aa}{realloc} (void $\ast$\+\_\+\+\_\+ptr, size\+\_\+t \+\_\+\+\_\+size) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+\_\+
+\item 
+double {\bfseries strtod} (const char $\ast$\+\_\+\+\_\+nptr, char $\ast$$\ast$\+\_\+\+\_\+endptr)
+\item 
+double {\bfseries atof} (const char $\ast$\+\_\+\+\_\+nptr)
+\item 
+int \hyperlink{group__avr__stdlib_gae23144bcbb8e3742b00eb687c36654d1}{rand} (void)
+\item 
+void \hyperlink{group__avr__stdlib_gacceff9dc95bb3c5562dc9e61fc3d9075}{srand} (unsigned int \+\_\+\+\_\+seed)
+\item 
+int \hyperlink{group__avr__stdlib_gaf5085001be836a0f2a5d3269a7c9fd04}{rand\+\_\+r} (unsigned long $\ast$\+\_\+\+\_\+ctx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{group__avr__stdlib_gaffadd67736fd340e893fb22c207de597}{\+\_\+\+\_\+malloc\+\_\+margin}
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga9310042b3956282440c091d20cb98c5f}{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+start}
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga4d7b1bf0f75d529cc75229a266132115}{\+\_\+\+\_\+malloc\+\_\+heap\+\_\+end}
+\end{DoxyCompactItemize}
+\subsection*{Non-\/standard (i.\+e. non-\/\+I\+SO C) functions.}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdlib_ga3bd31f0d9a9127548b734e7ca03cc6df}{R\+A\+N\+D\+O\+M\+\_\+\+M\+AX}~0x7\+F\+F\+F\+F\+F\+FF
+\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_gaeb782784ecd745890ea66c1c47817435}{itoa} (int \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert an integer to a string. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_ga8bf71f6d9c357c8a9690dd6bcda85aca}{ltoa} (long \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert a long integer to a string. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_gae272f8a7060edeade527a0821e5e811b}{utoa} (unsigned int \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned integer to a string. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+inline\+\_\+\+\_\+ \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+G\+N\+U\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+\_\+ char $\ast$ \hyperlink{group__avr__stdlib_gae07ff57ffca09238c490ff4d11cf6399}{ultoa} (unsigned long \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, int \+\_\+\+\_\+radix)
+\begin{DoxyCompactList}\small\item\em Convert an unsigned long integer to a string. \end{DoxyCompactList}\item 
+long \hyperlink{group__avr__stdlib_ga114aeb1751119382aaf3340355b22cfd}{random} (void)
+\item 
+void \hyperlink{group__avr__stdlib_ga4fca27496ca29c0a723d197696641eff}{srandom} (unsigned long \+\_\+\+\_\+seed)
+\item 
+long \hyperlink{group__avr__stdlib_gaa99a0733f06d2b9960a1401c2721af1e}{random\+\_\+r} (unsigned long $\ast$\+\_\+\+\_\+ctx)
+\end{DoxyCompactItemize}
+\subsection*{Conversion functions for double arguments.}
+\label{_amgrp67796e0946dab291b611cb32584a051f}%
+Note that these functions are not located in the default library, {\ttfamily libc.\+a}, but in the mathematical library, {\ttfamily libm.\+a}. So when linking the application, the {\ttfamily -\/lm} option needs to be specified. \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__avr__stdlib_ga815d0d26e215d9b78af1cb2288d22361}{D\+T\+O\+S\+T\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+S\+I\+GN}~0x01        /$\ast$ put \textquotesingle{}+\textquotesingle{} or \textquotesingle{} \textquotesingle{} for positives $\ast$/
+\item 
+\#define \hyperlink{group__avr__stdlib_ga268774f80047812307365f3113109767}{D\+T\+O\+S\+T\+R\+\_\+\+P\+L\+U\+S\+\_\+\+S\+I\+GN}~0x02        /$\ast$ put \textquotesingle{}+\textquotesingle{} rather than \textquotesingle{} \textquotesingle{} $\ast$/
+\item 
+\#define \hyperlink{group__avr__stdlib_ga125348f1e1fed1793426f4c4dc6fb2f7}{D\+T\+O\+S\+T\+R\+\_\+\+U\+P\+P\+E\+R\+C\+A\+SE}~0x04        /$\ast$ put \textquotesingle{}\+E\textquotesingle{} rather \textquotesingle{}e\textquotesingle{} $\ast$/
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga6c140bdd3b9bd740a1490137317caa44}{dtostre} (double \+\_\+\+\_\+val, char $\ast$\+\_\+\+\_\+s, unsigned char \+\_\+\+\_\+prec, unsigned char \+\_\+\+\_\+flags)
+\item 
+char $\ast$ \hyperlink{group__avr__stdlib_ga060c998e77fb5fc0d3168b3ce8771d42}{dtostrf} (double \+\_\+\+\_\+val, signed char \+\_\+\+\_\+width, unsigned char \+\_\+\+\_\+prec, char $\ast$\+\_\+\+\_\+s)
+\end{DoxyCompactItemize}

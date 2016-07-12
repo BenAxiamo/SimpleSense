@@ -1,0 +1,1110 @@
+\hypertarget{class_wasp_utils}{}\section{Wasp\+Utils Class Reference}
+\label{class_wasp_utils}\index{Wasp\+Utils@{Wasp\+Utils}}
+
+
+\hyperlink{class_wasp_utils}{Wasp\+Utils} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Utils.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_utils_a5c4ffc3263d0e59dfcbb934554ea6d18}{Wasp\+Utils} (void)
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}{set\+L\+ED} (uint8\+\_\+t led, uint8\+\_\+t state)
+\begin{DoxyCompactList}\small\item\em It sets the specified L\+ED to the specified state(\+O\+N or O\+F\+F) \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a84789aadda2bbb85b700682f87b5c2e0}{set\+External\+L\+ED} (uint8\+\_\+t state)
+\begin{DoxyCompactList}\small\item\em It sets external L\+ED to the specified state(\+O\+N or O\+F\+F) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a7915f329e7b98e74426d16cd3f1d9914}{get\+L\+ED} (uint8\+\_\+t led)
+\begin{DoxyCompactList}\small\item\em It gets the state of the specified L\+ED. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_ac5f31b1868a6a1009e5a021bb754a7b3}{get\+External\+L\+ED} ()
+\begin{DoxyCompactList}\small\item\em It gets the state of external L\+ED. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a8601be3064f49ac0b81819ed5ecbf2c8}{blink\+L\+E\+Ds} (uint16\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It blinks L\+E\+Ds, with the specified time for blinking. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a347e5455e6bab377f34d6532a1899d52}{blink\+Red\+L\+ED} ()\hypertarget{class_wasp_utils_a347e5455e6bab377f34d6532a1899d52}{}\label{class_wasp_utils_a347e5455e6bab377f34d6532a1899d52}
+
+\begin{DoxyCompactList}\small\item\em It blinks the red L\+ED once during 200ms. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a6e7c7d888d393fbc999716abce37aa56}{blink\+Red\+L\+ED} (uint16\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It blinks the red L\+ED once during \textquotesingle{}time\textquotesingle{} milliseconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a5ac32b0ea82b0d687144ae00f52cb435}{blink\+Red\+L\+ED} (uint16\+\_\+t time, uint8\+\_\+t num)
+\begin{DoxyCompactList}\small\item\em It blinks the red L\+ED for \textquotesingle{}num\textquotesingle{} times, and during \textquotesingle{}time\textquotesingle{} milliseconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a5bc157af15c9886a038f0fd0a41f87f3}{blink\+Green\+L\+ED} ()\hypertarget{class_wasp_utils_a5bc157af15c9886a038f0fd0a41f87f3}{}\label{class_wasp_utils_a5bc157af15c9886a038f0fd0a41f87f3}
+
+\begin{DoxyCompactList}\small\item\em It blinks the green L\+ED once during 200ms. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a4926e9950d8547f06e3caec7bbcdedc1}{blink\+Green\+L\+ED} (uint16\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It blinks the green L\+ED once during \textquotesingle{}time\textquotesingle{} milliseconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_ab0f095d4758080bd343b5bec19f7a146}{blink\+Green\+L\+ED} (uint16\+\_\+t time, uint8\+\_\+t num)
+\begin{DoxyCompactList}\small\item\em It blinks the green L\+ED for \textquotesingle{}num\textquotesingle{} times, and during \textquotesingle{}time\textquotesingle{} milliseconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a71b72648b5e6651acd9fc9a6861165d4}{external\+L\+E\+D\+Blink} (uint16\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It blinks L\+ED, with the specified time for blinking. \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_utils_ab13704522d07743ba6b33b3900ecf19a}{map} (long x, long in\+\_\+min, long in\+\_\+max, long out\+\_\+min, long out\+\_\+max)
+\begin{DoxyCompactList}\small\item\em It maps \textquotesingle{}x\textquotesingle{} from the read range to the specified range. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a0735336840a185faca20c356847591a8}{set\+Mux} (uint8\+\_\+t M\+U\+X\+\_\+\+L\+OW, uint8\+\_\+t M\+U\+X\+\_\+\+H\+I\+GH)
+\begin{DoxyCompactList}\small\item\em It sets multiplexer on U\+A\+R\+T\+\_\+1 to the desired combination. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a5ac44b9711e046e5f68140e76bb00667}{set\+Mux\+G\+PS} ()
+\begin{DoxyCompactList}\small\item\em It sets multiplexer on U\+A\+R\+T\+\_\+1 to G\+PS module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a7452034cd6782c06789a0092f6c93e9d}{set\+Mux\+Socket1} ()
+\begin{DoxyCompactList}\small\item\em It sets multiplexer on U\+A\+R\+T\+\_\+1 to S\+O\+C\+K\+E\+T1. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_ad7f0a2e942d87f6e567a3712c552c975}{set\+Mux\+Aux1} ()
+\begin{DoxyCompactList}\small\item\em It sets multiplexer on U\+A\+R\+T\+\_\+1 to enable A\+U\+X1 module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a0ff4625218c7b88d5ee4014c01ac5ef9}{set\+Mux\+Aux2} ()
+\begin{DoxyCompactList}\small\item\em It sets multiplexer on U\+A\+R\+T\+\_\+1 to enable A\+U\+X2 module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a61f1e0f50f709b5175947ff0888f59cd}{set\+Mux\+U\+SB} ()
+\begin{DoxyCompactList}\small\item\em It sets multiplexer on U\+A\+R\+T\+\_\+0 to U\+SB. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a91f9f0c9d9a765ef759a6e5eeeb46eb1}{mux\+O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It switches off the multiplexer on U\+A\+R\+T\+\_\+0. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a1b3173e90f64ada4ed0bac8b3527f48d}{set\+Mux\+Socket0} ()
+\begin{DoxyCompactList}\small\item\em set multiplexer on U\+A\+R\+T\+\_\+0 to S\+O\+C\+K\+E\+T0 \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a155a788594604101c16bf3a909649f9c}{read\+E\+E\+P\+R\+OM} (int address)
+\begin{DoxyCompactList}\small\item\em It reads a value from the specified E\+E\+P\+R\+OM address. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a401def82a1d34d851a06b9bdfe78c048}{write\+E\+E\+P\+R\+OM} (int address, uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em It writes the specified value to the specified E\+E\+P\+R\+OM address. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a02d2fae05f552f9e1550225077fbd7eb}{set\+ID} (char $\ast$mote\+ID)
+\begin{DoxyCompactList}\small\item\em It writes the mote identifier to the E\+E\+P\+R\+OM\mbox{[}147-\/162\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a94792215e1e986e9d02e6d74be72fd54}{set\+Auth\+Key} (char $\ast$authkey)
+\begin{DoxyCompactList}\small\item\em It writes the authentication key to the E\+E\+P\+R\+OM\mbox{[}107-\/114\mbox{]}. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_wasp_utils_a5ba11552c66a83eda1a2cacf613789f1}{read\+Serial\+Chip} ()
+\begin{DoxyCompactList}\small\item\em It reads the Waspmote unique serial identifier. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_wasp_utils_af8f959b98a6904a60519f20a716450fd}{read\+Serial\+ID} ()
+\begin{DoxyCompactList}\small\item\em It reads the Waspmote unique serial identifier. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_utils_aa773c77439e93733ed7f76998e6f1c78}{set\+Serial\+E\+E\+P\+R\+OM} (unsigned long serial)
+\begin{DoxyCompactList}\small\item\em It sets the Waspmote unique serial identifier to eeprom. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_wasp_utils_a3e994a7e847548f7fbaf1f5477146ad6}{get\+Serial\+E\+E\+P\+R\+OM} ()
+\begin{DoxyCompactList}\small\item\em It gets the Waspmote unique serial identifier from eeprom. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_utils_acc9d1a13370145d1da32695940f0180b}{read\+Temp\+D\+S1820} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em It reads the D\+S1820 temperature sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_utils_a6cef8fdccf628cab13da76257b6b4d5e}{read\+Temp\+D\+S1820} (uint8\+\_\+t pin, bool is3v3)
+\begin{DoxyCompactList}\small\item\em It reads the D\+S1820 temperature sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_utils_a69c215bccec69bb4d5de675098e9b88f}{read\+Temperature} ()
+\begin{DoxyCompactList}\small\item\em It reads the temperature sensor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a2e0fe62aadf41cf1c0f217baa56c4822}{read\+Humidity} ()
+\begin{DoxyCompactList}\small\item\em It reads the humidity sensor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a70071fbfb5a163525888aa38e8fac376}{read\+Light} ()
+\begin{DoxyCompactList}\small\item\em It reads the light sensor. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}{long2array} (long num, char $\ast$numb)
+\begin{DoxyCompactList}\small\item\em It converts a decimal number into a string. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}{str2hex} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em It converts a number stored in a string into a hexadecimal number. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_utils_a4e83cf8e4421091a50c58b17da3fb20e}{str2hex} (char $\ast$str, uint8\+\_\+t $\ast$array)
+\begin{DoxyCompactList}\small\item\em It converts an array of bytes expressed in A\+S\+C\+II to hexadecimal values. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}{str2hex} (uint8\+\_\+t $\ast$str)
+\begin{DoxyCompactList}\small\item\em It converts a number stored in a string into a hexadecimal number. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a50b59b8aaea582078b0bebe4404dc714}{hex2str} (uint8\+\_\+t $\ast$number, char $\ast$mac\+Dest)
+\begin{DoxyCompactList}\small\item\em It converts a hexadecimal number stored in an array to a string (8 Byte numbers) \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a8e879eb2cb74f6b0bd03e066cbbf0486}{hex2str} (uint8\+\_\+t $\ast$number, char $\ast$mac\+Dest, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It converts a hexadecimal number stored in an array to a string (8 Byte numbers) \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a63e4c625866e35aa5e0d6da363dda750}{clear\+Arguments} (void)
+\begin{DoxyCompactList}\small\item\em It clears the arguments\mbox{[}\mbox{]}\mbox{[}\mbox{]} data matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a4dd69b8870f965778e777936b0542c64}{str\+Explode} (const char $\ast$str, char separator)
+\begin{DoxyCompactList}\small\item\em It breaks a string into its arguments separated by \char`\"{}separators\char`\"{}. The pieces are stored in \textquotesingle{}arguments\textquotesingle{} array. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_ad0e85f1bb0f806bc318e46c6d203545b}{converter} (uint8\+\_\+t conv1, uint8\+\_\+t conv2)
+\begin{DoxyCompactList}\small\item\em It generates a decimal number from two A\+S\+C\+II characters which were numbers. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a418cac28c38aecab8b71c9ff6ee25801}{float2\+String} (float fl, char str\mbox{[}$\,$\mbox{]}, int N)
+\begin{DoxyCompactList}\small\item\em It converts a float into a string. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a8bbe5374a7c9c468a74690e49c89a84f}{load\+O\+TA} (const char $\ast$filename, uint8\+\_\+t version)
+\begin{DoxyCompactList}\small\item\em It writes into the E\+E\+P\+R\+OM the name of the O\+TA file. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a675f5b12a72dc72fe88a9cf320a02e60}{read\+E\+E\+P\+R\+OM} ()
+\begin{DoxyCompactList}\small\item\em It reads the E\+E\+P\+R\+OM from position 2 to 34 and shows it by U\+SB. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_utils_a174fc21f46973963be1c41a471768b31}{check\+New\+Program} ()
+\begin{DoxyCompactList}\small\item\em It checks the new firmware upgrade. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_ac57551cd8a38d8d8cd4998ada30803f1}{get\+Program\+ID} (char $\ast$program\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em It reads program ID (P\+ID) from E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_a009a28f1273ad1da2ba14b39c657da30}{get\+ID} (char $\ast$mote\+ID)
+\begin{DoxyCompactList}\small\item\em It reads mote ID from E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_utils_accc838cd847ea9e867cf86c6c5bad706}{set\+Program\+Version} (uint8\+\_\+t version)
+\begin{DoxyCompactList}\small\item\em It stores the version of the program to E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_a9c862223a129dd282c4838fd3133ae9b}{get\+Program\+Version} ()
+\begin{DoxyCompactList}\small\item\em It reads the version of the program from E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_utils_aff90c14b15cda4b73f19957ebe7b8c5c}{get\+Boot\+Version} ()
+\begin{DoxyCompactList}\small\item\em It reads the version of the bootloader from E\+E\+P\+R\+OM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_utils}{Wasp\+Utils} Class. 
+
+\hyperlink{class_wasp_utils}{Wasp\+Utils} Class defines all the variables and functions used to set L\+E\+Ds, multiplexor and useful general functions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Utils@{Wasp\+Utils}!Wasp\+Utils@{Wasp\+Utils}}
+\index{Wasp\+Utils@{Wasp\+Utils}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{Wasp\+Utils(void)}{WaspUtils(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Utils\+::\+Wasp\+Utils (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a5c4ffc3263d0e59dfcbb934554ea6d18}{}\label{class_wasp_utils_a5c4ffc3263d0e59dfcbb934554ea6d18}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Utils@{Wasp\+Utils}!blink\+Green\+L\+ED@{blink\+Green\+L\+ED}}
+\index{blink\+Green\+L\+ED@{blink\+Green\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{blink\+Green\+L\+E\+D(uint16\+\_\+t time)}{blinkGreenLED(uint16_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::blink\+Green\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a4926e9950d8547f06e3caec7bbcdedc1}{}\label{class_wasp_utils_a4926e9950d8547f06e3caec7bbcdedc1}
+
+
+It blinks the green L\+ED once during \textquotesingle{}time\textquotesingle{} milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & time \+: time for blinking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!blink\+Green\+L\+ED@{blink\+Green\+L\+ED}}
+\index{blink\+Green\+L\+ED@{blink\+Green\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{blink\+Green\+L\+E\+D(uint16\+\_\+t time, uint8\+\_\+t num)}{blinkGreenLED(uint16_t time, uint8_t num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::blink\+Green\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time, }
+\item[{uint8\+\_\+t}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ab0f095d4758080bd343b5bec19f7a146}{}\label{class_wasp_utils_ab0f095d4758080bd343b5bec19f7a146}
+
+
+It blinks the green L\+ED for \textquotesingle{}num\textquotesingle{} times, and during \textquotesingle{}time\textquotesingle{} milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & time \+: time for blinking \\
+\hline
+{\em uint8\+\_\+t} & num \+: number of blink actions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!blink\+L\+E\+Ds@{blink\+L\+E\+Ds}}
+\index{blink\+L\+E\+Ds@{blink\+L\+E\+Ds}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{blink\+L\+E\+Ds(uint16\+\_\+t time)}{blinkLEDs(uint16_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::blink\+L\+E\+Ds (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a8601be3064f49ac0b81819ed5ecbf2c8}{}\label{class_wasp_utils_a8601be3064f49ac0b81819ed5ecbf2c8}
+
+
+It blinks L\+E\+Ds, with the specified time for blinking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & time \+: time for blinking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}{set\+L\+E\+D(uint8\+\_\+t led, uint8\+\_\+t state)}, \hyperlink{class_wasp_utils_a7915f329e7b98e74426d16cd3f1d9914}{get\+L\+E\+D(uint8\+\_\+t led)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!blink\+Red\+L\+ED@{blink\+Red\+L\+ED}}
+\index{blink\+Red\+L\+ED@{blink\+Red\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{blink\+Red\+L\+E\+D(uint16\+\_\+t time)}{blinkRedLED(uint16_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::blink\+Red\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a6e7c7d888d393fbc999716abce37aa56}{}\label{class_wasp_utils_a6e7c7d888d393fbc999716abce37aa56}
+
+
+It blinks the red L\+ED once during \textquotesingle{}time\textquotesingle{} milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & time \+: time for blinking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!blink\+Red\+L\+ED@{blink\+Red\+L\+ED}}
+\index{blink\+Red\+L\+ED@{blink\+Red\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{blink\+Red\+L\+E\+D(uint16\+\_\+t time, uint8\+\_\+t num)}{blinkRedLED(uint16_t time, uint8_t num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::blink\+Red\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time, }
+\item[{uint8\+\_\+t}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a5ac32b0ea82b0d687144ae00f52cb435}{}\label{class_wasp_utils_a5ac32b0ea82b0d687144ae00f52cb435}
+
+
+It blinks the red L\+ED for \textquotesingle{}num\textquotesingle{} times, and during \textquotesingle{}time\textquotesingle{} milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & time \+: time for blinking \\
+\hline
+{\em uint8\+\_\+t} & num \+: number of blink actions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!check\+New\+Program@{check\+New\+Program}}
+\index{check\+New\+Program@{check\+New\+Program}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{check\+New\+Program()}{checkNewProgram()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Utils\+::check\+New\+Program (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a174fc21f46973963be1c41a471768b31}{}\label{class_wasp_utils_a174fc21f46973963be1c41a471768b31}
+
+
+It checks the new firmware upgrade. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if reprogramming error, \textquotesingle{}1\textquotesingle{} if reprogramming OK and \textquotesingle{}2\textquotesingle{} for normal restart 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!clear\+Arguments@{clear\+Arguments}}
+\index{clear\+Arguments@{clear\+Arguments}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{clear\+Arguments(void)}{clearArguments(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::clear\+Arguments (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a63e4c625866e35aa5e0d6da363dda750}{}\label{class_wasp_utils_a63e4c625866e35aa5e0d6da363dda750}
+
+
+It clears the arguments\mbox{[}\mbox{]}\mbox{[}\mbox{]} data matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!converter@{converter}}
+\index{converter@{converter}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{converter(uint8\+\_\+t conv1, uint8\+\_\+t conv2)}{converter(uint8_t conv1, uint8_t conv2)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::converter (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{conv1, }
+\item[{uint8\+\_\+t}]{conv2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ad0e85f1bb0f806bc318e46c6d203545b}{}\label{class_wasp_utils_ad0e85f1bb0f806bc318e46c6d203545b}
+
+
+It generates a decimal number from two A\+S\+C\+II characters which were numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & conv1 \+: the A\+S\+C\+II number first digit to convert \\
+\hline
+{\em uint8\+\_\+t} & conv2 \+: the A\+S\+C\+II number second digit to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted number 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!external\+L\+E\+D\+Blink@{external\+L\+E\+D\+Blink}}
+\index{external\+L\+E\+D\+Blink@{external\+L\+E\+D\+Blink}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{external\+L\+E\+D\+Blink(uint16\+\_\+t time)}{externalLEDBlink(uint16_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::external\+L\+E\+D\+Blink (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a71b72648b5e6651acd9fc9a6861165d4}{}\label{class_wasp_utils_a71b72648b5e6651acd9fc9a6861165d4}
+
+
+It blinks L\+ED, with the specified time for blinking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & time \+: time for blinking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}{set\+L\+E\+D(uint8\+\_\+t led, uint8\+\_\+t state)}, \hyperlink{class_wasp_utils_a7915f329e7b98e74426d16cd3f1d9914}{get\+L\+E\+D(uint8\+\_\+t led)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!float2\+String@{float2\+String}}
+\index{float2\+String@{float2\+String}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{float2\+String(float fl, char str[], int N)}{float2String(float fl, char str[], int N)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::float2\+String (
+\begin{DoxyParamCaption}
+\item[{float}]{fl, }
+\item[{char}]{str\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a418cac28c38aecab8b71c9ff6ee25801}{}\label{class_wasp_utils_a418cac28c38aecab8b71c9ff6ee25801}
+
+
+It converts a float into a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & fl \+: the float to convert \\
+\hline
+{\em char} & str\mbox{[}\mbox{]} \+: the string where store the float converted \\
+\hline
+{\em int} & N \+: the number of decimals \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+Boot\+Version@{get\+Boot\+Version}}
+\index{get\+Boot\+Version@{get\+Boot\+Version}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+Boot\+Version()}{getBootVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::get\+Boot\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_aff90c14b15cda4b73f19957ebe7b8c5c}{}\label{class_wasp_utils_aff90c14b15cda4b73f19957ebe7b8c5c}
+
+
+It reads the version of the bootloader from E\+E\+P\+R\+OM. 
+
+\begin{DoxyReturn}{Returns}
+the version of the actual bootloader 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+External\+L\+ED@{get\+External\+L\+ED}}
+\index{get\+External\+L\+ED@{get\+External\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+External\+L\+E\+D()}{getExternalLED()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::get\+External\+L\+ED (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ac5f31b1868a6a1009e5a021bb754a7b3}{}\label{class_wasp_utils_ac5f31b1868a6a1009e5a021bb754a7b3}
+
+
+It gets the state of external L\+ED. 
+
+\begin{DoxyReturn}{Returns}
+the state of the L\+ED 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}{set\+L\+E\+D(uint8\+\_\+t led, uint8\+\_\+t state)}, \hyperlink{class_wasp_utils_a8601be3064f49ac0b81819ed5ecbf2c8}{blink\+L\+E\+Ds(uint16\+\_\+t time)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+I\+D(char $\ast$mote\+I\+D)}{getID(char *moteID)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::get\+ID (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mote\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a009a28f1273ad1da2ba14b39c657da30}{}\label{class_wasp_utils_a009a28f1273ad1da2ba14b39c657da30}
+
+
+It reads mote ID from E\+E\+P\+R\+OM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mote\+ID \+: string pointer to store the mote ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+L\+ED@{get\+L\+ED}}
+\index{get\+L\+ED@{get\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+L\+E\+D(uint8\+\_\+t led)}{getLED(uint8_t led)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::get\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{led}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a7915f329e7b98e74426d16cd3f1d9914}{}\label{class_wasp_utils_a7915f329e7b98e74426d16cd3f1d9914}
+
+
+It gets the state of the specified L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & led \+: the L\+ED to get the state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the state of the L\+ED 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}{set\+L\+E\+D(uint8\+\_\+t led, uint8\+\_\+t state)}, \hyperlink{class_wasp_utils_a8601be3064f49ac0b81819ed5ecbf2c8}{blink\+L\+E\+Ds(uint16\+\_\+t time)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+Program\+ID@{get\+Program\+ID}}
+\index{get\+Program\+ID@{get\+Program\+ID}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+Program\+I\+D(char $\ast$program\+\_\+\+I\+D)}{getProgramID(char *program_ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::get\+Program\+ID (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{program\+\_\+\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ac57551cd8a38d8d8cd4998ada30803f1}{}\label{class_wasp_utils_ac57551cd8a38d8d8cd4998ada30803f1}
+
+
+It reads program ID (P\+ID) from E\+E\+P\+R\+OM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & program\+\_\+\+ID \+: string pointer to store the P\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+Program\+Version@{get\+Program\+Version}}
+\index{get\+Program\+Version@{get\+Program\+Version}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+Program\+Version()}{getProgramVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::get\+Program\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a9c862223a129dd282c4838fd3133ae9b}{}\label{class_wasp_utils_a9c862223a129dd282c4838fd3133ae9b}
+
+
+It reads the version of the program from E\+E\+P\+R\+OM. 
+
+\begin{DoxyReturn}{Returns}
+the version of the actual program 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!get\+Serial\+E\+E\+P\+R\+OM@{get\+Serial\+E\+E\+P\+R\+OM}}
+\index{get\+Serial\+E\+E\+P\+R\+OM@{get\+Serial\+E\+E\+P\+R\+OM}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{get\+Serial\+E\+E\+P\+R\+O\+M()}{getSerialEEPROM()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Wasp\+Utils\+::get\+Serial\+E\+E\+P\+R\+OM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a3e994a7e847548f7fbaf1f5477146ad6}{}\label{class_wasp_utils_a3e994a7e847548f7fbaf1f5477146ad6}
+
+
+It gets the Waspmote unique serial identifier from eeprom. 
+
+\begin{DoxyReturn}{Returns}
+unsigned long\+: the serial read from eeprom memory 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!hex2str@{hex2str}}
+\index{hex2str@{hex2str}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{hex2str(uint8\+\_\+t $\ast$number, char $\ast$mac\+Dest)}{hex2str(uint8_t *number, char *macDest)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::hex2str (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{number, }
+\item[{char $\ast$}]{mac\+Dest}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a50b59b8aaea582078b0bebe4404dc714}{}\label{class_wasp_utils_a50b59b8aaea582078b0bebe4404dc714}
+
+
+It converts a hexadecimal number stored in an array to a string (8 Byte numbers) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & number \+: hexadecimal array to conver to a string \\
+\hline
+{\em const} & char$\ast$ mac\+Dest \+: char array where the converted number is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}{long2array(long num, char$\ast$ numb)}, \hyperlink{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}{str2hex(char$\ast$ str)}, \hyperlink{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}{str2hex(uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!hex2str@{hex2str}}
+\index{hex2str@{hex2str}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{hex2str(uint8\+\_\+t $\ast$number, char $\ast$mac\+Dest, uint8\+\_\+t length)}{hex2str(uint8_t *number, char *macDest, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::hex2str (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{number, }
+\item[{char $\ast$}]{mac\+Dest, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a8e879eb2cb74f6b0bd03e066cbbf0486}{}\label{class_wasp_utils_a8e879eb2cb74f6b0bd03e066cbbf0486}
+
+
+It converts a hexadecimal number stored in an array to a string (8 Byte numbers) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & number \+: hexadecimal array to conver to a string \\
+\hline
+{\em const} & char$\ast$ mac\+Dest \+: char array where the converted number is stored \\
+\hline
+{\em uint8\+\_\+t} & length \+: length to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}{long2array(long num, char$\ast$ numb)}, \hyperlink{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}{str2hex(char$\ast$ str)}, \hyperlink{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}{str2hex(uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!load\+O\+TA@{load\+O\+TA}}
+\index{load\+O\+TA@{load\+O\+TA}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{load\+O\+T\+A(const char $\ast$filename, uint8\+\_\+t version)}{loadOTA(const char *filename, uint8_t version)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::load\+O\+TA (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{uint8\+\_\+t}]{version}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a8bbe5374a7c9c468a74690e49c89a84f}{}\label{class_wasp_utils_a8bbe5374a7c9c468a74690e49c89a84f}
+
+
+It writes into the E\+E\+P\+R\+OM the name of the O\+TA file. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!long2array@{long2array}}
+\index{long2array@{long2array}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{long2array(long num, char $\ast$numb)}{long2array(long num, char *numb)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::long2array (
+\begin{DoxyParamCaption}
+\item[{long}]{num, }
+\item[{char $\ast$}]{numb}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}{}\label{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}
+
+
+It converts a decimal number into a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & num \+: number to convert \\
+\hline
+{\em char$\ast$} & numb \+: string where store the converted number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of digits of the number 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}{str2hex(char$\ast$ str)}, \hyperlink{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}{str2hex(uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!map@{map}}
+\index{map@{map}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{map(long x, long in\+\_\+min, long in\+\_\+max, long out\+\_\+min, long out\+\_\+max)}{map(long x, long in_min, long in_max, long out_min, long out_max)}}]{\setlength{\rightskip}{0pt plus 5cm}long Wasp\+Utils\+::map (
+\begin{DoxyParamCaption}
+\item[{long}]{x, }
+\item[{long}]{in\+\_\+min, }
+\item[{long}]{in\+\_\+max, }
+\item[{long}]{out\+\_\+min, }
+\item[{long}]{out\+\_\+max}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ab13704522d07743ba6b33b3900ecf19a}{}\label{class_wasp_utils_ab13704522d07743ba6b33b3900ecf19a}
+
+
+It maps \textquotesingle{}x\textquotesingle{} from the read range to the specified range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & x \+: value to map \\
+\hline
+{\em long} & in\+\_\+min \+: minimum input value for \textquotesingle{}x\textquotesingle{} \\
+\hline
+{\em long} & in\+\_\+max \+: maximum input value for \textquotesingle{}x\textquotesingle{} \\
+\hline
+{\em long} & out\+\_\+min \+: minimum output value for \textquotesingle{}x\textquotesingle{} \\
+\hline
+{\em long} & out\+\_\+max \+: maximum output value for \textquotesingle{}x\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value \textquotesingle{}x\textquotesingle{} mapped to the \mbox{[}out\+\_\+min,out\+\_\+max\mbox{]} range 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!mux\+O\+FF@{mux\+O\+FF}}
+\index{mux\+O\+FF@{mux\+O\+FF}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{mux\+O\+F\+F()}{muxOFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::mux\+O\+FF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a91f9f0c9d9a765ef759a6e5eeeb46eb1}{}\label{class_wasp_utils_a91f9f0c9d9a765ef759a6e5eeeb46eb1}
+
+
+It switches off the multiplexer on U\+A\+R\+T\+\_\+0. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+E\+E\+P\+R\+OM@{read\+E\+E\+P\+R\+OM}}
+\index{read\+E\+E\+P\+R\+OM@{read\+E\+E\+P\+R\+OM}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+E\+E\+P\+R\+O\+M(int address)}{readEEPROM(int address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::read\+E\+E\+P\+R\+OM (
+\begin{DoxyParamCaption}
+\item[{int}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a155a788594604101c16bf3a909649f9c}{}\label{class_wasp_utils_a155a788594604101c16bf3a909649f9c}
+
+
+It reads a value from the specified E\+E\+P\+R\+OM address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & address \+: E\+E\+P\+R\+OM address to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value read from E\+E\+P\+R\+OM address 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a401def82a1d34d851a06b9bdfe78c048}{write\+E\+E\+P\+R\+O\+M(int address, uint8\+\_\+t value)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+E\+E\+P\+R\+OM@{read\+E\+E\+P\+R\+OM}}
+\index{read\+E\+E\+P\+R\+OM@{read\+E\+E\+P\+R\+OM}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+E\+E\+P\+R\+O\+M()}{readEEPROM()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::read\+E\+E\+P\+R\+OM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a675f5b12a72dc72fe88a9cf320a02e60}{}\label{class_wasp_utils_a675f5b12a72dc72fe88a9cf320a02e60}
+
+
+It reads the E\+E\+P\+R\+OM from position 2 to 34 and shows it by U\+SB. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Humidity@{read\+Humidity}}
+\index{read\+Humidity@{read\+Humidity}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Humidity()}{readHumidity()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::read\+Humidity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a2e0fe62aadf41cf1c0f217baa56c4822}{}\label{class_wasp_utils_a2e0fe62aadf41cf1c0f217baa56c4822}
+
+
+It reads the humidity sensor. 
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t\+: Value of the humidity sensor 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Light@{read\+Light}}
+\index{read\+Light@{read\+Light}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Light()}{readLight()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::read\+Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a70071fbfb5a163525888aa38e8fac376}{}\label{class_wasp_utils_a70071fbfb5a163525888aa38e8fac376}
+
+
+It reads the light sensor. 
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t\+: Value of the light sensor 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Serial\+Chip@{read\+Serial\+Chip}}
+\index{read\+Serial\+Chip@{read\+Serial\+Chip}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Serial\+Chip()}{readSerialChip()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Wasp\+Utils\+::read\+Serial\+Chip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a5ba11552c66a83eda1a2cacf613789f1}{}\label{class_wasp_utils_a5ba11552c66a83eda1a2cacf613789f1}
+
+
+It reads the Waspmote unique serial identifier. 
+
+\begin{DoxyReturn}{Returns}
+unsigned long\+: Waspmote unique serial identifier 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Serial\+ID@{read\+Serial\+ID}}
+\index{read\+Serial\+ID@{read\+Serial\+ID}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Serial\+I\+D()}{readSerialID()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Wasp\+Utils\+::read\+Serial\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_af8f959b98a6904a60519f20a716450fd}{}\label{class_wasp_utils_af8f959b98a6904a60519f20a716450fd}
+
+
+It reads the Waspmote unique serial identifier. 
+
+If fails, we try to read from E\+E\+P\+R\+OM \begin{DoxyReturn}{Returns}
+unsigned long\+: Waspmote unique serial identifier 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Temp\+D\+S1820@{read\+Temp\+D\+S1820}}
+\index{read\+Temp\+D\+S1820@{read\+Temp\+D\+S1820}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Temp\+D\+S1820(uint8\+\_\+t pin)}{readTempDS1820(uint8_t pin)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Utils\+::read\+Temp\+D\+S1820 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_acc9d1a13370145d1da32695940f0180b}{}\label{class_wasp_utils_acc9d1a13370145d1da32695940f0180b}
+
+
+It reads the D\+S1820 temperature sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & pin\+: digital M\+CU pin used for one wire comm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\+: Temperature of D\+S1820 sensor 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Temp\+D\+S1820@{read\+Temp\+D\+S1820}}
+\index{read\+Temp\+D\+S1820@{read\+Temp\+D\+S1820}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Temp\+D\+S1820(uint8\+\_\+t pin, bool is3v3)}{readTempDS1820(uint8_t pin, bool is3v3)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Utils\+::read\+Temp\+D\+S1820 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pin, }
+\item[{bool}]{is3v3}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a6cef8fdccf628cab13da76257b6b4d5e}{}\label{class_wasp_utils_a6cef8fdccf628cab13da76257b6b4d5e}
+
+
+It reads the D\+S1820 temperature sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & pin\+: digital M\+CU pin used for one wire comm \\
+\hline
+{\em bool} & is3v3\+: indicates if 3v3 power supply is needed for powering sensor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\+: Temperature of D\+S1820 sensor 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!read\+Temperature@{read\+Temperature}}
+\index{read\+Temperature@{read\+Temperature}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{read\+Temperature()}{readTemperature()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Utils\+::read\+Temperature (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a69c215bccec69bb4d5de675098e9b88f}{}\label{class_wasp_utils_a69c215bccec69bb4d5de675098e9b88f}
+
+
+It reads the temperature sensor. 
+
+\begin{DoxyReturn}{Returns}
+float\+: Temperature of the sensor 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Auth\+Key@{set\+Auth\+Key}}
+\index{set\+Auth\+Key@{set\+Auth\+Key}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Auth\+Key(char $\ast$authkey)}{setAuthKey(char *authkey)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Auth\+Key (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{authkey}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a94792215e1e986e9d02e6d74be72fd54}{}\label{class_wasp_utils_a94792215e1e986e9d02e6d74be72fd54}
+
+
+It writes the authentication key to the E\+E\+P\+R\+OM\mbox{[}107-\/114\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & authkey\+: authentication key to write to the E\+E\+P\+R\+OM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+External\+L\+ED@{set\+External\+L\+ED}}
+\index{set\+External\+L\+ED@{set\+External\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+External\+L\+E\+D(uint8\+\_\+t state)}{setExternalLED(uint8_t state)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+External\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a84789aadda2bbb85b700682f87b5c2e0}{}\label{class_wasp_utils_a84789aadda2bbb85b700682f87b5c2e0}
+
+
+It sets external L\+ED to the specified state(\+O\+N or O\+F\+F) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & state \+: the state to set the L\+ED \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+I\+D(char $\ast$mote\+I\+D)}{setID(char *moteID)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+ID (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mote\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a02d2fae05f552f9e1550225077fbd7eb}{}\label{class_wasp_utils_a02d2fae05f552f9e1550225077fbd7eb}
+
+
+It writes the mote identifier to the E\+E\+P\+R\+OM\mbox{[}147-\/162\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mote\+ID\+: identifier to write to the E\+E\+P\+R\+OM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+L\+ED@{set\+L\+ED}}
+\index{set\+L\+ED@{set\+L\+ED}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+L\+E\+D(uint8\+\_\+t led, uint8\+\_\+t state)}{setLED(uint8_t led, uint8_t state)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+L\+ED (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{led, }
+\item[{uint8\+\_\+t}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}{}\label{class_wasp_utils_ad898a15ea8af795b5262d7d7a4a2cb28}
+
+
+It sets the specified L\+ED to the specified state(\+O\+N or O\+F\+F) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & led \+: the L\+ED to set O\+N/\+O\+FF \\
+\hline
+{\em uint8\+\_\+t} & state \+: the state to set the L\+ED \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a7915f329e7b98e74426d16cd3f1d9914}{get\+L\+E\+D(uint8\+\_\+t led)}, \hyperlink{class_wasp_utils_a8601be3064f49ac0b81819ed5ecbf2c8}{blink\+L\+E\+Ds(uint16\+\_\+t time)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux@{set\+Mux}}
+\index{set\+Mux@{set\+Mux}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux(uint8\+\_\+t M\+U\+X\+\_\+\+L\+O\+W, uint8\+\_\+t M\+U\+X\+\_\+\+H\+I\+G\+H)}{setMux(uint8_t MUX_LOW, uint8_t MUX_HIGH)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{M\+U\+X\+\_\+\+L\+OW, }
+\item[{uint8\+\_\+t}]{M\+U\+X\+\_\+\+H\+I\+GH}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a0735336840a185faca20c356847591a8}{}\label{class_wasp_utils_a0735336840a185faca20c356847591a8}
+
+
+It sets multiplexer on U\+A\+R\+T\+\_\+1 to the desired combination. 
+
+It sets multiplexer on U\+A\+R\+T\+\_\+1 to the desired combination. Possible combinations are\+: M\+U\+X\+\_\+\+L\+OW = 0 \& M\+U\+X\+\_\+\+H\+I\+GH = 1 ---$>$ G\+PS M\+O\+D\+U\+LE M\+U\+X\+\_\+\+L\+OW = 1 \& M\+U\+X\+\_\+\+H\+I\+GH = 1 ---$>$ S\+O\+C\+K\+E\+T1 M\+U\+X\+\_\+\+L\+OW = 1 \& M\+U\+X\+\_\+\+H\+I\+GH = 0 ---$>$ A\+U\+X1 M\+O\+D\+U\+LE M\+U\+X\+\_\+\+L\+OW = 0 \& M\+U\+X\+\_\+\+H\+I\+GH = 0 ---$>$ A\+U\+X2 M\+O\+D\+U\+LE
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & M\+U\+X\+\_\+\+L\+OW \+: low combination part \\
+\hline
+{\em uint8\+\_\+t} & M\+U\+X\+\_\+\+H\+I\+GH \+: high combination part \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a5ac44b9711e046e5f68140e76bb00667}{set\+Mux\+G\+P\+S()}, \hyperlink{class_wasp_utils_a7452034cd6782c06789a0092f6c93e9d}{set\+Mux\+Socket1()}, \hyperlink{class_wasp_utils_ad7f0a2e942d87f6e567a3712c552c975}{set\+Mux\+Aux1()}, \hyperlink{class_wasp_utils_a0ff4625218c7b88d5ee4014c01ac5ef9}{set\+Mux\+Aux2()} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux\+Aux1@{set\+Mux\+Aux1}}
+\index{set\+Mux\+Aux1@{set\+Mux\+Aux1}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux\+Aux1()}{setMuxAux1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux\+Aux1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ad7f0a2e942d87f6e567a3712c552c975}{}\label{class_wasp_utils_ad7f0a2e942d87f6e567a3712c552c975}
+
+
+It sets multiplexer on U\+A\+R\+T\+\_\+1 to enable A\+U\+X1 module. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux\+Aux2@{set\+Mux\+Aux2}}
+\index{set\+Mux\+Aux2@{set\+Mux\+Aux2}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux\+Aux2()}{setMuxAux2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux\+Aux2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a0ff4625218c7b88d5ee4014c01ac5ef9}{}\label{class_wasp_utils_a0ff4625218c7b88d5ee4014c01ac5ef9}
+
+
+It sets multiplexer on U\+A\+R\+T\+\_\+1 to enable A\+U\+X2 module. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux\+G\+PS@{set\+Mux\+G\+PS}}
+\index{set\+Mux\+G\+PS@{set\+Mux\+G\+PS}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux\+G\+P\+S()}{setMuxGPS()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux\+G\+PS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a5ac44b9711e046e5f68140e76bb00667}{}\label{class_wasp_utils_a5ac44b9711e046e5f68140e76bb00667}
+
+
+It sets multiplexer on U\+A\+R\+T\+\_\+1 to G\+PS module. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux\+Socket0@{set\+Mux\+Socket0}}
+\index{set\+Mux\+Socket0@{set\+Mux\+Socket0}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux\+Socket0()}{setMuxSocket0()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux\+Socket0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a1b3173e90f64ada4ed0bac8b3527f48d}{}\label{class_wasp_utils_a1b3173e90f64ada4ed0bac8b3527f48d}
+
+
+set multiplexer on U\+A\+R\+T\+\_\+0 to S\+O\+C\+K\+E\+T0 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux\+Socket1@{set\+Mux\+Socket1}}
+\index{set\+Mux\+Socket1@{set\+Mux\+Socket1}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux\+Socket1()}{setMuxSocket1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux\+Socket1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a7452034cd6782c06789a0092f6c93e9d}{}\label{class_wasp_utils_a7452034cd6782c06789a0092f6c93e9d}
+
+
+It sets multiplexer on U\+A\+R\+T\+\_\+1 to S\+O\+C\+K\+E\+T1. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Mux\+U\+SB@{set\+Mux\+U\+SB}}
+\index{set\+Mux\+U\+SB@{set\+Mux\+U\+SB}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Mux\+U\+S\+B()}{setMuxUSB()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Mux\+U\+SB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a61f1e0f50f709b5175947ff0888f59cd}{}\label{class_wasp_utils_a61f1e0f50f709b5175947ff0888f59cd}
+
+
+It sets multiplexer on U\+A\+R\+T\+\_\+0 to U\+SB. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Program\+Version@{set\+Program\+Version}}
+\index{set\+Program\+Version@{set\+Program\+Version}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Program\+Version(uint8\+\_\+t version)}{setProgramVersion(uint8_t version)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::set\+Program\+Version (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{version}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_accc838cd847ea9e867cf86c6c5bad706}{}\label{class_wasp_utils_accc838cd847ea9e867cf86c6c5bad706}
+
+
+It stores the version of the program to E\+E\+P\+R\+OM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & version \+: version of te program. Values from 0 to 255 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!set\+Serial\+E\+E\+P\+R\+OM@{set\+Serial\+E\+E\+P\+R\+OM}}
+\index{set\+Serial\+E\+E\+P\+R\+OM@{set\+Serial\+E\+E\+P\+R\+OM}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{set\+Serial\+E\+E\+P\+R\+O\+M(unsigned long serial)}{setSerialEEPROM(unsigned long serial)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+Utils\+::set\+Serial\+E\+E\+P\+R\+OM (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{serial}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_aa773c77439e93733ed7f76998e6f1c78}{}\label{class_wasp_utils_aa773c77439e93733ed7f76998e6f1c78}
+
+
+It sets the Waspmote unique serial identifier to eeprom. 
+
+\begin{DoxyReturn}{Returns}
+bool\+: \textquotesingle{}true\textquotesingle{} if OK; \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!str2hex@{str2hex}}
+\index{str2hex@{str2hex}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{str2hex(char $\ast$str)}{str2hex(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::str2hex (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}{}\label{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}
+
+
+It converts a number stored in a string into a hexadecimal number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & str \+: string where the number is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted number 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}{long2array(long num, char$\ast$ numb)}, \hyperlink{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}{str2hex(uint8\+\_\+t$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!str2hex@{str2hex}}
+\index{str2hex@{str2hex}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{str2hex(char $\ast$str, uint8\+\_\+t $\ast$array)}{str2hex(char *str, uint8_t *array)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+Utils\+::str2hex (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{uint8\+\_\+t $\ast$}]{array}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a4e83cf8e4421091a50c58b17da3fb20e}{}\label{class_wasp_utils_a4e83cf8e4421091a50c58b17da3fb20e}
+
+
+It converts an array of bytes expressed in A\+S\+C\+II to hexadecimal values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & str \+: string where the array is defined in A\+S\+C\+II format \\
+\hline
+{\em uint8\+\_\+t$\ast$} & array \+: array of bytes where the converted array is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length of the converted array; \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+Utils@{Wasp\+Utils}!str2hex@{str2hex}}
+\index{str2hex@{str2hex}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{str2hex(uint8\+\_\+t $\ast$str)}{str2hex(uint8_t *str)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+Utils\+::str2hex (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}{}\label{class_wasp_utils_a4649e1fb3f9d1f3695c3e1cdad920dd5}
+
+
+It converts a number stored in a string into a hexadecimal number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & str \+: string where the number is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted number 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a55712047cc469db5b593ae2ceda7183b}{long2array(long num, char$\ast$ numb)}, \hyperlink{class_wasp_utils_ab0d858d85ec9374e312328fee586fb8b}{str2hex(char$\ast$ str)} 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!str\+Explode@{str\+Explode}}
+\index{str\+Explode@{str\+Explode}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{str\+Explode(const char $\ast$str, char separator)}{strExplode(const char *str, char separator)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::str\+Explode (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{char}]{separator}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a4dd69b8870f965778e777936b0542c64}{}\label{class_wasp_utils_a4dd69b8870f965778e777936b0542c64}
+
+
+It breaks a string into its arguments separated by \char`\"{}separators\char`\"{}. The pieces are stored in \textquotesingle{}arguments\textquotesingle{} array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ str \+: string to separate \\
+\hline
+{\em char} & separator \+: the separator used to separate the string in pieces \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a63e4c625866e35aa5e0d6da363dda750}{clear\+Arguments()},clear\+Buffer() 
+\end{DoxySeeAlso}
+\index{Wasp\+Utils@{Wasp\+Utils}!write\+E\+E\+P\+R\+OM@{write\+E\+E\+P\+R\+OM}}
+\index{write\+E\+E\+P\+R\+OM@{write\+E\+E\+P\+R\+OM}!Wasp\+Utils@{Wasp\+Utils}}
+\subsubsection[{\texorpdfstring{write\+E\+E\+P\+R\+O\+M(int address, uint8\+\_\+t value)}{writeEEPROM(int address, uint8_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Utils\+::write\+E\+E\+P\+R\+OM (
+\begin{DoxyParamCaption}
+\item[{int}]{address, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_utils_a401def82a1d34d851a06b9bdfe78c048}{}\label{class_wasp_utils_a401def82a1d34d851a06b9bdfe78c048}
+
+
+It writes the specified value to the specified E\+E\+P\+R\+OM address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & address \+: E\+E\+P\+R\+OM address to write to \\
+\hline
+{\em uint8\+\_\+t} & value\+: value to write to the E\+E\+P\+R\+OM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_utils_a155a788594604101c16bf3a909649f9c}{read\+E\+E\+P\+R\+O\+M(int address)} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_utils_8h}{Wasp\+Utils.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+Utils.\+cpp\end{DoxyCompactItemize}

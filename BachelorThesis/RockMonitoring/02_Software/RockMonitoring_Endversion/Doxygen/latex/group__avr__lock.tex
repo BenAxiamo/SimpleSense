@@ -1,0 +1,124 @@
+\hypertarget{group__avr__lock}{}\section{$<$avr/lock.h$>$\+: Lockbit Support}
+\label{group__avr__lock}\index{$<$avr/lock.\+h$>$\+: Lockbit Support@{$<$avr/lock.\+h$>$\+: Lockbit Support}}
+\begin{DoxyParagraph}{Introduction}
+
+\end{DoxyParagraph}
+The Lockbit A\+PI allows a user to specify the lockbit settings for the specific A\+VR device they are compiling for. These lockbit settings will be placed in a special section in the E\+LF output file, after linking.
+
+Programming tools can take advantage of the lockbit information embedded in the E\+LF file, by extracting this information and determining if the lockbits need to be programmed after programming the Flash and E\+E\+P\+R\+OM memories. This also allows a single E\+LF file to contain all the information needed to program an A\+VR.
+
+To use the Lockbit A\+PI, include the $<$\hyperlink{io_8h}{avr/io.\+h}$>$ header file, which in turn automatically includes the individual I/O header file and the $<$\hyperlink{lock_8h}{avr/lock.\+h}$>$ file. These other two files provides everything necessary to set the A\+VR lockbits.
+
+\begin{DoxyParagraph}{Lockbit A\+PI}
+
+\end{DoxyParagraph}
+Each I/O header file may define up to 3 macros that controls what kinds of lockbits are available to the user.
+
+If \+\_\+\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+T\+S\+\_\+\+E\+X\+I\+ST is defined, then two lock bits are available to the user and 3 mode settings are defined for these two bits.
+
+If \+\_\+\+\_\+\+B\+O\+O\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+T\+S\+\_\+0\+\_\+\+E\+X\+I\+ST is defined, then the two B\+L\+B0 lock bits are available to the user and 4 mode settings are defined for these two bits.
+
+If \+\_\+\+\_\+\+B\+O\+O\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+I\+T\+S\+\_\+1\+\_\+\+E\+X\+I\+ST is defined, then the two B\+L\+B1 lock bits are available to the user and 4 mode settings are defined for these two bits.
+
+If \+\_\+\+\_\+\+B\+O\+O\+T\+\_\+\+L\+O\+C\+K\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+B\+L\+E\+\_\+\+B\+I\+T\+S\+\_\+\+E\+X\+I\+ST is defined then two lock bits are available to set the locking mode for the Application Table Section (which is used in the X\+M\+E\+GA family).
+
+If \+\_\+\+\_\+\+B\+O\+O\+T\+\_\+\+L\+O\+C\+K\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+B\+I\+T\+S\+\_\+\+E\+X\+I\+ST is defined then two lock bits are available to set the locking mode for the Application Section (which is used in the X\+M\+E\+GA family).
+
+If \+\_\+\+\_\+\+B\+O\+O\+T\+\_\+\+L\+O\+C\+K\+\_\+\+B\+O\+O\+T\+\_\+\+B\+I\+T\+S\+\_\+\+E\+X\+I\+ST is defined then two lock bits are available to set the locking mode for the Boot Loader Section (which is used in the X\+M\+E\+GA family).
+
+The A\+VR lockbit modes have inverted values, logical 1 for an unprogrammed (disabled) bit and logical 0 for a programmed (enabled) bit. The defined macros for each individual lock bit represent this in their definition by a bit-\/wise inversion of a mask. For example, the L\+B\+\_\+\+M\+O\+D\+E\+\_\+3 macro is defined as\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{    #define LB\_MODE\_3  (0xFC)}
+\textcolor{preprocessor}{`   }
+\end{DoxyCode}
+ \begin{DoxyVerb}To combine the lockbit mode macros together to represent a whole byte,
+use the bitwise AND operator, like so:
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+(LB\_MODE\_3 & BLB0\_MODE\_2)
+\end{DoxyCode}
+
+
+$<$\hyperlink{lock_8h}{avr/lock.\+h}$>$ also defines a macro that provides a default lockbit value\+: L\+O\+C\+K\+B\+I\+T\+S\+\_\+\+D\+E\+F\+A\+U\+LT which is defined to be 0x\+FF.
+
+See the A\+VR device specific datasheet for more details about these lock bits and the available mode settings.
+
+A convenience macro, L\+O\+C\+K\+M\+EM, is defined as a G\+CC attribute for a custom-\/named section of \char`\"{}.\+lock\char`\"{}.
+
+A convenience macro, L\+O\+C\+K\+B\+I\+TS, is defined that declares a variable, \+\_\+\+\_\+lock, of type unsigned char with the attribute defined by L\+O\+C\+K\+M\+EM. This variable allows the end user to easily set the lockbit data.
+
+\begin{DoxyNote}{Note}
+If a device-\/specific I/O header file has previously defined L\+O\+C\+K\+M\+EM, then L\+O\+C\+K\+M\+EM is not redefined. If a device-\/specific I/O header file has previously defined L\+O\+C\+K\+B\+I\+TS, then L\+O\+C\+K\+B\+I\+TS is not redefined. L\+O\+C\+K\+B\+I\+TS is currently known to be defined in the I/O header files for the X\+M\+E\+GA devices.
+\end{DoxyNote}
+\begin{DoxyParagraph}{A\+PI Usage Example}
+
+\end{DoxyParagraph}
+Putting all of this together is easy\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+
+LOCKBITS = (LB\_MODE\_1 & BLB0\_MODE\_3 & BLB1\_MODE\_4);
+
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})
+\{
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+Or\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{io_8h}{avr/io.h}>}
+
+\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \_\_lock \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_}((section (\textcolor{stringliteral}{".lock"}))) = 
+    (LB\_MODE\_1 & BLB0\_MODE\_3 & BLB1\_MODE\_4);
+
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})
+\{
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+\begin{DoxyVerb}However there are a number of caveats that you need to be aware of to
+use this API properly.
+
+Be sure to include <avr/io.h> to get all of the definitions for the API.
+The LOCKBITS macro defines a global variable to store the lockbit data. This 
+variable is assigned to its own linker section. Assign the desired lockbit 
+values immediately in the variable initialization.
+
+The .lock section in the ELF file will get its values from the initial 
+variable assignment ONLY. This means that you can NOT assign values to 
+this variable in functions and the new values will not be put into the
+ELF .lock section.
+
+The global variable is declared in the LOCKBITS macro has two leading 
+underscores, which means that it is reserved for the "implementation",
+meaning the library, so it will not conflict with a user-named variable.
+
+You must initialize the lockbit variable to some meaningful value, even
+if it is the default value. This is because the lockbits default to a 
+logical 1, meaning unprogrammed. Normal uninitialized data defaults to all 
+locgial zeros. So it is vital that all lockbits are initialized, even with 
+default data. If they are not, then the lockbits may not programmed to the 
+desired settings and can possibly put your device into an unrecoverable 
+state.
+
+Be sure to have the -mmcu=<em>device</em> flag in your compile command line and
+your linker command line to have the correct device selected and to have 
+the correct I/O header file included when you include <avr/io.h>.
+
+You can print out the contents of the .lock section in the ELF file by
+using this command line:
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+avr-objdump -s -j .lock <ELF file>
+\end{DoxyCode}
+ 

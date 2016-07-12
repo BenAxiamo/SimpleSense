@@ -1,0 +1,12 @@
+<map id="Sensors" name="Sensors">
+<area shape="rect" id="node2" href="dir_f895a2b20354c9a94e79d10ba32ac756.html" title="Sensors" alt="" coords="121,52,193,100"/>
+<area shape="rect" id="node3" href="dir_8c150248013763eda1bee24c17714360.html" title="FXLS8471Q" alt="" coords="5,148,96,196"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000008_000003.html" title="1" alt="" coords="92,135,100,150"/>
+<area shape="rect" id="node4" href="dir_5aa54f1d12df0c5804f236d478010580.html" title="PCT2075" alt="" coords="120,148,195,196"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000008_000007.html" title="1" alt="" coords="162,122,170,137"/>
+<area shape="rect" id="node5" href="dir_272be0ccfed8d93625f388105f884f75.html" title="Constants" alt="" coords="117,244,197,292"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000008_000002.html" title="1" alt="" coords="192,227,200,242"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000003_000002.html" title="1" alt="" coords="119,218,127,233"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000007_000002.html" title="1" alt="" coords="162,218,170,233"/>
+<area shape="rect" id="graph2" href="dir_bc0718b08fb2015b8e59c47b2805f60c.html" title="libraries" alt="" coords="111,16,204,111"/>
+</map>

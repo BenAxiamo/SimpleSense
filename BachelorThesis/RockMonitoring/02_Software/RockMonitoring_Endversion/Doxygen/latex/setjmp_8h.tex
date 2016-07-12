@@ -1,0 +1,29 @@
+\hypertarget{setjmp_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/setjmp.h File Reference}
+\label{setjmp_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/setjmp.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/setjmp.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__jmp__buf}{\+\_\+jmp\+\_\+buf}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+J\+B\+L\+EN}~23\hypertarget{setjmp_8h_af6f91e0473c7c9b8a7bceb6d35a1d56d}{}\label{setjmp_8h_af6f91e0473c7c9b8a7bceb6d35a1d56d}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+noreturn\+\_\+\+\_\+))\hypertarget{setjmp_8h_a0d7688dfc56810a4fee42056e35f131b}{}\label{setjmp_8h_a0d7688dfc56810a4fee42056e35f131b}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__jmp__buf}{\+\_\+jmp\+\_\+buf} {\bfseries jmp\+\_\+buf}\mbox{[}1\mbox{]}\hypertarget{setjmp_8h_ab2c7d1d9afbdba1ad535f1dff46629d4}{}\label{setjmp_8h_ab2c7d1d9afbdba1ad535f1dff46629d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__setjmp_ga2687c5ef7a3f376db90908999a9a7fc6}{setjmp} (jmp\+\_\+buf \+\_\+\+\_\+jmpb)
+\begin{DoxyCompactList}\small\item\em Save stack context for non-\/local goto. \end{DoxyCompactList}\item 
+void \hyperlink{group__setjmp_ga87f44eafaab5ec0ef8f5a11a8b853acf}{longjmp} (jmp\+\_\+buf \+\_\+\+\_\+jmpb, int \+\_\+\+\_\+ret) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+R\+E\+T\+U\+R\+N\+\_\+\+\_\+
+\begin{DoxyCompactList}\small\item\em Non-\/local jump to a saved stack context. \end{DoxyCompactList}\end{DoxyCompactItemize}

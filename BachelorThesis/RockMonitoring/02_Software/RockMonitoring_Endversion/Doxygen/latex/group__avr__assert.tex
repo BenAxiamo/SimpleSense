@@ -1,0 +1,34 @@
+\hypertarget{group__avr__assert}{}\section{$<$assert.\+h$>$\+: Diagnostics}
+\label{group__avr__assert}\index{$<$assert.\+h$>$\+: Diagnostics@{$<$assert.\+h$>$\+: Diagnostics}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries assert}(e)~((e) ? (void)0 \+: \hyperlink{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}{abort}())\hypertarget{group__avr__assert_gad6d5aaa966ca7424f7cb9bd01f2c838b}{}\label{group__avr__assert_gad6d5aaa966ca7424f7cb9bd01f2c838b}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries \+\_\+\+\_\+assert} (const char $\ast$\+\_\+\+\_\+func, const char $\ast$\hyperlink{struct____file}{\+\_\+\+\_\+file}, int \+\_\+\+\_\+lineno, const char $\ast$\+\_\+\+\_\+sexp)\hypertarget{group__avr__assert_ga1f7427826c2188a9ddeb16df2d25737b}{}\label{group__avr__assert_ga1f7427826c2188a9ddeb16df2d25737b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{assert_8h}{assert.h}>} 
+\end{DoxyCode}
+
+
+This header file defines a debugging aid.
+
+As there is no standard error output stream available for many applications using this library, the generation of a printable error message is not enabled by default. These messages will only be generated if the application defines the macro
+
+
+\begin{DoxyCode}
+\_\_ASSERT\_USE\_STDERR 
+\end{DoxyCode}
+
+
+before including the {\ttfamily $<$\hyperlink{assert_8h}{assert.\+h}$>$} header file. By default, only \hyperlink{group__avr__stdlib_ga63e28bec3592384b44606f011634c5a8}{abort()} will be called to halt the application. 

@@ -1,0 +1,414 @@
+\hypertarget{class_wasp_u_a_r_t}{}\section{Wasp\+U\+A\+RT Class Reference}
+\label{class_wasp_u_a_r_t}\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+Inheritance diagram for Wasp\+U\+A\+RT\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_u_a_r_t}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wasp_u_a_r_t_a23e43e8e7fe5f61d73e44cddd8d3f51d}{begin\+U\+A\+RT} ()\hypertarget{class_wasp_u_a_r_t_a23e43e8e7fe5f61d73e44cddd8d3f51d}{}\label{class_wasp_u_a_r_t_a23e43e8e7fe5f61d73e44cddd8d3f51d}
+
+\begin{DoxyCompactList}\small\item\em It open the corresponding uart. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_a_r_t_aa8888b039b232e354a02c5b3f0f4a6b5}{close\+U\+A\+RT} ()\hypertarget{class_wasp_u_a_r_t_aa8888b039b232e354a02c5b3f0f4a6b5}{}\label{class_wasp_u_a_r_t_aa8888b039b232e354a02c5b3f0f4a6b5}
+
+\begin{DoxyCompactList}\small\item\em It closes the corresponding uart. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_a_r_t_af7a968b2ba042149a3812805ff7eaf81}{set\+Timeout} (uint32\+\_\+t new\+Timeout)\hypertarget{class_wasp_u_a_r_t_af7a968b2ba042149a3812805ff7eaf81}{}\label{class_wasp_u_a_r_t_af7a968b2ba042149a3812805ff7eaf81}
+
+\begin{DoxyCompactList}\small\item\em It sets the time to wait for command responses. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_wasp_u_a_r_t_ab0a1835b2bdf12589003be0fea4c0e01}{get\+Timeout} ()\hypertarget{class_wasp_u_a_r_t_ab0a1835b2bdf12589003be0fea4c0e01}{}\label{class_wasp_u_a_r_t_ab0a1835b2bdf12589003be0fea4c0e01}
+
+\begin{DoxyCompactList}\small\item\em It gets the time to wait for command responses. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_a_r_t_a44c3297ebc198dcbffd74c11877c57f9}{set\+Delay} (uint32\+\_\+t new\+Delay)\hypertarget{class_wasp_u_a_r_t_a44c3297ebc198dcbffd74c11877c57f9}{}\label{class_wasp_u_a_r_t_a44c3297ebc198dcbffd74c11877c57f9}
+
+\begin{DoxyCompactList}\small\item\em It sets the time to wait after sending the command. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_wasp_u_a_r_t_aa574d0486fec81153bb63459ce39671b}{get\+Delay} ()\hypertarget{class_wasp_u_a_r_t_aa574d0486fec81153bb63459ce39671b}{}\label{class_wasp_u_a_r_t_aa574d0486fec81153bb63459ce39671b}
+
+\begin{DoxyCompactList}\small\item\em It gets the time to wait after sending the command. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a0c40fe5e1a96a4ca3d578dce18841809}{send\+Command} (char $\ast$command, char $\ast$ans1)
+\begin{DoxyCompactList}\small\item\em It sends a command through the selected uart expecting a specific answer. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries send\+Command} (char $\ast$command, char $\ast$ans1, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_abd49c0318d4062374c0d0a810edacd15}{}\label{class_wasp_u_a_r_t_abd49c0318d4062374c0d0a810edacd15}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a1e567d5047e7a65d6c922bcd4fb45f13}{send\+Command} (char $\ast$command, char $\ast$ans1, char $\ast$ans2)
+\begin{DoxyCompactList}\small\item\em It sends a command through the selected uart expecting specific answers. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries send\+Command} (char $\ast$command, char $\ast$ans1, char $\ast$ans2, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_afe84fa499b88212c9e10bb38f477d0e6}{}\label{class_wasp_u_a_r_t_afe84fa499b88212c9e10bb38f477d0e6}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a6b799c9b2bf78b1d7d020cbb2f892b07}{send\+Command} (char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3)
+\begin{DoxyCompactList}\small\item\em It sends a command through the selected uart expecting specific answers. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries send\+Command} (char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_ab7aedc7a280de96707cea09eda419874}{}\label{class_wasp_u_a_r_t_ab7aedc7a280de96707cea09eda419874}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a0d3c7044158e4a53707150b175e01c86}{send\+Command} (char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, char $\ast$ans4)
+\begin{DoxyCompactList}\small\item\em It sends a command through the selected uart expecting specific answers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_abe0ec53249044edcd1c1238abece0773}{send\+Command} (char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, char $\ast$ans4, uint32\+\_\+t timeout)
+\item 
+bool \hyperlink{class_wasp_u_a_r_t_ac04a834eb34ddddc5e7caf475f31ce45}{find} (uint8\+\_\+t $\ast$buffer, uint16\+\_\+t length, char $\ast$pattern)\hypertarget{class_wasp_u_a_r_t_ac04a834eb34ddddc5e7caf475f31ce45}{}\label{class_wasp_u_a_r_t_ac04a834eb34ddddc5e7caf475f31ce45}
+
+\begin{DoxyCompactList}\small\item\em It seeks \textquotesingle{}pattern\textquotesingle{} inside the \textquotesingle{}buffer\textquotesingle{} array. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_u_a_r_t_a3a42fadafbb0e3ab853e7622bc581e60}{send\+Command} (uint8\+\_\+t $\ast$command, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It sends a command without waiting answer (only send) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a7cc3c07c39f984058cae8ac892e7347d}{wait\+For} (char $\ast$ans1)
+\begin{DoxyCompactList}\small\item\em This function waits for one of the answers during a certain period of time. The result is stored in \textquotesingle{}\+\_\+buffer\textquotesingle{}. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_a42e43984989ff61f8c49f477efd7aa7a}{}\label{class_wasp_u_a_r_t_a42e43984989ff61f8c49f477efd7aa7a}
+
+\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, char $\ast$ans2)\hypertarget{class_wasp_u_a_r_t_a6026dec03a2d7922db82af216d80f5bb}{}\label{class_wasp_u_a_r_t_a6026dec03a2d7922db82af216d80f5bb}
+
+\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, char $\ast$ans2, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_a462c19311f2d5916b68624fb0d2ba9c7}{}\label{class_wasp_u_a_r_t_a462c19311f2d5916b68624fb0d2ba9c7}
+
+\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, char $\ast$ans2, char $\ast$ans3)\hypertarget{class_wasp_u_a_r_t_a2152bbb55c3db5021a81d1393fd7064a}{}\label{class_wasp_u_a_r_t_a2152bbb55c3db5021a81d1393fd7064a}
+
+\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_ae888dbe9f95d1c8627a8b6cd0914fe84}{}\label{class_wasp_u_a_r_t_ae888dbe9f95d1c8627a8b6cd0914fe84}
+
+\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, char $\ast$ans4)\hypertarget{class_wasp_u_a_r_t_a697a68a83daa0e3d5abfe9fd5c1c5f86}{}\label{class_wasp_u_a_r_t_a697a68a83daa0e3d5abfe9fd5c1c5f86}
+
+\item 
+uint8\+\_\+t {\bfseries wait\+For} (char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, char $\ast$ans4, uint32\+\_\+t timeout)\hypertarget{class_wasp_u_a_r_t_ad7eff8d57ae0f5855bf59ac6f2d34e73}{}\label{class_wasp_u_a_r_t_ad7eff8d57ae0f5855bf59ac6f2d34e73}
+
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_u_a_r_t_ab5f61d0ce296ce27364372876111f3d7}{read\+Buffer} (uint16\+\_\+t request\+Bytes)\hypertarget{class_wasp_u_a_r_t_ab5f61d0ce296ce27364372876111f3d7}{}\label{class_wasp_u_a_r_t_ab5f61d0ce296ce27364372876111f3d7}
+
+\begin{DoxyCompactList}\small\item\em Read the contents of the rx buffer. \end{DoxyCompactList}\item 
+uint16\+\_\+t {\bfseries read\+Buffer} (uint16\+\_\+t request\+Bytes, bool clear\+Buffer)\hypertarget{class_wasp_u_a_r_t_a969be443a99867ac8edacc4a43b4269e}{}\label{class_wasp_u_a_r_t_a969be443a99867ac8edacc4a43b4269e}
+
+\item 
+void \hyperlink{class_wasp_u_a_r_t_afb5edf3c4b981187903c427de6a91573}{latency\+Delay} ()\hypertarget{class_wasp_u_a_r_t_afb5edf3c4b981187903c427de6a91573}{}\label{class_wasp_u_a_r_t_afb5edf3c4b981187903c427de6a91573}
+
+\begin{DoxyCompactList}\small\item\em It waits depending on the baudrate used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a7a2e8d5e13129a64d6c5c8372229d268}{\+\_\+buffer} \mbox{[}512\mbox{]}\hypertarget{class_wasp_u_a_r_t_a7a2e8d5e13129a64d6c5c8372229d268}{}\label{class_wasp_u_a_r_t_a7a2e8d5e13129a64d6c5c8372229d268}
+
+\begin{DoxyCompactList}\small\item\em buffer for rx data \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_u_a_r_t_aefd2c2f7fa3a814568f16494b947e7ad}{\+\_\+length}\hypertarget{class_wasp_u_a_r_t_aefd2c2f7fa3a814568f16494b947e7ad}{}\label{class_wasp_u_a_r_t_aefd2c2f7fa3a814568f16494b947e7ad}
+
+\begin{DoxyCompactList}\small\item\em length of the contents in \textquotesingle{}\+\_\+buffer\textquotesingle{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_af0a8ecf0c4e186009b78a556391283de}{parse\+String} (char $\ast$str, uint16\+\_\+t size, char $\ast$delimiters)
+\begin{DoxyCompactList}\small\item\em It parses the contents of \+\_\+buffer and copies the string to the pointer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_aca35e35627f7838183fc9a41ac95a9be}{parse\+Float} (float $\ast$value, char $\ast$delimiters)
+\begin{DoxyCompactList}\small\item\em It parses the contents of \+\_\+buffer and converts it to a float type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a0b5b341aa38f4b21988b285573c356c4}{parse\+Uint32} (uint32\+\_\+t $\ast$value, char $\ast$delimiters)
+\begin{DoxyCompactList}\small\item\em It parses the contents of \+\_\+buffer and converts it to a uint32\+\_\+t type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a63de9578e20755a735ff1c7a74bf33f5}{parse\+Int} (int $\ast$value, char $\ast$delimiters)
+\begin{DoxyCompactList}\small\item\em It parses the contents of \+\_\+buffer and converts it to a int type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_a8231a03be27390d0523bd91989bf9505}{parse\+Uint8} (uint8\+\_\+t $\ast$value, char $\ast$delimiters)\hypertarget{class_wasp_u_a_r_t_a8231a03be27390d0523bd91989bf9505}{}\label{class_wasp_u_a_r_t_a8231a03be27390d0523bd91989bf9505}
+
+\begin{DoxyCompactList}\small\item\em It parses the contents of \+\_\+buffer and converts it to a uint16\+\_\+t type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_u_a_r_t_aa7f0e25db195e335fb595f52c7c7ca9b}{parse\+Hex} (uint8\+\_\+t $\ast$value, char $\ast$delimiters)\hypertarget{class_wasp_u_a_r_t_aa7f0e25db195e335fb595f52c7c7ca9b}{}\label{class_wasp_u_a_r_t_aa7f0e25db195e335fb595f52c7c7ca9b}
+
+\begin{DoxyCompactList}\small\item\em It parses the contents of \+\_\+buffer and converts it to a uint16\+\_\+t type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t {\bfseries \+\_\+uart}\hypertarget{class_wasp_u_a_r_t_ae668be5125fc6632a3d82789ea78dcfe}{}\label{class_wasp_u_a_r_t_ae668be5125fc6632a3d82789ea78dcfe}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+baudrate}\hypertarget{class_wasp_u_a_r_t_abda6d688d0b2c264596097c7710579fb}{}\label{class_wasp_u_a_r_t_abda6d688d0b2c264596097c7710579fb}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+def\+\_\+timeout}\hypertarget{class_wasp_u_a_r_t_adc851ecc2df3cb5d97e96dd4e8e090d1}{}\label{class_wasp_u_a_r_t_adc851ecc2df3cb5d97e96dd4e8e090d1}
+
+\item 
+uint32\+\_\+t {\bfseries \+\_\+def\+\_\+delay}\hypertarget{class_wasp_u_a_r_t_a92d231cfe994ad7fcebf5926577426d4}{}\label{class_wasp_u_a_r_t_a92d231cfe994ad7fcebf5926577426d4}
+
+\item 
+bool {\bfseries \+\_\+flush\+\_\+mode}\hypertarget{class_wasp_u_a_r_t_aed0dfe6a13e0a5792ee4ebeb575b53bf}{}\label{class_wasp_u_a_r_t_aed0dfe6a13e0a5792ee4ebeb575b53bf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!parse\+Float@{parse\+Float}}
+\index{parse\+Float@{parse\+Float}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{parse\+Float(float $\ast$value, char $\ast$delimiters)}{parseFloat(float *value, char *delimiters)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::parse\+Float (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{value, }
+\item[{char $\ast$}]{delimiters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_u_a_r_t_aca35e35627f7838183fc9a41ac95a9be}{}\label{class_wasp_u_a_r_t_aca35e35627f7838183fc9a41ac95a9be}
+
+
+It parses the contents of \+\_\+buffer and converts it to a float type. 
+
+It parses the contents in \textquotesingle{}\+\_\+buffer\textquotesingle{} escaping the delimiters indicated as inputs in delimiters. For instance \+\_\+buffer stores\+: \char`\"{}$<$value$>$\textbackslash{}r\textbackslash{}n\char`\"{} Then you can call\+: parse\+Float(\&variable, \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{})
+
+
+\begin{DoxyParams}{Parameters}
+{\em float$\ast$} & value\+: pointer to the variable where parsed data is stored \\
+\hline
+{\em char$\ast$} & delimiters\+: string containing the delimiter characters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if ok \item \textquotesingle{}1\textquotesingle{} if error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!parse\+Int@{parse\+Int}}
+\index{parse\+Int@{parse\+Int}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{parse\+Int(int $\ast$value, char $\ast$delimiters)}{parseInt(int *value, char *delimiters)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::parse\+Int (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{value, }
+\item[{char $\ast$}]{delimiters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_u_a_r_t_a63de9578e20755a735ff1c7a74bf33f5}{}\label{class_wasp_u_a_r_t_a63de9578e20755a735ff1c7a74bf33f5}
+
+
+It parses the contents of \+\_\+buffer and converts it to a int type. 
+
+It parses the contents in \textquotesingle{}\+\_\+buffer\textquotesingle{} escaping the delimiters indicated as inputs in delimiters. For instance \+\_\+buffer stores\+: \char`\"{}$<$value$>$\textbackslash{}r\textbackslash{}n\char`\"{} Then you can call\+: parse\+Uint32(\&variable, \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{})
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t$\ast$} & value\+: pointer to the variable where parsed data is stored \\
+\hline
+{\em char$\ast$} & delimiters\+: string containing the delimiter characters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if ok \item \textquotesingle{}1\textquotesingle{} if error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!parse\+String@{parse\+String}}
+\index{parse\+String@{parse\+String}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{parse\+String(char $\ast$str, uint16\+\_\+t size, char $\ast$delimiters)}{parseString(char *str, uint16_t size, char *delimiters)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::parse\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{uint16\+\_\+t}]{size, }
+\item[{char $\ast$}]{delimiters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_u_a_r_t_af0a8ecf0c4e186009b78a556391283de}{}\label{class_wasp_u_a_r_t_af0a8ecf0c4e186009b78a556391283de}
+
+
+It parses the contents of \+\_\+buffer and copies the string to the pointer. 
+
+It parses the contents in \textquotesingle{}\+\_\+buffer\textquotesingle{} escaping the delimiters indicated as inputs in delimiters. For instance \+\_\+buffer stores\+: \char`\"{}$<$response$>$\textbackslash{}r\textbackslash{}n\char`\"{} Then you can call\+: parse\+String(data, sizeof(data),\char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{})
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & str\+: pointer to the buffer where parsed data is stored \\
+\hline
+{\em uint16\+\_\+t} & size\+: size of input \textquotesingle{}str\textquotesingle{} buffer \\
+\hline
+{\em char$\ast$} & delimiters\+: string containing the delimiter characters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if ok \item \textquotesingle{}1\textquotesingle{} if error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!parse\+Uint32@{parse\+Uint32}}
+\index{parse\+Uint32@{parse\+Uint32}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{parse\+Uint32(uint32\+\_\+t $\ast$value, char $\ast$delimiters)}{parseUint32(uint32_t *value, char *delimiters)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::parse\+Uint32 (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{value, }
+\item[{char $\ast$}]{delimiters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_u_a_r_t_a0b5b341aa38f4b21988b285573c356c4}{}\label{class_wasp_u_a_r_t_a0b5b341aa38f4b21988b285573c356c4}
+
+
+It parses the contents of \+\_\+buffer and converts it to a uint32\+\_\+t type. 
+
+It parses the contents in \textquotesingle{}\+\_\+buffer\textquotesingle{} escaping the delimiters indicated as inputs in delimiters. For instance \+\_\+buffer stores\+: \char`\"{}$<$value$>$\textbackslash{}r\textbackslash{}n\char`\"{} Then you can call\+: parse\+Uint32(\&variable, \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{})
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t$\ast$} & value\+: pointer to the variable where parsed data is stored \\
+\hline
+{\em char$\ast$} & delimiters\+: string containing the delimiter characters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\begin{DoxyItemize}
+\item \textquotesingle{}0\textquotesingle{} if ok \item \textquotesingle{}1\textquotesingle{} if error \end{DoxyItemize}
+
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{send\+Command(char $\ast$command, char $\ast$ans1)}{sendCommand(char *command, char *ans1)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{command, }
+\item[{char $\ast$}]{ans1}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_a0c40fe5e1a96a4ca3d578dce18841809}{}\label{class_wasp_u_a_r_t_a0c40fe5e1a96a4ca3d578dce18841809}
+
+
+It sends a command through the selected uart expecting a specific answer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & command \+: string to send to the module \\
+\hline
+{\em char$\ast$} & ans1 \+: string expected to be answered by the module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if timeout error, \textquotesingle{}1\textquotesingle{} if ans1 
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{send\+Command(char $\ast$command, char $\ast$ans1, char $\ast$ans2)}{sendCommand(char *command, char *ans1, char *ans2)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{command, }
+\item[{char $\ast$}]{ans1, }
+\item[{char $\ast$}]{ans2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_a1e567d5047e7a65d6c922bcd4fb45f13}{}\label{class_wasp_u_a_r_t_a1e567d5047e7a65d6c922bcd4fb45f13}
+
+
+It sends a command through the selected uart expecting specific answers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & command \+: string to send to the module \\
+\hline
+{\em char$\ast$} & ans1 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & ans2 \+: string expected to be answered by the module \\
+\hline
+{\em uint32\+\_\+t} & timeout \+: time to wait for responses before exit with error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if timeout error, \textquotesingle{}1\textquotesingle{} if ans1 \textquotesingle{}2\textquotesingle{} if ans2 
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{send\+Command(char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3)}{sendCommand(char *command, char *ans1, char *ans2, char *ans3)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{command, }
+\item[{char $\ast$}]{ans1, }
+\item[{char $\ast$}]{ans2, }
+\item[{char $\ast$}]{ans3}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_a6b799c9b2bf78b1d7d020cbb2f892b07}{}\label{class_wasp_u_a_r_t_a6b799c9b2bf78b1d7d020cbb2f892b07}
+
+
+It sends a command through the selected uart expecting specific answers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & command \+: string to send to the module \\
+\hline
+{\em char$\ast$} & ans1 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & ans2 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & ans3 \+: string expected to be answered by the module \\
+\hline
+{\em uint32\+\_\+t} & timeout \+: time to wait for responses before exit with error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if timeout error, \textquotesingle{}1\textquotesingle{} if ans1 \textquotesingle{}2\textquotesingle{} if ans2 \textquotesingle{}3\textquotesingle{} if ans3 
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{send\+Command(char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, char $\ast$ans4)}{sendCommand(char *command, char *ans1, char *ans2, char *ans3, char *ans4)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{command, }
+\item[{char $\ast$}]{ans1, }
+\item[{char $\ast$}]{ans2, }
+\item[{char $\ast$}]{ans3, }
+\item[{char $\ast$}]{ans4}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_a0d3c7044158e4a53707150b175e01c86}{}\label{class_wasp_u_a_r_t_a0d3c7044158e4a53707150b175e01c86}
+
+
+It sends a command through the selected uart expecting specific answers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & command \+: string to send to the module \\
+\hline
+{\em char$\ast$} & ans1 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & ans2 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & ans3 \+: string expected to be answered by the module \\
+\hline
+{\em char$\ast$} & ans4 \+: string expected to be answered by the module \\
+\hline
+{\em uint32\+\_\+t} & timeout \+: time to wait for responses before exit with error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if timeout error, \textquotesingle{}1\textquotesingle{} if ans1 \textquotesingle{}2\textquotesingle{} if ans2 \textquotesingle{}3\textquotesingle{} if ans3 \textquotesingle{}4\textquotesingle{} if ans4 
+\end{DoxyReturn}
+\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{send\+Command(char $\ast$command, char $\ast$ans1, char $\ast$ans2, char $\ast$ans3, char $\ast$ans4, uint32\+\_\+t timeout)}{sendCommand(char *command, char *ans1, char *ans2, char *ans3, char *ans4, uint32_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{command, }
+\item[{char $\ast$}]{ans1, }
+\item[{char $\ast$}]{ans2, }
+\item[{char $\ast$}]{ans3, }
+\item[{char $\ast$}]{ans4, }
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_abe0ec53249044edcd1c1238abece0773}{}\label{class_wasp_u_a_r_t_abe0ec53249044edcd1c1238abece0773}
+
+\begin{DoxyEnumerate}
+\item print command
+\item read answer 
+\end{DoxyEnumerate}\index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{send\+Command(uint8\+\_\+t $\ast$command, uint16\+\_\+t length)}{sendCommand(uint8_t *command, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+U\+A\+R\+T\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{command, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_a3a42fadafbb0e3ab853e7622bc581e60}{}\label{class_wasp_u_a_r_t_a3a42fadafbb0e3ab853e7622bc581e60}
+
+
+It sends a command without waiting answer (only send) 
+
+print command \index{Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}!wait\+For@{wait\+For}}
+\index{wait\+For@{wait\+For}!Wasp\+U\+A\+RT@{Wasp\+U\+A\+RT}}
+\subsubsection[{\texorpdfstring{wait\+For(char $\ast$ans1)}{waitFor(char *ans1)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+U\+A\+R\+T\+::wait\+For (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ans1}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_u_a_r_t_a7cc3c07c39f984058cae8ac892e7347d}{}\label{class_wasp_u_a_r_t_a7cc3c07c39f984058cae8ac892e7347d}
+
+
+This function waits for one of the answers during a certain period of time. The result is stored in \textquotesingle{}\+\_\+buffer\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & command\+: command to be sent \\
+\hline
+{\em char$\ast$} & ans1\+: expected answer \\
+\hline
+{\em char$\ast$} & ans2\+: expected answer \\
+\hline
+{\em char$\ast$} & ans3\+: expected answer \\
+\hline
+{\em char$\ast$} & ans4\+: expected answer \\
+\hline
+{\em uint32\+\_\+t} & timeout \+: time to wait for responses before exit with error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if timeout error, \textquotesingle{}1\textquotesingle{} if ans1 \textquotesingle{}2\textquotesingle{} if ans2 \textquotesingle{}3\textquotesingle{} if ans3 \textquotesingle{}4\textquotesingle{} if ans4 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_u_a_r_t_8h}{Wasp\+U\+A\+R\+T.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+U\+A\+R\+T.\+cpp\end{DoxyCompactItemize}

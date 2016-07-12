@@ -1,0 +1,20 @@
+/*! \mainpage Rock Monitoring Software Documentation
+ *
+ * \section intro_sec Project
+ *
+ * This is the software documentation of the project Rock Monitoring. \n
+ * The project is a bachelor thesis from Swen Bischof and Daniel Frei, developped at Bern University of Applied Sciences in 2016.\n
+ * In the project Rock Monitoring, a prototype was developped to monitor longterm movements of rocks. 
+ *
+ * \image html Prototyp1.jpg 
+ *<div align="center"> Picture of the developped prototype </div>
+ *
+ * \section soft_sec Software
+ * We used Libelium Waspmote as a development platform.\n
+ * In this Software documenatation are only the libraries we wrote ourselves.\n
+ * To be able to upload the code to Libelium Waspmote, the API of Libelium is necessery (see: <a href="https://www.libelium.com/api/waspmote/index.html">Libelium Waspmote API</a> )\n 
+ *
+ *Classes and Files: \n
+ * \arg \c <a href="annotated.html">Classes</a> 
+ * \arg \c <a href="files.html">Files</a> 
+ */

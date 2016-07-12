@@ -1,0 +1,316 @@
+\hypertarget{class_sensors}{}\section{Sensors Class Reference}
+\label{class_sensors}\index{Sensors@{Sensors}}
+
+
+Class that handles sensors.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\+h$>$}
+
+
+
+Collaboration diagram for Sensors\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_sensors__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_sensors_1_1struct_sensors}{struct\+Sensors}
+\item 
+struct \hyperlink{struct_sensors_1_1struct_sensors_pitch_roll}{struct\+Sensors\+Pitch\+Roll}
+\item 
+struct \hyperlink{struct_sensors_1_1struct_sensors_x_y_z}{struct\+Sensors\+X\+YZ}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sensors_a68ef7a2ec8dd0ffd9b35b70b50c0ab09}{Sensors} ()
+\item 
+void \hyperlink{class_sensors_a6dc9f66e4319c82649dc79cfa4e5ead8}{init} ()
+\begin{DoxyCompactList}\small\item\em This method initializes the sensors. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_sensors_a8c6d7ac9d485e0f168a5bc3557cdcd88}{get\+Sensor\+Acc123} (\hyperlink{struct_sensors_1_1struct_sensors_x_y_z}{Sensors\+::struct\+Sensors\+X\+YZ} $\ast$sensors123)
+\begin{DoxyCompactList}\small\item\em This method gives back the X, Y and Z -\/ Values of all 3 Accelerometers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_sensors_af4d03d967b555d453920cd44988b81ff}{get\+Sensor\+Values} (\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$all\+Sensors)
+\begin{DoxyCompactList}\small\item\em This method reads the pitch and Roll Angle-\/ Values of all 3 Accelerometers, all 3 temperatures and the extension ~\newline
+ It reads the temperatures and accelerations as 16bit int but concluding 2 places after comma ~\newline
+ the extension is given in 8 bit concluding the data in 1/10 mm. \end{DoxyCompactList}\item 
+void \hyperlink{class_sensors_ad38384b568dac4c2f656a78c28464e9a}{print} ()
+\begin{DoxyCompactList}\small\item\em This method reads the X, Y and Z -\/ Values of all 3 Accelerometers and the extensiomter and prints them to the serial Port. \end{DoxyCompactList}\item 
+void \hyperlink{class_sensors_ae34f773a3f857f8822a6578c5ba8420c}{print\+All} ()
+\begin{DoxyCompactList}\small\item\em This method reads all the sensors and prints them to the serial Port. \end{DoxyCompactList}\item 
+void \hyperlink{class_sensors_a91a5ade4211864240cadf8b5c76cdab5}{get\+Extension} (int \&extension)
+\begin{DoxyCompactList}\small\item\em This method reads the Extension of the potentiometer, it uses the 10\+Bit-\/ A\+DC Converter ~\newline
+it calculates the extension in 1/10 mm with the median value of 30 measurements. \end{DoxyCompactList}\item 
+void \hyperlink{class_sensors_a3bc6596e2f0dd4fb8dc62dd3088fef08}{go\+To\+Sleep} ()
+\begin{DoxyCompactList}\small\item\em This method sets all sensors in Standby. \end{DoxyCompactList}\item 
+void \hyperlink{class_sensors_af41ecbcaba9f0b7584f6db4167c675b7}{wake\+Up} ()
+\begin{DoxyCompactList}\small\item\em This method is used to wake up the \hyperlink{class_sensors}{Sensors}, it initializes them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_sensors_ad6f32987563a60281c980a6fa6c5ec16}{median} (int n, int x\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em This method calculates the median value of the elements in the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q} \hyperlink{class_sensors_ac0f59bed5fff02ea6ac23f2cef86fc30}{acc1}
+\item 
+\hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q} \hyperlink{class_sensors_a9170ea284aa665a822ec2cf8fc9fefdf}{acc2}
+\item 
+\hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q} \hyperlink{class_sensors_afd2385d76c20609170ace022a945edfa}{acc3}
+\item 
+\hyperlink{class_p_c_t2075}{P\+C\+T2075} \hyperlink{class_sensors_abf16d9fc6440651f552d24d91090cb7f}{temp1}
+\item 
+\hyperlink{class_p_c_t2075}{P\+C\+T2075} \hyperlink{class_sensors_a3ef4e3befd4b22c61900ee9b589511f0}{temp2}
+\item 
+\hyperlink{class_p_c_t2075}{P\+C\+T2075} \hyperlink{class_sensors_a6019e66b1f8a52d0f4768d4a928df3d0}{temp3}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles sensors. 
+
+Definition at line 12 of file Sensors.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sensors@{Sensors}!Sensors@{Sensors}}
+\index{Sensors@{Sensors}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{Sensors()}{Sensors()}}]{\setlength{\rightskip}{0pt plus 5cm}Sensors\+::\+Sensors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_a68ef7a2ec8dd0ffd9b35b70b50c0ab09}{}\label{class_sensors_a68ef7a2ec8dd0ffd9b35b70b50c0ab09}
+
+
+Definition at line 6 of file Sensors.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Sensors@{Sensors}!get\+Extension@{get\+Extension}}
+\index{get\+Extension@{get\+Extension}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{get\+Extension(int \&extension)}{getExtension(int &extension)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensors\+::get\+Extension (
+\begin{DoxyParamCaption}
+\item[{int \&}]{extension}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_a91a5ade4211864240cadf8b5c76cdab5}{}\label{class_sensors_a91a5ade4211864240cadf8b5c76cdab5}
+
+
+This method reads the Extension of the potentiometer, it uses the 10\+Bit-\/ A\+DC Converter ~\newline
+it calculates the extension in 1/10 mm with the median value of 30 measurements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \& extension, Reference to int which contains the extension value (from 0 -\/ 1023) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 265 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!get\+Sensor\+Acc123@{get\+Sensor\+Acc123}}
+\index{get\+Sensor\+Acc123@{get\+Sensor\+Acc123}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{get\+Sensor\+Acc123(\+Sensors\+::struct\+Sensors\+X\+Y\+Z $\ast$sensors123)}{getSensorAcc123(Sensors::structSensorsXYZ *sensors123)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensors\+::get\+Sensor\+Acc123 (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors\+X\+YZ} $\ast$}]{sensors123}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_a8c6d7ac9d485e0f168a5bc3557cdcd88}{}\label{class_sensors_a8c6d7ac9d485e0f168a5bc3557cdcd88}
+
+
+This method gives back the X, Y and Z -\/ Values of all 3 Accelerometers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_sensors_1_1struct_sensors_x_y_z}{Sensors\+::struct\+Sensors\+X\+YZ}} & $\ast$ sensors123, Pointer to struct which contains data of all 3 acc. sensors\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, gives back 1 for Error and 0 for ok 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!get\+Sensor\+Values@{get\+Sensor\+Values}}
+\index{get\+Sensor\+Values@{get\+Sensor\+Values}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{get\+Sensor\+Values(\+Sensors\+::struct\+Sensors $\ast$all\+Sensors)}{getSensorValues(Sensors::structSensors *allSensors)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sensors\+::get\+Sensor\+Values (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors} $\ast$}]{allsensors}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_af4d03d967b555d453920cd44988b81ff}{}\label{class_sensors_af4d03d967b555d453920cd44988b81ff}
+
+
+This method reads the pitch and Roll Angle-\/ Values of all 3 Accelerometers, all 3 temperatures and the extension ~\newline
+ It reads the temperatures and accelerations as 16bit int but concluding 2 places after comma ~\newline
+ the extension is given in 8 bit concluding the data in 1/10 mm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_sensors_1_1struct_sensors_pitch_roll}{Sensors\+::struct\+Sensors\+Pitch\+Roll}} & $\ast$ sensors123, Pointer to struct which contains angle data of all 3 acc. sensors\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, gives back 1 for Error with Accelerometer, 2 for Error with Temp\+Sensors and 0 for ok 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!go\+To\+Sleep@{go\+To\+Sleep}}
+\index{go\+To\+Sleep@{go\+To\+Sleep}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{go\+To\+Sleep()}{goToSleep()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensors\+::go\+To\+Sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_a3bc6596e2f0dd4fb8dc62dd3088fef08}{}\label{class_sensors_a3bc6596e2f0dd4fb8dc62dd3088fef08}
+
+
+This method sets all sensors in Standby. 
+
+
+
+Definition at line 278 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!init@{init}}
+\index{init@{init}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensors\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_a6dc9f66e4319c82649dc79cfa4e5ead8}{}\label{class_sensors_a6dc9f66e4319c82649dc79cfa4e5ead8}
+
+
+This method initializes the sensors. 
+
+
+
+Definition at line 15 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!median@{median}}
+\index{median@{median}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{median(int n, int x[])}{median(int n, int x[])}}]{\setlength{\rightskip}{0pt plus 5cm}int Sensors\+::median (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{x\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_ad6f32987563a60281c980a6fa6c5ec16}{}\label{class_sensors_ad6f32987563a60281c980a6fa6c5ec16}
+
+
+This method calculates the median value of the elements in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & n, int x\mbox{[}\mbox{]}, n = number of values in the array, x = array with values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int median, median value of the values in the array 
+\end{DoxyReturn}
+
+
+Definition at line 299 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!print@{print}}
+\index{print@{print}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensors\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_ad38384b568dac4c2f656a78c28464e9a}{}\label{class_sensors_ad38384b568dac4c2f656a78c28464e9a}
+
+
+This method reads the X, Y and Z -\/ Values of all 3 Accelerometers and the extensiomter and prints them to the serial Port. 
+
+
+
+Definition at line 161 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!print\+All@{print\+All}}
+\index{print\+All@{print\+All}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{print\+All()}{printAll()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensors\+::print\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_ae34f773a3f857f8822a6578c5ba8420c}{}\label{class_sensors_ae34f773a3f857f8822a6578c5ba8420c}
+
+
+This method reads all the sensors and prints them to the serial Port. 
+
+
+
+Definition at line 212 of file Sensors.\+cpp.
+
+\index{Sensors@{Sensors}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{wake\+Up()}{wakeUp()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensors\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensors_af41ecbcaba9f0b7584f6db4167c675b7}{}\label{class_sensors_af41ecbcaba9f0b7584f6db4167c675b7}
+
+
+This method is used to wake up the \hyperlink{class_sensors}{Sensors}, it initializes them. 
+
+
+
+Definition at line 289 of file Sensors.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Sensors@{Sensors}!acc1@{acc1}}
+\index{acc1@{acc1}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{acc1}{acc1}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+X\+L\+S8471Q} Sensors\+::acc1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_ac0f59bed5fff02ea6ac23f2cef86fc30}{}\label{class_sensors_ac0f59bed5fff02ea6ac23f2cef86fc30}
+
+
+Definition at line 57 of file Sensors.\+h.
+
+\index{Sensors@{Sensors}!acc2@{acc2}}
+\index{acc2@{acc2}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{acc2}{acc2}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+X\+L\+S8471Q} Sensors\+::acc2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_a9170ea284aa665a822ec2cf8fc9fefdf}{}\label{class_sensors_a9170ea284aa665a822ec2cf8fc9fefdf}
+
+
+Definition at line 58 of file Sensors.\+h.
+
+\index{Sensors@{Sensors}!acc3@{acc3}}
+\index{acc3@{acc3}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{acc3}{acc3}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+X\+L\+S8471Q} Sensors\+::acc3\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_afd2385d76c20609170ace022a945edfa}{}\label{class_sensors_afd2385d76c20609170ace022a945edfa}
+
+
+Definition at line 59 of file Sensors.\+h.
+
+\index{Sensors@{Sensors}!temp1@{temp1}}
+\index{temp1@{temp1}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{temp1}{temp1}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+C\+T2075} Sensors\+::temp1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_abf16d9fc6440651f552d24d91090cb7f}{}\label{class_sensors_abf16d9fc6440651f552d24d91090cb7f}
+
+
+Definition at line 60 of file Sensors.\+h.
+
+\index{Sensors@{Sensors}!temp2@{temp2}}
+\index{temp2@{temp2}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{temp2}{temp2}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+C\+T2075} Sensors\+::temp2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_a3ef4e3befd4b22c61900ee9b589511f0}{}\label{class_sensors_a3ef4e3befd4b22c61900ee9b589511f0}
+
+
+Definition at line 61 of file Sensors.\+h.
+
+\index{Sensors@{Sensors}!temp3@{temp3}}
+\index{temp3@{temp3}!Sensors@{Sensors}}
+\subsubsection[{\texorpdfstring{temp3}{temp3}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+C\+T2075} Sensors\+::temp3\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sensors_a6019e66b1f8a52d0f4768d4a928df3d0}{}\label{class_sensors_a6019e66b1f8a52d0f4768d4a928df3d0}
+
+
+Definition at line 62 of file Sensors.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sensors_8h}{Sensors.\+h}\item 
+\hyperlink{_sensors_8cpp}{Sensors.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,446 @@
+\hypertarget{class_wasp_sensor_agr__v20}{}\section{Wasp\+Sensor\+Agr\+\_\+v20 Class Reference}
+\label{class_wasp_sensor_agr__v20}\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+
+
+Wasp\+Sensor\+Agr\+V20 Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Agr\+\_\+v20.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_agr__v20_a6614775fc3022158509093dd8d515aa4}{Wasp\+Sensor\+Agr\+\_\+v20} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_afc007d938769000590bd774a071e69d6}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_a7b7a7ec459bb4cf81dd3839f8001489d}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_agr__v20_afb5115e2ac8560bfbbdf98ea99c56814}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets board power mode, setting O\+N/\+O\+FF 3v3 and 5V switches. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_agr__v20_ab0acb734c61e94e96afda1328a3aabf7}{set\+Sensor\+Mode} (uint8\+\_\+t mode, uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the different sensor switches. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_a72afa154e74b7b7b6b86744b50068be5}{read\+Value} (uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_ad8f7e3cac864da7316cfa6842ffe479f}{read\+Value} (uint16\+\_\+t sensor, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_a6595e0f4b1597a4db1eb33b4dc11196e}{sleep\+Agr} (const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option)
+\begin{DoxyCompactList}\small\item\em It sleeps Waspmote enabling the switches required for the agriculture board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_a87a07f94ed9a4405c1c7d5c00c6b45ef}{sleep\+Agr} (const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option, uint8\+\_\+t agr\+\_\+interrupt)
+\begin{DoxyCompactList}\small\item\em It sleeps Waspmote enabling the switches required for the Agriculture Board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_ae9823bddb58a6c02601729cd6434003d}{attach\+Pluvio\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It enables the pluviometer interruption. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_a944a303d03de153bc98161bde8749dab}{detach\+Pluvio\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It disables the pluviometer interruption. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_a84aa330550873af1cda374219c28d465}{read\+Temp\+D\+S1820} ()
+\begin{DoxyCompactList}\small\item\em It reads the D\+S1820 temperature sensor. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_a9b81bad6805c3b4f7fd46133ef538275}{get\+Vane\+Filtered} ()
+\begin{DoxyCompactList}\small\item\em It gets the mean vane direction from several samples. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_agr__v20_a7191176eecade3e36bb421e5ab8d976b}{store\+Pulse} ()
+\begin{DoxyCompactList}\small\item\em It increase the number of pulses in \textquotesingle{}plv\+\_\+array\textquotesingle{}. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_a099855e00df0ff84c0cb5590bcbf3f54}{read\+Pluviometer\+Hour} ()
+\begin{DoxyCompactList}\small\item\em It calculates the rain fall during the previous hour before now. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_a417f158b0f8ee2dc3060788f48fa2510}{read\+Pluviometer\+Current} ()
+\begin{DoxyCompactList}\small\item\em It calculates the rain fall during the last hour. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_ad701f10ecb49bf16273052f388a60c45}{read\+Pluviometer\+Day} ()
+\begin{DoxyCompactList}\small\item\em It calculates the rain fall during the last day. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_a1746c6ffb2f0ce498cc13a1bf8b43d53}{read\+Pluviometer} (uint8\+\_\+t num\+Hours, int offset)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_sensor_agr__v20_a05e2ff48658d0739a5c61d54548c42f7}{vane\+Direction}\hypertarget{class_wasp_sensor_agr__v20_a05e2ff48658d0739a5c61d54548c42f7}{}\label{class_wasp_sensor_agr__v20_a05e2ff48658d0739a5c61d54548c42f7}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the wind direction. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_agr__v20_a16462cf318e77e69c8e09b7f836b7c71}{gust\+Wind}\hypertarget{class_wasp_sensor_agr__v20_a16462cf318e77e69c8e09b7f836b7c71}{}\label{class_wasp_sensor_agr__v20_a16462cf318e77e69c8e09b7f836b7c71}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the wind maximum gust. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wasp\+Sensor\+Agr\+V20 Class. 
+
+Wasp\+Sensor\+Agr\+V20 Class defines all the variables and functions used for managing the Agriculture Sensor Board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Agr\+\_\+v20()}{WaspSensorAgr_v20()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Agr\+\_\+v20\+::\+Wasp\+Sensor\+Agr\+\_\+v20 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a6614775fc3022158509093dd8d515aa4}{}\label{class_wasp_sensor_agr__v20_a6614775fc3022158509093dd8d515aa4}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!attach\+Pluvio\+Int@{attach\+Pluvio\+Int}}
+\index{attach\+Pluvio\+Int@{attach\+Pluvio\+Int}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{attach\+Pluvio\+Int(void)}{attachPluvioInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::attach\+Pluvio\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_ae9823bddb58a6c02601729cd6434003d}{}\label{class_wasp_sensor_agr__v20_ae9823bddb58a6c02601729cd6434003d}
+
+
+It enables the pluviometer interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!detach\+Pluvio\+Int@{detach\+Pluvio\+Int}}
+\index{detach\+Pluvio\+Int@{detach\+Pluvio\+Int}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{detach\+Pluvio\+Int(void)}{detachPluvioInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::detach\+Pluvio\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a944a303d03de153bc98161bde8749dab}{}\label{class_wasp_sensor_agr__v20_a944a303d03de153bc98161bde8749dab}
+
+
+It disables the pluviometer interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!get\+Vane\+Filtered@{get\+Vane\+Filtered}}
+\index{get\+Vane\+Filtered@{get\+Vane\+Filtered}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{get\+Vane\+Filtered()}{getVaneFiltered()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::get\+Vane\+Filtered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a9b81bad6805c3b4f7fd46133ef538275}{}\label{class_wasp_sensor_agr__v20_a9b81bad6805c3b4f7fd46133ef538275}
+
+
+It gets the mean vane direction from several samples. 
+
+It gets the mean vane direction and stores it in \textquotesingle{}vane\+Direction\textquotesingle{} variable 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a7b7a7ec459bb4cf81dd3839f8001489d}{}\label{class_wasp_sensor_agr__v20_a7b7a7ec459bb4cf81dd3839f8001489d}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_afc007d938769000590bd774a071e69d6}{}\label{class_wasp_sensor_agr__v20_afc007d938769000590bd774a071e69d6}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Pluviometer@{read\+Pluviometer}}
+\index{read\+Pluviometer@{read\+Pluviometer}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Pluviometer(uint8\+\_\+t num\+Hours, int offset)}{readPluviometer(uint8_t numHours, int offset)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Pluviometer (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{num\+Hours, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a1746c6ffb2f0ce498cc13a1bf8b43d53}{}\label{class_wasp_sensor_agr__v20_a1746c6ffb2f0ce498cc13a1bf8b43d53}
+It reads the number of pluviometer pulses during the indicated time and turns the value into mm of rain per indicated time
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}num\+Hours\textquotesingle{}} & indicates the amount of time (in hours) to calculate the rain fall. For example, one day would be 24 hours. \\
+\hline
+{\em \textquotesingle{}offset\textquotesingle{}} & indicates the number of hours to substract from actual slot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value \+: precipitations (mm) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Pluviometer\+Current@{read\+Pluviometer\+Current}}
+\index{read\+Pluviometer\+Current@{read\+Pluviometer\+Current}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Pluviometer\+Current()}{readPluviometerCurrent()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Pluviometer\+Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a417f158b0f8ee2dc3060788f48fa2510}{}\label{class_wasp_sensor_agr__v20_a417f158b0f8ee2dc3060788f48fa2510}
+
+
+It calculates the rain fall during the last hour. 
+
+For example\+: It is 13.\+30 pm. Then this function calculates the rain fall for this hour slot. It is said to be the rainfall from 13pm to 13.\+30pm 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value \+: precipitations (mm) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Pluviometer\+Day@{read\+Pluviometer\+Day}}
+\index{read\+Pluviometer\+Day@{read\+Pluviometer\+Day}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Pluviometer\+Day()}{readPluviometerDay()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Pluviometer\+Day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_ad701f10ecb49bf16273052f388a60c45}{}\label{class_wasp_sensor_agr__v20_ad701f10ecb49bf16273052f388a60c45}
+
+
+It calculates the rain fall during the last day. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value \+: precipitations (mm) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Pluviometer\+Hour@{read\+Pluviometer\+Hour}}
+\index{read\+Pluviometer\+Hour@{read\+Pluviometer\+Hour}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Pluviometer\+Hour()}{readPluviometerHour()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Pluviometer\+Hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a099855e00df0ff84c0cb5590bcbf3f54}{}\label{class_wasp_sensor_agr__v20_a099855e00df0ff84c0cb5590bcbf3f54}
+
+
+It calculates the rain fall during the previous hour before now. 
+
+For example\+: It is 13.\+30 pm. Then this function calculates the rain fall for the whole previous slot. It is said to be the rainfall from 12pm to 13pm 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float value \+: precipitations (mm) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Temp\+D\+S1820@{read\+Temp\+D\+S1820}}
+\index{read\+Temp\+D\+S1820@{read\+Temp\+D\+S1820}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Temp\+D\+S1820()}{readTempDS1820()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Temp\+D\+S1820 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a84aa330550873af1cda374219c28d465}{}\label{class_wasp_sensor_agr__v20_a84aa330550873af1cda374219c28d465}
+
+
+It reads the D\+S1820 temperature sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor)}{readValue(uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a72afa154e74b7b7b6b86744b50068be5}{}\label{class_wasp_sensor_agr__v20_a72afa154e74b7b7b6b86744b50068be5}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor to read the value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value measured by the sensor (range \mbox{[}0-\/3.\+3\mbox{]} Volts) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor, uint8\+\_\+t type)}{readValue(uint16_t sensor, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Agr\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_ad8f7e3cac864da7316cfa6842ffe479f}{}\label{class_wasp_sensor_agr__v20_ad8f7e3cac864da7316cfa6842ffe479f}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor to read the value from \\
+\hline
+{\em uint8\+\_\+t} & type \+: the type to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value measured by the sensor (range \mbox{[}0-\/3.\+3\mbox{]} Volts) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Agr\+\_\+v20\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_afb5115e2ac8560bfbbdf98ea99c56814}{}\label{class_wasp_sensor_agr__v20_afb5115e2ac8560bfbbdf98ea99c56814}
+
+
+It sets board power mode, setting O\+N/\+O\+FF 3v3 and 5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!set\+Sensor\+Mode@{set\+Sensor\+Mode}}
+\index{set\+Sensor\+Mode@{set\+Sensor\+Mode}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Sensor\+Mode(uint8\+\_\+t mode, uint16\+\_\+t sensor)}{setSensorMode(uint8_t mode, uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Agr\+\_\+v20\+::set\+Sensor\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_ab0acb734c61e94e96afda1328a3aabf7}{}\label{class_wasp_sensor_agr__v20_ab0acb734c61e94e96afda1328a3aabf7}
+
+
+It sets O\+N/\+O\+FF the different sensor switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+{\em uint16\+\_\+t} & sensor \+: the sensor to set O\+N/\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!sleep\+Agr@{sleep\+Agr}}
+\index{sleep\+Agr@{sleep\+Agr}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{sleep\+Agr(const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option)}{sleepAgr(const char *time2wake, uint8_t offset, uint8_t mode, uint8_t option)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::sleep\+Agr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time2wake, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a6595e0f4b1597a4db1eb33b4dc11196e}{}\label{class_wasp_sensor_agr__v20_a6595e0f4b1597a4db1eb33b4dc11196e}
+
+
+It sleeps Waspmote enabling the switches required for the agriculture board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time2wake \+: string that indicates the time to wake up. It looks like \char`\"{}dd\+:hh\+:mm\+:ss\char`\"{} \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4 or R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5 \\
+\hline
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!sleep\+Agr@{sleep\+Agr}}
+\index{sleep\+Agr@{sleep\+Agr}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{sleep\+Agr(const char $\ast$time2wake, uint8\+\_\+t offset, uint8\+\_\+t mode, uint8\+\_\+t option, uint8\+\_\+t agr\+\_\+interrupt)}{sleepAgr(const char *time2wake, uint8_t offset, uint8_t mode, uint8_t option, uint8_t agr_interrupt)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::sleep\+Agr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time2wake, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{option, }
+\item[{uint8\+\_\+t}]{agr\+\_\+interrupt}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a87a07f94ed9a4405c1c7d5c00c6b45ef}{}\label{class_wasp_sensor_agr__v20_a87a07f94ed9a4405c1c7d5c00c6b45ef}
+
+
+It sleeps Waspmote enabling the switches required for the Agriculture Board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time2wake \+: string that indicates the time to wake up. It looks like \char`\"{}dd\+:hh\+:mm\+:ss\char`\"{} \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4 or R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5 \\
+\hline
+{\em uint8\+\_\+t} & option \+: A\+L\+L\+\_\+\+ON, A\+L\+L\+\_\+\+O\+FF, S\+E\+N\+S\+\_\+\+O\+FF, S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF \\
+\hline
+{\em uint8\+\_\+t} & agr\+\_\+interrupt \+: specifies the sensor we are enabling before going sleep (Anemometer and Pluviometer) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}!store\+Pulse@{store\+Pulse}}
+\index{store\+Pulse@{store\+Pulse}!Wasp\+Sensor\+Agr\+\_\+v20@{Wasp\+Sensor\+Agr\+\_\+v20}}
+\subsubsection[{\texorpdfstring{store\+Pulse()}{storePulse()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Agr\+\_\+v20\+::store\+Pulse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_agr__v20_a7191176eecade3e36bb421e5ab8d976b}{}\label{class_wasp_sensor_agr__v20_a7191176eecade3e36bb421e5ab8d976b}
+
+
+It increase the number of pulses in \textquotesingle{}plv\+\_\+array\textquotesingle{}. 
+
+This function increments the number of pulses inside the pluviometer array in the corresponding index of \textquotesingle{}plv\+\_\+array\textquotesingle{} 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Agr\+\_\+v20/\hyperlink{_wasp_sensor_agr__v20_8h}{Wasp\+Sensor\+Agr\+\_\+v20.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Agr\+\_\+v20/Wasp\+Sensor\+Agr\+\_\+v20.\+cpp\end{DoxyCompactItemize}

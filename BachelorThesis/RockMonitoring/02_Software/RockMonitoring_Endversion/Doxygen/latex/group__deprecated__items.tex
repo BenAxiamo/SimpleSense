@@ -1,0 +1,150 @@
+\hypertarget{group__deprecated__items}{}\section{$<$compat/deprecated.h$>$\+: Deprecated items}
+\label{group__deprecated__items}\index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsection*{Allowing specific system-\/wide interrupts}
+\label{_amgrp193128e5bbdec1bc980f5611231d3b55}%
+In addition to globally enabling interrupts, each device\textquotesingle{}s particular interrupt needs to be enabled separately if interrupts for this device are desired. While some devices maintain their interrupt enable bit inside the device\textquotesingle{}s register set, external and timer interrupts have system-\/wide configuration registers.
+
+Example\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Enable timer 1 overflow interrupts.}
+timer\_enable\_int(\_BV(TOIE1));
+
+\textcolor{comment}{// Do some work...}
+
+\textcolor{comment}{// Disable all timer interrupts.}
+timer\_enable\_int(0);
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+Be careful when you use these functions. If you already have a different interrupt enabled, you could inadvertantly disable it by enabling another intterupt. 
+\end{DoxyNote}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__deprecated__items_gaa0b2d3a87492967c01615f32f30d06d5}{I\+N\+T\+E\+R\+R\+U\+PT}(signame)
+\end{DoxyCompactItemize}
+\subsection*{Obsolete IO macros}
+\label{_amgrpaf1202294281a87ab5300af3ed2225e0}%
+Back in a time when A\+V\+R-\/\+G\+CC and avr-\/libc could not handle IO port access in the direct assignment form as they are handled now, all IO port access had to be done through specific macros that eventually resulted in inline assembly instructions performing the desired action.
+
+These macros became obsolete, as reading and writing IO ports can be done by simply using the IO port name in an expression, and all bit manipulation (including those on IO ports) can be done using generic C bit manipulation operators.
+
+The macros in this group simulate the historical behaviour. While they are supposed to be applied to IO ports, the emulation actually uses standard C methods, so they could be applied to arbitrary memory locations as well. \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__deprecated__items_ga5cfa4750a0633c34c7a361d8fd62c042}{inp}(port)~(port)
+\item 
+\#define \hyperlink{group__deprecated__items_gaab324bd721e821e275f00c3478e240c9}{outp}(val,  port)~(port) = (val)
+\item 
+\#define \hyperlink{group__deprecated__items_gad6488a48837d179b1833e2f48dac9665}{inb}(port)~(port)
+\item 
+\#define \hyperlink{group__deprecated__items_ga3a3b4c1ddf0c05701f933d70de330f08}{outb}(port,  val)~(port) = (val)
+\item 
+\#define \hyperlink{group__deprecated__items_ga014ef751e83f97569c06f3cdd888f3f7}{sbi}(port,  bit)~(port) $\vert$= (1 $<$$<$ (bit))
+\item 
+\#define \hyperlink{group__deprecated__items_ga08ee265dc07048dbb5a8b6c84551d520}{cbi}(port,  bit)~(port) \&= $\sim$(1 $<$$<$ (bit))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This header file contains several items that used to be available in previous versions of this library, but have eventually been deprecated over time.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <compat/deprecated.h>} 
+\end{DoxyCode}
+
+
+These items are supplied within that header file for backward compatibility reasons only, so old source code that has been written for previous library versions could easily be maintained until its end-\/of-\/life. Use of any of these items in new code is strongly discouraged. 
+
+\subsection{Macro Definition Documentation}
+\index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!cbi@{cbi}}
+\index{cbi@{cbi}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{cbi}{cbi}}]{\setlength{\rightskip}{0pt plus 5cm}\#define cbi(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{bit}
+\end{DoxyParamCaption}
+)~(port) \&= $\sim$(1 $<$$<$ (bit))}\hypertarget{group__deprecated__items_ga08ee265dc07048dbb5a8b6c84551d520}{}\label{group__deprecated__items_ga08ee265dc07048dbb5a8b6c84551d520}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000009}{Deprecated}]\end{DoxyRefDesc}
+
+
+Clear {\ttfamily bit} in IO port {\ttfamily port}. \index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!inb@{inb}}
+\index{inb@{inb}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{inb}{inb}}]{\setlength{\rightskip}{0pt plus 5cm}\#define inb(
+\begin{DoxyParamCaption}
+\item[{}]{port}
+\end{DoxyParamCaption}
+)~(port)}\hypertarget{group__deprecated__items_gad6488a48837d179b1833e2f48dac9665}{}\label{group__deprecated__items_gad6488a48837d179b1833e2f48dac9665}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000006}{Deprecated}]\end{DoxyRefDesc}
+
+
+Read a value from an IO port {\ttfamily port}. \index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!inp@{inp}}
+\index{inp@{inp}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{inp}{inp}}]{\setlength{\rightskip}{0pt plus 5cm}\#define inp(
+\begin{DoxyParamCaption}
+\item[{}]{port}
+\end{DoxyParamCaption}
+)~(port)}\hypertarget{group__deprecated__items_ga5cfa4750a0633c34c7a361d8fd62c042}{}\label{group__deprecated__items_ga5cfa4750a0633c34c7a361d8fd62c042}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000004}{Deprecated}]\end{DoxyRefDesc}
+
+
+Read a value from an IO port {\ttfamily port}. \index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!I\+N\+T\+E\+R\+R\+U\+PT@{I\+N\+T\+E\+R\+R\+U\+PT}}
+\index{I\+N\+T\+E\+R\+R\+U\+PT@{I\+N\+T\+E\+R\+R\+U\+PT}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+E\+R\+R\+U\+PT}{INTERRUPT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+E\+R\+R\+U\+PT(
+\begin{DoxyParamCaption}
+\item[{}]{signame}
+\end{DoxyParamCaption}
+)}\hypertarget{group__deprecated__items_gaa0b2d3a87492967c01615f32f30d06d5}{}\label{group__deprecated__items_gaa0b2d3a87492967c01615f32f30d06d5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} signame (\textcolor{keywordtype}{void}) \hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\_\_attribute\_\_} ((interrupt,\_\_INTR\_ATTRS));  \(\backslash\)
+\textcolor{keywordtype}{void} signame (\textcolor{keywordtype}{void})
+\end{DoxyCode}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]\end{DoxyRefDesc}
+
+
+Introduces an interrupt handler function that runs with global interrupts initially enabled. This allows interrupt handlers to be interrupted.
+
+As this macro has been used by too many unsuspecting people in the past, it has been deprecated, and will be removed in a future version of the library. Users who want to legitimately re-\/enable interrupts in their interrupt handlers as quickly as possible are encouraged to explicitly declare their handlers as described above. \index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!outb@{outb}}
+\index{outb@{outb}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{outb}{outb}}]{\setlength{\rightskip}{0pt plus 5cm}\#define outb(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{val}
+\end{DoxyParamCaption}
+)~(port) = (val)}\hypertarget{group__deprecated__items_ga3a3b4c1ddf0c05701f933d70de330f08}{}\label{group__deprecated__items_ga3a3b4c1ddf0c05701f933d70de330f08}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000007}{Deprecated}]\end{DoxyRefDesc}
+
+
+Write {\ttfamily val} to IO port {\ttfamily port}. \index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!outp@{outp}}
+\index{outp@{outp}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{outp}{outp}}]{\setlength{\rightskip}{0pt plus 5cm}\#define outp(
+\begin{DoxyParamCaption}
+\item[{}]{val, }
+\item[{}]{port}
+\end{DoxyParamCaption}
+)~(port) = (val)}\hypertarget{group__deprecated__items_gaab324bd721e821e275f00c3478e240c9}{}\label{group__deprecated__items_gaab324bd721e821e275f00c3478e240c9}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000005}{Deprecated}]\end{DoxyRefDesc}
+
+
+Write {\ttfamily val} to IO port {\ttfamily port}. \index{$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}!sbi@{sbi}}
+\index{sbi@{sbi}!$<$compat/deprecated.\+h$>$\+: Deprecated items@{$<$compat/deprecated.\+h$>$\+: Deprecated items}}
+\subsubsection[{\texorpdfstring{sbi}{sbi}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sbi(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{bit}
+\end{DoxyParamCaption}
+)~(port) $\vert$= (1 $<$$<$ (bit))}\hypertarget{group__deprecated__items_ga014ef751e83f97569c06f3cdd888f3f7}{}\label{group__deprecated__items_ga014ef751e83f97569c06f3cdd888f3f7}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000008}{Deprecated}]\end{DoxyRefDesc}
+
+
+Set {\ttfamily bit} in IO port {\ttfamily port}. 

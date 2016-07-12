@@ -1,0 +1,181 @@
+\hypertarget{sha256_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha256.h File Reference}
+\label{sha256_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha256.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+Hash/utility/sha256.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}sha2\+\_\+small\+\_\+common.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sha256_8h_a7f997a1e943487eb3d8cbc7afd3556c0}{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}~256
+\item 
+\#define \hyperlink{sha256_8h_a41e83c8a3380b0a5616a680fa40a583d}{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}~(\hyperlink{sha256_8h_a7f997a1e943487eb3d8cbc7afd3556c0}{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}/8)
+\item 
+\#define \hyperlink{sha256_8h_a42a77ea1c5ad7fc2b5616f16473a5f7b}{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}~512
+\item 
+\#define \hyperlink{sha256_8h_a4cceafb542cf15d3a9a237518cf56cd3}{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}~(\hyperlink{sha256_8h_a42a77ea1c5ad7fc2b5616f16473a5f7b}{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}/8)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structsha2__small__common__ctx__t}{sha2\+\_\+small\+\_\+common\+\_\+ctx\+\_\+t} \hyperlink{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{sha256\+\_\+ctx\+\_\+t}
+\begin{DoxyCompactList}\small\item\em S\+H\+A-\/256 context type. \end{DoxyCompactList}\item 
+typedef uint8\+\_\+t {\bfseries sha256\+\_\+hash\+\_\+t}\mbox{[}\hyperlink{sha256_8h_a7f997a1e943487eb3d8cbc7afd3556c0}{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}/8\mbox{]}\hypertarget{sha256_8h_aa9206811ff0fb69dacdba1e8fe126d79}{}\label{sha256_8h_aa9206811ff0fb69dacdba1e8fe126d79}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sha256_8h_ae436d07e4a6f3e8eeab60a8c2a0cf472}{sha256\+\_\+init} (\hyperlink{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{sha256\+\_\+ctx\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em {\ttfamily sh256\+\_\+init} initialises a sha256 context for hashing. {\ttfamily sh256\+\_\+init} c initialises the given sha256 context for hashing \end{DoxyCompactList}\item 
+void \hyperlink{sha256_8h_a33a5ddbbf0f2cb105a2191a72624138d}{sha256\+\_\+next\+Block} (\hyperlink{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{sha256\+\_\+ctx\+\_\+t} $\ast$state, const void $\ast$block)
+\begin{DoxyCompactList}\small\item\em update the context with a given block \end{DoxyCompactList}\item 
+void \hyperlink{sha256_8h_a157d06e953ba0312ea075666785af2d5}{sha256\+\_\+last\+Block} (\hyperlink{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{sha256\+\_\+ctx\+\_\+t} $\ast$state, const void $\ast$block, uint16\+\_\+t length\+\_\+b)
+\begin{DoxyCompactList}\small\item\em finalize the context with the given block \end{DoxyCompactList}\item 
+void \hyperlink{sha256_8h_a1c649a4ecf963e6cd65dbb44419414e8}{sha256\+\_\+ctx2hash} (sha256\+\_\+hash\+\_\+t $\ast$dest, const \hyperlink{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{sha256\+\_\+ctx\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em convert the hash state into the hash value This function reads the context and writes the hash value to the destination \end{DoxyCompactList}\item 
+void \hyperlink{sha256_8h_a621a0c50cdac51d6d7df7b5a2a2d0257}{sha256\+\_\+1} (sha256\+\_\+hash\+\_\+t $\ast$dest, const void $\ast$msg, uint32\+\_\+t length\+\_\+b)
+\begin{DoxyCompactList}\small\item\em function to process the last block being hashed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Daniel Otte 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/05-\/16  G\+P\+Lv3 or later 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{sha256.\+h@{sha256.\+h}!S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS@{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}}
+\index{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS@{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}{SHA256_BLOCK_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS~512}\hypertarget{sha256_8h_a42a77ea1c5ad7fc2b5616f16473a5f7b}{}\label{sha256_8h_a42a77ea1c5ad7fc2b5616f16473a5f7b}
+defines the size of a S\+H\+A-\/256 input block in bits \index{sha256.\+h@{sha256.\+h}!S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES@{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}}
+\index{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES@{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES}{SHA256_BLOCK_BYTES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+Y\+T\+ES~({\bf S\+H\+A256\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+I\+TS}/8)}\hypertarget{sha256_8h_a4cceafb542cf15d3a9a237518cf56cd3}{}\label{sha256_8h_a4cceafb542cf15d3a9a237518cf56cd3}
+defines the size of a S\+H\+A-\/256 input block in bytes \index{sha256.\+h@{sha256.\+h}!S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS@{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}}
+\index{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS@{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}{SHA256_HASH_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS~256}\hypertarget{sha256_8h_a7f997a1e943487eb3d8cbc7afd3556c0}{}\label{sha256_8h_a7f997a1e943487eb3d8cbc7afd3556c0}
+defines the size of a S\+H\+A-\/256 hash value in bits \index{sha256.\+h@{sha256.\+h}!S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES@{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}}
+\index{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES@{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}{SHA256_HASH_BYTES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES~({\bf S\+H\+A256\+\_\+\+H\+A\+S\+H\+\_\+\+B\+I\+TS}/8)}\hypertarget{sha256_8h_a41e83c8a3380b0a5616a680fa40a583d}{}\label{sha256_8h_a41e83c8a3380b0a5616a680fa40a583d}
+defines the size of a S\+H\+A-\/256 hash value in bytes 
+
+\subsection{Typedef Documentation}
+\index{sha256.\+h@{sha256.\+h}!sha256\+\_\+ctx\+\_\+t@{sha256\+\_\+ctx\+\_\+t}}
+\index{sha256\+\_\+ctx\+\_\+t@{sha256\+\_\+ctx\+\_\+t}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{sha256\+\_\+ctx\+\_\+t}{sha256_ctx_t}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sha256\+\_\+ctx\+\_\+t}}\hypertarget{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{}\label{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}
+
+
+S\+H\+A-\/256 context type. 
+
+A variable of this type may hold the state of a S\+H\+A-\/256 hashing process 
+
+\subsection{Function Documentation}
+\index{sha256.\+h@{sha256.\+h}!sha256\+\_\+1@{sha256\+\_\+1}}
+\index{sha256\+\_\+1@{sha256\+\_\+1}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{sha256\+\_\+1(sha256\+\_\+hash\+\_\+t $\ast$dest, const void $\ast$msg, uint32\+\_\+t length\+\_\+b)}{sha256_1(sha256_hash_t *dest, const void *msg, uint32_t length_b)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha256\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{sha256\+\_\+hash\+\_\+t $\ast$}]{dest, }
+\item[{const void $\ast$}]{msg, }
+\item[{uint32\+\_\+t}]{length\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{sha256_8h_a621a0c50cdac51d6d7df7b5a2a2d0257}{}\label{sha256_8h_a621a0c50cdac51d6d7df7b5a2a2d0257}
+
+
+function to process the last block being hashed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Pointer to the context in which this block should be processed. \\
+\hline
+{\em block} & Pointer to the message wich should be hashed. \\
+\hline
+{\em length} & is the length of only T\+H\+IS block in B\+I\+TS not in bytes! bits are big endian, meaning high bits come first. if you have a message with bits at the end, the byte must be padded with zeros \\
+\hline
+\end{DoxyParams}
+\index{sha256.\+h@{sha256.\+h}!sha256\+\_\+ctx2hash@{sha256\+\_\+ctx2hash}}
+\index{sha256\+\_\+ctx2hash@{sha256\+\_\+ctx2hash}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{sha256\+\_\+ctx2hash(sha256\+\_\+hash\+\_\+t $\ast$dest, const sha256\+\_\+ctx\+\_\+t $\ast$state)}{sha256_ctx2hash(sha256_hash_t *dest, const sha256_ctx_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha256\+\_\+ctx2hash (
+\begin{DoxyParamCaption}
+\item[{sha256\+\_\+hash\+\_\+t $\ast$}]{dest, }
+\item[{const {\bf sha256\+\_\+ctx\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{sha256_8h_a1c649a4ecf963e6cd65dbb44419414e8}{}\label{sha256_8h_a1c649a4ecf963e6cd65dbb44419414e8}
+
+
+convert the hash state into the hash value This function reads the context and writes the hash value to the destination 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & pointer to the location where the hash value should be written \\
+\hline
+{\em state} & pointer to the S\+H\+A-\/256 hash context \\
+\hline
+\end{DoxyParams}
+\index{sha256.\+h@{sha256.\+h}!sha256\+\_\+init@{sha256\+\_\+init}}
+\index{sha256\+\_\+init@{sha256\+\_\+init}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{sha256\+\_\+init(sha256\+\_\+ctx\+\_\+t $\ast$state)}{sha256_init(sha256_ctx_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha256\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf sha256\+\_\+ctx\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{sha256_8h_ae436d07e4a6f3e8eeab60a8c2a0cf472}{}\label{sha256_8h_ae436d07e4a6f3e8eeab60a8c2a0cf472}
+
+
+{\ttfamily sh256\+\_\+init} initialises a sha256 context for hashing. {\ttfamily sh256\+\_\+init} c initialises the given sha256 context for hashing 
+
+initialize a S\+H\+A-\/256 context
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to a sha256 context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+This function sets a \hyperlink{sha256_8h_a4fc1ed5343abc3c5f41898f4d5116dbc}{sha256\+\_\+ctx\+\_\+t} to the initial values for hashing. 
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/256 hashing context \\
+\hline
+\end{DoxyParams}
+\index{sha256.\+h@{sha256.\+h}!sha256\+\_\+last\+Block@{sha256\+\_\+last\+Block}}
+\index{sha256\+\_\+last\+Block@{sha256\+\_\+last\+Block}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{sha256\+\_\+last\+Block(sha256\+\_\+ctx\+\_\+t $\ast$state, const void $\ast$block, uint16\+\_\+t length\+\_\+b)}{sha256_lastBlock(sha256_ctx_t *state, const void *block, uint16_t length_b)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha256\+\_\+last\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf sha256\+\_\+ctx\+\_\+t} $\ast$}]{state, }
+\item[{const void $\ast$}]{block, }
+\item[{uint16\+\_\+t}]{length\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{sha256_8h_a157d06e953ba0312ea075666785af2d5}{}\label{sha256_8h_a157d06e953ba0312ea075666785af2d5}
+
+
+finalize the context with the given block 
+
+This function finalizes the S\+H\+A-\/256 hash context by processing the given block of variable length. 
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/256 hash context \\
+\hline
+{\em block} & pointer to the block of fixed length (512 bit = 64 byte) \\
+\hline
+{\em length\+\_\+b} & the length of the block in bits \\
+\hline
+\end{DoxyParams}
+\index{sha256.\+h@{sha256.\+h}!sha256\+\_\+next\+Block@{sha256\+\_\+next\+Block}}
+\index{sha256\+\_\+next\+Block@{sha256\+\_\+next\+Block}!sha256.\+h@{sha256.\+h}}
+\subsubsection[{\texorpdfstring{sha256\+\_\+next\+Block(sha256\+\_\+ctx\+\_\+t $\ast$state, const void $\ast$block)}{sha256_nextBlock(sha256_ctx_t *state, const void *block)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha256\+\_\+next\+Block (
+\begin{DoxyParamCaption}
+\item[{{\bf sha256\+\_\+ctx\+\_\+t} $\ast$}]{state, }
+\item[{const void $\ast$}]{block}
+\end{DoxyParamCaption}
+)}\hypertarget{sha256_8h_a33a5ddbbf0f2cb105a2191a72624138d}{}\label{sha256_8h_a33a5ddbbf0f2cb105a2191a72624138d}
+
+
+update the context with a given block 
+
+This function updates the S\+H\+A-\/256 hash context by processing the given block of fixed length. 
+\begin{DoxyParams}{Parameters}
+{\em state} & pointer to the S\+H\+A-\/256 hash context \\
+\hline
+{\em block} & pointer to the block of fixed length (512 bit = 64 byte) \\
+\hline
+\end{DoxyParams}

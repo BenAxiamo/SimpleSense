@@ -1,0 +1,74 @@
+\hypertarget{structfirmware__struct}{}\section{firmware\+\_\+struct Struct Reference}
+\label{structfirmware__struct}\index{firmware\+\_\+struct@{firmware\+\_\+struct}}
+
+
+Structure \+: used to store information about a new firmware.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee\+Core.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{structfirmware__struct_adff29b379009043a922cba09bfe97a5b}{ID} \mbox{[}33\mbox{]}\hypertarget{structfirmware__struct_adff29b379009043a922cba09bfe97a5b}{}\label{structfirmware__struct_adff29b379009043a922cba09bfe97a5b}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: New firmware ID. \end{DoxyCompactList}\item 
+char \hyperlink{structfirmware__struct_a8ee4feedbcdadc42816f4744855cea06}{D\+A\+TE} \mbox{[}13\mbox{]}\hypertarget{structfirmware__struct_a8ee4feedbcdadc42816f4744855cea06}{}\label{structfirmware__struct_a8ee4feedbcdadc42816f4744855cea06}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: New firmware Date. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_a6fea7b487fd9cf30a2876a19ed7b5f6d}{mac\+\_\+programming} \mbox{[}8\mbox{]}\hypertarget{structfirmware__struct_a6fea7b487fd9cf30a2876a19ed7b5f6d}{}\label{structfirmware__struct_a6fea7b487fd9cf30a2876a19ed7b5f6d}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: New firmware M\+AC where it was sent. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{structfirmware__struct_a00815afd7b79dc17a5a0a9df0d3b2b07}{packets\+\_\+received}\hypertarget{structfirmware__struct_a00815afd7b79dc17a5a0a9df0d3b2b07}{}\label{structfirmware__struct_a00815afd7b79dc17a5a0a9df0d3b2b07}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Number of packets received. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{structfirmware__struct_a04bbf5110f781e6348218a430831f149}{time\+\_\+arrived}\hypertarget{structfirmware__struct_a04bbf5110f781e6348218a430831f149}{}\label{structfirmware__struct_a04bbf5110f781e6348218a430831f149}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Time in which last O\+TA packet arrived. \end{DoxyCompactList}\item 
+char \hyperlink{structfirmware__struct_a5b43ec3a74af2fc0f99955d8ae2570fd}{name\+\_\+file} \mbox{[}10\mbox{]}\hypertarget{structfirmware__struct_a5b43ec3a74af2fc0f99955d8ae2570fd}{}\label{structfirmware__struct_a5b43ec3a74af2fc0f99955d8ae2570fd}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: New firmware ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_a612db592d4ad029a4ee1163780d23229}{data\+\_\+count\+\_\+packet}\hypertarget{structfirmware__struct_a612db592d4ad029a4ee1163780d23229}{}\label{structfirmware__struct_a612db592d4ad029a4ee1163780d23229}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Number of packet just received. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_a9aecde32e8933d1bc8e5498a72f83732}{data\+\_\+count\+\_\+packet\+\_\+ant}\hypertarget{structfirmware__struct_a9aecde32e8933d1bc8e5498a72f83732}{}\label{structfirmware__struct_a9aecde32e8933d1bc8e5498a72f83732}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Number of packet received before. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_aec56304e2d1f926a426f096242b7be7c}{paq\+\_\+disordered}\hypertarget{structfirmware__struct_aec56304e2d1f926a426f096242b7be7c}{}\label{structfirmware__struct_aec56304e2d1f926a426f096242b7be7c}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Specifies if a packet has been lost. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_aef6c8d3ca515b79cc90cd19771728cdc}{already\+\_\+init}
+\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_a8ec3a6fa6df29858181dbaad52c11282}{channel}\hypertarget{structfirmware__struct_a8ec3a6fa6df29858181dbaad52c11282}{}\label{structfirmware__struct_a8ec3a6fa6df29858181dbaad52c11282}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: channel to set after re-\/programming. \end{DoxyCompactList}\item 
+char \hyperlink{structfirmware__struct_a19f4018fdc00dbf11176ca7ba2c8bee3}{authkey} \mbox{[}8\mbox{]}\hypertarget{structfirmware__struct_a19f4018fdc00dbf11176ca7ba2c8bee3}{}\label{structfirmware__struct_a19f4018fdc00dbf11176ca7ba2c8bee3}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Auth-\/key to set after re-\/programming. \end{DoxyCompactList}\item 
+char \hyperlink{structfirmware__struct_ac32416b7ef38ef9a54457ea635ed53f7}{encryptionkey} \mbox{[}16\mbox{]}\hypertarget{structfirmware__struct_ac32416b7ef38ef9a54457ea635ed53f7}{}\label{structfirmware__struct_ac32416b7ef38ef9a54457ea635ed53f7}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Encryption-\/key to set after re-\/programming. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_aaaafc667d37b8a52f7b59b28f0d19f56}{encryption\+Mode}\hypertarget{structfirmware__struct_aaaafc667d37b8a52f7b59b28f0d19f56}{}\label{structfirmware__struct_aaaafc667d37b8a52f7b59b28f0d19f56}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Encryption mode to set after re-\/programming. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structfirmware__struct_aa6c65e36d85aad5b0b8bb459b7924005}{multi\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure \+: used to store information about a new firmware. 
+
+\subsection{Member Data Documentation}
+\index{firmware\+\_\+struct@{firmware\+\_\+struct}!already\+\_\+init@{already\+\_\+init}}
+\index{already\+\_\+init@{already\+\_\+init}!firmware\+\_\+struct@{firmware\+\_\+struct}}
+\subsubsection[{\texorpdfstring{already\+\_\+init}{already_init}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t firmware\+\_\+struct\+::already\+\_\+init}\hypertarget{structfirmware__struct_aef6c8d3ca515b79cc90cd19771728cdc}{}\label{structfirmware__struct_aef6c8d3ca515b79cc90cd19771728cdc}
+Structure Variable \+: Specifies if the function new\+\_\+firmware\+\_\+received has been executed previously \index{firmware\+\_\+struct@{firmware\+\_\+struct}!multi\+\_\+type@{multi\+\_\+type}}
+\index{multi\+\_\+type@{multi\+\_\+type}!firmware\+\_\+struct@{firmware\+\_\+struct}}
+\subsubsection[{\texorpdfstring{multi\+\_\+type}{multi_type}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t firmware\+\_\+struct\+::multi\+\_\+type}\hypertarget{structfirmware__struct_aa6c65e36d85aad5b0b8bb459b7924005}{}\label{structfirmware__struct_aa6c65e36d85aad5b0b8bb459b7924005}
+Structure Variable \+: multicast type (0\+:802.\+15.\+4 -\/ 1\+:Digi\+Mesh/\+ZB -\/ 2\+:868/900) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_x_bee_core_8h}{Wasp\+X\+Bee\+Core.\+h}\end{DoxyCompactItemize}

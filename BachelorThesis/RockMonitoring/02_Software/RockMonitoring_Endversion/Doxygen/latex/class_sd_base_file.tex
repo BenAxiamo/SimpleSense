@@ -1,0 +1,1154 @@
+\hypertarget{class_sd_base_file}{}\section{Sd\+Base\+File Class Reference}
+\label{class_sd_base_file}\index{Sd\+Base\+File@{Sd\+Base\+File}}
+
+
+Base class for \hyperlink{class_sd_file}{Sd\+File} with Print and C++ streams.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Base\+File.\+h$>$}
+
+Inheritance diagram for Sd\+Base\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sd_base_file}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sd_base_file_a2806f9763006e9191678b4e33097b47d}{Sd\+Base\+File} ()
+\item 
+\hyperlink{class_sd_base_file_a94d44fc448dc8a06867d490100a57781}{Sd\+Base\+File} (const char $\ast$path, uint8\+\_\+t oflag)
+\item 
+bool \hyperlink{class_sd_base_file_aa8ebd3ec28126c3171059d3e7dd355b9}{get\+Write\+Error} ()
+\item 
+void \hyperlink{class_sd_base_file_a6b4e639ae03ec48c9becd8b472aa1b50}{clear\+Write\+Error} ()
+\item 
+void \hyperlink{class_sd_base_file_ad1af089e5cf0a4c86e9b6bae1595f59b}{getpos} (\hyperlink{struct_fat_pos__t}{Fat\+Pos\+\_\+t} $\ast$pos)
+\item 
+void \hyperlink{class_sd_base_file_a71170390855df02c88cbda6e727e9609}{setpos} (\hyperlink{struct_fat_pos__t}{Fat\+Pos\+\_\+t} $\ast$pos)
+\item 
+uint32\+\_\+t \hyperlink{class_sd_base_file_ac4381fe633716069f2161d9e9fef5d16}{available} ()
+\item 
+bool \hyperlink{class_sd_base_file_a17f7e949aa0f80d89782d8e31f5edc15}{close} ()
+\item 
+bool \hyperlink{class_sd_base_file_a272c68ba97eb5452ce903e6f8d2895a6}{contiguous\+Range} (uint32\+\_\+t $\ast$bgn\+Block, uint32\+\_\+t $\ast$end\+Block)
+\item 
+bool \hyperlink{class_sd_base_file_ad14a78d348219d6ce096582b6ed74526}{create\+Contiguous} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir\+File, const char $\ast$path, uint32\+\_\+t size)
+\item 
+uint32\+\_\+t \hyperlink{class_sd_base_file_afd2ed78a03600924ef6502a86d7c6291}{cur\+Cluster} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_base_file_a9739ca25a7c804cace68f95c14658c44}{cur\+Position} () const 
+\item 
+bool \hyperlink{class_sd_base_file_a0977fc620f90e21897eca1fb1c25fdce}{dir\+Entry} (\hyperlink{_sd_fat_structs_8h_a803db59d4e16a0c54a647afc6a7954e3}{dir\+\_\+t} $\ast$dir)
+\item 
+bool \hyperlink{class_sd_base_file_aa0b95ccc568d483f1416d2eacd1ff3f7}{exists} (const char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name})
+\item 
+int16\+\_\+t \hyperlink{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}{fgets} (char $\ast$str, int16\+\_\+t num, char $\ast$delim=0)
+\item 
+uint32\+\_\+t \hyperlink{class_sd_base_file_a32ac452756fdf80aae75fb1ab093a421}{file\+Size} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_sd_base_file_adca5f8fce7851f9b7abc92cb73e49e35}{first\+Cluster} () const 
+\item 
+bool \hyperlink{class_sd_base_file_a2e84ccce858fd7e4d88e26b23d19a822}{get\+Filename} (char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name})
+\item 
+bool \hyperlink{class_sd_base_file_ad43ed061a1f77578d3c30a0f9b198497}{is\+Dir} () const 
+\item 
+bool \hyperlink{class_sd_base_file_ab57b9744531ee0fcfa18bebde9fc50db}{is\+File} () const 
+\item 
+bool \hyperlink{class_sd_base_file_a0fb6e697de39cdb777744981f58eaaa8}{is\+Open} () const 
+\item 
+bool \hyperlink{class_sd_base_file_a50023837ddbc57b10098d3a7cd5856f7}{is\+Sub\+Dir} () const 
+\item 
+bool \hyperlink{class_sd_base_file_ad1fcdcb6c1cb66207d243584e6049095}{is\+Root} () const 
+\item 
+bool \hyperlink{class_sd_base_file_ad1de34e5dc5b3a1727208f949b5838e9}{mkdir} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir, const char $\ast$path, bool p\+Flag=true)
+\item 
+bool {\bfseries make\+Dir} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir, const char $\ast$path)\hypertarget{class_sd_base_file_a029e3d5790521cfadcd081e28172afad}{}\label{class_sd_base_file_a029e3d5790521cfadcd081e28172afad}
+
+\item 
+bool \hyperlink{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}{open} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir\+File, uint16\+\_\+t index, uint8\+\_\+t oflag)
+\item 
+bool \hyperlink{class_sd_base_file_a4b88be0d893bcada9b203bdd33fff8e2}{open} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir\+File, const char $\ast$path, uint8\+\_\+t oflag)
+\item 
+bool \hyperlink{class_sd_base_file_a63854cd9c57a9910779ca22112b436e0}{open} (const char $\ast$path, uint8\+\_\+t oflag=\hyperlink{_sd_base_file_8h_ac5a1c3e543273b0374ba114c496e662e}{O\+\_\+\+R\+E\+AD})
+\item 
+bool \hyperlink{class_sd_base_file_aee4c736345e96aa5ddb7e5768ce88f51}{open\+Next} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir\+File, uint8\+\_\+t oflag)
+\item 
+bool \hyperlink{class_sd_base_file_ac67ffdfb84263bcd425886c09a15e287}{open\+Root} (\hyperlink{class_sd_volume}{Sd\+Volume} $\ast$vol)
+\item 
+int \hyperlink{class_sd_base_file_a996abee868ce928d04d9d0ad9305c915}{peek} ()
+\item 
+int {\bfseries print\+Field} (int16\+\_\+t value, char term)\hypertarget{class_sd_base_file_a8fcc3db8e05121c739d8d43ee40fec72}{}\label{class_sd_base_file_a8fcc3db8e05121c739d8d43ee40fec72}
+
+\item 
+int {\bfseries print\+Field} (uint16\+\_\+t value, char term)\hypertarget{class_sd_base_file_a71050abe5bed8e44f48ae75627b54c63}{}\label{class_sd_base_file_a71050abe5bed8e44f48ae75627b54c63}
+
+\item 
+int {\bfseries print\+Field} (int32\+\_\+t value, char term)\hypertarget{class_sd_base_file_a770817e273c68fb830f9f029c39fc41c}{}\label{class_sd_base_file_a770817e273c68fb830f9f029c39fc41c}
+
+\item 
+int {\bfseries print\+Field} (uint32\+\_\+t value, char term)\hypertarget{class_sd_base_file_a27146777c4d215cb5887edab4b4599b0}{}\label{class_sd_base_file_a27146777c4d215cb5887edab4b4599b0}
+
+\item 
+bool {\bfseries print\+Name} ()\hypertarget{class_sd_base_file_a239cacb867f6c4f93eb52c38c60684d7}{}\label{class_sd_base_file_a239cacb867f6c4f93eb52c38c60684d7}
+
+\item 
+int16\+\_\+t \hyperlink{class_sd_base_file_a145595e55db1629fa126ffa2628fe9eb}{read} ()
+\item 
+int \hyperlink{class_sd_base_file_aa70609890c15df7c49d65b07d1161a3f}{read} (void $\ast$buf, size\+\_\+t nbyte)
+\item 
+int8\+\_\+t \hyperlink{class_sd_base_file_ae5dd9c5f9764db71c90c5fcfb02b2c97}{read\+Dir} (\hyperlink{_sd_fat_structs_8h_a803db59d4e16a0c54a647afc6a7954e3}{dir\+\_\+t} $\ast$dir)
+\item 
+bool \hyperlink{class_sd_base_file_a6e88ee210c9bd7556477c0e7ba4de1bb}{remove} ()
+\item 
+void \hyperlink{class_sd_base_file_a7a5369b40eb15ad26c2e4af5d069c52c}{rewind} ()
+\item 
+bool \hyperlink{class_sd_base_file_ad6e9f07c62add23dfe0338bdd0bf2d40}{rename} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir\+File, const char $\ast$new\+Path)
+\item 
+bool \hyperlink{class_sd_base_file_a7268834187e8216605963f8ae3cf1e6e}{rmdir} ()
+\item 
+bool {\bfseries rm\+Dir} ()\hypertarget{class_sd_base_file_a3be9577a78d8aeee50b05511869cd8c6}{}\label{class_sd_base_file_a3be9577a78d8aeee50b05511869cd8c6}
+
+\item 
+bool \hyperlink{class_sd_base_file_a4186ba79c83005971096966c0fd02d46}{rm\+Rf\+Star} ()
+\item 
+bool \hyperlink{class_sd_base_file_ab04ec7e129607973f6e3436f779b6501}{seek\+Cur} (int32\+\_\+t offset)
+\item 
+bool \hyperlink{class_sd_base_file_a6f42e496b179dbdd2c09083cfad28613}{seek\+End} (int32\+\_\+t offset=0)
+\item 
+bool \hyperlink{class_sd_base_file_afe6aeaf0ca7573ceb8bb335c802dab16}{seek\+Set} (uint32\+\_\+t pos)
+\item 
+bool \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync} ()
+\item 
+bool \hyperlink{class_sd_base_file_adf84a0487f3b45fc183756b9d17141cd}{timestamp} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$file)
+\item 
+bool \hyperlink{class_sd_base_file_ae55ad6000c44fc73e15934381b305dc4}{timestamp} (uint8\+\_\+t flag, uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)
+\item 
+uint8\+\_\+t \hyperlink{class_sd_base_file_a1555e6866abc9c867c5fff189a3a4317}{type} () const 
+\item 
+bool \hyperlink{class_sd_base_file_a9d1ad1abbd90089f731de81de1708c19}{truncate} (uint32\+\_\+t size)
+\item 
+\hyperlink{class_sd_volume}{Sd\+Volume} $\ast$ \hyperlink{class_sd_base_file_acb021c2b7f68778d683d093775532a06}{volume} () const 
+\item 
+int \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write} (const void $\ast$buf, size\+\_\+t nbyte)
+\item 
+void \hyperlink{class_sd_base_file_a55fc61c4c1298544a5ea96440b4cdbb3}{ls} (uint8\+\_\+t flags)
+\item 
+void \hyperlink{class_sd_base_file_a87b5e05d15e0eb11088935db50ee19db}{ls} (uint8\+\_\+t flags, uint8\+\_\+t indent)
+\item 
+int8\+\_\+t {\bfseries ls\+Print\+Next} (uint8\+\_\+t flags, uint8\+\_\+t indent)\hypertarget{class_sd_base_file_a5f24fc14787b3c9b9726f4ba295e2633}{}\label{class_sd_base_file_a5f24fc14787b3c9b9726f4ba295e2633}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$ \hyperlink{class_sd_base_file_a56b9402969b3348c97b413750226f955}{cwd} ()
+\item 
+static void \hyperlink{class_sd_base_file_a1664a62726dcd7ff82c12d724b3b34df}{date\+Time\+Callback} (void($\ast$date\+Time)(uint16\+\_\+t $\ast$date, uint16\+\_\+t $\ast$time))
+\item 
+static void \hyperlink{class_sd_base_file_a04e3e7829c56a6b11df8df0051a49ef9}{date\+Time\+Callback\+Cancel} ()
+\item 
+static void \hyperlink{class_sd_base_file_a8fdbf7893bf19793e772b340e4c08fed}{dir\+Name} (const \hyperlink{_sd_fat_structs_8h_a803db59d4e16a0c54a647afc6a7954e3}{dir\+\_\+t} \&dir, char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name})
+\item 
+static void \hyperlink{class_sd_base_file_a1f8b53aea38427dd483dfff4e9437d0c}{print\+Fat\+Date} (uint16\+\_\+t fat\+Date)
+\item 
+static void \hyperlink{class_sd_base_file_a9d7dcf89a8d3144731e59ea74a640d68}{print\+Fat\+Time} (uint16\+\_\+t fat\+Time)
+\item 
+static bool \hyperlink{class_sd_base_file_a4951400870f3f5ed8cc3f46b69388ed7}{remove} (\hyperlink{class_sd_base_file}{Sd\+Base\+File} $\ast$dir\+File, const char $\ast$path)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_sd_base_file_a47d4ba2177ffcd99c2387f9fac182d5b}{write\+Error}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Sd\+Fat}\hypertarget{class_sd_base_file_ac838f1e6beb01ec57bd4b52e57df85e7}{}\label{class_sd_base_file_ac838f1e6beb01ec57bd4b52e57df85e7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{class_sd_file}{Sd\+File} with Print and C++ streams. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!Sd\+Base\+File@{Sd\+Base\+File}}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{Sd\+Base\+File()}{SdBaseFile()}}]{\setlength{\rightskip}{0pt plus 5cm}Sd\+Base\+File\+::\+Sd\+Base\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a2806f9763006e9191678b4e33097b47d}{}\label{class_sd_base_file_a2806f9763006e9191678b4e33097b47d}
+Create an instance. \index{Sd\+Base\+File@{Sd\+Base\+File}!Sd\+Base\+File@{Sd\+Base\+File}}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{Sd\+Base\+File(const char $\ast$path, uint8\+\_\+t oflag)}{SdBaseFile(const char *path, uint8_t oflag)}}]{\setlength{\rightskip}{0pt plus 5cm}Sd\+Base\+File\+::\+Sd\+Base\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{uint8\+\_\+t}]{oflag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a94d44fc448dc8a06867d490100a57781}{}\label{class_sd_base_file_a94d44fc448dc8a06867d490100a57781}
+Create a file object and open it in the current working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for a file to be opened.\\
+\hline
+\mbox{\tt in}  & {\em oflag} & Values for {\itshape oflag} are constructed by a bitwise-\/inclusive OR of open flags. see \hyperlink{class_sd_base_file_a4b88be0d893bcada9b203bdd33fff8e2}{Sd\+Base\+File\+::open(\+Sd\+Base\+File$\ast$, const char$\ast$, uint8\+\_\+t)}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!available@{available}}
+\index{available@{available}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Base\+File\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_ac4381fe633716069f2161d9e9fef5d16}{}\label{class_sd_base_file_ac4381fe633716069f2161d9e9fef5d16}
+\begin{DoxyReturn}{Returns}
+number of bytes available from yhe current position to E\+OF 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!clear\+Write\+Error@{clear\+Write\+Error}}
+\index{clear\+Write\+Error@{clear\+Write\+Error}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{clear\+Write\+Error()}{clearWriteError()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::clear\+Write\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a6b4e639ae03ec48c9becd8b472aa1b50}{}\label{class_sd_base_file_a6b4e639ae03ec48c9becd8b472aa1b50}
+Set write\+Error to zero \index{Sd\+Base\+File@{Sd\+Base\+File}!close@{close}}
+\index{close@{close}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a17f7e949aa0f80d89782d8e31f5edc15}{}\label{class_sd_base_file_a17f7e949aa0f80d89782d8e31f5edc15}
+Close a file and force cached data and directory information to be written to the storage device.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include no file is open or an I/O error. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!contiguous\+Range@{contiguous\+Range}}
+\index{contiguous\+Range@{contiguous\+Range}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{contiguous\+Range(uint32\+\_\+t $\ast$bgn\+Block, uint32\+\_\+t $\ast$end\+Block)}{contiguousRange(uint32_t *bgnBlock, uint32_t *endBlock)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::contiguous\+Range (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{bgn\+Block, }
+\item[{uint32\+\_\+t $\ast$}]{end\+Block}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a272c68ba97eb5452ce903e6f8d2895a6}{}\label{class_sd_base_file_a272c68ba97eb5452ce903e6f8d2895a6}
+Check for contiguous file and return its raw block range.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em bgn\+Block} & the first block address for the file. \\
+\hline
+\mbox{\tt out}  & {\em end\+Block} & the last block address for the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include file is not contiguous, file has zero length or an I/O error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!create\+Contiguous@{create\+Contiguous}}
+\index{create\+Contiguous@{create\+Contiguous}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{create\+Contiguous(\+Sd\+Base\+File $\ast$dir\+File, const char $\ast$path, uint32\+\_\+t size)}{createContiguous(SdBaseFile *dirFile, const char *path, uint32_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::create\+Contiguous (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{dir\+File, }
+\item[{const char $\ast$}]{path, }
+\item[{uint32\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ad14a78d348219d6ce096582b6ed74526}{}\label{class_sd_base_file_ad14a78d348219d6ce096582b6ed74526}
+Create and open a new contiguous file of a specified size.
+
+\begin{DoxyNote}{Note}
+This function only supports short D\+OS 8.\+3 names. See \hyperlink{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}{open()} for more information.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir\+File} & The directory where the file will be created. \\
+\hline
+\mbox{\tt in}  & {\em path} & A path with a valid D\+OS 8.\+3 file name. \\
+\hline
+\mbox{\tt in}  & {\em size} & The desired file size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include {\itshape path} contains an invalid D\+OS 8.\+3 file name, the F\+AT volume has not been initialized, a file is already open, the file already exists, the root directory is full or an I/O error. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!cur\+Cluster@{cur\+Cluster}}
+\index{cur\+Cluster@{cur\+Cluster}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{cur\+Cluster() const }{curCluster() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Base\+File\+::cur\+Cluster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_afd2ed78a03600924ef6502a86d7c6291}{}\label{class_sd_base_file_afd2ed78a03600924ef6502a86d7c6291}
+\begin{DoxyReturn}{Returns}
+The current cluster number for a file or directory. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!cur\+Position@{cur\+Position}}
+\index{cur\+Position@{cur\+Position}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{cur\+Position() const }{curPosition() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Base\+File\+::cur\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a9739ca25a7c804cace68f95c14658c44}{}\label{class_sd_base_file_a9739ca25a7c804cace68f95c14658c44}
+\begin{DoxyReturn}{Returns}
+The current position for a file or directory. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!cwd@{cwd}}
+\index{cwd@{cwd}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{cwd()}{cwd()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Sd\+Base\+File}$\ast$ Sd\+Base\+File\+::cwd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_sd_base_file_a56b9402969b3348c97b413750226f955}{}\label{class_sd_base_file_a56b9402969b3348c97b413750226f955}
+\begin{DoxyReturn}{Returns}
+Current working directory 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!date\+Time\+Callback@{date\+Time\+Callback}}
+\index{date\+Time\+Callback@{date\+Time\+Callback}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{date\+Time\+Callback(void($\ast$date\+Time)(uint16\+\_\+t $\ast$date, uint16\+\_\+t $\ast$time))}{dateTimeCallback(void(*dateTime)(uint16_t *date, uint16_t *time))}}]{\setlength{\rightskip}{0pt plus 5cm}static void Sd\+Base\+File\+::date\+Time\+Callback (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(uint16\+\_\+t $\ast$date, uint16\+\_\+t $\ast$time)}]{date\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_sd_base_file_a1664a62726dcd7ff82c12d724b3b34df}{}\label{class_sd_base_file_a1664a62726dcd7ff82c12d724b3b34df}
+Set the date/time callback function
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em date\+Time} & The user\textquotesingle{}s call back function. The callback function is of the form\+:\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} dateTime(uint16\_t* date, uint16\_t* time) \{
+  uint16\_t year;
+  uint8\_t month, day, hour, minute, second;
+
+  \textcolor{comment}{// User gets date and time from GPS or real-time clock here}
+
+  \textcolor{comment}{// return date using FAT\_DATE macro to format fields}
+  *date = FAT\_DATE(year, month, day);
+
+  \textcolor{comment}{// return time using FAT\_TIME macro to format fields}
+  *time = FAT\_TIME(hour, minute, second);
+\}
+\end{DoxyCode}
+
+
+Sets the function that is called when a file is created or when a file\textquotesingle{}s directory entry is modified by \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()}. All timestamps, access, creation, and modify, are set when a file is created. \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} maintains the last access date and last modify date/time.
+
+See the \hyperlink{class_sd_base_file_adf84a0487f3b45fc183756b9d17141cd}{timestamp()} function. \index{Sd\+Base\+File@{Sd\+Base\+File}!date\+Time\+Callback\+Cancel@{date\+Time\+Callback\+Cancel}}
+\index{date\+Time\+Callback\+Cancel@{date\+Time\+Callback\+Cancel}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{date\+Time\+Callback\+Cancel()}{dateTimeCallbackCancel()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Sd\+Base\+File\+::date\+Time\+Callback\+Cancel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_sd_base_file_a04e3e7829c56a6b11df8df0051a49ef9}{}\label{class_sd_base_file_a04e3e7829c56a6b11df8df0051a49ef9}
+Cancel the date/time callback function. \index{Sd\+Base\+File@{Sd\+Base\+File}!dir\+Entry@{dir\+Entry}}
+\index{dir\+Entry@{dir\+Entry}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{dir\+Entry(dir\+\_\+t $\ast$dir)}{dirEntry(dir_t *dir)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::dir\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf dir\+\_\+t} $\ast$}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a0977fc620f90e21897eca1fb1c25fdce}{}\label{class_sd_base_file_a0977fc620f90e21897eca1fb1c25fdce}
+Return a file\textquotesingle{}s directory entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em dir} & Location for return of the file\textquotesingle{}s directory entry.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!dir\+Name@{dir\+Name}}
+\index{dir\+Name@{dir\+Name}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{dir\+Name(const dir\+\_\+t \&dir, char $\ast$name)}{dirName(const dir_t &dir, char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::dir\+Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf dir\+\_\+t} \&}]{dir, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_sd_base_file_a8fdbf7893bf19793e772b340e4c08fed}{}\label{class_sd_base_file_a8fdbf7893bf19793e772b340e4c08fed}
+Format the name field of {\itshape dir} into the 13 byte array {\itshape name} in standard 8.\+3 short name format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir} & The directory structure containing the name. \\
+\hline
+\mbox{\tt out}  & {\em name} & A 13 byte char array for the formatted name. \\
+\hline
+\end{DoxyParams}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!exists@{exists}}
+\index{exists@{exists}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{exists(const char $\ast$name)}{exists(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::exists (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_aa0b95ccc568d483f1416d2eacd1ff3f7}{}\label{class_sd_base_file_aa0b95ccc568d483f1416d2eacd1ff3f7}
+Test for the existence of a file in a directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & Name of the file to be tested for.\\
+\hline
+\end{DoxyParams}
+The calling instance must be an open directory file.
+
+dir\+File.\+exists(\char`\"{}\+T\+O\+F\+I\+N\+D.\+T\+X\+T\char`\"{}) searches for \char`\"{}\+T\+O\+F\+I\+N\+D.\+T\+X\+T\char`\"{} in the directory dir\+File.
+
+\begin{DoxyReturn}{Returns}
+true if the file exists else false. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!fgets@{fgets}}
+\index{fgets@{fgets}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{fgets(char $\ast$str, int16\+\_\+t num, char $\ast$delim=0)}{fgets(char *str, int16_t num, char *delim=0)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Sd\+Base\+File\+::fgets (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int16\+\_\+t}]{num, }
+\item[{char $\ast$}]{delim = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}{}\label{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}
+Get a string from a file.
+
+\hyperlink{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}{fgets()} reads bytes from a file into the array pointed to by {\itshape str}, until {\itshape num} -\/ 1 bytes are read, or a delimiter is read and transferred to {\itshape str}, or end-\/of-\/file is encountered. The string is then terminated with a null byte.
+
+\hyperlink{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}{fgets()} deletes CR, \textquotesingle{}\textbackslash{}r\textquotesingle{}, from the string. This insures only a \textquotesingle{}\textbackslash{}n\textquotesingle{} terminates the string for Windows text files which use C\+R\+LF for newline.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em str} & Pointer to the array where the string is stored. \\
+\hline
+\mbox{\tt in}  & {\em num} & Maximum number of characters to be read (including the final null byte). Usually the length of the array {\itshape str} is used. \\
+\hline
+\mbox{\tt in}  & {\em delim} & Optional set of delimiters. The default is \char`\"{}\textbackslash{}n\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+For success \hyperlink{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}{fgets()} returns the length of the string in {\itshape str}. If no data is read, \hyperlink{class_sd_base_file_a41de4f35c622c1a5f5699400e8d05a87}{fgets()} returns zero for E\+OF or -\/1 if an error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!file\+Size@{file\+Size}}
+\index{file\+Size@{file\+Size}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{file\+Size() const }{fileSize() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Base\+File\+::file\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a32ac452756fdf80aae75fb1ab093a421}{}\label{class_sd_base_file_a32ac452756fdf80aae75fb1ab093a421}
+\begin{DoxyReturn}{Returns}
+The total number of bytes in a file or directory. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!first\+Cluster@{first\+Cluster}}
+\index{first\+Cluster@{first\+Cluster}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{first\+Cluster() const }{firstCluster() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd\+Base\+File\+::first\+Cluster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_adca5f8fce7851f9b7abc92cb73e49e35}{}\label{class_sd_base_file_adca5f8fce7851f9b7abc92cb73e49e35}
+\begin{DoxyReturn}{Returns}
+The first cluster number for a file or directory. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!get\+Filename@{get\+Filename}}
+\index{get\+Filename@{get\+Filename}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{get\+Filename(char $\ast$name)}{getFilename(char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::get\+Filename (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a2e84ccce858fd7e4d88e26b23d19a822}{}\label{class_sd_base_file_a2e84ccce858fd7e4d88e26b23d19a822}
+Get a file\textquotesingle{}s name
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em name} & An array of 13 characters for the file\textquotesingle{}s name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!getpos@{getpos}}
+\index{getpos@{getpos}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{getpos(\+Fat\+Pos\+\_\+t $\ast$pos)}{getpos(FatPos_t *pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::getpos (
+\begin{DoxyParamCaption}
+\item[{{\bf Fat\+Pos\+\_\+t} $\ast$}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ad1af089e5cf0a4c86e9b6bae1595f59b}{}\label{class_sd_base_file_ad1af089e5cf0a4c86e9b6bae1595f59b}
+get position for streams 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em pos} & struct to receive position \\
+\hline
+\end{DoxyParams}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!get\+Write\+Error@{get\+Write\+Error}}
+\index{get\+Write\+Error@{get\+Write\+Error}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{get\+Write\+Error()}{getWriteError()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::get\+Write\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_aa8ebd3ec28126c3171059d3e7dd355b9}{}\label{class_sd_base_file_aa8ebd3ec28126c3171059d3e7dd355b9}
+\begin{DoxyReturn}{Returns}
+value of write\+Error 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!is\+Dir@{is\+Dir}}
+\index{is\+Dir@{is\+Dir}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{is\+Dir() const }{isDir() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::is\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_ad43ed061a1f77578d3c30a0f9b198497}{}\label{class_sd_base_file_ad43ed061a1f77578d3c30a0f9b198497}
+\begin{DoxyReturn}{Returns}
+True if this is a directory else false. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!is\+File@{is\+File}}
+\index{is\+File@{is\+File}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{is\+File() const }{isFile() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::is\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_ab57b9744531ee0fcfa18bebde9fc50db}{}\label{class_sd_base_file_ab57b9744531ee0fcfa18bebde9fc50db}
+\begin{DoxyReturn}{Returns}
+True if this is a normal file else false. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{is\+Open() const }{isOpen() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a0fb6e697de39cdb777744981f58eaaa8}{}\label{class_sd_base_file_a0fb6e697de39cdb777744981f58eaaa8}
+\begin{DoxyReturn}{Returns}
+True if this is an open file/directory else false. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!is\+Root@{is\+Root}}
+\index{is\+Root@{is\+Root}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{is\+Root() const }{isRoot() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::is\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_ad1fcdcb6c1cb66207d243584e6049095}{}\label{class_sd_base_file_ad1fcdcb6c1cb66207d243584e6049095}
+\begin{DoxyReturn}{Returns}
+True if this is the root directory. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!is\+Sub\+Dir@{is\+Sub\+Dir}}
+\index{is\+Sub\+Dir@{is\+Sub\+Dir}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{is\+Sub\+Dir() const }{isSubDir() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::is\+Sub\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a50023837ddbc57b10098d3a7cd5856f7}{}\label{class_sd_base_file_a50023837ddbc57b10098d3a7cd5856f7}
+\begin{DoxyReturn}{Returns}
+True if this is a subdirectory else false. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!ls@{ls}}
+\index{ls@{ls}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{ls(uint8\+\_\+t flags)}{ls(uint8_t flags)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::ls (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{flags}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a55fc61c4c1298544a5ea96440b4cdbb3}{}\label{class_sd_base_file_a55fc61c4c1298544a5ea96440b4cdbb3}
+List directory contents to std\+Out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flags} & The inclusive OR of\\
+\hline
+\end{DoxyParams}
+L\+S\+\_\+\+D\+A\+TE -\/ Print file modification date
+
+L\+S\+\_\+\+S\+I\+ZE -\/ Print file size.
+
+L\+S\+\_\+R -\/ Recursive list of subdirectories. \index{Sd\+Base\+File@{Sd\+Base\+File}!ls@{ls}}
+\index{ls@{ls}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{ls(uint8\+\_\+t flags, uint8\+\_\+t indent)}{ls(uint8_t flags, uint8_t indent)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::ls (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{flags, }
+\item[{uint8\+\_\+t}]{indent}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a87b5e05d15e0eb11088935db50ee19db}{}\label{class_sd_base_file_a87b5e05d15e0eb11088935db50ee19db}
+List directory contents.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flags} & The inclusive OR of\\
+\hline
+\end{DoxyParams}
+L\+S\+\_\+\+D\+A\+TE -\/ Print file modification date
+
+L\+S\+\_\+\+S\+I\+ZE -\/ Print file size.
+
+L\+S\+\_\+R -\/ Recursive list of subdirectories.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em indent} & Amount of space before file name. Used for recursive list to indicate subdirectory level. \\
+\hline
+\end{DoxyParams}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{mkdir(\+Sd\+Base\+File $\ast$dir, const char $\ast$path, bool p\+Flag=true)}{mkdir(SdBaseFile *dir, const char *path, bool pFlag=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::mkdir (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{parent, }
+\item[{const char $\ast$}]{path, }
+\item[{bool}]{p\+Flag = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ad1de34e5dc5b3a1727208f949b5838e9}{}\label{class_sd_base_file_ad1de34e5dc5b3a1727208f949b5838e9}
+Make a new directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em parent} & An open \hyperlink{class_sd_fat}{Sd\+Fat} instance for the directory that will contain the new directory.\\
+\hline
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for the new directory.\\
+\hline
+\mbox{\tt in}  & {\em p\+Flag} & Create missing parent directories if true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include this file is already open, {\itshape parent} is not a directory, {\itshape path} is invalid or already exists in {\itshape parent}. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!open@{open}}
+\index{open@{open}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{open(\+Sd\+Base\+File $\ast$dir\+File, uint16\+\_\+t index, uint8\+\_\+t oflag)}{open(SdBaseFile *dirFile, uint16_t index, uint8_t oflag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::open (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{dir\+File, }
+\item[{uint16\+\_\+t}]{index, }
+\item[{uint8\+\_\+t}]{oflag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}{}\label{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}
+Open a file by index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir\+File} & An open \hyperlink{class_sd_fat}{Sd\+Fat} instance for the directory.\\
+\hline
+\mbox{\tt in}  & {\em index} & The {\itshape index} of the directory entry for the file to be opened. The value for {\itshape index} is (directory file position)/32.\\
+\hline
+\mbox{\tt in}  & {\em oflag} & Values for {\itshape oflag} are constructed by a bitwise-\/inclusive OR of flags O\+\_\+\+R\+E\+AD, O\+\_\+\+W\+R\+I\+TE, O\+\_\+\+T\+R\+U\+NC, and O\+\_\+\+S\+Y\+NC.\\
+\hline
+\end{DoxyParams}
+See \hyperlink{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}{open()} by path for definition of flags. \begin{DoxyReturn}{Returns}
+true for success or false for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!open@{open}}
+\index{open@{open}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{open(\+Sd\+Base\+File $\ast$dir\+File, const char $\ast$path, uint8\+\_\+t oflag)}{open(SdBaseFile *dirFile, const char *path, uint8_t oflag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::open (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{dir\+File, }
+\item[{const char $\ast$}]{path, }
+\item[{uint8\+\_\+t}]{oflag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a4b88be0d893bcada9b203bdd33fff8e2}{}\label{class_sd_base_file_a4b88be0d893bcada9b203bdd33fff8e2}
+Open a file or directory by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir\+File} & An open \hyperlink{class_sd_fat}{Sd\+Fat} instance for the directory containing the file to be opened.\\
+\hline
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for a file to be opened.\\
+\hline
+\mbox{\tt in}  & {\em oflag} & Values for {\itshape oflag} are constructed by a bitwise-\/inclusive OR of flags from the following list\\
+\hline
+\end{DoxyParams}
+O\+\_\+\+R\+E\+AD -\/ Open for reading.
+
+O\+\_\+\+R\+D\+O\+N\+LY -\/ Same as O\+\_\+\+R\+E\+AD.
+
+O\+\_\+\+W\+R\+I\+TE -\/ Open for writing.
+
+O\+\_\+\+W\+R\+O\+N\+LY -\/ Same as O\+\_\+\+W\+R\+I\+TE.
+
+O\+\_\+\+R\+D\+WR -\/ Open for reading and writing.
+
+O\+\_\+\+A\+P\+P\+E\+ND -\/ If set, the file offset shall be set to the end of the file prior to each write.
+
+O\+\_\+\+A\+T\+\_\+\+E\+ND -\/ Set the initial position at the end of the file.
+
+O\+\_\+\+C\+R\+E\+AT -\/ If the file exists, this flag has no effect except as noted under O\+\_\+\+E\+X\+CL below. Otherwise, the file shall be created
+
+O\+\_\+\+E\+X\+CL -\/ If O\+\_\+\+C\+R\+E\+AT and O\+\_\+\+E\+X\+CL are set, \hyperlink{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}{open()} shall fail if the file exists.
+
+O\+\_\+\+S\+Y\+NC -\/ Call \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} after each write. This flag should not be used with write(uint8\+\_\+t), write\+\_\+\+P(\+P\+G\+M\+\_\+\+P), writeln\+\_\+\+P(\+P\+G\+M\+\_\+\+P), or the Arduino Print class. These functions do character at a time writes so \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} will be called after each byte.
+
+O\+\_\+\+T\+R\+U\+NC -\/ If the file exists and is a regular file, and the file is successfully opened and is not read only, its length shall be truncated to 0.
+
+W\+A\+R\+N\+I\+NG\+: A given file must not be opened by more than one \hyperlink{class_sd_base_file}{Sd\+Base\+File} object of file corruption may occur.
+
+\begin{DoxyNote}{Note}
+Directory files must be opened read only. Write and truncation is not allowed for directory files.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include this file is already open, {\itshape dir\+File} is not a directory, {\itshape path} is invalid, the file does not exist or can\textquotesingle{}t be opened in the access mode specified by oflag. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!open@{open}}
+\index{open@{open}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{open(const char $\ast$path, uint8\+\_\+t oflag=\+O\+\_\+\+R\+E\+A\+D)}{open(const char *path, uint8_t oflag=O_READ)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::open (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path, }
+\item[{uint8\+\_\+t}]{oflag = {\ttfamily {\bf O\+\_\+\+R\+E\+AD}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a63854cd9c57a9910779ca22112b436e0}{}\label{class_sd_base_file_a63854cd9c57a9910779ca22112b436e0}
+Open a file in the current working directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & A path with a valid 8.\+3 D\+OS name for a file to be opened.\\
+\hline
+\mbox{\tt in}  & {\em oflag} & Values for {\itshape oflag} are constructed by a bitwise-\/inclusive OR of open flags. see \hyperlink{class_sd_base_file_a4b88be0d893bcada9b203bdd33fff8e2}{Sd\+Base\+File\+::open(\+Sd\+Base\+File$\ast$, const char$\ast$, uint8\+\_\+t)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!open\+Next@{open\+Next}}
+\index{open\+Next@{open\+Next}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{open\+Next(\+Sd\+Base\+File $\ast$dir\+File, uint8\+\_\+t oflag)}{openNext(SdBaseFile *dirFile, uint8_t oflag)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::open\+Next (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{dir\+File, }
+\item[{uint8\+\_\+t}]{oflag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_aee4c736345e96aa5ddb7e5768ce88f51}{}\label{class_sd_base_file_aee4c736345e96aa5ddb7e5768ce88f51}
+Open the next file or subdirectory in a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir\+File} & An open \hyperlink{class_sd_fat}{Sd\+Fat} instance for the directory containing the file to be opened.\\
+\hline
+\mbox{\tt in}  & {\em oflag} & Values for {\itshape oflag} are constructed by a bitwise-\/inclusive OR of flags O\+\_\+\+R\+E\+AD, O\+\_\+\+W\+R\+I\+TE, O\+\_\+\+T\+R\+U\+NC, and O\+\_\+\+S\+Y\+NC.\\
+\hline
+\end{DoxyParams}
+See \hyperlink{class_sd_base_file_a6ff5b48f672515ec20831583de74407f}{open()} by path for definition of flags. \begin{DoxyReturn}{Returns}
+true for success or false for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!open\+Root@{open\+Root}}
+\index{open\+Root@{open\+Root}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{open\+Root(\+Sd\+Volume $\ast$vol)}{openRoot(SdVolume *vol)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::open\+Root (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Volume} $\ast$}]{vol}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ac67ffdfb84263bcd425886c09a15e287}{}\label{class_sd_base_file_ac67ffdfb84263bcd425886c09a15e287}
+Open a volume\textquotesingle{}s root directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vol} & The F\+AT volume containing the root directory to be opened.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include the file is already open, the F\+AT volume has not been initialized or it a F\+A\+T12 volume. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!peek@{peek}}
+\index{peek@{peek}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{peek()}{peek()}}]{\setlength{\rightskip}{0pt plus 5cm}int Sd\+Base\+File\+::peek (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a996abee868ce928d04d9d0ad9305c915}{}\label{class_sd_base_file_a996abee868ce928d04d9d0ad9305c915}
+Return the next available byte without consuming it.
+
+\begin{DoxyReturn}{Returns}
+The byte if no error and not at eof else -\/1; 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!print\+Fat\+Date@{print\+Fat\+Date}}
+\index{print\+Fat\+Date@{print\+Fat\+Date}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{print\+Fat\+Date(uint16\+\_\+t fat\+Date)}{printFatDate(uint16_t fatDate)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::print\+Fat\+Date (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{fat\+Date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_sd_base_file_a1f8b53aea38427dd483dfff4e9437d0c}{}\label{class_sd_base_file_a1f8b53aea38427dd483dfff4e9437d0c}
+Print a directory date field.
+
+Format is yyyy-\/mm-\/dd.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pr} & Print stream for output. \\
+\hline
+\mbox{\tt in}  & {\em fat\+Date} & The date field from a directory entry. \\
+\hline
+\end{DoxyParams}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!print\+Fat\+Time@{print\+Fat\+Time}}
+\index{print\+Fat\+Time@{print\+Fat\+Time}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{print\+Fat\+Time(uint16\+\_\+t fat\+Time)}{printFatTime(uint16_t fatTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::print\+Fat\+Time (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{fat\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_sd_base_file_a9d7dcf89a8d3144731e59ea74a640d68}{}\label{class_sd_base_file_a9d7dcf89a8d3144731e59ea74a640d68}
+Print a directory time field.
+
+Format is hh\+:mm\+:ss.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pr} & Print stream for output. \\
+\hline
+\mbox{\tt in}  & {\em fat\+Time} & The time field from a directory entry. \\
+\hline
+\end{DoxyParams}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!read@{read}}
+\index{read@{read}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Sd\+Base\+File\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a145595e55db1629fa126ffa2628fe9eb}{}\label{class_sd_base_file_a145595e55db1629fa126ffa2628fe9eb}
+Read the next byte from a file.
+
+\begin{DoxyReturn}{Returns}
+For success read returns the next byte in the file as an int. If an error occurs or end of file is reached -\/1 is returned. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!read@{read}}
+\index{read@{read}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{read(void $\ast$buf, size\+\_\+t nbyte)}{read(void *buf, size_t nbyte)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sd\+Base\+File\+::read (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{size\+\_\+t}]{nbyte}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_aa70609890c15df7c49d65b07d1161a3f}{}\label{class_sd_base_file_aa70609890c15df7c49d65b07d1161a3f}
+Read data from a file starting at the current position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em buf} & Pointer to the location that will receive the data.\\
+\hline
+\mbox{\tt in}  & {\em nbyte} & Maximum number of bytes to read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+For success \hyperlink{class_sd_base_file_a145595e55db1629fa126ffa2628fe9eb}{read()} returns the number of bytes read. A value less than {\itshape nbyte}, including zero, will be returned if end of file is reached. If an error occurs, \hyperlink{class_sd_base_file_a145595e55db1629fa126ffa2628fe9eb}{read()} returns -\/1. Possible errors include \hyperlink{class_sd_base_file_a145595e55db1629fa126ffa2628fe9eb}{read()} called before a file has been opened, corrupt file system or an I/O error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!read\+Dir@{read\+Dir}}
+\index{read\+Dir@{read\+Dir}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{read\+Dir(dir\+\_\+t $\ast$dir)}{readDir(dir_t *dir)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Sd\+Base\+File\+::read\+Dir (
+\begin{DoxyParamCaption}
+\item[{{\bf dir\+\_\+t} $\ast$}]{dir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ae5dd9c5f9764db71c90c5fcfb02b2c97}{}\label{class_sd_base_file_ae5dd9c5f9764db71c90c5fcfb02b2c97}
+Read the next directory entry from a directory file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em dir} & The dir\+\_\+t struct that will receive the data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+For success \hyperlink{class_sd_base_file_ae5dd9c5f9764db71c90c5fcfb02b2c97}{read\+Dir()} returns the number of bytes read. A value of zero will be returned if end of file is reached. If an error occurs, \hyperlink{class_sd_base_file_ae5dd9c5f9764db71c90c5fcfb02b2c97}{read\+Dir()} returns -\/1. Possible errors include \hyperlink{class_sd_base_file_ae5dd9c5f9764db71c90c5fcfb02b2c97}{read\+Dir()} called before a directory has been opened, this is not a directory file or an I/O error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!remove@{remove}}
+\index{remove@{remove}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{remove(\+Sd\+Base\+File $\ast$dir\+File, const char $\ast$path)}{remove(SdBaseFile *dirFile, const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{dir\+File, }
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_sd_base_file_a4951400870f3f5ed8cc3f46b69388ed7}{}\label{class_sd_base_file_a4951400870f3f5ed8cc3f46b69388ed7}
+Remove a file.
+
+The directory entry and all data for the file are deleted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir\+File} & The directory that contains the file. \\
+\hline
+\mbox{\tt in}  & {\em path} & Path for the file to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a file that has a long name. For example if a file has the long name \char`\"{}\+New Text Document.\+txt\char`\"{} you should not delete the 8.\+3 name \char`\"{}\+N\+E\+W\+T\+E\+X$\sim$1.\+T\+X\+T\char`\"{}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include the file is a directory, is read only, {\itshape dir\+File} is not a directory, {\itshape path} is not found or an I/O error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!remove@{remove}}
+\index{remove@{remove}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{remove()}{remove()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a6e88ee210c9bd7556477c0e7ba4de1bb}{}\label{class_sd_base_file_a6e88ee210c9bd7556477c0e7ba4de1bb}
+Remove a file.
+
+The directory entry and all data for the file are deleted.
+
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a file that has a long name. For example if a file has the long name \char`\"{}\+New Text Document.\+txt\char`\"{} you should not delete the 8.\+3 name \char`\"{}\+N\+E\+W\+T\+E\+X$\sim$1.\+T\+X\+T\char`\"{}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include the file read-\/only, is a directory, or an I/O error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!rename@{rename}}
+\index{rename@{rename}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{rename(\+Sd\+Base\+File $\ast$dir\+File, const char $\ast$new\+Path)}{rename(SdBaseFile *dirFile, const char *newPath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::rename (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{dir\+File, }
+\item[{const char $\ast$}]{new\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ad6e9f07c62add23dfe0338bdd0bf2d40}{}\label{class_sd_base_file_ad6e9f07c62add23dfe0338bdd0bf2d40}
+Rename a file or subdirectory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dir\+File} & Directory for the new path. \\
+\hline
+\mbox{\tt in}  & {\em new\+Path} & New path name for the file/directory.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include {\itshape dir\+File} is not open or is not a directory file, new\+Path is invalid or already exists, or an I/O error occurs. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!rewind@{rewind}}
+\index{rewind@{rewind}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{rewind()}{rewind()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::rewind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a7a5369b40eb15ad26c2e4af5d069c52c}{}\label{class_sd_base_file_a7a5369b40eb15ad26c2e4af5d069c52c}
+Set the file\textquotesingle{}s current position to zero. \index{Sd\+Base\+File@{Sd\+Base\+File}!rmdir@{rmdir}}
+\index{rmdir@{rmdir}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{rmdir()}{rmdir()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::rmdir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a7268834187e8216605963f8ae3cf1e6e}{}\label{class_sd_base_file_a7268834187e8216605963f8ae3cf1e6e}
+Remove a directory file.
+
+The directory file will be removed only if it is empty and is not the root directory. \hyperlink{class_sd_base_file_a7268834187e8216605963f8ae3cf1e6e}{rmdir()} follows D\+OS and Windows and ignores the read-\/only attribute for the directory.
+
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a directory that has a long name. For example if a directory has the long name \char`\"{}\+New folder\char`\"{} you should not delete the 8.\+3 name \char`\"{}\+N\+E\+W\+F\+O\+L$\sim$1\char`\"{}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include the file is not a directory, is the root directory, is not empty, or an I/O error occurred. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!rm\+Rf\+Star@{rm\+Rf\+Star}}
+\index{rm\+Rf\+Star@{rm\+Rf\+Star}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{rm\+Rf\+Star()}{rmRfStar()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::rm\+Rf\+Star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a4186ba79c83005971096966c0fd02d46}{}\label{class_sd_base_file_a4186ba79c83005971096966c0fd02d46}
+Recursively delete a directory and all contained files.
+
+This is like the Unix/\+Linux \textquotesingle{}rm -\/rf $\ast$\textquotesingle{} if called with the root directory hence the name.
+
+Warning -\/ This will remove all contents of the directory including subdirectories. The directory will then be removed if it is not root. The read-\/only attribute for files will be ignored.
+
+\begin{DoxyNote}{Note}
+This function should not be used to delete the 8.\+3 version of a directory that has a long name. See \hyperlink{class_sd_base_file_a6e88ee210c9bd7556477c0e7ba4de1bb}{remove()} and \hyperlink{class_sd_base_file_a7268834187e8216605963f8ae3cf1e6e}{rmdir()}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!seek\+Cur@{seek\+Cur}}
+\index{seek\+Cur@{seek\+Cur}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{seek\+Cur(int32\+\_\+t offset)}{seekCur(int32_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::seek\+Cur (
+\begin{DoxyParamCaption}
+\item[{int32\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_ab04ec7e129607973f6e3436f779b6501}{}\label{class_sd_base_file_ab04ec7e129607973f6e3436f779b6501}
+Set the files position to current position + {\itshape pos}. See \hyperlink{class_sd_base_file_afe6aeaf0ca7573ceb8bb335c802dab16}{seek\+Set()}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em offset} & The new position in bytes from the current position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true for success or false for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!seek\+End@{seek\+End}}
+\index{seek\+End@{seek\+End}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{seek\+End(int32\+\_\+t offset=0)}{seekEnd(int32_t offset=0)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::seek\+End (
+\begin{DoxyParamCaption}
+\item[{int32\+\_\+t}]{offset = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a6f42e496b179dbdd2c09083cfad28613}{}\label{class_sd_base_file_a6f42e496b179dbdd2c09083cfad28613}
+Set the files position to end-\/of-\/file + {\itshape offset}. See \hyperlink{class_sd_base_file_afe6aeaf0ca7573ceb8bb335c802dab16}{seek\+Set()}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em offset} & The new position in bytes from end-\/of-\/file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true for success or false for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!seek\+Set@{seek\+Set}}
+\index{seek\+Set@{seek\+Set}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{seek\+Set(uint32\+\_\+t pos)}{seekSet(uint32_t pos)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::seek\+Set (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_afe6aeaf0ca7573ceb8bb335c802dab16}{}\label{class_sd_base_file_afe6aeaf0ca7573ceb8bb335c802dab16}
+Sets a file\textquotesingle{}s position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The new position in bytes from the beginning of the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!setpos@{setpos}}
+\index{setpos@{setpos}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{setpos(\+Fat\+Pos\+\_\+t $\ast$pos)}{setpos(FatPos_t *pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Base\+File\+::setpos (
+\begin{DoxyParamCaption}
+\item[{{\bf Fat\+Pos\+\_\+t} $\ast$}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a71170390855df02c88cbda6e727e9609}{}\label{class_sd_base_file_a71170390855df02c88cbda6e727e9609}
+set position for streams 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em pos} & struct with value for new position \\
+\hline
+\end{DoxyParams}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!sync@{sync}}
+\index{sync@{sync}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{sync()}{sync()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{}\label{class_sd_base_file_a292247972772be832f2c6ea166f4049a}
+The \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} call causes all modified data and directory fields to be written to the storage device.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include a call to \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} before a file has been opened or an I/O error. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{timestamp(\+Sd\+Base\+File $\ast$file)}{timestamp(SdBaseFile *file)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::timestamp (
+\begin{DoxyParamCaption}
+\item[{{\bf Sd\+Base\+File} $\ast$}]{file}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_adf84a0487f3b45fc183756b9d17141cd}{}\label{class_sd_base_file_adf84a0487f3b45fc183756b9d17141cd}
+Copy a file\textquotesingle{}s timestamps
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file} & File to copy timestamps from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Modify and access timestamps may be overwritten if a date time callback function has been set by \hyperlink{class_sd_base_file_a1664a62726dcd7ff82c12d724b3b34df}{date\+Time\+Callback()}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{timestamp(uint8\+\_\+t flag, uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)}{timestamp(uint8_t flag, uint16_t year, uint8_t month, uint8_t day, uint8_t hour, uint8_t minute, uint8_t second)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::timestamp (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{flags, }
+\item[{uint16\+\_\+t}]{year, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{day, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_ae55ad6000c44fc73e15934381b305dc4}{}\label{class_sd_base_file_ae55ad6000c44fc73e15934381b305dc4}
+Set a file\textquotesingle{}s timestamps in its directory entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em flags} & Values for {\itshape flags} are constructed by a bitwise-\/inclusive OR of flags from the following list\\
+\hline
+\end{DoxyParams}
+T\+\_\+\+A\+C\+C\+E\+SS -\/ Set the file\textquotesingle{}s last access date.
+
+T\+\_\+\+C\+R\+E\+A\+TE -\/ Set the file\textquotesingle{}s creation date and time.
+
+T\+\_\+\+W\+R\+I\+TE -\/ Set the file\textquotesingle{}s last write/modification date and time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em year} & Valid range 1980 -\/ 2107 inclusive.\\
+\hline
+\mbox{\tt in}  & {\em month} & Valid range 1 -\/ 12 inclusive.\\
+\hline
+\mbox{\tt in}  & {\em day} & Valid range 1 -\/ 31 inclusive.\\
+\hline
+\mbox{\tt in}  & {\em hour} & Valid range 0 -\/ 23 inclusive.\\
+\hline
+\mbox{\tt in}  & {\em minute} & Valid range 0 -\/ 59 inclusive.\\
+\hline
+\mbox{\tt in}  & {\em second} & Valid range 0 -\/ 59 inclusive\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+It is possible to set an invalid date since there is no check for the number of days in a month.
+
+Modify and access timestamps may be overwritten if a date time callback function has been set by \hyperlink{class_sd_base_file_a1664a62726dcd7ff82c12d724b3b34df}{date\+Time\+Callback()}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!truncate@{truncate}}
+\index{truncate@{truncate}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{truncate(uint32\+\_\+t size)}{truncate(uint32_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::truncate (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a9d1ad1abbd90089f731de81de1708c19}{}\label{class_sd_base_file_a9d1ad1abbd90089f731de81de1708c19}
+Truncate a file to a specified length. The current file position will be maintained if it is less than or equal to {\itshape length} otherwise it will be set to end of file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em length} & The desired length for the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. Reasons for failure include file is read only, file is a directory, {\itshape length} is greater than the current file size or an I/O error occurs. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!type@{type}}
+\index{type@{type}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{type() const }{type() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd\+Base\+File\+::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_a1555e6866abc9c867c5fff189a3a4317}{}\label{class_sd_base_file_a1555e6866abc9c867c5fff189a3a4317}
+Type of file. You should use \hyperlink{class_sd_base_file_ab57b9744531ee0fcfa18bebde9fc50db}{is\+File()} or \hyperlink{class_sd_base_file_ad43ed061a1f77578d3c30a0f9b198497}{is\+Dir()} instead of \hyperlink{class_sd_base_file_a1555e6866abc9c867c5fff189a3a4317}{type()} if possible.
+
+\begin{DoxyReturn}{Returns}
+The file or directory type. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!volume@{volume}}
+\index{volume@{volume}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{volume() const }{volume() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd\+Volume}$\ast$ Sd\+Base\+File\+::volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd_base_file_acb021c2b7f68778d683d093775532a06}{}\label{class_sd_base_file_acb021c2b7f68778d683d093775532a06}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_sd_volume}{Sd\+Volume} that contains this file. 
+\end{DoxyReturn}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!write@{write}}
+\index{write@{write}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{write(const void $\ast$buf, size\+\_\+t nbyte)}{write(const void *buf, size_t nbyte)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sd\+Base\+File\+::write (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buf, }
+\item[{size\+\_\+t}]{nbyte}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{}\label{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}
+Write data to an open file.
+
+\begin{DoxyNote}{Note}
+Data is moved to the cache but may not be written to the storage device until \hyperlink{class_sd_base_file_a292247972772be832f2c6ea166f4049a}{sync()} is called.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & Pointer to the location of the data to be written.\\
+\hline
+\mbox{\tt in}  & {\em nbyte} & Number of bytes to write.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+For success \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write()} returns the number of bytes written, always {\itshape nbyte}. If an error occurs, \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write()} returns -\/1. Possible errors include \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write()} is called before a file has been opened, write is called for a read-\/only file, device is full, a corrupt file system or an I/O error. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Sd\+Base\+File@{Sd\+Base\+File}!write\+Error@{write\+Error}}
+\index{write\+Error@{write\+Error}!Sd\+Base\+File@{Sd\+Base\+File}}
+\subsubsection[{\texorpdfstring{write\+Error}{writeError}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sd\+Base\+File\+::write\+Error}\hypertarget{class_sd_base_file_a47d4ba2177ffcd99c2387f9fac182d5b}{}\label{class_sd_base_file_a47d4ba2177ffcd99c2387f9fac182d5b}
+write\+Error is set to true if an error occurs during a \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write()}. Set write\+Error to false before calling print() and/or \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write()} and check for true after calls to print() and/or \hyperlink{class_sd_base_file_a874e3bae567f96bed5ad442beb846a61}{write()}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_base_file_8h}{Sd\+Base\+File.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/Sd\+Base\+File.\+cpp\end{DoxyCompactItemize}

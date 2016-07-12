@@ -1,0 +1,264 @@
+\hypertarget{class_wasp_sensor_gas__v20}{}\section{Wasp\+Sensor\+Gas\+\_\+v20 Class Reference}
+\label{class_wasp_sensor_gas__v20}\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+
+
+Wasp\+Sensor\+Gas\+V20 Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Gas\+\_\+v20.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_sensor_gas__v20_a6c498bdc384ea7349d77ae1495bf0f59}{Wasp\+Sensor\+Gas\+\_\+v20} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_gas__v20_a38e471b3a08ff285e41655b8e0782957}{ON} (void)
+\begin{DoxyCompactList}\small\item\em Turns ON the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_sensor_gas__v20_a97f04f61e46179555fde5f2f73eb41b5}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Turns O\+FF the board. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_gas__v20_a07893b5dd0c8bd81b876bed9f35ec38e}{set\+Board\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets board power mode, setting O\+N/\+O\+FF 3v3 and 5V switches. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_gas__v20_a72406f1ae43a46a9c98e19b59ab2516a}{configure\+Sensor} (uint16\+\_\+t sensor, uint8\+\_\+t gain)
+\begin{DoxyCompactList}\small\item\em It configures the amplifier gain in the different sensors. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_gas__v20_a515a76ac7bb13c2bc6a317070e10800d}{configure\+Sensor} (uint16\+\_\+t sensor, uint8\+\_\+t gain, float resistor)
+\begin{DoxyCompactList}\small\item\em It configures the amplifier gain and load resistor in the different sensors. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_sensor_gas__v20_a8cff44e0e0b867642b302f0e3ded8117}{set\+Sensor\+Mode} (uint8\+\_\+t mode, uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It sets O\+N/\+O\+FF the different sensor switches. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_gas__v20_a6adecc3646770842238aa97792bffc66}{read\+Value} (uint16\+\_\+t sensor)
+\begin{DoxyCompactList}\small\item\em It reads the value measured by the sensor. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_sensor_gas__v20_a29686cfc0b93b3a7a4f6ba73b45d1ef1}{calculate\+Resistance} (uint16\+\_\+t sensor, float value, uint8\+\_\+t gain, float load)
+\item 
+float \hyperlink{class_wasp_sensor_gas__v20_a8383272b5391ba31658dd629e3c46607}{calculate\+Concentration} (int calibration\+Concentration\mbox{[}3\mbox{]}, float calibration\+Output\mbox{[}3\mbox{]}, float input\+Value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wasp\+Sensor\+Gas\+V20 Class. 
+
+Wasp\+Sensor\+Gas\+V20 Class defines all the variables and functions used for managing the \hyperlink{class_gas}{Gas} Sensor Board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{Wasp\+Sensor\+Gas\+\_\+v20()}{WaspSensorGas_v20()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Sensor\+Gas\+\_\+v20\+::\+Wasp\+Sensor\+Gas\+\_\+v20 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a6c498bdc384ea7349d77ae1495bf0f59}{}\label{class_wasp_sensor_gas__v20_a6c498bdc384ea7349d77ae1495bf0f59}
+
+
+class constructor 
+
+It initializes the different digital pins 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!calculate\+Concentration@{calculate\+Concentration}}
+\index{calculate\+Concentration@{calculate\+Concentration}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{calculate\+Concentration(int calibration\+Concentration[3], float calibration\+Output[3], float input\+Value)}{calculateConcentration(int calibrationConcentration[3], float calibrationOutput[3], float inputValue)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Gas\+\_\+v20\+::calculate\+Concentration (
+\begin{DoxyParamCaption}
+\item[{int}]{calibration\+Concentration\mbox{[}3\mbox{]}, }
+\item[{float}]{calibration\+Output\mbox{[}3\mbox{]}, }
+\item[{float}]{input\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a8383272b5391ba31658dd629e3c46607}{}\label{class_wasp_sensor_gas__v20_a8383272b5391ba31658dd629e3c46607}
+It calculates the gas concentration from the sensor resistance using the calibration parameters of the sensor
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & calibration\+Concentration \+: the gas concentrations in calibration \\
+\hline
+{\em float} & calibration\+Output \+: the sensor output in each calibration point \\
+\hline
+{\em float} & input\+Value \+: the resistance of the sensor measured \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the gas concentration 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!calculate\+Resistance@{calculate\+Resistance}}
+\index{calculate\+Resistance@{calculate\+Resistance}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{calculate\+Resistance(uint16\+\_\+t sensor, float value, uint8\+\_\+t gain, float load)}{calculateResistance(uint16_t sensor, float value, uint8_t gain, float load)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Gas\+\_\+v20\+::calculate\+Resistance (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{float}]{value, }
+\item[{uint8\+\_\+t}]{gain, }
+\item[{float}]{load}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a29686cfc0b93b3a7a4f6ba73b45d1ef1}{}\label{class_wasp_sensor_gas__v20_a29686cfc0b93b3a7a4f6ba73b45d1ef1}
+It calculates the sensor resistance in function of the voltage read, the gain and load resistance set and the socket selected
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor that has been read \\
+\hline
+{\em float} & value \+: the sensor to read the value from \\
+\hline
+{\em float} & load \+: the sensor to read the value from \\
+\hline
+{\em uint8\+\_\+t} & gain \+: the sensor to read the value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the resistance of the sensor as a float 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!configure\+Sensor@{configure\+Sensor}}
+\index{configure\+Sensor@{configure\+Sensor}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{configure\+Sensor(uint16\+\_\+t sensor, uint8\+\_\+t gain)}{configureSensor(uint16_t sensor, uint8_t gain)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Gas\+\_\+v20\+::configure\+Sensor (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{uint8\+\_\+t}]{gain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a72406f1ae43a46a9c98e19b59ab2516a}{}\label{class_wasp_sensor_gas__v20_a72406f1ae43a46a9c98e19b59ab2516a}
+
+
+It configures the amplifier gain in the different sensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor to configure \\
+\hline
+{\em uint8\+\_\+t} & gain \+: the gain to set (range \mbox{[}1-\/101\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!configure\+Sensor@{configure\+Sensor}}
+\index{configure\+Sensor@{configure\+Sensor}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{configure\+Sensor(uint16\+\_\+t sensor, uint8\+\_\+t gain, float resistor)}{configureSensor(uint16_t sensor, uint8_t gain, float resistor)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Gas\+\_\+v20\+::configure\+Sensor (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor, }
+\item[{uint8\+\_\+t}]{gain, }
+\item[{float}]{resistor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a515a76ac7bb13c2bc6a317070e10800d}{}\label{class_wasp_sensor_gas__v20_a515a76ac7bb13c2bc6a317070e10800d}
+
+
+It configures the amplifier gain and load resistor in the different sensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor to configure \\
+\hline
+{\em uint8\+\_\+t} & gain \+: the gain to set (range \mbox{[}1-\/101\mbox{]}) \\
+\hline
+{\em float} & resistor \+: the load resistor to set (range \mbox{[}0-\/100\mbox{]} in K\+Ohms) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Gas\+\_\+v20\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a97f04f61e46179555fde5f2f73eb41b5}{}\label{class_wasp_sensor_gas__v20_a97f04f61e46179555fde5f2f73eb41b5}
+
+
+Turns O\+FF the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!ON@{ON}}
+\index{ON@{ON}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{O\+N(void)}{ON(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+Sensor\+Gas\+\_\+v20\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a38e471b3a08ff285e41655b8e0782957}{}\label{class_wasp_sensor_gas__v20_a38e471b3a08ff285e41655b8e0782957}
+
+
+Turns ON the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!read\+Value@{read\+Value}}
+\index{read\+Value@{read\+Value}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{read\+Value(uint16\+\_\+t sensor)}{readValue(uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+Sensor\+Gas\+\_\+v20\+::read\+Value (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a6adecc3646770842238aa97792bffc66}{}\label{class_wasp_sensor_gas__v20_a6adecc3646770842238aa97792bffc66}
+
+
+It reads the value measured by the sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & sensor \+: the sensor to read the value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value measured by the sensor (range \mbox{[}0-\/3.\+3\mbox{]} Volts) 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!set\+Board\+Mode@{set\+Board\+Mode}}
+\index{set\+Board\+Mode@{set\+Board\+Mode}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Board\+Mode(uint8\+\_\+t mode)}{setBoardMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Gas\+\_\+v20\+::set\+Board\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a07893b5dd0c8bd81b876bed9f35ec38e}{}\label{class_wasp_sensor_gas__v20_a07893b5dd0c8bd81b876bed9f35ec38e}
+
+
+It sets board power mode, setting O\+N/\+O\+FF 3v3 and 5V switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+\index{Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}!set\+Sensor\+Mode@{set\+Sensor\+Mode}}
+\index{set\+Sensor\+Mode@{set\+Sensor\+Mode}!Wasp\+Sensor\+Gas\+\_\+v20@{Wasp\+Sensor\+Gas\+\_\+v20}}
+\subsubsection[{\texorpdfstring{set\+Sensor\+Mode(uint8\+\_\+t mode, uint16\+\_\+t sensor)}{setSensorMode(uint8_t mode, uint16_t sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+Sensor\+Gas\+\_\+v20\+::set\+Sensor\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint16\+\_\+t}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_sensor_gas__v20_a8cff44e0e0b867642b302f0e3ded8117}{}\label{class_wasp_sensor_gas__v20_a8cff44e0e0b867642b302f0e3ded8117}
+
+
+It sets O\+N/\+O\+FF the different sensor switches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: S\+E\+N\+S\+\_\+\+ON or S\+E\+N\+S\+\_\+\+O\+FF \\
+\hline
+{\em uint16\+\_\+t} & sensor \+: the sensor to set O\+N/\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+v20/\hyperlink{_wasp_sensor_gas__v20_8h}{Wasp\+Sensor\+Gas\+\_\+v20.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+v20/Wasp\+Sensor\+Gas\+\_\+v20.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{group__avr__builtins}{}\section{$<$avr/builtins.h$>$\+: G\+CC builtins}
+\label{group__avr__builtins}\index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__avr__builtins_gaa9fc5c6054d97fa1b7901789a7f69636}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei} (void)
+\item 
+void \hyperlink{group__avr__builtins_ga41590bd57be6a89c1b9bcafe523207f2}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli} (void)
+\item 
+void \hyperlink{group__avr__builtins_gaefc3f29795d2fe18c118e72477ca0e50}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep} (void)
+\item 
+void \hyperlink{group__avr__builtins_ga7d79142f6b67d445882ee147f58005c3}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr} (void)
+\item 
+unsigned char \hyperlink{group__avr__builtins_gabb7f2d4c4c68a522c7091d7e1f5af955}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap} (unsigned char \+\_\+\+\_\+b)
+\item 
+unsigned int \hyperlink{group__avr__builtins_gaeb1ebcf726944d2ca734f760b44ccf84}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul} (unsigned char \+\_\+\+\_\+a, unsigned char \+\_\+\+\_\+b)
+\item 
+int \hyperlink{group__avr__builtins_gab1307ec7a80d090a91fc9378f83b6b40}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls} (char \+\_\+\+\_\+a, char \+\_\+\+\_\+b)
+\item 
+int \hyperlink{group__avr__builtins_ga816353b87fc6162674570b18d92bc72c}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu} (char \+\_\+\+\_\+a, unsigned char \+\_\+\+\_\+b)
+\item 
+void \hyperlink{group__avr__builtins_ga1b92d0227413dde09288ce1adae44824}{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles} (unsigned long \+\_\+\+\_\+n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{builtins_8h}{avr/builtins.h}>} 
+\end{DoxyCode}
+
+
+This header file declares A\+VR builtins. All the functions documented here are built into the compiler, and cause it to emit the corresponding assembly code instructions. 
+
+\subsection{Function Documentation}
+\index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli(void)}{__builtin_avr_cli(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+\+\_\+builtin\+\_\+avr\+\_\+cli (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_ga41590bd57be6a89c1b9bcafe523207f2}{}\label{group__avr__builtins_ga41590bd57be6a89c1b9bcafe523207f2}
+Disables all interrupts by clearing the global interrupt mask. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles(unsigned long \+\_\+\+\_\+n)}{__builtin_avr_delay_cycles(unsigned long __n)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+\+\_\+builtin\+\_\+avr\+\_\+delay\+\_\+cycles (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{\+\_\+\+\_\+n}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_ga1b92d0227413dde09288ce1adae44824}{}\label{group__avr__builtins_ga1b92d0227413dde09288ce1adae44824}
+Emits a sequence of instructions causing the C\+PU to spend {\ttfamily \+\_\+\+\_\+n} cycles on it. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul(unsigned char \+\_\+\+\_\+a, unsigned char \+\_\+\+\_\+b)}{__builtin_avr_fmul(unsigned char __a, unsigned char __b)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int \+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmul (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{\+\_\+\+\_\+a, }
+\item[{unsigned char}]{\+\_\+\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_gaeb1ebcf726944d2ca734f760b44ccf84}{}\label{group__avr__builtins_gaeb1ebcf726944d2ca734f760b44ccf84}
+Emits an F\+M\+UL (fractional multiply unsigned) instruction. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls(char \+\_\+\+\_\+a, char \+\_\+\+\_\+b)}{__builtin_avr_fmuls(char __a, char __b)}}]{\setlength{\rightskip}{0pt plus 5cm}int \+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmuls (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+\_\+a, }
+\item[{char}]{\+\_\+\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_gab1307ec7a80d090a91fc9378f83b6b40}{}\label{group__avr__builtins_gab1307ec7a80d090a91fc9378f83b6b40}
+Emits an F\+M\+UL (fractional multiply signed) instruction. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu(char \+\_\+\+\_\+a, unsigned char \+\_\+\+\_\+b)}{__builtin_avr_fmulsu(char __a, unsigned char __b)}}]{\setlength{\rightskip}{0pt plus 5cm}int \+\_\+\+\_\+builtin\+\_\+avr\+\_\+fmulsu (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+\+\_\+a, }
+\item[{unsigned char}]{\+\_\+\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_ga816353b87fc6162674570b18d92bc72c}{}\label{group__avr__builtins_ga816353b87fc6162674570b18d92bc72c}
+Emits an F\+M\+UL (fractional multiply signed with unsigned) instruction. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei(void)}{__builtin_avr_sei(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+\+\_\+builtin\+\_\+avr\+\_\+sei (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_gaa9fc5c6054d97fa1b7901789a7f69636}{}\label{group__avr__builtins_gaa9fc5c6054d97fa1b7901789a7f69636}
+Enables interrupts by setting the global interrupt mask. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep(void)}{__builtin_avr_sleep(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+\+\_\+builtin\+\_\+avr\+\_\+sleep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_gaefc3f29795d2fe18c118e72477ca0e50}{}\label{group__avr__builtins_gaefc3f29795d2fe18c118e72477ca0e50}
+Emits a {\ttfamily S\+L\+E\+EP} instruction. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap(unsigned char \+\_\+\+\_\+b)}{__builtin_avr_swap(unsigned char __b)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char \+\_\+\+\_\+builtin\+\_\+avr\+\_\+swap (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{\+\_\+\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_gabb7f2d4c4c68a522c7091d7e1f5af955}{}\label{group__avr__builtins_gabb7f2d4c4c68a522c7091d7e1f5af955}
+Emits a S\+W\+AP (nibble swap) instruction on \+\_\+\+\_\+b. \index{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}!\+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr}}
+\index{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr@{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr}!$<$avr/builtins.\+h$>$\+: G\+C\+C builtins@{$<$avr/builtins.\+h$>$\+: G\+C\+C builtins}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr(void)}{__builtin_avr_wdr(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+\+\_\+builtin\+\_\+avr\+\_\+wdr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__avr__builtins_ga7d79142f6b67d445882ee147f58005c3}{}\label{group__avr__builtins_ga7d79142f6b67d445882ee147f58005c3}
+Emits a W\+DR (watchdog reset) instruction. 

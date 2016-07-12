@@ -1,0 +1,114 @@
+\hypertarget{_wasp_p_w_r_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+P\+WR.h File Reference}
+\label{_wasp_p_w_r_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+P\+W\+R.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+P\+W\+R.\+h}}
+
+
+Library for managing Waspmote Power \& Energy Modes.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_p_w_r}{Wasp\+P\+WR}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_p_w_r}{Wasp\+P\+WR} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_p_w_r_8h_ab8a459b0143d2388d7c58842af81b74c}{W\+T\+D\+\_\+\+ON}~1\hypertarget{_wasp_p_w_r_8h_ab8a459b0143d2388d7c58842af81b74c}{}\label{_wasp_p_w_r_8h_ab8a459b0143d2388d7c58842af81b74c}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible states. ON in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a1c7d39f6b2897be4d08d5af3fb7600f1}{W\+T\+D\+\_\+\+O\+FF}~2\hypertarget{_wasp_p_w_r_8h_a1c7d39f6b2897be4d08d5af3fb7600f1}{}\label{_wasp_p_w_r_8h_a1c7d39f6b2897be4d08d5af3fb7600f1}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible states. O\+FF in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a6660bb0a5b92b895eeda368982449880}{W\+T\+D\+\_\+16\+MS}~0\hypertarget{_wasp_p_w_r_8h_a6660bb0a5b92b895eeda368982449880}{}\label{_wasp_p_w_r_8h_a6660bb0a5b92b895eeda368982449880}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 16 miliseconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a3e89d388b33018e8104a61d2dbbcffb1}{W\+T\+D\+\_\+32\+MS}~1\hypertarget{_wasp_p_w_r_8h_a3e89d388b33018e8104a61d2dbbcffb1}{}\label{_wasp_p_w_r_8h_a3e89d388b33018e8104a61d2dbbcffb1}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 32 miliseconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a0ff6b9f6f0974495ec46385d53675545}{W\+T\+D\+\_\+64\+MS}~2\hypertarget{_wasp_p_w_r_8h_a0ff6b9f6f0974495ec46385d53675545}{}\label{_wasp_p_w_r_8h_a0ff6b9f6f0974495ec46385d53675545}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 64 miliseconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_ae9a66410368519d908348c898962bff0}{W\+T\+D\+\_\+128\+MS}~3\hypertarget{_wasp_p_w_r_8h_ae9a66410368519d908348c898962bff0}{}\label{_wasp_p_w_r_8h_ae9a66410368519d908348c898962bff0}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 128 miliseconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a0c4f2129c366f58514b10cdca8f8ee83}{W\+T\+D\+\_\+250\+MS}~4\hypertarget{_wasp_p_w_r_8h_a0c4f2129c366f58514b10cdca8f8ee83}{}\label{_wasp_p_w_r_8h_a0c4f2129c366f58514b10cdca8f8ee83}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 250 miliseconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a72ab0a700b0022a2d63e1e03df7bd793}{W\+T\+D\+\_\+500\+MS}~5\hypertarget{_wasp_p_w_r_8h_a72ab0a700b0022a2d63e1e03df7bd793}{}\label{_wasp_p_w_r_8h_a72ab0a700b0022a2d63e1e03df7bd793}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 500 miliseconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a45a7e442b43cc25ab149a5c9c5249212}{W\+T\+D\+\_\+1S}~6\hypertarget{_wasp_p_w_r_8h_a45a7e442b43cc25ab149a5c9c5249212}{}\label{_wasp_p_w_r_8h_a45a7e442b43cc25ab149a5c9c5249212}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 1 second in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_ae26707352650b2aad6b05d09359aff44}{W\+T\+D\+\_\+2S}~7\hypertarget{_wasp_p_w_r_8h_ae26707352650b2aad6b05d09359aff44}{}\label{_wasp_p_w_r_8h_ae26707352650b2aad6b05d09359aff44}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 2 seconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a17e5d678c386ce138c873120747ff2b2}{W\+T\+D\+\_\+4S}~8\hypertarget{_wasp_p_w_r_8h_a17e5d678c386ce138c873120747ff2b2}{}\label{_wasp_p_w_r_8h_a17e5d678c386ce138c873120747ff2b2}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 4 seconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a899b4c7852b6713c1f2edde3307231c8}{W\+T\+D\+\_\+8S}~9\hypertarget{_wasp_p_w_r_8h_a899b4c7852b6713c1f2edde3307231c8}{}\label{_wasp_p_w_r_8h_a899b4c7852b6713c1f2edde3307231c8}
+
+\begin{DoxyCompactList}\small\item\em Watchdog possible timers. 8 seconds in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a94671716ecd06ad2948229b479277831}{S\+E\+N\+S\+\_\+\+O\+FF}~1\hypertarget{_wasp_p_w_r_8h_a94671716ecd06ad2948229b479277831}{}\label{_wasp_p_w_r_8h_a94671716ecd06ad2948229b479277831}
+
+\begin{DoxyCompactList}\small\item\em Sleep Options. Set sensor power supply O\+FF (5V and 3\+V3) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a5daa1a27606591bec142eee7f9361526}{S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF}~2\hypertarget{_wasp_p_w_r_8h_a5daa1a27606591bec142eee7f9361526}{}\label{_wasp_p_w_r_8h_a5daa1a27606591bec142eee7f9361526}
+
+\begin{DoxyCompactList}\small\item\em Sleep Options. Switch related with S\+O\+C\+K\+E\+T0 power supply is set O\+FF. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_af25e7f276c1f63b5d18729cb96823bba}{A\+L\+L\+\_\+\+O\+FF}~\hyperlink{_wasp_p_w_r_8h_a94671716ecd06ad2948229b479277831}{S\+E\+N\+S\+\_\+\+O\+FF} $\vert$ \hyperlink{_wasp_p_w_r_8h_a5daa1a27606591bec142eee7f9361526}{S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF}\hypertarget{_wasp_p_w_r_8h_af25e7f276c1f63b5d18729cb96823bba}{}\label{_wasp_p_w_r_8h_af25e7f276c1f63b5d18729cb96823bba}
+
+\begin{DoxyCompactList}\small\item\em Sleep Options. All options are switched off. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a1252cf7a07df96ed2561ae605eaca197}{A\+L\+L\+\_\+\+ON}~0\hypertarget{_wasp_p_w_r_8h_a1252cf7a07df96ed2561ae605eaca197}{}\label{_wasp_p_w_r_8h_a1252cf7a07df96ed2561ae605eaca197}
+
+\begin{DoxyCompactList}\small\item\em Sleep Options. Do not switch off anything. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a71a8cfdbcbbc78411c79e43c0684e40b}{B\+A\+T\+\_\+\+O\+FF}~\hyperlink{_wasp_p_w_r_8h_a1252cf7a07df96ed2561ae605eaca197}{A\+L\+L\+\_\+\+ON}\hypertarget{_wasp_p_w_r_8h_a71a8cfdbcbbc78411c79e43c0684e40b}{}\label{_wasp_p_w_r_8h_a71a8cfdbcbbc78411c79e43c0684e40b}
+
+\begin{DoxyCompactList}\small\item\em D\+E\+P\+R\+E\+C\+A\+T\+ED definitions. $\ast$$\ast$$\ast$ F\+I\+X\+ME\+: To be deleted. \end{DoxyCompactList}\item 
+\#define {\bfseries U\+A\+R\+T0\+\_\+\+O\+FF}~\hyperlink{_wasp_p_w_r_8h_a5daa1a27606591bec142eee7f9361526}{S\+O\+C\+K\+E\+T0\+\_\+\+O\+FF}\hypertarget{_wasp_p_w_r_8h_a1a76e872d0d522036b409089efa7767b}{}\label{_wasp_p_w_r_8h_a1a76e872d0d522036b409089efa7767b}
+
+\item 
+\#define {\bfseries U\+A\+R\+T1\+\_\+\+O\+FF}~\hyperlink{_wasp_p_w_r_8h_a1252cf7a07df96ed2561ae605eaca197}{A\+L\+L\+\_\+\+ON}\hypertarget{_wasp_p_w_r_8h_a6a4559323ee272a0d09095a8cf63add1}{}\label{_wasp_p_w_r_8h_a6a4559323ee272a0d09095a8cf63add1}
+
+\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a17bbda1ae24892669aff9232ef3af5e9}{H\+I\+B\+\_\+\+A\+D\+DR}~0\hypertarget{_wasp_p_w_r_8h_a17bbda1ae24892669aff9232ef3af5e9}{}\label{_wasp_p_w_r_8h_a17bbda1ae24892669aff9232ef3af5e9}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Address for hibernating. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_p_w_r_8h_a8ad5ef71c024b3ba1bd7d0b66d0dcd0f}{H\+I\+B\+\_\+\+V\+A\+L\+UE}~10\hypertarget{_wasp_p_w_r_8h_a8ad5ef71c024b3ba1bd7d0b66d0dcd0f}{}\label{_wasp_p_w_r_8h_a8ad5ef71c024b3ba1bd7d0b66d0dcd0f}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM Value for hibernating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint16\+\_\+t {\bfseries int\+Flag}\hypertarget{_wasp_p_w_r_8h_a42895d0a50afcdde8a443d520033a148}{}\label{_wasp_p_w_r_8h_a42895d0a50afcdde8a443d520033a148}
+
+\item 
+volatile uint16\+\_\+t {\bfseries int\+Conf}\hypertarget{_wasp_p_w_r_8h_a666b84dbc20d8e03fb3f199a771969ee}{}\label{_wasp_p_w_r_8h_a666b84dbc20d8e03fb3f199a771969ee}
+
+\item 
+volatile uint8\+\_\+t {\bfseries int\+Counter}\hypertarget{_wasp_p_w_r_8h_aefeb24ac9b909ef9d9975018b8770265}{}\label{_wasp_p_w_r_8h_aefeb24ac9b909ef9d9975018b8770265}
+
+\item 
+volatile uint8\+\_\+t {\bfseries int\+Array} \mbox{[}8\mbox{]}\hypertarget{_wasp_p_w_r_8h_acc9e3b44f7d85ebdb826dc3440841082}{}\label{_wasp_p_w_r_8h_acc9e3b44f7d85ebdb826dc3440841082}
+
+\item 
+volatile unsigned long {\bfseries Wasp\+Register}\hypertarget{_wasp_p_w_r_8h_aa99442ce8e6bd348a39a9d986146f798}{}\label{_wasp_p_w_r_8h_aa99442ce8e6bd348a39a9d986146f798}
+
+\item 
+\hyperlink{class_wasp_p_w_r}{Wasp\+P\+WR} {\bfseries P\+WR}\hypertarget{_wasp_p_w_r_8h_a343908271f780f3d04afcb85297b895c}{}\label{_wasp_p_w_r_8h_a343908271f780f3d04afcb85297b895c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing Waspmote Power \& Energy Modes. 
+
+Copyright (C) 2014 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+2 Design\+: David Gascón Implementation\+: Alberto Bielsa, David Cuartielles, Yuri Carmona 

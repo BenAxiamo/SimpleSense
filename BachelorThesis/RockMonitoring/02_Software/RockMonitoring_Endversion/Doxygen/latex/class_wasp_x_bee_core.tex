@@ -1,0 +1,2546 @@
+\hypertarget{class_wasp_x_bee_core}{}\section{Wasp\+X\+Bee\+Core Class Reference}
+\label{class_wasp_x_bee_core}\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+
+
+\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee\+Core.\+h$>$}
+
+Inheritance diagram for Wasp\+X\+Bee\+Core\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_x_bee_core}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_x_bee_core_a7a47046f3552cc18bb6331a5971394a3}{Wasp\+X\+Bee\+Core} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}{init} (uint8\+\_\+t uart\+\_\+used)\hypertarget{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}{}\label{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}
+
+\begin{DoxyCompactList}\small\item\em It initalizes all necessary variables including its parent\textquotesingle{}s variables. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a3469d1adb7e54fd06a6a6b7577b3b6b5}{get\+Own\+Mac\+Low} ()
+\begin{DoxyCompactList}\small\item\em It gets the own lower 32b M\+AC. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a54bcdf819b4987da3e8ca9efc2bd373a}{get\+Own\+Mac\+High} ()
+\begin{DoxyCompactList}\small\item\em It gets the own higher 32b M\+AC. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a997beedd8316cfc825d954ee4cacf21a}{get\+Own\+Mac} ()
+\begin{DoxyCompactList}\small\item\em It gets the own M\+AC. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aff2a2dad4ae20b1e143f1d7188e0d019}{set\+Own\+Net\+Address} (uint8\+\_\+t $\ast$NA)
+\begin{DoxyCompactList}\small\item\em It sets the own 16b Network Address. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries set\+Own\+Net\+Address} (uint8\+\_\+t N\+A\+\_\+H, uint8\+\_\+t N\+A\+\_\+L)\hypertarget{class_wasp_x_bee_core_ae328126c983bf9849cabc2dc787601c2}{}\label{class_wasp_x_bee_core_ae328126c983bf9849cabc2dc787601c2}
+
+\item 
+uint8\+\_\+t {\bfseries set\+Own\+Net\+Address} (char $\ast$NA)\hypertarget{class_wasp_x_bee_core_a5d2effb3603c2ea8ee5f47b31c72976c}{}\label{class_wasp_x_bee_core_a5d2effb3603c2ea8ee5f47b31c72976c}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a084d15de2d68b922be86c8fbf76c14e5}{get\+Own\+Net\+Address} ()
+\begin{DoxyCompactList}\small\item\em It gets the 16b Network Address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a5021f2cfc68506a42777f6f642ee9a24}{set\+Baudrate} (uint8\+\_\+t baud\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em It sets the baudrate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ab0d5559201e258a1fec20a350aed6d26}{set\+A\+PI} (uint8\+\_\+t api\+\_\+value)
+\begin{DoxyCompactList}\small\item\em It sets A\+PI enabled or disabled. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a70659c0e16db67153810a514f52d2842}{set\+A\+P\+Ioptions} (uint8\+\_\+t api\+\_\+options)
+\begin{DoxyCompactList}\small\item\em It sets A\+PI options. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ab9e170bd1a07f49ee1de5215109a61ff}{set\+P\+AN} (uint8\+\_\+t $\ast$P\+A\+N\+ID)
+\begin{DoxyCompactList}\small\item\em It sets the P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ada9bf5aa93a54ce150971d73444c5c27}{get\+P\+AN} ()
+\begin{DoxyCompactList}\small\item\em It gets the P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a7c4465619df8a22ca6a6092546f93537}{set\+Sleep\+Mode} (uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a15dbaf3f5f69b1400a4b39b2136c6536}{sleep})
+\begin{DoxyCompactList}\small\item\em It sets the sleep mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ac10025e71ce012499006d8bfaf9cb86e}{get\+Sleep\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets the sleep mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a2787bc9bc3ad984408ef25a7b61275be}{set\+Awake\+Time} (uint8\+\_\+t $\ast$awake)
+\begin{DoxyCompactList}\small\item\em It sets the time awake before sleeping. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a5899f0f9a3fd7668c989f76768bbec9b}{set\+Sleep\+Time} (uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a15dbaf3f5f69b1400a4b39b2136c6536}{sleep})
+\begin{DoxyCompactList}\small\item\em It sets time the module is slept. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1570f13364cdeceddd91f0c931569a9b}{set\+Channel} (uint8\+\_\+t \+\_\+channel)
+\begin{DoxyCompactList}\small\item\em It sets the channel frequency where module is working on. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a3dc9511964e5057ef3ef8c7537ddcaeb}{get\+Channel} ()
+\begin{DoxyCompactList}\small\item\em It gets the channel frequency where module is working on. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a47f7d7d864a1e89bd2c66d6765f08c8e}{set\+Node\+Identifier} (const char $\ast$node)
+\begin{DoxyCompactList}\small\item\em It sets the \hyperlink{struct_node}{Node} Identifier. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aec8b2034612b6198caae23e970f70a51}{get\+Node\+Identifier} ()
+\begin{DoxyCompactList}\small\item\em It gets the \hyperlink{struct_node}{Node} Identifier. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aad3522b1ae7cde32bf9be127558b34f1}{scan\+Network} ()
+\begin{DoxyCompactList}\small\item\em It scans for brothers in the same channel and same P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a6a0b38d9f6d23b81155742287ee943dd}{scan\+Network} (const char $\ast$node)
+\begin{DoxyCompactList}\small\item\em It scans for a brother in the same channel and same P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a76ca42119faae27647ca40599d140c6d}{set\+Scanning\+Time} (uint8\+\_\+t $\ast$time)
+\begin{DoxyCompactList}\small\item\em It sets the time the \hyperlink{struct_node}{Node} Discovery is scanning. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a5f72182024b9ac8234464072148a7b88}{get\+Scanning\+Time} ()
+\begin{DoxyCompactList}\small\item\em It gets the time the \hyperlink{struct_node}{Node} Discovery is scanning. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ae0f55c26c6a0ffc5fef09f0b6ccefcf8}{set\+Discovery\+Options} (uint8\+\_\+t options)
+\begin{DoxyCompactList}\small\item\em It sets the options for the network discovery command. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad3f63098910b1377fff143a267dbe042}{get\+Discovery\+Options} ()
+\begin{DoxyCompactList}\small\item\em It gets the options for the network discovery command. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_afb7230ca0abe91feb4e38bf2286114bb}{node\+Search} (const char $\ast$node, uint8\+\_\+t $\ast$address)
+\begin{DoxyCompactList}\small\item\em It performs a quick search of a specific node. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_af33faabe269c23967bfe831cc67cc00f}{set\+Scanning\+Channels} (uint8\+\_\+t channel\+\_\+H, uint8\+\_\+t channel\+\_\+L)
+\begin{DoxyCompactList}\small\item\em It sets the list of channels to scan when performing an energy scan. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ab5aca3963bb762901e109628392fd97d}{get\+Scanning\+Channels} ()
+\begin{DoxyCompactList}\small\item\em It gets the list of channels to scan when performing an energy scan. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a214cddb596c40692b1ee3fb2b570d55b}{set\+Duration\+Energy\+Channels} (uint8\+\_\+t duration)
+\begin{DoxyCompactList}\small\item\em It sets the time the Energy Scan will be performed. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a808a17d7d24300e29760679515dabff5}{get\+Duration\+Energy\+Channels} ()
+\begin{DoxyCompactList}\small\item\em It gets the time the Energy Scan will be performed. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a56e1a27c3b8a4a38677d7df803ccabe6}{set\+Link\+Key} (const char $\ast$key)
+\begin{DoxyCompactList}\small\item\em It sets the link key to use in the 128b A\+ES algorithm. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_af1c97e77ba8d5de9544bc7742ab6345d}{set\+Encryption\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets the encryption mode O\+N/\+O\+FF. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_acf7718072cbd236b4ba613bb5ee09c40}{get\+Encryption\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets the encryption mode O\+N/\+O\+FF. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad27ff79accc7d5261163d02e2387fa05}{set\+Power\+Level} (uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em It sets the power level at which RF module transmits. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a6db227aa4aa0d0ee2a42539fd927161f}{get\+Power\+Level} ()
+\begin{DoxyCompactList}\small\item\em It gets the power level at which RF module transmits. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad45db3b4fbdf82dabe22fcf525f24e84}{get\+R\+S\+SI} ()
+\begin{DoxyCompactList}\small\item\em It gets the Received Signal Strength Indicator. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a205b4d9ea047024cf27b26a8b169c5ec}{get\+Hard\+Version} ()
+\begin{DoxyCompactList}\small\item\em It gets the Hardware Version. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a7e00fb1e12afa3749fcdbe294affafcb}{get\+Soft\+Version} ()
+\begin{DoxyCompactList}\small\item\em It gets the Software Version. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a69431eafd00d4be7d52a4319481ea7a2}{set\+R\+S\+S\+Itime} (uint8\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It sets the R\+S\+SI time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a572462247769b06f0c4d1f65a0ef9c42}{get\+R\+S\+S\+Itime} ()
+\begin{DoxyCompactList}\small\item\em It gets the R\+S\+SI time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aae5991a665d6a4b841cf99f98114457d}{write\+Values} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ac7c18ce9cadc85fe984c95f2b969d05f}{apply\+Changes} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_adb05ad7b2a13f1bea8dc219282e3ba50}{reset} ()
+\begin{DoxyCompactList}\small\item\em It resets the X\+Bee firmware. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a906fba68cacc172fe532ba8368dfad3a}{reset\+Defaults} ()
+\begin{DoxyCompactList}\small\item\em It resets the X\+Bee parameters to factory defaults. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a4ccf30a905fdd452023c1926b41ba472}{set\+Sleep\+Options} (uint8\+\_\+t soption)
+\begin{DoxyCompactList}\small\item\em It sets the sleep options. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a66016f51091d27b46311109ad14aca0d}{get\+Sleep\+Options} ()
+\begin{DoxyCompactList}\small\item\em It gets the sleep options. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1fdba9a7e6c5606c7c02d22b43b14678}{get\+Destination\+Address} (uint8\+\_\+t $\ast$naD)
+\begin{DoxyCompactList}\small\item\em It gets the low destination address (A\+T+\+DL) when a scan is performed. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a4c45c0ca0cdaa10db84d63c707e495a9}{send\+X\+Bee} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em It sends a packet to others X\+Bee modules. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a99b75ee89cd9ff80b9ed468ba69f332e}{send} (char $\ast$mac\+Address, char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It sends a packet from one X\+Bee to another X\+Bee in A\+PI mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a9091051d44ed9ff8884f949c92c3e89f}{send} (char $\ast$mac\+Address, uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It sends a packet from one X\+Bee to another X\+Bee in A\+PI mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a2769cff2bbd72cf9e7e9d030913e73e7}{send} (uint8\+\_\+t $\ast$mac\+Address, char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})\hypertarget{class_wasp_x_bee_core_a2769cff2bbd72cf9e7e9d030913e73e7}{}\label{class_wasp_x_bee_core_a2769cff2bbd72cf9e7e9d030913e73e7}
+
+\begin{DoxyCompactList}\small\item\em It sends a packet from one X\+Bee to another X\+Bee in A\+PI mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries send} (uint8\+\_\+t $\ast$mac\+Address, uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)\hypertarget{class_wasp_x_bee_core_ab539fa7442fa3196ba237e8933d800c8}{}\label{class_wasp_x_bee_core_ab539fa7442fa3196ba237e8933d800c8}
+
+\item 
+void \hyperlink{class_wasp_x_bee_core_ad7071c2b88ee349791c1d8dfbc09b478}{set\+Sending\+Retries} (uint8\+\_\+t num)\hypertarget{class_wasp_x_bee_core_ad7071c2b88ee349791c1d8dfbc09b478}{}\label{class_wasp_x_bee_core_ad7071c2b88ee349791c1d8dfbc09b478}
+
+\begin{DoxyCompactList}\small\item\em It sets the maximum number of application-\/level retries to be done. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad926c5d5d906579b0be4de7623989cad}{treat\+Data} ()
+\begin{DoxyCompactList}\small\item\em It treats the data from X\+Bee U\+A\+RT. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_aecef582d03cbb816a14f6ff32a6d3520}{receive\+Packet\+Timeout} (uint32\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em This function receives a new xbee data packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_acfb2f381698ad1f7060e56386a8bd54f}{set\+R\+T\+Cfrom\+Meshlium} (char $\ast$address)
+\begin{DoxyCompactList}\small\item\em It sets the R\+TC settings with Meshlium timestamp configuration. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1b1d5aa30b267e39cd601fe76405908a}{send\+Command\+AT} (const char $\ast$atcommand)
+\begin{DoxyCompactList}\small\item\em The user introduces an AT command within a string and the function executes it without knowing its meaning. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aaf3ee1510aab98a285b4a37359763892}{ON} ()
+\begin{DoxyCompactList}\small\item\em It connects X\+Bee, activating switch and opens the U\+A\+R\+T0. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a96542780bc4daa6a4c87f6e4a3361d23}{ON} (uint8\+\_\+t uart\+\_\+used)
+\begin{DoxyCompactList}\small\item\em It connects X\+Bee, activating switch and opens the selected U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_ab0922c788318a386052fea2518c0155f}{begin} (uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1b31c62bcb1bb1e6080ddc668419f729}{uart}, uint32\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em It opens the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a83897cc127e0a5862d4a18e1a980e7ab}{set\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em switches O\+N/\+O\+FF the X\+Bee module depending on the socket \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a41b7624ea71c7e8a8ce66beb2ce7bcb0}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It disconnects X\+Bee, switching it off and closing the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a5913f875169377f3bfcf93458208f990}{close} ()
+\begin{DoxyCompactList}\small\item\em It closes the U\+A\+RT and unsets the multiplexor to the X\+Bee. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a15dbaf3f5f69b1400a4b39b2136c6536}{sleep} ()
+\begin{DoxyCompactList}\small\item\em It sets the X\+Bee to sleep, asserting P\+IN 9. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ae562c7cfec273abe61a2e5fe16f9626a}{wake} ()
+\begin{DoxyCompactList}\small\item\em It wakes up the X\+Bee, de-\/asserting P\+IN 9. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a663cf4fdf59c9c014871fe80540ebd7b}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address, const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_af488cc566c0c24f66b45f54110292f55}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address, const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad1a42fae73bd95c61011da34c6bdde56}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address, const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a8868602b08bd17cbc14a23dfaf5a8fb4}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address, const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a4a8c6244d7305ee8433b38652aea82c8}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address, uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_ac7b8dcd1b4a66051386f37171f319e95}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address, uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint16\+\_\+t length, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a875a7de0ff73f92598cfe573ccd747df}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address, uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a03ba3ba8d7406b67ff5acd642a4c5fe4}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address, uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint16\+\_\+t length, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_aa2d37826b4db11e45fc875553cbdb832}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address, int \hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_afe081c503b9cd892860ea53817da90bd}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address, int \hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a76e4a2246e6f3d6f0462248c8972e081}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address, int \hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_aa09593fda9ed2aba1a5310d45c64c3ba}{set\+Destination\+Params} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address, int \hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the destination parameters, such as the receiver address and the data to send. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a8e1c290cb5b1a3ab686adf66e4959fd7}{clear\+Command} ()\hypertarget{class_wasp_x_bee_core_a8e1c290cb5b1a3ab686adf66e4959fd7}{}\label{class_wasp_x_bee_core_a8e1c290cb5b1a3ab686adf66e4959fd7}
+
+\begin{DoxyCompactList}\small\item\em It clears the variable \textquotesingle{}command\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_abc7bf692f68763f8f65e272eeefc510b}{check\+New\+Program} ()
+\begin{DoxyCompactList}\small\item\em It checks the new firmware upgrade. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_af5a53716571155fe4782ae4b0014a5e4}{check\+Otap\+Timeout} ()
+\begin{DoxyCompactList}\small\item\em It checks if timeout is up while sending program packets. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_acd2b6f6d35a60698f1a124035aa3c050}{available} ()
+\begin{DoxyCompactList}\small\item\em It checks if there is available data in selected U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a5a407fa3a7ed2cf1186980566a04649d}{flush} ()
+\begin{DoxyCompactList}\small\item\em It clears the U\+A\+RT buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a36a70db11a542cd76745ab7dfbaafff1}{X\+Bee\+\_\+\+ON}
+\begin{DoxyCompactList}\small\item\em Attributes /////////////////////////////////////////////////////////////. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a4e09acc90e1143bde2abbfbc692f12ad}{source\+Mac\+Low} \mbox{[}4\mbox{]}\hypertarget{class_wasp_x_bee_core_a4e09acc90e1143bde2abbfbc692f12ad}{}\label{class_wasp_x_bee_core_a4e09acc90e1143bde2abbfbc692f12ad}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: 32b Lower Mac Source. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1d66b92a26cea300cab43611b937dc95}{source\+Mac\+High} \mbox{[}4\mbox{]}\hypertarget{class_wasp_x_bee_core_a1d66b92a26cea300cab43611b937dc95}{}\label{class_wasp_x_bee_core_a1d66b92a26cea300cab43611b937dc95}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: 32b Higher Mac Source. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a5cfb9b283cf9d7ad1d3f6b43930eb87b}{source\+NA} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_a5cfb9b283cf9d7ad1d3f6b43930eb87b}{}\label{class_wasp_x_bee_core_a5cfb9b283cf9d7ad1d3f6b43930eb87b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: 16b Network Address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a941e47995af72ef389d6509de71c6d73}{baudrate}\hypertarget{class_wasp_x_bee_core_a941e47995af72ef389d6509de71c6d73}{}\label{class_wasp_x_bee_core_a941e47995af72ef389d6509de71c6d73}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Baudrate, speed used to communicate with the X\+Bee module (0-\/5) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ae059075f076ade4fbfcdb276154bdd24}{api\+Value}\hypertarget{class_wasp_x_bee_core_ae059075f076ade4fbfcdb276154bdd24}{}\label{class_wasp_x_bee_core_ae059075f076ade4fbfcdb276154bdd24}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Api value selected (0-\/2) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a6d7e9493c61b5e1907fe322bc78d8b1c}{P\+A\+N\+\_\+\+ID} \mbox{[}8\mbox{]}\hypertarget{class_wasp_x_bee_core_a6d7e9493c61b5e1907fe322bc78d8b1c}{}\label{class_wasp_x_bee_core_a6d7e9493c61b5e1907fe322bc78d8b1c}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: 64b P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a5923b366bb0b92890e065116f608e418}{sleep\+Mode}\hypertarget{class_wasp_x_bee_core_a5923b366bb0b92890e065116f608e418}{}\label{class_wasp_x_bee_core_a5923b366bb0b92890e065116f608e418}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Current Sleep Mode (0-\/5) \end{DoxyCompactList}\item 
+\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$ \hyperlink{class_wasp_x_bee_core_a45d35824b939b376dc811daafcfecf0e}{packet\+\_\+finished} \mbox{[}M\+A\+X\+\_\+\+F\+I\+N\+I\+S\+H\+\_\+\+P\+A\+C\+K\+E\+TS\mbox{]}\hypertarget{class_wasp_x_bee_core_a45d35824b939b376dc811daafcfecf0e}{}\label{class_wasp_x_bee_core_a45d35824b939b376dc811daafcfecf0e}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: array for storing the packets received completely. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a114316a6258a90f1bc58f6e1811ae7fc}{total\+Packets\+Received}\hypertarget{class_wasp_x_bee_core_a114316a6258a90f1bc58f6e1811ae7fc}{}\label{class_wasp_x_bee_core_a114316a6258a90f1bc58f6e1811ae7fc}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: real number of complete received packets. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a14c1b2fcd2b6a0bd99dae8e287bf40e0}{pos}\hypertarget{class_wasp_x_bee_core_a14c1b2fcd2b6a0bd99dae8e287bf40e0}{}\label{class_wasp_x_bee_core_a14c1b2fcd2b6a0bd99dae8e287bf40e0}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates the position in \textquotesingle{}packet\+\_\+finished\textquotesingle{} array of each packet. \end{DoxyCompactList}\item 
+\hyperlink{struct_node}{Node} \hyperlink{class_wasp_x_bee_core_a5f406da3e2ec38bf528a4df51ae4d773}{scanned\+Brothers} \mbox{[}M\+A\+X\+\_\+\+B\+R\+O\+T\+H\+E\+RS\mbox{]}\hypertarget{class_wasp_x_bee_core_a5f406da3e2ec38bf528a4df51ae4d773}{}\label{class_wasp_x_bee_core_a5f406da3e2ec38bf528a4df51ae4d773}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: array for storing the information answered by the nodes when a \hyperlink{struct_node}{Node} Discovery is performe. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a3d85e2d1bf37566aa9ac3dafc2d6dad9}{total\+Scanned\+Brothers}\hypertarget{class_wasp_x_bee_core_a3d85e2d1bf37566aa9ac3dafc2d6dad9}{}\label{class_wasp_x_bee_core_a3d85e2d1bf37566aa9ac3dafc2d6dad9}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: number of brothers found. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_acdf0c5e6cfc04aebdecfe67b715d7ad2}{awake\+Time} \mbox{[}3\mbox{]}\hypertarget{class_wasp_x_bee_core_acdf0c5e6cfc04aebdecfe67b715d7ad2}{}\label{class_wasp_x_bee_core_acdf0c5e6cfc04aebdecfe67b715d7ad2}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: time to be idle before start sleeping. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a71afbca4f5e9c58104bab19e781999dc}{sleep\+Time} \mbox{[}3\mbox{]}\hypertarget{class_wasp_x_bee_core_a71afbca4f5e9c58104bab19e781999dc}{}\label{class_wasp_x_bee_core_a71afbca4f5e9c58104bab19e781999dc}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Cyclic sleeping time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a28592573f397375b74148799137d1d6d}{channel}\hypertarget{class_wasp_x_bee_core_a28592573f397375b74148799137d1d6d}{}\label{class_wasp_x_bee_core_a28592573f397375b74148799137d1d6d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Channel frequency where the module is currently working on. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_x_bee_core_a6ce161100a5f11cf65852b8d13c5fe39}{node\+ID} \mbox{[}20\mbox{]}\hypertarget{class_wasp_x_bee_core_a6ce161100a5f11cf65852b8d13c5fe39}{}\label{class_wasp_x_bee_core_a6ce161100a5f11cf65852b8d13c5fe39}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: \hyperlink{struct_node}{Node} Identifier. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ac06cdaf2c88ef6ad214a2ae6f4645fa2}{scan\+Time} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_ac06cdaf2c88ef6ad214a2ae6f4645fa2}{}\label{class_wasp_x_bee_core_ac06cdaf2c88ef6ad214a2ae6f4645fa2}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: time meanwhile the \hyperlink{struct_node}{Node} Discovery is scanning. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ac08fe8dab29ab194b1bf91dc95d84cc0}{discovery\+Options}\hypertarget{class_wasp_x_bee_core_ac08fe8dab29ab194b1bf91dc95d84cc0}{}\label{class_wasp_x_bee_core_ac08fe8dab29ab194b1bf91dc95d84cc0}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: options for the network discovery command. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a2d91b86ad1c584d374765db0220d2235}{scan\+Channels} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_a2d91b86ad1c584d374765db0220d2235}{}\label{class_wasp_x_bee_core_a2d91b86ad1c584d374765db0220d2235}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: list of channels to scan when performing an energy scan. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a2f9b326decc803c449835f2f290fb2ff}{energy\+Channel} \mbox{[}20\mbox{]}\hypertarget{class_wasp_x_bee_core_a2f9b326decc803c449835f2f290fb2ff}{}\label{class_wasp_x_bee_core_a2f9b326decc803c449835f2f290fb2ff}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: energy found on each channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_afbf90c5d0b00a43a613280a7ae001861}{time\+Energy\+Channel}\hypertarget{class_wasp_x_bee_core_afbf90c5d0b00a43a613280a7ae001861}{}\label{class_wasp_x_bee_core_afbf90c5d0b00a43a613280a7ae001861}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: time the Energy Scan is going to be performed. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_x_bee_core_a5a1ef672ddf56a030a202b0efb2a0e09}{link\+Key} \mbox{[}17\mbox{]}\hypertarget{class_wasp_x_bee_core_a5a1ef672ddf56a030a202b0efb2a0e09}{}\label{class_wasp_x_bee_core_a5a1ef672ddf56a030a202b0efb2a0e09}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: 128b A\+ES Link key. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a757e92d34c6c0158773a4f483b9a38e5}{encrypt\+Mode}\hypertarget{class_wasp_x_bee_core_a757e92d34c6c0158773a4f483b9a38e5}{}\label{class_wasp_x_bee_core_a757e92d34c6c0158773a4f483b9a38e5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: encryption mode (O\+N/\+O\+FF) (0-\/1) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a17d7f5e45fc87c9f3eed52ae43b36d24}{power\+Level}\hypertarget{class_wasp_x_bee_core_a17d7f5e45fc87c9f3eed52ae43b36d24}{}\label{class_wasp_x_bee_core_a17d7f5e45fc87c9f3eed52ae43b36d24}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: power level at which the RF transmits. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a351e0786529a431ffc26c777a3d5f6ad}{time\+R\+S\+SI}\hypertarget{class_wasp_x_bee_core_a351e0786529a431ffc26c777a3d5f6ad}{}\label{class_wasp_x_bee_core_a351e0786529a431ffc26c777a3d5f6ad}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: time meanwhile the P\+WM output is active after receiving a packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a9189f7e52c31b958139dce85d328c442}{soft\+Version} \mbox{[}4\mbox{]}\hypertarget{class_wasp_x_bee_core_a9189f7e52c31b958139dce85d328c442}{}\label{class_wasp_x_bee_core_a9189f7e52c31b958139dce85d328c442}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: software Version. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a49fbd7de02218717a6f2e0ea73c5ea1d}{hard\+Version} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_a49fbd7de02218717a6f2e0ea73c5ea1d}{}\label{class_wasp_x_bee_core_a49fbd7de02218717a6f2e0ea73c5ea1d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: hardware Version. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ada27b44613ed200461f3ac06ea468fab}{value\+R\+S\+SI} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_ada27b44613ed200461f3ac06ea468fab}{}\label{class_wasp_x_bee_core_ada27b44613ed200461f3ac06ea468fab}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: received Signal Strength Indicator. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_acef1b53a9a594104e486155a68866659}{sleep\+Options}\hypertarget{class_wasp_x_bee_core_acef1b53a9a594104e486155a68866659}{}\label{class_wasp_x_bee_core_acef1b53a9a594104e486155a68866659}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: sleep Options. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a2b8aa8d4939d9f04165a0fa98c5bd192}{command\+AT} \mbox{[}100\mbox{]}\hypertarget{class_wasp_x_bee_core_a2b8aa8d4939d9f04165a0fa98c5bd192}{}\label{class_wasp_x_bee_core_a2b8aa8d4939d9f04165a0fa98c5bd192}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Answer received after executing \char`\"{}send\+Command\+A\+T\char`\"{} function. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a84a93d1904f736fbf8eea8388412d34d}{modem\+\_\+status}\hypertarget{class_wasp_x_bee_core_a84a93d1904f736fbf8eea8388412d34d}{}\label{class_wasp_x_bee_core_a84a93d1904f736fbf8eea8388412d34d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the last Modem Status indication received. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_af0ee374d2bcbe13e949ac31f1598311b}{replacement\+Policy}\hypertarget{class_wasp_x_bee_core_af0ee374d2bcbe13e949ac31f1598311b}{}\label{class_wasp_x_bee_core_af0ee374d2bcbe13e949ac31f1598311b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It specifies the replacement ploicty to implement (F\+I\+FO, L\+I\+FO or O\+UT) \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a0084179d7f40bbbaf22274e0eb711367}{error\+\_\+\+AT}\hypertarget{class_wasp_x_bee_core_a0084179d7f40bbbaf22274e0eb711367}{}\label{class_wasp_x_bee_core_a0084179d7f40bbbaf22274e0eb711367}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores if the last call to an AT command has generated an error. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a0ecfbe5f9caa7b8ebe3ccf507fb967ff}{error\+\_\+\+RX}\hypertarget{class_wasp_x_bee_core_a0ecfbe5f9caa7b8ebe3ccf507fb967ff}{}\label{class_wasp_x_bee_core_a0ecfbe5f9caa7b8ebe3ccf507fb967ff}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores if the last received packet has generated an error. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a92c9353405c32b48055041572ce783cf}{error\+\_\+\+TX}\hypertarget{class_wasp_x_bee_core_a92c9353405c32b48055041572ce783cf}{}\label{class_wasp_x_bee_core_a92c9353405c32b48055041572ce783cf}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores if the last sent packet has generated an error. \end{DoxyCompactList}\item 
+\hyperlink{structfirmware__struct}{firmware\+\_\+struct} \hyperlink{class_wasp_x_bee_core_a305c4182401ca7d601caf72629ffeb12}{firm\+\_\+info}\hypertarget{class_wasp_x_bee_core_a305c4182401ca7d601caf72629ffeb12}{}\label{class_wasp_x_bee_core_a305c4182401ca7d601caf72629ffeb12}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the firmware information. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad4554bd4564bfcb36ee701296f67fda9}{programming\+\_\+\+ON}\hypertarget{class_wasp_x_bee_core_ad4554bd4564bfcb36ee701296f67fda9}{}\label{class_wasp_x_bee_core_ad4554bd4564bfcb36ee701296f67fda9}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies if the re-\/programming process is running. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_afa6d30b76bd13b6b9396a6f4764fa223}{\+\_\+payload} \mbox{[}M\+A\+X\+\_\+\+D\+A\+TA\mbox{]}\hypertarget{class_wasp_x_bee_core_afa6d30b76bd13b6b9396a6f4764fa223}{}\label{class_wasp_x_bee_core_afa6d30b76bd13b6b9396a6f4764fa223}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: buffer for a received data packet. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_x_bee_core_a3ebbcfe263164307fe8496f43a9008b5}{\+\_\+length}\hypertarget{class_wasp_x_bee_core_a3ebbcfe263164307fe8496f43a9008b5}{}\label{class_wasp_x_bee_core_a3ebbcfe263164307fe8496f43a9008b5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the number of bytes in \+\_\+payload. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1b847b1f4fd0e3886c74ec70cf6cfa35}{\+\_\+src\+M\+AC} \mbox{[}8\mbox{]}\hypertarget{class_wasp_x_bee_core_a1b847b1f4fd0e3886c74ec70cf6cfa35}{}\label{class_wasp_x_bee_core_a1b847b1f4fd0e3886c74ec70cf6cfa35}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the source M\+AC Adddress when a packet is received. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ac6cedc76a3ac0cdb60a05b43c3e1a604}{\+\_\+src\+NA} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_ac6cedc76a3ac0cdb60a05b43c3e1a604}{}\label{class_wasp_x_bee_core_ac6cedc76a3ac0cdb60a05b43c3e1a604}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the source Network Adddress when a packet is received. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_x_bee_core_a1b926568c27c9eec76e46935c85fe937}{\+\_\+rssi}\hypertarget{class_wasp_x_bee_core_a1b926568c27c9eec76e46935c85fe937}{}\label{class_wasp_x_bee_core_a1b926568c27c9eec76e46935c85fe937}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the R\+S\+SI received in the last packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a7e4df2ef4900652db6259d640bb3dde0}{\+\_\+send\+\_\+retries}
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies the maximum number of retries to be done. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_aff61b0e31acc5abe4a07098916b7796f}{read\+X\+Bee} (uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It reads a packet from other X\+Bee module. \end{DoxyCompactList}\item 
+virtual uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}{send\+X\+Bee\+Priv} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em It sends a packet to other X\+Bee modules. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a6d596334b27604bf40001d3f223bb684}{gen\+\_\+data} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t param)
+\begin{DoxyCompactList}\small\item\em It generates the A\+PI frame to send to the X\+Bee module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a70ea5a036dc3b769052fc42301049196}{gen\+\_\+data} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It generates the A\+PI frame to send to the X\+Bee module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a559ea344983bcbe88739e728513b1638}{gen\+\_\+data} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t param1, uint8\+\_\+t param2)
+\begin{DoxyCompactList}\small\item\em It generates the A\+PI frame to send to the X\+Bee module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a1b026d7365782993512ea64be7f415d1}{gen\+\_\+data} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, uint8\+\_\+t $\ast$param)
+\begin{DoxyCompactList}\small\item\em It generates the A\+PI frame to send to the X\+Bee module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_aa63bde13fccd75b22d04dea7768118cc}{gen\+\_\+data} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, const char $\ast$param)
+\begin{DoxyCompactList}\small\item\em It generates the A\+PI frame to send to the X\+Bee module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a67117d5a25099a579800b3af76d1864d}{gen\+\_\+checksum} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It generates the checksum A\+PI frame to send to the X\+Bee module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a95062ec9931704dd9438f0d411cc12a0}{gen\+\_\+send} (const char $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data})
+\begin{DoxyCompactList}\small\item\em It sends the A\+PI frame stored in \textquotesingle{}command\textquotesingle{} variable to the X\+Bee module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a15fdc0260cbad48ab6642f930906af2a}{gen\+Data\+Payload} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$\+\_\+packet, uint8\+\_\+t $\ast$T\+X\+\_\+array, uint8\+\_\+t start\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em It generates the A\+PI frame when a TX is done. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a64102c18925942c6abfc3a36450bb127}{gen\+\_\+frame\+\_\+ap2} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$\+\_\+packet, uint8\+\_\+t $\ast$T\+X\+\_\+array, uint8\+\_\+t \&protect, uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It generates the frame using eschaped characters. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a93ebddc150d4b7065f694ea431ab25c9}{parse\+\_\+message} (uint8\+\_\+t $\ast$\hyperlink{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}{frame})
+\begin{DoxyCompactList}\small\item\em It parses the answer received by the X\+Bee module, calling the appropriate function. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a2e2ac26e42cadc7fed51fc15dabd2949}{des\+\_\+esc} (uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)
+\begin{DoxyCompactList}\small\item\em It generates the correct A\+PI frame from an eschaped one. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a4f7174699b8a96efeb0970328e80682f}{gen\+\_\+escaped\+\_\+frame} (uint8\+\_\+t $\ast$TX, uint8\+\_\+t $\ast$\hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data}, int $\ast$final\+\_\+length)
+\begin{DoxyCompactList}\small\item\em It generates the correct A\+PI frame from a non-\/eschaped one. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ae24491c5065437a62866fe1e4278776b}{at\+Command\+Response} (uint8\+\_\+t $\ast$data\+\_\+in, uint8\+\_\+t $\ast$\hyperlink{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}{frame}, uint16\+\_\+t end, uint16\+\_\+t start)
+\begin{DoxyCompactList}\small\item\em It parses the AT command answer received by the X\+Bee module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_af723e3ab1f4d9c382e123482d5ea6205}{modem\+Status\+Response} (uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)
+\begin{DoxyCompactList}\small\item\em It parses the Modem Status message received by the X\+Bee module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aeb522dccf2aa2a4f917a441e813c11a1}{tx\+Status\+Response} ()
+\begin{DoxyCompactList}\small\item\em It parses the TX Status message received by the 802.\+15.\+4 X\+Bee module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a233cf9332dea6f075edd3947f65bd373}{tx\+Z\+B\+Status\+Response} ()
+\begin{DoxyCompactList}\small\item\em It parses the ZB TX Status message received by the X\+Bee module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_x_bee_core_a85f0e8826d504eadea5f0cd1b5bd9e8a}{rx\+Data} (uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)
+\begin{DoxyCompactList}\small\item\em It parses the RX Data message received by the X\+Bee module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a692aef52f76fef48dd21605deb6f9be6}{treat\+Scan} ()
+\begin{DoxyCompactList}\small\item\em It parses the ND message received by the X\+Bee module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a705084510b2fa53cc22b44b400a1600d}{check\+Checksum} (uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)
+\begin{DoxyCompactList}\small\item\em It checks the checksum is good. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_af8b033c03d319cbdb45a24685b7e6553}{get\+Checksum} (uint8\+\_\+t $\ast$TX)
+\begin{DoxyCompactList}\small\item\em It gets the TX frame checksum. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a6fe87d248aa0a4cc9206ec7379d37a1e}{get\+Finish\+Index} ()
+\begin{DoxyCompactList}\small\item\em It gets the next index where store the finished packet. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a2fe3689d4bf058cf875e2db259c6f812}{clear\+Finish\+Array} ()\hypertarget{class_wasp_x_bee_core_a2fe3689d4bf058cf875e2db259c6f812}{}\label{class_wasp_x_bee_core_a2fe3689d4bf058cf875e2db259c6f812}
+
+\begin{DoxyCompactList}\small\item\em It clears the finished packets array. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad24e784a7e949946d311304d2ccb6b3b}{get\+Index\+F\+I\+FO} ()
+\begin{DoxyCompactList}\small\item\em It gets the index in \textquotesingle{}packet\+\_\+finished\textquotesingle{} where store the new packet, according to a F\+I\+FO policy. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1ba6cfc9eee0847c04bcfa8c311a95ab}{get\+Index\+L\+I\+FO} ()
+\begin{DoxyCompactList}\small\item\em It gets the index in \textquotesingle{}packet\+\_\+finished\textquotesingle{} where store the new packet, according to a L\+I\+FO policy. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a32686d24d524a02e054946f884a6db44}{new\+\_\+firmware\+\_\+received} ()
+\begin{DoxyCompactList}\small\item\em It receives the first packet of a new firmware. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_af920fce7df72752b814de3fde121468b}{new\+\_\+firmware\+\_\+packets} ()
+\begin{DoxyCompactList}\small\item\em It receives the data packets of a new firmware. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a32d4582ebc97202890794ca4d201d0b6}{new\+\_\+firmware\+\_\+end} ()
+\begin{DoxyCompactList}\small\item\em It receives the last packet of a new firmware. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a13f361e12b28f3bee4b5572f35131c96}{upload\+\_\+firmware} ()
+\begin{DoxyCompactList}\small\item\em It uploads the new firmware. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a62b2f7cf6540e258c0efee1c6ce59918}{request\+\_\+\+ID} ()
+\begin{DoxyCompactList}\small\item\em It answers the ID requested. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_afca9c2bb65717a4e5164093c9fa97ffd}{request\+\_\+bootlist} ()
+\begin{DoxyCompactList}\small\item\em It answers the boot list file. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a333c0ed977bf7bc0d0407597939d269e}{delete\+\_\+firmware} ()
+\begin{DoxyCompactList}\small\item\em It deletes the firmware required. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_core_a5e579944b87af01825c8243b36b602da}{set\+Multicast\+Conf} ()
+\begin{DoxyCompactList}\small\item\em It sets the previous configuration in multicast transmissions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a3135b07fac166669fa1589c443edee8b}{protocol}\hypertarget{class_wasp_x_bee_core_a3135b07fac166669fa1589c443edee8b}{}\label{class_wasp_x_bee_core_a3135b07fac166669fa1589c443edee8b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: protocol used (depends on de the X\+Bee module) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a1b31c62bcb1bb1e6080ddc668419f729}{uart}\hypertarget{class_wasp_x_bee_core_a1b31c62bcb1bb1e6080ddc668419f729}{}\label{class_wasp_x_bee_core_a1b31c62bcb1bb1e6080ddc668419f729}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the U\+A\+RT where the dara are sent to (U\+A\+R\+T0 or U\+A\+R\+T1) \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_x_bee_core_abc8016084138fe49865c9ca6b7c5a6f6}{data\+\_\+length}\hypertarget{class_wasp_x_bee_core_abc8016084138fe49865c9ca6b7c5a6f6}{}\label{class_wasp_x_bee_core_abc8016084138fe49865c9ca6b7c5a6f6}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: internal variable used to store the data length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{data} \mbox{[}50\mbox{]}\hypertarget{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}{}\label{class_wasp_x_bee_core_a81f1c2af5c45fc8e3b63f8f21b3df17f}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the data received in each frame. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_x_bee_core_a6793052c84d27c1d9818aaafa8e96353}{it}\hypertarget{class_wasp_x_bee_core_a6793052c84d27c1d9818aaafa8e96353}{}\label{class_wasp_x_bee_core_a6793052c84d27c1d9818aaafa8e96353}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: internal counter. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_afaf2c3a20d481aad0696152cd8a63ad2}{rx\+Frame\+Type}
+\begin{DoxyCompactList}\small\item\em Variable \+: address type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_abcc43fbb1c70fefe5f3ec134ba3e6f30}{command} \mbox{[}30\mbox{]}\hypertarget{class_wasp_x_bee_core_abcc43fbb1c70fefe5f3ec134ba3e6f30}{}\label{class_wasp_x_bee_core_abcc43fbb1c70fefe5f3ec134ba3e6f30}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: array to store the AT commands. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_x_bee_core_af038fd4c9b17ccccca68e19ddcd5680f}{data\+\_\+ind}
+\begin{DoxyCompactList}\small\item\em Variable \+: index data to make a packet from many different data. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a0bb27fdc3f1cca0b8160b62ca500d554}{delivery\+\_\+status}\hypertarget{class_wasp_x_bee_core_a0bb27fdc3f1cca0b8160b62ca500d554}{}\label{class_wasp_x_bee_core_a0bb27fdc3f1cca0b8160b62ca500d554}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: delivery packet status. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_aa6776c5fd41e62daa05e24db04aeca58}{discovery\+\_\+status}\hypertarget{class_wasp_x_bee_core_aa6776c5fd41e62daa05e24db04aeca58}{}\label{class_wasp_x_bee_core_aa6776c5fd41e62daa05e24db04aeca58}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: discovery process status. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a6aacb5dac4418063559f4384b887aaee}{true\+\_\+naD} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_core_a6aacb5dac4418063559f4384b887aaee}{}\label{class_wasp_x_bee_core_a6aacb5dac4418063559f4384b887aaee}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: true 16b Network Address where the packet has been sent. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a26e8a05686e34c22b2b9a3bd6025a7e2}{retries\+\_\+sending}\hypertarget{class_wasp_x_bee_core_a26e8a05686e34c22b2b9a3bd6025a7e2}{}\label{class_wasp_x_bee_core_a26e8a05686e34c22b2b9a3bd6025a7e2}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: retries done during the sending. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_ad9dc96f926d2bcfc3d4775839300ac83}{frame\+Next}\hypertarget{class_wasp_x_bee_core_ad9dc96f926d2bcfc3d4775839300ac83}{}\label{class_wasp_x_bee_core_ad9dc96f926d2bcfc3d4775839300ac83}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: flag to indicate if a frame was truncated. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a71d02b6025f905a83b1af7b2c5d0a012}{aps\+Encryption}\hypertarget{class_wasp_x_bee_core_a71d02b6025f905a83b1af7b2c5d0a012}{}\label{class_wasp_x_bee_core_a71d02b6025f905a83b1af7b2c5d0a012}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: specifies if A\+PS encryption is enabled or disabled. \end{DoxyCompactList}\item 
+\hyperlink{class_sd2_card}{Sd2\+Card} \hyperlink{class_wasp_x_bee_core_a362c61f39ab608841a418ce16aa4085e}{card}\hypertarget{class_wasp_x_bee_core_a362c61f39ab608841a418ce16aa4085e}{}\label{class_wasp_x_bee_core_a362c61f39ab608841a418ce16aa4085e}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: object to the SD card. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a4fdb0418e9833849d07e43f851803b5a}{sd\+\_\+on}\hypertarget{class_wasp_x_bee_core_a4fdb0418e9833849d07e43f851803b5a}{}\label{class_wasp_x_bee_core_a4fdb0418e9833849d07e43f851803b5a}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: flag to indicate sd card is on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core} Class. 
+
+\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core} Class defines all the variables and functions used for managing the X\+Bee modules. In this library, all the common functions are defined to be used in the other X\+Bee libraries 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{Wasp\+X\+Bee\+Core()}{WaspXBeeCore()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+X\+Bee\+Core\+::\+Wasp\+X\+Bee\+Core (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wasp_x_bee_core_a7a47046f3552cc18bb6331a5971394a3}{}\label{class_wasp_x_bee_core_a7a47046f3552cc18bb6331a5971394a3}
+
+
+Class constructor. 
+
+Initializes buffers 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!apply\+Changes@{apply\+Changes}}
+\index{apply\+Changes@{apply\+Changes}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{apply\+Changes()}{applyChanges()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::apply\+Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ac7c18ce9cadc85fe984c95f2b969d05f}{}\label{class_wasp_x_bee_core_ac7c18ce9cadc85fe984c95f2b969d05f}
+It writes the parameters changed into non-\/volatil memory and applies them immediately
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!at\+Command\+Response@{at\+Command\+Response}}
+\index{at\+Command\+Response@{at\+Command\+Response}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{at\+Command\+Response(uint8\+\_\+t $\ast$data\+\_\+in, uint8\+\_\+t $\ast$frame, uint16\+\_\+t end, uint16\+\_\+t start)}{atCommandResponse(uint8_t *data_in, uint8_t *frame, uint16_t end, uint16_t start)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::at\+Command\+Response (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data\+\_\+in, }
+\item[{uint8\+\_\+t $\ast$}]{frame, }
+\item[{uint16\+\_\+t}]{end, }
+\item[{uint16\+\_\+t}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_ae24491c5065437a62866fe1e4278776b}{}\label{class_wasp_x_bee_core_ae24491c5065437a62866fe1e4278776b}
+
+
+It parses the AT command answer received by the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+\_\+in \+: the string that contains the eschaped A\+PI frame AT command \\
+\hline
+{\em uint8\+\_\+t$\ast$} & frame \+: an array that contains the A\+PI frame that is expected to receive answer from if it is an AT command \\
+\hline
+{\em uint16\+\_\+t} & end \+: the end of the frame \\
+\hline
+{\em uint16\+\_\+t} & start \+: the start of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!available@{available}}
+\index{available@{available}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_acd2b6f6d35a60698f1a124035aa3c050}{}\label{class_wasp_x_bee_core_acd2b6f6d35a60698f1a124035aa3c050}
+
+
+It checks if there is available data in selected U\+A\+RT. 
+
+\begin{DoxyReturn}{Returns}
+number of available bytes. 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!begin@{begin}}
+\index{begin@{begin}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{begin(uint8\+\_\+t uart, uint32\+\_\+t speed)}{begin(uint8_t uart, uint32_t speed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::begin (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{uart, }
+\item[{uint32\+\_\+t}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ab0922c788318a386052fea2518c0155f}{}\label{class_wasp_x_bee_core_ab0922c788318a386052fea2518c0155f}
+
+
+It opens the U\+A\+RT. 
+
+It also set high the microcontroler pins which switch the X\+Bee on and select the U\+SB multiplexor output in order to communicate with the X\+Bee instead of the U\+SB port. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!check\+Checksum@{check\+Checksum}}
+\index{check\+Checksum@{check\+Checksum}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{check\+Checksum(uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)}{checkChecksum(uint8_t *data_in, uint16_t end, uint16_t start)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::check\+Checksum (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data\+\_\+in, }
+\item[{uint16\+\_\+t}]{end, }
+\item[{uint16\+\_\+t}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a705084510b2fa53cc22b44b400a1600d}{}\label{class_wasp_x_bee_core_a705084510b2fa53cc22b44b400a1600d}
+
+
+It checks the checksum is good. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+\_\+in \+: the string that contains the eschaped A\+PI frame AT command \\
+\hline
+{\em uint16\+\_\+t} & end \+: the end of the frame \\
+\hline
+{\em uint16\+\_\+t} & start \+: the start of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!check\+New\+Program@{check\+New\+Program}}
+\index{check\+New\+Program@{check\+New\+Program}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{check\+New\+Program()}{checkNewProgram()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::check\+New\+Program (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_abc7bf692f68763f8f65e272eeefc510b}{}\label{class_wasp_x_bee_core_abc7bf692f68763f8f65e272eeefc510b}
+
+
+It checks the new firmware upgrade. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!check\+Otap\+Timeout@{check\+Otap\+Timeout}}
+\index{check\+Otap\+Timeout@{check\+Otap\+Timeout}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{check\+Otap\+Timeout()}{checkOtapTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::check\+Otap\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_af5a53716571155fe4782ae4b0014a5e4}{}\label{class_wasp_x_bee_core_af5a53716571155fe4782ae4b0014a5e4}
+
+
+It checks if timeout is up while sending program packets. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{}\+:Timeout is up. \textquotesingle{}0\textquotesingle{}\+:The function was executed with no errors 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!close@{close}}
+\index{close@{close}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a5913f875169377f3bfcf93458208f990}{}\label{class_wasp_x_bee_core_a5913f875169377f3bfcf93458208f990}
+
+
+It closes the U\+A\+RT and unsets the multiplexor to the X\+Bee. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!delete\+\_\+firmware@{delete\+\_\+firmware}}
+\index{delete\+\_\+firmware@{delete\+\_\+firmware}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{delete\+\_\+firmware()}{delete_firmware()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::delete\+\_\+firmware (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a333c0ed977bf7bc0d0407597939d269e}{}\label{class_wasp_x_bee_core_a333c0ed977bf7bc0d0407597939d269e}
+
+
+It deletes the firmware required. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!des\+\_\+esc@{des\+\_\+esc}}
+\index{des\+\_\+esc@{des\+\_\+esc}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{des\+\_\+esc(uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)}{des_esc(uint8_t *data_in, uint16_t end, uint16_t start)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::des\+\_\+esc (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data\+\_\+in, }
+\item[{uint16\+\_\+t}]{end, }
+\item[{uint16\+\_\+t}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a2e2ac26e42cadc7fed51fc15dabd2949}{}\label{class_wasp_x_bee_core_a2e2ac26e42cadc7fed51fc15dabd2949}
+
+
+It generates the correct A\+PI frame from an eschaped one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+\_\+in \+: the string that contains the eschaped A\+PI frame AT command \\
+\hline
+{\em uint16\+\_\+t} & end \+: the end of the frame \\
+\hline
+{\em uint16\+\_\+t} & start \+: the start of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!flush@{flush}}
+\index{flush@{flush}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{flush()}{flush()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::flush (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a5a407fa3a7ed2cf1186980566a04649d}{}\label{class_wasp_x_bee_core_a5a407fa3a7ed2cf1186980566a04649d}
+
+
+It clears the U\+A\+RT buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+checksum@{gen\+\_\+checksum}}
+\index{gen\+\_\+checksum@{gen\+\_\+checksum}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+checksum(const char $\ast$data)}{gen_checksum(const char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::gen\+\_\+checksum (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a67117d5a25099a579800b3af76d1864d}{}\label{class_wasp_x_bee_core_a67117d5a25099a579800b3af76d1864d}
+
+
+It generates the checksum A\+PI frame to send to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the checksum generated 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+data@{gen\+\_\+data}}
+\index{gen\+\_\+data@{gen\+\_\+data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+data(const char $\ast$data, uint8\+\_\+t param)}{gen_data(const char *data, uint8_t param)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a6d596334b27604bf40001d3f223bb684}{}\label{class_wasp_x_bee_core_a6d596334b27604bf40001d3f223bb684}
+
+
+It generates the A\+PI frame to send to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+{\em uint8\+\_\+t} & param \+: input parameter to set using the AT command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+data@{gen\+\_\+data}}
+\index{gen\+\_\+data@{gen\+\_\+data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+data(const char $\ast$data)}{gen_data(const char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a70ea5a036dc3b769052fc42301049196}{}\label{class_wasp_x_bee_core_a70ea5a036dc3b769052fc42301049196}
+
+
+It generates the A\+PI frame to send to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+data@{gen\+\_\+data}}
+\index{gen\+\_\+data@{gen\+\_\+data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+data(const char $\ast$data, uint8\+\_\+t param1, uint8\+\_\+t param2)}{gen_data(const char *data, uint8_t param1, uint8_t param2)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{param1, }
+\item[{uint8\+\_\+t}]{param2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a559ea344983bcbe88739e728513b1638}{}\label{class_wasp_x_bee_core_a559ea344983bcbe88739e728513b1638}
+
+
+It generates the A\+PI frame to send to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+{\em uint8\+\_\+t} & param1 \+: higher part of the input parameter to set using the AT command \\
+\hline
+{\em uint8\+\_\+t} & param2 \+: lower part of the input parameter to set using the AT command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+data@{gen\+\_\+data}}
+\index{gen\+\_\+data@{gen\+\_\+data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+data(const char $\ast$data, uint8\+\_\+t $\ast$param)}{gen_data(const char *data, uint8_t *param)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{uint8\+\_\+t $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a1b026d7365782993512ea64be7f415d1}{}\label{class_wasp_x_bee_core_a1b026d7365782993512ea64be7f415d1}
+
+
+It generates the A\+PI frame to send to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+{\em uint8\+\_\+t$\ast$} & param \+: input parameter to set using the AT command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+data@{gen\+\_\+data}}
+\index{gen\+\_\+data@{gen\+\_\+data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+data(const char $\ast$data, const char $\ast$param)}{gen_data(const char *data, const char *param)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{const char $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_aa63bde13fccd75b22d04dea7768118cc}{}\label{class_wasp_x_bee_core_aa63bde13fccd75b22d04dea7768118cc}
+
+
+It generates the A\+PI frame to send to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+{\em char$\ast$} & param \+: input parameter to set using the AT command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+escaped\+\_\+frame@{gen\+\_\+escaped\+\_\+frame}}
+\index{gen\+\_\+escaped\+\_\+frame@{gen\+\_\+escaped\+\_\+frame}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+escaped\+\_\+frame(uint8\+\_\+t $\ast$\+T\+X, uint8\+\_\+t $\ast$data, int $\ast$final\+\_\+length)}{gen_escaped_frame(uint8_t *TX, uint8_t *data, int *final_length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+escaped\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{TX, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{int $\ast$}]{final\+\_\+length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a4f7174699b8a96efeb0970328e80682f}{}\label{class_wasp_x_bee_core_a4f7174699b8a96efeb0970328e80682f}
+
+
+It generates the correct A\+PI frame from a non-\/eschaped one. 
+
+This function is used by gen\+\_\+send function which sends the correct escaped frame to the X\+Bee module. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & TX \+: pointer to the array where the correct escaped frame is stored \\
+\hline
+{\em uint8\+\_\+t$\ast$} & data \+: pointer to the actual non-\/escaped frame \\
+\hline
+{\em int$\ast$} & final\+\_\+length \+: pointer where the final frame length is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+frame\+\_\+ap2@{gen\+\_\+frame\+\_\+ap2}}
+\index{gen\+\_\+frame\+\_\+ap2@{gen\+\_\+frame\+\_\+ap2}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+frame\+\_\+ap2(struct packet\+X\+Bee $\ast$\+\_\+packet, uint8\+\_\+t $\ast$\+T\+X\+\_\+array, uint8\+\_\+t \&protect, uint8\+\_\+t type)}{gen_frame_ap2(struct packetXBee *_packet, uint8_t *TX_array, uint8_t &protect, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+\_\+frame\+\_\+ap2 (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{\+\_\+packet, }
+\item[{uint8\+\_\+t $\ast$}]{T\+X\+\_\+array, }
+\item[{uint8\+\_\+t \&}]{protect, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a64102c18925942c6abfc3a36450bb127}{}\label{class_wasp_x_bee_core_a64102c18925942c6abfc3a36450bb127}
+
+
+It generates the frame using eschaped characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ \+\_\+packet \+: packet for storing the data to send \\
+\hline
+{\em uint8\+\_\+t$\ast$} & T\+X\+\_\+array \+: array for storing the data \\
+\hline
+{\em uint8\+\_\+t} & \&protect\+: variable used for storing if some protected character \\
+\hline
+{\em uint8\+\_\+t} & type\+: variable used for knowing the frame length \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+\_\+send@{gen\+\_\+send}}
+\index{gen\+\_\+send@{gen\+\_\+send}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+\_\+send(const char $\ast$data)}{gen_send(const char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::gen\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a95062ec9931704dd9438f0d411cc12a0}{}\label{class_wasp_x_bee_core_a95062ec9931704dd9438f0d411cc12a0}
+
+
+It sends the A\+PI frame stored in \textquotesingle{}command\textquotesingle{} variable to the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ data \+: the string that contains part of the A\+PI frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!gen\+Data\+Payload@{gen\+Data\+Payload}}
+\index{gen\+Data\+Payload@{gen\+Data\+Payload}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{gen\+Data\+Payload(struct packet\+X\+Bee $\ast$\+\_\+packet, uint8\+\_\+t $\ast$\+T\+X\+\_\+array, uint8\+\_\+t start\+\_\+pos)}{genDataPayload(struct packetXBee *_packet, uint8_t *TX_array, uint8_t start_pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::gen\+Data\+Payload (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{\+\_\+packet, }
+\item[{uint8\+\_\+t $\ast$}]{T\+X\+\_\+array, }
+\item[{uint8\+\_\+t}]{start\+\_\+pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a15fdc0260cbad48ab6642f930906af2a}{}\label{class_wasp_x_bee_core_a15fdc0260cbad48ab6642f930906af2a}
+
+
+It generates the A\+PI frame when a TX is done. 
+
+This function is used to generate the X\+Bee data payload, which is composed by the Application header and the final data field. 
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ \+\_\+packet \+: packet for storing the data to send \\
+\hline
+{\em uint8\+\_\+t$\ast$} & T\+X\+\_\+array \+: array for storing the data \\
+\hline
+{\em uint8\+\_\+t} & start\+\_\+pos\+: start position \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Channel@{get\+Channel}}
+\index{get\+Channel@{get\+Channel}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Channel()}{getChannel()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a3dc9511964e5057ef3ef8c7537ddcaeb}{}\label{class_wasp_x_bee_core_a3dc9511964e5057ef3ef8c7537ddcaeb}
+
+
+It gets the channel frequency where module is working on. 
+
+It stores in global \textquotesingle{}channel\textquotesingle{} the channel frequency where module is working on \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Checksum@{get\+Checksum}}
+\index{get\+Checksum@{get\+Checksum}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Checksum(uint8\+\_\+t $\ast$\+T\+X)}{getChecksum(uint8_t *TX)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Checksum (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{TX}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_af8b033c03d319cbdb45a24685b7e6553}{}\label{class_wasp_x_bee_core_af8b033c03d319cbdb45a24685b7e6553}
+
+
+It gets the TX frame checksum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & TX \+: the pointer to the generated frame which checksum has to be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calculated checksum 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Destination\+Address@{get\+Destination\+Address}}
+\index{get\+Destination\+Address@{get\+Destination\+Address}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Destination\+Address(uint8\+\_\+t $\ast$na\+D)}{getDestinationAddress(uint8_t *naD)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Destination\+Address (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{naD}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a1fdba9a7e6c5606c7c02d22b43b14678}{}\label{class_wasp_x_bee_core_a1fdba9a7e6c5606c7c02d22b43b14678}
+
+
+It gets the low destination address (A\+T+\+DL) when a scan is performed. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}-\/1\textquotesingle{},\textquotesingle{}1\textquotesingle{} or \textquotesingle{}2\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Discovery\+Options@{get\+Discovery\+Options}}
+\index{get\+Discovery\+Options@{get\+Discovery\+Options}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Discovery\+Options()}{getDiscoveryOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Discovery\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ad3f63098910b1377fff143a267dbe042}{}\label{class_wasp_x_bee_core_ad3f63098910b1377fff143a267dbe042}
+
+
+It gets the options for the network discovery command. 
+
+It stores in global \textquotesingle{}discovery\+Options\textquotesingle{} the options for the network discovery command \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Duration\+Energy\+Channels@{get\+Duration\+Energy\+Channels}}
+\index{get\+Duration\+Energy\+Channels@{get\+Duration\+Energy\+Channels}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Duration\+Energy\+Channels()}{getDurationEnergyChannels()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Duration\+Energy\+Channels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a808a17d7d24300e29760679515dabff5}{}\label{class_wasp_x_bee_core_a808a17d7d24300e29760679515dabff5}
+
+
+It gets the time the Energy Scan will be performed. 
+
+It stores in global \textquotesingle{}time\+Energy\+Channel\textquotesingle{} the time the Energy Scan will be performed \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Encryption\+Mode@{get\+Encryption\+Mode}}
+\index{get\+Encryption\+Mode@{get\+Encryption\+Mode}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Encryption\+Mode()}{getEncryptionMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Encryption\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_acf7718072cbd236b4ba613bb5ee09c40}{}\label{class_wasp_x_bee_core_acf7718072cbd236b4ba613bb5ee09c40}
+
+
+It gets the encryption mode O\+N/\+O\+FF. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Finish\+Index@{get\+Finish\+Index}}
+\index{get\+Finish\+Index@{get\+Finish\+Index}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Finish\+Index()}{getFinishIndex()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Finish\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a6fe87d248aa0a4cc9206ec7379d37a1e}{}\label{class_wasp_x_bee_core_a6fe87d248aa0a4cc9206ec7379d37a1e}
+
+
+It gets the next index where store the finished packet. 
+
+\begin{DoxyReturn}{Returns}
+the index where store the packet 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Hard\+Version@{get\+Hard\+Version}}
+\index{get\+Hard\+Version@{get\+Hard\+Version}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Hard\+Version()}{getHardVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Hard\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a205b4d9ea047024cf27b26a8b169c5ec}{}\label{class_wasp_x_bee_core_a205b4d9ea047024cf27b26a8b169c5ec}
+
+
+It gets the Hardware Version. 
+
+It stores in global \textquotesingle{}hard\+Version\textquotesingle{} the Hardware Version \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Index\+F\+I\+FO@{get\+Index\+F\+I\+FO}}
+\index{get\+Index\+F\+I\+FO@{get\+Index\+F\+I\+FO}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Index\+F\+I\+F\+O()}{getIndexFIFO()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Index\+F\+I\+FO (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_ad24e784a7e949946d311304d2ccb6b3b}{}\label{class_wasp_x_bee_core_ad24e784a7e949946d311304d2ccb6b3b}
+
+
+It gets the index in \textquotesingle{}packet\+\_\+finished\textquotesingle{} where store the new packet, according to a F\+I\+FO policy. 
+
+\begin{DoxyReturn}{Returns}
+the index where store the packet 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Index\+L\+I\+FO@{get\+Index\+L\+I\+FO}}
+\index{get\+Index\+L\+I\+FO@{get\+Index\+L\+I\+FO}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Index\+L\+I\+F\+O()}{getIndexLIFO()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Index\+L\+I\+FO (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a1ba6cfc9eee0847c04bcfa8c311a95ab}{}\label{class_wasp_x_bee_core_a1ba6cfc9eee0847c04bcfa8c311a95ab}
+
+
+It gets the index in \textquotesingle{}packet\+\_\+finished\textquotesingle{} where store the new packet, according to a L\+I\+FO policy. 
+
+\begin{DoxyReturn}{Returns}
+the index where store the packet 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Node\+Identifier@{get\+Node\+Identifier}}
+\index{get\+Node\+Identifier@{get\+Node\+Identifier}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Node\+Identifier()}{getNodeIdentifier()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Node\+Identifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aec8b2034612b6198caae23e970f70a51}{}\label{class_wasp_x_bee_core_aec8b2034612b6198caae23e970f70a51}
+
+
+It gets the \hyperlink{struct_node}{Node} Identifier. 
+
+It stores in global \textquotesingle{}node\+ID\textquotesingle{} the \hyperlink{struct_node}{Node} Identifier \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Own\+Mac@{get\+Own\+Mac}}
+\index{get\+Own\+Mac@{get\+Own\+Mac}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Own\+Mac()}{getOwnMac()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Own\+Mac (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a997beedd8316cfc825d954ee4cacf21a}{}\label{class_wasp_x_bee_core_a997beedd8316cfc825d954ee4cacf21a}
+
+
+It gets the own M\+AC. 
+
+It stores in global \textquotesingle{}source\+Mac\+High\textquotesingle{} and \textquotesingle{}source\+Mac\+Low\textquotesingle{} variables the 64b M\+AC \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Own\+Mac\+High@{get\+Own\+Mac\+High}}
+\index{get\+Own\+Mac\+High@{get\+Own\+Mac\+High}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Own\+Mac\+High()}{getOwnMacHigh()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Own\+Mac\+High (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a54bcdf819b4987da3e8ca9efc2bd373a}{}\label{class_wasp_x_bee_core_a54bcdf819b4987da3e8ca9efc2bd373a}
+
+
+It gets the own higher 32b M\+AC. 
+
+It stores in global \textquotesingle{}source\+Mac\+High\textquotesingle{} variable the own higher 32b M\+AC \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Own\+Mac\+Low@{get\+Own\+Mac\+Low}}
+\index{get\+Own\+Mac\+Low@{get\+Own\+Mac\+Low}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Own\+Mac\+Low()}{getOwnMacLow()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Own\+Mac\+Low (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a3469d1adb7e54fd06a6a6b7577b3b6b5}{}\label{class_wasp_x_bee_core_a3469d1adb7e54fd06a6a6b7577b3b6b5}
+
+
+It gets the own lower 32b M\+AC. 
+
+It stores in global \textquotesingle{}source\+Mac\+Low\textquotesingle{} variable the own lower 32b M\+AC \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Own\+Net\+Address@{get\+Own\+Net\+Address}}
+\index{get\+Own\+Net\+Address@{get\+Own\+Net\+Address}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Own\+Net\+Address()}{getOwnNetAddress()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Own\+Net\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a084d15de2d68b922be86c8fbf76c14e5}{}\label{class_wasp_x_bee_core_a084d15de2d68b922be86c8fbf76c14e5}
+
+
+It gets the 16b Network Address. 
+
+It stores in global \textquotesingle{}source\+NA\textquotesingle{} the 16b Network Address \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+P\+AN@{get\+P\+AN}}
+\index{get\+P\+AN@{get\+P\+AN}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+P\+A\+N()}{getPAN()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+P\+AN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ada9bf5aa93a54ce150971d73444c5c27}{}\label{class_wasp_x_bee_core_ada9bf5aa93a54ce150971d73444c5c27}
+
+
+It gets the P\+AN ID. 
+
+It stores in global \textquotesingle{}P\+A\+N\+\_\+\+ID\textquotesingle{} the P\+AN ID \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Power\+Level@{get\+Power\+Level}}
+\index{get\+Power\+Level@{get\+Power\+Level}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Power\+Level()}{getPowerLevel()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Power\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a6db227aa4aa0d0ee2a42539fd927161f}{}\label{class_wasp_x_bee_core_a6db227aa4aa0d0ee2a42539fd927161f}
+
+
+It gets the power level at which RF module transmits. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise, \textquotesingle{}2\textquotesingle{} if command not executed 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+R\+S\+SI@{get\+R\+S\+SI}}
+\index{get\+R\+S\+SI@{get\+R\+S\+SI}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+I()}{getRSSI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+R\+S\+SI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ad45db3b4fbdf82dabe22fcf525f24e84}{}\label{class_wasp_x_bee_core_ad45db3b4fbdf82dabe22fcf525f24e84}
+
+
+It gets the Received Signal Strength Indicator. 
+
+It stores in global \textquotesingle{}value\+R\+S\+SI\textquotesingle{} the Received Signal Strength Indicator \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+R\+S\+S\+Itime@{get\+R\+S\+S\+Itime}}
+\index{get\+R\+S\+S\+Itime@{get\+R\+S\+S\+Itime}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+Itime()}{getRSSItime()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+R\+S\+S\+Itime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a572462247769b06f0c4d1f65a0ef9c42}{}\label{class_wasp_x_bee_core_a572462247769b06f0c4d1f65a0ef9c42}
+
+
+It gets the R\+S\+SI time. 
+
+It stores in global \textquotesingle{}time\+R\+S\+SI\textquotesingle{} the R\+S\+SI time \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Scanning\+Channels@{get\+Scanning\+Channels}}
+\index{get\+Scanning\+Channels@{get\+Scanning\+Channels}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Scanning\+Channels()}{getScanningChannels()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Scanning\+Channels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ab5aca3963bb762901e109628392fd97d}{}\label{class_wasp_x_bee_core_ab5aca3963bb762901e109628392fd97d}
+
+
+It gets the list of channels to scan when performing an energy scan. 
+
+It stores in global \textquotesingle{}scan\+Channels\textquotesingle{} the list of channels to scan when performing an energy scan \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Scanning\+Time@{get\+Scanning\+Time}}
+\index{get\+Scanning\+Time@{get\+Scanning\+Time}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Scanning\+Time()}{getScanningTime()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Scanning\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a5f72182024b9ac8234464072148a7b88}{}\label{class_wasp_x_bee_core_a5f72182024b9ac8234464072148a7b88}
+
+
+It gets the time the \hyperlink{struct_node}{Node} Discovery is scanning. 
+
+It stores in global \textquotesingle{}scan\+Time\textquotesingle{} the time the \hyperlink{struct_node}{Node} Discovery is scanning \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Sleep\+Mode@{get\+Sleep\+Mode}}
+\index{get\+Sleep\+Mode@{get\+Sleep\+Mode}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Sleep\+Mode()}{getSleepMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Sleep\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ac10025e71ce012499006d8bfaf9cb86e}{}\label{class_wasp_x_bee_core_ac10025e71ce012499006d8bfaf9cb86e}
+
+
+It gets the sleep mode. 
+
+It stores in global \textquotesingle{}sleep\+Mode\textquotesingle{} the sleep mode \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Sleep\+Options@{get\+Sleep\+Options}}
+\index{get\+Sleep\+Options@{get\+Sleep\+Options}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Sleep\+Options()}{getSleepOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Sleep\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a66016f51091d27b46311109ad14aca0d}{}\label{class_wasp_x_bee_core_a66016f51091d27b46311109ad14aca0d}
+
+
+It gets the sleep options. 
+
+It stores in global \textquotesingle{}sleep\+Options\textquotesingle{} the sleep options \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!get\+Soft\+Version@{get\+Soft\+Version}}
+\index{get\+Soft\+Version@{get\+Soft\+Version}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{get\+Soft\+Version()}{getSoftVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::get\+Soft\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a7e00fb1e12afa3749fcdbe294affafcb}{}\label{class_wasp_x_bee_core_a7e00fb1e12afa3749fcdbe294affafcb}
+
+
+It gets the Software Version. 
+
+It stores in global \textquotesingle{}soft\+Version\textquotesingle{} the Software Version \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!modem\+Status\+Response@{modem\+Status\+Response}}
+\index{modem\+Status\+Response@{modem\+Status\+Response}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{modem\+Status\+Response(uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)}{modemStatusResponse(uint8_t *data_in, uint16_t end, uint16_t start)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::modem\+Status\+Response (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data\+\_\+in, }
+\item[{uint16\+\_\+t}]{end, }
+\item[{uint16\+\_\+t}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_af723e3ab1f4d9c382e123482d5ea6205}{}\label{class_wasp_x_bee_core_af723e3ab1f4d9c382e123482d5ea6205}
+
+
+It parses the Modem Status message received by the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+\_\+in \+: the string that contains the eschaped A\+PI frame AT command \\
+\hline
+{\em uint16\+\_\+t} & end \+: the end of the frame \\
+\hline
+{\em uint16\+\_\+t} & start \+: the start of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!new\+\_\+firmware\+\_\+end@{new\+\_\+firmware\+\_\+end}}
+\index{new\+\_\+firmware\+\_\+end@{new\+\_\+firmware\+\_\+end}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{new\+\_\+firmware\+\_\+end()}{new_firmware_end()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::new\+\_\+firmware\+\_\+end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a32d4582ebc97202890794ca4d201d0b6}{}\label{class_wasp_x_bee_core_a32d4582ebc97202890794ca4d201d0b6}
+
+
+It receives the last packet of a new firmware. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!new\+\_\+firmware\+\_\+packets@{new\+\_\+firmware\+\_\+packets}}
+\index{new\+\_\+firmware\+\_\+packets@{new\+\_\+firmware\+\_\+packets}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{new\+\_\+firmware\+\_\+packets()}{new_firmware_packets()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::new\+\_\+firmware\+\_\+packets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_af920fce7df72752b814de3fde121468b}{}\label{class_wasp_x_bee_core_af920fce7df72752b814de3fde121468b}
+
+
+It receives the data packets of a new firmware. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!new\+\_\+firmware\+\_\+received@{new\+\_\+firmware\+\_\+received}}
+\index{new\+\_\+firmware\+\_\+received@{new\+\_\+firmware\+\_\+received}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{new\+\_\+firmware\+\_\+received()}{new_firmware_received()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::new\+\_\+firmware\+\_\+received (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a32686d24d524a02e054946f884a6db44}{}\label{class_wasp_x_bee_core_a32686d24d524a02e054946f884a6db44}
+
+
+It receives the first packet of a new firmware. 
+
+\begin{DoxyReturn}{Returns}
+1 if error, 0 otherwise 
+\end{DoxyReturn}
+802.\+15.\+4 Multicast or Direct access with setting of new channel
+
+Digi\+Mesh or Zig\+Bee Multicast or Unicast with new Auth key setting
+
+868 or 900 Multicast or Unicast with new encryption key setting \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!node\+Search@{node\+Search}}
+\index{node\+Search@{node\+Search}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{node\+Search(const char $\ast$node, uint8\+\_\+t $\ast$address)}{nodeSearch(const char *node, uint8_t *address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::node\+Search (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{node, }
+\item[{uint8\+\_\+t $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_afb7230ca0abe91feb4e38bf2286114bb}{}\label{class_wasp_x_bee_core_afb7230ca0abe91feb4e38bf2286114bb}
+
+
+It performs a quick search of a specific node. 
+
+It stores the destination address given by A\+T+\+DN command to the \textquotesingle{}address\textquotesingle{} parameter 
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & node \+: 20-\/byte max string containing NI of the node to search \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: variable where address is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a41b7624ea71c7e8a8ce66beb2ce7bcb0}{}\label{class_wasp_x_bee_core_a41b7624ea71c7e8a8ce66beb2ce7bcb0}
+
+
+It disconnects X\+Bee, switching it off and closing the U\+A\+RT. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!ON@{ON}}
+\index{ON@{ON}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aaf3ee1510aab98a285b4a37359763892}{}\label{class_wasp_x_bee_core_aaf3ee1510aab98a285b4a37359763892}
+
+
+It connects X\+Bee, activating switch and opens the U\+A\+R\+T0. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!ON@{ON}}
+\index{ON@{ON}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t uart\+\_\+used)}{ON(uint8_t uart_used)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{uart\+\_\+used}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a96542780bc4daa6a4c87f6e4a3361d23}{}\label{class_wasp_x_bee_core_a96542780bc4daa6a4c87f6e4a3361d23}
+
+
+It connects X\+Bee, activating switch and opens the selected U\+A\+RT. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!parse\+\_\+message@{parse\+\_\+message}}
+\index{parse\+\_\+message@{parse\+\_\+message}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{parse\+\_\+message(uint8\+\_\+t $\ast$frame)}{parse_message(uint8_t *frame)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::parse\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a93ebddc150d4b7065f694ea431ab25c9}{}\label{class_wasp_x_bee_core_a93ebddc150d4b7065f694ea431ab25c9}
+
+
+It parses the answer received by the X\+Bee module, calling the appropriate function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & frame \+: an array that contains the A\+PI frame that is expected to receive answer from if it is an AT command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!read\+X\+Bee@{read\+X\+Bee}}
+\index{read\+X\+Bee@{read\+X\+Bee}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{read\+X\+Bee(uint8\+\_\+t $\ast$data)}{readXBee(uint8_t *data)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::read\+X\+Bee (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_aff61b0e31acc5abe4a07098916b7796f}{}\label{class_wasp_x_bee_core_aff61b0e31acc5abe4a07098916b7796f}
+
+
+It reads a packet from other X\+Bee module. 
+
+It should be called when data is available from the X\+Bee. If the available data is not a packet it will handle it and will return the appropriate message \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} when error, \textquotesingle{}-\/1\textquotesingle{} when no memory is available 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!receive\+Packet\+Timeout@{receive\+Packet\+Timeout}}
+\index{receive\+Packet\+Timeout@{receive\+Packet\+Timeout}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+Timeout(uint32\+\_\+t timeout)}{receivePacketTimeout(uint32_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::receive\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aecef582d03cbb816a14f6ff32a6d3520}{}\label{class_wasp_x_bee_core_aecef582d03cbb816a14f6ff32a6d3520}
+
+
+This function receives a new xbee data packet. 
+
+If OK, the result is stored in \+\_\+payload and \+\_\+length 
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & timeout \+: ms to wait until time-\/out before a packet arrives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}6\textquotesingle{} --$>$ E\+R\+R\+OR\+: Error escaping character within payload bytes \textquotesingle{}5\textquotesingle{} --$>$ E\+R\+R\+OR\+: Error escaping character in checksum byte \textquotesingle{}4\textquotesingle{} --$>$ E\+R\+R\+OR\+: Checksum is not correct \textquotesingle{}3\textquotesingle{} --$>$ E\+R\+R\+OR\+: Checksum byte is not available \textquotesingle{}2\textquotesingle{} --$>$ E\+R\+R\+OR\+: Frame Type is not valid \textquotesingle{}1\textquotesingle{} --$>$ E\+R\+R\+OR\+: timeout when receiving answer \textquotesingle{}0\textquotesingle{} --$>$ OK\+: The command has been executed with no errors 
+\end{DoxyReturn}
+check the need to restart from the beginning
+
+S\+T\+EP 1\+: search start delimiter 0x7E and drop any other byte
+
+S\+T\+EP 2\+: get the packet length and frame type
+
+S\+T\+EP 3\+: get all packet bytes performing the A\+PI=2 conversion
+
+S\+T\+EP 4\+: Checksum and copy payload \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!request\+\_\+bootlist@{request\+\_\+bootlist}}
+\index{request\+\_\+bootlist@{request\+\_\+bootlist}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{request\+\_\+bootlist()}{request_bootlist()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::request\+\_\+bootlist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_afca9c2bb65717a4e5164093c9fa97ffd}{}\label{class_wasp_x_bee_core_afca9c2bb65717a4e5164093c9fa97ffd}
+
+
+It answers the boot list file. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!request\+\_\+\+ID@{request\+\_\+\+ID}}
+\index{request\+\_\+\+ID@{request\+\_\+\+ID}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{request\+\_\+\+I\+D()}{request_ID()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::request\+\_\+\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a62b2f7cf6540e258c0efee1c6ce59918}{}\label{class_wasp_x_bee_core_a62b2f7cf6540e258c0efee1c6ce59918}
+
+
+It answers the ID requested. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!reset@{reset}}
+\index{reset@{reset}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_adb05ad7b2a13f1bea8dc219282e3ba50}{}\label{class_wasp_x_bee_core_adb05ad7b2a13f1bea8dc219282e3ba50}
+
+
+It resets the X\+Bee firmware. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!reset\+Defaults@{reset\+Defaults}}
+\index{reset\+Defaults@{reset\+Defaults}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{reset\+Defaults()}{resetDefaults()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::reset\+Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a906fba68cacc172fe532ba8368dfad3a}{}\label{class_wasp_x_bee_core_a906fba68cacc172fe532ba8368dfad3a}
+
+
+It resets the X\+Bee parameters to factory defaults. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!rx\+Data@{rx\+Data}}
+\index{rx\+Data@{rx\+Data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{rx\+Data(uint8\+\_\+t $\ast$data\+\_\+in, uint16\+\_\+t end, uint16\+\_\+t start)}{rxData(uint8_t *data_in, uint16_t end, uint16_t start)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::rx\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data\+\_\+in, }
+\item[{uint16\+\_\+t}]{end, }
+\item[{uint16\+\_\+t}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a85f0e8826d504eadea5f0cd1b5bd9e8a}{}\label{class_wasp_x_bee_core_a85f0e8826d504eadea5f0cd1b5bd9e8a}
+
+
+It parses the RX Data message received by the X\+Bee module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data\+\_\+in \+: the string that contains the eschaped A\+PI frame AT command \\
+\hline
+{\em uint16\+\_\+t} & end \+: the end of the frame \\
+\hline
+{\em uint16\+\_\+t} & start \+: the start of the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!scan\+Network@{scan\+Network}}
+\index{scan\+Network@{scan\+Network}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{scan\+Network()}{scanNetwork()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::scan\+Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aad3522b1ae7cde32bf9be127558b34f1}{}\label{class_wasp_x_bee_core_aad3522b1ae7cde32bf9be127558b34f1}
+
+
+It scans for brothers in the same channel and same P\+AN ID. 
+
+It stores the given info (SH,SL,MY,R\+S\+SI,NI) in global array \char`\"{}scanned\+Brothers\char`\"{} variable It stores in global \char`\"{}total\+Scanned\+Brothers\char`\"{} the number of found brothers \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!scan\+Network@{scan\+Network}}
+\index{scan\+Network@{scan\+Network}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{scan\+Network(const char $\ast$node)}{scanNetwork(const char *node)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::scan\+Network (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a6a0b38d9f6d23b81155742287ee943dd}{}\label{class_wasp_x_bee_core_a6a0b38d9f6d23b81155742287ee943dd}
+
+
+It scans for a brother in the same channel and same P\+AN ID. 
+
+It stores the given info (SH,SL,MY,R\+S\+SI,NI) in global array \char`\"{}scanned\+Brothers\char`\"{} variable It stores in global \char`\"{}total\+Scanned\+Brothers\char`\"{} the number of found brothers 
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & node \+: 20-\/byte max string containing NI of the node to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!send@{send}}
+\index{send@{send}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{send(char $\ast$mac\+Address, char $\ast$data)}{send(char *macAddress, char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mac\+Address, }
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a99b75ee89cd9ff80b9ed468ba69f332e}{}\label{class_wasp_x_bee_core_a99b75ee89cd9ff80b9ed468ba69f332e}
+
+
+It sends a packet from one X\+Bee to another X\+Bee in A\+PI mode. 
+
+This function performs application-\/level retries. This function is only used for 64-\/bit addressing. /$\ast$! 
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mac\+Address \+: destination M\+AC address \\
+\hline
+{\em char$\ast$} & data \+: data to be sent (as string) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!send@{send}}
+\index{send@{send}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{send(char $\ast$mac\+Address, uint8\+\_\+t $\ast$pointer, uint16\+\_\+t length)}{send(char *macAddress, uint8_t *pointer, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{mac\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{pointer, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a9091051d44ed9ff8884f949c92c3e89f}{}\label{class_wasp_x_bee_core_a9091051d44ed9ff8884f949c92c3e89f}
+
+
+It sends a packet from one X\+Bee to another X\+Bee in A\+PI mode. 
+
+This function performs application-\/level retries. This function is only used for 64-\/bit addressing. /$\ast$! 
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & mac\+Address \+: destination M\+AC address \\
+\hline
+{\em uint8\+\_\+t$\ast$} & pointer \+: pointer to buffer of data to be sent \\
+\hline
+{\em uint16\+\_\+t} & length \+: length of the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!send\+Command\+AT@{send\+Command\+AT}}
+\index{send\+Command\+AT@{send\+Command\+AT}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{send\+Command\+A\+T(const char $\ast$atcommand)}{sendCommandAT(const char *atcommand)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::send\+Command\+AT (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{atcommand}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a1b1d5aa30b267e39cd601fe76405908a}{}\label{class_wasp_x_bee_core_a1b1d5aa30b267e39cd601fe76405908a}
+
+
+The user introduces an AT command within a string and the function executes it without knowing its meaning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & atcommand \+: the command to execute. It must finish with a \textquotesingle{}\#\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!send\+X\+Bee@{send\+X\+Bee}}
+\index{send\+X\+Bee@{send\+X\+Bee}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{send\+X\+Bee(struct packet\+X\+Bee $\ast$packet)}{sendXBee(struct packetXBee *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::send\+X\+Bee (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{packet}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a4c45c0ca0cdaa10db84d63c707e495a9}{}\label{class_wasp_x_bee_core_a4c45c0ca0cdaa10db84d63c707e495a9}
+
+
+It sends a packet to others X\+Bee modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ packet \+: it is filled with the information needed to be able to send the packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+send the prepared packet using the virtual function send\+X\+Bee\+Priv \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}}
+\index{send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{send\+X\+Bee\+Priv(struct packet\+X\+Bee $\ast$packet)}{sendXBeePriv(struct packetXBee *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\+\_\+t Wasp\+X\+Bee\+Core\+::send\+X\+Bee\+Priv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}{}\label{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}
+
+
+It sends a packet to other X\+Bee modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ packet \+: the function gets the needed information to send the packet from it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_wasp_x_bee_z_b_a50375e7d9ab3bba2a7eec41eff8bb4e6}{Wasp\+X\+Bee\+ZB}, \hyperlink{class_wasp_x_bee868_a424c5b0f0dabe161e80089a6d472ace9}{Wasp\+X\+Bee868}, \hyperlink{class_wasp_x_bee802_a2a737f55f83b9da93c5c8dafdb8b24b5}{Wasp\+X\+Bee802}, \hyperlink{class_wasp_x_bee_d_m_a57fa8ab47b3fd356cd40de42cb7b4bdc}{Wasp\+X\+Bee\+DM}, and \hyperlink{class_wasp_x_bee900_a25d95f2abfdacf745a706832c09a1c47}{Wasp\+X\+Bee900}.
+
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+A\+PI@{set\+A\+PI}}
+\index{set\+A\+PI@{set\+A\+PI}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+A\+P\+I(uint8\+\_\+t api\+\_\+value)}{setAPI(uint8_t api_value)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+A\+PI (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{api\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ab0d5559201e258a1fec20a350aed6d26}{}\label{class_wasp_x_bee_core_ab0d5559201e258a1fec20a350aed6d26}
+
+
+It sets A\+PI enabled or disabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & api\+\_\+value \+: the A\+PI mode (range \mbox{[}0-\/2\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+A\+P\+Ioptions@{set\+A\+P\+Ioptions}}
+\index{set\+A\+P\+Ioptions@{set\+A\+P\+Ioptions}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+A\+P\+Ioptions(uint8\+\_\+t api\+\_\+options)}{setAPIoptions(uint8_t api_options)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+A\+P\+Ioptions (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{api\+\_\+options}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a70659c0e16db67153810a514f52d2842}{}\label{class_wasp_x_bee_core_a70659c0e16db67153810a514f52d2842}
+
+
+It sets A\+PI options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & api\+\_\+options \+: the A\+PI options (range \mbox{[}0-\/1\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Awake\+Time@{set\+Awake\+Time}}
+\index{set\+Awake\+Time@{set\+Awake\+Time}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Awake\+Time(uint8\+\_\+t $\ast$awake)}{setAwakeTime(uint8_t *awake)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Awake\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{awake}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a2787bc9bc3ad984408ef25a7b61275be}{}\label{class_wasp_x_bee_core_a2787bc9bc3ad984408ef25a7b61275be}
+
+
+It sets the time awake before sleeping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & awake \+: the time awake before sleeping (range depends on the X\+Bee module) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Baudrate@{set\+Baudrate}}
+\index{set\+Baudrate@{set\+Baudrate}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Baudrate(uint8\+\_\+t baud\+\_\+rate)}{setBaudrate(uint8_t baud_rate)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Baudrate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{baud\+\_\+rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a5021f2cfc68506a42777f6f642ee9a24}{}\label{class_wasp_x_bee_core_a5021f2cfc68506a42777f6f642ee9a24}
+
+
+It sets the baudrate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & baud\+\_\+rate \+: the baudrate to set the X\+Bee to (range \mbox{[}0-\/5\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Channel@{set\+Channel}}
+\index{set\+Channel@{set\+Channel}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Channel(uint8\+\_\+t \+\_\+channel)}{setChannel(uint8_t _channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Channel (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{\+\_\+channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a1570f13364cdeceddd91f0c931569a9b}{}\label{class_wasp_x_bee_core_a1570f13364cdeceddd91f0c931569a9b}
+
+
+It sets the channel frequency where module is working on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & \+\_\+channel \+: the channel frequency where module is working on (range depends on the X\+Bee module) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address, const char $\ast$data)}{setDestinationParams(packetXBee *paq, uint8_t *address, const char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a663cf4fdf59c9c014871fe80540ebd7b}{}\label{class_wasp_x_bee_core_a663cf4fdf59c9c014871fe80540ebd7b}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em char$\ast$} & data \+: the data to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address, const char $\ast$data, uint8\+\_\+t type)}{setDestinationParams(packetXBee *paq, uint8_t *address, const char *data, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{const char $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_af488cc566c0c24f66b45f54110292f55}{}\label{class_wasp_x_bee_core_af488cc566c0c24f66b45f54110292f55}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em char$\ast$} & data \+: the data to send \\
+\hline
+{\em uint8\+\_\+t} & type \+: origin identification type (using this function call, it only can be used M\+A\+C\+\_\+\+T\+Y\+PE) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, const char $\ast$address, const char $\ast$data)}{setDestinationParams(packetXBee *paq, const char *address, const char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address, }
+\item[{const char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ad1a42fae73bd95c61011da34c6bdde56}{}\label{class_wasp_x_bee_core_ad1a42fae73bd95c61011da34c6bdde56}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em char$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em char$\ast$} & data \+: the data to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, const char $\ast$address, const char $\ast$data, uint8\+\_\+t type)}{setDestinationParams(packetXBee *paq, const char *address, const char *data, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address, }
+\item[{const char $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a8868602b08bd17cbc14a23dfaf5a8fb4}{}\label{class_wasp_x_bee_core_a8868602b08bd17cbc14a23dfaf5a8fb4}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em char$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em char$\ast$} & data \+: the data to send \\
+\hline
+{\em uint8\+\_\+t} & type \+: origin identification type\+: M\+A\+C\+\_\+\+T\+Y\+PE or M\+Y\+\_\+\+T\+Y\+PE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address, uint8\+\_\+t $\ast$data, uint16\+\_\+t length)}{setDestinationParams(packetXBee *paq, uint8_t *address, uint8_t *data, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a4a8c6244d7305ee8433b38652aea82c8}{}\label{class_wasp_x_bee_core_a4a8c6244d7305ee8433b38652aea82c8}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em uint8\+\_\+t$\ast$} & data \+: the data to send \\
+\hline
+{\em int} & length \+: length of the data field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address, uint8\+\_\+t $\ast$data, uint16\+\_\+t length, uint8\+\_\+t type)}{setDestinationParams(packetXBee *paq, uint8_t *address, uint8_t *data, uint16_t length, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ac7b8dcd1b4a66051386f37171f319e95}{}\label{class_wasp_x_bee_core_ac7b8dcd1b4a66051386f37171f319e95}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em uint8\+\_\+t$\ast$} & data \+: the data to send \\
+\hline
+{\em int} & length \+: length of the data field \\
+\hline
+{\em uint8\+\_\+t} & type \+: origin identification type\+: M\+A\+C\+\_\+\+T\+Y\+PE or M\+Y\+\_\+\+T\+Y\+PE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, const char $\ast$address, uint8\+\_\+t $\ast$data, uint16\+\_\+t length)}{setDestinationParams(packetXBee *paq, const char *address, uint8_t *data, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a875a7de0ff73f92598cfe573ccd747df}{}\label{class_wasp_x_bee_core_a875a7de0ff73f92598cfe573ccd747df}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em char$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em uint8\+\_\+t$\ast$} & data \+: the data to send \\
+\hline
+{\em int} & length \+: length of the data field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, const char $\ast$address, uint8\+\_\+t $\ast$data, uint16\+\_\+t length, uint8\+\_\+t type)}{setDestinationParams(packetXBee *paq, const char *address, uint8_t *data, uint16_t length, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{length, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a03ba3ba8d7406b67ff5acd642a4c5fe4}{}\label{class_wasp_x_bee_core_a03ba3ba8d7406b67ff5acd642a4c5fe4}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em char$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em uint8\+\_\+t$\ast$} & data \+: the data to send \\
+\hline
+{\em int} & length \+: length of the data field \\
+\hline
+{\em uint8\+\_\+t} & type \+: origin identification type\+: M\+A\+C\+\_\+\+T\+Y\+PE or M\+Y\+\_\+\+T\+Y\+PE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address, int data)}{setDestinationParams(packetXBee *paq, uint8_t *address, int data)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{int}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aa2d37826b4db11e45fc875553cbdb832}{}\label{class_wasp_x_bee_core_aa2d37826b4db11e45fc875553cbdb832}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em int} & data \+: the data to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address, int data, uint8\+\_\+t type)}{setDestinationParams(packetXBee *paq, uint8_t *address, int data, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{int}]{data, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_afe081c503b9cd892860ea53817da90bd}{}\label{class_wasp_x_bee_core_afe081c503b9cd892860ea53817da90bd}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em uint8\+\_\+t$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em int} & data \+: the data to send \\
+\hline
+{\em uint8\+\_\+t} & type \+: origin identification type (using this function call, it only can be used M\+A\+C\+\_\+\+T\+Y\+PE) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, const char $\ast$address, int data)}{setDestinationParams(packetXBee *paq, const char *address, int data)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address, }
+\item[{int}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a76e4a2246e6f3d6f0462248c8972e081}{}\label{class_wasp_x_bee_core_a76e4a2246e6f3d6f0462248c8972e081}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em char$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em int} & data \+: the data to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Destination\+Params@{set\+Destination\+Params}}
+\index{set\+Destination\+Params@{set\+Destination\+Params}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Destination\+Params(packet\+X\+Bee $\ast$paq, const char $\ast$address, int data, uint8\+\_\+t type)}{setDestinationParams(packetXBee *paq, const char *address, int data, uint8_t type)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Destination\+Params (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address, }
+\item[{int}]{data, }
+\item[{uint8\+\_\+t}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aa09593fda9ed2aba1a5310d45c64c3ba}{}\label{class_wasp_x_bee_core_aa09593fda9ed2aba1a5310d45c64c3ba}
+
+
+It sets the destination parameters, such as the receiver address and the data to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+X\+Bee$\ast$} & paq \+: a \hyperlink{structpacket_x_bee}{packet\+X\+Bee} structure where some parameters should have been filled before calling this function. After this call, this structure is filled with the corresponding address and data \\
+\hline
+{\em char$\ast$} & address \+: the receiver M\+AC \\
+\hline
+{\em int} & data \+: the data to send \\
+\hline
+{\em uint8\+\_\+t} & type \+: origin identification type\+: M\+A\+C\+\_\+\+T\+Y\+PE or M\+Y\+\_\+\+T\+Y\+PE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Discovery\+Options@{set\+Discovery\+Options}}
+\index{set\+Discovery\+Options@{set\+Discovery\+Options}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Discovery\+Options(uint8\+\_\+t options)}{setDiscoveryOptions(uint8_t options)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Discovery\+Options (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{options}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ae0f55c26c6a0ffc5fef09f0b6ccefcf8}{}\label{class_wasp_x_bee_core_ae0f55c26c6a0ffc5fef09f0b6ccefcf8}
+
+
+It sets the options for the network discovery command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & options \+: the options for the network discovery command (range \mbox{[}0x00-\/0x03\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Duration\+Energy\+Channels@{set\+Duration\+Energy\+Channels}}
+\index{set\+Duration\+Energy\+Channels@{set\+Duration\+Energy\+Channels}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Duration\+Energy\+Channels(uint8\+\_\+t duration)}{setDurationEnergyChannels(uint8_t duration)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Duration\+Energy\+Channels (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{duration}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a214cddb596c40692b1ee3fb2b570d55b}{}\label{class_wasp_x_bee_core_a214cddb596c40692b1ee3fb2b570d55b}
+
+
+It sets the time the Energy Scan will be performed. 
+
+It stores the energy on each channel in global \textquotesingle{}energy\+Channel\textquotesingle{} variable. The actual scan time on each channel is measured as Time = \mbox{[}(2 $^\wedge$\+ED) $\ast$ 15.\+36\mbox{]} ms 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & duration \+: time the energy scan will be performed (range \mbox{[}0-\/6\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Encryption\+Mode@{set\+Encryption\+Mode}}
+\index{set\+Encryption\+Mode@{set\+Encryption\+Mode}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Encryption\+Mode(uint8\+\_\+t mode)}{setEncryptionMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Encryption\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_af1c97e77ba8d5de9544bc7742ab6345d}{}\label{class_wasp_x_bee_core_af1c97e77ba8d5de9544bc7742ab6345d}
+
+
+It sets the encryption mode O\+N/\+O\+FF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: the encryption mode (range \mbox{[}0-\/1\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Link\+Key@{set\+Link\+Key}}
+\index{set\+Link\+Key@{set\+Link\+Key}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Link\+Key(const char $\ast$key)}{setLinkKey(const char *key)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Link\+Key (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a56e1a27c3b8a4a38677d7df803ccabe6}{}\label{class_wasp_x_bee_core_a56e1a27c3b8a4a38677d7df803ccabe6}
+
+
+It sets the link key to use in the 128b A\+ES algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & key \+: the 128-\/bit A\+ES encryption key (range \mbox{[}0-\/0x\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t mode)}{setMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a83897cc127e0a5862d4a18e1a980e7ab}{}\label{class_wasp_x_bee_core_a83897cc127e0a5862d4a18e1a980e7ab}
+
+
+switches O\+N/\+O\+FF the X\+Bee module depending on the socket 
+
+It also switches the G\+P\+R\+S/\+G\+P\+S/aux1/aux2 multiplexor to Expansion Board \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Multicast\+Conf@{set\+Multicast\+Conf}}
+\index{set\+Multicast\+Conf@{set\+Multicast\+Conf}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Multicast\+Conf()}{setMulticastConf()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::set\+Multicast\+Conf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a5e579944b87af01825c8243b36b602da}{}\label{class_wasp_x_bee_core_a5e579944b87af01825c8243b36b602da}
+
+
+It sets the previous configuration in multicast transmissions. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Node\+Identifier@{set\+Node\+Identifier}}
+\index{set\+Node\+Identifier@{set\+Node\+Identifier}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Node\+Identifier(const char $\ast$node)}{setNodeIdentifier(const char *node)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Node\+Identifier (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a47f7d7d864a1e89bd2c66d6765f08c8e}{}\label{class_wasp_x_bee_core_a47f7d7d864a1e89bd2c66d6765f08c8e}
+
+
+It sets the \hyperlink{struct_node}{Node} Identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & node \+: the NI must be a 20 character max string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Own\+Net\+Address@{set\+Own\+Net\+Address}}
+\index{set\+Own\+Net\+Address@{set\+Own\+Net\+Address}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Own\+Net\+Address(uint8\+\_\+t $\ast$\+N\+A)}{setOwnNetAddress(uint8_t *NA)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Own\+Net\+Address (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{NA}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aff2a2dad4ae20b1e143f1d7188e0d019}{}\label{class_wasp_x_bee_core_aff2a2dad4ae20b1e143f1d7188e0d019}
+
+
+It sets the own 16b Network Address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & N\+A\+\_\+H \+: higher Network Address byte (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+{\em uint8\+\_\+t} & N\+A\+\_\+L \+: lower Network Address byte (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+P\+AN@{set\+P\+AN}}
+\index{set\+P\+AN@{set\+P\+AN}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+P\+A\+N(uint8\+\_\+t $\ast$\+P\+A\+N\+I\+D)}{setPAN(uint8_t *PANID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+P\+AN (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{P\+A\+N\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ab9e170bd1a07f49ee1de5215109a61ff}{}\label{class_wasp_x_bee_core_ab9e170bd1a07f49ee1de5215109a61ff}
+
+
+It sets the P\+AN ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & P\+A\+N\+ID \+: the P\+AN ID (64b -\/ Zig\+Bee ; 16b -\/ Other protocols) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Power\+Level@{set\+Power\+Level}}
+\index{set\+Power\+Level@{set\+Power\+Level}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Power\+Level(uint8\+\_\+t value)}{setPowerLevel(uint8_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Power\+Level (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ad27ff79accc7d5261163d02e2387fa05}{}\label{class_wasp_x_bee_core_ad27ff79accc7d5261163d02e2387fa05}
+
+
+It sets the power level at which RF module transmits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: power level at which RF module transmits (depends on the X\+Bee module -\/ range \mbox{[}0-\/4\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+R\+S\+S\+Itime@{set\+R\+S\+S\+Itime}}
+\index{set\+R\+S\+S\+Itime@{set\+R\+S\+S\+Itime}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+R\+S\+S\+Itime(uint8\+\_\+t time)}{setRSSItime(uint8_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+R\+S\+S\+Itime (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a69431eafd00d4be7d52a4319481ea7a2}{}\label{class_wasp_x_bee_core_a69431eafd00d4be7d52a4319481ea7a2}
+
+
+It sets the R\+S\+SI time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time \+: amount of time to do the P\+WM (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+R\+T\+Cfrom\+Meshlium@{set\+R\+T\+Cfrom\+Meshlium}}
+\index{set\+R\+T\+Cfrom\+Meshlium@{set\+R\+T\+Cfrom\+Meshlium}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+R\+T\+Cfrom\+Meshlium(char $\ast$address)}{setRTCfromMeshlium(char *address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+R\+T\+Cfrom\+Meshlium (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_acfb2f381698ad1f7060e56386a8bd54f}{}\label{class_wasp_x_bee_core_acfb2f381698ad1f7060e56386a8bd54f}
+
+
+It sets the R\+TC settings with Meshlium timestamp configuration. 
+
+This function sends a special Frame to Meshlium (Meshlium\textquotesingle{}s M\+AC address must be indicated as input), and then Meshlium returns an answer with the timestamp. This function parses the info and sets the R\+TC Time and Date. S\+E\+ND /////////////////////////////////////////////////
+
+R\+E\+C\+E\+I\+VE ///////////////////////////////////////////////
+
+P\+A\+R\+SE R\+E\+S\+P\+O\+N\+SE IF S\+U\+C\+C\+E\+SS ////////////////////////////// \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Scanning\+Channels@{set\+Scanning\+Channels}}
+\index{set\+Scanning\+Channels@{set\+Scanning\+Channels}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Scanning\+Channels(uint8\+\_\+t channel\+\_\+\+H, uint8\+\_\+t channel\+\_\+\+L)}{setScanningChannels(uint8_t channel_H, uint8_t channel_L)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Scanning\+Channels (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel\+\_\+H, }
+\item[{uint8\+\_\+t}]{channel\+\_\+L}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_af33faabe269c23967bfe831cc67cc00f}{}\label{class_wasp_x_bee_core_af33faabe269c23967bfe831cc67cc00f}
+
+
+It sets the list of channels to scan when performing an energy scan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & channel\+\_\+H \+: higher channel list byte (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+{\em uint8\+\_\+t} & channel\+\_\+L \+: lower channel list byte (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Scanning\+Time@{set\+Scanning\+Time}}
+\index{set\+Scanning\+Time@{set\+Scanning\+Time}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Scanning\+Time(uint8\+\_\+t $\ast$time)}{setScanningTime(uint8_t *time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Scanning\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a76ca42119faae27647ca40599d140c6d}{}\label{class_wasp_x_bee_core_a76ca42119faae27647ca40599d140c6d}
+
+
+It sets the time the \hyperlink{struct_node}{Node} Discovery is scanning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & time \+: the time the \hyperlink{struct_node}{Node} Discovery is scanning (range \mbox{[}0x01-\/0x\+FC\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Sleep\+Mode@{set\+Sleep\+Mode}}
+\index{set\+Sleep\+Mode@{set\+Sleep\+Mode}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Sleep\+Mode(uint8\+\_\+t sleep)}{setSleepMode(uint8_t sleep)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Sleep\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sleep}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a7c4465619df8a22ca6a6092546f93537}{}\label{class_wasp_x_bee_core_a7c4465619df8a22ca6a6092546f93537}
+
+
+It sets the sleep mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & sleep \+: the sleep mode (range \mbox{[}0-\/5\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Sleep\+Options@{set\+Sleep\+Options}}
+\index{set\+Sleep\+Options@{set\+Sleep\+Options}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Sleep\+Options(uint8\+\_\+t soption)}{setSleepOptions(uint8_t soption)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Sleep\+Options (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{soption}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a4ccf30a905fdd452023c1926b41ba472}{}\label{class_wasp_x_bee_core_a4ccf30a905fdd452023c1926b41ba472}
+
+
+It sets the sleep options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & soption \+: the sleep options (range depends on the X\+Bee module) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!set\+Sleep\+Time@{set\+Sleep\+Time}}
+\index{set\+Sleep\+Time@{set\+Sleep\+Time}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{set\+Sleep\+Time(uint8\+\_\+t $\ast$sleep)}{setSleepTime(uint8_t *sleep)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::set\+Sleep\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{sleep}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a5899f0f9a3fd7668c989f76768bbec9b}{}\label{class_wasp_x_bee_core_a5899f0f9a3fd7668c989f76768bbec9b}
+
+
+It sets time the module is slept. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & sleep \+: the module is slept (range depends on the X\+Bee module) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!sleep@{sleep}}
+\index{sleep@{sleep}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{sleep()}{sleep()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_a15dbaf3f5f69b1400a4b39b2136c6536}{}\label{class_wasp_x_bee_core_a15dbaf3f5f69b1400a4b39b2136c6536}
+
+
+It sets the X\+Bee to sleep, asserting P\+IN 9. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!treat\+Data@{treat\+Data}}
+\index{treat\+Data@{treat\+Data}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{treat\+Data()}{treatData()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+X\+Bee\+Core\+::treat\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ad926c5d5d906579b0be4de7623989cad}{}\label{class_wasp_x_bee_core_ad926c5d5d906579b0be4de7623989cad}
+
+
+It treats the data from X\+Bee U\+A\+RT. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!treat\+Scan@{treat\+Scan}}
+\index{treat\+Scan@{treat\+Scan}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{treat\+Scan()}{treatScan()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::treat\+Scan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a692aef52f76fef48dd21605deb6f9be6}{}\label{class_wasp_x_bee_core_a692aef52f76fef48dd21605deb6f9be6}
+
+
+It parses the ND message received by the X\+Bee module. 
+
+It stores in \textquotesingle{}scanned\+Brothers\textquotesingle{} variable the data extracted from the answer \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!tx\+Status\+Response@{tx\+Status\+Response}}
+\index{tx\+Status\+Response@{tx\+Status\+Response}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{tx\+Status\+Response()}{txStatusResponse()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::tx\+Status\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_aeb522dccf2aa2a4f917a441e813c11a1}{}\label{class_wasp_x_bee_core_aeb522dccf2aa2a4f917a441e813c11a1}
+
+
+It parses the TX Status message received by the 802.\+15.\+4 X\+Bee module. 
+
+This function is used only for 802.\+15.\+4 protocol 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & Byte\+IN \+: array to store the received answer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!tx\+Z\+B\+Status\+Response@{tx\+Z\+B\+Status\+Response}}
+\index{tx\+Z\+B\+Status\+Response@{tx\+Z\+B\+Status\+Response}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{tx\+Z\+B\+Status\+Response()}{txZBStatusResponse()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::tx\+Z\+B\+Status\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a233cf9332dea6f075edd3947f65bd373}{}\label{class_wasp_x_bee_core_a233cf9332dea6f075edd3947f65bd373}
+
+
+It parses the ZB TX Status message received by the X\+Bee module. 
+
+This function is used for all protocols, but the 802.\+15.\+4 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & Byte\+IN \+: array to store the received answer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if no error, \textquotesingle{}1\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!upload\+\_\+firmware@{upload\+\_\+firmware}}
+\index{upload\+\_\+firmware@{upload\+\_\+firmware}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{upload\+\_\+firmware()}{upload_firmware()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Core\+::upload\+\_\+firmware (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_a13f361e12b28f3bee4b5572f35131c96}{}\label{class_wasp_x_bee_core_a13f361e12b28f3bee4b5572f35131c96}
+
+
+It uploads the new firmware. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!wake@{wake}}
+\index{wake@{wake}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{wake()}{wake()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::wake (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_ae562c7cfec273abe61a2e5fe16f9626a}{}\label{class_wasp_x_bee_core_ae562c7cfec273abe61a2e5fe16f9626a}
+
+
+It wakes up the X\+Bee, de-\/asserting P\+IN 9. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!write\+Values@{write\+Values}}
+\index{write\+Values@{write\+Values}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{write\+Values()}{writeValues()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::write\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_core_aae5991a665d6a4b841cf99f98114457d}{}\label{class_wasp_x_bee_core_aae5991a665d6a4b841cf99f98114457d}
+It writes the parameters changed into non-\/volatil memory, being applied when the X\+Bee is set O\+FF
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!\+\_\+send\+\_\+retries@{\+\_\+send\+\_\+retries}}
+\index{\+\_\+send\+\_\+retries@{\+\_\+send\+\_\+retries}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{\+\_\+send\+\_\+retries}{_send_retries}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::\+\_\+send\+\_\+retries}\hypertarget{class_wasp_x_bee_core_a7e4df2ef4900652db6259d640bb3dde0}{}\label{class_wasp_x_bee_core_a7e4df2ef4900652db6259d640bb3dde0}
+
+
+Variable \+: specifies the maximum number of retries to be done. 
+
+If the sending process fails, up to \+\_\+send\+\_\+retries are done \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!data\+\_\+ind@{data\+\_\+ind}}
+\index{data\+\_\+ind@{data\+\_\+ind}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{data\+\_\+ind}{data_ind}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+X\+Bee\+Core\+::data\+\_\+ind\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_af038fd4c9b17ccccca68e19ddcd5680f}{}\label{class_wasp_x_bee_core_af038fd4c9b17ccccca68e19ddcd5680f}
+
+
+Variable \+: index data to make a packet from many different data. 
+
+This variable is used to fill different data arguments as D\+A\+T\+A\+\_\+\+O\+F\+F\+S\+ET when calling set\+Destination\+Params function \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!rx\+Frame\+Type@{rx\+Frame\+Type}}
+\index{rx\+Frame\+Type@{rx\+Frame\+Type}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{rx\+Frame\+Type}{rxFrameType}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::rx\+Frame\+Type\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wasp_x_bee_core_afaf2c3a20d481aad0696152cd8a63ad2}{}\label{class_wasp_x_bee_core_afaf2c3a20d481aad0696152cd8a63ad2}
+
+
+Variable \+: address type. 
+
+It can be\+: \+\_\+16B --$>$ for 16-\/\+Bit address RX frames (only X\+Bee-\/802.\+15.\+4 protocol) \+\_\+64B --$>$ for 64-\/bit address RX frames (only X\+Bee-\/802.\+15.\+4 protocol) N\+O\+R\+M\+A\+L\+\_\+\+RX --$>$ for normal RX frames (for all X\+Bee protocols but 802.\+15.\+4) E\+X\+P\+L\+I\+C\+I\+T\+\_\+\+RX --$>$ for explicit RX indicator frames (for all X\+Bee protocols but 802.\+15.\+4) \index{Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}!X\+Bee\+\_\+\+ON@{X\+Bee\+\_\+\+ON}}
+\index{X\+Bee\+\_\+\+ON@{X\+Bee\+\_\+\+ON}!Wasp\+X\+Bee\+Core@{Wasp\+X\+Bee\+Core}}
+\subsubsection[{\texorpdfstring{X\+Bee\+\_\+\+ON}{XBee_ON}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Core\+::\+X\+Bee\+\_\+\+ON}\hypertarget{class_wasp_x_bee_core_a36a70db11a542cd76745ab7dfbaafff1}{}\label{class_wasp_x_bee_core_a36a70db11a542cd76745ab7dfbaafff1}
+
+
+Attributes /////////////////////////////////////////////////////////////. 
+
+Variable \+: it stores if the X\+Bee module is ON or O\+FF (0-\/1) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_x_bee_core_8h}{Wasp\+X\+Bee\+Core.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+X\+Bee\+Core.\+cpp\end{DoxyCompactItemize}

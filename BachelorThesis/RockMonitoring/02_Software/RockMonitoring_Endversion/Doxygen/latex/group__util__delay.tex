@@ -1,0 +1,22 @@
+\hypertarget{group__util__delay}{}\section{$<$util/delay.h$>$\+: Convenience functions for busy-\/wait delay loops}
+\label{group__util__delay}\index{$<$util/delay.\+h$>$\+: Convenience functions for busy-\/wait delay loops@{$<$util/delay.\+h$>$\+: Convenience functions for busy-\/wait delay loops}}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define F\_CPU 1000000UL  // 1 MHz}
+\textcolor{comment}{//#define F\_CPU 14.7456E6}
+\textcolor{preprocessor}{#include <\hyperlink{util_2delay_8h}{util/delay.h}>}
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+As an alternative method, it is possible to pass the F\+\_\+\+C\+PU macro down to the compiler from the Makefile. Obviously, in that case, no {\ttfamily \#define} statement should be used.
+\end{DoxyNote}
+The functions in this header file are wrappers around the basic busy-\/wait functions from $<$\hyperlink{delay__basic_8h}{util/delay\+\_\+basic.\+h}$>$. They are meant as convenience functions where actual time values can be specified rather than a number of cycles to wait for. The idea behind is that compile-\/time constant expressions will be eliminated by compiler optimization so floating-\/point expressions can be used to calculate the number of delay cycles needed based on the C\+PU frequency passed by the macro F\+\_\+\+C\+PU.
+
+\begin{DoxyNote}{Note}
+In order for these functions to work as intended, compiler optimizations {\itshape must} be enabled, and the delay time {\itshape must} be an expression that is a known constant at compile-\/time. If these requirements are not met, the resulting delay will be much longer (and basically unpredictable), and applications that otherwise do not use floating-\/point calculations will experience severe code bloat by the floating-\/point library routines linked into the application.
+\end{DoxyNote}
+The functions available allow the specification of microsecond, and millisecond delays directly, using the application-\/supplied macro F\+\_\+\+C\+PU as the C\+PU clock frequency (in Hertz). 

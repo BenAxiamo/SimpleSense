@@ -1,0 +1,56 @@
+\hypertarget{group__avr__sfr__notes}{}\section{Additional notes from $<$avr/sfr\+\_\+defs.h$>$}
+\label{group__avr__sfr__notes}\index{Additional notes from $<$avr/sfr\+\_\+defs.\+h$>$@{Additional notes from $<$avr/sfr\+\_\+defs.\+h$>$}}
+The {\ttfamily $<$\hyperlink{sfr__defs_8h_source}{avr/sfr\+\_\+defs.\+h}$>$} file is included by all of the {\ttfamily $<$avr/io\+X\+X\+X\+X.\+h$>$} files, which use macros defined here to make the special function register definitions look like C variables or simple constants, depending on the {\ttfamily \+\_\+\+S\+F\+R\+\_\+\+A\+S\+M\+\_\+\+C\+O\+M\+P\+AT} define. Some examples from {\ttfamily $<$\hyperlink{iocanxx_8h_source}{avr/iocanxx.\+h}$>$} to show how to define such macros\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define PORTA   \_SFR\_IO8(0x02)}
+\textcolor{preprocessor}{#define EEAR    \_SFR\_IO16(0x21)}
+\textcolor{preprocessor}{#define UDR0    \_SFR\_MEM8(0xC6)}
+\textcolor{preprocessor}{#define TCNT3   \_SFR\_MEM16(0x94)}
+\textcolor{preprocessor}{#define CANIDT  \_SFR\_MEM32(0xF0)}
+\end{DoxyCode}
+
+
+If {\ttfamily \+\_\+\+S\+F\+R\+\_\+\+A\+S\+M\+\_\+\+C\+O\+M\+P\+AT} is not defined, C programs can use names like {\ttfamily P\+O\+R\+TA} directly in C expressions (also on the left side of assignment operators) and G\+CC will do the right thing (use short I/O instructions if possible). The {\ttfamily \+\_\+\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET} definition is not used in any way in this case.
+
+Define {\ttfamily \+\_\+\+S\+F\+R\+\_\+\+A\+S\+M\+\_\+\+C\+O\+M\+P\+AT} as 1 to make these names work as simple constants (addresses of the I/O registers). This is necessary when included in preprocessed assembler ($\ast$.S) source files, so it is done automatically if {\ttfamily {\bfseries A\+S\+S\+E\+M\+B\+L\+ER}} is defined. By default, all addresses are defined as if they were memory addresses (used in {\ttfamily lds/sts} instructions). To use these addresses in {\ttfamily in/out} instructions, you must subtract 0x20 from them.
+
+For more backwards compatibility, insert the following at the start of your old assembler source file\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#define \_\_SFR\_OFFSET 0}
+\end{DoxyCode}
+
+
+This automatically subtracts 0x20 from I/O space addresses, but it\textquotesingle{}s a hack, so it is recommended to change your source\+: wrap such addresses in macros defined here, as shown below. After this is done, the {\ttfamily \+\_\+\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET} definition is no longer necessary and can be removed.
+
+Real example -\/ this code could be used in a boot loader that is portable between devices with {\ttfamily S\+P\+M\+CR} at different addresses.
+
+\begin{DoxyVerb}<avr/iom163.h>: #define SPMCR _SFR_IO8(0x37)
+<avr/iom128.h>: #define SPMCR _SFR_MEM8(0x68)
+\end{DoxyVerb}
+
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#if \_SFR\_IO\_REG\_P(SPMCR)}
+    out \_SFR\_IO\_ADDR(SPMCR), r24
+\textcolor{preprocessor}{#else}
+    sts \_SFR\_MEM\_ADDR(SPMCR), r24
+\textcolor{preprocessor}{#endif}
+\end{DoxyCode}
+
+
+You can use the {\ttfamily in/out/cbi/sbi/sbic/sbis} instructions, without the {\ttfamily \+\_\+\+S\+F\+R\+\_\+\+I\+O\+\_\+\+R\+E\+G\+\_\+P} test, if you know that the register is in the I/O space (as with {\ttfamily S\+R\+EG}, for example). If it isn\textquotesingle{}t, the assembler will complain (I/O address out of range 0...0x3f), so this should be fairly safe.
+
+If you do not define {\ttfamily \+\_\+\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET} (so it will be 0x20 by default), all special register addresses are defined as memory addresses (so {\ttfamily S\+R\+EG} is 0x5f), and (if code size and speed are not important, and you don\textquotesingle{}t like the ugly \#if above) you can always use lds/sts to access them. But, this will not work if {\ttfamily \+\_\+\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET} != 0x20, so use a different macro (defined only if {\ttfamily \+\_\+\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET} == 0x20) for safety\+:
+
+
+\begin{DoxyCode}
+sts \_SFR\_ADDR(SPMCR), r24
+\end{DoxyCode}
+
+
+In C programs, all 3 combinations of {\ttfamily \+\_\+\+S\+F\+R\+\_\+\+A\+S\+M\+\_\+\+C\+O\+M\+P\+AT} and {\ttfamily \+\_\+\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET} are supported -\/ the {\ttfamily \+\_\+\+S\+F\+R\+\_\+\+A\+D\+D\+R(\+S\+P\+M\+C\+R)} macro can be used to get the address of the {\ttfamily S\+P\+M\+CR} register (0x57 or 0x68 depending on device). 

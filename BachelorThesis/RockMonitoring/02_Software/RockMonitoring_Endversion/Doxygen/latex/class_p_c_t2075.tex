@@ -1,0 +1,134 @@
+\hypertarget{class_p_c_t2075}{}\section{P\+C\+T2075 Class Reference}
+\label{class_p_c_t2075}\index{P\+C\+T2075@{P\+C\+T2075}}
+
+
+Class that handles the communication to the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}.  
+
+
+
+
+{\ttfamily \#include $<$P\+C\+T2075.\+h$>$}
+
+
+
+Collaboration diagram for P\+C\+T2075\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_p_c_t2075__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_c_t2075_a64b28c17c67573170b0c5614ffb59924}{P\+C\+T2075} ()
+\item 
+void \hyperlink{class_p_c_t2075_ad46bac6d6b214df0f3eba00c88154eb1}{init} (uint8\+\_\+t slave\+Addr)
+\begin{DoxyCompactList}\small\item\em This method initializes the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_p_c_t2075_ae472dd7225a9a4c38badafe5e3fcc622}{get\+Temp} (int8\+\_\+t \&Temp)
+\begin{DoxyCompactList}\small\item\em This method gets the temperatur value of the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_c_t2075_a01d8e93edecac7dcf893ab5d5d6a2081}{go\+To\+Sleep} ()
+\begin{DoxyCompactList}\small\item\em This method sets the Temperature Sensor in shutdown mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_p_c_t2075_a573c2a7938067f7d5f7050b396ec6889}{i2c\+Slave\+Addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles the communication to the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}. 
+
+Definition at line 29 of file P\+C\+T2075.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+C\+T2075@{P\+C\+T2075}!P\+C\+T2075@{P\+C\+T2075}}
+\index{P\+C\+T2075@{P\+C\+T2075}!P\+C\+T2075@{P\+C\+T2075}}
+\subsubsection[{\texorpdfstring{P\+C\+T2075()}{PCT2075()}}]{\setlength{\rightskip}{0pt plus 5cm}P\+C\+T2075\+::\+P\+C\+T2075 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_c_t2075_a64b28c17c67573170b0c5614ffb59924}{}\label{class_p_c_t2075_a64b28c17c67573170b0c5614ffb59924}
+
+
+Definition at line 5 of file P\+C\+T2075.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{P\+C\+T2075@{P\+C\+T2075}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!P\+C\+T2075@{P\+C\+T2075}}
+\subsubsection[{\texorpdfstring{get\+Temp(int8\+\_\+t \&\+Temp)}{getTemp(int8_t &Temp)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t P\+C\+T2075\+::get\+Temp (
+\begin{DoxyParamCaption}
+\item[{int8\+\_\+t \&}]{Temp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_c_t2075_ae472dd7225a9a4c38badafe5e3fcc622}{}\label{class_p_c_t2075_ae472dd7225a9a4c38badafe5e3fcc622}
+
+
+This method gets the temperatur value of the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int18\+\_\+t} & \& Temp, reference to data of temperature sensor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, gives back 1 for Error and 0 for ok 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file P\+C\+T2075.\+cpp.
+
+\index{P\+C\+T2075@{P\+C\+T2075}!go\+To\+Sleep@{go\+To\+Sleep}}
+\index{go\+To\+Sleep@{go\+To\+Sleep}!P\+C\+T2075@{P\+C\+T2075}}
+\subsubsection[{\texorpdfstring{go\+To\+Sleep()}{goToSleep()}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+C\+T2075\+::go\+To\+Sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_c_t2075_a01d8e93edecac7dcf893ab5d5d6a2081}{}\label{class_p_c_t2075_a01d8e93edecac7dcf893ab5d5d6a2081}
+
+
+This method sets the Temperature Sensor in shutdown mode. 
+
+
+
+Definition at line 76 of file P\+C\+T2075.\+cpp.
+
+\index{P\+C\+T2075@{P\+C\+T2075}!init@{init}}
+\index{init@{init}!P\+C\+T2075@{P\+C\+T2075}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t slave\+Addr)}{init(uint8_t slaveAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+C\+T2075\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{slave\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_c_t2075_ad46bac6d6b214df0f3eba00c88154eb1}{}\label{class_p_c_t2075_ad46bac6d6b214df0f3eba00c88154eb1}
+
+
+This method initializes the temperature sensor \hyperlink{class_p_c_t2075}{P\+C\+T2075}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & slave\+Addr, value from 0 to 3, sets the i2c slave address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file P\+C\+T2075.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{P\+C\+T2075@{P\+C\+T2075}!i2c\+Slave\+Addr@{i2c\+Slave\+Addr}}
+\index{i2c\+Slave\+Addr@{i2c\+Slave\+Addr}!P\+C\+T2075@{P\+C\+T2075}}
+\subsubsection[{\texorpdfstring{i2c\+Slave\+Addr}{i2cSlaveAddr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t P\+C\+T2075\+::i2c\+Slave\+Addr\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_p_c_t2075_a573c2a7938067f7d5f7050b396ec6889}{}\label{class_p_c_t2075_a573c2a7938067f7d5f7050b396ec6889}
+
+
+Definition at line 40 of file P\+C\+T2075.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_c_t2075_8h}{P\+C\+T2075.\+h}\item 
+\hyperlink{_p_c_t2075_8cpp}{P\+C\+T2075.\+cpp}\end{DoxyCompactItemize}

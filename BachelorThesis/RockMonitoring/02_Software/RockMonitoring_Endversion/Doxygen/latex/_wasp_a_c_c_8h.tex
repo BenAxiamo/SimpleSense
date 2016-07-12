@@ -1,0 +1,245 @@
+\hypertarget{_wasp_a_c_c_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+A\+CC.h File Reference}
+\label{_wasp_a_c_c_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+A\+C\+C.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+A\+C\+C.\+h}}
+
+
+Library for managing the accelerometer L\+I\+S331\+D\+LH.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_a_c_c}{Wasp\+A\+CC}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_a_c_c}{Wasp\+A\+CC} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ae500cd20a7d0e35146ef78b9f1b6d6f7}{F\+S\+\_\+2G}~2\hypertarget{_wasp_a_c_c_8h_ae500cd20a7d0e35146ef78b9f1b6d6f7}{}\label{_wasp_a_c_c_8h_ae500cd20a7d0e35146ef78b9f1b6d6f7}
+
+\begin{DoxyCompactList}\small\item\em Full-\/scale selecion +-\/2g. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a7deba819fcdd39bdac2d05e20eb887c0}{F\+S\+\_\+4G}~4\hypertarget{_wasp_a_c_c_8h_a7deba819fcdd39bdac2d05e20eb887c0}{}\label{_wasp_a_c_c_8h_a7deba819fcdd39bdac2d05e20eb887c0}
+
+\begin{DoxyCompactList}\small\item\em Full-\/scale selecion +-\/4g. \end{DoxyCompactList}\item 
+\#define {\bfseries F\+S\+\_\+8G}~8\hypertarget{_wasp_a_c_c_8h_a0030372a3339acccbdf9f1b908c8cfd2}{}\label{_wasp_a_c_c_8h_a0030372a3339acccbdf9f1b908c8cfd2}
+
+\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ae70baf5399951da1e7ad45a0ed890832}{cbi}(sfr,  bit)~(\+\_\+\+S\+F\+R\+\_\+\+B\+Y\+TE(sfr) \&= $\sim$\+\_\+\+BV(bit))
+\begin{DoxyCompactList}\small\item\em Function definition to set a register bit to \textquotesingle{}0\textquotesingle{}. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ac4a5536d9bf092116f88b94797ddc882}{sbi}(sfr,  bit)~(\+\_\+\+S\+F\+R\+\_\+\+B\+Y\+TE(sfr) $\vert$= \+\_\+\+BV(bit))
+\begin{DoxyCompactList}\small\item\em Function definition to set a register bit to \textquotesingle{}1\textquotesingle{}. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a9fcb9e460d175bfc7ab4d80bf788b43a}{W\+H\+O\+\_\+\+A\+M\+\_\+I}~0x0F\hypertarget{_wasp_a_c_c_8h_a9fcb9e460d175bfc7ab4d80bf788b43a}{}\label{_wasp_a_c_c_8h_a9fcb9e460d175bfc7ab4d80bf788b43a}
+
+\begin{DoxyCompactList}\small\item\em Who Am I Register Address Device identification register. This register contains the device identifier that for L\+I\+S331\+D\+LH is set to 0x32. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_abd83ea49367ca7850ffc9091890aa46b}{C\+T\+R\+L\+\_\+\+R\+E\+G1}~0x20\hypertarget{_wasp_a_c_c_8h_abd83ea49367ca7850ffc9091890aa46b}{}\label{_wasp_a_c_c_8h_abd83ea49367ca7850ffc9091890aa46b}
+
+\begin{DoxyCompactList}\small\item\em Control Register 1 Address This register contains configuration parameters as powering accelerometer or enabling the different axis. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_afd5ce55297b11bfc3c750a359b80de46}{C\+T\+R\+L\+\_\+\+R\+E\+G2}~0x21\hypertarget{_wasp_a_c_c_8h_afd5ce55297b11bfc3c750a359b80de46}{}\label{_wasp_a_c_c_8h_afd5ce55297b11bfc3c750a359b80de46}
+
+\begin{DoxyCompactList}\small\item\em Control Register 2 Address This register contains configuration parameters related with the high-\/pass filter. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_acdb673970b82f2380da68c9e8d1dc5c6}{C\+T\+R\+L\+\_\+\+R\+E\+G3}~0x22\hypertarget{_wasp_a_c_c_8h_acdb673970b82f2380da68c9e8d1dc5c6}{}\label{_wasp_a_c_c_8h_acdb673970b82f2380da68c9e8d1dc5c6}
+
+\begin{DoxyCompactList}\small\item\em Control Register 3 Address This register contains configuration parameters as enabling interruptions or data type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a36c532b0a660c101907dcad7ee399fbd}{C\+T\+R\+L\+\_\+\+R\+E\+G4}~0x23\hypertarget{_wasp_a_c_c_8h_a36c532b0a660c101907dcad7ee399fbd}{}\label{_wasp_a_c_c_8h_a36c532b0a660c101907dcad7ee399fbd}
+
+\begin{DoxyCompactList}\small\item\em Control Register 4 Address This register contains configuration parameters related with the Full-\/scale selection, data type, self test parameters and S\+PI interface mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a97cbbf0a1e80e40544629e925e5a9026}{C\+T\+R\+L\+\_\+\+R\+E\+G5}~0x24\hypertarget{_wasp_a_c_c_8h_a97cbbf0a1e80e40544629e925e5a9026}{}\label{_wasp_a_c_c_8h_a97cbbf0a1e80e40544629e925e5a9026}
+
+\begin{DoxyCompactList}\small\item\em Control Register 5 Address This register contains configuration parameters related with the turn-\/on mode selection for sleep to wake function. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a8d1b8af192ee3be491a2289fb45ca58a}{H\+P\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+R\+E\+S\+ET}~0x25\hypertarget{_wasp_a_c_c_8h_a8d1b8af192ee3be491a2289fb45ca58a}{}\label{_wasp_a_c_c_8h_a8d1b8af192ee3be491a2289fb45ca58a}
+
+\begin{DoxyCompactList}\small\item\em High Pass Filter Register Address Dummy register. Reading at this address zeroes instantaneously the content of the internal high pass-\/filter. If the high pass filter is enabled all three axes are instantaneously set to 0g. This allows to overcome the settling time of the high pass filter. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a1f7e79cfe81dc06414550fa52418941e}{S\+T\+A\+T\+U\+S\+\_\+\+R\+EG}~0x27\hypertarget{_wasp_a_c_c_8h_a1f7e79cfe81dc06414550fa52418941e}{}\label{_wasp_a_c_c_8h_a1f7e79cfe81dc06414550fa52418941e}
+
+\begin{DoxyCompactList}\small\item\em Status Register Address This register indicates X, Y and Z axis data overrun and X, Y and Z axis new data available. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a7a4d341c8dd90a78b5d073c450ad9fe6}{O\+U\+T\+\_\+\+X\+\_\+L}~0x28\hypertarget{_wasp_a_c_c_8h_a7a4d341c8dd90a78b5d073c450ad9fe6}{}\label{_wasp_a_c_c_8h_a7a4d341c8dd90a78b5d073c450ad9fe6}
+
+\begin{DoxyCompactList}\small\item\em X axis acceleration register lower bits address The value is expressed as two’s complement. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_af3419eb79d96b0179006217d77eb093c}{O\+U\+T\+\_\+\+X\+\_\+H}~0x29\hypertarget{_wasp_a_c_c_8h_af3419eb79d96b0179006217d77eb093c}{}\label{_wasp_a_c_c_8h_af3419eb79d96b0179006217d77eb093c}
+
+\begin{DoxyCompactList}\small\item\em X axis acceleration register higher bits address The value is expressed as two’s complement. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_afb7888eaca1ba1dd4c7702a7da5b132e}{O\+U\+T\+\_\+\+Y\+\_\+L}~0x2A\hypertarget{_wasp_a_c_c_8h_afb7888eaca1ba1dd4c7702a7da5b132e}{}\label{_wasp_a_c_c_8h_afb7888eaca1ba1dd4c7702a7da5b132e}
+
+\begin{DoxyCompactList}\small\item\em Y axis acceleration register lower bits address The value is expressed as two’s complement. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ac1dcb47bc35099013ba90efe93d108fd}{O\+U\+T\+\_\+\+Y\+\_\+H}~0x2B\hypertarget{_wasp_a_c_c_8h_ac1dcb47bc35099013ba90efe93d108fd}{}\label{_wasp_a_c_c_8h_ac1dcb47bc35099013ba90efe93d108fd}
+
+\begin{DoxyCompactList}\small\item\em Y axis acceleration register higher bits address The value is expressed as two’s complement. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a1c28426236e35c599d9804b7b26d35c9}{O\+U\+T\+\_\+\+Z\+\_\+L}~0x2C\hypertarget{_wasp_a_c_c_8h_a1c28426236e35c599d9804b7b26d35c9}{}\label{_wasp_a_c_c_8h_a1c28426236e35c599d9804b7b26d35c9}
+
+\begin{DoxyCompactList}\small\item\em Z axis acceleration register lower bits address The value is expressed as two’s complement. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a98fe007407ff9fbb53d7d70dbd44cf03}{O\+U\+T\+\_\+\+Z\+\_\+H}~0x2D\hypertarget{_wasp_a_c_c_8h_a98fe007407ff9fbb53d7d70dbd44cf03}{}\label{_wasp_a_c_c_8h_a98fe007407ff9fbb53d7d70dbd44cf03}
+
+\begin{DoxyCompactList}\small\item\em Z axis acceleration register higher bits address The value is expressed as two’s complement. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ac4c771f61d79d83398f9a503ef4a3f88}{I\+N\+T1\+\_\+\+C\+FG}~0x30\hypertarget{_wasp_a_c_c_8h_ac4c771f61d79d83398f9a503ef4a3f88}{}\label{_wasp_a_c_c_8h_ac4c771f61d79d83398f9a503ef4a3f88}
+
+\begin{DoxyCompactList}\small\item\em Address for the Interrupt 1 configuration register. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_af8662806f48b92f6979ad5a94b6864aa}{I\+N\+T1\+\_\+\+S\+RC}~0x31
+\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a6617aba37b5307e4a6c4231ec6f200da}{I\+N\+T1\+\_\+\+T\+HS}~0x32\hypertarget{_wasp_a_c_c_8h_a6617aba37b5307e4a6c4231ec6f200da}{}\label{_wasp_a_c_c_8h_a6617aba37b5307e4a6c4231ec6f200da}
+
+\begin{DoxyCompactList}\small\item\em Interrupt 1 threshold address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a4dfd8e11ec25b1b895d09f694fe4f938}{I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+ON}~0x33\hypertarget{_wasp_a_c_c_8h_a4dfd8e11ec25b1b895d09f694fe4f938}{}\label{_wasp_a_c_c_8h_a4dfd8e11ec25b1b895d09f694fe4f938}
+
+\begin{DoxyCompactList}\small\item\em Interrupt 1 duration value register address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a5da6eb23c44e3014f44c55bd116af44a}{I\+N\+T1\+\_\+\+T\+H\+S\+\_\+val}~0x1C\hypertarget{_wasp_a_c_c_8h_a5da6eb23c44e3014f44c55bd116af44a}{}\label{_wasp_a_c_c_8h_a5da6eb23c44e3014f44c55bd116af44a}
+
+\begin{DoxyCompactList}\small\item\em Free-\/\+Fall Threshold. When a free-\/fall event is caused, the acceleration measurements along all the axes go to zero. I\+N\+T1\+\_\+\+T\+H\+S\+\_\+val limits a “free-\/fall zone” which is defined around the zero-\/g level and where all accelerations are small enough to generate the interrupt. When Full scale is +-\/2g, 16mg is aproximately I\+N\+T1\+\_\+\+T\+H\+S\+\_\+val=0x01. Full scale selection implies a conversion which is made inside set\+FF function Default value is set to 448mg which is expresed as I\+N\+T1\+\_\+\+T\+H\+S\+\_\+val=0x1C. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a33b4a430da82b5287fba483d8fb4947d}{I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val}~0x03
+\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a4f344c364467bb313654b41865fb3ba4}{I\+N\+T1\+\_\+\+C\+F\+G\+\_\+val}~0x95\hypertarget{_wasp_a_c_c_8h_a4f344c364467bb313654b41865fb3ba4}{}\label{_wasp_a_c_c_8h_a4f344c364467bb313654b41865fb3ba4}
+
+\begin{DoxyCompactList}\small\item\em Free Fall Configuration Free Fall Interruption Configuration, setting Z,Y,X High interrupt event. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a4d5017cedccd069f2b3e78d9066f8d36}{A\+OI}~128\hypertarget{_wasp_a_c_c_8h_a4d5017cedccd069f2b3e78d9066f8d36}{}\label{_wasp_a_c_c_8h_a4d5017cedccd069f2b3e78d9066f8d36}
+
+\begin{DoxyCompactList}\small\item\em A\+N\+D/\+OR Combination of interrupt events This bit is contained in I\+N\+T1\+\_\+\+C\+FG. When (A\+OI=0 ; \+\_\+6D=0) then OR combination of interrupts events When (A\+OI=0 ; \+\_\+6D=1) then 6 direction movement recognition When (A\+OI=1 ; \+\_\+6D=0) then A\+ND combination of interrupts events When (A\+OI=1 ; \+\_\+6D=1) then 6 direction position recognition. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a10bb47e17634606319ee45d4918f32a9}{\+\_\+6D}~64\hypertarget{_wasp_a_c_c_8h_a10bb47e17634606319ee45d4918f32a9}{}\label{_wasp_a_c_c_8h_a10bb47e17634606319ee45d4918f32a9}
+
+\begin{DoxyCompactList}\small\item\em 6 direction detection function enable This bit is contained in I\+N\+T1\+\_\+\+C\+FG. When (A\+OI=0 ; \+\_\+6D=0) then OR combination of interrupts events When (A\+OI=0 ; \+\_\+6D=1) then 6 direction movement recognition When (A\+OI=1 ; \+\_\+6D=0) then A\+ND combination of interrupts events When (A\+OI=1 ; \+\_\+6D=1) then 6 direction position recognition \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_afeb32dbe908b93c8ef49a92b0feb49a5}{Z\+H\+IE}~32\hypertarget{_wasp_a_c_c_8h_afeb32dbe908b93c8ef49a92b0feb49a5}{}\label{_wasp_a_c_c_8h_afeb32dbe908b93c8ef49a92b0feb49a5}
+
+\begin{DoxyCompactList}\small\item\em Enable interrupt generation on Z high event This bit is contained in I\+N\+T1\+\_\+\+C\+FG. \textquotesingle{}1\textquotesingle{} enables Z High event interruption. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ae0ef76f66c8e98144d91e9c453d3c32f}{Z\+L\+IE}~16\hypertarget{_wasp_a_c_c_8h_ae0ef76f66c8e98144d91e9c453d3c32f}{}\label{_wasp_a_c_c_8h_ae0ef76f66c8e98144d91e9c453d3c32f}
+
+\begin{DoxyCompactList}\small\item\em Z Low event interruption This bit is contained in I\+N\+T1\+\_\+\+C\+FG. \textquotesingle{}1\textquotesingle{} enables Z Low event interruption. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a95f15dc35c4a00c583be6f7926646fc6}{Y\+H\+IE}~8\hypertarget{_wasp_a_c_c_8h_a95f15dc35c4a00c583be6f7926646fc6}{}\label{_wasp_a_c_c_8h_a95f15dc35c4a00c583be6f7926646fc6}
+
+\begin{DoxyCompactList}\small\item\em Y High event interruption This bit is contained in I\+N\+T1\+\_\+\+C\+FG. \textquotesingle{}1\textquotesingle{} enables Y High event interruption. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a8477158408d09971c341d42e21d8aeae}{Y\+L\+IE}~4\hypertarget{_wasp_a_c_c_8h_a8477158408d09971c341d42e21d8aeae}{}\label{_wasp_a_c_c_8h_a8477158408d09971c341d42e21d8aeae}
+
+\begin{DoxyCompactList}\small\item\em Y Low event interruption This bit is contained in I\+N\+T1\+\_\+\+C\+FG. \textquotesingle{}1\textquotesingle{} enables Y Low event interruption. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a35dc68bba9407b09d3879f2439ff7b42}{X\+H\+IE}~2\hypertarget{_wasp_a_c_c_8h_a35dc68bba9407b09d3879f2439ff7b42}{}\label{_wasp_a_c_c_8h_a35dc68bba9407b09d3879f2439ff7b42}
+
+\begin{DoxyCompactList}\small\item\em X High event interruption This bit is contained in I\+N\+T1\+\_\+\+C\+FG. \textquotesingle{}1\textquotesingle{} enables X High event interruption. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a72eece2a93114de7e78421e9a4f0ff6a}{X\+L\+IE}~1\hypertarget{_wasp_a_c_c_8h_a72eece2a93114de7e78421e9a4f0ff6a}{}\label{_wasp_a_c_c_8h_a72eece2a93114de7e78421e9a4f0ff6a}
+
+\begin{DoxyCompactList}\small\item\em X Low event interruption This bit is contained in I\+N\+T1\+\_\+\+C\+FG. \textquotesingle{}1\textquotesingle{} enables X Low event interruption. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a1d9eb3fc5e84f026318e462c3d655dab}{S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS}~0
+\begin{DoxyCompactList}\small\item\em Accelerometer A\+DC modes. Signed 12 bits in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a67b4490e1b587b043634108c1adcc410}{U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS}~1
+\begin{DoxyCompactList}\small\item\em Accelerometer A\+DC modes. Unsigned 16 bits in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_aa2037db34fa03250f24c8a4898d23425}{A\+C\+C\+\_\+\+ON}~1\hypertarget{_wasp_a_c_c_8h_aa2037db34fa03250f24c8a4898d23425}{}\label{_wasp_a_c_c_8h_aa2037db34fa03250f24c8a4898d23425}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. ON in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a9a32928fc1a3b01879ed33fa499019f1}{A\+C\+C\+\_\+\+P\+O\+W\+E\+R\+\_\+\+D\+O\+WN}~2\hypertarget{_wasp_a_c_c_8h_a9a32928fc1a3b01879ed33fa499019f1}{}\label{_wasp_a_c_c_8h_a9a32928fc1a3b01879ed33fa499019f1}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. O\+FF in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a956ad7b2479dc545fdbe97f65271b607}{A\+C\+C\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+1}~3\hypertarget{_wasp_a_c_c_8h_a956ad7b2479dc545fdbe97f65271b607}{}\label{_wasp_a_c_c_8h_a956ad7b2479dc545fdbe97f65271b607}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. Low-\/power 1 -\/ data rate 0.\+5\+Hz. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_af932a6ab83e67a35608953a8dd410549}{A\+C\+C\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+2}~4\hypertarget{_wasp_a_c_c_8h_af932a6ab83e67a35608953a8dd410549}{}\label{_wasp_a_c_c_8h_af932a6ab83e67a35608953a8dd410549}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. Low-\/power 1 -\/ data rate 1\+Hz. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a650464683906a2df5b342ee3c3de2884}{A\+C\+C\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+3}~5\hypertarget{_wasp_a_c_c_8h_a650464683906a2df5b342ee3c3de2884}{}\label{_wasp_a_c_c_8h_a650464683906a2df5b342ee3c3de2884}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. Low-\/power 1 -\/ data rate 2\+Hz. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a5194724cd56a3129f2d2618b47e46bc0}{A\+C\+C\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+4}~6\hypertarget{_wasp_a_c_c_8h_a5194724cd56a3129f2d2618b47e46bc0}{}\label{_wasp_a_c_c_8h_a5194724cd56a3129f2d2618b47e46bc0}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. Low-\/power 1 -\/ data rate 5\+Hz. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a074920e11ad66aeb5f77afde0b6991d9}{A\+C\+C\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+5}~7\hypertarget{_wasp_a_c_c_8h_a074920e11ad66aeb5f77afde0b6991d9}{}\label{_wasp_a_c_c_8h_a074920e11ad66aeb5f77afde0b6991d9}
+
+\begin{DoxyCompactList}\small\item\em Accelerometer Operation modes. Low-\/power 1 -\/ data rate 10\+Hz. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a29c9f46028ecb92e7c9cf90534deb2c0}{A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}~1
+\begin{DoxyCompactList}\small\item\em Flag values. Error reading register in this case. \end{DoxyCompactList}\item 
+\#define {\bfseries A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG}~2\hypertarget{_wasp_a_c_c_8h_a412b4720d3e66f1124218e6975d18a39}{}\label{_wasp_a_c_c_8h_a412b4720d3e66f1124218e6975d18a39}
+
+\item 
+\#define \hyperlink{_wasp_a_c_c_8h_ab8c0e75c561a50e745b78527067d16fc}{A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+50}~0\hypertarget{_wasp_a_c_c_8h_ab8c0e75c561a50e745b78527067d16fc}{}\label{_wasp_a_c_c_8h_ab8c0e75c561a50e745b78527067d16fc}
+
+\begin{DoxyCompactList}\small\item\em 50\+Hz Sampling Rate \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a25669f11add693fb5b0455ee57eff4d8}{A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+100}~1\hypertarget{_wasp_a_c_c_8h_a25669f11add693fb5b0455ee57eff4d8}{}\label{_wasp_a_c_c_8h_a25669f11add693fb5b0455ee57eff4d8}
+
+\begin{DoxyCompactList}\small\item\em 100\+Hz Sampling Rate \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a479d2ca9f957c16929fa4528f1b4bac6}{A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+400}~2\hypertarget{_wasp_a_c_c_8h_a479d2ca9f957c16929fa4528f1b4bac6}{}\label{_wasp_a_c_c_8h_a479d2ca9f957c16929fa4528f1b4bac6}
+
+\begin{DoxyCompactList}\small\item\em 400\+Hz Sampling Rate \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_aad7aff4f47358ec5b9e845c0479f54a6}{A\+C\+C\+\_\+\+R\+A\+T\+E\+\_\+1000}~3\hypertarget{_wasp_a_c_c_8h_aad7aff4f47358ec5b9e845c0479f54a6}{}\label{_wasp_a_c_c_8h_aad7aff4f47358ec5b9e845c0479f54a6}
+
+\begin{DoxyCompactList}\small\item\em 1000\+Hz Sampling Rate \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a359afd6937727dbe8deee27136244dde}{N\+O\+\_\+\+I\+NT}~0\hypertarget{_wasp_a_c_c_8h_a359afd6937727dbe8deee27136244dde}{}\label{_wasp_a_c_c_8h_a359afd6937727dbe8deee27136244dde}
+
+\begin{DoxyCompactList}\small\item\em No interruption set. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a8212b2b020d6c7a8913b3e03fded2c68}{F\+F\+\_\+\+I\+NT}~1\hypertarget{_wasp_a_c_c_8h_a8212b2b020d6c7a8913b3e03fded2c68}{}\label{_wasp_a_c_c_8h_a8212b2b020d6c7a8913b3e03fded2c68}
+
+\begin{DoxyCompactList}\small\item\em Free Fall interruption set. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_aebd535e034560a893470bc5fcfbaf238}{I\+W\+U\+\_\+\+I\+NT}~2\hypertarget{_wasp_a_c_c_8h_aebd535e034560a893470bc5fcfbaf238}{}\label{_wasp_a_c_c_8h_aebd535e034560a893470bc5fcfbaf238}
+
+\begin{DoxyCompactList}\small\item\em Inertial Wake-\/\+Up interruption set. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a82b39179af1cb0f437461bc7cab9332e}{\+\_\+6\+D\+M\+O\+V\+\_\+\+I\+NT}~3\hypertarget{_wasp_a_c_c_8h_a82b39179af1cb0f437461bc7cab9332e}{}\label{_wasp_a_c_c_8h_a82b39179af1cb0f437461bc7cab9332e}
+
+\begin{DoxyCompactList}\small\item\em 6D Movement interruption set \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_a_c_c_8h_a640f1b5baad73166390370f7670483e0}{\+\_\+6\+D\+P\+O\+S\+\_\+\+I\+NT}~4\hypertarget{_wasp_a_c_c_8h_a640f1b5baad73166390370f7670483e0}{}\label{_wasp_a_c_c_8h_a640f1b5baad73166390370f7670483e0}
+
+\begin{DoxyCompactList}\small\item\em 6D Position interruption set \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_a_c_c}{Wasp\+A\+CC} {\bfseries A\+CC}\hypertarget{_wasp_a_c_c_8h_a733d632ccdc37d379cd7b47e46e02cdc}{}\label{_wasp_a_c_c_8h_a733d632ccdc37d379cd7b47e46e02cdc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the accelerometer L\+I\+S331\+D\+LH. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+2 Design\+: David Gascón Implementation\+: David Cuartielles, Alberto Bielsa, Marcos Yarza 
+
+\subsection{Macro Definition Documentation}
+\index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG@{A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}}
+\index{A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG@{A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}{ACC_ERROR_READING}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG~1}\hypertarget{_wasp_a_c_c_8h_a29c9f46028ecb92e7c9cf90534deb2c0}{}\label{_wasp_a_c_c_8h_a29c9f46028ecb92e7c9cf90534deb2c0}
+
+
+Flag values. Error reading register in this case. 
+
+Flag values. Error writing register in this case. \index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!cbi@{cbi}}
+\index{cbi@{cbi}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{cbi}{cbi}}]{\setlength{\rightskip}{0pt plus 5cm}\#define cbi(
+\begin{DoxyParamCaption}
+\item[{}]{sfr, }
+\item[{}]{bit}
+\end{DoxyParamCaption}
+)~(\+\_\+\+S\+F\+R\+\_\+\+B\+Y\+TE(sfr) \&= $\sim$\+\_\+\+BV(bit))}\hypertarget{_wasp_a_c_c_8h_ae70baf5399951da1e7ad45a0ed890832}{}\label{_wasp_a_c_c_8h_ae70baf5399951da1e7ad45a0ed890832}
+
+
+Function definition to set a register bit to \textquotesingle{}0\textquotesingle{}. 
+
+\textquotesingle{}sfr\textquotesingle{} is the register. \textquotesingle{}bit\textquotesingle{} is the register bit to change \index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val@{I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val}}
+\index{I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val@{I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val}{INT1_DURATION_val}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val~0x03}\hypertarget{_wasp_a_c_c_8h_a33b4a430da82b5287fba483d8fb4947d}{}\label{_wasp_a_c_c_8h_a33b4a430da82b5287fba483d8fb4947d}
+Minimum Free-\/\+Fall event duration to be recognised in order to avoid false detections. Event time is calculated as\+: time(seconds)=I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val/\+O\+DR Default value is I\+N\+T1\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+val 0x03. If O\+DR is set to 50 Hz, this means that the minimum event duration is set to\+: 3/50=60ms \index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!I\+N\+T1\+\_\+\+S\+RC@{I\+N\+T1\+\_\+\+S\+RC}}
+\index{I\+N\+T1\+\_\+\+S\+RC@{I\+N\+T1\+\_\+\+S\+RC}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{I\+N\+T1\+\_\+\+S\+RC}{INT1_SRC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T1\+\_\+\+S\+RC~0x31}\hypertarget{_wasp_a_c_c_8h_af8662806f48b92f6979ad5a94b6864aa}{}\label{_wasp_a_c_c_8h_af8662806f48b92f6979ad5a94b6864aa}
+1 source register. Read only register. Reading at this address clears I\+N\+T1\+\_\+\+S\+RC IA bit (and the interrupt signal on I\+NT 1 pin) and allows the refreshment of data in the I\+N\+T1\+\_\+\+S\+RC register if the latched option was chosen \index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!sbi@{sbi}}
+\index{sbi@{sbi}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{sbi}{sbi}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sbi(
+\begin{DoxyParamCaption}
+\item[{}]{sfr, }
+\item[{}]{bit}
+\end{DoxyParamCaption}
+)~(\+\_\+\+S\+F\+R\+\_\+\+B\+Y\+TE(sfr) $\vert$= \+\_\+\+BV(bit))}\hypertarget{_wasp_a_c_c_8h_ac4a5536d9bf092116f88b94797ddc882}{}\label{_wasp_a_c_c_8h_ac4a5536d9bf092116f88b94797ddc882}
+
+
+Function definition to set a register bit to \textquotesingle{}1\textquotesingle{}. 
+
+\textquotesingle{}sfr\textquotesingle{} is the register. \textquotesingle{}bit\textquotesingle{} is the register bit to change \index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS@{S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS}}
+\index{S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS@{S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS}{SIGNED_12_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+I\+G\+N\+E\+D\+\_\+12\+\_\+\+B\+I\+TS~0}\hypertarget{_wasp_a_c_c_8h_a1d9eb3fc5e84f026318e462c3d655dab}{}\label{_wasp_a_c_c_8h_a1d9eb3fc5e84f026318e462c3d655dab}
+
+
+Accelerometer A\+DC modes. Signed 12 bits in this case. 
+
+This is the D\+AS bit in the C\+T\+R\+L2 register \index{Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}!U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS@{U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS}}
+\index{U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS@{U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS}!Wasp\+A\+C\+C.\+h@{Wasp\+A\+C\+C.\+h}}
+\subsubsection[{\texorpdfstring{U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS}{UNSIGNED_16_BITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+N\+S\+I\+G\+N\+E\+D\+\_\+16\+\_\+\+B\+I\+TS~1}\hypertarget{_wasp_a_c_c_8h_a67b4490e1b587b043634108c1adcc410}{}\label{_wasp_a_c_c_8h_a67b4490e1b587b043634108c1adcc410}
+
+
+Accelerometer A\+DC modes. Unsigned 16 bits in this case. 
+
+This is the D\+AS bit in the C\+T\+R\+L2 register 

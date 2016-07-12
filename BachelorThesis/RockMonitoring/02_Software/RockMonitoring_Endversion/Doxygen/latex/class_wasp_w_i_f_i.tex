@@ -1,0 +1,1945 @@
+\hypertarget{class_wasp_w_i_f_i}{}\section{Wasp\+W\+I\+FI Class Reference}
+\label{class_wasp_w_i_f_i}\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+
+
+\hyperlink{class_wasp_w_i_f_i}{Wasp\+W\+I\+FI} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+W\+I\+F\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_w_i_f_i_ac890dc3d2e39ca762d65b68f88beb386}{Wasp\+W\+I\+FI} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. Initializes the necessary variables. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_w_i_f_i_aa4e8b8b9cc2ee8350515ce6aa6bdb6bb}{ON} (uint8\+\_\+t sock)
+\begin{DoxyCompactList}\small\item\em Opens the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a758d72a782c36343552e9a8394ae2614}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em Closes the U\+A\+RT and powers off the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_abd0d95e039f21a1abd3f72bab8fae3ba}{join} (char $\ast$ssid)
+\begin{DoxyCompactList}\small\item\em Joins the chosen ssid. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ab5fc134ae4e98d1be4daa10dc65e7c1d}{join\+A\+Pnum} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Joins a network AP from the scan list. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a7c3793459cf4dfac7d062b54648660d4}{leave} ()
+\begin{DoxyCompactList}\small\item\em If connected, leaves the connected network. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ab05574e0cb8dd1cac2a2546ccf9ef0e0}{set\+Channel} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the wlan channel, 1-\/13 is the valid range for a fixed channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ae569b2fc6a4b047e9b4c079dbe85eaa9}{set\+E\+S\+S\+ID} (char $\ast$ssid)
+\begin{DoxyCompactList}\small\item\em Sets the E\+S\+S\+ID of the wlan. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a997a23f867bf5b3cfae9e96949ddd2b3}{set\+Auth\+Key} (uint8\+\_\+t sec\+Mode, char $\ast$pass)
+\begin{DoxyCompactList}\small\item\em Sets the Key or the passphrase of the wlan. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a034c0cf54e592cea0dde3074f81cb0f5}{set\+Autojoin\+Auth} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the authentication mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a9d9dd5a231d8cb446034598f398b358d}{set\+Join\+Mode} (uint8\+\_\+t val)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a2bd316a7a19257e07deadd6262a08ad7}{set\+A\+Pretries} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the link monitor timeout threshold. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ad15ad4c4f2b23c29ef3163e1eff736ca}{set\+Scan\+Options} (uint16\+\_\+t time, char $\ast$mask, bool passive)
+\begin{DoxyCompactList}\small\item\em Sets the Scan options, but does not launch the scan. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a06350bb18d55a43ad02c18cb87a575e0}{scan} ()
+\begin{DoxyCompactList}\small\item\em Launches the scan. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ab1283eabe3c8921efcf36c0ac5967229}{set\+T\+X\+Rate} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the Transmission Rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a0fb355d61a34b565f3136e0948bbc827}{set\+T\+X\+Power} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the Transmission Power. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a1738c5008aabc7f542d0b5bbd1c99416}{set\+I\+P\+Window} (uint16\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the IP Window value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ad0cc0349c89e08a10252992c0935f6d9}{set\+Join\+Time} (uint16\+\_\+t val)
+\item 
+void \hyperlink{class_wasp_w_i_f_i_ae6a481f7e5c40fd726dc598262867c95}{send\+Ping} (ip\+Addr ip)
+\begin{DoxyCompactList}\small\item\em Sends a ping to a remote specified host. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_w_i_f_i_a89dd2032471f286882c35d2230f90b07}{resolve} (char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name})
+\begin{DoxyCompactList}\small\item\em Performs a D\+NS query on the supplied hostname. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_aeee6743fc13ef36b6634f4d81d561dc5}{set\+Time\+From\+Server} (ip\+Addr ip, uint16\+\_\+t port, uint8\+\_\+t interval)
+\begin{DoxyCompactList}\small\item\em Synchronizes the time from the server. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a339bb1b6719c55a2279b2b9e57ca7902}{set\+Sleep} (uint8\+\_\+t s\+Time, uint8\+\_\+t s\+Cycle)
+\begin{DoxyCompactList}\small\item\em Sets the sleep time and the wake time (in seconds). \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_afc99c2f1ebffac0686e061635eadc2ab}{set\+Debug\+Mode} (uint8\+\_\+t val)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a97cabbedcce107175cc6cc472fa9054c}{set\+GW} (ip\+Addr ip)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_gateway}{Gateway} address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a9c18acb0df5932a4effbd177fb6d2050}{set\+Netmask} (ip\+Addr netmask)
+\begin{DoxyCompactList}\small\item\em Sets the netmask. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_aca1c5c2787170645b4eb104b7c4dab21}{set\+Remote\+Host} (ip\+Addr ip, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Sets the Remote Host. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a0cdbe1677ec7ed423c73372566d8c07a}{set\+Local\+Port} (uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Sets the Local Port. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a1d2eea150d41b37aa4dfb3dce097814d}{set\+Ip} (ip\+Addr ip)
+\begin{DoxyCompactList}\small\item\em Sets the IP address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ab2ab440670add32aa37159e325b01922}{set\+D\+H\+C\+Poptions} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the D\+H\+CP options. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ac4ae053e7a3005dcd56a359fdc557d4c}{set\+I\+Poptions} (uint8\+\_\+t val)
+\begin{DoxyCompactList}\small\item\em Sets the T\+C\+P/\+IP functions. Value is a bit mapped register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ae914549e2773f718218bf615887b46c7}{set\+Connection\+Options} (uint8\+\_\+t val)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ad01285dacfcbd9284ebee63566d7d410}{set\+T\+C\+Ppassw} (char $\ast$password)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ac23ad05bf419ce2dd028bf1e212174e9}{set\+D\+NS} (uint8\+\_\+t \hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type}, ip\+Addr ip, char $\ast$\hyperlink{_sd_fat_structs_8h_a30308c9b983377042fd2cc8900454fb1}{name})
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a53afc754c1f0aede89c91e28c30ae8e5}{set\+F\+TP} (ip\+Addr ip, uint16\+\_\+t port, uint8\+\_\+t mode, uint8\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Sets the F\+TP parameters. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ab3bcb791e15d3c138251fab80f32f223}{get\+U\+RL} (uint8\+\_\+t opt, char $\ast$host, char $\ast$request)
+\begin{DoxyCompactList}\small\item\em Sets the http config and opens an H\+T\+TP connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries get\+U\+RL} (uint8\+\_\+t opt, char $\ast$host, int port, char $\ast$request)\hypertarget{class_wasp_w_i_f_i_abf95bfd143ffd0701caaf8ee70e2482f}{}\label{class_wasp_w_i_f_i_abf95bfd143ffd0701caaf8ee70e2482f}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ac4012f34188aa513587e4138eb41cf1b}{get\+U\+RL} (uint8\+\_\+t opt, char $\ast$host, char $\ast$url, char $\ast$body)
+\begin{DoxyCompactList}\small\item\em Sets the http config and opens an H\+T\+TP connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries get\+U\+RL} (uint8\+\_\+t opt, char $\ast$host, int port, char $\ast$url, char $\ast$body)\hypertarget{class_wasp_w_i_f_i_a531fa81a30214223f863e061d1d191a0}{}\label{class_wasp_w_i_f_i_a531fa81a30214223f863e061d1d191a0}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a49388ab8fc5571a72ebd96d5c8651406}{get\+U\+RL} (uint8\+\_\+t opt, char $\ast$host, char $\ast$request, uint8\+\_\+t $\ast$buffer, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Sets the http config and opens an H\+T\+TP connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_aca7d3ce0724dc498e0c8ef742e353f7d}{send\+H\+T\+T\+Pframe} (uint8\+\_\+t opt, char $\ast$host, int port, uint8\+\_\+t $\ast$\hyperlink{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}{frame}, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Sets the http config and opens an H\+T\+TP connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries send\+H\+T\+T\+Pframe} (uint8\+\_\+t opt, char $\ast$host, int port, char $\ast$request, uint8\+\_\+t $\ast$\hyperlink{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}{frame}, uint16\+\_\+t len)\hypertarget{class_wasp_w_i_f_i_ab9c0e51069a47a5025140a07d7b762de}{}\label{class_wasp_w_i_f_i_ab9c0e51069a47a5025140a07d7b762de}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ac317491b020c712c4fb88f383529e31d}{set\+T\+C\+Pclient} (ip\+Addr ip\+\_\+remote, uint16\+\_\+t port\+\_\+remote, uint16\+\_\+t port\+\_\+local)
+\begin{DoxyCompactList}\small\item\em Sets the configuration and opens a T\+CP client connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a1bd8fb247d4ab83d7cd3c93657e5d705}{set\+T\+C\+Pclient} (uint8\+\_\+t opt, char $\ast$host, uint16\+\_\+t port\+\_\+remote, uint16\+\_\+t port\+\_\+local)\hypertarget{class_wasp_w_i_f_i_a1bd8fb247d4ab83d7cd3c93657e5d705}{}\label{class_wasp_w_i_f_i_a1bd8fb247d4ab83d7cd3c93657e5d705}
+
+\begin{DoxyCompactList}\small\item\em Sets the configuration and opens a T\+CP client connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a147034d95622ff4a96591e82c899e0c5}{set\+T\+C\+Pserver} (uint16\+\_\+t port\+\_\+local)
+\begin{DoxyCompactList}\small\item\em Sets the configuration and opens a T\+CP server connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a1415970763b9ca9ae0ad4446e6fc19fe}{set\+U\+D\+Pclient} (ip\+Addr ip\+\_\+remote, uint16\+\_\+t port\+\_\+remote, uint16\+\_\+t port\+\_\+local)
+\begin{DoxyCompactList}\small\item\em Sets the configuration and opens a U\+DP client connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_af55bd4245376acb4f48588096c96a45c}{set\+U\+D\+Pclient} (uint8\+\_\+t opt, char $\ast$host, uint16\+\_\+t port\+\_\+remote, uint16\+\_\+t port\+\_\+local)\hypertarget{class_wasp_w_i_f_i_af55bd4245376acb4f48588096c96a45c}{}\label{class_wasp_w_i_f_i_af55bd4245376acb4f48588096c96a45c}
+
+\begin{DoxyCompactList}\small\item\em Sets the configuration and opens a U\+DP client connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_aabba8381eaad271b6969e64ec37cffe8}{set\+U\+D\+Pserver} (uint16\+\_\+t port\+\_\+local)
+\begin{DoxyCompactList}\small\item\em Sets the configuration and opens a U\+DP server connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a9ce8111a7441aa530bace7534aa27b2f}{open\+F\+TP} (char $\ast$user, char $\ast$password)
+\begin{DoxyCompactList}\small\item\em Opens the ftp connection using user and password given. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_acbd37598d886a0938abe6c611c77f799}{get\+File} (char $\ast$filename, char $\ast$local\+\_\+folder, char $\ast$remote\+\_\+folder)
+\begin{DoxyCompactList}\small\item\em Gets the file via F\+TP. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a8cb96fcf0f69d79a7121823fdce1fe0c}{upload\+File} (char $\ast$file, char $\ast$local\+\_\+folder, char $\ast$remote\+\_\+folder)
+\begin{DoxyCompactList}\small\item\em Uploads a file via F\+TP. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_w_i_f_i_a7a185c100ff9102da5c30522dc533de4}{read} (uint8\+\_\+t blo)
+\begin{DoxyCompactList}\small\item\em Reads data from the opened connection. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_w_i_f_i_a3235fa9a75d45e2f8aab8aa86533a989}{read} (uint8\+\_\+t blo, unsigned long time)
+\begin{DoxyCompactList}\small\item\em Reads data from the opened connection. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a3cb096c2dd9b0d8c7a443d7213da0845}{send} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Sends data to the opened connection. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a6c7e6260ebb008a2264e1f550f36e59f}{send} (uint8\+\_\+t $\ast$data, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Sends data to the opened connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a819ae8911c006c5948f6b48396879630}{close} ()
+\begin{DoxyCompactList}\small\item\em Closes current connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a0c3e4f3abcc870b4f425a1199df188d0}{send\+Auto\+Broadcast} (ip\+Addr ip\+\_\+network, uint16\+\_\+t port\+\_\+remote, uint8\+\_\+t interval, char $\ast$id)
+\begin{DoxyCompactList}\small\item\em Configures and sends broadcast messages. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ae752cf2acecef466f9dd35032cbd21ee}{set\+Adhoc\+Options} (uint16\+\_\+t beacon, uint16\+\_\+t probe\+\_\+interval)
+\begin{DoxyCompactList}\small\item\em Configures and opens an adhoc connection. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_adcaf4dd23b30c19eefca8d6b4458ab02}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reboots the device (O\+N-\/\+O\+F\+F-\/\+ON). \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a5069b888855806680db6ffbaea857581}{reset\+Values} ()
+\begin{DoxyCompactList}\small\item\em Restores the default settings of the device. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a2820426efd02c54720556c9230cafd41}{synchronize\+Time} ()
+\begin{DoxyCompactList}\small\item\em Synchronizes the time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_ac33882a9b81ce81a5e13577c723faf6c}{set\+Baud\+Rate} (long val)
+\begin{DoxyCompactList}\small\item\em Sets the U\+A\+RT baud rate. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_acbf11e3a125d0e28ea1b35343fb8315f}{store\+Data} ()
+\begin{DoxyCompactList}\small\item\em Saves current configuration. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_w_i_f_i_a2b1a4a23bf96132a0260e8dfe1efff1b}{is\+Connected} ()
+\item 
+bool \hyperlink{class_wasp_w_i_f_i_ae6651d28e45627cc4f216b1a65e0da00}{is\+Connected} (unsigned long timeout)
+\item 
+void \hyperlink{class_wasp_w_i_f_i_a79b5ed84f290973589391b372c359961}{get\+Connection\+Info} ()
+\begin{DoxyCompactList}\small\item\em Displays connection status. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a8116a6541cfc005801cbf910aa807eb9}{get\+A\+Pstatus} ()
+\begin{DoxyCompactList}\small\item\em Displays current network status, association, authentication, etc. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a54aad78915e8213e795bb7964e27ab44}{get\+R\+S\+SI} ()
+\begin{DoxyCompactList}\small\item\em Displays current last received signal strenght. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a4ef3e83a50e0ef5237d3907fb0d8e95c}{get\+Stats} ()
+\begin{DoxyCompactList}\small\item\em Displays current statistics, packet rx/tx counters, etc. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_ab0d369424fe9e9385e9dd1dafda7b2a9}{get\+Up\+Time} ()
+\begin{DoxyCompactList}\small\item\em Displays number of seconds since last powerup or reboot. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a70a646d082d8f2ccfd7adae5e35da783}{get\+Adhoc\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Displays all adhoc settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a3734d59118c29037b33ec9b06370c5d6}{get\+Broadcast\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Displays the broadcast settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a2816d0df0df9f12dd4806de249d6be0c}{get\+Com\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Displays comm. settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a57c3aeb40fea0e50e9b8659ffbfd0000}{get\+D\+N\+Ssettings} ()
+\begin{DoxyCompactList}\small\item\em Displays D\+NS settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a333e9605cee4595bb1ba19448081ce24}{get\+F\+T\+Psettings} ()
+\begin{DoxyCompactList}\small\item\em Displays F\+TP settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a51d732a45a2561f4268a1baa7f73f3b1}{get\+IP} ()
+\begin{DoxyCompactList}\small\item\em Displays IP address and port number settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a15553c1a6a4e7e344d704d2bd03ae648}{get\+M\+AC} ()
+\begin{DoxyCompactList}\small\item\em Displays the device M\+AC address. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_aaef4a957ef407023f3ae4b88e4dfa5e6}{get\+Option\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Displays the option settings like device ID. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_ac9be40db9689db047a72c8e8de37c59a}{get\+System\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Displays system settings, sleep, wake timers,etc. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a54594882608b9fdb8c70c0797975900f}{get\+Time} ()
+\begin{DoxyCompactList}\small\item\em Displays the time server U\+DP address and port number. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a77854c7b42854a0b0ce23fd78299acae}{get\+W\+L\+A\+Nsettings} ()
+\begin{DoxyCompactList}\small\item\em Displays the ssid, channel and other wlan settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a4b3c312625130e697c2048a070241b4b}{get\+U\+A\+R\+Tsettings} ()
+\begin{DoxyCompactList}\small\item\em Displays the U\+A\+RT settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_w_i_f_i_a54b58818f08d14ece4508f08d174b88c}{get\+Version} ()
+\begin{DoxyCompactList}\small\item\em Returns the software release version of the W\+I\+FI module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a674876548dfab261252aee032ed643d6}{set\+Comm\+Size} (unsigned int val)
+\begin{DoxyCompactList}\small\item\em Set the comm flush size. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_af2b5417e79b3ed11243ba1c40fcb7d6c}{set\+Comm\+Timer} (unsigned int val)
+\begin{DoxyCompactList}\small\item\em Set the comm flush timer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a953dcf150e341b5f10ca6b88828d1c80}{wait\+For\+Data} (int num\+Bytes)
+\begin{DoxyCompactList}\small\item\em Wait for a number of bytes to be received in the U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a910136ffa5e23101a4b0df10cbf4e7cf}{wait\+For\+Data} (int num\+Bytes, unsigned long timeout)
+\begin{DoxyCompactList}\small\item\em Wait for a number of bytes to be received in the U\+A\+RT. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_w_i_f_i_adedf6adf096bc02e609fac1187498464}{find\+Pattern} (uint8\+\_\+t $\ast$input, char $\ast$pattern, int len)
+\begin{DoxyCompactList}\small\item\em Seek pattern within array of bytes. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a40f9097c4cd371db65ad68b860511887}{request\+O\+TA} ()
+\begin{DoxyCompactList}\small\item\em Request O\+TA. F\+TP settings must be previsouly configured\+: user, pass, etc. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_w_i_f_i_a676f667adeb0200cb56600a4b536f400}{set\+R\+T\+Cfrom\+Wi\+Fi} ()
+\begin{DoxyCompactList}\small\item\em Set R\+TC date taken from Wi\+Fi module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_wasp_w_i_f_i_a4375f26f4f941f44b1559103ef3bc090}{answer} \mbox{[}513\mbox{]}\hypertarget{class_wasp_w_i_f_i_a4375f26f4f941f44b1559103ef3bc090}{}\label{class_wasp_w_i_f_i_a4375f26f4f941f44b1559103ef3bc090}
+
+\begin{DoxyCompactList}\small\item\em Specifies the answer that is read from the W\+I\+FI module. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_w_i_f_i_aab2412fccae7e955115f45ec436df6f9}{length}\hypertarget{class_wasp_w_i_f_i_aab2412fccae7e955115f45ec436df6f9}{}\label{class_wasp_w_i_f_i_aab2412fccae7e955115f45ec436df6f9}
+
+\begin{DoxyCompactList}\small\item\em Specifies the length of the answer received. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_w_i_f_i_ae7cb140f75e2e4731f835b5b11a539bc}{rssi}\hypertarget{class_wasp_w_i_f_i_ae7cb140f75e2e4731f835b5b11a539bc}{}\label{class_wasp_w_i_f_i_ae7cb140f75e2e4731f835b5b11a539bc}
+
+\begin{DoxyCompactList}\small\item\em Specifies the signal strength. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_w_i_f_i}{Wasp\+W\+I\+FI} Class. 
+
+\hyperlink{class_wasp_w_i_f_i}{Wasp\+W\+I\+FI} Class defines all the variables and functions used to manage W\+I\+FI modules. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{Wasp\+W\+I\+F\+I()}{WaspWIFI()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+W\+I\+F\+I\+::\+Wasp\+W\+I\+FI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac890dc3d2e39ca762d65b68f88beb386}{}\label{class_wasp_w_i_f_i_ac890dc3d2e39ca762d65b68f88beb386}
+
+
+Class constructor. Initializes the necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!close@{close}}
+\index{close@{close}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a819ae8911c006c5948f6b48396879630}{}\label{class_wasp_w_i_f_i_a819ae8911c006c5948f6b48396879630}
+
+
+Closes current connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!find\+Pattern@{find\+Pattern}}
+\index{find\+Pattern@{find\+Pattern}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{find\+Pattern(uint8\+\_\+t $\ast$input, char $\ast$pattern, int len)}{findPattern(uint8_t *input, char *pattern, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+W\+I\+F\+I\+::find\+Pattern (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{input, }
+\item[{char $\ast$}]{pattern, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_adedf6adf096bc02e609fac1187498464}{}\label{class_wasp_w_i_f_i_adedf6adf096bc02e609fac1187498464}
+
+
+Seek pattern within array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & input\+: Input array of bytes \\
+\hline
+{\em char$\ast$} & pattern\+: pattern to be seeked inside the input array of bytes \\
+\hline
+{\em int} & len\+: Length of the input array of bytes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if num\+Bytes have been received. \textquotesingle{}0\textquotesingle{} if time is up and num\+Bytes have not been received. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Adhoc\+Settings@{get\+Adhoc\+Settings}}
+\index{get\+Adhoc\+Settings@{get\+Adhoc\+Settings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Adhoc\+Settings()}{getAdhocSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Adhoc\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a70a646d082d8f2ccfd7adae5e35da783}{}\label{class_wasp_w_i_f_i_a70a646d082d8f2ccfd7adae5e35da783}
+
+
+Displays all adhoc settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+A\+Pstatus@{get\+A\+Pstatus}}
+\index{get\+A\+Pstatus@{get\+A\+Pstatus}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+A\+Pstatus()}{getAPstatus()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+A\+Pstatus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a8116a6541cfc005801cbf910aa807eb9}{}\label{class_wasp_w_i_f_i_a8116a6541cfc005801cbf910aa807eb9}
+
+
+Displays current network status, association, authentication, etc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Broadcast\+Settings@{get\+Broadcast\+Settings}}
+\index{get\+Broadcast\+Settings@{get\+Broadcast\+Settings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Broadcast\+Settings()}{getBroadcastSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Broadcast\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a3734d59118c29037b33ec9b06370c5d6}{}\label{class_wasp_w_i_f_i_a3734d59118c29037b33ec9b06370c5d6}
+
+
+Displays the broadcast settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Com\+Settings@{get\+Com\+Settings}}
+\index{get\+Com\+Settings@{get\+Com\+Settings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Com\+Settings()}{getComSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Com\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a2816d0df0df9f12dd4806de249d6be0c}{}\label{class_wasp_w_i_f_i_a2816d0df0df9f12dd4806de249d6be0c}
+
+
+Displays comm. settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Connection\+Info@{get\+Connection\+Info}}
+\index{get\+Connection\+Info@{get\+Connection\+Info}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Connection\+Info()}{getConnectionInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Connection\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a79b5ed84f290973589391b372c359961}{}\label{class_wasp_w_i_f_i_a79b5ed84f290973589391b372c359961}
+
+
+Displays connection status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+D\+N\+Ssettings@{get\+D\+N\+Ssettings}}
+\index{get\+D\+N\+Ssettings@{get\+D\+N\+Ssettings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+D\+N\+Ssettings()}{getDNSsettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+D\+N\+Ssettings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a57c3aeb40fea0e50e9b8659ffbfd0000}{}\label{class_wasp_w_i_f_i_a57c3aeb40fea0e50e9b8659ffbfd0000}
+
+
+Displays D\+NS settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+File@{get\+File}}
+\index{get\+File@{get\+File}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+File(char $\ast$filename, char $\ast$local\+\_\+folder, char $\ast$remote\+\_\+folder)}{getFile(char *filename, char *local_folder, char *remote_folder)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::get\+File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{char $\ast$}]{local\+\_\+folder, }
+\item[{char $\ast$}]{remote\+\_\+folder}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_acbd37598d886a0938abe6c611c77f799}{}\label{class_wasp_w_i_f_i_acbd37598d886a0938abe6c611c77f799}
+
+
+Gets the file via F\+TP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & file \+: specifies the name of the file to get from the F\+TP server. \\
+\hline
+{\em char$\ast$} & local\+\_\+folder \+: specifies the folder of the SD card to save the file. \\
+\hline
+{\em char$\ast$} & remote\+\_\+folder \+: specifies the folder of the F\+TP server that contains the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+F\+T\+Psettings@{get\+F\+T\+Psettings}}
+\index{get\+F\+T\+Psettings@{get\+F\+T\+Psettings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+F\+T\+Psettings()}{getFTPsettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+F\+T\+Psettings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a333e9605cee4595bb1ba19448081ce24}{}\label{class_wasp_w_i_f_i_a333e9605cee4595bb1ba19448081ce24}
+
+
+Displays F\+TP settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+IP@{get\+IP}}
+\index{get\+IP@{get\+IP}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+I\+P()}{getIP()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+IP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a51d732a45a2561f4268a1baa7f73f3b1}{}\label{class_wasp_w_i_f_i_a51d732a45a2561f4268a1baa7f73f3b1}
+
+
+Displays IP address and port number settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+M\+AC@{get\+M\+AC}}
+\index{get\+M\+AC@{get\+M\+AC}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+M\+A\+C()}{getMAC()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+M\+AC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a15553c1a6a4e7e344d704d2bd03ae648}{}\label{class_wasp_w_i_f_i_a15553c1a6a4e7e344d704d2bd03ae648}
+
+
+Displays the device M\+AC address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Option\+Settings@{get\+Option\+Settings}}
+\index{get\+Option\+Settings@{get\+Option\+Settings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Option\+Settings()}{getOptionSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Option\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_aaef4a957ef407023f3ae4b88e4dfa5e6}{}\label{class_wasp_w_i_f_i_aaef4a957ef407023f3ae4b88e4dfa5e6}
+
+
+Displays the option settings like device ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+R\+S\+SI@{get\+R\+S\+SI}}
+\index{get\+R\+S\+SI@{get\+R\+S\+SI}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+I()}{getRSSI()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+R\+S\+SI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a54aad78915e8213e795bb7964e27ab44}{}\label{class_wasp_w_i_f_i_a54aad78915e8213e795bb7964e27ab44}
+
+
+Displays current last received signal strenght. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Stats@{get\+Stats}}
+\index{get\+Stats@{get\+Stats}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Stats()}{getStats()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a4ef3e83a50e0ef5237d3907fb0d8e95c}{}\label{class_wasp_w_i_f_i_a4ef3e83a50e0ef5237d3907fb0d8e95c}
+
+
+Displays current statistics, packet rx/tx counters, etc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+store \textquotesingle{}W\+RX\textquotesingle{} variable from answer
+
+store \textquotesingle{}W\+TX\textquotesingle{} variable from answer
+
+store \textquotesingle{}Flw\+Set\textquotesingle{} variable from answer \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+System\+Settings@{get\+System\+Settings}}
+\index{get\+System\+Settings@{get\+System\+Settings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+System\+Settings()}{getSystemSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+System\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac9be40db9689db047a72c8e8de37c59a}{}\label{class_wasp_w_i_f_i_ac9be40db9689db047a72c8e8de37c59a}
+
+
+Displays system settings, sleep, wake timers,etc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Time()}{getTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a54594882608b9fdb8c70c0797975900f}{}\label{class_wasp_w_i_f_i_a54594882608b9fdb8c70c0797975900f}
+
+
+Displays the time server U\+DP address and port number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+U\+A\+R\+Tsettings@{get\+U\+A\+R\+Tsettings}}
+\index{get\+U\+A\+R\+Tsettings@{get\+U\+A\+R\+Tsettings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+U\+A\+R\+Tsettings()}{getUARTsettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+U\+A\+R\+Tsettings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a4b3c312625130e697c2048a070241b4b}{}\label{class_wasp_w_i_f_i_a4b3c312625130e697c2048a070241b4b}
+
+
+Displays the U\+A\+RT settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Up\+Time@{get\+Up\+Time}}
+\index{get\+Up\+Time@{get\+Up\+Time}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Up\+Time()}{getUpTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Up\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ab0d369424fe9e9385e9dd1dafda7b2a9}{}\label{class_wasp_w_i_f_i_ab0d369424fe9e9385e9dd1dafda7b2a9}
+
+
+Displays number of seconds since last powerup or reboot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+U\+RL@{get\+U\+RL}}
+\index{get\+U\+RL@{get\+U\+RL}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+U\+R\+L(uint8\+\_\+t opt, char $\ast$host, char $\ast$request)}{getURL(uint8_t opt, char *host, char *request)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::get\+U\+RL (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opt, }
+\item[{char $\ast$}]{host, }
+\item[{char $\ast$}]{request}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ab3bcb791e15d3c138251fab80f32f223}{}\label{class_wasp_w_i_f_i_ab3bcb791e15d3c138251fab80f32f223}
+
+
+Sets the http config and opens an H\+T\+TP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & opt \+: specifies if the host is given by an IP address (IP), or is given by a D\+NS name or webpage (D\+NS). \\
+\hline
+{\em char$\ast$} & host \+: specifies the IP address host or U\+RL host. \\
+\hline
+{\em int} & port \+: specifies the server port \\
+\hline
+{\em char$\ast$} & request \+: specifies the string that is sent to the remote host. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+U\+RL@{get\+U\+RL}}
+\index{get\+U\+RL@{get\+U\+RL}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+U\+R\+L(uint8\+\_\+t opt, char $\ast$host, char $\ast$url, char $\ast$body)}{getURL(uint8_t opt, char *host, char *url, char *body)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::get\+U\+RL (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opt, }
+\item[{char $\ast$}]{host, }
+\item[{char $\ast$}]{url, }
+\item[{char $\ast$}]{body}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac4012f34188aa513587e4138eb41cf1b}{}\label{class_wasp_w_i_f_i_ac4012f34188aa513587e4138eb41cf1b}
+
+
+Sets the http config and opens an H\+T\+TP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & opt \+: specifies if the host is given by an IP address (IP), or is given by a D\+NS name or webpage (D\+NS). \\
+\hline
+{\em char$\ast$} & host \+: specifies the IP address host or U\+RL host. \\
+\hline
+{\em int} & port \+: specifies the server port \\
+\hline
+{\em char$\ast$} & url \+: specifies the server U\+RL \\
+\hline
+{\em char$\ast$} & body \+: specifies the body of the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+U\+RL@{get\+U\+RL}}
+\index{get\+U\+RL@{get\+U\+RL}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+U\+R\+L(uint8\+\_\+t opt, char $\ast$host, char $\ast$request, uint8\+\_\+t $\ast$buffer, uint16\+\_\+t len)}{getURL(uint8_t opt, char *host, char *request, uint8_t *buffer, uint16_t len)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::get\+U\+RL (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opt, }
+\item[{char $\ast$}]{host, }
+\item[{char $\ast$}]{request, }
+\item[{uint8\+\_\+t $\ast$}]{buffer, }
+\item[{uint16\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a49388ab8fc5571a72ebd96d5c8651406}{}\label{class_wasp_w_i_f_i_a49388ab8fc5571a72ebd96d5c8651406}
+
+
+Sets the http config and opens an H\+T\+TP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & opt \+: specifies if the host is given by an IP address (IP), or is given by a D\+NS name or webpage (D\+NS). \\
+\hline
+{\em char$\ast$} & host \+: specifies the IP address host or U\+RL host. \\
+\hline
+{\em char$\ast$} & request \+: specifies the string that is sent to the remote host. \\
+\hline
+{\em char$\ast$} & buffer \+: is the frame to be attached to the request sentence \\
+\hline
+{\em int} & len \+: is the length of the buffer parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+Version()}{getVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a54b58818f08d14ece4508f08d174b88c}{}\label{class_wasp_w_i_f_i_a54b58818f08d14ece4508f08d174b88c}
+
+
+Returns the software release version of the W\+I\+FI module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!get\+W\+L\+A\+Nsettings@{get\+W\+L\+A\+Nsettings}}
+\index{get\+W\+L\+A\+Nsettings@{get\+W\+L\+A\+Nsettings}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{get\+W\+L\+A\+Nsettings()}{getWLANsettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::get\+W\+L\+A\+Nsettings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a77854c7b42854a0b0ce23fd78299acae}{}\label{class_wasp_w_i_f_i_a77854c7b42854a0b0ce23fd78299acae}
+
+
+Displays the ssid, channel and other wlan settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{is\+Connected()}{isConnected()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+W\+I\+F\+I\+::is\+Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a2b1a4a23bf96132a0260e8dfe1efff1b}{}\label{class_wasp_w_i_f_i_a2b1a4a23bf96132a0260e8dfe1efff1b}
+Checks if the module is connected to the Access Point (Check if it has an IP address).
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise
+\end{DoxyReturn}
+Checks if the module is connected to the Access Point (Check if it has an IP address). \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{is\+Connected(unsigned long timeout)}{isConnected(unsigned long timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+W\+I\+F\+I\+::is\+Connected (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ae6651d28e45627cc4f216b1a65e0da00}{}\label{class_wasp_w_i_f_i_ae6651d28e45627cc4f216b1a65e0da00}
+Checks if the module is connected to the Access Point (Check if it has an IP address). \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!join@{join}}
+\index{join@{join}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{join(char $\ast$ssid)}{join(char *ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::join (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_abd0d95e039f21a1abd3f72bab8fae3ba}{}\label{class_wasp_w_i_f_i_abd0d95e039f21a1abd3f72bab8fae3ba}
+
+
+Joins the chosen ssid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & ssid \+: specifies the name of the network to join. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!join\+A\+Pnum@{join\+A\+Pnum}}
+\index{join\+A\+Pnum@{join\+A\+Pnum}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{join\+A\+Pnum(uint8\+\_\+t val)}{joinAPnum(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::join\+A\+Pnum (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ab5fc134ae4e98d1be4daa10dc65e7c1d}{}\label{class_wasp_w_i_f_i_ab5fc134ae4e98d1be4daa10dc65e7c1d}
+
+
+Joins a network AP from the scan list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the number of network from the scan list to join. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!leave@{leave}}
+\index{leave@{leave}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{leave()}{leave()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::leave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a7c3793459cf4dfac7d062b54648660d4}{}\label{class_wasp_w_i_f_i_a7c3793459cf4dfac7d062b54648660d4}
+
+
+If connected, leaves the connected network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a758d72a782c36343552e9a8394ae2614}{}\label{class_wasp_w_i_f_i_a758d72a782c36343552e9a8394ae2614}
+
+
+Closes the U\+A\+RT and powers off the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!ON@{ON}}
+\index{ON@{ON}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t sock)}{ON(uint8_t sock)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+W\+I\+F\+I\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sock}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_aa4e8b8b9cc2ee8350515ce6aa6bdb6bb}{}\label{class_wasp_w_i_f_i_aa4e8b8b9cc2ee8350515ce6aa6bdb6bb}
+
+
+Opens the U\+A\+RT. 
+
+Powers on the module and enters in command mode.
+
+Powers on the module and enters in command mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & sock \+: specifies where is the W\+I\+FI module connected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!open\+F\+TP@{open\+F\+TP}}
+\index{open\+F\+TP@{open\+F\+TP}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{open\+F\+T\+P(char $\ast$user, char $\ast$password)}{openFTP(char *user, char *password)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::open\+F\+TP (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{user, }
+\item[{char $\ast$}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a9ce8111a7441aa530bace7534aa27b2f}{}\label{class_wasp_w_i_f_i_a9ce8111a7441aa530bace7534aa27b2f}
+
+
+Opens the ftp connection using user and password given. 
+
+Opens the ftp connection using the user and the password given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & user \+: specifies the ftp user name for accessing the F\+TP server. \\
+\hline
+{\em char$\ast$} & password \+: specifies the ftp password for accessing the F\+TP server. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!read@{read}}
+\index{read@{read}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{read(uint8\+\_\+t blo)}{read(uint8_t blo)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+W\+I\+F\+I\+::read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{blo}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a7a185c100ff9102da5c30522dc533de4}{}\label{class_wasp_w_i_f_i_a7a185c100ff9102da5c30522dc533de4}
+
+
+Reads data from the opened connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & blo \+: specifies if the read is blocking (B\+LO) or it has a 2 seconds timeout (N\+O\+B\+LO). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters reads. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!read@{read}}
+\index{read@{read}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{read(uint8\+\_\+t blo, unsigned long time)}{read(uint8_t blo, unsigned long time)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+W\+I\+F\+I\+::read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{blo, }
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a3235fa9a75d45e2f8aab8aa86533a989}{}\label{class_wasp_w_i_f_i_a3235fa9a75d45e2f8aab8aa86533a989}
+
+
+Reads data from the opened connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & blo \+: specifies if the read is blocking (B\+LO) or it has a 2 seconds timeout (N\+O\+B\+LO). \\
+\hline
+{\em unsigned} & long time \+: number of milliseconds to wait until timeout \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters reads. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!request\+O\+TA@{request\+O\+TA}}
+\index{request\+O\+TA@{request\+O\+TA}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{request\+O\+T\+A()}{requestOTA()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+W\+I\+F\+I\+::request\+O\+TA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a40f9097c4cd371db65ad68b860511887}{}\label{class_wasp_w_i_f_i_a40f9097c4cd371db65ad68b860511887}
+
+
+Request O\+TA. F\+TP settings must be previsouly configured\+: user, pass, etc. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if num\+Bytes have been received. \textquotesingle{}0\textquotesingle{} if time is up and num\+Bytes have not been received. 
+\end{DoxyReturn}
+
+\begin{DoxyEnumerate}
+\item Search the file name
+\item Check if N\+O\+\_\+\+F\+I\+LE is the filename
+\item Search the path
+\item Search file size
+\item Search Version
+\item get binary file and perform O\+TA 
+\end{DoxyEnumerate}\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!reset@{reset}}
+\index{reset@{reset}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_adcaf4dd23b30c19eefca8d6b4458ab02}{}\label{class_wasp_w_i_f_i_adcaf4dd23b30c19eefca8d6b4458ab02}
+
+
+Reboots the device (O\+N-\/\+O\+F\+F-\/\+ON). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!reset\+Values@{reset\+Values}}
+\index{reset\+Values@{reset\+Values}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{reset\+Values()}{resetValues()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::reset\+Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a5069b888855806680db6ffbaea857581}{}\label{class_wasp_w_i_f_i_a5069b888855806680db6ffbaea857581}
+
+
+Restores the default settings of the device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!resolve@{resolve}}
+\index{resolve@{resolve}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{resolve(char $\ast$name)}{resolve(char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+W\+I\+F\+I\+::resolve (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a89dd2032471f286882c35d2230f90b07}{}\label{class_wasp_w_i_f_i_a89dd2032471f286882c35d2230f90b07}
+
+
+Performs a D\+NS query on the supplied hostname. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & name \+: specifies the hostname. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!scan@{scan}}
+\index{scan@{scan}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{scan()}{scan()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::scan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a06350bb18d55a43ad02c18cb87a575e0}{}\label{class_wasp_w_i_f_i_a06350bb18d55a43ad02c18cb87a575e0}
+
+
+Launches the scan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!send@{send}}
+\index{send@{send}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{send(char $\ast$data)}{send(char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a3cb096c2dd9b0d8c7a443d7213da0845}{}\label{class_wasp_w_i_f_i_a3cb096c2dd9b0d8c7a443d7213da0845}
+
+
+Sends data to the opened connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & data \+: specifies the data to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!send@{send}}
+\index{send@{send}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{send(uint8\+\_\+t $\ast$data, uint16\+\_\+t len)}{send(uint8_t *data, uint16_t len)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::send (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint16\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a6c7e6260ebb008a2264e1f550f36e59f}{}\label{class_wasp_w_i_f_i_a6c7e6260ebb008a2264e1f550f36e59f}
+
+
+Sends data to the opened connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & data \+: specifies the data to send. \\
+\hline
+{\em uint16\+\_\+t} & len \+: specifies the lenght of the data to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!send\+Auto\+Broadcast@{send\+Auto\+Broadcast}}
+\index{send\+Auto\+Broadcast@{send\+Auto\+Broadcast}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{send\+Auto\+Broadcast(ip\+Addr ip\+\_\+network, uint16\+\_\+t port\+\_\+remote, uint8\+\_\+t interval, char $\ast$id)}{sendAutoBroadcast(ipAddr ip_network, uint16_t port_remote, uint8_t interval, char *id)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::send\+Auto\+Broadcast (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip\+\_\+network, }
+\item[{uint16\+\_\+t}]{port\+\_\+remote, }
+\item[{uint8\+\_\+t}]{interval, }
+\item[{char $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a0c3e4f3abcc870b4f425a1199df188d0}{}\label{class_wasp_w_i_f_i_a0c3e4f3abcc870b4f425a1199df188d0}
+
+
+Configures and sends broadcast messages. 
+
+Configures and sends broadcast packages.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip\+\_\+network \+: specifies the remote IP address for the broadcast messages. \\
+\hline
+{\em uint16\+\_\+t} & port\+\_\+remote \+: specifies the remote port for receiving broadcast messages. \\
+\hline
+{\em uint8\+\_\+t} & interval \+: specifies the interval at which the broadcast message is sent. \\
+\hline
+{\em char$\ast$} & id \+: specifies the device ID. This information is sent as part of the broadcast message that is sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!send\+H\+T\+T\+Pframe@{send\+H\+T\+T\+Pframe}}
+\index{send\+H\+T\+T\+Pframe@{send\+H\+T\+T\+Pframe}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{send\+H\+T\+T\+Pframe(uint8\+\_\+t opt, char $\ast$host, int port, uint8\+\_\+t $\ast$frame, uint16\+\_\+t len)}{sendHTTPframe(uint8_t opt, char *host, int port, uint8_t *frame, uint16_t len)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::send\+H\+T\+T\+Pframe (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{opt, }
+\item[{char $\ast$}]{host, }
+\item[{int}]{port, }
+\item[{uint8\+\_\+t $\ast$}]{frame, }
+\item[{uint16\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_aca7d3ce0724dc498e0c8ef742e353f7d}{}\label{class_wasp_w_i_f_i_aca7d3ce0724dc498e0c8ef742e353f7d}
+
+
+Sets the http config and opens an H\+T\+TP connection. 
+
+This function is used to send Waspmote Frames from Waspmote to Meshlium using the Sensor Parser of the Meshlium machine so as to store all Data Frames inside the Data\+Base of Meshlium.
+
+These are the input parameters\+: 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & opt \+: specifies if the host is given by an IP address (IP), or is given by a D\+NS name or webpage (D\+NS). \\
+\hline
+{\em char$\ast$} & host \+: specifies the IP address host or U\+RL host. \\
+\hline
+{\em int} & port \+: specifies remote port \\
+\hline
+{\em char$\ast$} & request \+: specifies the string that is sent to the remote host. \\
+\hline
+{\em char$\ast$} & buffer \+: is the frame to be attached to the request sentence \\
+\hline
+{\em int} & len \+: is the length of the buffer parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!send\+Ping@{send\+Ping}}
+\index{send\+Ping@{send\+Ping}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{send\+Ping(ip\+Addr ip)}{sendPing(ipAddr ip)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::send\+Ping (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ae6a481f7e5c40fd726dc598262867c95}{}\label{class_wasp_w_i_f_i_ae6a481f7e5c40fd726dc598262867c95}
+
+
+Sends a ping to a remote specified host. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip \+: specifies the IP address of the host. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Adhoc\+Options@{set\+Adhoc\+Options}}
+\index{set\+Adhoc\+Options@{set\+Adhoc\+Options}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Adhoc\+Options(uint16\+\_\+t beacon, uint16\+\_\+t probe\+\_\+interval)}{setAdhocOptions(uint16_t beacon, uint16_t probe_interval)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Adhoc\+Options (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{beacon, }
+\item[{uint16\+\_\+t}]{probe\+\_\+interval}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ae752cf2acecef466f9dd35032cbd21ee}{}\label{class_wasp_w_i_f_i_ae752cf2acecef466f9dd35032cbd21ee}
+
+
+Configures and opens an adhoc connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & beacon \+: specifies the adhoc beacon interval (in milliseconds). \\
+\hline
+{\em uint16\+\_\+t} & probe\+\_\+interval \+: specifies the adhoc probe timeout in seconds. This is the number of seconds waiting for probe responses before declaring \char`\"{}\+A\+D\+H\+O\+C is lost\char`\"{} and disabling the network interface. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+A\+Pretries@{set\+A\+Pretries}}
+\index{set\+A\+Pretries@{set\+A\+Pretries}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+A\+Pretries(uint8\+\_\+t val)}{setAPretries(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+A\+Pretries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a2bd316a7a19257e07deadd6262a08ad7}{}\label{class_wasp_w_i_f_i_a2bd316a7a19257e07deadd6262a08ad7}
+
+
+Sets the link monitor timeout threshold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the number of retries. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Auth\+Key@{set\+Auth\+Key}}
+\index{set\+Auth\+Key@{set\+Auth\+Key}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Auth\+Key(uint8\+\_\+t sec\+Mode, char $\ast$pass)}{setAuthKey(uint8_t secMode, char *pass)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Auth\+Key (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sec\+Mode, }
+\item[{char $\ast$}]{pass}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a997a23f867bf5b3cfae9e96949ddd2b3}{}\label{class_wasp_w_i_f_i_a997a23f867bf5b3cfae9e96949ddd2b3}
+
+
+Sets the Key or the passphrase of the wlan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the authentication mode (W\+EP, W\+P\+A1, W\+P\+A\+M\+IX, W\+P\+A2). \\
+\hline
+{\em char$\ast$} & pass \+: specifies the key (13 A\+S\+C\+II chars) or the passphrase (1-\/64 chars). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Autojoin\+Auth@{set\+Autojoin\+Auth}}
+\index{set\+Autojoin\+Auth@{set\+Autojoin\+Auth}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Autojoin\+Auth(uint8\+\_\+t val)}{setAutojoinAuth(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Autojoin\+Auth (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a034c0cf54e592cea0dde3074f81cb0f5}{}\label{class_wasp_w_i_f_i_a034c0cf54e592cea0dde3074f81cb0f5}
+
+
+Sets the authentication mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the authentication mode (O\+P\+EN, W\+EP, W\+P\+A1, W\+P\+A\+M\+IX, W\+P\+A2, A\+D\+H\+OC). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Baud\+Rate@{set\+Baud\+Rate}}
+\index{set\+Baud\+Rate@{set\+Baud\+Rate}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Baud\+Rate(long val)}{setBaudRate(long val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Baud\+Rate (
+\begin{DoxyParamCaption}
+\item[{long}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac33882a9b81ce81a5e13577c723faf6c}{}\label{class_wasp_w_i_f_i_ac33882a9b81ce81a5e13577c723faf6c}
+
+
+Sets the U\+A\+RT baud rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & val \+: specifies the U\+A\+RT baud rate. Valid settings are 2400, 4800, 9600, 19200, 38400, 57600,115200, 230400, 460800, 921600. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Channel@{set\+Channel}}
+\index{set\+Channel@{set\+Channel}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Channel(uint8\+\_\+t val)}{setChannel(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Channel (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ab05574e0cb8dd1cac2a2546ccf9ef0e0}{}\label{class_wasp_w_i_f_i_ab05574e0cb8dd1cac2a2546ccf9ef0e0}
+
+
+Sets the wlan channel, 1-\/13 is the valid range for a fixed channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: Specifies the number of channel to set, range 1-\/13. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Comm\+Size@{set\+Comm\+Size}}
+\index{set\+Comm\+Size@{set\+Comm\+Size}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Comm\+Size(unsigned int val)}{setCommSize(unsigned int val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Comm\+Size (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a674876548dfab261252aee032ed643d6}{}\label{class_wasp_w_i_f_i_a674876548dfab261252aee032ed643d6}
+
+
+Set the comm flush size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int val \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Comm\+Timer@{set\+Comm\+Timer}}
+\index{set\+Comm\+Timer@{set\+Comm\+Timer}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Comm\+Timer(unsigned int val)}{setCommTimer(unsigned int val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Comm\+Timer (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_af2b5417e79b3ed11243ba1c40fcb7d6c}{}\label{class_wasp_w_i_f_i_af2b5417e79b3ed11243ba1c40fcb7d6c}
+
+
+Set the comm flush timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int val \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Connection\+Options@{set\+Connection\+Options}}
+\index{set\+Connection\+Options@{set\+Connection\+Options}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Connection\+Options(uint8\+\_\+t val)}{setConnectionOptions(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Connection\+Options (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ae914549e2773f718218bf615887b46c7}{}\label{class_wasp_w_i_f_i_ae914549e2773f718218bf615887b46c7}
+Sets the connection options. (T\+CP, U\+DP, H\+T\+TP...) Value is a bit mapped setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the IP protocol. C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER (T\+CP), C\+L\+I\+E\+NT (T\+CP), H\+T\+TP, U\+DP, S\+E\+C\+U\+RE (U\+DP). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise.
+\end{DoxyReturn}
+Sets the connection options. (T\+CP, U\+DP, H\+T\+TP...) Value is a bit mapped setting. \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Debug\+Mode@{set\+Debug\+Mode}}
+\index{set\+Debug\+Mode@{set\+Debug\+Mode}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Debug\+Mode(uint8\+\_\+t val)}{setDebugMode(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Debug\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_afc99c2f1ebffac0686e061635eadc2ab}{}\label{class_wasp_w_i_f_i_afc99c2f1ebffac0686e061635eadc2ab}
+Controls debug print messages. This configures the debug messages printed by the Wi\+Fly module on the U\+A\+RT.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the mode of debug messages (Q\+U\+I\+ET, A\+LL, C\+R\+I\+T\+I\+C\+AL, I\+P\+\_\+\+S\+T\+A\+T\+US (default=A\+LL)). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise.
+\end{DoxyReturn}
+Controls debug print messages. This configures the debug messages printed by the Wi\+Fly module on the U\+A\+RT. \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+D\+H\+C\+Poptions@{set\+D\+H\+C\+Poptions}}
+\index{set\+D\+H\+C\+Poptions@{set\+D\+H\+C\+Poptions}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+D\+H\+C\+Poptions(uint8\+\_\+t val)}{setDHCPoptions(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+D\+H\+C\+Poptions (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ab2ab440670add32aa37159e325b01922}{}\label{class_wasp_w_i_f_i_ab2ab440670add32aa37159e325b01922}
+
+
+Sets the D\+H\+CP options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the way the ip address is going to be solved. D\+H\+C\+P\+\_\+\+O\+FF (Manual), D\+H\+C\+P\+\_\+\+ON (Autom.), A\+U\+T\+O\+\_\+\+IP (Adhoc-\/networks), D\+H\+C\+P\+\_\+\+C\+A\+C\+HE (Memory). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+D\+NS@{set\+D\+NS}}
+\index{set\+D\+NS@{set\+D\+NS}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+D\+N\+S(uint8\+\_\+t type, ip\+Addr ip, char $\ast$name)}{setDNS(uint8_t type, ipAddr ip, char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+D\+NS (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{type, }
+\item[{ip\+Addr}]{ip, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac23ad05bf419ce2dd028bf1e212174e9}{}\label{class_wasp_w_i_f_i_ac23ad05bf419ce2dd028bf1e212174e9}
+Sets the IP address, host and backup host of the D\+NS main or auxiliary server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & type \+: specifies if the D\+NS server is main or auxiliary server. \\
+\hline
+{\em ip\+Addr} & ip \+: specifies the D\+NS IP address. \\
+\hline
+{\em char$\ast$} & name \+: specifies the D\+NS address name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise.
+\end{DoxyReturn}
+Sets the IP address, host and backup host of the D\+NS main or auxiliary server. \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+E\+S\+S\+ID@{set\+E\+S\+S\+ID}}
+\index{set\+E\+S\+S\+ID@{set\+E\+S\+S\+ID}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+E\+S\+S\+I\+D(char $\ast$ssid)}{setESSID(char *ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+E\+S\+S\+ID (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ae569b2fc6a4b047e9b4c079dbe85eaa9}{}\label{class_wasp_w_i_f_i_ae569b2fc6a4b047e9b4c079dbe85eaa9}
+
+
+Sets the E\+S\+S\+ID of the wlan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & ssid \+: specifies the name of the wlan to join. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+F\+TP@{set\+F\+TP}}
+\index{set\+F\+TP@{set\+F\+TP}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+F\+T\+P(ip\+Addr ip, uint16\+\_\+t port, uint8\+\_\+t mode, uint8\+\_\+t timeout)}{setFTP(ipAddr ip, uint16_t port, uint8_t mode, uint8_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+F\+TP (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a53afc754c1f0aede89c91e28c30ae8e5}{}\label{class_wasp_w_i_f_i_a53afc754c1f0aede89c91e28c30ae8e5}
+
+
+Sets the F\+TP parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip \+: specifies the F\+TP server IP address. \\
+\hline
+{\em uint16\+\_\+t} & port \+: specifies the F\+TP server port. \\
+\hline
+{\em uint8\+\_\+t} & mode \+: specifies the F\+TP mode, F\+T\+P\+\_\+\+P\+A\+S\+I\+VE or F\+T\+P\+\_\+\+A\+C\+T\+I\+VE. \\
+\hline
+{\em uint8\+\_\+t} & timeout \+: specifies the ftp timeout value (in seconds). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+GW@{set\+GW}}
+\index{set\+GW@{set\+GW}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+G\+W(ip\+Addr ip)}{setGW(ipAddr ip)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+GW (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a97cabbedcce107175cc6cc472fa9054c}{}\label{class_wasp_w_i_f_i_a97cabbedcce107175cc6cc472fa9054c}
+
+
+Sets the \hyperlink{class_gateway}{Gateway} address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip \+: specifies the gateway IP address. If D\+H\+CP is turned on, the gateway IP address is assign and overwritten during association with the access point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Ip@{set\+Ip}}
+\index{set\+Ip@{set\+Ip}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Ip(ip\+Addr ip)}{setIp(ipAddr ip)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Ip (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a1d2eea150d41b37aa4dfb3dce097814d}{}\label{class_wasp_w_i_f_i_a1d2eea150d41b37aa4dfb3dce097814d}
+
+
+Sets the IP address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip \+: specifies the local ip address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+I\+Poptions@{set\+I\+Poptions}}
+\index{set\+I\+Poptions@{set\+I\+Poptions}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+I\+Poptions(uint8\+\_\+t val)}{setIPoptions(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+I\+Poptions (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac4ae053e7a3005dcd56a359fdc557d4c}{}\label{class_wasp_w_i_f_i_ac4ae053e7a3005dcd56a359fdc557d4c}
+
+
+Sets the T\+C\+P/\+IP functions. Value is a bit mapped register. 
+
+Sets the IP options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the T\+C\+P/\+IP function or functions. T\+C\+P\+\_\+\+S\+T\+A\+T\+US, T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY, T\+C\+P\+\_\+\+R\+E\+T\+RY, U\+D\+P\+\_\+\+R\+E\+T\+RY, D\+N\+S\+\_\+\+C\+A\+C\+HE, A\+R\+P\+\_\+\+C\+A\+C\+HE, U\+D\+P\+\_\+\+A\+U\+T\+O\+\_\+\+PA, B\+Y\+T\+E\+\_\+\+S\+T\+A\+MP. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+I\+P\+Window@{set\+I\+P\+Window}}
+\index{set\+I\+P\+Window@{set\+I\+P\+Window}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+I\+P\+Window(uint16\+\_\+t val)}{setIPWindow(uint16_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+I\+P\+Window (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a1738c5008aabc7f542d0b5bbd1c99416}{}\label{class_wasp_w_i_f_i_a1738c5008aabc7f542d0b5bbd1c99416}
+
+
+Sets the IP Window value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & val \+: specifies the the IP maximum buffer window size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Join\+Mode@{set\+Join\+Mode}}
+\index{set\+Join\+Mode@{set\+Join\+Mode}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Join\+Mode(uint8\+\_\+t val)}{setJoinMode(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Join\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a9d9dd5a231d8cb446034598f398b358d}{}\label{class_wasp_w_i_f_i_a9d9dd5a231d8cb446034598f398b358d}
+Sets the policy for automatically joining/associating with network access points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the joining mode (M\+A\+N\+U\+AL, A\+U\+T\+O\+\_\+\+S\+T\+OR, A\+U\+T\+O\+\_\+\+B\+E\+ST, C\+R\+E\+A\+T\+E\+\_\+\+A\+D\+H\+OC). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise.
+\end{DoxyReturn}
+Sets the policy for automatically joining/associating with network access points. \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Join\+Time@{set\+Join\+Time}}
+\index{set\+Join\+Time@{set\+Join\+Time}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Join\+Time(uint16\+\_\+t val)}{setJoinTime(uint16_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Join\+Time (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ad0cc0349c89e08a10252992c0935f6d9}{}\label{class_wasp_w_i_f_i_ad0cc0349c89e08a10252992c0935f6d9}
+Join timer is the time in milliseconds the join function will wait for an access point to complete the association process. This timer is also the timeout for the W\+PA handshaking process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & val \+: specifies the time in miliseconds the join function will wait. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise.
+\end{DoxyReturn}
+Join timer is the time in milliseconds the join function will wait for an access point to complete the association process. This timer is also the timeout for the W\+PA handshaking process. \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Local\+Port@{set\+Local\+Port}}
+\index{set\+Local\+Port@{set\+Local\+Port}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Local\+Port(uint16\+\_\+t port)}{setLocalPort(uint16_t port)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Local\+Port (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a0cdbe1677ec7ed423c73372566d8c07a}{}\label{class_wasp_w_i_f_i_a0cdbe1677ec7ed423c73372566d8c07a}
+
+
+Sets the Local Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & port \+: specifies the local port. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Netmask@{set\+Netmask}}
+\index{set\+Netmask@{set\+Netmask}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Netmask(ip\+Addr netmask)}{setNetmask(ipAddr netmask)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Netmask (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{netmask}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a9c18acb0df5932a4effbd177fb6d2050}{}\label{class_wasp_w_i_f_i_a9c18acb0df5932a4effbd177fb6d2050}
+
+
+Sets the netmask. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & netmask \+: specifies the network mask. If D\+H\+CP is turned on, the netmask is assign and overwritten during association with the access point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Remote\+Host@{set\+Remote\+Host}}
+\index{set\+Remote\+Host@{set\+Remote\+Host}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Remote\+Host(ip\+Addr ip, uint16\+\_\+t port)}{setRemoteHost(ipAddr ip, uint16_t port)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Remote\+Host (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip, }
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_aca1c5c2787170645b4eb104b7c4dab21}{}\label{class_wasp_w_i_f_i_aca1c5c2787170645b4eb104b7c4dab21}
+
+
+Sets the Remote Host. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip \+: specifies the ip address of the remote host. \\
+\hline
+{\em uint16\+\_\+t} & port \+: specifies the port of the remote host. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+R\+T\+Cfrom\+Wi\+Fi@{set\+R\+T\+Cfrom\+Wi\+Fi}}
+\index{set\+R\+T\+Cfrom\+Wi\+Fi@{set\+R\+T\+Cfrom\+Wi\+Fi}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+R\+T\+Cfrom\+Wi\+Fi()}{setRTCfromWiFi()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+R\+T\+Cfrom\+Wi\+Fi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a676f667adeb0200cb56600a4b536f400}{}\label{class_wasp_w_i_f_i_a676f667adeb0200cb56600a4b536f400}
+
+
+Set R\+TC date taken from Wi\+Fi module. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on succes, \textquotesingle{}0\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Scan\+Options@{set\+Scan\+Options}}
+\index{set\+Scan\+Options@{set\+Scan\+Options}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Scan\+Options(uint16\+\_\+t time, char $\ast$mask, bool passive)}{setScanOptions(uint16_t time, char *mask, bool passive)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Scan\+Options (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time, }
+\item[{char $\ast$}]{mask, }
+\item[{bool}]{passive}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ad15ad4c4f2b23c29ef3163e1eff736ca}{}\label{class_wasp_w_i_f_i_ad15ad4c4f2b23c29ef3163e1eff736ca}
+
+
+Sets the Scan options, but does not launch the scan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time \+: Scan time (in ms). \\
+\hline
+{\em char$\ast$} & mask \+: Channel mask used for scanning channels with the auto-\/join. \\
+\hline
+{\em bool} & passive \+: Enables or disables the pasive scan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Sleep@{set\+Sleep}}
+\index{set\+Sleep@{set\+Sleep}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Sleep(uint8\+\_\+t s\+Time, uint8\+\_\+t s\+Cycle)}{setSleep(uint8_t sTime, uint8_t sCycle)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Sleep (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{s\+Time, }
+\item[{uint8\+\_\+t}]{s\+Cycle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a339bb1b6719c55a2279b2b9e57ca7902}{}\label{class_wasp_w_i_f_i_a339bb1b6719c55a2279b2b9e57ca7902}
+
+
+Sets the sleep time and the wake time (in seconds). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & s\+Time \+: specifies the time the wifi module is sleeping. \\
+\hline
+{\em uint8\+\_\+t} & s\+Cycle \+: specifies the time the wifi module will wait until get slept again. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+T\+C\+Pclient@{set\+T\+C\+Pclient}}
+\index{set\+T\+C\+Pclient@{set\+T\+C\+Pclient}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+T\+C\+Pclient(ip\+Addr ip\+\_\+remote, uint16\+\_\+t port\+\_\+remote, uint16\+\_\+t port\+\_\+local)}{setTCPclient(ipAddr ip_remote, uint16_t port_remote, uint16_t port_local)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+T\+C\+Pclient (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip\+\_\+remote, }
+\item[{uint16\+\_\+t}]{port\+\_\+remote, }
+\item[{uint16\+\_\+t}]{port\+\_\+local}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ac317491b020c712c4fb88f383529e31d}{}\label{class_wasp_w_i_f_i_ac317491b020c712c4fb88f383529e31d}
+
+
+Sets the configuration and opens a T\+CP client connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip\+\_\+remote \+: specifies the IP address of the T\+CP remote server. \\
+\hline
+{\em uint16\+\_\+t} & port\+\_\+remote \+: specifies the T\+CP remote server port. \\
+\hline
+{\em uint16\+\_\+t} & port\+\_\+local \+: specifies the local port for the T\+CP connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+T\+C\+Ppassw@{set\+T\+C\+Ppassw}}
+\index{set\+T\+C\+Ppassw@{set\+T\+C\+Ppassw}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+T\+C\+Ppassw(char $\ast$password)}{setTCPpassw(char *password)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+T\+C\+Ppassw (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ad01285dacfcbd9284ebee63566d7d410}{}\label{class_wasp_w_i_f_i_ad01285dacfcbd9284ebee63566d7d410}
+Sets the T\+CP connection password. Provides minimal authentication by requiring any remote device that connects to send and match a challenge $<$val$>$. When set, all newly opened connections must first send the exact characters that match the stored password, otherwise the W\+I\+FI module will close the connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & password \+: specifies the password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise.
+\end{DoxyReturn}
+Sets the T\+CP connection password. Provides minimal authentication by requiring any remote device that connects to send and match a challenge $<$val$>$. When set, all newly opened connections must first send the exact characters that match the stored password, otherwise the W\+I\+FI module will close the connection. \index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+T\+C\+Pserver@{set\+T\+C\+Pserver}}
+\index{set\+T\+C\+Pserver@{set\+T\+C\+Pserver}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+T\+C\+Pserver(uint16\+\_\+t port\+\_\+local)}{setTCPserver(uint16_t port_local)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+T\+C\+Pserver (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{port\+\_\+local}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a147034d95622ff4a96591e82c899e0c5}{}\label{class_wasp_w_i_f_i_a147034d95622ff4a96591e82c899e0c5}
+
+
+Sets the configuration and opens a T\+CP server connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & port\+\_\+local \+: specifies the local port for the T\+CP connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+Time\+From\+Server@{set\+Time\+From\+Server}}
+\index{set\+Time\+From\+Server@{set\+Time\+From\+Server}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+Time\+From\+Server(ip\+Addr ip, uint16\+\_\+t port, uint8\+\_\+t interval)}{setTimeFromServer(ipAddr ip, uint16_t port, uint8_t interval)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+Time\+From\+Server (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{uint8\+\_\+t}]{interval}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_aeee6743fc13ef36b6634f4d81d561dc5}{}\label{class_wasp_w_i_f_i_aeee6743fc13ef36b6634f4d81d561dc5}
+
+
+Synchronizes the time from the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip \+: specifies the time server address. \\
+\hline
+{\em uint16\+\_\+t} & port \+: specifies the time server port number. \\
+\hline
+{\em uint8\+\_\+t} & interval \+: the module will get the time every \textquotesingle{}interval\textquotesingle{} minutes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+T\+X\+Power@{set\+T\+X\+Power}}
+\index{set\+T\+X\+Power@{set\+T\+X\+Power}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+T\+X\+Power(uint8\+\_\+t val)}{setTXPower(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+T\+X\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a0fb355d61a34b565f3136e0948bbc827}{}\label{class_wasp_w_i_f_i_a0fb355d61a34b565f3136e0948bbc827}
+
+
+Sets the Transmission Power. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the Wi-\/\+Fi transmit power (0..12). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+T\+X\+Rate@{set\+T\+X\+Rate}}
+\index{set\+T\+X\+Rate@{set\+T\+X\+Rate}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+T\+X\+Rate(uint8\+\_\+t val)}{setTXRate(uint8_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+T\+X\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_ab1283eabe3c8921efcf36c0ac5967229}{}\label{class_wasp_w_i_f_i_ab1283eabe3c8921efcf36c0ac5967229}
+
+
+Sets the Transmission Rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & val \+: specifies the wireless data rate (0..15). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+U\+D\+Pclient@{set\+U\+D\+Pclient}}
+\index{set\+U\+D\+Pclient@{set\+U\+D\+Pclient}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+U\+D\+Pclient(ip\+Addr ip\+\_\+remote, uint16\+\_\+t port\+\_\+remote, uint16\+\_\+t port\+\_\+local)}{setUDPclient(ipAddr ip_remote, uint16_t port_remote, uint16_t port_local)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+U\+D\+Pclient (
+\begin{DoxyParamCaption}
+\item[{ip\+Addr}]{ip\+\_\+remote, }
+\item[{uint16\+\_\+t}]{port\+\_\+remote, }
+\item[{uint16\+\_\+t}]{port\+\_\+local}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a1415970763b9ca9ae0ad4446e6fc19fe}{}\label{class_wasp_w_i_f_i_a1415970763b9ca9ae0ad4446e6fc19fe}
+
+
+Sets the configuration and opens a U\+DP client connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\+Addr} & ip\+\_\+remote \+: specifies the destination IP address of the U\+DP messages. \\
+\hline
+{\em uint16\+\_\+t} & port\+\_\+remote \+: specifies the destination port of the U\+DP messages. \\
+\hline
+{\em uint16\+\_\+t} & port\+\_\+local \+: specifies the local port for sending U\+DP messages. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!set\+U\+D\+Pserver@{set\+U\+D\+Pserver}}
+\index{set\+U\+D\+Pserver@{set\+U\+D\+Pserver}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{set\+U\+D\+Pserver(uint16\+\_\+t port\+\_\+local)}{setUDPserver(uint16_t port_local)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::set\+U\+D\+Pserver (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{port\+\_\+local}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_aabba8381eaad271b6969e64ec37cffe8}{}\label{class_wasp_w_i_f_i_aabba8381eaad271b6969e64ec37cffe8}
+
+
+Sets the configuration and opens a U\+DP server connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & port\+\_\+local \+: specifies the local port for receiving U\+DP messages. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!store\+Data@{store\+Data}}
+\index{store\+Data@{store\+Data}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{store\+Data()}{storeData()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::store\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_acbf11e3a125d0e28ea1b35343fb8315f}{}\label{class_wasp_w_i_f_i_acbf11e3a125d0e28ea1b35343fb8315f}
+
+
+Saves current configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!synchronize\+Time@{synchronize\+Time}}
+\index{synchronize\+Time@{synchronize\+Time}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{synchronize\+Time()}{synchronizeTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+W\+I\+F\+I\+::synchronize\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a2820426efd02c54720556c9230cafd41}{}\label{class_wasp_w_i_f_i_a2820426efd02c54720556c9230cafd41}
+
+
+Synchronizes the time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!upload\+File@{upload\+File}}
+\index{upload\+File@{upload\+File}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{upload\+File(char $\ast$file, char $\ast$local\+\_\+folder, char $\ast$remote\+\_\+folder)}{uploadFile(char *file, char *local_folder, char *remote_folder)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::upload\+File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file, }
+\item[{char $\ast$}]{local\+\_\+folder, }
+\item[{char $\ast$}]{remote\+\_\+folder}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a8cb96fcf0f69d79a7121823fdce1fe0c}{}\label{class_wasp_w_i_f_i_a8cb96fcf0f69d79a7121823fdce1fe0c}
+
+
+Uploads a file via F\+TP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & file \+: specifies the name of the file to put into the F\+TP server. \\
+\hline
+{\em char$\ast$} & local\+\_\+folder \+: specifies the folder of the SD card that contains the file. \\
+\hline
+{\em char$\ast$} & remote\+\_\+folder \+: specifies the folder of the F\+TP server to upload the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} on success, \textquotesingle{}0\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!wait\+For\+Data@{wait\+For\+Data}}
+\index{wait\+For\+Data@{wait\+For\+Data}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{wait\+For\+Data(int num\+Bytes)}{waitForData(int numBytes)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::wait\+For\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a953dcf150e341b5f10ca6b88828d1c80}{}\label{class_wasp_w_i_f_i_a953dcf150e341b5f10ca6b88828d1c80}
+
+
+Wait for a number of bytes to be received in the U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num\+Bytes\+: The number of bytes to be expected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if num\+Bytes have been received. \textquotesingle{}0\textquotesingle{} if time is up and num\+Bytes have not been received. 
+\end{DoxyReturn}
+\index{Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}!wait\+For\+Data@{wait\+For\+Data}}
+\index{wait\+For\+Data@{wait\+For\+Data}!Wasp\+W\+I\+FI@{Wasp\+W\+I\+FI}}
+\subsubsection[{\texorpdfstring{wait\+For\+Data(int num\+Bytes, unsigned long timeout)}{waitForData(int numBytes, unsigned long timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+W\+I\+F\+I\+::wait\+For\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Bytes, }
+\item[{unsigned long}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_w_i_f_i_a910136ffa5e23101a4b0df10cbf4e7cf}{}\label{class_wasp_w_i_f_i_a910136ffa5e23101a4b0df10cbf4e7cf}
+
+
+Wait for a number of bytes to be received in the U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num\+Bytes\+: The number of bytes to be expected \\
+\hline
+{\em unsigned} & long timeout\+: number of milliseconds before timeout \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if num\+Bytes have been received. \textquotesingle{}0\textquotesingle{} if time is up and num\+Bytes have not been received. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+W\+I\+F\+I/\hyperlink{_wasp_w_i_f_i_8h}{Wasp\+W\+I\+F\+I.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+W\+I\+F\+I/\hyperlink{_wasp_w_i_f_i_8cpp}{Wasp\+W\+I\+F\+I.\+cpp}\end{DoxyCompactItemize}

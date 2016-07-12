@@ -1,0 +1,572 @@
+\hypertarget{class_wasp_r_f_i_d}{}\section{Wasp\+R\+F\+ID Class Reference}
+\label{class_wasp_r_f_i_d}\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_r_f_i_d_a437144d1e8ff2772c0eeca07d57ef29c}{Wasp\+R\+F\+ID} ()\hypertarget{class_wasp_r_f_i_d_a437144d1e8ff2772c0eeca07d57ef29c}{}\label{class_wasp_r_f_i_d_a437144d1e8ff2772c0eeca07d57ef29c}
+
+\begin{DoxyCompactList}\small\item\em Void constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_f_i_d_adf55287533563cc52fb2d3d4a7a6709b}{ON} (uint8\+\_\+t socket)
+\begin{DoxyCompactList}\small\item\em Switches ON the modelue and assigns the U\+A\+RT. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_f_i_d_aa951b5e2f0a12e64ad4d880c7e2bff46}{O\+FF} (void)
+\begin{DoxyCompactList}\small\item\em Switches O\+FF the module and closes the U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_a72bfa6ae640df908fcad7d13e3214b34}{init} (uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t $\ast$A\+TQ)
+\begin{DoxyCompactList}\small\item\em The goal of this command is to detect as many targets (maximum Max\+Tg) as possible in passive mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_acb0ff073a455c3b1d480c16e0218ff86}{authenticate} (uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t block\+Address, uint8\+\_\+t $\ast$key\+Access)
+\begin{DoxyCompactList}\small\item\em A block must be authenticated before read and write operations. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_r_f_i_d_adc446ba6d9cdb9512d42bc6d9b742c81}{get\+Firmware} (void)
+\begin{DoxyCompactList}\small\item\em The P\+N532 sends back the version of the embedded firmware. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_a5e0b4dc84ba20cb8a374fd15e1843574}{write} (uint8\+\_\+t address, uint8\+\_\+t $\ast$block\+Data)
+\begin{DoxyCompactList}\small\item\em Write 16 bytes in address . \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_a77952c14f93658a5ad612e927747bab7}{read} (uint8\+\_\+t address, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Read 16 bytes from address . \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_acd7871ca6111f276b57c796f5ca77f45}{read\+With\+Auth} (uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t $\ast$key\+Access, uint8\+\_\+t $\ast$data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Reading. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_ac792f36e5655aff3bd4e387844d38376}{write\+With\+Auth} (uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t $\ast$key\+Access, uint8\+\_\+t $\ast$\+\_\+data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Authenticates one card\textquotesingle{}s sector and writes one block. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_ac113e73110560933d245d3b02feeec22}{write\+And\+Check} (uint8\+\_\+t $\ast$data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Writes one card\textquotesingle{}s block and checks that. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_ada8bba83ec83cabb93b0d16e43ceebd7}{write\+And\+Check\+With\+Auth} (uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t $\ast$key\+Access, uint8\+\_\+t $\ast$data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Authenticates one card\textquotesingle{}s sector, writes one block and checks that. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_a3f140dfd2b557d986e3f9498d9409972}{power\+Down} (void)
+\begin{DoxyCompactList}\small\item\em Put the module into Power Down mode in order to save power consumption. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_f_i_d_a0414fab871837149b0b36b914511c8d1}{wake\+Up} (void)
+\begin{DoxyCompactList}\small\item\em Wake up from power dowm mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_f_i_d_afb4ede4f2bf41084ddaa4e12f82e4b22}{print} (uint8\+\_\+t $\ast$\+\_\+data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Print data stored in vectors . \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_a7760772c0b1d31ca34079445d47843ac}{equal\+U\+I\+Ds} (uint8\+\_\+t $\ast$U\+I\+D1, uint8\+\_\+t $\ast$U\+I\+D2)
+\begin{DoxyCompactList}\small\item\em It compares 2 U\+I\+Ds. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_r_f_i_d_a0730c22e241bda1be982310858b3888d}{search\+U\+ID} (uint8\+\_\+t $\ast$v\+Cards, uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t n\+Cards)
+\begin{DoxyCompactList}\small\item\em Searches one U\+ID inside one group of U\+I\+Ds. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_r_f_i_d_a25720ecdc923695042eb276ec624c903}{string2vector} (char $\ast$\hyperlink{group__deprecated__items_ga5cfa4750a0633c34c7a361d8fd62c042}{inp}, uint8\+\_\+t $\ast$\hyperlink{group__deprecated__items_gaab324bd721e821e275f00c3478e240c9}{outp})
+\begin{DoxyCompactList}\small\item\em Convert from a string to a pointer to uint8\+\_\+t\textquotesingle{}s. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_r_f_i_d_a5f1c6e5544e13b461139e7a87ed115f8}{vector2int} (uint8\+\_\+t $\ast$\hyperlink{group__deprecated__items_ga5cfa4750a0633c34c7a361d8fd62c042}{inp})
+\begin{DoxyCompactList}\small\item\em Convert from a pointer to uint8\+\_\+t\textquotesingle{}s to an integer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_f_i_d_ac24621d20510f74d8d4482d7e683624f}{set\+Keys} (uint8\+\_\+t $\ast$U\+ID, uint8\+\_\+t $\ast$key\+Old, uint8\+\_\+t $\ast$keyA, uint8\+\_\+t $\ast$keyB, uint8\+\_\+t $\ast$config, uint8\+\_\+t $\ast$data, uint8\+\_\+t add)
+\begin{DoxyCompactList}\small\item\em Changes both keys and access conditions to one card\textquotesingle{}s sector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{authenticate(uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t block\+Address, uint8\+\_\+t $\ast$key\+Access)}{authenticate(uint8_t *UID, uint8_t blockAddress, uint8_t *keyAccess)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::authenticate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t}]{block\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{key\+Access}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_acb0ff073a455c3b1d480c16e0218ff86}{}\label{class_wasp_r_f_i_d_acb0ff073a455c3b1d480c16e0218ff86}
+
+
+A block must be authenticated before read and write operations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & block\+Address\+: The block to be authenticated. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & block\+Address\+: The block to be authenticated. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!equal\+U\+I\+Ds@{equal\+U\+I\+Ds}}
+\index{equal\+U\+I\+Ds@{equal\+U\+I\+Ds}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{equal\+U\+I\+Ds(uint8\+\_\+t $\ast$\+U\+I\+D1, uint8\+\_\+t $\ast$\+U\+I\+D2)}{equalUIDs(uint8_t *UID1, uint8_t *UID2)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::equal\+U\+I\+Ds (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+I\+D1, }
+\item[{uint8\+\_\+t $\ast$}]{U\+I\+D2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a7760772c0b1d31ca34079445d47843ac}{}\label{class_wasp_r_f_i_d_a7760772c0b1d31ca34079445d47843ac}
+
+
+It compares 2 U\+I\+Ds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+I\+D1 \\
+\hline
+{\em uint8\+\_\+t} & U\+I\+D2 \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!get\+Firmware@{get\+Firmware}}
+\index{get\+Firmware@{get\+Firmware}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{get\+Firmware(void)}{getFirmware(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+R\+F\+I\+D\+::get\+Firmware (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_adc446ba6d9cdb9512d42bc6d9b742c81}{}\label{class_wasp_r_f_i_d_adc446ba6d9cdb9512d42bc6d9b742c81}
+
+
+The P\+N532 sends back the version of the embedded firmware. 
+
+The P\+N532 sends back the version of the embedded firmware. It is needed to launch a simple command to sycnchronize
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise.
+
+0 on success, 1 otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!init@{init}}
+\index{init@{init}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t $\ast$\+A\+T\+Q)}{init(uint8_t *UID, uint8_t *ATQ)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t $\ast$}]{A\+TQ}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a72bfa6ae640df908fcad7d13e3214b34}{}\label{class_wasp_r_f_i_d_a72bfa6ae640df908fcad7d13e3214b34}
+
+
+The goal of this command is to detect as many targets (maximum Max\+Tg) as possible in passive mode. 
+
+Request In\+List\+Passive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector where stores the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & A\+TQ\+: pointer to A\+TQ. A vector where stores the answer to request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of targets detected
+\end{DoxyReturn}
+The goal of this command is to detect as many targets (maximum Max\+Tg) as possible in passive mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & $\ast$\+U\+ID \+: Card identifier pointer \\
+\hline
+{\em uint8\+\_\+t} & $\ast$\+A\+TQ \+: Answer to Request pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of targets detected 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{O\+F\+F(void)}{OFF(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+F\+I\+D\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_aa951b5e2f0a12e64ad4d880c7e2bff46}{}\label{class_wasp_r_f_i_d_aa951b5e2f0a12e64ad4d880c7e2bff46}
+
+
+Switches O\+FF the module and closes the U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!ON@{ON}}
+\index{ON@{ON}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t socket)}{ON(uint8_t socket)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+F\+I\+D\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{socket}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_adf55287533563cc52fb2d3d4a7a6709b}{}\label{class_wasp_r_f_i_d_adf55287533563cc52fb2d3d4a7a6709b}
+
+
+Switches ON the modelue and assigns the U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & socket\+: The uart por used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & socket\+: The uart por used \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!power\+Down@{power\+Down}}
+\index{power\+Down@{power\+Down}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{power\+Down(void)}{powerDown(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::power\+Down (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a3f140dfd2b557d986e3f9498d9409972}{}\label{class_wasp_r_f_i_d_a3f140dfd2b557d986e3f9498d9409972}
+
+
+Put the module into Power Down mode in order to save power consumption. 
+
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!print@{print}}
+\index{print@{print}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{print(uint8\+\_\+t $\ast$\+\_\+data, uint8\+\_\+t length)}{print(uint8_t *_data, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+F\+I\+D\+::print (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{\+\_\+data, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_afb4ede4f2bf41084ddaa4e12f82e4b22}{}\label{class_wasp_r_f_i_d_afb4ede4f2bf41084ddaa4e12f82e4b22}
+
+
+Print data stored in vectors . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & \+\_\+data\+: data to print \\
+\hline
+{\em uint8\+\_\+t} & length\+: length of the \+\_\+data to print. \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!read@{read}}
+\index{read@{read}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{read(uint8\+\_\+t address, uint8\+\_\+t $\ast$data)}{read(uint8_t address, uint8_t *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address, }
+\item[{uint8\+\_\+t $\ast$}]{read\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a77952c14f93658a5ad612e927747bab7}{}\label{class_wasp_r_f_i_d_a77952c14f93658a5ad612e927747bab7}
+
+
+Read 16 bytes from address . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & address\+: the address to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & address\+: the address for reading. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 otherwise.\+Reading 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!read\+With\+Auth@{read\+With\+Auth}}
+\index{read\+With\+Auth@{read\+With\+Auth}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{read\+With\+Auth(uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t $\ast$key\+Access, uint8\+\_\+t $\ast$data, uint8\+\_\+t address)}{readWithAuth(uint8_t *UID, uint8_t *keyAccess, uint8_t *data, uint8_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::read\+With\+Auth (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t $\ast$}]{key\+Access, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_acd7871ca6111f276b57c796f5ca77f45}{}\label{class_wasp_r_f_i_d_acd7871ca6111f276b57c796f5ca77f45}
+
+
+Reading. 
+
+Authenticates one card\textquotesingle{}s sector and reads one block.
+
+Authenticates one card\textquotesingle{}s sector and reads one block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+{\em uint8\+\_\+t} & \+\_\+data \+: a vector where stores the read data \\
+\hline
+{\em uint8\+\_\+t} & address\+: the address to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+{\em uint8\+\_\+t} & \+\_\+data \+: a vector where stores the read data \\
+\hline
+{\em uint8\+\_\+t} & address\+: the address to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!search\+U\+ID@{search\+U\+ID}}
+\index{search\+U\+ID@{search\+U\+ID}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{search\+U\+I\+D(uint8\+\_\+t $\ast$v\+Cards, uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t n\+Cards)}{searchUID(uint8_t *vCards, uint8_t *UID, uint8_t nCards)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+R\+F\+I\+D\+::search\+U\+ID (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{v\+Cards, }
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t}]{n\+Cards}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a0730c22e241bda1be982310858b3888d}{}\label{class_wasp_r_f_i_d_a0730c22e241bda1be982310858b3888d}
+
+
+Searches one U\+ID inside one group of U\+I\+Ds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & v\+Cards\+: a vector with several Card identifiers \\
+\hline
+{\em uint8\+\_\+t} & U\+ID\+: the Card identifier to search. \\
+\hline
+{\em uint8\+\_\+t} & n\+Cards\+: number of Cards. \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!set\+Keys@{set\+Keys}}
+\index{set\+Keys@{set\+Keys}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{set\+Keys(uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t $\ast$key\+Old, uint8\+\_\+t $\ast$key\+A, uint8\+\_\+t $\ast$key\+B, uint8\+\_\+t $\ast$config, uint8\+\_\+t $\ast$data, uint8\+\_\+t add)}{setKeys(uint8_t *UID, uint8_t *keyOld, uint8_t *keyA, uint8_t *keyB, uint8_t *config, uint8_t *data, uint8_t add)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::set\+Keys (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t $\ast$}]{key\+Old, }
+\item[{uint8\+\_\+t $\ast$}]{keyA, }
+\item[{uint8\+\_\+t $\ast$}]{keyB, }
+\item[{uint8\+\_\+t $\ast$}]{config, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{add}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_ac24621d20510f74d8d4482d7e683624f}{}\label{class_wasp_r_f_i_d_ac24621d20510f74d8d4482d7e683624f}
+
+
+Changes both keys and access conditions to one card\textquotesingle{}s sector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & kel\+Old\+: the old key\+Access \\
+\hline
+{\em uint8\+\_\+t} & keyA\+: the new key\+Acces A \\
+\hline
+{\em uint8\+\_\+t} & keyB\+: the new key\+Access B \\
+\hline
+{\em uint8\+\_\+t} & config\+: the configuration of the target \\
+\hline
+{\em uint8\+\_\+t} & data\+: data to write \\
+\hline
+{\em uint8\+\_\+t} & add\+: address where change the key\+Access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 0 success, 1 otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & kel\+Old\+: the old key\+Access \\
+\hline
+{\em uint8\+\_\+t} & keyA\+: the new key\+Acces A \\
+\hline
+{\em uint8\+\_\+t} & keyB\+: the new key\+Access B \\
+\hline
+{\em uint8\+\_\+t} & config\+: the configuration of the target \\
+\hline
+{\em uint8\+\_\+t} & data\+: data to write \\
+\hline
+{\em uint8\+\_\+t} & add\+: address where change the key\+Access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 0 success, 1 otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!string2vector@{string2vector}}
+\index{string2vector@{string2vector}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{string2vector(char $\ast$inp, uint8\+\_\+t $\ast$outp)}{string2vector(char *inp, uint8_t *outp)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+R\+F\+I\+D\+::string2vector (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{inp, }
+\item[{uint8\+\_\+t $\ast$}]{outp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a25720ecdc923695042eb276ec624c903}{}\label{class_wasp_r_f_i_d_a25720ecdc923695042eb276ec624c903}
+
+
+Convert from a string to a pointer to uint8\+\_\+t\textquotesingle{}s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & inp\+: the string we want to convert \\
+\hline
+{\em uint8\+\_\+t} & outp\+: the transformed pointer to unit8\+\_\+t\textquotesingle{}s\\
+\hline
+{\em char} & inp\+: the string we want to convert \\
+\hline
+{\em uint8\+\_\+t} & outp\+: the transformed pointer to unit8\+\_\+t\textquotesingle{}s \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: returns 0 on success, -\/1 on failure. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!vector2int@{vector2int}}
+\index{vector2int@{vector2int}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{vector2int(uint8\+\_\+t $\ast$inp)}{vector2int(uint8_t *inp)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+R\+F\+I\+D\+::vector2int (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{inp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a5f1c6e5544e13b461139e7a87ed115f8}{}\label{class_wasp_r_f_i_d_a5f1c6e5544e13b461139e7a87ed115f8}
+
+
+Convert from a pointer to uint8\+\_\+t\textquotesingle{}s to an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & inp\+: the pointer to uint8\+\_\+t\textquotesingle{}s we want to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: the converted integer. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{wake\+Up(void)}{wakeUp(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+F\+I\+D\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a0414fab871837149b0b36b914511c8d1}{}\label{class_wasp_r_f_i_d_a0414fab871837149b0b36b914511c8d1}
+
+
+Wake up from power dowm mode. 
+
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!write@{write}}
+\index{write@{write}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{write(uint8\+\_\+t address, uint8\+\_\+t $\ast$block\+Data)}{write(uint8_t address, uint8_t *blockData)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address, }
+\item[{uint8\+\_\+t $\ast$}]{block\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_a5e0b4dc84ba20cb8a374fd15e1843574}{}\label{class_wasp_r_f_i_d_a5e0b4dc84ba20cb8a374fd15e1843574}
+
+
+Write 16 bytes in address . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & address\+: the address where write block\+Data. \\
+\hline
+{\em uint8\+\_\+t} & block\+Data\+: A vector pointer with the information to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & address\+: the address where write block\+Data. \\
+\hline
+{\em uint8\+\_\+t} & block\+Data\+: A vector pointer with the information to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 otherwise.\+Writing 
+\end{DoxyReturn}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!write\+And\+Check@{write\+And\+Check}}
+\index{write\+And\+Check@{write\+And\+Check}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{write\+And\+Check(uint8\+\_\+t $\ast$data, uint8\+\_\+t address)}{writeAndCheck(uint8_t *data, uint8_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::write\+And\+Check (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_ac113e73110560933d245d3b02feeec22}{}\label{class_wasp_r_f_i_d_ac113e73110560933d245d3b02feeec22}
+
+
+Writes one card\textquotesingle{}s block and checks that. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & \+\_\+data \+: data to write. \\
+\hline
+{\em uint8\+\_\+t} & address\+: the address where write \+\_\+data. \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!write\+And\+Check\+With\+Auth@{write\+And\+Check\+With\+Auth}}
+\index{write\+And\+Check\+With\+Auth@{write\+And\+Check\+With\+Auth}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{write\+And\+Check\+With\+Auth(uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t $\ast$key\+Access, uint8\+\_\+t $\ast$data, uint8\+\_\+t address)}{writeAndCheckWithAuth(uint8_t *UID, uint8_t *keyAccess, uint8_t *data, uint8_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::write\+And\+Check\+With\+Auth (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t $\ast$}]{key\+Access, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_ada8bba83ec83cabb93b0d16e43ceebd7}{}\label{class_wasp_r_f_i_d_ada8bba83ec83cabb93b0d16e43ceebd7}
+
+
+Authenticates one card\textquotesingle{}s sector, writes one block and checks that. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+{\em uint8\+\_\+t} & \+\_\+data \+: data to write. \\
+\hline
+{\em uint8\+\_\+t} & address\+: the address where write \+\_\+data. \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}!write\+With\+Auth@{write\+With\+Auth}}
+\index{write\+With\+Auth@{write\+With\+Auth}!Wasp\+R\+F\+ID@{Wasp\+R\+F\+ID}}
+\subsubsection[{\texorpdfstring{write\+With\+Auth(uint8\+\_\+t $\ast$\+U\+I\+D, uint8\+\_\+t $\ast$key\+Access, uint8\+\_\+t $\ast$\+\_\+data, uint8\+\_\+t address)}{writeWithAuth(uint8_t *UID, uint8_t *keyAccess, uint8_t *_data, uint8_t address)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+F\+I\+D\+::write\+With\+Auth (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{U\+ID, }
+\item[{uint8\+\_\+t $\ast$}]{key\+Access, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_f_i_d_ac792f36e5655aff3bd4e387844d38376}{}\label{class_wasp_r_f_i_d_ac792f36e5655aff3bd4e387844d38376}
+
+
+Authenticates one card\textquotesingle{}s sector and writes one block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+{\em uint8\+\_\+t} & \+\_\+data \+: data to write. \\
+\hline
+{\em uint8\+\_\+t} & address\+: the address where write \+\_\+data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & U\+ID\+: pointer to U\+ID. A vector with the card identifier. \\
+\hline
+{\em uint8\+\_\+t} & key\+Acces\+: A vector pointer with the key\+Acces needed to autenticate. \\
+\hline
+{\em uint8\+\_\+t} & \+\_\+data \+: data to write. \\
+\hline
+{\em uint8\+\_\+t} & address\+: the address where write \+\_\+data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, 1 otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+R\+F\+I\+D1356/Wasp\+R\+F\+I\+D13.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+R\+F\+I\+D1356/Wasp\+R\+F\+I\+D13.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,199 @@
+\hypertarget{class_b_m_e280}{}\section{B\+M\+E280 Class Reference}
+\label{class_b_m_e280}\index{B\+M\+E280@{B\+M\+E280}}
+
+
+\hyperlink{class_b_m_e280}{B\+M\+E280} Class.  
+
+
+
+
+{\ttfamily \#include $<$B\+M\+E280.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \hyperlink{class_b_m_e280_a01754b06e80a1a2234c61fd61cc56208}{ON} ()
+\item 
+int8\+\_\+t \hyperlink{class_b_m_e280_aa7ba7da85cdcf814ad03b487a16ccffe}{check\+ID} ()
+\begin{DoxyCompactList}\small\item\em This function checks if the module is accesible via I2C. \end{DoxyCompactList}\item 
+void \hyperlink{class_b_m_e280_ae611569bcd7acf70b1a4bbf23bce6b4b}{read\+Calibration} ()
+\begin{DoxyCompactList}\small\item\em This function reads the calibration registers. \end{DoxyCompactList}\item 
+void \hyperlink{class_b_m_e280_aa4567ab625ccd9d79758afd4fd1ec6bc}{show\+Calibration} ()
+\begin{DoxyCompactList}\small\item\em This function shows the calibration variables. \end{DoxyCompactList}\item 
+float \hyperlink{class_b_m_e280_a10aab08dcec4989c247c57306a1ad3e8}{get\+Temperature} (uint8\+\_\+t over\+\_\+sample\+\_\+value, uint8\+\_\+t filter\+\_\+value)
+\begin{DoxyCompactList}\small\item\em M\+E\+A\+S\+U\+RE F\+U\+N\+C\+T\+I\+O\+NS. \end{DoxyCompactList}\item 
+float \hyperlink{class_b_m_e280_a910b290ae7bd11fd27afd8265bdc9203}{get\+Pressure} (uint8\+\_\+t over\+\_\+sample\+\_\+value, uint8\+\_\+t filter\+\_\+value)
+\begin{DoxyCompactList}\small\item\em This function reads pressure and compensate it. \end{DoxyCompactList}\item 
+float \hyperlink{class_b_m_e280_a17a7b923ef6bf7165e8bcb23256a975d}{get\+Humidity} (uint8\+\_\+t over\+\_\+sample\+\_\+value)
+\begin{DoxyCompactList}\small\item\em This function reads humidity and compensate it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_b_m_e280}{B\+M\+E280} Class. 
+
+\hyperlink{class_b_m_e280}{B\+M\+E280} Class defines all the variables and functions used to manage \hyperlink{class_b_m_e280}{B\+M\+E280} sensor 
+
+\subsection{Member Function Documentation}
+\index{B\+M\+E280@{B\+M\+E280}!check\+ID@{check\+ID}}
+\index{check\+ID@{check\+ID}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{check\+I\+D()}{checkID()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t B\+M\+E280\+::check\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_aa7ba7da85cdcf814ad03b487a16ccffe}{}\label{class_b_m_e280_aa7ba7da85cdcf814ad03b487a16ccffe}
+
+
+This function checks if the module is accesible via I2C. 
+
+\begin{DoxyReturn}{Returns}
+1 if is accesible, 0 if not 
+\end{DoxyReturn}
+\index{B\+M\+E280@{B\+M\+E280}!get\+Humidity@{get\+Humidity}}
+\index{get\+Humidity@{get\+Humidity}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{get\+Humidity(uint8\+\_\+t over\+\_\+sample\+\_\+value)}{getHumidity(uint8_t over_sample_value)}}]{\setlength{\rightskip}{0pt plus 5cm}float B\+M\+E280\+::get\+Humidity (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{over\+\_\+sample\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_a17a7b923ef6bf7165e8bcb23256a975d}{}\label{class_b_m_e280_a17a7b923ef6bf7165e8bcb23256a975d}
+
+
+This function reads humidity and compensate it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & over\+\_\+sample\+\_\+value\+: oversamples value for the sensor
+\begin{DoxyItemize}
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+S\+K\+I\+P\+P\+ED
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+1X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+2X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+4X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+8X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+16X 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The humidity in RH -\/1000 if comunication error -\/1001 if conversion timeout 
+\end{DoxyReturn}
+\index{B\+M\+E280@{B\+M\+E280}!get\+Pressure@{get\+Pressure}}
+\index{get\+Pressure@{get\+Pressure}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{get\+Pressure(uint8\+\_\+t over\+\_\+sample\+\_\+value, uint8\+\_\+t filter\+\_\+value)}{getPressure(uint8_t over_sample_value, uint8_t filter_value)}}]{\setlength{\rightskip}{0pt plus 5cm}float B\+M\+E280\+::get\+Pressure (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{over\+\_\+sample\+\_\+value, }
+\item[{uint8\+\_\+t}]{filter\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_a910b290ae7bd11fd27afd8265bdc9203}{}\label{class_b_m_e280_a910b290ae7bd11fd27afd8265bdc9203}
+
+
+This function reads pressure and compensate it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & over\+\_\+sample\+\_\+value\+: oversamples value for the sensor
+\begin{DoxyItemize}
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+S\+K\+I\+P\+P\+ED
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+1X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+2X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+4X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+8X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+16X 
+\end{DoxyItemize}\\
+\hline
+{\em uint8\+\_\+t} & filter\+\_\+value\+: filter value for the sensor
+\begin{DoxyItemize}
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+\+O\+FF
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+2
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+4
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+8
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+16 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pressure in Pascals -\/1000 if comunication error -\/1001 if conversion timeout 
+\end{DoxyReturn}
+\index{B\+M\+E280@{B\+M\+E280}!get\+Temperature@{get\+Temperature}}
+\index{get\+Temperature@{get\+Temperature}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{get\+Temperature(uint8\+\_\+t over\+\_\+sample\+\_\+value, uint8\+\_\+t filter\+\_\+value)}{getTemperature(uint8_t over_sample_value, uint8_t filter_value)}}]{\setlength{\rightskip}{0pt plus 5cm}float B\+M\+E280\+::get\+Temperature (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{over\+\_\+sample\+\_\+value, }
+\item[{uint8\+\_\+t}]{filter\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_a10aab08dcec4989c247c57306a1ad3e8}{}\label{class_b_m_e280_a10aab08dcec4989c247c57306a1ad3e8}
+
+
+M\+E\+A\+S\+U\+RE F\+U\+N\+C\+T\+I\+O\+NS. 
+
+M\+E\+A\+S\+U\+RE F\+U\+N\+C\+T\+I\+O\+NS This function reads temperature and compensate it
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & over\+\_\+sample\+\_\+value\+: oversamples value for the sensor
+\begin{DoxyItemize}
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+S\+K\+I\+P\+P\+ED
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+1X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+2X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+4X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+8X
+\item B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+16X 
+\end{DoxyItemize}\\
+\hline
+{\em uint8\+\_\+t} & filter\+\_\+value\+: filter value for the sensor
+\begin{DoxyItemize}
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+\+O\+FF
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+2
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+4
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+8
+\item B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+16 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The temperature in ºC -\/1000 if comunication error -\/1001 if conversion timeout 
+\end{DoxyReturn}
+\index{B\+M\+E280@{B\+M\+E280}!ON@{ON}}
+\index{ON@{ON}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t B\+M\+E280\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_a01754b06e80a1a2234c61fd61cc56208}{}\label{class_b_m_e280_a01754b06e80a1a2234c61fd61cc56208}
+P\+O\+W\+ER A\+ND C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON F\+U\+N\+C\+T\+I\+O\+NS This function checks if the module is accesible via I2C and reads the calibration registers
+
+\begin{DoxyReturn}{Returns}
+1 if is OK, 0 if not
+\end{DoxyReturn}
+P\+U\+B\+L\+IC F\+U\+N\+C\+T\+I\+O\+NS P\+O\+W\+ER A\+ND C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON F\+U\+N\+C\+T\+I\+O\+NS \index{B\+M\+E280@{B\+M\+E280}!read\+Calibration@{read\+Calibration}}
+\index{read\+Calibration@{read\+Calibration}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{read\+Calibration()}{readCalibration()}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+M\+E280\+::read\+Calibration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_ae611569bcd7acf70b1a4bbf23bce6b4b}{}\label{class_b_m_e280_ae611569bcd7acf70b1a4bbf23bce6b4b}
+
+
+This function reads the calibration registers. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\index{B\+M\+E280@{B\+M\+E280}!show\+Calibration@{show\+Calibration}}
+\index{show\+Calibration@{show\+Calibration}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection[{\texorpdfstring{show\+Calibration()}{showCalibration()}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+M\+E280\+::show\+Calibration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_m_e280_aa4567ab625ccd9d79758afd4fd1ec6bc}{}\label{class_b_m_e280_aa4567ab625ccd9d79758afd4fd1ec6bc}
+
+
+This function shows the calibration variables. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\hyperlink{_b_m_e280_8h}{B\+M\+E280.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/B\+M\+E280.\+cpp\end{DoxyCompactItemize}

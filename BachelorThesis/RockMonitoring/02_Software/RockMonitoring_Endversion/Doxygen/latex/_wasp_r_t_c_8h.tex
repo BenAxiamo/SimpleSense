@@ -1,0 +1,217 @@
+\hypertarget{_wasp_r_t_c_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+R\+TC.h File Reference}
+\label{_wasp_r_t_c_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+R\+T\+C.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\+Wasp\+R\+T\+C.\+h}}
+
+
+Library for managing the R\+TC.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtimestamp__t}{timestamp\+\_\+t}
+\item 
+class \hyperlink{class_wasp_r_t_c}{Wasp\+R\+TC}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_r_t_c}{Wasp\+R\+TC} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_r_t_c_8h_aaa74cb64ecd7a98d6119293f879b919b}{R\+T\+C\+\_\+\+S\+E\+C\+O\+N\+D\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x00\hypertarget{_wasp_r_t_c_8h_aaa74cb64ecd7a98d6119293f879b919b}{}\label{_wasp_r_t_c_8h_aaa74cb64ecd7a98d6119293f879b919b}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Seconds register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a626a2f9d7d0ed8fabcb733d3e7583574}{R\+T\+C\+\_\+\+M\+I\+N\+U\+T\+E\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x01\hypertarget{_wasp_r_t_c_8h_a626a2f9d7d0ed8fabcb733d3e7583574}{}\label{_wasp_r_t_c_8h_a626a2f9d7d0ed8fabcb733d3e7583574}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Minutes register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_abfef33d592cb963da1ef9dc92f230258}{R\+T\+C\+\_\+\+H\+O\+U\+R\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x02\hypertarget{_wasp_r_t_c_8h_abfef33d592cb963da1ef9dc92f230258}{}\label{_wasp_r_t_c_8h_abfef33d592cb963da1ef9dc92f230258}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Hours register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_afd6271adc0ecd2f7133286b9f9034178}{R\+T\+C\+\_\+\+D\+A\+Y\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x03\hypertarget{_wasp_r_t_c_8h_afd6271adc0ecd2f7133286b9f9034178}{}\label{_wasp_r_t_c_8h_afd6271adc0ecd2f7133286b9f9034178}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Days register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ada0fc99bc9c41586c24a0a718d7fe1db}{R\+T\+C\+\_\+\+D\+A\+T\+E\+\_\+\+A\+D\+D\+R\+E\+SS}~0x04\hypertarget{_wasp_r_t_c_8h_ada0fc99bc9c41586c24a0a718d7fe1db}{}\label{_wasp_r_t_c_8h_ada0fc99bc9c41586c24a0a718d7fe1db}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Date register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a8032573466ccf7e120010c8a5944281a}{R\+T\+C\+\_\+\+M\+O\+N\+T\+H\+\_\+\+A\+D\+D\+R\+E\+SS}~0x05\hypertarget{_wasp_r_t_c_8h_a8032573466ccf7e120010c8a5944281a}{}\label{_wasp_r_t_c_8h_a8032573466ccf7e120010c8a5944281a}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Month register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ac3a188d7d4b3c4ca209def734c06b0fa}{R\+T\+C\+\_\+\+Y\+E\+A\+R\+\_\+\+A\+D\+D\+R\+E\+SS}~0x06\hypertarget{_wasp_r_t_c_8h_ac3a188d7d4b3c4ca209def734c06b0fa}{}\label{_wasp_r_t_c_8h_ac3a188d7d4b3c4ca209def734c06b0fa}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Year register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a5cc3b6caa88f9f2638581e9490f190cc}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~0x07\hypertarget{_wasp_r_t_c_8h_a5cc3b6caa88f9f2638581e9490f190cc}{}\label{_wasp_r_t_c_8h_a5cc3b6caa88f9f2638581e9490f190cc}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm1 start address in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a2334e587862d179544d25ac412c31590}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+S\+E\+C\+O\+N\+D\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x07\hypertarget{_wasp_r_t_c_8h_a2334e587862d179544d25ac412c31590}{}\label{_wasp_r_t_c_8h_a2334e587862d179544d25ac412c31590}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm1 seconds register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_aff614bf7ea5d7dd9b8178d66e394648f}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+I\+N\+U\+T\+E\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x08\hypertarget{_wasp_r_t_c_8h_aff614bf7ea5d7dd9b8178d66e394648f}{}\label{_wasp_r_t_c_8h_aff614bf7ea5d7dd9b8178d66e394648f}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm1 minutes register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a8f45d0136dc7fb79d4f188fcd454023e}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+H\+O\+U\+R\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x09\hypertarget{_wasp_r_t_c_8h_a8f45d0136dc7fb79d4f188fcd454023e}{}\label{_wasp_r_t_c_8h_a8f45d0136dc7fb79d4f188fcd454023e}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm1 hours register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a610beb9901e05d16899e82f0f5927dac}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+D\+A\+Y\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0A\hypertarget{_wasp_r_t_c_8h_a610beb9901e05d16899e82f0f5927dac}{}\label{_wasp_r_t_c_8h_a610beb9901e05d16899e82f0f5927dac}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm1 days register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ab2ce68ef9be14a17727d1044cfc1857e}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0B\hypertarget{_wasp_r_t_c_8h_ab2ce68ef9be14a17727d1044cfc1857e}{}\label{_wasp_r_t_c_8h_ab2ce68ef9be14a17727d1044cfc1857e}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm2 start address in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a4ba48870fb34d3ffd8d036380f1ff15a}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+I\+N\+U\+T\+E\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0B\hypertarget{_wasp_r_t_c_8h_a4ba48870fb34d3ffd8d036380f1ff15a}{}\label{_wasp_r_t_c_8h_a4ba48870fb34d3ffd8d036380f1ff15a}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm2 minutes register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a4976275a839e6cf61763afe6902d455e}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+H\+O\+U\+R\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0C\hypertarget{_wasp_r_t_c_8h_a4976275a839e6cf61763afe6902d455e}{}\label{_wasp_r_t_c_8h_a4976275a839e6cf61763afe6902d455e}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm2 hours register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a4255cabbc6cd358d5be8540814a7272a}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+D\+A\+Y\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0D\hypertarget{_wasp_r_t_c_8h_a4255cabbc6cd358d5be8540814a7272a}{}\label{_wasp_r_t_c_8h_a4255cabbc6cd358d5be8540814a7272a}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Alarm2 days register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a9191461f2877acee219b5040767e4cbf}{R\+T\+C\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0E\hypertarget{_wasp_r_t_c_8h_a9191461f2877acee219b5040767e4cbf}{}\label{_wasp_r_t_c_8h_a9191461f2877acee219b5040767e4cbf}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Control register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a7a0e9ea1b625a5a28148ee5f0e56fdef}{R\+T\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+D\+D\+R\+E\+SS}~0x0F\hypertarget{_wasp_r_t_c_8h_a7a0e9ea1b625a5a28148ee5f0e56fdef}{}\label{_wasp_r_t_c_8h_a7a0e9ea1b625a5a28148ee5f0e56fdef}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Status register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a626daf5a639b0394d73c2ba7f571b1ef}{R\+T\+C\+\_\+\+M\+S\+B\+\_\+\+T\+E\+M\+P\+\_\+\+A\+D\+D\+R\+E\+SS}~0x11\hypertarget{_wasp_r_t_c_8h_a626daf5a639b0394d73c2ba7f571b1ef}{}\label{_wasp_r_t_c_8h_a626daf5a639b0394d73c2ba7f571b1ef}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. M\+SB Temperature register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_aa00e8e93f4bd4ca09cc185a0781fa0b3}{R\+T\+C\+\_\+\+L\+S\+B\+\_\+\+T\+E\+M\+P\+\_\+\+A\+D\+D\+R\+E\+SS}~0x12\hypertarget{_wasp_r_t_c_8h_aa00e8e93f4bd4ca09cc185a0781fa0b3}{}\label{_wasp_r_t_c_8h_aa00e8e93f4bd4ca09cc185a0781fa0b3}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. L\+SB Temperature register in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a3e428674608fb476943c397c80920d8e}{R\+T\+C\+\_\+\+S\+T\+A\+R\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~0x00\hypertarget{_wasp_r_t_c_8h_a3e428674608fb476943c397c80920d8e}{}\label{_wasp_r_t_c_8h_a3e428674608fb476943c397c80920d8e}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Start address. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_aeca19c709b2c1ae0c6d1f586a80acf5d}{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+S\+I\+ZE}~0x13\hypertarget{_wasp_r_t_c_8h_aeca19c709b2c1ae0c6d1f586a80acf5d}{}\label{_wasp_r_t_c_8h_aeca19c709b2c1ae0c6d1f586a80acf5d}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants. Number of Timekeeping Registers within R\+TC. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_abe508c6a8e78ce532d09753dea7839af}{R\+T\+C\+\_\+\+D\+A\+T\+E\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+2}~6\hypertarget{_wasp_r_t_c_8h_abe508c6a8e78ce532d09753dea7839af}{}\label{_wasp_r_t_c_8h_abe508c6a8e78ce532d09753dea7839af}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants to use in function \textquotesingle{}read\+R\+TC\textquotesingle{}. Use when only time and date wants to be read from the R\+TC. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_aad2cd5608e4531070c782edff61bb8a7}{R\+T\+C\+\_\+\+A\+L\+A\+R\+M1\+\_\+\+A\+D\+D\+R\+E\+SS}~10\hypertarget{_wasp_r_t_c_8h_aad2cd5608e4531070c782edff61bb8a7}{}\label{_wasp_r_t_c_8h_aad2cd5608e4531070c782edff61bb8a7}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants to use in function \textquotesingle{}read\+R\+TC\textquotesingle{}. Use when time, date and alarm1 wants to be read from the R\+TC. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a927a6f7260fafba17d72b615d319c460}{R\+T\+C\+\_\+\+A\+L\+A\+R\+M2\+\_\+\+A\+D\+D\+R\+E\+SS}~13\hypertarget{_wasp_r_t_c_8h_a927a6f7260fafba17d72b615d319c460}{}\label{_wasp_r_t_c_8h_a927a6f7260fafba17d72b615d319c460}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Addresses constants to use in function \textquotesingle{}read\+R\+TC\textquotesingle{}. Use when time, date, alarm1 and alarm2 wants to be read from the R\+TC. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_acb0f8f18ad9dab40ecd98a347ca6dc1e}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1}~0\hypertarget{_wasp_r_t_c_8h_acb0f8f18ad9dab40ecd98a347ca6dc1e}{}\label{_wasp_r_t_c_8h_acb0f8f18ad9dab40ecd98a347ca6dc1e}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Day of the week,hours,minutes and seconds match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a279631caf3c6eb5b852d5b7db502bf15}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2}~1\hypertarget{_wasp_r_t_c_8h_a279631caf3c6eb5b852d5b7db502bf15}{}\label{_wasp_r_t_c_8h_a279631caf3c6eb5b852d5b7db502bf15}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Date,hours,minutes and seconds match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_af34e4c7454e597f20bd210ccc761ec0a}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3}~2\hypertarget{_wasp_r_t_c_8h_af34e4c7454e597f20bd210ccc761ec0a}{}\label{_wasp_r_t_c_8h_af34e4c7454e597f20bd210ccc761ec0a}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Hours,minutes and seconds match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ab9d8436c29c45da44469b4e9f1ffd17a}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4}~3\hypertarget{_wasp_r_t_c_8h_ab9d8436c29c45da44469b4e9f1ffd17a}{}\label{_wasp_r_t_c_8h_ab9d8436c29c45da44469b4e9f1ffd17a}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Minutes and seconds match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_abdfab2e2d2a982d95cb62c711b965dab}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5}~4\hypertarget{_wasp_r_t_c_8h_abdfab2e2d2a982d95cb62c711b965dab}{}\label{_wasp_r_t_c_8h_abdfab2e2d2a982d95cb62c711b965dab}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Seconds match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ad15087972054e85a8a177ba9b016a762}{R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E6}~5\hypertarget{_wasp_r_t_c_8h_ad15087972054e85a8a177ba9b016a762}{}\label{_wasp_r_t_c_8h_ad15087972054e85a8a177ba9b016a762}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Once per second. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a566aad56e3745be93d0346197283f31f}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E1}~0\hypertarget{_wasp_r_t_c_8h_a566aad56e3745be93d0346197283f31f}{}\label{_wasp_r_t_c_8h_a566aad56e3745be93d0346197283f31f}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Day of the week,hours and minutes match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a9a12fb04d9b77836da645bb539dcb09e}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E2}~1\hypertarget{_wasp_r_t_c_8h_a9a12fb04d9b77836da645bb539dcb09e}{}\label{_wasp_r_t_c_8h_a9a12fb04d9b77836da645bb539dcb09e}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Date,hours and minutes match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a8f7dd7488832ce77ef9e4d2d3ad67eea}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E3}~2\hypertarget{_wasp_r_t_c_8h_a8f7dd7488832ce77ef9e4d2d3ad67eea}{}\label{_wasp_r_t_c_8h_a8f7dd7488832ce77ef9e4d2d3ad67eea}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Hours and minutes. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a174c13d5455b55772df251c11d736f6c}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E4}~3\hypertarget{_wasp_r_t_c_8h_a174c13d5455b55772df251c11d736f6c}{}\label{_wasp_r_t_c_8h_a174c13d5455b55772df251c11d736f6c}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Minutes match. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_af6c3824e6825acd734b05d011b8bc423}{R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E5}~4\hypertarget{_wasp_r_t_c_8h_af6c3824e6825acd734b05d011b8bc423}{}\label{_wasp_r_t_c_8h_af6c3824e6825acd734b05d011b8bc423}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Modes. Once per minute. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a6c8cfc49dc441ebb3fc2a9fbcf182f08}{R\+T\+C\+\_\+\+O\+F\+F\+S\+ET}~0\hypertarget{_wasp_r_t_c_8h_a6c8cfc49dc441ebb3fc2a9fbcf182f08}{}\label{_wasp_r_t_c_8h_a6c8cfc49dc441ebb3fc2a9fbcf182f08}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Values. This option adds the time specified by the user to the actual time. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a9223a0282698acbb87a95bc8de078530}{R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE}~1\hypertarget{_wasp_r_t_c_8h_a9223a0282698acbb87a95bc8de078530}{}\label{_wasp_r_t_c_8h_a9223a0282698acbb87a95bc8de078530}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Values. This option establishes the time specified by the user as the alarm time. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a7d76e810aeb0e535604ed69ca0c6fd1f}{R\+T\+C\+\_\+\+A\+L\+M1}~1\hypertarget{_wasp_r_t_c_8h_a7d76e810aeb0e535604ed69ca0c6fd1f}{}\label{_wasp_r_t_c_8h_a7d76e810aeb0e535604ed69ca0c6fd1f}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Values. Specifies Alarm1. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_adf2b35364822166c35c42339a7f20a70}{R\+T\+C\+\_\+\+A\+L\+M2}~2\hypertarget{_wasp_r_t_c_8h_adf2b35364822166c35c42339a7f20a70}{}\label{_wasp_r_t_c_8h_adf2b35364822166c35c42339a7f20a70}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Alarm Values. Specifies Alarm2. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a806241c30f152c90f0e863c26a358485}{D\+A\+Y\+\_\+1}~\char`\"{}Sun\char`\"{}\hypertarget{_wasp_r_t_c_8h_a806241c30f152c90f0e863c26a358485}{}\label{_wasp_r_t_c_8h_a806241c30f152c90f0e863c26a358485}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Sunday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a7540d3e3379ac2940d77eaebde436129}{D\+A\+Y\+\_\+2}~\char`\"{}Mon\char`\"{}\hypertarget{_wasp_r_t_c_8h_a7540d3e3379ac2940d77eaebde436129}{}\label{_wasp_r_t_c_8h_a7540d3e3379ac2940d77eaebde436129}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Monday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a6d8066bfd5fad2871b393e59492fbe64}{D\+A\+Y\+\_\+3}~\char`\"{}Tue\char`\"{}\hypertarget{_wasp_r_t_c_8h_a6d8066bfd5fad2871b393e59492fbe64}{}\label{_wasp_r_t_c_8h_a6d8066bfd5fad2871b393e59492fbe64}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Tuesday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ac1b497444f1c81b76cdedeff4b91c4db}{D\+A\+Y\+\_\+4}~\char`\"{}Wed\char`\"{}\hypertarget{_wasp_r_t_c_8h_ac1b497444f1c81b76cdedeff4b91c4db}{}\label{_wasp_r_t_c_8h_ac1b497444f1c81b76cdedeff4b91c4db}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Wednesday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ad88290825945551f5707b810ebce291c}{D\+A\+Y\+\_\+5}~\char`\"{}Thu\char`\"{}\hypertarget{_wasp_r_t_c_8h_ad88290825945551f5707b810ebce291c}{}\label{_wasp_r_t_c_8h_ad88290825945551f5707b810ebce291c}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Thursday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a334ed0e24cf464d0b6cb9cfaef4023e6}{D\+A\+Y\+\_\+6}~\char`\"{}Fri\char`\"{}\hypertarget{_wasp_r_t_c_8h_a334ed0e24cf464d0b6cb9cfaef4023e6}{}\label{_wasp_r_t_c_8h_a334ed0e24cf464d0b6cb9cfaef4023e6}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Friday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a2762c6e49860500b6e7ff4a44283df24}{D\+A\+Y\+\_\+7}~\char`\"{}Sat\char`\"{}\hypertarget{_wasp_r_t_c_8h_a2762c6e49860500b6e7ff4a44283df24}{}\label{_wasp_r_t_c_8h_a2762c6e49860500b6e7ff4a44283df24}
+
+\begin{DoxyCompactList}\small\item\em Days of the Week. Saturday in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a916490cbec4f2f33c35fee9f9485fbdb}{R\+T\+C\+\_\+\+ON}~1\hypertarget{_wasp_r_t_c_8h_a916490cbec4f2f33c35fee9f9485fbdb}{}\label{_wasp_r_t_c_8h_a916490cbec4f2f33c35fee9f9485fbdb}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Power Modes. ON in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_ad39586436c04a346c87d7d699cd5fa55}{R\+T\+C\+\_\+\+O\+FF}~0\hypertarget{_wasp_r_t_c_8h_ad39586436c04a346c87d7d699cd5fa55}{}\label{_wasp_r_t_c_8h_ad39586436c04a346c87d7d699cd5fa55}
+
+\begin{DoxyCompactList}\small\item\em R\+TC Power Modes. O\+FF in this case. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_a07fd4861d340362fb3060b5f089d035c}{R\+T\+C\+\_\+\+I2\+C\+\_\+\+M\+O\+DE}~1\hypertarget{_wasp_r_t_c_8h_a07fd4861d340362fb3060b5f089d035c}{}\label{_wasp_r_t_c_8h_a07fd4861d340362fb3060b5f089d035c}
+
+\begin{DoxyCompactList}\small\item\em Used to set R\+T\+C.\+is\+ON value. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_r_t_c_8h_afca9bac44d9597fb3415103879deb4d3}{R\+T\+C\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+DE}~0\hypertarget{_wasp_r_t_c_8h_afca9bac44d9597fb3415103879deb4d3}{}\label{_wasp_r_t_c_8h_afca9bac44d9597fb3415103879deb4d3}
+
+\begin{DoxyCompactList}\small\item\em Used to set R\+T\+C.\+is\+ON value. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+M\+IN}~(60\+U\+L)\hypertarget{_wasp_r_t_c_8h_a5e7d1008e5b26253223a67794b77a806}{}\label{_wasp_r_t_c_8h_a5e7d1008e5b26253223a67794b77a806}
+
+\item 
+\#define {\bfseries S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+H\+O\+UR}~(3600\+U\+L)\hypertarget{_wasp_r_t_c_8h_a11528d10d5838afd2d0ec2f5841167cf}{}\label{_wasp_r_t_c_8h_a11528d10d5838afd2d0ec2f5841167cf}
+
+\item 
+\#define {\bfseries S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY}~(S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+H\+O\+UR $\ast$ 24\+U\+L)\hypertarget{_wasp_r_t_c_8h_ae6bc10904b2b09a717f1fb81cce017de}{}\label{_wasp_r_t_c_8h_ae6bc10904b2b09a717f1fb81cce017de}
+
+\item 
+\#define {\bfseries D\+A\+Y\+S\+\_\+\+P\+E\+R\+\_\+\+W\+E\+EK}~(7\+U\+L)\hypertarget{_wasp_r_t_c_8h_ac17b5f0caa090e515171c5aaf5a78307}{}\label{_wasp_r_t_c_8h_ac17b5f0caa090e515171c5aaf5a78307}
+
+\item 
+\#define {\bfseries S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+W\+E\+EK}~(S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY $\ast$ D\+A\+Y\+S\+\_\+\+P\+E\+R\+\_\+\+W\+E\+EK)\hypertarget{_wasp_r_t_c_8h_a1e3f1ac0a4b60f9a7a14641ff701bc33}{}\label{_wasp_r_t_c_8h_a1e3f1ac0a4b60f9a7a14641ff701bc33}
+
+\item 
+\#define {\bfseries S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+Y\+E\+AR}~(S\+E\+C\+S\+\_\+\+P\+E\+R\+\_\+\+W\+E\+EK $\ast$ 52\+U\+L)\hypertarget{_wasp_r_t_c_8h_ae8eebe70a02e029d2834cf0a228fa547}{}\label{_wasp_r_t_c_8h_ae8eebe70a02e029d2834cf0a228fa547}
+
+\item 
+\#define {\bfseries S\+E\+C\+S\+\_\+\+Y\+R\+\_\+2000}~(946684800\+U\+L)\hypertarget{_wasp_r_t_c_8h_a8bc37f3af67222122920088a7c8ec65e}{}\label{_wasp_r_t_c_8h_a8bc37f3af67222122920088a7c8ec65e}
+
+\item 
+\#define {\bfseries L\+E\+A\+P\+\_\+\+Y\+E\+AR}(Y)      ~( ((2000+Y)$>$0) \&\& !((2000+Y)\%4) \&\& ( ((2000+Y)\%100) $\vert$$\vert$ !((2000+Y)\%400) ) )\hypertarget{_wasp_r_t_c_8h_a7408f7b32a75c5f071a8096be049bc4d}{}\label{_wasp_r_t_c_8h_a7408f7b32a75c5f071a8096be049bc4d}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_r_t_c}{Wasp\+R\+TC} {\bfseries R\+TC}\hypertarget{_wasp_r_t_c_8h_a9945b41879b632e72b577e834293a86c}{}\label{_wasp_r_t_c_8h_a9945b41879b632e72b577e834293a86c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the R\+TC. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+Functions get\+Epoch\+Time(), break\+Time\+Absolute(), break\+Time\+Offset() and constants related to them are based on the library \textquotesingle{}time\textquotesingle{} developed by Michael Margolis 2009-\/2014\+: \href{https://www.pjrc.com/teensy/td_libs_Time.html}{\tt https\+://www.\+pjrc.\+com/teensy/td\+\_\+libs\+\_\+\+Time.\+html}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+5 Design\+: David Gascón Implementation\+: A. Bielsa, D. Cuartielles, M. Yarza, Y. Carmona 

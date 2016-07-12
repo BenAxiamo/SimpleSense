@@ -1,0 +1,52 @@
+\hypertarget{sleep_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/sleep.h File Reference}
+\label{sleep_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/sleep.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/sleep.\+h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+S\+L\+E\+E\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+EG}~M\+C\+U\+CR\hypertarget{sleep_8h_a1a0221ee000bb91407ab3f410f830b08}{}\label{sleep_8h_a1a0221ee000bb91407ab3f410f830b08}
+
+\item 
+\#define {\bfseries \+\_\+\+S\+L\+E\+E\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK}~\+\_\+\+BV(SE)\hypertarget{sleep_8h_a6cf481cda733c2b30bdcfe92a59c0493}{}\label{sleep_8h_a6cf481cda733c2b30bdcfe92a59c0493}
+
+\item 
+\#define \hyperlink{group__avr__sleep_ga3f159a946a8e6df0ea4d67414e9a8d87}{sleep\+\_\+enable}()                      
+\item 
+\#define {\bfseries sleep\+\_\+disable}()                    
+\item 
+\#define \hyperlink{group__avr__sleep_ga86db03d7b75cab8008152e846940e549}{sleep\+\_\+cpu}()                                                        
+\item 
+\#define {\bfseries sleep\+\_\+mode}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{sleep.\+h@{sleep.\+h}!sleep\+\_\+disable@{sleep\+\_\+disable}}
+\index{sleep\+\_\+disable@{sleep\+\_\+disable}!sleep.\+h@{sleep.\+h}}
+\subsubsection[{\texorpdfstring{sleep\+\_\+disable}{sleep_disable}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sleep\+\_\+disable(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{sleep_8h_a05edb93ec9dd788b3df21df672c992d4}{}\label{sleep_8h_a05edb93ec9dd788b3df21df672c992d4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                               \(\backslash\)
+  \_SLEEP\_CONTROL\_REG &= (uint8\_t)(~\_SLEEP\_ENABLE\_MASK);  \(\backslash\)
+\} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\index{sleep.\+h@{sleep.\+h}!sleep\+\_\+mode@{sleep\+\_\+mode}}
+\index{sleep\+\_\+mode@{sleep\+\_\+mode}!sleep.\+h@{sleep.\+h}}
+\subsubsection[{\texorpdfstring{sleep\+\_\+mode}{sleep_mode}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sleep\+\_\+mode(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{sleep_8h_a81a2671e15f2fb37d63a5eaf6e9d4191}{}\label{sleep_8h_a81a2671e15f2fb37d63a5eaf6e9d4191}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                 \(\backslash\)
+    sleep\_enable();  \(\backslash\)
+    sleep\_cpu();     \(\backslash\)
+    sleep\_disable(); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}

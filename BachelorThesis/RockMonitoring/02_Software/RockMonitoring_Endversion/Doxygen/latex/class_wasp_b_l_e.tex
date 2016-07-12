@@ -1,0 +1,1454 @@
+\hypertarget{class_wasp_b_l_e}{}\section{Wasp\+B\+LE Class Reference}
+\label{class_wasp_b_l_e}\index{Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_b_l_e_a28117c31141d2441ba3ff225ee01b306}{Wasp\+B\+LE} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_l_e_a4fcb1ff68f3173175b57c26290f6d0c5}{ON} ()
+\begin{DoxyCompactList}\small\item\em It opens the U\+A\+RT and powers the module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_l_e_ad07154036c12d27c38dc5c54502b4d9e}{ON} (uint8\+\_\+t Uart\+Mode)
+\begin{DoxyCompactList}\small\item\em It opens the U\+A\+RT and powers the module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_b_l_e_a6cdd7162e3c7cc1404d1f99025524c0e}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It closes the U\+A\+RT and powers off the module. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a93326130d1b068d9c918829233f0f796}{set\+T\+X\+Power} (uint8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em Set TX power. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a97e9719e1061680ed11acd8eccd33b1e}{reset} ()
+\begin{DoxyCompactList}\small\item\em sends software reset command to the module. Resets in normal mode \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a52bf458c345c8eee05cbcb66491b3618}{scan\+Device} (char $\ast$Mac)
+\begin{DoxyCompactList}\small\item\em Scanning functions //////////////////////////////////. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ad11e0716c56e05ca039661341b1d71e4}{scan\+Device} (char $\ast$Mac, uint8\+\_\+t max\+Time, uint8\+\_\+t T\+X\+Power)
+\begin{DoxyCompactList}\small\item\em Makes an inquiry to discover specific device by its Mac. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_aa66176a4a5b4d572b7656ba36db7bb9b}{scan\+Network} (uint8\+\_\+t time, uint8\+\_\+t T\+X\+Power)
+\begin{DoxyCompactList}\small\item\em Scans network to find other B\+LE modules. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_aba60496e707abf40125289a7db2e139b}{scan\+Network} (uint8\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Scans network to find other B\+LE modules. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ab45501a0e68b6d20fd59a4a5e872acc8}{scan\+Network\+Limited} (int16\+\_\+t Max\+Devices, uint8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em Scans network till find specified number of devices. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a408982f54190cae5eca576cfadfdc078}{scan\+Network\+Limited} (int16\+\_\+t Max\+Devices)
+\begin{DoxyCompactList}\small\item\em Scans network till find specified number of devices. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a9083b58199f7e32becd1cbd396aafeef}{scan\+Network\+Cancel} ()
+\begin{DoxyCompactList}\small\item\em Cancels a scan procedure. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a2dce5f91acc42353a987fff5c8a1d302}{scan\+Network\+Name} (uint8\+\_\+t time, uint8\+\_\+t T\+X\+Power)
+\begin{DoxyCompactList}\small\item\em Scans network to find other B\+LE modules, including friendly name. Uses active scanning. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_af30e43863490e8f81ebb712002bacbe4}{scan\+Network\+Name} (uint8\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Scans network to find other B\+LE modules, including friendly name. Uses active scanning. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a0e7e16ab51f5d1880e9a64f6a782786b}{set\+Discover\+Mode} (uint8\+\_\+t discover)
+\begin{DoxyCompactList}\small\item\em This function configures the discover mode. Default observation mode. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a8631269b03ea48569bb135984a37e6e3}{set\+Discoverable\+Mode} (uint8\+\_\+t discoverable)
+\begin{DoxyCompactList}\small\item\em This functions configures the discoverability mode. default general discoverable mode. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a1d550ec27250e37bc5fe05421be5f793}{set\+Connectable\+Mode} (uint8\+\_\+t connectable)
+\begin{DoxyCompactList}\small\item\em This functions configures the connectability mode. default directed conectable mode. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_aa223116c2df14c1a4fdf68c3e96fd7f3}{end\+Procedure} ()
+\begin{DoxyCompactList}\small\item\em This function ends the current procedure, like a scan. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a56067c84584808bf2f237b6998df4d28}{set\+Adv\+Parameters} (uint16\+\_\+t adv\+\_\+min, uint16\+\_\+t adv\+\_\+max, uint8\+\_\+t adv\+\_\+ch)
+\begin{DoxyCompactList}\small\item\em This function sets advertisement parameters. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a8d785a0c9e367e8fbf1c71881c070aa6}{set\+Adv\+Data} (uint8\+\_\+t set\+\_\+scanrsp, char $\ast$adv\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Set Advertisement scan Response data. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_aa25b1965a012b6bef20bd376ef5f7d26}{set\+Adv\+Data} (uint8\+\_\+t set\+\_\+scanrsp, uint8\+\_\+t $\ast$adv\+\_\+data, uint8\+\_\+t adv\+\_\+data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Set Advertisement scan Response data. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a649d471162e0974716e21feae52605d0}{set\+Scanning\+Parameters} (uint16\+\_\+t scan\+\_\+interval, uint16\+\_\+t scan\+\_\+window, uint8\+\_\+t scanning)
+\begin{DoxyCompactList}\small\item\em This function sets scanning parameters. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a3ca4dca79c158a085974becaf39cd45e}{set\+Scanning\+Parameters} (uint8\+\_\+t active)
+\begin{DoxyCompactList}\small\item\em This function sets scanning parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_b_l_e_a71d30ceb0f22894417bf5e672b4c5392}{get\+Scanning\+Parameters} ()
+\begin{DoxyCompactList}\small\item\em Return current scanning parameters. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a5f7562c538e4aa5580ef1fab647f802a}{set\+Filtering} (uint8\+\_\+t scan\+\_\+pol, uint8\+\_\+t adv\+\_\+pol, uint8\+\_\+t scan\+\_\+duplicate\+\_\+filter)
+\begin{DoxyCompactList}\small\item\em Set scan, connection, and advertising filtering parameters, based on the whitelist. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a323d352a336d3559106a4ea72ac82358}{set\+Filtering} (uint8\+\_\+t scan\+\_\+duplicate\+\_\+filtering)
+\begin{DoxyCompactList}\small\item\em Set advertising filtering parameters, based on the whitelist. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_b_l_e_ad0a86810bcd73ac2549a85bb549594ed}{get\+Temp} ()
+\begin{DoxyCompactList}\small\item\em Reads the internal Temperature sensor of the B\+L\+E112. Not calibrated. +-\/10ªC accuracy. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_b_l_e_ac958c81fa78a6f7fe78647c48cfd223a}{A\+D\+C\+Read} (uint8\+\_\+t input, uint8\+\_\+t decimation, uint8\+\_\+t reference\+\_\+selection)
+\begin{DoxyCompactList}\small\item\em Reads the internal A\+DC of the B\+L\+E112. Waits for A\+DC event before exit. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_b_l_e_ade17474622ee87dd8b26e5583ba984d4}{get\+Own\+Mac} ()
+\begin{DoxyCompactList}\small\item\em Returns the B\+LE module M\+AC address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_af86975d3c407e3cead279eb0328b4e23}{print\+Inquiry} ()
+\begin{DoxyCompactList}\small\item\em print last scan saved on E\+E\+P\+R\+OM by U\+SB. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_ae4db5ca2f4c6cb92fd87c5984e2b7184}{say\+Hello} ()
+\begin{DoxyCompactList}\small\item\em similar to AT -\/$>$ OK \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a14956d02528234516d4f86b0f59c0147}{white\+List\+Append} (char $\ast$B\+L\+E\+Address)
+\begin{DoxyCompactList}\small\item\em Define the remote devices allowed to establish a connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a8c04876be117113fc1d5ca8ae4279981}{white\+List\+Clear} ()
+\begin{DoxyCompactList}\small\item\em Delete all entries of the white list at once. Do not use this command while advertising or while being connected. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a3b8283aac0a9c5beaa60a95080cb1cba}{white\+List\+Remove} (char $\ast$B\+L\+E\+Address)
+\begin{DoxyCompactList}\small\item\em Remove an entry from the running white list. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a0cc38431b7b969985d4d7fc6911c42bb}{connect\+Direct} (char $\ast$B\+L\+E\+Address, uint16\+\_\+t conn\+\_\+interval\+\_\+min, uint16\+\_\+t conn\+\_\+interval\+\_\+max, uint16\+\_\+t timeout, uint16\+\_\+t latency)
+\begin{DoxyCompactList}\small\item\em Connection functions ////////////////. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a11199da23e76a89d43d97a760b95ad10}{connect\+Direct} (char $\ast$B\+L\+E\+Address)
+\begin{DoxyCompactList}\small\item\em This function will start direct connection establishment procedure to a dedicated B\+LE device. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a33cee3ca711119d5744b656e3616271a}{disconnect} (uint8\+\_\+t connection)
+\begin{DoxyCompactList}\small\item\em This function disconnects an active connection. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_b_l_e_ac67e786947c84ecb3dd2a953a097c6b1}{get\+R\+S\+SI} (uint8\+\_\+t connection)
+\begin{DoxyCompactList}\small\item\em get R\+S\+SI of the given link. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_b_l_e_a1cf5d8cf6b265fe516f4a00f2699f5ac}{sleep} ()
+\begin{DoxyCompactList}\small\item\em Disables wake up pin of the B\+LE module (disables U\+A\+RT interface) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_af500af76e412634231a0640975940b6a}{wake\+Up} ()
+\begin{DoxyCompactList}\small\item\em Enables Wakeup pin (enables A\+U\+RT interface) and wake up B\+LE from low power modes. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_adca5a576b3b798898909183aadeae0ae}{wait\+Event} (unsigned long time)
+\begin{DoxyCompactList}\small\item\em wait for specified time for an event. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a6267dcaa94ac41a1f9baccc048b497a7}{read\+Command\+Answer} ()
+\begin{DoxyCompactList}\small\item\em Reads and stores module answer. By default read max allowed bytes if possible. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_aa641a53b3d4e466a5aba6005f72cea02}{send\+Command} (uint8\+\_\+t $\ast$custom\+Command, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends a custom command to the B\+LE module. Packet mode is mandatory. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ae0b129b7917ad5073ee53f18688cb209}{send\+Command} (char $\ast$custom\+Command)
+\begin{DoxyCompactList}\small\item\em Sends a custom command to the B\+LE module. Packet mode is mandatory. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_afbc174be157fe298a92bfabb0099ec15}{encrypt\+Connection} (uint8\+\_\+t handle)
+\begin{DoxyCompactList}\small\item\em Start encryption form the given connection. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a20232a9ae70b6ab112dfd3511c4287a7}{encrypt\+Connection} (uint8\+\_\+t handle, uint8\+\_\+t bondable)
+\begin{DoxyCompactList}\small\item\em Start encryption form the given connection. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_af8d0f18ba63575774c48cc9a2d4912d7}{set\+Bondable\+Mode} (uint8\+\_\+t bondable)
+\begin{DoxyCompactList}\small\item\em Sets device to bondable mode. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_adc09f07207af188fc109a569cfbcc149}{set\+Key} (uint8\+\_\+t handle, uint32\+\_\+t passkey)
+\begin{DoxyCompactList}\small\item\em Enters the passkey required for Man-\/in-\/the-\/\+Middle pairing. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a2f257e929557338eb6cba6c2f9cc4a98}{delete\+Bonding} ()
+\begin{DoxyCompactList}\small\item\em deletes all devices bonded \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ac02d3b9d0be79ccc2b1aa75eb090bcf4}{get\+Bonding} ()
+\begin{DoxyCompactList}\small\item\em return number of bonded devices. maximum of 8 \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a18ea780f28c137722a0e73d01f8c8e44}{set\+Security\+Parameters} (uint8\+\_\+t mitm, uint8\+\_\+t min\+\_\+key\+\_\+size, uint8\+\_\+t io\+\_\+cap)
+\begin{DoxyCompactList}\small\item\em Configures security manager. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a753856ecc10fd863ea5ff2b23c9eff03}{read\+Local\+Attribute} (uint16\+\_\+t handle, uint16\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em read an attribute from the local database of the B\+LE device. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_af887bcea2ab060511bb90dd26d29ff3e}{read\+Local\+Attribute} (uint16\+\_\+t handle)
+\begin{DoxyCompactList}\small\item\em read an attribute from the local database of the B\+LE device (default offset=0). \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a80d7997ab8cb1a1c59c5cc0f3a677402}{write\+Local\+Attribute} (uint16\+\_\+t handle, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em write local attribute to the local G\+A\+TT database of the B\+LE device \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a69c09d6cea84a047721c38371c457fe4}{write\+Local\+Attribute} (uint16\+\_\+t handle, uint8\+\_\+t indicate, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em write local attribute to the local G\+A\+TT database of the B\+LE device \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a33eb4201dc496491777c5abefe0d85f2}{write\+Local\+Attribute} (uint16\+\_\+t handle, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em write local attribute to the local G\+A\+TT database of the B\+LE device \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a3b522812954da73015f22d11af470cf3}{write\+Local\+Attribute} (uint16\+\_\+t handle, uint8\+\_\+t indicate, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em write local attribute of the B\+LE device, indicate enabled \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ae2c5400969ec398690a22b418dc282fa}{attribute\+Read} (uint8\+\_\+t \hyperlink{class_wasp_b_l_e_adb324650f5d362e9abb347e9e81be088}{connection\+\_\+handle}, uint16\+\_\+t att\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em read an attribute from a remote B\+LE device \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_a57a393dbbce27c59f5bcef98f68a8cfb}{attribute\+Write} (uint8\+\_\+t connection, uint16\+\_\+t atthandle, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em write an attribute from a remote B\+LE device \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ae42f115989386357c425863bf3d9a591}{attribute\+Write} (uint8\+\_\+t connection, uint16\+\_\+t atthandle, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em write an attribute from a remote B\+LE device \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a4081b1585f40f006fa640ff2148b7323}{parse\+Event} ()
+\begin{DoxyCompactList}\small\item\em identify event saved on event buffer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a891448a14f970ae397e2390f9be72566}{get\+Status} (uint8\+\_\+t connection)
+\begin{DoxyCompactList}\small\item\em get the current status of the B\+LE module \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structdiscovered_device}{discovered\+Device} \hyperlink{class_wasp_b_l_e_a3dfcc1e03881a3f47a550ecf28c7de83}{B\+L\+E\+Dev}
+\begin{DoxyCompactList}\small\item\em public methods ////////////////////////// \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_b_l_e_a19d28f935b67a358cef9eaa717e49eba}{my\+\_\+bd\+\_\+addr} \mbox{[}13\mbox{]}\hypertarget{class_wasp_b_l_e_a19d28f935b67a358cef9eaa717e49eba}{}\label{class_wasp_b_l_e_a19d28f935b67a358cef9eaa717e49eba}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: own mac address. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_wasp_b_l_e_ab87043b264f6214947fd0e2bf6693f87}{error\+Code}\hypertarget{class_wasp_b_l_e_ab87043b264f6214947fd0e2bf6693f87}{}\label{class_wasp_b_l_e_ab87043b264f6214947fd0e2bf6693f87}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: stores error code received from the module. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_b_l_e_acd1a850159f48ccdcb172a20758783ee}{number\+Of\+Devices}\hypertarget{class_wasp_b_l_e_acd1a850159f48ccdcb172a20758783ee}{}\label{class_wasp_b_l_e_acd1a850159f48ccdcb172a20758783ee}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: stores number of discovered devices. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a52ffe5e340fa3f94336fddc227440132}{device\+Role}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_adb324650f5d362e9abb347e9e81be088}{connection\+\_\+handle}\hypertarget{class_wasp_b_l_e_adb324650f5d362e9abb347e9e81be088}{}\label{class_wasp_b_l_e_adb324650f5d362e9abb347e9e81be088}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Handler used for the connection. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a87fc9ab783fd7ab3b12c9164df886d6d}{attribute\+Value} \mbox{[}M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE\mbox{]}\hypertarget{class_wasp_b_l_e_a87fc9ab783fd7ab3b12c9164df886d6d}{}\label{class_wasp_b_l_e_a87fc9ab783fd7ab3b12c9164df886d6d}
+
+\begin{DoxyCompactList}\small\item\em Variable\+: Auxiliary buffer to save data when an attribute is read/written. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_b_l_e_a77c2b2743248a01f22a09e09fb2ac45a}{event} \mbox{[}M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE\mbox{]}\hypertarget{class_wasp_b_l_e_a77c2b2743248a01f22a09e09fb2ac45a}{}\label{class_wasp_b_l_e_a77c2b2743248a01f22a09e09fb2ac45a}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Variable to store a module event. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_b_l_e_aed656c508968cf73b030af5bdeb550ad}{A\+D\+C\+Value}
+\begin{DoxyCompactList}\small\item\em Variable\+: stores last A\+DC read value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{Wasp\+B\+L\+E()}{WaspBLE()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+B\+L\+E\+::\+Wasp\+B\+LE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a28117c31141d2441ba3ff225ee01b306}{}\label{class_wasp_b_l_e_a28117c31141d2441ba3ff225ee01b306}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!A\+D\+C\+Read@{A\+D\+C\+Read}}
+\index{A\+D\+C\+Read@{A\+D\+C\+Read}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{A\+D\+C\+Read(uint8\+\_\+t input, uint8\+\_\+t decimation, uint8\+\_\+t reference\+\_\+selection)}{ADCRead(uint8_t input, uint8_t decimation, uint8_t reference_selection)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+B\+L\+E\+::\+A\+D\+C\+Read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{input, }
+\item[{uint8\+\_\+t}]{decimation, }
+\item[{uint8\+\_\+t}]{reference\+\_\+selection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ac958c81fa78a6f7fe78647c48cfd223a}{}\label{class_wasp_b_l_e_ac958c81fa78a6f7fe78647c48cfd223a}
+
+
+Reads the internal A\+DC of the B\+L\+E112. Waits for A\+DC event before exit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & input\+: Selects the A\+DC input \\
+\hline
+{\em uint8\+\_\+t} & decimation\+: Resolution of the A\+DC \\
+\hline
+{\em uint8\+\_\+t} & reference selection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+DC value (big\+Endian) if OK. 0 error or A\+DC event not found. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!attribute\+Read@{attribute\+Read}}
+\index{attribute\+Read@{attribute\+Read}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{attribute\+Read(uint8\+\_\+t connection\+\_\+handle, uint16\+\_\+t att\+\_\+handle)}{attributeRead(uint8_t connection_handle, uint16_t att_handle)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::attribute\+Read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connection\+\_\+handle, }
+\item[{uint16\+\_\+t}]{att\+\_\+handle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ae2c5400969ec398690a22b418dc282fa}{}\label{class_wasp_b_l_e_ae2c5400969ec398690a22b418dc282fa}
+
+
+read an attribute from a remote B\+LE device 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & handle\+: connection handler \\
+\hline
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error Code. 0 if OK, 1 if event value not found, error code if error sending command. Event identification number otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!attribute\+Write@{attribute\+Write}}
+\index{attribute\+Write@{attribute\+Write}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{attribute\+Write(uint8\+\_\+t connection, uint16\+\_\+t atthandle, char $\ast$data)}{attributeWrite(uint8_t connection, uint16_t atthandle, char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::attribute\+Write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connection, }
+\item[{uint16\+\_\+t}]{atthandle, }
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a57a393dbbce27c59f5bcef98f68a8cfb}{}\label{class_wasp_b_l_e_a57a393dbbce27c59f5bcef98f68a8cfb}
+
+
+write an attribute from a remote B\+LE device 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & handle\+: connection handler \\
+\hline
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em char} & $\ast$ data\+: data to be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error\+Code in any case. 0 means success. event identification number if write procedure completed event not received. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!attribute\+Write@{attribute\+Write}}
+\index{attribute\+Write@{attribute\+Write}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{attribute\+Write(uint8\+\_\+t connection, uint16\+\_\+t atthandle, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)}{attributeWrite(uint8_t connection, uint16_t atthandle, uint8_t *data, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::attribute\+Write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connection, }
+\item[{uint16\+\_\+t}]{atthandle, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ae42f115989386357c425863bf3d9a591}{}\label{class_wasp_b_l_e_ae42f115989386357c425863bf3d9a591}
+
+
+write an attribute from a remote B\+LE device 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & handle\+: connection handler \\
+\hline
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em uint8\+\_\+t} & $\ast$ data\+: data to be written \\
+\hline
+{\em uint8\+\_\+t} & length\+: data length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error\+Code in any case. 0 means success. event identification number if write procedure completed event not received. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!connect\+Direct@{connect\+Direct}}
+\index{connect\+Direct@{connect\+Direct}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{connect\+Direct(char $\ast$\+B\+L\+E\+Address, uint16\+\_\+t conn\+\_\+interval\+\_\+min, uint16\+\_\+t conn\+\_\+interval\+\_\+max, uint16\+\_\+t timeout, uint16\+\_\+t latency)}{connectDirect(char *BLEAddress, uint16_t conn_interval_min, uint16_t conn_interval_max, uint16_t timeout, uint16_t latency)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::connect\+Direct (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{B\+L\+E\+Address, }
+\item[{uint16\+\_\+t}]{conn\+\_\+interval\+\_\+min, }
+\item[{uint16\+\_\+t}]{conn\+\_\+interval\+\_\+max, }
+\item[{uint16\+\_\+t}]{timeout, }
+\item[{uint16\+\_\+t}]{latency}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a0cc38431b7b969985d4d7fc6911c42bb}{}\label{class_wasp_b_l_e_a0cc38431b7b969985d4d7fc6911c42bb}
+
+
+Connection functions ////////////////. 
+
+This function will start direct connection establishment procedure to a dedicated B\+LE device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & B\+L\+E\+Address\+: address of B\+LE device to connect. \\
+\hline
+{\em uint16\+\_\+t} & con\+\_\+interval\+\_\+min\+: Minimum connection interval (units of 1.\+25ms) \\
+\hline
+{\em uint16\+\_\+t} & con\+\_\+interval\+\_\+max\+: Maximum connection interval (units of 1.\+25ms) \\
+\hline
+{\em uint16\+\_\+t} & timeout\+: Supervision timeout (units of 10ms) \\
+\hline
+{\em uint16\+\_\+t} & latency\+: Slave latency. Defines how many connections intervals a slave may skip. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if invalid parameters, 1 if connection is successful, error code if error sending conenct\+Direct command, event identification number otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!connect\+Direct@{connect\+Direct}}
+\index{connect\+Direct@{connect\+Direct}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{connect\+Direct(char $\ast$\+B\+L\+E\+Address)}{connectDirect(char *BLEAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::connect\+Direct (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{B\+L\+E\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a11199da23e76a89d43d97a760b95ad10}{}\label{class_wasp_b_l_e_a11199da23e76a89d43d97a760b95ad10}
+
+
+This function will start direct connection establishment procedure to a dedicated B\+LE device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & B\+L\+E\+Address\+: address of B\+LE device to connect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if invalid parameters, 1 if connection is successful, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!delete\+Bonding@{delete\+Bonding}}
+\index{delete\+Bonding@{delete\+Bonding}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{delete\+Bonding()}{deleteBonding()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::delete\+Bonding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a2f257e929557338eb6cba6c2f9cc4a98}{}\label{class_wasp_b_l_e_a2f257e929557338eb6cba6c2f9cc4a98}
+
+
+deletes all devices bonded 
+
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{disconnect(uint8\+\_\+t connection)}{disconnect(uint8_t connection)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::disconnect (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a33cee3ca711119d5744b656e3616271a}{}\label{class_wasp_b_l_e_a33cee3ca711119d5744b656e3616271a}
+
+
+This function disconnects an active connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & connection handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if connection handle is not right. error code if error sending command. event identifier if disconnection event not found. 0 if ok. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!encrypt\+Connection@{encrypt\+Connection}}
+\index{encrypt\+Connection@{encrypt\+Connection}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{encrypt\+Connection(uint8\+\_\+t handle)}{encryptConnection(uint8_t handle)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::encrypt\+Connection (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_afbc174be157fe298a92bfabb0099ec15}{}\label{class_wasp_b_l_e_afbc174be157fe298a92bfabb0099ec15}
+
+
+Start encryption form the given connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & handle\+: connection handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!encrypt\+Connection@{encrypt\+Connection}}
+\index{encrypt\+Connection@{encrypt\+Connection}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{encrypt\+Connection(uint8\+\_\+t handle, uint8\+\_\+t bondable)}{encryptConnection(uint8_t handle, uint8_t bondable)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::encrypt\+Connection (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{handle, }
+\item[{uint8\+\_\+t}]{bondable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a20232a9ae70b6ab112dfd3511c4287a7}{}\label{class_wasp_b_l_e_a20232a9ae70b6ab112dfd3511c4287a7}
+
+
+Start encryption form the given connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & handle\+: connection handle \\
+\hline
+{\em uint8\+\_\+t} & bondable\+: enable or disable bonding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!end\+Procedure@{end\+Procedure}}
+\index{end\+Procedure@{end\+Procedure}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{end\+Procedure()}{endProcedure()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::end\+Procedure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_aa223116c2df14c1a4fdf68c3e96fd7f3}{}\label{class_wasp_b_l_e_aa223116c2df14c1a4fdf68c3e96fd7f3}
+
+
+This function ends the current procedure, like a scan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!get\+Bonding@{get\+Bonding}}
+\index{get\+Bonding@{get\+Bonding}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{get\+Bonding()}{getBonding()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::get\+Bonding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ac02d3b9d0be79ccc2b1aa75eb090bcf4}{}\label{class_wasp_b_l_e_ac02d3b9d0be79ccc2b1aa75eb090bcf4}
+
+
+return number of bonded devices. maximum of 8 
+
+\begin{DoxyReturn}{Returns}
+return number of bonded devices. maximum of 8 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!get\+Own\+Mac@{get\+Own\+Mac}}
+\index{get\+Own\+Mac@{get\+Own\+Mac}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{get\+Own\+Mac()}{getOwnMac()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+B\+L\+E\+::get\+Own\+Mac (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ade17474622ee87dd8b26e5583ba984d4}{}\label{class_wasp_b_l_e_ade17474622ee87dd8b26e5583ba984d4}
+
+
+Returns the B\+LE module M\+AC address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!get\+R\+S\+SI@{get\+R\+S\+SI}}
+\index{get\+R\+S\+SI@{get\+R\+S\+SI}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+I(uint8\+\_\+t connection)}{getRSSI(uint8_t connection)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+L\+E\+::get\+R\+S\+SI (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ac67e786947c84ecb3dd2a953a097c6b1}{}\label{class_wasp_b_l_e_ac67e786947c84ecb3dd2a953a097c6b1}
+
+
+get R\+S\+SI of the given link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & connection\+: handler of the connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if error, rssi otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!get\+Scanning\+Parameters@{get\+Scanning\+Parameters}}
+\index{get\+Scanning\+Parameters@{get\+Scanning\+Parameters}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{get\+Scanning\+Parameters()}{getScanningParameters()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+B\+L\+E\+::get\+Scanning\+Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a71d30ceb0f22894417bf5e672b4c5392}{}\label{class_wasp_b_l_e_a71d30ceb0f22894417bf5e672b4c5392}
+
+
+Return current scanning parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!get\+Status@{get\+Status}}
+\index{get\+Status@{get\+Status}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{get\+Status(uint8\+\_\+t connection)}{getStatus(uint8_t connection)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::get\+Status (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connection}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a891448a14f970ae397e2390f9be72566}{}\label{class_wasp_b_l_e_a891448a14f970ae397e2390f9be72566}
+
+
+get the current status of the B\+LE module 
+
+\begin{DoxyReturn}{Returns}
+255 if status not received, connection status otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{get\+Temp()}{getTemp()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+B\+L\+E\+::get\+Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ad0a86810bcd73ac2549a85bb549594ed}{}\label{class_wasp_b_l_e_ad0a86810bcd73ac2549a85bb549594ed}
+
+
+Reads the internal Temperature sensor of the B\+L\+E112. Not calibrated. +-\/10ªC accuracy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+B\+L\+E\+::\+O\+FF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a6cdd7162e3c7cc1404d1f99025524c0e}{}\label{class_wasp_b_l_e_a6cdd7162e3c7cc1404d1f99025524c0e}
+
+
+It closes the U\+A\+RT and powers off the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!ON@{ON}}
+\index{ON@{ON}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+L\+E\+::\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a4fcb1ff68f3173175b57c26290f6d0c5}{}\label{class_wasp_b_l_e_a4fcb1ff68f3173175b57c26290f6d0c5}
+
+
+It opens the U\+A\+RT and powers the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!ON@{ON}}
+\index{ON@{ON}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{O\+N(uint8\+\_\+t Uart\+Mode)}{ON(uint8_t UartMode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+B\+L\+E\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{Uart\+Mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ad07154036c12d27c38dc5c54502b4d9e}{}\label{class_wasp_b_l_e_ad07154036c12d27c38dc5c54502b4d9e}
+
+
+It opens the U\+A\+RT and powers the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & Uart\+Mode\+: Uart\+Mode should be 0 for S\+O\+C\+K\+E\+T0 and 1 for S\+O\+C\+K\+E\+T1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} os success, \textquotesingle{}0\textquotesingle{} error reset, \textquotesingle{}-\/1\textquotesingle{} error init 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!parse\+Event@{parse\+Event}}
+\index{parse\+Event@{parse\+Event}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{parse\+Event()}{parseEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::parse\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a4081b1585f40f006fa640ff2148b7323}{}\label{class_wasp_b_l_e_a4081b1585f40f006fa640ff2148b7323}
+
+
+identify event saved on event buffer. 
+
+\begin{DoxyReturn}{Returns}
+return event identification number accordint to next list. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!print\+Inquiry@{print\+Inquiry}}
+\index{print\+Inquiry@{print\+Inquiry}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{print\+Inquiry()}{printInquiry()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::print\+Inquiry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_af86975d3c407e3cead279eb0328b4e23}{}\label{class_wasp_b_l_e_af86975d3c407e3cead279eb0328b4e23}
+
+
+print last scan saved on E\+E\+P\+R\+OM by U\+SB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!read\+Command\+Answer@{read\+Command\+Answer}}
+\index{read\+Command\+Answer@{read\+Command\+Answer}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{read\+Command\+Answer()}{readCommandAnswer()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::read\+Command\+Answer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a6267dcaa94ac41a1f9baccc048b497a7}{}\label{class_wasp_b_l_e_a6267dcaa94ac41a1f9baccc048b497a7}
+
+
+Reads and stores module answer. By default read max allowed bytes if possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!read\+Local\+Attribute@{read\+Local\+Attribute}}
+\index{read\+Local\+Attribute@{read\+Local\+Attribute}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{read\+Local\+Attribute(uint16\+\_\+t handle, uint16\+\_\+t offset)}{readLocalAttribute(uint16_t handle, uint16_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::read\+Local\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{handle, }
+\item[{uint16\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a753856ecc10fd863ea5ff2b23c9eff03}{}\label{class_wasp_b_l_e_a753856ecc10fd863ea5ff2b23c9eff03}
+
+
+read an attribute from the local database of the B\+LE device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em uint16\+\_\+t} & offset\+: offset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!read\+Local\+Attribute@{read\+Local\+Attribute}}
+\index{read\+Local\+Attribute@{read\+Local\+Attribute}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{read\+Local\+Attribute(uint16\+\_\+t handle)}{readLocalAttribute(uint16_t handle)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::read\+Local\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_af887bcea2ab060511bb90dd26d29ff3e}{}\label{class_wasp_b_l_e_af887bcea2ab060511bb90dd26d29ff3e}
+
+
+read an attribute from the local database of the B\+LE device (default offset=0). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!reset@{reset}}
+\index{reset@{reset}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a97e9719e1061680ed11acd8eccd33b1e}{}\label{class_wasp_b_l_e_a97e9719e1061680ed11acd8eccd33b1e}
+
+
+sends software reset command to the module. Resets in normal mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!say\+Hello@{say\+Hello}}
+\index{say\+Hello@{say\+Hello}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{say\+Hello()}{sayHello()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::say\+Hello (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ae4db5ca2f4c6cb92fd87c5984e2b7184}{}\label{class_wasp_b_l_e_ae4db5ca2f4c6cb92fd87c5984e2b7184}
+
+
+similar to AT -\/$>$ OK 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Device@{scan\+Device}}
+\index{scan\+Device@{scan\+Device}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Device(char $\ast$\+Mac)}{scanDevice(char *Mac)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Device (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Mac}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a52bf458c345c8eee05cbcb66491b3618}{}\label{class_wasp_b_l_e_a52bf458c345c8eee05cbcb66491b3618}
+
+
+Scanning functions //////////////////////////////////. 
+
+Makes an inquiry to discover specific device by its Mac.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Mac\+: Mac address of the device to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if not found. \textquotesingle{}1\textquotesingle{} if found, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Device@{scan\+Device}}
+\index{scan\+Device@{scan\+Device}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Device(char $\ast$\+Mac, uint8\+\_\+t max\+Time, uint8\+\_\+t T\+X\+Power)}{scanDevice(char *Mac, uint8_t maxTime, uint8_t TXPower)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Device (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Mac, }
+\item[{uint8\+\_\+t}]{max\+Time, }
+\item[{uint8\+\_\+t}]{T\+X\+Power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ad11e0716c56e05ca039661341b1d71e4}{}\label{class_wasp_b_l_e_ad11e0716c56e05ca039661341b1d71e4}
+
+
+Makes an inquiry to discover specific device by its Mac. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & Mac\+: Mac address of the device to be found \\
+\hline
+{\em uint8\+\_\+t} & max\+Time\+: Time to be looking for this device \\
+\hline
+{\em uint8\+\_\+t} & T\+X\+Power\+: TX power used during the scan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if not found. \textquotesingle{}1\textquotesingle{} if found, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network@{scan\+Network}}
+\index{scan\+Network@{scan\+Network}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network(uint8\+\_\+t time, uint8\+\_\+t T\+X\+Power)}{scanNetwork(uint8_t time, uint8_t TXPower)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Network (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time, }
+\item[{uint8\+\_\+t}]{T\+X\+Power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_aa66176a4a5b4d572b7656ba36db7bb9b}{}\label{class_wasp_b_l_e_aa66176a4a5b4d572b7656ba36db7bb9b}
+
+
+Scans network to find other B\+LE modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: Time to be looking for this device \\
+\hline
+{\em int8\+\_\+t} & T\+X\+Power\+: TX power used during the scan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if scan OK, error\+Code if error. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network@{scan\+Network}}
+\index{scan\+Network@{scan\+Network}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network(uint8\+\_\+t time)}{scanNetwork(uint8_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Network (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_aba60496e707abf40125289a7db2e139b}{}\label{class_wasp_b_l_e_aba60496e707abf40125289a7db2e139b}
+
+
+Scans network to find other B\+LE modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: Time to be looking for this device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if scan OK, error\+Code if error. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network\+Cancel@{scan\+Network\+Cancel}}
+\index{scan\+Network\+Cancel@{scan\+Network\+Cancel}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Cancel()}{scanNetworkCancel()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Network\+Cancel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a9083b58199f7e32becd1cbd396aafeef}{}\label{class_wasp_b_l_e_a9083b58199f7e32becd1cbd396aafeef}
+
+
+Cancels a scan procedure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network\+Limited@{scan\+Network\+Limited}}
+\index{scan\+Network\+Limited@{scan\+Network\+Limited}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Limited(int16\+\_\+t Max\+Devices, uint8\+\_\+t power)}{scanNetworkLimited(int16_t MaxDevices, uint8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Network\+Limited (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{Max\+Devices, }
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ab45501a0e68b6d20fd59a4a5e872acc8}{}\label{class_wasp_b_l_e_ab45501a0e68b6d20fd59a4a5e872acc8}
+
+
+Scans network till find specified number of devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int16\+\_\+t} & Max\+Devices\+: Number of devices to be found before stop scanning. \\
+\hline
+{\em int8\+\_\+t} & power\+: TX power used during the scan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error\+Code 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network\+Limited@{scan\+Network\+Limited}}
+\index{scan\+Network\+Limited@{scan\+Network\+Limited}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Limited(int16\+\_\+t Max\+Devices)}{scanNetworkLimited(int16_t MaxDevices)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::scan\+Network\+Limited (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{Max\+Devices}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a408982f54190cae5eca576cfadfdc078}{}\label{class_wasp_b_l_e_a408982f54190cae5eca576cfadfdc078}
+
+
+Scans network till find specified number of devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int16\+\_\+t} & Max\+Devices\+: Number of devices to be found before stop scanning. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error\+Code 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network\+Name@{scan\+Network\+Name}}
+\index{scan\+Network\+Name@{scan\+Network\+Name}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Name(uint8\+\_\+t time, uint8\+\_\+t T\+X\+Power)}{scanNetworkName(uint8_t time, uint8_t TXPower)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::scan\+Network\+Name (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time, }
+\item[{uint8\+\_\+t}]{T\+X\+Power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a2dce5f91acc42353a987fff5c8a1d302}{}\label{class_wasp_b_l_e_a2dce5f91acc42353a987fff5c8a1d302}
+
+
+Scans network to find other B\+LE modules, including friendly name. Uses active scanning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: Time to be looking for devices \\
+\hline
+{\em int8\+\_\+t} & T\+X\+Power\+: TX power used during the scan \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!scan\+Network\+Name@{scan\+Network\+Name}}
+\index{scan\+Network\+Name@{scan\+Network\+Name}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{scan\+Network\+Name(uint8\+\_\+t time)}{scanNetworkName(uint8_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::scan\+Network\+Name (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_af30e43863490e8f81ebb712002bacbe4}{}\label{class_wasp_b_l_e_af30e43863490e8f81ebb712002bacbe4}
+
+
+Scans network to find other B\+LE modules, including friendly name. Uses active scanning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time\+: Time to be looking for devices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code in any case. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{send\+Command(uint8\+\_\+t $\ast$custom\+Command, uint8\+\_\+t length)}{sendCommand(uint8_t *customCommand, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{custom\+Command, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_aa641a53b3d4e466a5aba6005f72cea02}{}\label{class_wasp_b_l_e_aa641a53b3d4e466a5aba6005f72cea02}
+
+
+Sends a custom command to the B\+LE module. Packet mode is mandatory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & $\ast$ custom\+Command\+: command to be sent to the B\+LE module. It must be in packet mode. \\
+\hline
+{\em uint8\+\_\+t} & length\+: length of the command to be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if command exceeds maximum length. 0 otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!send\+Command@{send\+Command}}
+\index{send\+Command@{send\+Command}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{send\+Command(char $\ast$custom\+Command)}{sendCommand(char *customCommand)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::send\+Command (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{custom\+Command}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_ae0b129b7917ad5073ee53f18688cb209}{}\label{class_wasp_b_l_e_ae0b129b7917ad5073ee53f18688cb209}
+
+
+Sends a custom command to the B\+LE module. Packet mode is mandatory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$ custom\+Command\+: command to be sent to the B\+LE module. It must be in packet mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if command exceeds maximum length. 0 otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Adv\+Data@{set\+Adv\+Data}}
+\index{set\+Adv\+Data@{set\+Adv\+Data}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Adv\+Data(uint8\+\_\+t set\+\_\+scanrsp, char $\ast$adv\+\_\+data)}{setAdvData(uint8_t set_scanrsp, char *adv_data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Adv\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{set\+\_\+scanrsp, }
+\item[{char $\ast$}]{adv\+\_\+data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a8d785a0c9e367e8fbf1c71881c070aa6}{}\label{class_wasp_b_l_e_a8d785a0c9e367e8fbf1c71881c070aa6}
+
+
+Set Advertisement scan Response data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\+\_\+scanrsp} & advertisement data type; 0 sets advertisement data. 1 sets scan response data. \\
+\hline
+{\em adv\+\_\+data} & data to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if data is truncated, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Adv\+Data@{set\+Adv\+Data}}
+\index{set\+Adv\+Data@{set\+Adv\+Data}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Adv\+Data(uint8\+\_\+t set\+\_\+scanrsp, uint8\+\_\+t $\ast$adv\+\_\+data, uint8\+\_\+t adv\+\_\+data\+\_\+length)}{setAdvData(uint8_t set_scanrsp, uint8_t *adv_data, uint8_t adv_data_length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Adv\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{set\+\_\+scanrsp, }
+\item[{uint8\+\_\+t $\ast$}]{adv\+\_\+data, }
+\item[{uint8\+\_\+t}]{adv\+\_\+data\+\_\+length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_aa25b1965a012b6bef20bd376ef5f7d26}{}\label{class_wasp_b_l_e_aa25b1965a012b6bef20bd376ef5f7d26}
+
+
+Set Advertisement scan Response data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\+\_\+scanrsp} & advertisement data type; 0 sets advertisement data. 1 sets scan response data. \\
+\hline
+{\em adv\+\_\+data} & data to send \\
+\hline
+{\em adv\+\_\+data\+\_\+length} & length of adv data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if data is truncated, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Adv\+Parameters@{set\+Adv\+Parameters}}
+\index{set\+Adv\+Parameters@{set\+Adv\+Parameters}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Adv\+Parameters(uint16\+\_\+t adv\+\_\+min, uint16\+\_\+t adv\+\_\+max, uint8\+\_\+t adv\+\_\+ch)}{setAdvParameters(uint16_t adv_min, uint16_t adv_max, uint8_t adv_ch)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Adv\+Parameters (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{adv\+\_\+min, }
+\item[{uint16\+\_\+t}]{adv\+\_\+max, }
+\item[{uint8\+\_\+t}]{adv\+\_\+ch}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a56067c84584808bf2f237b6998df4d28}{}\label{class_wasp_b_l_e_a56067c84584808bf2f237b6998df4d28}
+
+
+This function sets advertisement parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & adv\+\_\+min\+: minimum advertisement interval. units of 625 us. range 0x20 to 0x4000. \\
+\hline
+{\em uint16\+\_\+t} & adv\+\_\+max\+: maximum adversisement interval. units of 625 us. range 0x20 to 0x4000. \\
+\hline
+{\em uint8\+\_\+t} & adv\+\_\+ch\+: bitmask to set which advertisements channels are used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Bondable\+Mode@{set\+Bondable\+Mode}}
+\index{set\+Bondable\+Mode@{set\+Bondable\+Mode}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Bondable\+Mode(uint8\+\_\+t bondable)}{setBondableMode(uint8_t bondable)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Bondable\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{bondable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_af8d0f18ba63575774c48cc9a2d4912d7}{}\label{class_wasp_b_l_e_af8d0f18ba63575774c48cc9a2d4912d7}
+
+
+Sets device to bondable mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & bondable\+: enable or disable bonding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 1 if ok, 0 therwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Connectable\+Mode@{set\+Connectable\+Mode}}
+\index{set\+Connectable\+Mode@{set\+Connectable\+Mode}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Connectable\+Mode(uint8\+\_\+t connectable)}{setConnectableMode(uint8_t connectable)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Connectable\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{connectable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a1d550ec27250e37bc5fe05421be5f793}{}\label{class_wasp_b_l_e_a1d550ec27250e37bc5fe05421be5f793}
+
+
+This functions configures the connectability mode. default directed conectable mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & connectable\+: connectable mode; Non connectable, direct connectable, indirect connectable, scannable non connectable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if ok, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Discoverable\+Mode@{set\+Discoverable\+Mode}}
+\index{set\+Discoverable\+Mode@{set\+Discoverable\+Mode}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Discoverable\+Mode(uint8\+\_\+t discoverable)}{setDiscoverableMode(uint8_t discoverable)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Discoverable\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{discoverable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a8631269b03ea48569bb135984a37e6e3}{}\label{class_wasp_b_l_e_a8631269b03ea48569bb135984a37e6e3}
+
+
+This functions configures the discoverability mode. default general discoverable mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & discoverable\+: discoverabillity mode; non discoverable, limited, general, broadcast. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if ok, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Discover\+Mode@{set\+Discover\+Mode}}
+\index{set\+Discover\+Mode@{set\+Discover\+Mode}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Discover\+Mode(uint8\+\_\+t discover)}{setDiscoverMode(uint8_t discover)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Discover\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{discover}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a0e7e16ab51f5d1880e9a64f6a782786b}{}\label{class_wasp_b_l_e_a0e7e16ab51f5d1880e9a64f6a782786b}
+
+
+This function configures the discover mode. Default observation mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & discover\+: discover mode; Limited, generic, observation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if ok, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Filtering@{set\+Filtering}}
+\index{set\+Filtering@{set\+Filtering}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Filtering(uint8\+\_\+t scan\+\_\+pol, uint8\+\_\+t adv\+\_\+pol, uint8\+\_\+t scan\+\_\+duplicate\+\_\+filter)}{setFiltering(uint8_t scan_pol, uint8_t adv_pol, uint8_t scan_duplicate_filter)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Filtering (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{scan\+\_\+pol, }
+\item[{uint8\+\_\+t}]{adv\+\_\+pol, }
+\item[{uint8\+\_\+t}]{scan\+\_\+duplicate\+\_\+filter}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a5f7562c538e4aa5580ef1fab647f802a}{}\label{class_wasp_b_l_e_a5f7562c538e4aa5580ef1fab647f802a}
+
+
+Set scan, connection, and advertising filtering parameters, based on the whitelist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & Scan Policy\+: 0 = gap\+\_\+scan\+\_\+policy\+\_\+all; 1 = gap\+\_\+scan\+\_\+policy\+\_\+whitelist \\
+\hline
+{\em uint8\+\_\+t} & Advertising policy\+: 0 = gap\+\_\+adv\+\_\+policy\+\_\+all ; 1 = gap\+\_\+adv\+\_\+policy\+\_\+whitelist\+\_\+scan ; 2 = gap\+\_\+adv\+\_\+policy\+\_\+whitelist\+\_\+connect; 3 = gap\+\_\+adv\+\_\+policy\+\_\+whitelist\+\_\+all; \\
+\hline
+{\em uint8\+\_\+t} & scan Duplicate filtering\+: 0 = do not filter; 1 = filter duplicates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Filtering@{set\+Filtering}}
+\index{set\+Filtering@{set\+Filtering}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Filtering(uint8\+\_\+t scan\+\_\+duplicate\+\_\+filtering)}{setFiltering(uint8_t scan_duplicate_filtering)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Filtering (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{scan\+\_\+duplicate\+\_\+filtering}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a323d352a336d3559106a4ea72ac82358}{}\label{class_wasp_b_l_e_a323d352a336d3559106a4ea72ac82358}
+
+
+Set advertising filtering parameters, based on the whitelist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & scan Duplicate filtering\+: 0 = do not filter; 1 = filter duplicates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Key(uint8\+\_\+t handle, uint32\+\_\+t passkey)}{setKey(uint8_t handle, uint32_t passkey)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{handle, }
+\item[{uint32\+\_\+t}]{passkey}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_adc09f07207af188fc109a569cfbcc149}{}\label{class_wasp_b_l_e_adc09f07207af188fc109a569cfbcc149}
+
+
+Enters the passkey required for Man-\/in-\/the-\/\+Middle pairing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & handle\+: connection handle \\
+\hline
+{\em uint32\+\_\+t} & passkey\+: key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Scanning\+Parameters@{set\+Scanning\+Parameters}}
+\index{set\+Scanning\+Parameters@{set\+Scanning\+Parameters}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Scanning\+Parameters(uint16\+\_\+t scan\+\_\+interval, uint16\+\_\+t scan\+\_\+window, uint8\+\_\+t scanning)}{setScanningParameters(uint16_t scan_interval, uint16_t scan_window, uint8_t scanning)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Scanning\+Parameters (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{scan\+\_\+interval, }
+\item[{uint16\+\_\+t}]{scan\+\_\+window, }
+\item[{uint8\+\_\+t}]{scanning}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a649d471162e0974716e21feae52605d0}{}\label{class_wasp_b_l_e_a649d471162e0974716e21feae52605d0}
+
+
+This function sets scanning parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & scan\+\_\+interval\+: default 75 (46.\+875ms) \\
+\hline
+{\em uint16\+\_\+t} & scan\+\_\+win\+: default 50 (31.\+250 ms) \\
+\hline
+{\em scanning} & 1 = use active scanning; 0 = use passive scanning. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if ok, error code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Scanning\+Parameters@{set\+Scanning\+Parameters}}
+\index{set\+Scanning\+Parameters@{set\+Scanning\+Parameters}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Scanning\+Parameters(uint8\+\_\+t active)}{setScanningParameters(uint8_t active)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Scanning\+Parameters (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{active}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a3ca4dca79c158a085974becaf39cd45e}{}\label{class_wasp_b_l_e_a3ca4dca79c158a085974becaf39cd45e}
+
+
+This function sets scanning parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & active\+: 1 = use active scanning; 0 = use passive scanning. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+Security\+Parameters@{set\+Security\+Parameters}}
+\index{set\+Security\+Parameters@{set\+Security\+Parameters}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+Security\+Parameters(uint8\+\_\+t mitm, uint8\+\_\+t min\+\_\+key\+\_\+size, uint8\+\_\+t io\+\_\+cap)}{setSecurityParameters(uint8_t mitm, uint8_t min_key_size, uint8_t io_cap)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+Security\+Parameters (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mitm, }
+\item[{uint8\+\_\+t}]{min\+\_\+key\+\_\+size, }
+\item[{uint8\+\_\+t}]{io\+\_\+cap}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a18ea780f28c137722a0e73d01f8c8e44}{}\label{class_wasp_b_l_e_a18ea780f28c137722a0e73d01f8c8e44}
+
+
+Configures security manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mitm\+:Man-\/in-\/the-\/middle protection. \\
+\hline
+{\em uint8\+\_\+t} & min\+\_\+key\+\_\+size\+: Minimum key size in bytes. range 7-\/16 \\
+\hline
+{\em uint8\+\_\+t} & io\+\_\+cap\+: I/O capabilities See\+: S\+MP IO Capabilities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if ok, 1 otherwise 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!set\+T\+X\+Power@{set\+T\+X\+Power}}
+\index{set\+T\+X\+Power@{set\+T\+X\+Power}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{set\+T\+X\+Power(uint8\+\_\+t power)}{setTXPower(uint8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::set\+T\+X\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a93326130d1b068d9c918829233f0f796}{}\label{class_wasp_b_l_e_a93326130d1b068d9c918829233f0f796}
+
+
+Set TX power. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & power\+: Power can be a value between 0 and 15 which give the real TX power from -\/23 to +3d\+Bm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if OK, 1 if error. this command does not return error code. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!sleep@{sleep}}
+\index{sleep@{sleep}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{sleep()}{sleep()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+B\+L\+E\+::sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a1cf5d8cf6b265fe516f4a00f2699f5ac}{}\label{class_wasp_b_l_e_a1cf5d8cf6b265fe516f4a00f2699f5ac}
+
+
+Disables wake up pin of the B\+LE module (disables U\+A\+RT interface) 
+
+allowing module low power modes. 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!wait\+Event@{wait\+Event}}
+\index{wait\+Event@{wait\+Event}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{wait\+Event(unsigned long time)}{waitEvent(unsigned long time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::wait\+Event (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_adca5a576b3b798898909183aadeae0ae}{}\label{class_wasp_b_l_e_adca5a576b3b798898909183aadeae0ae}
+
+
+wait for specified time for an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long time\+: time to be waiting for event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if no event found, event identification number otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{wake\+Up()}{wakeUp()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_af500af76e412634231a0640975940b6a}{}\label{class_wasp_b_l_e_af500af76e412634231a0640975940b6a}
+
+
+Enables Wakeup pin (enables A\+U\+RT interface) and wake up B\+LE from low power modes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!white\+List\+Append@{white\+List\+Append}}
+\index{white\+List\+Append@{white\+List\+Append}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{white\+List\+Append(char $\ast$\+B\+L\+E\+Address)}{whiteListAppend(char *BLEAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::white\+List\+Append (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{B\+L\+E\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a14956d02528234516d4f86b0f59c0147}{}\label{class_wasp_b_l_e_a14956d02528234516d4f86b0f59c0147}
+
+
+Define the remote devices allowed to establish a connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$ B\+L\+E\+Adrress\+: M\+AC of the remote module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: return error code 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!white\+List\+Clear@{white\+List\+Clear}}
+\index{white\+List\+Clear@{white\+List\+Clear}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{white\+List\+Clear()}{whiteListClear()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::white\+List\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a8c04876be117113fc1d5ca8ae4279981}{}\label{class_wasp_b_l_e_a8c04876be117113fc1d5ca8ae4279981}
+
+
+Delete all entries of the white list at once. Do not use this command while advertising or while being connected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!white\+List\+Remove@{white\+List\+Remove}}
+\index{white\+List\+Remove@{white\+List\+Remove}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{white\+List\+Remove(char $\ast$\+B\+L\+E\+Address)}{whiteListRemove(char *BLEAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::white\+List\+Remove (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{B\+L\+E\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a3b8283aac0a9c5beaa60a95080cb1cba}{}\label{class_wasp_b_l_e_a3b8283aac0a9c5beaa60a95080cb1cba}
+
+
+Remove an entry from the running white list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$ B\+L\+E\+Adrress\+: M\+AC of the remote module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if OK, error\+Code otherwise. 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!write\+Local\+Attribute@{write\+Local\+Attribute}}
+\index{write\+Local\+Attribute@{write\+Local\+Attribute}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{write\+Local\+Attribute(uint16\+\_\+t handle, char $\ast$data)}{writeLocalAttribute(uint16_t handle, char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::write\+Local\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{handle, }
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a80d7997ab8cb1a1c59c5cc0f3a677402}{}\label{class_wasp_b_l_e_a80d7997ab8cb1a1c59c5cc0f3a677402}
+
+
+write local attribute to the local G\+A\+TT database of the B\+LE device 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em char} & $\ast$ data\+: data to write in the attribute\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if OK, 1 if write ok and indicated ok, error code if error writting, event identification number if other event found 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!write\+Local\+Attribute@{write\+Local\+Attribute}}
+\index{write\+Local\+Attribute@{write\+Local\+Attribute}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{write\+Local\+Attribute(uint16\+\_\+t handle, uint8\+\_\+t indicate, char $\ast$data)}{writeLocalAttribute(uint16_t handle, uint8_t indicate, char *data)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::write\+Local\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{handle, }
+\item[{uint8\+\_\+t}]{indicate, }
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a69c09d6cea84a047721c38371c457fe4}{}\label{class_wasp_b_l_e_a69c09d6cea84a047721c38371c457fe4}
+
+
+write local attribute to the local G\+A\+TT database of the B\+LE device 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em uint8\+\_\+t} & indicate\+: enables /disable indicate process. \\
+\hline
+{\em char} & $\ast$ data\+: data to write in the attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if OK, 1 if write ok and indicated ok, error code if error writting, event identification number if other event found 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!write\+Local\+Attribute@{write\+Local\+Attribute}}
+\index{write\+Local\+Attribute@{write\+Local\+Attribute}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{write\+Local\+Attribute(uint16\+\_\+t handle, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)}{writeLocalAttribute(uint16_t handle, uint8_t *data, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::write\+Local\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{handle, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a33eb4201dc496491777c5abefe0d85f2}{}\label{class_wasp_b_l_e_a33eb4201dc496491777c5abefe0d85f2}
+
+
+write local attribute to the local G\+A\+TT database of the B\+LE device 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em uint8\+\_\+t} & $\ast$ data\+: data to write in the attribute \\
+\hline
+{\em uint8\+\_\+t} & length\+: data length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if OK, 1 if write ok and indicated ok, error code if error writting, event identification number if other event found 
+\end{DoxyReturn}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!write\+Local\+Attribute@{write\+Local\+Attribute}}
+\index{write\+Local\+Attribute@{write\+Local\+Attribute}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{write\+Local\+Attribute(uint16\+\_\+t handle, uint8\+\_\+t indicate, uint8\+\_\+t $\ast$data, uint8\+\_\+t length)}{writeLocalAttribute(uint16_t handle, uint8_t indicate, uint8_t *data, uint8_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+B\+L\+E\+::write\+Local\+Attribute (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{handle, }
+\item[{uint8\+\_\+t}]{indicate, }
+\item[{uint8\+\_\+t $\ast$}]{data, }
+\item[{uint8\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_b_l_e_a3b522812954da73015f22d11af470cf3}{}\label{class_wasp_b_l_e_a3b522812954da73015f22d11af470cf3}
+
+
+write local attribute of the B\+LE device, indicate enabled 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & handle\+: attribute handler \\
+\hline
+{\em uint8\+\_\+t} & indicate\+: enables /disable indicate process. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$ data \\
+\hline
+{\em uint8\+\_\+t} & length\+: data length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return error code. 0 if OK, error code otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!A\+D\+C\+Value@{A\+D\+C\+Value}}
+\index{A\+D\+C\+Value@{A\+D\+C\+Value}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{A\+D\+C\+Value}{ADCValue}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+B\+L\+E\+::\+A\+D\+C\+Value}\hypertarget{class_wasp_b_l_e_aed656c508968cf73b030af5bdeb550ad}{}\label{class_wasp_b_l_e_aed656c508968cf73b030af5bdeb550ad}
+
+
+Variable\+: stores last A\+DC read value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\index{Wasp\+B\+LE@{Wasp\+B\+LE}!B\+L\+E\+Dev@{B\+L\+E\+Dev}}
+\index{B\+L\+E\+Dev@{B\+L\+E\+Dev}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{B\+L\+E\+Dev}{BLEDev}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf discovered\+Device} Wasp\+B\+L\+E\+::\+B\+L\+E\+Dev}\hypertarget{class_wasp_b_l_e_a3dfcc1e03881a3f47a550ecf28c7de83}{}\label{class_wasp_b_l_e_a3dfcc1e03881a3f47a550ecf28c7de83}
+
+
+public methods ////////////////////////// 
+
+Variable \+: Struct to save a B\+LE device and its data. \index{Wasp\+B\+LE@{Wasp\+B\+LE}!device\+Role@{device\+Role}}
+\index{device\+Role@{device\+Role}!Wasp\+B\+LE@{Wasp\+B\+LE}}
+\subsubsection[{\texorpdfstring{device\+Role}{deviceRole}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+B\+L\+E\+::device\+Role}\hypertarget{class_wasp_b_l_e_a52ffe5e340fa3f94336fddc227440132}{}\label{class_wasp_b_l_e_a52ffe5e340fa3f94336fddc227440132}
+F\+I\+X! Not used yet Variable \+: // 0 = advertiser, 1 = scanner, 2 = Master, 3 = slave; 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+B\+L\+E/\hyperlink{_wasp_b_l_e_8h}{Wasp\+B\+L\+E.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+B\+L\+E/Wasp\+B\+L\+E.\+cpp\end{DoxyCompactItemize}

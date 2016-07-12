@@ -1,0 +1,4 @@
+<map id="Sensors" name="Sensors">
+<area shape="rect" id="node2" href="$class_p_c_t2075.html" title="Class that handles the communication to the temperature sensor PCT2075. " alt="" coords="5,13,109,134"/>
+<area shape="rect" id="node4" href="$class_f_x_l_s8471_q.html" title="Class that handles the communication to the Accelerometer FXLS8471Q. " alt="" coords="134,5,268,141"/>
+</map>

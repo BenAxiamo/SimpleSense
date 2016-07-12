@@ -1,0 +1,547 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">18.04.2016</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">08:35:44</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc" class="file"><acronym title="C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc">C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">51</td></tr>
+</table>
+</td>
+</table>
+<hr><a name="IDM30BVT0JE0GMKMJ5F4MBOLGVDNHAMHLWLHKBSROWLF0XFYLRKORD"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUYOBRKPKEKQ0EYQWVP30SDS4GHA4W2ESOFCS11CZ4HVZVP2NIJFI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNXGKM5LSY1WHD4SYJLBP3AWELN2NR2NISMNJBUO4IUWPMESV0KDN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBAVQCZQBO001HM5MZZ34RFGT0N1OFDBSLJAXF5GKYQ2CEPS44QUJ">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXDTUGW4UTHW1GYIM4MXBWHAGTBJRLEZD0BDJNTKCVIVUYSWWO4JH">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHQELCJMTHEFEPQARK0WE0AWILGXTOVF1G1F0O2FYTY40INMHPG3F">Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2MLWAD13MF21I1SXXVECMKPZ2ODMZONLMQKVB2CMVM4CMPUZKJWD">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDU5U3UFSMVUSZHA4DISQCTX2DVFOICUU5YG4GZACU0MDMW2UYIW">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2UCN3TPQLWNDDNUMFRWGBDS1PF3XVAOORAIAU0HXQO3H1QES2FME">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDO2DIBI0QVBJHNG24NARAJR0BSJ1DO1SAIX23FIPHIOGQEKPKELLF">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOM0QMO3NNWVCGAEJM4DB13BONJT31KKDNVQZKGCQKZ32AM3WKWFE">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">16</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR4RJKSWP2Z4KOS130B0YEVGCOHDJRAC2MTTCFCFZ2OOCQVG4KPCL">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3I24U5SAQPZUMAHHPKUEIYBZ1FAE141YH2MNZUEOGTVAZNQRTVJ">Silk primitive without silk layer</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1TKWALP4B2ILFK25LBWVIJ3TOJSL3LAIKWDHMXHMDAZO2NABJ45M">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEPEIE5CVNNOBFXJY4JOZBPUG3MBKPY4SC2QXKJKOEGJIRDQOCBCK">Rule</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">51</td>
+</tr>
+</table><br><hr><a name="IDBAVQCZQBO001HM5MZZ34RFGT0N1OFDBSLJAXF5GKYQ2CEPS44QUJ"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Clearance Constraint (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True">Pad U1-2(99.45mm,77.175mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=3051.118mil|Location2.Y=3076.835mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=3051.118mil|Location2.Y=3076.835mil|Absolute=True">Pad U1-1(99.45mm,77.825mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True">Pad U1-3(99.45mm,76.525mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True">Pad U1-2(99.45mm,77.175mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True">Pad U1-4(99.45mm,75.875mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True">Pad U1-3(99.45mm,76.525mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True">Pad U1-5(99.45mm,75.225mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True">Pad U1-4(99.45mm,75.875mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2923.165mil|Location2.Y=2948.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2923.165mil|Location2.Y=2948.882mil|Absolute=True">Pad U1-6(99.45mm,74.575mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3879.858mil|Location2.X=3950.85mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True">Pad U1-5(99.45mm,75.225mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True">Pad U1-11(103.75mm,77.175mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=3051.118mil|Location2.Y=3076.835mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=3051.118mil|Location2.Y=3076.835mil|Absolute=True">Pad U1-12(103.75mm,77.825mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True">Pad U1-10(103.75mm,76.525mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=3025.528mil|Location2.Y=3051.244mil|Absolute=True">Pad U1-11(103.75mm,77.175mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True">Pad U1-9(103.75mm,75.875mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2999.937mil|Location2.Y=3025.653mil|Absolute=True">Pad U1-10(103.75mm,76.525mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True">Pad U1-8(103.75mm,75.225mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2974.347mil|Location2.Y=3000.063mil|Absolute=True">Pad U1-9(103.75mm,75.875mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2923.165mil|Location2.Y=2948.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2923.165mil|Location2.Y=2948.882mil|Absolute=True">Pad U1-7(103.75mm,74.575mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4049.15mil|Location2.X=4120.142mil|Location1.Y=2948.756mil|Location2.Y=2974.472mil|Absolute=True">Pad U1-8(103.75mm,75.225mm)  Top Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDHQELCJMTHEFEPQARK0WE0AWILGXTOVF1G1F0O2FYTY40INMHPG3F"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4345mil|Location2.X=4440.276mil|Location1.Y=3131.5mil|Location2.Y=3154.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4345mil|Location2.X=4440.276mil|Location1.Y=3131.5mil|Location2.Y=3154.5mil|Absolute=True">Width Constraint: Track (110.642mm,79.832mm)(110.668mm,79.832mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4271.925mil|Location2.X=4378.532mil|Location1.Y=2839.15mil|Location2.Y=2867.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4271.925mil|Location2.X=4378.532mil|Location1.Y=2839.15mil|Location2.Y=2867.15mil|Absolute=True">Width Constraint: Track (107.95mm,72.47mm)(109.775mm,72.47mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4371.925mil|Location2.X=4451.81mil|Location1.Y=2718.947mil|Location2.Y=2803.075mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4371.925mil|Location2.X=4451.81mil|Location1.Y=2718.947mil|Location2.Y=2803.075mil|Absolute=True">Width Constraint: Track (109.775mm,72.47mm)(113.03mm,69.215mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4761mil|Location2.X=4867.606mil|Location1.Y=2711mil|Location2.Y=2739mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4761mil|Location2.X=4867.606mil|Location1.Y=2711mil|Location2.Y=2739mil|Absolute=True">Width Constraint: Track (113.03mm,69.215mm)(129.54mm,69.215mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5036mil|Location2.X=5120.128mil|Location1.Y=3236mil|Location2.Y=3315.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5036mil|Location2.X=5120.128mil|Location1.Y=3236mil|Location2.Y=3315.885mil|Absolute=True">Width Constraint: Track (127mm,81.28mm)(129.54mm,83.82mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4986mil|Location2.X=5014mil|Location1.Y=3123.5mil|Location2.Y=3230.106mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4986mil|Location2.X=5014mil|Location1.Y=3123.5mil|Location2.Y=3230.106mil|Absolute=True">Width Constraint: Track (127mm,78.105mm)(127mm,81.28mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5036mil|Location2.X=5115.885mil|Location1.Y=2954.872mil|Location2.Y=3039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5036mil|Location2.X=5115.885mil|Location1.Y=2954.872mil|Location2.Y=3039mil|Absolute=True">Width Constraint: Track (127mm,78.105mm)(129.54mm,75.565mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5086mil|Location2.X=5114mil|Location1.Y=2836mil|Location2.Y=2942.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5086mil|Location2.X=5114mil|Location1.Y=2836mil|Location2.Y=2942.606mil|Absolute=True">Width Constraint: Track (129.54mm,69.215mm)(129.54mm,75.565mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3248.5mil|Location2.X=3355.106mil|Location1.Y=2786mil|Location2.Y=2814mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3248.5mil|Location2.X=3355.106mil|Location1.Y=2786mil|Location2.Y=2814mil|Absolute=True">Width Constraint: Track (81.28mm,71.12mm)(84.455mm,71.12mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.291mil|Location2.X=3410.176mil|Location1.Y=2710.581mil|Location2.Y=2794.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3330.291mil|Location2.X=3410.176mil|Location1.Y=2710.581mil|Location2.Y=2794.709mil|Absolute=True">Width Constraint: Track (84.455mm,71.12mm)(85.435mm,70.14mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3392.791mil|Location2.X=3499.398mil|Location1.Y=2747.417mil|Location2.Y=2775.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3392.791mil|Location2.X=3499.398mil|Location1.Y=2747.417mil|Location2.Y=2775.417mil|Absolute=True">Width Constraint: Track (85.435mm,70.14mm)(87.63mm,70.14mm)  Top Layer</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDU5U3UFSMVUSZHA4DISQCTX2DVFOICUU5YG4GZACU0MDMW2UYIW"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.32mil|Location2.X=3059.68mil|Location1.Y=3340.32mil|Location2.Y=3459.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.32mil|Location2.X=3059.68mil|Location1.Y=3340.32mil|Location2.Y=3459.68mil|Absolute=True">Hole Size Constraint (3mm &gt; 2.54mm) : Pad Free-1(76.2mm,86.36mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.32mil|Location2.X=3059.68mil|Location1.Y=2340.32mil|Location2.Y=2459.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.32mil|Location2.X=3059.68mil|Location1.Y=2340.32mil|Location2.Y=2459.68mil|Absolute=True">Hole Size Constraint (3mm &gt; 2.54mm) : Pad Free-2(76.2mm,60.96mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5340.32mil|Location2.X=5459.68mil|Location1.Y=2340.32mil|Location2.Y=2459.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5340.32mil|Location2.X=5459.68mil|Location1.Y=2340.32mil|Location2.Y=2459.68mil|Absolute=True">Hole Size Constraint (3mm &gt; 2.54mm) : Pad Free-3(137.16mm,60.96mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5340.32mil|Location2.X=5459.68mil|Location1.Y=3340.32mil|Location2.Y=3459.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5340.32mil|Location2.X=5459.68mil|Location1.Y=3340.32mil|Location2.Y=3459.68mil|Absolute=True">Hole Size Constraint (3mm &gt; 2.54mm) : Pad Free-4(137.16mm,86.36mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDO2DIBI0QVBJHNG24NARAJR0BSJ1DO1SAIX23FIPHIOGQEKPKELLF"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4011.157mil|Location2.X=4038.842mil|Location1.Y=2814.504mil|Location2.Y=2846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4011.157mil|Location2.X=4038.842mil|Location1.Y=2814.504mil|Location2.Y=2846.126mil|Absolute=True">Pad R7-1(102.235mm,71.89mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4011.157mil|Location2.X=4038.842mil|Location1.Y=2853.874mil|Location2.Y=2885.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4011.157mil|Location2.X=4038.842mil|Location1.Y=2853.874mil|Location2.Y=2885.496mil|Absolute=True">Pad R7-2(102.235mm,72.89mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3755.252mil|Location2.X=3794.748mil|Location1.Y=3012.339mil|Location2.Y=3040.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3755.252mil|Location2.X=3794.748mil|Location1.Y=3012.339mil|Location2.Y=3040.024mil|Absolute=True">Pad R2-2(95.885mm,76.865mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3719.819mil|Location2.X=3830.181mil|Location1.Y=3046.197mil|Location2.Y=3097.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3719.819mil|Location2.X=3830.181mil|Location1.Y=3046.197mil|Location2.Y=3097.504mil|Absolute=True">Pad C1-2(95.885mm,78.025mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4161.157mil|Location2.X=4188.842mil|Location1.Y=2939.504mil|Location2.Y=2971.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4161.157mil|Location2.X=4188.842mil|Location1.Y=2939.504mil|Location2.Y=2971.126mil|Absolute=True">Pad R1-1(106.045mm,75.065mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4161.157mil|Location2.X=4188.842mil|Location1.Y=2978.874mil|Location2.Y=3010.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4161.157mil|Location2.X=4188.842mil|Location1.Y=2978.874mil|Location2.Y=3010.496mil|Absolute=True">Pad R1-2(106.045mm,76.065mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3886.157mil|Location2.X=3913.842mil|Location1.Y=2814.504mil|Location2.Y=2846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3886.157mil|Location2.X=3913.842mil|Location1.Y=2814.504mil|Location2.Y=2846.126mil|Absolute=True">Pad C4-1(99.06mm,71.89mm)  Top Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3886.157mil|Location2.X=3913.842mil|Location1.Y=2853.874mil|Location2.Y=2885.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3886.157mil|Location2.X=3913.842mil|Location1.Y=2853.874mil|Location2.Y=2885.496mil|Absolute=True">Pad C4-2(99.06mm,72.89mm)  Top Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDOM0QMO3NNWVCGAEJM4DB13BONJT31KKDNVQZKGCQKZ32AM3WKWFE"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4343.937mil|Location2.X=4856.063mil|Location1.Y=2799.055mil|Location2.Y=2819.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4343.937mil|Location2.X=4856.063mil|Location1.Y=2799.055mil|Location2.Y=2819.055mil|Absolute=True">Track (110.59mm,71.35mm)(123.09mm,71.35mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4533.008mil|Location2.X=4666.992mil|Location1.Y=2775.528mil|Location2.Y=2881.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4533.008mil|Location2.X=4666.992mil|Location1.Y=2775.528mil|Location2.Y=2881.953mil|Absolute=True">Pad L1-2(116.84mm,71.85mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4540.5mil|Location2.X=4640.474mil|Location1.Y=3293.5mil|Location2.Y=3373.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4540.5mil|Location2.X=4640.474mil|Location1.Y=3293.5mil|Location2.Y=3373.481mil|Absolute=True">Text "L1" (115.583mm,83.909mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4533.008mil|Location2.X=4666.992mil|Location1.Y=3196.787mil|Location2.Y=3303.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4533.008mil|Location2.X=4666.992mil|Location1.Y=3196.787mil|Location2.Y=3303.213mil|Absolute=True">Pad L1-1(116.84mm,82.55mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4343.937mil|Location2.X=4856.063mil|Location1.Y=3259.685mil|Location2.Y=3279.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4343.937mil|Location2.X=4856.063mil|Location1.Y=3259.685mil|Location2.Y=3279.685mil|Absolute=True">Track (110.59mm,83.05mm)(123.09mm,83.05mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4533.008mil|Location2.X=4666.992mil|Location1.Y=3196.787mil|Location2.Y=3303.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4533.008mil|Location2.X=4666.992mil|Location1.Y=3196.787mil|Location2.Y=3303.213mil|Absolute=True">Pad L1-1(116.84mm,82.55mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4214.567mil|Location2.X=4285.433mil|Location1.Y=2914.173mil|Location2.Y=2918.11mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4214.567mil|Location2.X=4285.433mil|Location1.Y=2914.173mil|Location2.Y=2918.11mil|Absolute=True">Track (107.1mm,74.07mm)(108.8mm,74.07mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4227.299mil|Location2.X=4272.701mil|Location1.Y=2901.315mil|Location2.Y=2948.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4227.299mil|Location2.X=4272.701mil|Location1.Y=2901.315mil|Location2.Y=2948.685mil|Absolute=True">Pad D3-1(107.95mm,74.295mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4214.567mil|Location2.X=4285.433mil|Location1.Y=3031.693mil|Location2.Y=3035.63mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4214.567mil|Location2.X=4285.433mil|Location1.Y=3031.693mil|Location2.Y=3035.63mil|Absolute=True">Track (107.1mm,77.055mm)(108.8mm,77.055mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4227.299mil|Location2.X=4272.701mil|Location1.Y=3025.331mil|Location2.Y=3072.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4227.299mil|Location2.X=4272.701mil|Location1.Y=3025.331mil|Location2.Y=3072.701mil|Absolute=True">Pad D3-2(107.95mm,77.445mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4214.567mil|Location2.X=4285.433mil|Location1.Y=3053.937mil|Location2.Y=3057.874mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4214.567mil|Location2.X=4285.433mil|Location1.Y=3053.937mil|Location2.Y=3057.874mil|Absolute=True">Track (107.1mm,77.62mm)(108.8mm,77.62mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4227.299mil|Location2.X=4272.701mil|Location1.Y=3025.331mil|Location2.Y=3072.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4227.299mil|Location2.X=4272.701mil|Location1.Y=3025.331mil|Location2.Y=3072.701mil|Absolute=True">Pad D3-2(107.95mm,77.445mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (92.26mm,77.415mm)(92.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True">Pad U2-8(92.9mm,81.915mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3637.284mil|Location1.Y=3239.685mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3637.284mil|Location1.Y=3239.685mil|Location2.Y=3249.685mil|Absolute=True">Track (88.26mm,82.415mm)(92.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True">Pad U2-8(92.9mm,81.915mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (92.26mm,77.415mm)(92.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3159.189mil|Location2.Y=3190.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3159.189mil|Location2.Y=3190.811mil|Absolute=True">Pad U2-7(92.9mm,80.645mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (92.26mm,77.415mm)(92.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3109.189mil|Location2.Y=3140.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3109.189mil|Location2.Y=3140.811mil|Absolute=True">Pad U2-6(92.9mm,79.375mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3627.284mil|Location2.X=3637.284mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (92.26mm,77.415mm)(92.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3059.189mil|Location2.Y=3090.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3628.48mil|Location2.X=3686.48mil|Location1.Y=3059.189mil|Location2.Y=3090.811mil|Absolute=True">Pad U2-5(92.9mm,78.105mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (88.26mm,77.415mm)(88.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3059.189mil|Location2.Y=3090.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3059.189mil|Location2.Y=3090.811mil|Absolute=True">Pad U2-4(87.63mm,78.105mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (88.26mm,77.415mm)(88.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3109.189mil|Location2.Y=3140.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3109.189mil|Location2.Y=3140.811mil|Absolute=True">Pad U2-3(87.63mm,79.375mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (88.26mm,77.415mm)(88.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3159.189mil|Location2.Y=3190.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3159.189mil|Location2.Y=3190.811mil|Absolute=True">Pad U2-2(87.63mm,80.645mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3479.803mil|Location1.Y=3042.835mil|Location2.Y=3249.685mil|Absolute=True">Track (88.26mm,77.415mm)(88.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True">Pad U2-1(87.63mm,81.915mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3637.284mil|Location1.Y=3239.685mil|Location2.Y=3249.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.803mil|Location2.X=3637.284mil|Location1.Y=3239.685mil|Location2.Y=3249.685mil|Absolute=True">Track (88.26mm,82.415mm)(92.26mm,82.415mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3421mil|Location2.X=3479mil|Location1.Y=3209.189mil|Location2.Y=3240.811mil|Absolute=True">Pad U2-1(87.63mm,81.915mm)  Top Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="ID1TKWALP4B2ILFK25LBWVIJ3TOJSL3LAIKWDHMXHMDAZO2NABJ45M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.004mil|Location2.X=4003.842mil|Location1.Y=3025.965mil|Location2.Y=3092.187mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.004mil|Location2.X=4003.842mil|Location1.Y=3025.965mil|Location2.Y=3092.187mil|Absolute=True">Net Antennae: Via (101.05mm,77.3mm) Top Layer to Bottom Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.311mil|Location2.X=4047.149mil|Location1.Y=3025.965mil|Location2.Y=3092.187mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.311mil|Location2.X=4047.149mil|Location1.Y=3025.965mil|Location2.Y=3092.187mil|Absolute=True">Net Antennae: Via (102.15mm,77.3mm) Top Layer to Bottom Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.004mil|Location2.X=4003.842mil|Location1.Y=2982.657mil|Location2.Y=3048.88mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.004mil|Location2.X=4003.842mil|Location1.Y=2982.657mil|Location2.Y=3048.88mil|Absolute=True">Net Antennae: Via (101.05mm,76.2mm) Top Layer to Bottom Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.311mil|Location2.X=4047.149mil|Location1.Y=2982.657mil|Location2.Y=3048.88mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.311mil|Location2.X=4047.149mil|Location1.Y=2982.657mil|Location2.Y=3048.88mil|Absolute=True">Net Antennae: Via (102.15mm,76.2mm) Top Layer to Bottom Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.004mil|Location2.X=4003.842mil|Location1.Y=2939.35mil|Location2.Y=3005.573mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.004mil|Location2.X=4003.842mil|Location1.Y=2939.35mil|Location2.Y=3005.573mil|Absolute=True">Net Antennae: Via (101.05mm,75.1mm) Top Layer to Bottom Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Fels%C3%BCberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.311mil|Location2.X=4047.149mil|Location1.Y=2939.35mil|Location2.Y=3005.573mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.311mil|Location2.X=4047.149mil|Location1.Y=2939.35mil|Location2.Y=3005.573mil|Absolute=True">Net Antennae: Via (102.15mm,75.1mm) Top Layer to Bottom Layer</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

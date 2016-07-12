@@ -1,0 +1,168 @@
+\hypertarget{_wasp_w_i_f_i_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+W\+I\+F\+I/\+Wasp\+W\+I\+FI.h File Reference}
+\label{_wasp_w_i_f_i_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+W\+I\+F\+I/\+Wasp\+W\+I\+F\+I.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+W\+I\+F\+I/\+Wasp\+W\+I\+F\+I.\+h}}
+
+
+Library for managing W\+I\+FI modules.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_w_i_f_i}{Wasp\+W\+I\+FI}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_w_i_f_i}{Wasp\+W\+I\+FI} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a565365cdb3727cc89a747691b31f21cf}{F\+T\+P\+\_\+\+T\+I\+M\+E\+O\+UT}~30000\hypertarget{_wasp_w_i_f_i_8h_a565365cdb3727cc89a747691b31f21cf}{}\label{_wasp_w_i_f_i_8h_a565365cdb3727cc89a747691b31f21cf}
+
+\begin{DoxyCompactList}\small\item\em T\+I\+M\+E\+O\+UT F\+OR F\+TP T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a72ec46f922ba8ea489ea8b8237dde681}{W\+I\+F\+I\+\_\+\+B\+A\+U\+D\+R\+A\+TE}~115200\hypertarget{_wasp_w_i_f_i_8h_a72ec46f922ba8ea489ea8b8237dde681}{}\label{_wasp_w_i_f_i_8h_a72ec46f922ba8ea489ea8b8237dde681}
+
+\begin{DoxyCompactList}\small\item\em B\+A\+UD R\+A\+T\+ES //. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a1354b70ac6803a06beebe84f61b5f95b}{O\+P\+EN}~0\hypertarget{_wasp_w_i_f_i_8h_a1354b70ac6803a06beebe84f61b5f95b}{}\label{_wasp_w_i_f_i_8h_a1354b70ac6803a06beebe84f61b5f95b}
+
+\begin{DoxyCompactList}\small\item\em A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+ON M\+O\+D\+ES //. \end{DoxyCompactList}\item 
+\#define {\bfseries W\+EP}~1\hypertarget{_wasp_w_i_f_i_8h_a3b53ed4db66503f80609c2c3a0cb06ca}{}\label{_wasp_w_i_f_i_8h_a3b53ed4db66503f80609c2c3a0cb06ca}
+
+\item 
+\#define {\bfseries W\+P\+A1}~2\hypertarget{_wasp_w_i_f_i_8h_a5cb05e384be5399117082315490ec1a1}{}\label{_wasp_w_i_f_i_8h_a5cb05e384be5399117082315490ec1a1}
+
+\item 
+\#define {\bfseries W\+P\+A\+M\+IX}~3\hypertarget{_wasp_w_i_f_i_8h_a6ce3c8d95a6068e4aeedd40230508361}{}\label{_wasp_w_i_f_i_8h_a6ce3c8d95a6068e4aeedd40230508361}
+
+\item 
+\#define {\bfseries W\+P\+A2}~4\hypertarget{_wasp_w_i_f_i_8h_a8f2bbe0e3d1346e594f01c9c5dc36707}{}\label{_wasp_w_i_f_i_8h_a8f2bbe0e3d1346e594f01c9c5dc36707}
+
+\item 
+\#define {\bfseries A\+D\+H\+OC}~6\hypertarget{_wasp_w_i_f_i_8h_a486f03354d4fe3a1c2be4366fdc6e5e9}{}\label{_wasp_w_i_f_i_8h_a486f03354d4fe3a1c2be4366fdc6e5e9}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a8187a9af791c0a44ba67edd9cf266961}{M\+A\+N\+U\+AL}~0\hypertarget{_wasp_w_i_f_i_8h_a8187a9af791c0a44ba67edd9cf266961}{}\label{_wasp_w_i_f_i_8h_a8187a9af791c0a44ba67edd9cf266961}
+
+\begin{DoxyCompactList}\small\item\em J\+O\+IN M\+O\+D\+ES //. \end{DoxyCompactList}\item 
+\#define {\bfseries A\+U\+T\+O\+\_\+\+S\+T\+OR}~1\hypertarget{_wasp_w_i_f_i_8h_ae0a403399f335d683c6e37aebe015611}{}\label{_wasp_w_i_f_i_8h_ae0a403399f335d683c6e37aebe015611}
+
+\item 
+\#define {\bfseries A\+U\+T\+O\+\_\+\+B\+E\+ST}~2\hypertarget{_wasp_w_i_f_i_8h_ab2c28dec6652d1dfe2f0025b6191e2d6}{}\label{_wasp_w_i_f_i_8h_ab2c28dec6652d1dfe2f0025b6191e2d6}
+
+\item 
+\#define {\bfseries C\+R\+E\+A\+T\+E\+\_\+\+A\+D\+H\+OC}~4\hypertarget{_wasp_w_i_f_i_8h_ab03bdb25588c73a0d392c44306b8bf24}{}\label{_wasp_w_i_f_i_8h_ab03bdb25588c73a0d392c44306b8bf24}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a5da033ebe5f61229268915c4b1cf44ff}{D\+H\+C\+P\+\_\+\+O\+FF}~0\hypertarget{_wasp_w_i_f_i_8h_a5da033ebe5f61229268915c4b1cf44ff}{}\label{_wasp_w_i_f_i_8h_a5da033ebe5f61229268915c4b1cf44ff}
+
+\begin{DoxyCompactList}\small\item\em D\+H\+CP O\+P\+T\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define {\bfseries D\+H\+C\+P\+\_\+\+ON}~1\hypertarget{_wasp_w_i_f_i_8h_a715e8f9404bff82f87e845f4292448ff}{}\label{_wasp_w_i_f_i_8h_a715e8f9404bff82f87e845f4292448ff}
+
+\item 
+\#define {\bfseries A\+U\+T\+O\+\_\+\+IP}~2\hypertarget{_wasp_w_i_f_i_8h_a13cbc6143358e87f02ff354fd1fe04ca}{}\label{_wasp_w_i_f_i_8h_a13cbc6143358e87f02ff354fd1fe04ca}
+
+\item 
+\#define {\bfseries D\+H\+C\+P\+\_\+\+C\+A\+C\+HE}~3\hypertarget{_wasp_w_i_f_i_8h_a79df2d114e2d09ef157817d993633393}{}\label{_wasp_w_i_f_i_8h_a79df2d114e2d09ef157817d993633393}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_abf2615d439c6a9143c501a723060cad1}{C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+R\+V\+ER}~2\hypertarget{_wasp_w_i_f_i_8h_abf2615d439c6a9143c501a723060cad1}{}\label{_wasp_w_i_f_i_8h_abf2615d439c6a9143c501a723060cad1}
+
+\begin{DoxyCompactList}\small\item\em C\+O\+N\+N\+E\+C\+T\+I\+ON O\+P\+T\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define {\bfseries C\+L\+I\+E\+NT}~8\hypertarget{_wasp_w_i_f_i_8h_af19f26460d89cfb3f212f4b0a44882e8}{}\label{_wasp_w_i_f_i_8h_af19f26460d89cfb3f212f4b0a44882e8}
+
+\item 
+\#define {\bfseries H\+T\+TP}~16\hypertarget{_wasp_w_i_f_i_8h_ac5c1e9ded8b218a0a33f605347a32e5d}{}\label{_wasp_w_i_f_i_8h_ac5c1e9ded8b218a0a33f605347a32e5d}
+
+\item 
+\#define {\bfseries U\+DP}~1\hypertarget{_wasp_w_i_f_i_8h_a1db55153877cfdc729091d3aecdb3bd2}{}\label{_wasp_w_i_f_i_8h_a1db55153877cfdc729091d3aecdb3bd2}
+
+\item 
+\#define {\bfseries S\+E\+C\+U\+RE}~4\hypertarget{_wasp_w_i_f_i_8h_aff0ca0337402eb888baf747ce2469641}{}\label{_wasp_w_i_f_i_8h_aff0ca0337402eb888baf747ce2469641}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_ac5a9d45b8c3111e1989bc02955d5493f}{T\+C\+P\+\_\+\+S\+T\+A\+T\+US}~1\hypertarget{_wasp_w_i_f_i_8h_ac5a9d45b8c3111e1989bc02955d5493f}{}\label{_wasp_w_i_f_i_8h_ac5a9d45b8c3111e1989bc02955d5493f}
+
+\begin{DoxyCompactList}\small\item\em F\+L\+A\+GS O\+P\+T\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define {\bfseries T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY}~2\hypertarget{_wasp_w_i_f_i_8h_a8f02455d581f55196a37a12377ecfc0e}{}\label{_wasp_w_i_f_i_8h_a8f02455d581f55196a37a12377ecfc0e}
+
+\item 
+\#define {\bfseries T\+C\+P\+\_\+\+R\+E\+T\+RY}~4\hypertarget{_wasp_w_i_f_i_8h_a63229dd835b18a556d3384693ad90e8e}{}\label{_wasp_w_i_f_i_8h_a63229dd835b18a556d3384693ad90e8e}
+
+\item 
+\#define {\bfseries U\+D\+P\+\_\+\+R\+E\+T\+RY}~8\hypertarget{_wasp_w_i_f_i_8h_a1654922da1d5d4d41dfddef764be65b7}{}\label{_wasp_w_i_f_i_8h_a1654922da1d5d4d41dfddef764be65b7}
+
+\item 
+\#define {\bfseries D\+N\+S\+\_\+\+C\+A\+C\+HE}~16\hypertarget{_wasp_w_i_f_i_8h_afcd2c57bb3ccb50a6f453b0ae38cd453}{}\label{_wasp_w_i_f_i_8h_afcd2c57bb3ccb50a6f453b0ae38cd453}
+
+\item 
+\#define {\bfseries A\+R\+P\+\_\+\+C\+A\+C\+HE}~32\hypertarget{_wasp_w_i_f_i_8h_a396b378dba7be93c95123b0cccdc5844}{}\label{_wasp_w_i_f_i_8h_a396b378dba7be93c95123b0cccdc5844}
+
+\item 
+\#define {\bfseries U\+D\+P\+\_\+\+A\+U\+T\+O\+\_\+\+PA}~64\hypertarget{_wasp_w_i_f_i_8h_a456f93794e03df08bf7993ddea420e96}{}\label{_wasp_w_i_f_i_8h_a456f93794e03df08bf7993ddea420e96}
+
+\item 
+\#define {\bfseries B\+Y\+T\+E\+\_\+\+S\+T\+A\+MP}~128\hypertarget{_wasp_w_i_f_i_8h_a7e83ffcfa53bbc95f05bcf68c3b2557a}{}\label{_wasp_w_i_f_i_8h_a7e83ffcfa53bbc95f05bcf68c3b2557a}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a34b04bd23b07b485921a728ad0805ac4}{M\+A\+IN}~0\hypertarget{_wasp_w_i_f_i_8h_a34b04bd23b07b485921a728ad0805ac4}{}\label{_wasp_w_i_f_i_8h_a34b04bd23b07b485921a728ad0805ac4}
+
+\begin{DoxyCompactList}\small\item\em D\+NS O\+P\+T\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define {\bfseries A\+UX}~1\hypertarget{_wasp_w_i_f_i_8h_a1b41fd2be63532d4ab910f8b256c3811}{}\label{_wasp_w_i_f_i_8h_a1b41fd2be63532d4ab910f8b256c3811}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_af00e4b63d736381e1c527ac5ef2c8f3c}{IP}~1\hypertarget{_wasp_w_i_f_i_8h_af00e4b63d736381e1c527ac5ef2c8f3c}{}\label{_wasp_w_i_f_i_8h_af00e4b63d736381e1c527ac5ef2c8f3c}
+
+\begin{DoxyCompactList}\small\item\em H\+T\+TP O\+P\+T\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define {\bfseries D\+NS}~2\hypertarget{_wasp_w_i_f_i_8h_acbe2c637c1b86d32538d2f544aa289c3}{}\label{_wasp_w_i_f_i_8h_acbe2c637c1b86d32538d2f544aa289c3}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_aec2811cf1c2e062c459f6132d65b290b}{F\+T\+P\+\_\+\+P\+A\+S\+I\+VE}~0\hypertarget{_wasp_w_i_f_i_8h_aec2811cf1c2e062c459f6132d65b290b}{}\label{_wasp_w_i_f_i_8h_aec2811cf1c2e062c459f6132d65b290b}
+
+\begin{DoxyCompactList}\small\item\em F\+TP O\+P\+T\+I\+O\+NS //. \end{DoxyCompactList}\item 
+\#define {\bfseries F\+T\+P\+\_\+\+A\+C\+T\+I\+VE}~1\hypertarget{_wasp_w_i_f_i_8h_aef35544482e7a3dade6a0413a20071f4}{}\label{_wasp_w_i_f_i_8h_aef35544482e7a3dade6a0413a20071f4}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a8ba5c0761794036a1968d3196205f705}{Q\+U\+I\+ET}~0\hypertarget{_wasp_w_i_f_i_8h_a8ba5c0761794036a1968d3196205f705}{}\label{_wasp_w_i_f_i_8h_a8ba5c0761794036a1968d3196205f705}
+
+\begin{DoxyCompactList}\small\item\em D\+E\+B\+UG M\+O\+DE //. \end{DoxyCompactList}\item 
+\#define {\bfseries A\+LL}~1\hypertarget{_wasp_w_i_f_i_8h_a1edd1ea8bddaf4d9c5eb3eae1ee1726a}{}\label{_wasp_w_i_f_i_8h_a1edd1ea8bddaf4d9c5eb3eae1ee1726a}
+
+\item 
+\#define {\bfseries C\+R\+I\+T\+I\+C\+AL}~2\hypertarget{_wasp_w_i_f_i_8h_ae0233515480e60d29bcc731469976e02}{}\label{_wasp_w_i_f_i_8h_ae0233515480e60d29bcc731469976e02}
+
+\item 
+\#define {\bfseries I\+P\+\_\+\+S\+T\+A\+T\+US}~4\hypertarget{_wasp_w_i_f_i_8h_aeb877b1f1b375a50d5d88eaf8648c0ec}{}\label{_wasp_w_i_f_i_8h_aeb877b1f1b375a50d5d88eaf8648c0ec}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_ad0737892024b41eda03b15740ced0ff6}{B\+LO}~0\hypertarget{_wasp_w_i_f_i_8h_ad0737892024b41eda03b15740ced0ff6}{}\label{_wasp_w_i_f_i_8h_ad0737892024b41eda03b15740ced0ff6}
+
+\begin{DoxyCompactList}\small\item\em R\+E\+AD W\+I\+TH T\+I\+M\+E\+O\+UT / W\+I\+T\+H\+O\+UT T\+I\+M\+E\+O\+U\+T//. \end{DoxyCompactList}\item 
+\#define {\bfseries N\+O\+B\+LO}~1\hypertarget{_wasp_w_i_f_i_8h_abc95b3cfd519f39c702ac807a3a8650a}{}\label{_wasp_w_i_f_i_8h_abc95b3cfd519f39c702ac807a3a8650a}
+
+\item 
+\#define \hyperlink{_wasp_w_i_f_i_8h_a78fbdc7c49ca26cd1b0ce6fcbf4cdd2d}{C\+H\+E\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON}\hypertarget{_wasp_w_i_f_i_8h_a78fbdc7c49ca26cd1b0ce6fcbf4cdd2d}{}\label{_wasp_w_i_f_i_8h_a78fbdc7c49ca26cd1b0ce6fcbf4cdd2d}
+
+\begin{DoxyCompactList}\small\item\em O\+TA C\+O\+N\+S\+T\+A\+N\+TS //. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char {\bfseries O\+T\+A\+\_\+ver\+\_\+file} \mbox{[}$\,$\mbox{]} = \char`\"{}U\+P\+G\+R\+A\+D\+E.\+T\+XT\char`\"{}\hypertarget{_wasp_w_i_f_i_8h_ac1eb0801693af32a86f39f57a00c4d42}{}\label{_wasp_w_i_f_i_8h_ac1eb0801693af32a86f39f57a00c4d42}
+
+\item 
+const char {\bfseries N\+O\+\_\+\+O\+TA} \mbox{[}$\,$\mbox{]} = \char`\"{}N\+O\+\_\+\+F\+I\+LE\char`\"{}\hypertarget{_wasp_w_i_f_i_8h_a6931348141645b621d8ad9b4e76f1666}{}\label{_wasp_w_i_f_i_8h_a6931348141645b621d8ad9b4e76f1666}
+
+\item 
+\hyperlink{class_wasp_w_i_f_i}{Wasp\+W\+I\+FI} {\bfseries W\+I\+FI}\hypertarget{_wasp_w_i_f_i_8h_a6e7d98765b4b6167fad0ddfa4c01be5a}{}\label{_wasp_w_i_f_i_8h_a6e7d98765b4b6167fad0ddfa4c01be5a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing W\+I\+FI modules. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+8 Design\+: David Gascón Implementation\+: Joaquín Ruiz, Yuri Carmona 

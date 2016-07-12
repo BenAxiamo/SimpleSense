@@ -1,0 +1,107 @@
+\hypertarget{structpacket_x_bee}{}\section{packet\+X\+Bee Struct Reference}
+\label{structpacket_x_bee}\index{packet\+X\+Bee@{packet\+X\+Bee}}
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee\+Core.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_af360bbcf64077cb290cf62b1d24cadf5}{mac\+DL} \mbox{[}4\mbox{]}\hypertarget{structpacket_x_bee_af360bbcf64077cb290cf62b1d24cadf5}{}\label{structpacket_x_bee_af360bbcf64077cb290cf62b1d24cadf5}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: 32b Lower Mac Destination. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a822600fecb91c7bbe8ad271d3e4aa44a}{mac\+DH} \mbox{[}4\mbox{]}\hypertarget{structpacket_x_bee_a822600fecb91c7bbe8ad271d3e4aa44a}{}\label{structpacket_x_bee_a822600fecb91c7bbe8ad271d3e4aa44a}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: 32b Higher Mac Destination. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_ac730f3c445ec495b71054a8ccad72f4a}{mode}
+\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a8046b3e055fdda7a0c0c65dfda5bfbed}{address\+\_\+type}
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Address Type -\/$>$ 0=16B ; 1=64B. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a9682eaddcde331acfb56ee492763697e}{naD} \mbox{[}2\mbox{]}\hypertarget{structpacket_x_bee_a9682eaddcde331acfb56ee492763697e}{}\label{structpacket_x_bee_a9682eaddcde331acfb56ee492763697e}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: 16b Network Address Destination. \end{DoxyCompactList}\item 
+char \hyperlink{structpacket_x_bee_a1edd8058704f00a8549d8cad39351768}{data} \mbox{[}M\+A\+X\+\_\+\+D\+A\+TA\mbox{]}\hypertarget{structpacket_x_bee_a1edd8058704f00a8549d8cad39351768}{}\label{structpacket_x_bee_a1edd8058704f00a8549d8cad39351768}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Data. All the data here, even when it is $>$ payload. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{structpacket_x_bee_a223e4e2815c74d45fdc277fa50c0a68b}{data\+\_\+length}\hypertarget{structpacket_x_bee_a223e4e2815c74d45fdc277fa50c0a68b}{}\label{structpacket_x_bee_a223e4e2815c74d45fdc277fa50c0a68b}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Real data length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a3c70361d3610e26c3dfcd2342383b058}{SD}\hypertarget{structpacket_x_bee_a3c70361d3610e26c3dfcd2342383b058}{}\label{structpacket_x_bee_a3c70361d3610e26c3dfcd2342383b058}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Source Endpoint (Zig\+Bee) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_ab0acfcf3e6da62cfd31da8c383a93b15}{DE}\hypertarget{structpacket_x_bee_ab0acfcf3e6da62cfd31da8c383a93b15}{}\label{structpacket_x_bee_ab0acfcf3e6da62cfd31da8c383a93b15}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Destination Endpoint (Zig\+Bee) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a2671a7535f09357a8b1f79aaa0999035}{C\+ID} \mbox{[}2\mbox{]}\hypertarget{structpacket_x_bee_a2671a7535f09357a8b1f79aaa0999035}{}\label{structpacket_x_bee_a2671a7535f09357a8b1f79aaa0999035}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Cluster Identifier (Zig\+Bee) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a03ade9e914d4d99bde2bb82e0c08d42d}{P\+ID} \mbox{[}2\mbox{]}\hypertarget{structpacket_x_bee_a03ade9e914d4d99bde2bb82e0c08d42d}{}\label{structpacket_x_bee_a03ade9e914d4d99bde2bb82e0c08d42d}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Profile Identifier (Zig\+Bee) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_adad7cd3286384979da957eefe7497c36}{M\+Y\+\_\+known}
+\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a2932a76b7ac73040480ef86e1cc69af2}{opt}\hypertarget{structpacket_x_bee_a2932a76b7ac73040480ef86e1cc69af2}{}\label{structpacket_x_bee_a2932a76b7ac73040480ef86e1cc69af2}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Sending options (depends on the X\+Bee module) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a7d12b24373be9f7ef090f212325c9d0f}{mac\+SL} \mbox{[}4\mbox{]}\hypertarget{structpacket_x_bee_a7d12b24373be9f7ef090f212325c9d0f}{}\label{structpacket_x_bee_a7d12b24373be9f7ef090f212325c9d0f}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: 32b Lower Mac Source. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_ae4e33faa58653944697794687f1b31bb}{mac\+SH} \mbox{[}4\mbox{]}\hypertarget{structpacket_x_bee_ae4e33faa58653944697794687f1b31bb}{}\label{structpacket_x_bee_ae4e33faa58653944697794687f1b31bb}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: 32b Higher Mac Source. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_acb5cc5216fd9c4def4cfff746c4ffef8}{naS} \mbox{[}2\mbox{]}\hypertarget{structpacket_x_bee_acb5cc5216fd9c4def4cfff746c4ffef8}{}\label{structpacket_x_bee_acb5cc5216fd9c4def4cfff746c4ffef8}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: 16b Network Address Source. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a2165bdf3528a660454d2f422710818b3}{R\+S\+SI}\hypertarget{structpacket_x_bee_a2165bdf3528a660454d2f422710818b3}{}\label{structpacket_x_bee_a2165bdf3528a660454d2f422710818b3}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Receive Signal Strength Indicator. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a8d484ac1477b21e6b901802ea3516a3a}{address\+\_\+typeS}
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Address Source Type. \end{DoxyCompactList}\item 
+long \hyperlink{structpacket_x_bee_a5223f89f7bc1787d2546c850363777d1}{time}
+\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a9f97b9eca00a4aeca9d3946fb94cc658}{deliv\+\_\+status}\hypertarget{structpacket_x_bee_a9f97b9eca00a4aeca9d3946fb94cc658}{}\label{structpacket_x_bee_a9f97b9eca00a4aeca9d3946fb94cc658}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Delivery Status. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_ad9cb90269757bb045e8fc3494f1262a2}{discov\+\_\+status}\hypertarget{structpacket_x_bee_ad9cb90269757bb045e8fc3494f1262a2}{}\label{structpacket_x_bee_ad9cb90269757bb045e8fc3494f1262a2}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Discovery Status. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_aa41e990f8aac86b564793a0957cb3700}{true\+\_\+naD} \mbox{[}2\mbox{]}\hypertarget{structpacket_x_bee_aa41e990f8aac86b564793a0957cb3700}{}\label{structpacket_x_bee_aa41e990f8aac86b564793a0957cb3700}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Network Address where the packet has been set. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structpacket_x_bee_a8cfb13a635328f29c1c5905e5e2eee9c}{retries}\hypertarget{structpacket_x_bee_a8cfb13a635328f29c1c5905e5e2eee9c}{}\label{structpacket_x_bee_a8cfb13a635328f29c1c5905e5e2eee9c}
+
+\begin{DoxyCompactList}\small\item\em Structure Variable \+: Retries needed to send the packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure \+: used for storing the information needed to send or receive a packet, such as the addresses and data 
+
+\subsection{Member Data Documentation}
+\index{packet\+X\+Bee@{packet\+X\+Bee}!address\+\_\+type@{address\+\_\+type}}
+\index{address\+\_\+type@{address\+\_\+type}!packet\+X\+Bee@{packet\+X\+Bee}}
+\subsubsection[{\texorpdfstring{address\+\_\+type}{address_type}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t packet\+X\+Bee\+::address\+\_\+type}\hypertarget{structpacket_x_bee_a8046b3e055fdda7a0c0c65dfda5bfbed}{}\label{structpacket_x_bee_a8046b3e055fdda7a0c0c65dfda5bfbed}
+
+
+Structure Variable \+: Address Type -\/$>$ 0=16B ; 1=64B. 
+
+Only available for X\+Bee-\/802.\+15.\+4 in order to specify what sort of addressing has been used\+: 16-\/b or 64-\/b addressing \index{packet\+X\+Bee@{packet\+X\+Bee}!address\+\_\+typeS@{address\+\_\+typeS}}
+\index{address\+\_\+typeS@{address\+\_\+typeS}!packet\+X\+Bee@{packet\+X\+Bee}}
+\subsubsection[{\texorpdfstring{address\+\_\+typeS}{address_typeS}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t packet\+X\+Bee\+::address\+\_\+typeS}\hypertarget{structpacket_x_bee_a8d484ac1477b21e6b901802ea3516a3a}{}\label{structpacket_x_bee_a8d484ac1477b21e6b901802ea3516a3a}
+
+
+Structure Variable \+: Address Source Type. 
+
+Only available for X\+Bee-\/802.\+15.\+4 in order to specify what sort of addressing has been used\+: 16-\/b or 64-\/b addressing \index{packet\+X\+Bee@{packet\+X\+Bee}!mode@{mode}}
+\index{mode@{mode}!packet\+X\+Bee@{packet\+X\+Bee}}
+\subsubsection[{\texorpdfstring{mode}{mode}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t packet\+X\+Bee\+::mode}\hypertarget{structpacket_x_bee_ac730f3c445ec495b71054a8ccad72f4a}{}\label{structpacket_x_bee_ac730f3c445ec495b71054a8ccad72f4a}
+Structure Variable \+: Sending Mode\+: 0=U\+N\+I\+C\+A\+ST ; 1=B\+R\+O\+A\+D\+C\+A\+ST ; 2=C\+L\+U\+S\+T\+ER \index{packet\+X\+Bee@{packet\+X\+Bee}!M\+Y\+\_\+known@{M\+Y\+\_\+known}}
+\index{M\+Y\+\_\+known@{M\+Y\+\_\+known}!packet\+X\+Bee@{packet\+X\+Bee}}
+\subsubsection[{\texorpdfstring{M\+Y\+\_\+known}{MY_known}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t packet\+X\+Bee\+::\+M\+Y\+\_\+known}\hypertarget{structpacket_x_bee_adad7cd3286384979da957eefe7497c36}{}\label{structpacket_x_bee_adad7cd3286384979da957eefe7497c36}
+Structure Variable \+: Specifies if Network Address is known\+: 0=unknown net address ; 1=known net address \index{packet\+X\+Bee@{packet\+X\+Bee}!time@{time}}
+\index{time@{time}!packet\+X\+Bee@{packet\+X\+Bee}}
+\subsubsection[{\texorpdfstring{time}{time}}]{\setlength{\rightskip}{0pt plus 5cm}long packet\+X\+Bee\+::time}\hypertarget{structpacket_x_bee_a5223f89f7bc1787d2546c850363777d1}{}\label{structpacket_x_bee_a5223f89f7bc1787d2546c850363777d1}
+Structure Variable \+: Specifies the time when the first fragment of the packet was received 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_x_bee_core_8h}{Wasp\+X\+Bee\+Core.\+h}\end{DoxyCompactItemize}

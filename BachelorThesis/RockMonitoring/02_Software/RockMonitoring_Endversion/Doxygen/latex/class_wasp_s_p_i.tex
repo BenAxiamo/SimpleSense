@@ -1,0 +1,140 @@
+\hypertarget{class_wasp_s_p_i}{}\section{Wasp\+S\+PI Class Reference}
+\label{class_wasp_s_p_i}\index{Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries transfer} (const uint8\+\_\+t $\ast$buf, size\+\_\+t n)\hypertarget{class_wasp_s_p_i_ae23b2b86f99d52781ee2c05c691541de}{}\label{class_wasp_s_p_i_ae23b2b86f99d52781ee2c05c691541de}
+
+\item 
+void {\bfseries close} ()\hypertarget{class_wasp_s_p_i_a235d2156504151df73833afeae8a7853}{}\label{class_wasp_s_p_i_a235d2156504151df73833afeae8a7853}
+
+\item 
+uint8\+\_\+t {\bfseries receive} ()\hypertarget{class_wasp_s_p_i_af76a6bd028a8b202fa6253211a434718}{}\label{class_wasp_s_p_i_af76a6bd028a8b202fa6253211a434718}
+
+\item 
+uint8\+\_\+t {\bfseries receive} (uint8\+\_\+t $\ast$buf, size\+\_\+t n)\hypertarget{class_wasp_s_p_i_a46044a06c8549347785f9adab3d516cc}{}\label{class_wasp_s_p_i_a46044a06c8549347785f9adab3d516cc}
+
+\item 
+void \hyperlink{class_wasp_s_p_i_a98556d98b9778425edc224edc4c923e7}{set\+S\+P\+I\+Slave} (uint8\+\_\+t S\+E\+L\+E\+C\+T\+I\+ON)
+\begin{DoxyCompactList}\small\item\em It selects the slave on S\+PI bus to use. \end{DoxyCompactList}\item 
+void {\bfseries secure\+Begin} ()\hypertarget{class_wasp_s_p_i_af6b0323a716f960812b9aabe7f5949f0}{}\label{class_wasp_s_p_i_af6b0323a716f960812b9aabe7f5949f0}
+
+\item 
+void {\bfseries secure\+End} ()\hypertarget{class_wasp_s_p_i_a6a29c51db00fdfedd4711048c8aaea5e}{}\label{class_wasp_s_p_i_a6a29c51db00fdfedd4711048c8aaea5e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static byte {\bfseries transfer} (uint8\+\_\+t \+\_\+data)\hypertarget{class_wasp_s_p_i_a6d307d6a35eb53a851ada04f915b3d3e}{}\label{class_wasp_s_p_i_a6d307d6a35eb53a851ada04f915b3d3e}
+
+\item 
+static void {\bfseries attach\+Interrupt} ()\hypertarget{class_wasp_s_p_i_ac7c1ac6a712af71bd3d42b31888b819d}{}\label{class_wasp_s_p_i_ac7c1ac6a712af71bd3d42b31888b819d}
+
+\item 
+static void {\bfseries detach\+Interrupt} ()\hypertarget{class_wasp_s_p_i_a5e7e52ecf06a82279056d1827c2b4a01}{}\label{class_wasp_s_p_i_a5e7e52ecf06a82279056d1827c2b4a01}
+
+\item 
+static void {\bfseries begin} ()\hypertarget{class_wasp_s_p_i_a1bfe2d684a620435b8a18bd2ced40f71}{}\label{class_wasp_s_p_i_a1bfe2d684a620435b8a18bd2ced40f71}
+
+\item 
+static void {\bfseries end} ()\hypertarget{class_wasp_s_p_i_aea6fff483a300415a9cf6e23168e25ce}{}\label{class_wasp_s_p_i_aea6fff483a300415a9cf6e23168e25ce}
+
+\item 
+static void {\bfseries set\+Bit\+Order} (uint8\+\_\+t)\hypertarget{class_wasp_s_p_i_a0f23ee5aa1fc479b4181df4aaccc99aa}{}\label{class_wasp_s_p_i_a0f23ee5aa1fc479b4181df4aaccc99aa}
+
+\item 
+static void {\bfseries set\+Data\+Mode} (uint8\+\_\+t)\hypertarget{class_wasp_s_p_i_af7657b30368151ca8f939785bd6a0823}{}\label{class_wasp_s_p_i_af7657b30368151ca8f939785bd6a0823}
+
+\item 
+static void {\bfseries set\+Clock\+Divider} (uint8\+\_\+t)\hypertarget{class_wasp_s_p_i_a33af3ccd2b47a1cd1bdde844248ce2f0}{}\label{class_wasp_s_p_i_a33af3ccd2b47a1cd1bdde844248ce2f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{class_wasp_s_p_i_a859e91c0a90cae6c14c5a0ca97c3ceb0}{is\+SX}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when Semtech module is being powered on. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_p_i_af25524796d63dabc614299f9a0aab693}{is\+SD}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when SD module is being powered on. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_p_i_acbe8b5e5ae2b94623730ce386f7e4777}{is\+Dust\+Sensor}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when Dust Sensor is being powered on. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_p_i_a925f2e476409b686e9a24c045ad9e79a}{is\+Smart\+Water}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when Smart Water is being powered on. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_p_i_afd972ccff99b8ae3c6f9b3a15c1a92b7}{is\+Smart\+Water\+Ions}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when Smart Water Ions is being powered on. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_p_i_ab5fb0f5a6e2a31fee2edf6f6319710a6}{is\+R\+S485}
+\begin{DoxyCompactList}\small\item\em Variable \+: indicates when R\+S-\/485 board is being powered on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+S\+PI@{Wasp\+S\+PI}!set\+S\+P\+I\+Slave@{set\+S\+P\+I\+Slave}}
+\index{set\+S\+P\+I\+Slave@{set\+S\+P\+I\+Slave}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{set\+S\+P\+I\+Slave(uint8\+\_\+t S\+E\+L\+E\+C\+T\+I\+O\+N)}{setSPISlave(uint8_t SELECTION)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+P\+I\+::set\+S\+P\+I\+Slave (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{S\+E\+L\+E\+C\+T\+I\+ON}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_p_i_a98556d98b9778425edc224edc4c923e7}{}\label{class_wasp_s_p_i_a98556d98b9778425edc224edc4c923e7}
+
+
+It selects the slave on S\+PI bus to use. 
+
+Possibilities\+: S\+D\+\_\+\+S\+E\+L\+E\+CT S\+R\+A\+M\+\_\+\+S\+E\+L\+E\+CT S\+O\+C\+K\+E\+T0\+\_\+\+S\+E\+L\+E\+CT S\+O\+C\+K\+E\+T1\+\_\+\+S\+E\+L\+E\+CT A\+L\+L\+\_\+\+D\+E\+S\+E\+L\+E\+C\+T\+ED 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & S\+E\+L\+E\+C\+T\+I\+ON \+: the selection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+S\+PI@{Wasp\+S\+PI}!is\+Dust\+Sensor@{is\+Dust\+Sensor}}
+\index{is\+Dust\+Sensor@{is\+Dust\+Sensor}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{is\+Dust\+Sensor}{isDustSensor}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+P\+I\+::is\+Dust\+Sensor}\hypertarget{class_wasp_s_p_i_acbe8b5e5ae2b94623730ce386f7e4777}{}\label{class_wasp_s_p_i_acbe8b5e5ae2b94623730ce386f7e4777}
+
+
+Variable \+: indicates when Dust Sensor is being powered on. 
+
+true\+: ON; false\+: O\+FF \index{Wasp\+S\+PI@{Wasp\+S\+PI}!is\+R\+S485@{is\+R\+S485}}
+\index{is\+R\+S485@{is\+R\+S485}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{is\+R\+S485}{isRS485}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+P\+I\+::is\+R\+S485}\hypertarget{class_wasp_s_p_i_ab5fb0f5a6e2a31fee2edf6f6319710a6}{}\label{class_wasp_s_p_i_ab5fb0f5a6e2a31fee2edf6f6319710a6}
+
+
+Variable \+: indicates when R\+S-\/485 board is being powered on. 
+
+true\+: ON; false\+: O\+FF \index{Wasp\+S\+PI@{Wasp\+S\+PI}!is\+SD@{is\+SD}}
+\index{is\+SD@{is\+SD}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{is\+SD}{isSD}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+P\+I\+::is\+SD}\hypertarget{class_wasp_s_p_i_af25524796d63dabc614299f9a0aab693}{}\label{class_wasp_s_p_i_af25524796d63dabc614299f9a0aab693}
+
+
+Variable \+: indicates when SD module is being powered on. 
+
+true\+: ON; false\+: O\+FF \index{Wasp\+S\+PI@{Wasp\+S\+PI}!is\+Smart\+Water@{is\+Smart\+Water}}
+\index{is\+Smart\+Water@{is\+Smart\+Water}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{is\+Smart\+Water}{isSmartWater}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+P\+I\+::is\+Smart\+Water}\hypertarget{class_wasp_s_p_i_a925f2e476409b686e9a24c045ad9e79a}{}\label{class_wasp_s_p_i_a925f2e476409b686e9a24c045ad9e79a}
+
+
+Variable \+: indicates when Smart Water is being powered on. 
+
+true\+: ON; false\+: O\+FF \index{Wasp\+S\+PI@{Wasp\+S\+PI}!is\+Smart\+Water\+Ions@{is\+Smart\+Water\+Ions}}
+\index{is\+Smart\+Water\+Ions@{is\+Smart\+Water\+Ions}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{is\+Smart\+Water\+Ions}{isSmartWaterIons}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+P\+I\+::is\+Smart\+Water\+Ions}\hypertarget{class_wasp_s_p_i_afd972ccff99b8ae3c6f9b3a15c1a92b7}{}\label{class_wasp_s_p_i_afd972ccff99b8ae3c6f9b3a15c1a92b7}
+
+
+Variable \+: indicates when Smart Water Ions is being powered on. 
+
+true\+: ON; false\+: O\+FF \index{Wasp\+S\+PI@{Wasp\+S\+PI}!is\+SX@{is\+SX}}
+\index{is\+SX@{is\+SX}!Wasp\+S\+PI@{Wasp\+S\+PI}}
+\subsubsection[{\texorpdfstring{is\+SX}{isSX}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+P\+I\+::is\+SX}\hypertarget{class_wasp_s_p_i_a859e91c0a90cae6c14c5a0ca97c3ceb0}{}\label{class_wasp_s_p_i_a859e91c0a90cae6c14c5a0ca97c3ceb0}
+
+
+Variable \+: indicates when Semtech module is being powered on. 
+
+true\+: ON; false\+: O\+FF 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+S\+P\+I.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+S\+P\+I.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,557 @@
+\hypertarget{classistream}{}\section{istream Class Reference}
+\label{classistream}\index{istream@{istream}}
+
+
+Input Stream.  
+
+
+
+
+{\ttfamily \#include $<$istream.\+h$>$}
+
+Inheritance diagram for istream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classistream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_aa67d3b8ac67e2097d876a66657ec6067}{operator$>$$>$} (\hyperlink{classistream}{istream} \&($\ast$pf)(\hyperlink{classistream}{istream} \&str))
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_ac6e2f17c80edd19deecdc20f804c424e}{operator$>$$>$} (\hyperlink{classios__base}{ios\+\_\+base} \&($\ast$pf)(\hyperlink{classios__base}{ios\+\_\+base} \&str))
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a5a0a2c0e06abadb79951ebe34f36d62a}{operator$>$$>$} (\hyperlink{classios}{ios} \&($\ast$pf)(\hyperlink{classios}{ios} \&str))
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a99db66d2e192f02deff0171ad098271f}{operator$>$$>$} (char $\ast$str)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_addaf5e0f39a15cc213117165dfef0d77}{operator$>$$>$} (char \&ch)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a390af4d28adbdc537e436f2121d1c862}{operator$>$$>$} (signed char $\ast$str)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a49ab1a573fbf69809d19a52855a30072}{operator$>$$>$} (signed char \&ch)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a52e85d01198968330f20026a52cb9f72}{operator$>$$>$} (unsigned char $\ast$str)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a74875fcf9ccdc0dca4b46a0b66821798}{operator$>$$>$} (unsigned char \&ch)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a3708636d095d360695e9c23335639317}{operator$>$$>$} (bool \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a662060e885a0551c390b7042b3b9e4a5}{operator$>$$>$} (short \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a31a706a374c5a594e400734b8992e2a0}{operator$>$$>$} (unsigned short \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_ae8451bc86d83828892d9d67c67b7f02b}{operator$>$$>$} (int \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a35c9847ebf7b822c5ec9742e9de19345}{operator$>$$>$} (unsigned int \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_aa26e7f35e74d96803bb0dfb3fb0dc154}{operator$>$$>$} (long \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a5aafa4c7f6615a7f1441962b61b8ef59}{operator$>$$>$} (unsigned long \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_af9bf453725ce1d9ef62142a7ee38936e}{operator$>$$>$} (double \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_aa8efce6fecab80cf7a17d5dfa31f5aa8}{operator$>$$>$} (float \&arg)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a62ef4762feacc64a8acdcbf8f1296936}{operator$>$$>$} (void $\ast$\&arg)
+\item 
+\hyperlink{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}{streamsize} \hyperlink{classistream_ad2b705d2f363ed59db6ac4046f78b4bb}{gcount} () const 
+\item 
+int \hyperlink{classistream_a36573c9b7fc522e6c85a73221019fd11}{get} ()
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a9c7313d6f21f1f7ac9b0e759e74b4db2}{get} (char \&ch)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a4247f47e388598c69ef3bd39ea4c056f}{get} (char $\ast$str, \hyperlink{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}{streamsize} n, char delim= \textquotesingle{}\textbackslash{}n\textquotesingle{})
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a8a12c4939d6029408b3dbe89a7595c37}{getline} (char $\ast$str, \hyperlink{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}{streamsize} count, char delim= \textquotesingle{}\textbackslash{}n\textquotesingle{})
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a12597b03d86b66047a5581bbd26eb032}{ignore} (\hyperlink{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}{streamsize} n=1, int delim=-\/1)
+\item 
+int \hyperlink{classistream_a4022265e0ede3698454f1ff59348c14a}{peek} ()
+\item 
+\hyperlink{classios__base_abe85cf1f181b8bce8022f05ab76aae7f}{pos\+\_\+type} \hyperlink{classistream_a18332bdcb7fbe33ca06045c786cac4c3}{tellg} ()
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a52d637b1aeca9946085a4a72e0208aec}{seekg} (\hyperlink{classios__base_abe85cf1f181b8bce8022f05ab76aae7f}{pos\+\_\+type} pos)
+\item 
+\hyperlink{classistream}{istream} \& \hyperlink{classistream_a60dd48a3b374fb9cbdc59e1f930dea95}{seekg} (\hyperlink{classios__base_a45de7cca0d01da781f4b886179c65c22}{off\+\_\+type} off, \hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191e}{seekdir} way)
+\item 
+void \hyperlink{classistream_a0f7468be86d93de5d33fa99095898279}{skip\+White} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Input Stream. 
+
+\subsection{Member Function Documentation}
+\index{istream@{istream}!gcount@{gcount}}
+\index{gcount@{gcount}!istream@{istream}}
+\subsubsection[{\texorpdfstring{gcount() const }{gcount() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf streamsize} istream\+::gcount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_ad2b705d2f363ed59db6ac4046f78b4bb}{}\label{classistream_ad2b705d2f363ed59db6ac4046f78b4bb}
+\begin{DoxyReturn}{Returns}
+The number of characters extracted by the last unformatted input function. 
+\end{DoxyReturn}
+\index{istream@{istream}!get@{get}}
+\index{get@{get}!istream@{istream}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}int istream\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a36573c9b7fc522e6c85a73221019fd11}{}\label{classistream_a36573c9b7fc522e6c85a73221019fd11}
+Extract a character if one is available.
+
+\begin{DoxyReturn}{Returns}
+The character or -\/1 if a failure occurs. A failure is indicated by the stream state. 
+\end{DoxyReturn}
+\index{istream@{istream}!get@{get}}
+\index{get@{get}!istream@{istream}}
+\subsubsection[{\texorpdfstring{get(char \&ch)}{get(char &ch)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream} \& istream\+::get (
+\begin{DoxyParamCaption}
+\item[{char \&}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a9c7313d6f21f1f7ac9b0e759e74b4db2}{}\label{classistream_a9c7313d6f21f1f7ac9b0e759e74b4db2}
+Extract a character if one is available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em c} & location to receive the extracted character.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always returns $\ast$this. A failure is indicated by the stream state. 
+\end{DoxyReturn}
+\index{istream@{istream}!get@{get}}
+\index{get@{get}!istream@{istream}}
+\subsubsection[{\texorpdfstring{get(char $\ast$str, streamsize n, char delim= \textquotesingle{}\textbackslash{}n\textquotesingle{})}{get(char *str, streamsize n, char delim= '\textbackslash{}n')}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream} \& istream\+::get (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{{\bf streamsize}}]{n, }
+\item[{char}]{delim = {\ttfamily \textquotesingle{}\textbackslash{}n\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a4247f47e388598c69ef3bd39ea4c056f}{}\label{classistream_a4247f47e388598c69ef3bd39ea4c056f}
+Extract characters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em str} & Location to receive extracted characters. \\
+\hline
+\mbox{\tt in}  & {\em n} & Size of str. \\
+\hline
+\mbox{\tt in}  & {\em delim} & Delimiter\\
+\hline
+\end{DoxyParams}
+Characters are extracted until extraction fails, n is less than 1, n-\/1 characters are extracted, or the next character equals {\itshape delim} (delim is not extracted). If no characters are extracted failbit is set. If end-\/of-\/file occurs the eofbit is set.
+
+\begin{DoxyReturn}{Returns}
+always returns $\ast$this. A failure is indicated by the stream state. 
+\end{DoxyReturn}
+\index{istream@{istream}!getline@{getline}}
+\index{getline@{getline}!istream@{istream}}
+\subsubsection[{\texorpdfstring{getline(char $\ast$str, streamsize count, char delim= \textquotesingle{}\textbackslash{}n\textquotesingle{})}{getline(char *str, streamsize count, char delim= '\textbackslash{}n')}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream} \& istream\+::getline (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{{\bf streamsize}}]{n, }
+\item[{char}]{delim = {\ttfamily \textquotesingle{}\textbackslash{}n\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a8a12c4939d6029408b3dbe89a7595c37}{}\label{classistream_a8a12c4939d6029408b3dbe89a7595c37}
+Extract characters
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em str} & Location to receive extracted characters. \\
+\hline
+\mbox{\tt in}  & {\em n} & Size of str. \\
+\hline
+\mbox{\tt in}  & {\em delim} & Delimiter\\
+\hline
+\end{DoxyParams}
+Characters are extracted until extraction fails, the next character equals {\itshape delim} (delim is extracted), or n-\/1 characters are extracted.
+
+The failbit is set if no characters are extracted or n-\/1 characters are extracted. If end-\/of-\/file occurs the eofbit is set.
+
+\begin{DoxyReturn}{Returns}
+always returns $\ast$this. A failure is indicated by the stream state. 
+\end{DoxyReturn}
+\index{istream@{istream}!ignore@{ignore}}
+\index{ignore@{ignore}!istream@{istream}}
+\subsubsection[{\texorpdfstring{ignore(streamsize n=1, int delim=-\/1)}{ignore(streamsize n=1, int delim=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream} \& istream\+::ignore (
+\begin{DoxyParamCaption}
+\item[{{\bf streamsize}}]{n = {\ttfamily 1}, }
+\item[{int}]{delim = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a12597b03d86b66047a5581bbd26eb032}{}\label{classistream_a12597b03d86b66047a5581bbd26eb032}
+Extract characters and discard them.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & maximum number of characters to ignore. \\
+\hline
+\mbox{\tt in}  & {\em delim} & Delimiter.\\
+\hline
+\end{DoxyParams}
+Characters are extracted until extraction fails, {\itshape n} characters are extracted, or the next input character equals {\itshape delim} (the delimiter is extracted). If end-\/of-\/file occurs the eofbit is set.
+
+Failures are indicated by the state of the stream.
+
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(istream \&($\ast$pf)(istream \&str))}{operator>>(istream &(*pf)(istream &str))}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf istream} \&($\ast$)({\bf istream} \&str)}]{pf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_aa67d3b8ac67e2097d876a66657ec6067}{}\label{classistream_aa67d3b8ac67e2097d876a66657ec6067}
+call manipulator 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pf} & function to call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the stream 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(ios\+\_\+base \&($\ast$pf)(ios\+\_\+base \&str))}{operator>>(ios_base &(*pf)(ios_base &str))}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf ios\+\_\+base} \&($\ast$)({\bf ios\+\_\+base} \&str)}]{pf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_ac6e2f17c80edd19deecdc20f804c424e}{}\label{classistream_ac6e2f17c80edd19deecdc20f804c424e}
+call manipulator 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pf} & function to call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the stream 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(ios \&($\ast$pf)(ios \&str))}{operator>>(ios &(*pf)(ios &str))}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf ios} \&($\ast$)({\bf ios} \&str)}]{pf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a5a0a2c0e06abadb79951ebe34f36d62a}{}\label{classistream_a5a0a2c0e06abadb79951ebe34f36d62a}
+call manipulator 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pf} & function to call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the stream 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(char $\ast$str)}{operator>>(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a99db66d2e192f02deff0171ad098271f}{}\label{classistream_a99db66d2e192f02deff0171ad098271f}
+Extract a character string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em str} & location to store the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(char \&ch)}{operator>>(char &ch)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{char \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_addaf5e0f39a15cc213117165dfef0d77}{}\label{classistream_addaf5e0f39a15cc213117165dfef0d77}
+Extract a character 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ch} & location to store the character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(signed char $\ast$str)}{operator>>(signed char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{signed char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a390af4d28adbdc537e436f2121d1c862}{}\label{classistream_a390af4d28adbdc537e436f2121d1c862}
+Extract a character string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em str} & location to store the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(signed char \&ch)}{operator>>(signed char &ch)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{signed char \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a49ab1a573fbf69809d19a52855a30072}{}\label{classistream_a49ab1a573fbf69809d19a52855a30072}
+Extract a character 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ch} & location to store the character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(unsigned char $\ast$str)}{operator>>(unsigned char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a52e85d01198968330f20026a52cb9f72}{}\label{classistream_a52e85d01198968330f20026a52cb9f72}
+Extract a character string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em str} & location to store the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(unsigned char \&ch)}{operator>>(unsigned char &ch)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{unsigned char \&}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a74875fcf9ccdc0dca4b46a0b66821798}{}\label{classistream_a74875fcf9ccdc0dca4b46a0b66821798}
+Extract a character 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ch} & location to store the character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(bool \&arg)}{operator>>(bool &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a3708636d095d360695e9c23335639317}{}\label{classistream_a3708636d095d360695e9c23335639317}
+Extract a value of type bool. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(short \&arg)}{operator>>(short &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{short \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a662060e885a0551c390b7042b3b9e4a5}{}\label{classistream_a662060e885a0551c390b7042b3b9e4a5}
+Extract a value of type short. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(unsigned short \&arg)}{operator>>(unsigned short &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{unsigned short \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a31a706a374c5a594e400734b8992e2a0}{}\label{classistream_a31a706a374c5a594e400734b8992e2a0}
+Extract a value of type unsigned short. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(int \&arg)}{operator>>(int &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{int \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_ae8451bc86d83828892d9d67c67b7f02b}{}\label{classistream_ae8451bc86d83828892d9d67c67b7f02b}
+Extract a value of type int. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(unsigned int \&arg)}{operator>>(unsigned int &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{unsigned int \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a35c9847ebf7b822c5ec9742e9de19345}{}\label{classistream_a35c9847ebf7b822c5ec9742e9de19345}
+Extract a value of type unsigned int. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(long \&arg)}{operator>>(long &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{long \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_aa26e7f35e74d96803bb0dfb3fb0dc154}{}\label{classistream_aa26e7f35e74d96803bb0dfb3fb0dc154}
+Extract a value of type long. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(unsigned long \&arg)}{operator>>(unsigned long &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{unsigned long \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a5aafa4c7f6615a7f1441962b61b8ef59}{}\label{classistream_a5aafa4c7f6615a7f1441962b61b8ef59}
+Extract a value of type unsigned long. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(double \&arg)}{operator>>(double &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{double \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_af9bf453725ce1d9ef62142a7ee38936e}{}\label{classistream_af9bf453725ce1d9ef62142a7ee38936e}
+Extract a value of type double. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(float \&arg)}{operator>>(float &arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{float \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_aa8efce6fecab80cf7a17d5dfa31f5aa8}{}\label{classistream_aa8efce6fecab80cf7a17d5dfa31f5aa8}
+Extract a value of type float. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!istream@{istream}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(void $\ast$\&arg)}{operator>>(void *&arg)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{void $\ast$\&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a62ef4762feacc64a8acdcbf8f1296936}{}\label{classistream_a62ef4762feacc64a8acdcbf8f1296936}
+Extract a value of type void$\ast$. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em arg} & location to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!peek@{peek}}
+\index{peek@{peek}!istream@{istream}}
+\subsubsection[{\texorpdfstring{peek()}{peek()}}]{\setlength{\rightskip}{0pt plus 5cm}int istream\+::peek (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a4022265e0ede3698454f1ff59348c14a}{}\label{classistream_a4022265e0ede3698454f1ff59348c14a}
+Return the next available character without consuming it.
+
+\begin{DoxyReturn}{Returns}
+The character if the stream state is good else -\/1; 
+\end{DoxyReturn}
+\index{istream@{istream}!seekg@{seekg}}
+\index{seekg@{seekg}!istream@{istream}}
+\subsubsection[{\texorpdfstring{seekg(pos\+\_\+type pos)}{seekg(pos_type pos)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::seekg (
+\begin{DoxyParamCaption}
+\item[{{\bf pos\+\_\+type}}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a52d637b1aeca9946085a4a72e0208aec}{}\label{classistream_a52d637b1aeca9946085a4a72e0208aec}
+Set the stream position 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The absolute position in which to move the read pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!seekg@{seekg}}
+\index{seekg@{seekg}!istream@{istream}}
+\subsubsection[{\texorpdfstring{seekg(off\+\_\+type off, seekdir way)}{seekg(off_type off, seekdir way)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf istream}\& istream\+::seekg (
+\begin{DoxyParamCaption}
+\item[{{\bf off\+\_\+type}}]{off, }
+\item[{{\bf seekdir}}]{way}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a60dd48a3b374fb9cbdc59e1f930dea95}{}\label{classistream_a60dd48a3b374fb9cbdc59e1f930dea95}
+Set the stream position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em off} & An offset to move the read pointer relative to way. {\itshape off} is a signed 32-\/bit int so the offset is limited to +-\/ 2\+GB. \\
+\hline
+\mbox{\tt in}  & {\em way} & One of \hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea6639b4dd9e9b57ffef4a176cd1a1e7bb}{ios\+::beg}, \hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea53910041525b9e2f33bfc3bb4482134c}{ios\+::cur}, or \hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191eaae47c0ae984e90b38907783a1a804811}{ios\+::end}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is always $\ast$this. Failure is indicated by the state of $\ast$this. 
+\end{DoxyReturn}
+\index{istream@{istream}!skip\+White@{skip\+White}}
+\index{skip\+White@{skip\+White}!istream@{istream}}
+\subsubsection[{\texorpdfstring{skip\+White()}{skipWhite()}}]{\setlength{\rightskip}{0pt plus 5cm}void istream\+::skip\+White (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classistream_a0f7468be86d93de5d33fa99095898279}{}\label{classistream_a0f7468be86d93de5d33fa99095898279}
+used to implement \hyperlink{iostream_8h_a8adf4c714b8c8f201dedc83ee04556b1}{ws()} \index{istream@{istream}!tellg@{tellg}}
+\index{tellg@{tellg}!istream@{istream}}
+\subsubsection[{\texorpdfstring{tellg()}{tellg()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pos\+\_\+type} istream\+::tellg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classistream_a18332bdcb7fbe33ca06045c786cac4c3}{}\label{classistream_a18332bdcb7fbe33ca06045c786cac4c3}
+\begin{DoxyReturn}{Returns}
+the stream position 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{istream_8h}{istream.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/istream.\+cpp\end{DoxyCompactItemize}

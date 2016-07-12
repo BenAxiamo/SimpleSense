@@ -1,0 +1,170 @@
+\hypertarget{class_string}{}\section{String Class Reference}
+\label{class_string}\index{String@{String}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries String} (const char $\ast$value=\char`\"{}\char`\"{})\hypertarget{class_string_a7f902d8fff17edbac1a65dd809826242}{}\label{class_string_a7f902d8fff17edbac1a65dd809826242}
+
+\item 
+{\bfseries String} (const \hyperlink{class_string}{String} \&value)\hypertarget{class_string_aae710b6eceb89026f9a4da319ba041ae}{}\label{class_string_aae710b6eceb89026f9a4da319ba041ae}
+
+\item 
+{\bfseries String} (const char)\hypertarget{class_string_a8fae47f6d9436dc8c01be8da557c8562}{}\label{class_string_a8fae47f6d9436dc8c01be8da557c8562}
+
+\item 
+{\bfseries String} (const unsigned char)\hypertarget{class_string_a8214a9eab5c3d484b87051bd17aa2d7d}{}\label{class_string_a8214a9eab5c3d484b87051bd17aa2d7d}
+
+\item 
+{\bfseries String} (const int, const int base=10)\hypertarget{class_string_a6f763090b66d4f1db447feb8134ce812}{}\label{class_string_a6f763090b66d4f1db447feb8134ce812}
+
+\item 
+{\bfseries String} (const unsigned int, const int base=10)\hypertarget{class_string_ad2eeb8af8feb49ef19968c43b12ccef6}{}\label{class_string_ad2eeb8af8feb49ef19968c43b12ccef6}
+
+\item 
+{\bfseries String} (const long, const int base=10)\hypertarget{class_string_a7468aaec52653eb6ee2463a917a4d111}{}\label{class_string_a7468aaec52653eb6ee2463a917a4d111}
+
+\item 
+{\bfseries String} (const unsigned long, const int base=10)\hypertarget{class_string_ae84dfcbf8b983149a151f4a075e1c0db}{}\label{class_string_ae84dfcbf8b983149a151f4a075e1c0db}
+
+\item 
+const \hyperlink{class_string}{String} \& {\bfseries operator=} (const \hyperlink{class_string}{String} \&rhs)\hypertarget{class_string_a948f0764e4c1bc9b0229b588475c12b8}{}\label{class_string_a948f0764e4c1bc9b0229b588475c12b8}
+
+\item 
+const \hyperlink{class_string}{String} \& {\bfseries operator+=} (const \hyperlink{class_string}{String} \&rhs)\hypertarget{class_string_a942664cd417e945729bd7e84b7ee5551}{}\label{class_string_a942664cd417e945729bd7e84b7ee5551}
+
+\item 
+int {\bfseries operator==} (const \hyperlink{class_string}{String} \&rhs) const \hypertarget{class_string_a1f2e5754b50d71ff8214b4e3a2eb5af2}{}\label{class_string_a1f2e5754b50d71ff8214b4e3a2eb5af2}
+
+\item 
+int {\bfseries operator!=} (const \hyperlink{class_string}{String} \&rhs) const \hypertarget{class_string_a36db6357dafed08267484852ddaafc69}{}\label{class_string_a36db6357dafed08267484852ddaafc69}
+
+\item 
+int {\bfseries operator$<$} (const \hyperlink{class_string}{String} \&rhs) const \hypertarget{class_string_a47b8b84dc27e295c05b8b1f93a6605b2}{}\label{class_string_a47b8b84dc27e295c05b8b1f93a6605b2}
+
+\item 
+int {\bfseries operator$>$} (const \hyperlink{class_string}{String} \&rhs) const \hypertarget{class_string_a239f2d617dcfa752a1cc83b2615cc7b7}{}\label{class_string_a239f2d617dcfa752a1cc83b2615cc7b7}
+
+\item 
+int {\bfseries operator$<$=} (const \hyperlink{class_string}{String} \&rhs) const \hypertarget{class_string_a0cac0e8a22a9e97d6a11e0b17f83e802}{}\label{class_string_a0cac0e8a22a9e97d6a11e0b17f83e802}
+
+\item 
+int {\bfseries operator$>$=} (const \hyperlink{class_string}{String} \&rhs) const \hypertarget{class_string_aeca39c0d1c675a9ccf831814fecdeba7}{}\label{class_string_aeca39c0d1c675a9ccf831814fecdeba7}
+
+\item 
+char {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int index) const \hypertarget{class_string_a1fcf18cc37ee5df15e78e1b0eba1e9da}{}\label{class_string_a1fcf18cc37ee5df15e78e1b0eba1e9da}
+
+\item 
+char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (unsigned int index)\hypertarget{class_string_a92a0681d0031d7e99c12c245cc22367e}{}\label{class_string_a92a0681d0031d7e99c12c245cc22367e}
+
+\item 
+char {\bfseries char\+At} (unsigned int index) const \hypertarget{class_string_acead06863849178bb7feb0dae0c5d595}{}\label{class_string_acead06863849178bb7feb0dae0c5d595}
+
+\item 
+int {\bfseries compare\+To} (const \hyperlink{class_string}{String} \&another\+String) const \hypertarget{class_string_a1ed648fc6f54ab9e99fae08991675c77}{}\label{class_string_a1ed648fc6f54ab9e99fae08991675c77}
+
+\item 
+unsigned char {\bfseries ends\+With} (const \hyperlink{class_string}{String} \&suffix) const \hypertarget{class_string_a4f2b8d633c6f91309ebd315199a2d2b8}{}\label{class_string_a4f2b8d633c6f91309ebd315199a2d2b8}
+
+\item 
+unsigned char {\bfseries equals} (const \hyperlink{class_string}{String} \&an\+Object) const \hypertarget{class_string_a0f25dc8c00c27db4eb0deb713cbf5152}{}\label{class_string_a0f25dc8c00c27db4eb0deb713cbf5152}
+
+\item 
+unsigned char {\bfseries equals\+Ignore\+Case} (const \hyperlink{class_string}{String} \&another\+String) const \hypertarget{class_string_ae2cd256105577f22724d1eaff0431aaa}{}\label{class_string_ae2cd256105577f22724d1eaff0431aaa}
+
+\item 
+int {\bfseries index\+Of} (char ch) const \hypertarget{class_string_a798dc000292a549eca982a3a5e2de54a}{}\label{class_string_a798dc000292a549eca982a3a5e2de54a}
+
+\item 
+int {\bfseries index\+Of} (char ch, unsigned int from\+Index) const \hypertarget{class_string_a3cce8cd1ed439561aa25df6c546045d5}{}\label{class_string_a3cce8cd1ed439561aa25df6c546045d5}
+
+\item 
+int {\bfseries index\+Of} (const \hyperlink{class_string}{String} \&str) const \hypertarget{class_string_ae1ceec091fbce68e360c1e0717d50f28}{}\label{class_string_ae1ceec091fbce68e360c1e0717d50f28}
+
+\item 
+int {\bfseries index\+Of} (const \hyperlink{class_string}{String} \&str, unsigned int from\+Index) const \hypertarget{class_string_a97998ed753b0445123cc17449adb6e9a}{}\label{class_string_a97998ed753b0445123cc17449adb6e9a}
+
+\item 
+int {\bfseries last\+Index\+Of} (char ch) const \hypertarget{class_string_ae3dbedf8dc518d947c91f484b6d78a6f}{}\label{class_string_ae3dbedf8dc518d947c91f484b6d78a6f}
+
+\item 
+int {\bfseries last\+Index\+Of} (char ch, unsigned int from\+Index) const \hypertarget{class_string_a2d7b15343faa3c6048ff621e925fa156}{}\label{class_string_a2d7b15343faa3c6048ff621e925fa156}
+
+\item 
+int {\bfseries last\+Index\+Of} (const \hyperlink{class_string}{String} \&str) const \hypertarget{class_string_a1fc027b0c1160e9e9e9460f68021f0bd}{}\label{class_string_a1fc027b0c1160e9e9e9460f68021f0bd}
+
+\item 
+int {\bfseries last\+Index\+Of} (const \hyperlink{class_string}{String} \&str, unsigned int from\+Index) const \hypertarget{class_string_a5f060c3fb78317d673b4eea9d3f33aef}{}\label{class_string_a5f060c3fb78317d673b4eea9d3f33aef}
+
+\item 
+const unsigned int {\bfseries length} () const \hypertarget{class_string_a61d8c8330af43b5f6ccbf11a92457b44}{}\label{class_string_a61d8c8330af43b5f6ccbf11a92457b44}
+
+\item 
+void {\bfseries set\+Char\+At} (unsigned int index, const char ch)\hypertarget{class_string_a5f276a61766d25a1c03e74905261ad99}{}\label{class_string_a5f276a61766d25a1c03e74905261ad99}
+
+\item 
+unsigned char {\bfseries starts\+With} (const \hyperlink{class_string}{String} \&prefix) const \hypertarget{class_string_a151339707b7370176a46b9edef5c3bdc}{}\label{class_string_a151339707b7370176a46b9edef5c3bdc}
+
+\item 
+unsigned char {\bfseries starts\+With} (const \hyperlink{class_string}{String} \&prefix, unsigned int toffset) const \hypertarget{class_string_a4e085c4865b752cb236ffb23918094e5}{}\label{class_string_a4e085c4865b752cb236ffb23918094e5}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries substring} (unsigned int begin\+Index) const \hypertarget{class_string_ad27c108b34b07c6785e194c2d968bb1c}{}\label{class_string_ad27c108b34b07c6785e194c2d968bb1c}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries substring} (unsigned int begin\+Index, unsigned int end\+Index) const \hypertarget{class_string_aea448757a5dbe286cb522e1b02682d89}{}\label{class_string_aea448757a5dbe286cb522e1b02682d89}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries to\+Lower\+Case} () const \hypertarget{class_string_a17f872d6422e11d2b9c3902f800dc19c}{}\label{class_string_a17f872d6422e11d2b9c3902f800dc19c}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries to\+Upper\+Case} () const \hypertarget{class_string_a1be059135eecd087baca2174ed403516}{}\label{class_string_a1be059135eecd087baca2174ed403516}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries trim} () const \hypertarget{class_string_ad3853992f01ae00f2e6ed2d4eda85fb6}{}\label{class_string_ad3853992f01ae00f2e6ed2d4eda85fb6}
+
+\item 
+void {\bfseries get\+Bytes} (unsigned char $\ast$buf, unsigned int bufsize)\hypertarget{class_string_a87ed5d0774c614c9811b9d6e3e5d36d4}{}\label{class_string_a87ed5d0774c614c9811b9d6e3e5d36d4}
+
+\item 
+void {\bfseries to\+Char\+Array} (char $\ast$buf, unsigned int bufsize)\hypertarget{class_string_add11f6222fa98444c9af6baf9d0eb874}{}\label{class_string_add11f6222fa98444c9af6baf9d0eb874}
+
+\item 
+const \hyperlink{class_string}{String} \& {\bfseries concat} (const \hyperlink{class_string}{String} \&str)\hypertarget{class_string_a458fe8623cb3447270e0c9e599bf8149}{}\label{class_string_a458fe8623cb3447270e0c9e599bf8149}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries replace} (char old\+Char, char new\+Char)\hypertarget{class_string_aa3777be2f9b9dd6480a6ed23175005f5}{}\label{class_string_aa3777be2f9b9dd6480a6ed23175005f5}
+
+\item 
+\hyperlink{class_string}{String} {\bfseries replace} (const \hyperlink{class_string}{String} \&match, const \hyperlink{class_string}{String} \&replace)\hypertarget{class_string_a31420099ed8dbc81a36992b01f6c3e64}{}\label{class_string_a31420099ed8dbc81a36992b01f6c3e64}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries get\+Buffer} (unsigned int max\+Str\+Len)\hypertarget{class_string_aa132e2b548ce6cbc48dc2761cab5c944}{}\label{class_string_aa132e2b548ce6cbc48dc2761cab5c944}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bfseries \+\_\+buffer}\hypertarget{class_string_abccec894d931600e2428a1be15db0c83}{}\label{class_string_abccec894d931600e2428a1be15db0c83}
+
+\item 
+unsigned int {\bfseries \+\_\+capacity}\hypertarget{class_string_ae525e8ac0d02eaedd3b6e287df4ddcee}{}\label{class_string_ae525e8ac0d02eaedd3b6e287df4ddcee}
+
+\item 
+unsigned int {\bfseries \+\_\+length}\hypertarget{class_string_ad4ffdf5de1868afeae32a4b85cc20306}{}\label{class_string_ad4ffdf5de1868afeae32a4b85cc20306}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_string}{String} {\bfseries operator+} (\hyperlink{class_string}{String} lhs, const \hyperlink{class_string}{String} \&rhs)\hypertarget{class_string_a0ca7980da94bb8d8f70b8ef4b0b9edd7}{}\label{class_string_a0ca7980da94bb8d8f70b8ef4b0b9edd7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/W\+String.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/W\+String.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,268 @@
+\hypertarget{class_wasp_x_bee900}{}\section{Wasp\+X\+Bee900 Class Reference}
+\label{class_wasp_x_bee900}\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+
+
+\hyperlink{class_wasp_x_bee900}{Wasp\+X\+Bee900} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee900.\+h$>$}
+
+Inheritance diagram for Wasp\+X\+Bee900\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_x_bee900}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_x_bee900_a024687e44e4f49b0d9ff59952ed11af6}{Wasp\+X\+Bee900} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee900_ae8b9af86f342fdaec3f8bfc0ff4a6edb}{init} (uint8\+\_\+t uart\+\_\+used)
+\begin{DoxyCompactList}\small\item\em It initializes the necessary variables. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a94b58ac3fd3f9414a7de7c3a334c6b6e}{get\+R\+Ferrors} ()
+\begin{DoxyCompactList}\small\item\em It gets the number of times the RF receiver detected a C\+RC or length error. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a3bbee595551ede71a2a79dc7bc564378}{get\+Good\+Packets} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_af78a3358c913f80531c1aa2ade967cd1}{get\+Channel\+R\+S\+SI} (uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_a28592573f397375b74148799137d1d6d}{channel})
+\begin{DoxyCompactList}\small\item\em It gets the D\+BM level of the designated channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a6fc293e4fde6b948f6a20211d12d2834}{get\+Transmision\+Errors} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a4ed9bc7321f24306bc8a643a77d245bc}{get\+Temperature} ()
+\begin{DoxyCompactList}\small\item\em It gets module temperature in Celsius. Negatives temperatures can be returned. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_ab3cc1ea59c32b4fc9b97cad23b7388a7}{get\+Supply\+Voltage} ()
+\begin{DoxyCompactList}\small\item\em It gets the voltage on the Vcc pin. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a995ae13dd52e9224d4a01fd9d0981292}{restore\+Compiled} ()
+\begin{DoxyCompactList}\small\item\em It restores module parameters to compiled defaults. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a25d95f2abfdacf745a706832c09a1c47}{send\+X\+Bee\+Priv} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em It sends a packet to other X\+Bee modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_afb2d912f453a295b9c049b29cd319001}{errors\+RF} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee900_afb2d912f453a295b9c049b29cd319001}{}\label{class_wasp_x_bee900_afb2d912f453a295b9c049b29cd319001}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the number of times the RF receiver detected a C\+RC or length error. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a843814bd98074108a8107088bbcdf231}{good\+Packets} \mbox{[}2\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a38da243d21150ecfec318d85cc4cdd2b}{channel\+R\+S\+SI}\hypertarget{class_wasp_x_bee900_a38da243d21150ecfec318d85cc4cdd2b}{}\label{class_wasp_x_bee900_a38da243d21150ecfec318d85cc4cdd2b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the D\+BM level of the designated channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a5cc97a8a578c273096972e65229012ec}{transmision\+Errors} \mbox{[}2\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a2a1dec450eceab60aab8c44615566e2f}{network\+Hops}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a73e497e2c59c7b74098c6782987de83e}{net\+Delay\+Slots}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_ae97fac397c1dde27d55c59d4320c79e9}{net\+Route\+Request}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a0cea54572e6c87e099b06e9ef69ce565}{mesh\+Net\+Retries}\hypertarget{class_wasp_x_bee900_a0cea54572e6c87e099b06e9ef69ce565}{}\label{class_wasp_x_bee900_a0cea54572e6c87e099b06e9ef69ce565}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the maximum number of network packet delivery attempts (range \mbox{[}0-\/7\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_ac3bcf0a86cd953756ec86b8f86895e1d}{temperature} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee900_ac3bcf0a86cd953756ec86b8f86895e1d}{}\label{class_wasp_x_bee900_ac3bcf0a86cd953756ec86b8f86895e1d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: module temperature in Celsius. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee900_a303c09cd8771f9747d640e59fa3aee84}{supply\+Voltage} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee900_a303c09cd8771f9747d640e59fa3aee84}{}\label{class_wasp_x_bee900_a303c09cd8771f9747d640e59fa3aee84}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the voltage on the Vcc pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_x_bee900}{Wasp\+X\+Bee900} Class. 
+
+\hyperlink{class_wasp_x_bee900}{Wasp\+X\+Bee900} Class defines all the variables and functions used to manage X\+Bee 900\+M\+Hz modules. It inherits from \textquotesingle{}\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core}\textquotesingle{} class the necessary functions, variables and definitions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{Wasp\+X\+Bee900()}{WaspXBee900()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+X\+Bee900\+::\+Wasp\+X\+Bee900 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wasp_x_bee900_a024687e44e4f49b0d9ff59952ed11af6}{}\label{class_wasp_x_bee900_a024687e44e4f49b0d9ff59952ed11af6}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!get\+Channel\+R\+S\+SI@{get\+Channel\+R\+S\+SI}}
+\index{get\+Channel\+R\+S\+SI@{get\+Channel\+R\+S\+SI}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{get\+Channel\+R\+S\+S\+I(uint8\+\_\+t channel)}{getChannelRSSI(uint8_t channel)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::get\+Channel\+R\+S\+SI (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_af78a3358c913f80531c1aa2ade967cd1}{}\label{class_wasp_x_bee900_af78a3358c913f80531c1aa2ade967cd1}
+
+
+It gets the D\+BM level of the designated channel. 
+
+It stores in global \textquotesingle{}channel\+R\+S\+SI\textquotesingle{} variable the number of retries 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & channel \+: the channel where to get the D\+BM level (depends on the X\+Bee module) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!get\+Good\+Packets@{get\+Good\+Packets}}
+\index{get\+Good\+Packets@{get\+Good\+Packets}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{get\+Good\+Packets()}{getGoodPackets()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::get\+Good\+Packets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_a3bbee595551ede71a2a79dc7bc564378}{}\label{class_wasp_x_bee900_a3bbee595551ede71a2a79dc7bc564378}
+It gets the number of good frames with valid M\+AC headers that are received on the RF interface
+
+It stores in global \textquotesingle{}good\+Packets\textquotesingle{} variable the number of good frames with valid M\+AC headers that are received on the RF interface \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!get\+R\+Ferrors@{get\+R\+Ferrors}}
+\index{get\+R\+Ferrors@{get\+R\+Ferrors}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{get\+R\+Ferrors()}{getRFerrors()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::get\+R\+Ferrors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_a94b58ac3fd3f9414a7de7c3a334c6b6e}{}\label{class_wasp_x_bee900_a94b58ac3fd3f9414a7de7c3a334c6b6e}
+
+
+It gets the number of times the RF receiver detected a C\+RC or length error. 
+
+It stores in global \textquotesingle{}errors\+RF\textquotesingle{} variable the number of times the RF receiver detected a C\+RC or length error \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!get\+Supply\+Voltage@{get\+Supply\+Voltage}}
+\index{get\+Supply\+Voltage@{get\+Supply\+Voltage}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{get\+Supply\+Voltage()}{getSupplyVoltage()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::get\+Supply\+Voltage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_ab3cc1ea59c32b4fc9b97cad23b7388a7}{}\label{class_wasp_x_bee900_ab3cc1ea59c32b4fc9b97cad23b7388a7}
+
+
+It gets the voltage on the Vcc pin. 
+
+It stores in global \textquotesingle{}supply\+Voltage\textquotesingle{} variable the voltage on the Vcc pin \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!get\+Temperature@{get\+Temperature}}
+\index{get\+Temperature@{get\+Temperature}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{get\+Temperature()}{getTemperature()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::get\+Temperature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_a4ed9bc7321f24306bc8a643a77d245bc}{}\label{class_wasp_x_bee900_a4ed9bc7321f24306bc8a643a77d245bc}
+
+
+It gets module temperature in Celsius. Negatives temperatures can be returned. 
+
+It stores in global \textquotesingle{}temperature\textquotesingle{} variable module temperature in Celsius \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!get\+Transmision\+Errors@{get\+Transmision\+Errors}}
+\index{get\+Transmision\+Errors@{get\+Transmision\+Errors}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{get\+Transmision\+Errors()}{getTransmisionErrors()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::get\+Transmision\+Errors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_a6fc293e4fde6b948f6a20211d12d2834}{}\label{class_wasp_x_bee900_a6fc293e4fde6b948f6a20211d12d2834}
+It gets the number of M\+AC frames that exhaust M\+AC retries without ever receiving a M\+AC acknowledgement message from the adjacent node
+
+It stores in global \textquotesingle{}transmision\+Errors\textquotesingle{} variable the number of M\+AC frames that exhaust M\+AC retries without ever receiving a M\+AC acknowledgement message from the adjacent node \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!init@{init}}
+\index{init@{init}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t uart\+\_\+used)}{init(uint8_t uart_used)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee900\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{uart\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee900_ae8b9af86f342fdaec3f8bfc0ff4a6edb}{}\label{class_wasp_x_bee900_ae8b9af86f342fdaec3f8bfc0ff4a6edb}
+
+
+It initializes the necessary variables. 
+
+It initalizes all the necessary variables 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & uart\+\_\+used \+: specifies the U\+A\+RT where the data are sent to, (S\+O\+C\+K\+E\+T0 or S\+O\+C\+K\+E\+T1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!restore\+Compiled@{restore\+Compiled}}
+\index{restore\+Compiled@{restore\+Compiled}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{restore\+Compiled()}{restoreCompiled()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::restore\+Compiled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee900_a995ae13dd52e9224d4a01fd9d0981292}{}\label{class_wasp_x_bee900_a995ae13dd52e9224d4a01fd9d0981292}
+
+
+It restores module parameters to compiled defaults. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}}
+\index{send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{send\+X\+Bee\+Priv(struct packet\+X\+Bee $\ast$packet)}{sendXBeePriv(struct packetXBee *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::send\+X\+Bee\+Priv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee900_a25d95f2abfdacf745a706832c09a1c47}{}\label{class_wasp_x_bee900_a25d95f2abfdacf745a706832c09a1c47}
+
+
+It sends a packet to other X\+Bee modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ packet \+: the function gets the needed information to send the packet from it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}{Wasp\+X\+Bee\+Core}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!good\+Packets@{good\+Packets}}
+\index{good\+Packets@{good\+Packets}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{good\+Packets}{goodPackets}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::good\+Packets\mbox{[}2\mbox{]}}\hypertarget{class_wasp_x_bee900_a843814bd98074108a8107088bbcdf231}{}\label{class_wasp_x_bee900_a843814bd98074108a8107088bbcdf231}
+Variable \+: the number of good frames with valid M\+AC headers that are received on the RF interface \index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!net\+Delay\+Slots@{net\+Delay\+Slots}}
+\index{net\+Delay\+Slots@{net\+Delay\+Slots}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{net\+Delay\+Slots}{netDelaySlots}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::net\+Delay\+Slots}\hypertarget{class_wasp_x_bee900_a73e497e2c59c7b74098c6782987de83e}{}\label{class_wasp_x_bee900_a73e497e2c59c7b74098c6782987de83e}
+Variable \+: the maximum random number of network delay slots before rebroadcasting a network packet (range \mbox{[}0-\/0x0A\mbox{]}) \index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!net\+Route\+Request@{net\+Route\+Request}}
+\index{net\+Route\+Request@{net\+Route\+Request}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{net\+Route\+Request}{netRouteRequest}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::net\+Route\+Request}\hypertarget{class_wasp_x_bee900_ae97fac397c1dde27d55c59d4320c79e9}{}\label{class_wasp_x_bee900_ae97fac397c1dde27d55c59d4320c79e9}
+Variable \+: the maximum number of route discovery retries allowed to find a path to the destination node (range \mbox{[}0-\/0x0A\mbox{]}) \index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!network\+Hops@{network\+Hops}}
+\index{network\+Hops@{network\+Hops}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{network\+Hops}{networkHops}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::network\+Hops}\hypertarget{class_wasp_x_bee900_a2a1dec450eceab60aab8c44615566e2f}{}\label{class_wasp_x_bee900_a2a1dec450eceab60aab8c44615566e2f}
+Variable \+: the maximum number of hops expected to be seen in a network route (range \mbox{[}1-\/0x\+FF\mbox{]}) \index{Wasp\+X\+Bee900@{Wasp\+X\+Bee900}!transmision\+Errors@{transmision\+Errors}}
+\index{transmision\+Errors@{transmision\+Errors}!Wasp\+X\+Bee900@{Wasp\+X\+Bee900}}
+\subsubsection[{\texorpdfstring{transmision\+Errors}{transmisionErrors}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee900\+::transmision\+Errors\mbox{[}2\mbox{]}}\hypertarget{class_wasp_x_bee900_a5cc97a8a578c273096972e65229012ec}{}\label{class_wasp_x_bee900_a5cc97a8a578c273096972e65229012ec}
+Variable \+: the number of M\+AC frames that exhaust M\+AC retries without ever receiving a M\+AC acknowledgement message from the adjacent node 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee900/\hyperlink{_wasp_x_bee900_8h}{Wasp\+X\+Bee900.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee900/Wasp\+X\+Bee900.\+cpp\end{DoxyCompactItemize}

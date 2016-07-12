@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=DSDA_P Pin=X3-1
+Removed Pin From Net: NetName=DSDA_N Pin=X4-1
+Removed Pin From Net: NetName=DSDA_P Pin=X12-1
+Removed Pin From Net: NetName=DSDA_N Pin=X13-1
+Added Pin To Net: NetName=DSDA_N Pin=X3-1
+Added Pin To Net: NetName=DSDA_P Pin=X4-1
+Added Pin To Net: NetName=DSDA_N Pin=X12-1
+Added Pin To Net: NetName=DSDA_P Pin=X13-1

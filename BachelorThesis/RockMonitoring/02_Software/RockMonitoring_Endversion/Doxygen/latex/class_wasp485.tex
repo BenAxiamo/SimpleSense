@@ -1,0 +1,101 @@
+\hypertarget{class_wasp485}{}\section{Wasp485 Class Reference}
+\label{class_wasp485}\index{Wasp485@{Wasp485}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp485_a54ab3087d6f21a921c2c043af1f032cc}{Wasp485} ()\hypertarget{class_wasp485_a54ab3087d6f21a921c2c043af1f032cc}{}\label{class_wasp485_a54ab3087d6f21a921c2c043af1f032cc}
+
+\begin{DoxyCompactList}\small\item\em Class Constructors. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp485_a3a4184c9cb1581ab15f1d901db431d61}{baud\+Rate\+Config} (unsigned long speed)
+\begin{DoxyCompactList}\small\item\em Baud-\/\+Rate configuration. It sets the speed of communication. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_ae23e0121dba6592a281c21e0d942e017}{parity\+Bit} (bool state)\hypertarget{class_wasp485_ae23e0121dba6592a281c21e0d942e017}{}\label{class_wasp485_ae23e0121dba6592a281c21e0d942e017}
+
+\begin{DoxyCompactList}\small\item\em Enables or disables the parity bit. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_a9af731502e207f5cd999c7641aaab602}{stop\+Bit\+Config} (uint8\+\_\+t num\+Stop\+Bits)\hypertarget{class_wasp485_a9af731502e207f5cd999c7641aaab602}{}\label{class_wasp485_a9af731502e207f5cd999c7641aaab602}
+
+\begin{DoxyCompactList}\small\item\em Selects the number of stop bits. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp485_aa96e887d45496117867483221d48c972}{ON} ()\hypertarget{class_wasp485_aa96e887d45496117867483221d48c972}{}\label{class_wasp485_aa96e887d45496117867483221d48c972}
+
+\begin{DoxyCompactList}\small\item\em Powers the 485 module and opens the S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_a51e9d26ea08d94cf36f06408e41163fe}{O\+FF} (void)\hypertarget{class_wasp485_a51e9d26ea08d94cf36f06408e41163fe}{}\label{class_wasp485_a51e9d26ea08d94cf36f06408e41163fe}
+
+\begin{DoxyCompactList}\small\item\em Powers O\+FF the 485 module and closes the S\+PI. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp485_afee02c12cacaf55535ebf83f8e3de9e6}{read} (void)\hypertarget{class_wasp485_afee02c12cacaf55535ebf83f8e3de9e6}{}\label{class_wasp485_afee02c12cacaf55535ebf83f8e3de9e6}
+
+\begin{DoxyCompactList}\small\item\em Receives data through the S\+PI. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_a76990fc0c2b599cdf7e3acec6233f18d}{send} (uint8\+\_\+t n)\hypertarget{class_wasp485_a76990fc0c2b599cdf7e3acec6233f18d}{}\label{class_wasp485_a76990fc0c2b599cdf7e3acec6233f18d}
+
+\begin{DoxyCompactList}\small\item\em Sends data n through the S\+PI. \end{DoxyCompactList}\item 
+void {\bfseries send} (int n)\hypertarget{class_wasp485_a5468d13f7c3c7fa6f3aa3a83648db927}{}\label{class_wasp485_a5468d13f7c3c7fa6f3aa3a83648db927}
+
+\item 
+void {\bfseries send} (unsigned int n)\hypertarget{class_wasp485_a25dc05af4655f1df29ed1a6e060c00a9}{}\label{class_wasp485_a25dc05af4655f1df29ed1a6e060c00a9}
+
+\item 
+void {\bfseries send} (long n)\hypertarget{class_wasp485_ace8b0f2a3f61fb477247e5f987357d9e}{}\label{class_wasp485_ace8b0f2a3f61fb477247e5f987357d9e}
+
+\item 
+void {\bfseries send} (unsigned long n)\hypertarget{class_wasp485_a97299dd437626e47f1f11793f9b495f8}{}\label{class_wasp485_a97299dd437626e47f1f11793f9b495f8}
+
+\item 
+void {\bfseries send} (long n, uint8\+\_\+t base)\hypertarget{class_wasp485_a76bda255cda631701095a058e8479515}{}\label{class_wasp485_a76bda255cda631701095a058e8479515}
+
+\item 
+void \hyperlink{class_wasp485_a6770925ccb7ba6f4200766de936e1d76}{send} (const char $\ast$s)\hypertarget{class_wasp485_a6770925ccb7ba6f4200766de936e1d76}{}\label{class_wasp485_a6770925ccb7ba6f4200766de936e1d76}
+
+\begin{DoxyCompactList}\small\item\em Sends data through the S\+PI. It sends a string s. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp485_a9de7ade8aea967563d440ac01c15612b}{reset} (void)\hypertarget{class_wasp485_a9de7ade8aea967563d440ac01c15612b}{}\label{class_wasp485_a9de7ade8aea967563d440ac01c15612b}
+
+\begin{DoxyCompactList}\small\item\em All register bits are reset to their reset state and all F\+I\+F\+Os are cleared. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_afb9ba7ff9a2ca84e10e9aed4f67cf32d}{flush} (void)\hypertarget{class_wasp485_afb9ba7ff9a2ca84e10e9aed4f67cf32d}{}\label{class_wasp485_afb9ba7ff9a2ca84e10e9aed4f67cf32d}
+
+\begin{DoxyCompactList}\small\item\em Clear both the receive and transmit F\+I\+F\+Os of all data contents. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp485_a39fd77232c34c522984a82a7dd415a59}{available} (void)\hypertarget{class_wasp485_a39fd77232c34c522984a82a7dd415a59}{}\label{class_wasp485_a39fd77232c34c522984a82a7dd415a59}
+
+\begin{DoxyCompactList}\small\item\em Returns true when the buffer is empty. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_a42202ed7ea7d328f1efc2fd9cbe9d412}{transmission} (bool state)\hypertarget{class_wasp485_a42202ed7ea7d328f1efc2fd9cbe9d412}{}\label{class_wasp485_a42202ed7ea7d328f1efc2fd9cbe9d412}
+
+\begin{DoxyCompactList}\small\item\em Disable/\+Enable transmission. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp485_a6cf386b004b046df7141e97d6803e93d}{reception} (bool state)\hypertarget{class_wasp485_a6cf386b004b046df7141e97d6803e93d}{}\label{class_wasp485_a6cf386b004b046df7141e97d6803e93d}
+
+\begin{DoxyCompactList}\small\item\em Disable/\+Enable the receiver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp485@{Wasp485}!baud\+Rate\+Config@{baud\+Rate\+Config}}
+\index{baud\+Rate\+Config@{baud\+Rate\+Config}!Wasp485@{Wasp485}}
+\subsubsection[{\texorpdfstring{baud\+Rate\+Config(unsigned long speed)}{baudRateConfig(unsigned long speed)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp485\+::baud\+Rate\+Config (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp485_a3a4184c9cb1581ab15f1d901db431d61}{}\label{class_wasp485_a3a4184c9cb1581ab15f1d901db431d61}
+
+
+Baud-\/\+Rate configuration. It sets the speed of communication. 
+
+Configure the speed communication at 460800 bps.
+
+Configure the speed communication at 230400 bps.
+
+Configure the speed communication at 115200 bps.
+
+Configure the speed communication at 57600 bps.
+
+Configure the speed communication at 38400 bps.
+
+Configure the speed communication at 19200 bps.
+
+Configure the speed communication at 9600 bps
+
+Configure the speed communication at 4800 bps
+
+Configure the speed communication at 4800 bps
+
+Configure the speed communication at 1200 bps
+
+Return 0 if all success. Else return 1. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+R\+S485/\hyperlink{_wasp485_8h}{Wasp485.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+R\+S485/\hyperlink{_wasp485_8cpp}{Wasp485.\+cpp}\end{DoxyCompactItemize}

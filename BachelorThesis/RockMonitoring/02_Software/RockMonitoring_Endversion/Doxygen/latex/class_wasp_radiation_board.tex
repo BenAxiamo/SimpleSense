@@ -1,0 +1,83 @@
+\hypertarget{class_wasp_radiation_board}{}\section{Wasp\+Radiation\+Board Class Reference}
+\label{class_wasp_radiation_board}\index{Wasp\+Radiation\+Board@{Wasp\+Radiation\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_radiation_board_afda1ff55d83b655c2c8f78b6ade93fe2}{Wasp\+Radiation\+Board} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_radiation_board_a7bf3a2d3d6e249caae59c56c88d71ec9}{ON} ()\hypertarget{class_wasp_radiation_board_a7bf3a2d3d6e249caae59c56c88d71ec9}{}\label{class_wasp_radiation_board_a7bf3a2d3d6e249caae59c56c88d71ec9}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Turns on radiation board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_radiation_board_a992b76be02839dc9be863905681f99e5}{O\+FF} ()\hypertarget{class_wasp_radiation_board_a992b76be02839dc9be863905681f99e5}{}\label{class_wasp_radiation_board_a992b76be02839dc9be863905681f99e5}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Turns off radiation board. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_radiation_board_a8fddaa9a0e74ea3fa1cffd6f71bae5c5}{init} ()\hypertarget{class_wasp_radiation_board_a8fddaa9a0e74ea3fa1cffd6f71bae5c5}{}\label{class_wasp_radiation_board_a8fddaa9a0e74ea3fa1cffd6f71bae5c5}
+
+\begin{DoxyCompactList}\small\item\em Function \+: enables interrupts and blinks led bar. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_radiation_board_ac482073a37e62507559def645220a9ae}{get\+Radiation} ()\hypertarget{class_wasp_radiation_board_ac482073a37e62507559def645220a9ae}{}\label{class_wasp_radiation_board_ac482073a37e62507559def645220a9ae}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Measures actual radiation value during 10 seconds. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_radiation_board_ad8a1047fbef9840174cd9566bdc8e3f5}{get\+Radiation\+Int} ()\hypertarget{class_wasp_radiation_board_ad8a1047fbef9840174cd9566bdc8e3f5}{}\label{class_wasp_radiation_board_ad8a1047fbef9840174cd9566bdc8e3f5}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Measures actual radiation value during 10 seconds. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_radiation_board_a1c9a6ed81fb0199c5fb9c2b1adfaa028}{get\+Radiation\+Int} (long \hyperlink{class_wasp_radiation_board_ac423dc8524f911b5e69b1dd1969ab3c0}{time})\hypertarget{class_wasp_radiation_board_a1c9a6ed81fb0199c5fb9c2b1adfaa028}{}\label{class_wasp_radiation_board_a1c9a6ed81fb0199c5fb9c2b1adfaa028}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Measures actual radiation value during specified time. Maximum measure time is 60 seconds. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_radiation_board_a3141cf5f06db0073296a6df9db3795ee}{get\+C\+PM} (long \hyperlink{class_wasp_radiation_board_ac423dc8524f911b5e69b1dd1969ab3c0}{time})\hypertarget{class_wasp_radiation_board_a3141cf5f06db0073296a6df9db3795ee}{}\label{class_wasp_radiation_board_a3141cf5f06db0073296a6df9db3795ee}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Measures actual radiation value during specified time. Maximum time is 60 seconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_radiation_board_a22cd28829fbd2c6a05b29456087257f2}{led\+Bar} (float value)\hypertarget{class_wasp_radiation_board_a22cd28829fbd2c6a05b29456087257f2}{}\label{class_wasp_radiation_board_a22cd28829fbd2c6a05b29456087257f2}
+
+\begin{DoxyCompactList}\small\item\em Function \+: Refresh led bar value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_wasp_radiation_board_a41fd121b8ba686e7d36c290a8353cacd}{radiation\+Value}\hypertarget{class_wasp_radiation_board_a41fd121b8ba686e7d36c290a8353cacd}{}\label{class_wasp_radiation_board_a41fd121b8ba686e7d36c290a8353cacd}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores last measured radiation value in u\+Sv/h. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_radiation_board_ad3c9b4bd902226956a2af547c8edb97e}{radiation\+Value\+C\+PM}\hypertarget{class_wasp_radiation_board_ad3c9b4bd902226956a2af547c8edb97e}{}\label{class_wasp_radiation_board_ad3c9b4bd902226956a2af547c8edb97e}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Stores last measured radiation value in cpm. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_radiation_board_a14b54c591772f5afb977cecae3a293d7}{led\+Array} \mbox{[}5\mbox{]}\hypertarget{class_wasp_radiation_board_a14b54c591772f5afb977cecae3a293d7}{}\label{class_wasp_radiation_board_a14b54c591772f5afb977cecae3a293d7}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_radiation_board_a3203869ee972c1c3e9926a68b140070b}{count}\hypertarget{class_wasp_radiation_board_a3203869ee972c1c3e9926a68b140070b}{}\label{class_wasp_radiation_board_a3203869ee972c1c3e9926a68b140070b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: stores number of pulses counted. \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_radiation_board_a1ae47207bed87644ae0128d8d983ae46}{time\+Previous}\hypertarget{class_wasp_radiation_board_a1ae47207bed87644ae0128d8d983ae46}{}\label{class_wasp_radiation_board_a1ae47207bed87644ae0128d8d983ae46}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_radiation_board_ac423dc8524f911b5e69b1dd1969ab3c0}{time}\hypertarget{class_wasp_radiation_board_ac423dc8524f911b5e69b1dd1969ab3c0}{}\label{class_wasp_radiation_board_ac423dc8524f911b5e69b1dd1969ab3c0}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: \end{DoxyCompactList}\item 
+long \hyperlink{class_wasp_radiation_board_aba1a0354a0f50832188e304cb737a08d}{time\+Previous\+Meassure}\hypertarget{class_wasp_radiation_board_aba1a0354a0f50832188e304cb737a08d}{}\label{class_wasp_radiation_board_aba1a0354a0f50832188e304cb737a08d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+Radiation\+Board@{Wasp\+Radiation\+Board}!Wasp\+Radiation\+Board@{Wasp\+Radiation\+Board}}
+\index{Wasp\+Radiation\+Board@{Wasp\+Radiation\+Board}!Wasp\+Radiation\+Board@{Wasp\+Radiation\+Board}}
+\subsubsection[{\texorpdfstring{Wasp\+Radiation\+Board()}{WaspRadiationBoard()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+Radiation\+Board\+::\+Wasp\+Radiation\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_radiation_board_afda1ff55d83b655c2c8f78b6ade93fe2}{}\label{class_wasp_radiation_board_afda1ff55d83b655c2c8f78b6ade93fe2}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Radiation/Wasp\+Sensor\+Radiation.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Radiation/Wasp\+Sensor\+Radiation.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+Added Component: Designator=D4(SMB)
+Added Pin To Net: NetName=NetC3_2 Pin=D4-1
+Added Pin To Net: NetName=NetC2_1 Pin=D4-2
+Added Member To Class: ClassName=power_supply Member=Component D4 Diode

@@ -1,0 +1,165 @@
+\hypertarget{group__avr__power}{}\section{$<$avr/power.h$>$\+: Power Reduction Management}
+\label{group__avr__power}\index{$<$avr/power.\+h$>$\+: Power Reduction Management@{$<$avr/power.\+h$>$\+: Power Reduction Management}}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{power_8h}{avr/power.h}>}
+\end{DoxyCode}
+
+
+Many A\+V\+Rs contain a Power Reduction Register (P\+RR) or Registers (P\+R\+Rx) that allow you to reduce power consumption by disabling or enabling various on-\/board peripherals as needed.
+
+There are many macros in this header file that provide an easy interface to enable or disable on-\/board peripherals to reduce power. See the table below.
+
+\begin{DoxyNote}{Note}
+Not all A\+VR devices have a Power Reduction Register (for example the A\+Tmega128). On those devices without a Power Reduction Register, these macros are not available.
+
+Not all A\+VR devices contain the same peripherals (for example, the L\+CD interface), or they will be named differently (for example, U\+S\+A\+RT and U\+S\+A\+R\+T0). Please consult your device\textquotesingle{}s datasheet, or the header file, to find out which macros are applicable to your device.
+\end{DoxyNote}
+\label{group__avr__power_avr_powermacros}%
+\hypertarget{group__avr__power_avr_powermacros}{}%
+
+\footnotesize  \begin{center} \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*3{|X[-1]}|}
+\hline
+{\bfseries Power Macro} &{\bfseries Description} &{\bfseries Applicable for device} 
+
+\\\cline{1-3}
+power\+\_\+adc\+\_\+enable() &Enable the Analog to Digital Converter module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M81, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+adc\+\_\+disable() &Disable the Analog to Digital Converter module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M81, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+lcd\+\_\+enable() &Enable the L\+CD module. &A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490 
+
+\\\cline{1-3}
+power\+\_\+lcd\+\_\+disable(). &Disable the L\+CD module. &A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490 
+
+\\\cline{1-3}
+power\+\_\+pscr\+\_\+enable() &Enable the Reduced Power Stage Controller module. &A\+T90\+P\+W\+M81 
+
+\\\cline{1-3}
+power\+\_\+pscr\+\_\+disable() &Disable the Reduced Power Stage Controller module. &A\+T90\+P\+W\+M81 
+
+\\\cline{1-3}
+power\+\_\+psc0\+\_\+enable() &Enable the Power Stage Controller 0 module. &A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B 
+
+\\\cline{1-3}
+power\+\_\+psc0\+\_\+disable() &Disable the Power Stage Controller 0 module. &A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B 
+
+\\\cline{1-3}
+power\+\_\+psc1\+\_\+enable() &Enable the Power Stage Controller 1 module. &A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B 
+
+\\\cline{1-3}
+power\+\_\+psc1\+\_\+disable() &Disable the Power Stage Controller 1 module. &A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B 
+
+\\\cline{1-3}
+power\+\_\+psc2\+\_\+enable() &Enable the Power Stage Controller 2 module. &A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M81 
+
+\\\cline{1-3}
+power\+\_\+psc2\+\_\+disable() &Disable the Power Stage Controller 2 module. &A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M81 
+
+\\\cline{1-3}
+power\+\_\+spi\+\_\+enable() &Enable the Serial Peripheral Interface module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M81, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+spi\+\_\+disable() &Disable the Serial Peripheral Interface module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M81, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+timer0\+\_\+enable() &Enable the Timer 0 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+timer0\+\_\+disable() &Disable the Timer 0 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+timer1\+\_\+enable() &Enable the Timer 1 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M81, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+timer1\+\_\+disable() &Disable the Timer 1 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+T90\+P\+W\+M81, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+timer2\+\_\+enable() &Enable the Timer 2 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+timer2\+\_\+disable() &Disable the Timer 2 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+timer3\+\_\+enable() &Enable the Timer 3 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287 
+
+\\\cline{1-3}
+power\+\_\+timer3\+\_\+disable() &Disable the Timer 3 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287 
+
+\\\cline{1-3}
+power\+\_\+timer4\+\_\+enable() &Enable the Timer 4 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+timer4\+\_\+disable() &Disable the Timer 4 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+timer5\+\_\+enable() &Enable the Timer 5 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+timer5\+\_\+disable() &Disable the Timer 5 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+twi\+\_\+enable() &Enable the Two Wire Interface module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+twi\+\_\+disable() &Disable the Two Wire Interface module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+usart\+\_\+enable() &Enable the U\+S\+A\+RT module. &A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B 
+
+\\\cline{1-3}
+power\+\_\+usart\+\_\+disable() &Disable the U\+S\+A\+RT module. &A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B 
+
+\\\cline{1-3}
+power\+\_\+usart0\+\_\+enable() &Enable the U\+S\+A\+RT 0 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+usart0\+\_\+disable() &Disable the U\+S\+A\+RT 0 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega3250A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega48, A\+Tmega88, A\+Tmega168 
+
+\\\cline{1-3}
+power\+\_\+usart1\+\_\+enable() &Enable the U\+S\+A\+RT 1 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+Tmega164P, A\+Tmega324P, A\+Tmega644 
+
+\\\cline{1-3}
+power\+\_\+usart1\+\_\+disable() &Disable the U\+S\+A\+RT 1 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+Tmega164P, A\+Tmega324P, A\+Tmega644 
+
+\\\cline{1-3}
+power\+\_\+usart2\+\_\+enable() &Enable the U\+S\+A\+RT 2 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+usart2\+\_\+disable() &Disable the U\+S\+A\+RT 2 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+usart3\+\_\+enable() &Enable the U\+S\+A\+RT 3 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+usart3\+\_\+disable() &Disable the U\+S\+A\+RT 3 module. &A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega2560, A\+Tmega2561 
+
+\\\cline{1-3}
+power\+\_\+usb\+\_\+enable() &Enable the U\+SB module. &A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287 
+
+\\\cline{1-3}
+power\+\_\+usb\+\_\+disable() &Disable the U\+SB module. &A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287 
+
+\\\cline{1-3}
+power\+\_\+usi\+\_\+enable() &Enable the Universal Serial Interface module. &A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+usi\+\_\+disable() &Disable the Universal Serial Interface module. &A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+vadc\+\_\+enable() &Enable the Voltage A\+DC module. &A\+Tmega406 
+
+\\\cline{1-3}
+power\+\_\+vadc\+\_\+disable() &Disable the Voltage A\+DC module. &A\+Tmega406 
+
+\\\cline{1-3}
+power\+\_\+all\+\_\+enable() &Enable all modules. &A\+Txmega6\+A4, A\+Txmega32\+A4, A\+Txmega64\+A1, A\+Txmega64\+A1U, A\+Txmega64\+A3, A\+Txmega\+A1, A\+Txmega\+A1U, A\+Txmega128\+A3, A\+Txmega192\+A3, A\+Txmega256\+A3, A\+Txmega\+A3B, A\+Txmega16\+D4, A\+Txmega32\+D4, A\+Txmega64\+D3, A\+Txmega128\+D3, A\+Txmega192\+D3, A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega325A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861 
+
+\\\cline{1-3}
+power\+\_\+all\+\_\+disable() &Disable all modules. &A\+Txmega6\+A4, A\+Txmega32\+A4, A\+Txmega64\+A1, A\+Txmega64\+A1U, A\+Txmega64\+A3, A\+Txmega\+A1, A\+Txmega\+A1U, A\+Txmega128\+A3, A\+Txmega192\+A3, A\+Txmega256\+A3, A\+Txmega\+A3B, A\+Txmega16\+D4, A\+Txmega32\+D4, A\+Txmega64\+D3, A\+Txmega128\+D3,A\+Txmega192\+D3, A\+Tmega640, A\+Tmega1280, A\+Tmega1281, A\+Tmega128\+R\+F\+A1, A\+Tmega2560, A\+Tmega2561, A\+T90\+U\+S\+B646, A\+T90\+U\+S\+B647, A\+T90\+U\+S\+B1286, A\+T90\+U\+S\+B1287, A\+T90\+P\+W\+M1, A\+T90\+P\+W\+M2, A\+T90\+P\+W\+M2B, A\+T90\+P\+W\+M3, A\+T90\+P\+W\+M3B, A\+T90\+P\+W\+M216, A\+T90\+P\+W\+M316, A\+Tmega165, A\+Tmega165P, A\+Tmega325, A\+Tmega325A, A\+Tmega3250, A\+Tmega325A, A\+Tmega645, A\+Tmega6450, A\+Tmega169, A\+Tmega169P, A\+Tmega329, A\+Tmega329A, A\+Tmega3290, A\+Tmega3290A, A\+Tmega649, A\+Tmega6490, A\+Tmega164P, A\+Tmega324P, A\+Tmega644, A\+Tmega406, A\+Tmega48, A\+Tmega88, A\+Tmega168, A\+Ttiny24, A\+Ttiny44, A\+Ttiny84, A\+Ttiny84A, A\+Ttiny25, A\+Ttiny45, A\+Ttiny85, A\+Ttiny261, A\+Ttiny461, A\+Ttiny861  \\\cline{1-3}
+\end{longtabu}
+\end{center}  
+\normalsize  

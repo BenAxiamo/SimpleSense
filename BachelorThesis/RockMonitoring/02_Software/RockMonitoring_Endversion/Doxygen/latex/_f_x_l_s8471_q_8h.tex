@@ -1,0 +1,119 @@
+\hypertarget{_f_x_l_s8471_q_8h}{}\section{F\+X\+L\+S8471\+Q.\+h File Reference}
+\label{_f_x_l_s8471_q_8h}\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+{\ttfamily \#include $<$util/twi.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Wire.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wasp\+Classes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../\+Constants/\+Constants.\+h\char`\"{}}\\*
+Include dependency graph for F\+X\+L\+S8471\+Q.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_x_l_s8471_q_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_x_l_s8471_q_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}
+\begin{DoxyCompactList}\small\item\em Class that handles the communication to the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_f_x_l_s8471_q_1_1struct_x_y_z}{F\+X\+L\+S8471\+Q\+::struct\+X\+YZ}
+\item 
+struct \hyperlink{struct_f_x_l_s8471_q_1_1struct_pitch_roll}{F\+X\+L\+S8471\+Q\+::struct\+Pitch\+Roll}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_a756c3ffc1b10df976e2734f1d2016cbd}{F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US}~0x00
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_aca2c288246163fe74768ca2ced229344}{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI}~0x0D
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_a80490fc14d7006ba1c09d4d837e99bb5}{F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG}~0x0E
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_a05cda5dbe26605cea5e42d19ad33de86}{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1}~0x2A
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_a988e98637156fd02e1f661b7394e2545}{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2}~0x2B
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_a7832584a7c78df5ebe2c7a475de66d9c}{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3}~0\+X2C
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_a2a68a821ee337eb4e1070c83d308c725}{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL}~0x6A
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_ab8da32c95c895229e1faffde0f3c4fd3}{F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}~7
+\item 
+\#define \hyperlink{_f_x_l_s8471_q_8h_ab38e510b6d5ea0bcfff261596262357b}{F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity}~0.\+000244
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1@{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1@{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1}{FXLS8471Q_CTRL_REG1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G1~0x2A}\hypertarget{_f_x_l_s8471_q_8h_a05cda5dbe26605cea5e42d19ad33de86}{}\label{_f_x_l_s8471_q_8h_a05cda5dbe26605cea5e42d19ad33de86}
+
+
+Definition at line 8 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2@{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2@{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2}{FXLS8471Q_CTRL_REG2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G2~0x2B}\hypertarget{_f_x_l_s8471_q_8h_a988e98637156fd02e1f661b7394e2545}{}\label{_f_x_l_s8471_q_8h_a988e98637156fd02e1f661b7394e2545}
+
+
+Definition at line 9 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3@{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3@{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3}{FXLS8471Q_CTRL_REG3}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+G3~0\+X2C}\hypertarget{_f_x_l_s8471_q_8h_a7832584a7c78df5ebe2c7a475de66d9c}{}\label{_f_x_l_s8471_q_8h_a7832584a7c78df5ebe2c7a475de66d9c}
+
+
+Definition at line 10 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN@{F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN@{F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN}{FXLS8471Q_READ_LEN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+R\+E\+A\+D\+\_\+\+L\+EN~7}\hypertarget{_f_x_l_s8471_q_8h_ab8da32c95c895229e1faffde0f3c4fd3}{}\label{_f_x_l_s8471_q_8h_ab8da32c95c895229e1faffde0f3c4fd3}
+
+
+Definition at line 14 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity@{F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity@{F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity}{FXLS8471Q_Sensitivity}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+Sensitivity~0.\+000244}\hypertarget{_f_x_l_s8471_q_8h_ab38e510b6d5ea0bcfff261596262357b}{}\label{_f_x_l_s8471_q_8h_ab38e510b6d5ea0bcfff261596262357b}
+
+
+Definition at line 15 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US@{F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US@{F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US}{FXLS8471Q_STATUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+S\+T\+A\+T\+US~0x00}\hypertarget{_f_x_l_s8471_q_8h_a756c3ffc1b10df976e2734f1d2016cbd}{}\label{_f_x_l_s8471_q_8h_a756c3ffc1b10df976e2734f1d2016cbd}
+
+
+Definition at line 5 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI@{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI@{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI}{FXLS8471Q_WHOAMI}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+MI~0x0D}\hypertarget{_f_x_l_s8471_q_8h_aca2c288246163fe74768ca2ced229344}{}\label{_f_x_l_s8471_q_8h_aca2c288246163fe74768ca2ced229344}
+
+
+Definition at line 6 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL@{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL@{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL}{FXLS8471Q_WHOAMI_VAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+W\+H\+O\+A\+M\+I\+\_\+\+V\+AL~0x6A}\hypertarget{_f_x_l_s8471_q_8h_a2a68a821ee337eb4e1070c83d308c725}{}\label{_f_x_l_s8471_q_8h_a2a68a821ee337eb4e1070c83d308c725}
+
+
+Definition at line 11 of file F\+X\+L\+S8471\+Q.\+h.
+
+\index{F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}!F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG@{F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG}}
+\index{F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG@{F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG}!F\+X\+L\+S8471\+Q.\+h@{F\+X\+L\+S8471\+Q.\+h}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG}{FXLS8471Q_XYZ_DATA_CFG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+X\+L\+S8471\+Q\+\_\+\+X\+Y\+Z\+\_\+\+D\+A\+T\+A\+\_\+\+C\+FG~0x0E}\hypertarget{_f_x_l_s8471_q_8h_a80490fc14d7006ba1c09d4d837e99bb5}{}\label{_f_x_l_s8471_q_8h_a80490fc14d7006ba1c09d4d837e99bb5}
+
+
+Definition at line 7 of file F\+X\+L\+S8471\+Q.\+h.
+

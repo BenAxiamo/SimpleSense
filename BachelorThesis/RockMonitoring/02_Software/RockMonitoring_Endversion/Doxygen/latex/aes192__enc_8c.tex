@@ -1,0 +1,40 @@
+\hypertarget{aes192__enc_8c}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes192\+\_\+enc.c File Reference}
+\label{aes192__enc_8c}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes192\+\_\+enc.\+c@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Wasp\+A\+E\+S/utility/aes192\+\_\+enc.\+c}}
+{\ttfamily \#include \char`\"{}aes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}aes\+\_\+enc.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{aes192__enc_8c_ac92192142b77734779022b93f8a40132}{aes192\+\_\+enc} (void $\ast$buffer, \hyperlink{structaes192__ctx__t}{aes192\+\_\+ctx\+\_\+t} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em encrypt with 192 bit key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\href{mailto:daniel.otte@rub.de}{\tt daniel.\+otte@rub.\+de} \begin{DoxyAuthor}{Author}
+Daniel Otte 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2008-\/12-\/31  G\+P\+Lv3 or later 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{aes192\+\_\+enc.\+c@{aes192\+\_\+enc.\+c}!aes192\+\_\+enc@{aes192\+\_\+enc}}
+\index{aes192\+\_\+enc@{aes192\+\_\+enc}!aes192\+\_\+enc.\+c@{aes192\+\_\+enc.\+c}}
+\subsubsection[{\texorpdfstring{aes192\+\_\+enc(void $\ast$buffer, aes192\+\_\+ctx\+\_\+t $\ast$ctx)}{aes192_enc(void *buffer, aes192_ctx_t *ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}void aes192\+\_\+enc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{{\bf aes192\+\_\+ctx\+\_\+t} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}\hypertarget{aes192__enc_8c_ac92192142b77734779022b93f8a40132}{}\label{aes192__enc_8c_ac92192142b77734779022b93f8a40132}
+
+
+encrypt with 192 bit key. 
+
+This function encrypts one block with the A\+ES algorithm under control of a keyschedule produced from a 192 bit key. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & pointer to the block to encrypt \\
+\hline
+{\em ctx} & pointer to the key schedule \\
+\hline
+\end{DoxyParams}

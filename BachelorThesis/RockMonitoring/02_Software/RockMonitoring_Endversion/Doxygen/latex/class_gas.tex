@@ -1,0 +1,452 @@
+\hypertarget{class_gas}{}\section{Gas Class Reference}
+\label{class_gas}\index{Gas@{Gas}}
+
+
+Wasp\+Sensor\+Gas\+\_\+\+Pro Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gas_a24517f1dc8a4c300144b1da1cfdd7d45}{Gas} (int socket)
+\begin{DoxyCompactList}\small\item\em class constructor (basic) \end{DoxyCompactList}\item 
+\hyperlink{class_gas_a92c0da0cb54445a309cf84c482c1b01b}{Gas} (int socket, uint8\+\_\+t sensor\+\_\+type, int power\+\_\+pin, int I2\+C\+\_\+pin, float m\+\_\+conc, float baseline, float aux\+\_\+var, float calibration\+\_\+table\mbox{[}7\mbox{]}\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em class constructor (manual configuration) \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_gas_a92f32be9143d2ad3bd42aa6316f02632}{ON} ()
+\item 
+int8\+\_\+t \hyperlink{class_gas_a8ca77049a319053cff80057cf80deb43}{ON} (float R\+\_\+gain)
+\begin{DoxyCompactList}\small\item\em This function turns on the A\+FE board and selects a gain for transimpendance amplifier. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_gas_a85a1a2ea4d0ac98e87b61b8662a03428}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em This function turns off the A\+FE board. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_gas_ae4b6c428a66cd5181f6823207b32500e}{O\+FF} (uint8\+\_\+t enable\+\_\+\+F\+ET)
+\begin{DoxyCompactList}\small\item\em This function turns off the A\+FE board and enables the shorting F\+ET for 3 electrode boards. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_gas_aa9727ba2e2d29e1979da2b419564e679}{set\+Power\+Mode} (uint8\+\_\+t power\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em This function sets the power mode of \hyperlink{class_l_m_p91000}{L\+M\+P91000}. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_gas_af76023d6aa1986ca220a7fe2362e2c4c}{configure\+A\+FE} (float R\+\_\+gain)
+\begin{DoxyCompactList}\small\item\em This function configure the A\+FE module (\hyperlink{class_l_m_p91000}{L\+M\+P91000} and/or M\+C\+P4146) \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a1650ec9742154290a7a3f63379050d26}{get\+Temp} ()
+\begin{DoxyCompactList}\small\item\em M\+E\+A\+S\+U\+RE F\+U\+N\+C\+T\+I\+O\+NS. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_acdb7c24963bd545e02e582103260f866}{get\+Temp} (bool sensor)
+\begin{DoxyCompactList}\small\item\em This function reads temperature. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a455f761086e030428ca77d6a6f535ad0}{get\+Humidity} ()
+\begin{DoxyCompactList}\small\item\em This function reads relative humidity from \hyperlink{class_b_m_e280}{B\+M\+E280}. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_afa9e24ecbe2f2201b6b64061d9a80a5a}{get\+Pressure} ()
+\begin{DoxyCompactList}\small\item\em This function reads pressure from \hyperlink{class_b_m_e280}{B\+M\+E280}. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a0fda80d31528babdbb6ec2bd563fc436}{get\+Conc} ()
+\begin{DoxyCompactList}\small\item\em This function reads concentration value with default parameters (16bit A\+DC, \hyperlink{class_b_m_e280}{B\+M\+E280} temperature and compensated meassure for O3 sensor) \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a91686da9586bc41f99a13bd91a0ed77d}{get\+Conc} (uint8\+\_\+t resolution)
+\begin{DoxyCompactList}\small\item\em This function reads concentration value with default parameters (\hyperlink{class_b_m_e280}{B\+M\+E280} temperature and compensated meassure for O3 sensor) \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a732fd18c42ad4c0f0b03ffca9af46aa7}{get\+Conc} (uint8\+\_\+t resolution, uint8\+\_\+t electrode)
+\begin{DoxyCompactList}\small\item\em This function reads concentration value. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a98ccd0b466a4017be356b4c716c340a3}{get\+Conc} (uint8\+\_\+t resolution, float temperature, uint8\+\_\+t electrode)
+\begin{DoxyCompactList}\small\item\em This function reads concentration value. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_gas_a490e06949bd69d39652033e228487c2a}{auto\+Gain} ()
+\begin{DoxyCompactList}\small\item\em This function changes the gain and the Vref of the A\+FE module. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_abdf5e9ce7bb1eb355bc1d649dcdb76f5}{ppm2perc} (float ppm\+\_\+conc)
+\begin{DoxyCompactList}\small\item\em This function converts concentration in ppm to \%. \end{DoxyCompactList}\item 
+float \hyperlink{class_gas_a0f538f5249e0df773eb642323896ff69}{Celsius2\+Fahrenheit} (float temp)
+\begin{DoxyCompactList}\small\item\em This function converts temperature in Celsius degrees to Fahrenheit degrees. \end{DoxyCompactList}\item 
+void \hyperlink{class_gas_aa453bad7933117048997ca9c14c47d54}{show\+Sensor\+Info} ()
+\begin{DoxyCompactList}\small\item\em M\+I\+S\+C\+E\+L\+A\+N\+E\+US. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries over\+\_\+limit}\hypertarget{class_gas_a9a3cdc860db05dcbd0fbf2618b054aaf}{}\label{class_gas_a9a3cdc860db05dcbd0fbf2618b054aaf}
+
+\item 
+bool {\bfseries low\+\_\+conc}\hypertarget{class_gas_a284df9f1b4f8059eb94197c16dd80e6c}{}\label{class_gas_a284df9f1b4f8059eb94197c16dd80e6c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wasp\+Sensor\+Gas\+\_\+\+Pro Class. 
+
+Wasp\+Sensor\+Gas\+\_\+\+Pro Class defines all the variables and functions used to manage the A\+FE modules and the base board 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Gas@{Gas}!Gas@{Gas}}
+\index{Gas@{Gas}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{Gas(int socket)}{Gas(int socket)}}]{\setlength{\rightskip}{0pt plus 5cm}Gas\+::\+Gas (
+\begin{DoxyParamCaption}
+\item[{int}]{socket}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a24517f1dc8a4c300144b1da1cfdd7d45}{}\label{class_gas_a24517f1dc8a4c300144b1da1cfdd7d45}
+
+
+class constructor (basic) 
+
+Constructors /////////////////////////////////////////////////////////////.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & socket\+: number of the socket where the sensor is attached \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\index{Gas@{Gas}!Gas@{Gas}}
+\index{Gas@{Gas}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{Gas(int socket, uint8\+\_\+t sensor\+\_\+type, int power\+\_\+pin, int I2\+C\+\_\+pin, float m\+\_\+conc, float baseline, float aux\+\_\+var, float calibration\+\_\+table[7][2])}{Gas(int socket, uint8_t sensor_type, int power_pin, int I2C_pin, float m_conc, float baseline, float aux_var, float calibration_table[7][2])}}]{\setlength{\rightskip}{0pt plus 5cm}Gas\+::\+Gas (
+\begin{DoxyParamCaption}
+\item[{int}]{socket, }
+\item[{uint8\+\_\+t}]{sensor\+\_\+type, }
+\item[{int}]{power\+\_\+pin, }
+\item[{int}]{I2\+C\+\_\+pin, }
+\item[{float}]{m\+\_\+conc, }
+\item[{float}]{baseline, }
+\item[{float}]{aux\+\_\+var, }
+\item[{float}]{calibration\+\_\+table\mbox{[}7\mbox{]}\mbox{[}2\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a92c0da0cb54445a309cf84c482c1b01b}{}\label{class_gas_a92c0da0cb54445a309cf84c482c1b01b}
+
+
+class constructor (manual configuration) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & sensor\+\_\+type\+: number of the socket where the sensor is attached \\
+\hline
+{\em int} & power\+\_\+pin\+: pin to manage the power switch of the A\+FE board \\
+\hline
+{\em int} & I2\+C\+\_\+pin\+: pin to manage the I2C switch of the A\+FE board \\
+\hline
+{\em float} & m\+\_\+conc\+: sensibility for main electrode (n\+A/ppm or m\+V/\%) \\
+\hline
+{\em float} & baseline\+: baseline offset of the sensor (nA or mV) \\
+\hline
+{\em float} & aux\+\_\+var\+: sensibility for auxiliary electrode (n\+A/ppm) \\
+\hline
+{\em float} & calibration\+\_\+table\mbox{[}7\mbox{]}\mbox{[}2\mbox{]}\+: adjustment parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Gas@{Gas}!auto\+Gain@{auto\+Gain}}
+\index{auto\+Gain@{auto\+Gain}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{auto\+Gain()}{autoGain()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Gas\+::auto\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a490e06949bd69d39652033e228487c2a}{}\label{class_gas_a490e06949bd69d39652033e228487c2a}
+
+
+This function changes the gain and the Vref of the A\+FE module. 
+
+\begin{DoxyReturn}{Returns}
+high nibble\+: steps changed in Vref low nibble\+: steps changed in Rgain 
+\end{DoxyReturn}
+\index{Gas@{Gas}!Celsius2\+Fahrenheit@{Celsius2\+Fahrenheit}}
+\index{Celsius2\+Fahrenheit@{Celsius2\+Fahrenheit}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{Celsius2\+Fahrenheit(float temp)}{Celsius2Fahrenheit(float temp)}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::\+Celsius2\+Fahrenheit (
+\begin{DoxyParamCaption}
+\item[{float}]{temp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a0f538f5249e0df773eb642323896ff69}{}\label{class_gas_a0f538f5249e0df773eb642323896ff69}
+
+
+This function converts temperature in Celsius degrees to Fahrenheit degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & concentration in Celsius degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The concetration value in Fahrenheit degrees 
+\end{DoxyReturn}
+\index{Gas@{Gas}!configure\+A\+FE@{configure\+A\+FE}}
+\index{configure\+A\+FE@{configure\+A\+FE}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{configure\+A\+F\+E(float R\+\_\+gain)}{configureAFE(float R_gain)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Gas\+::configure\+A\+FE (
+\begin{DoxyParamCaption}
+\item[{float}]{R\+\_\+gain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_af76023d6aa1986ca220a7fe2362e2c4c}{}\label{class_gas_af76023d6aa1986ca220a7fe2362e2c4c}
+
+
+This function configure the A\+FE module (\hyperlink{class_l_m_p91000}{L\+M\+P91000} and/or M\+C\+P4146) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & R\+\_\+gain resistor value for transimpendance stage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 no communication with \hyperlink{class_l_m_p91000}{L\+M\+P91000} 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Conc@{get\+Conc}}
+\index{get\+Conc@{get\+Conc}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Conc()}{getConc()}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Conc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a0fda80d31528babdbb6ec2bd563fc436}{}\label{class_gas_a0fda80d31528babdbb6ec2bd563fc436}
+
+
+This function reads concentration value with default parameters (16bit A\+DC, \hyperlink{class_b_m_e280}{B\+M\+E280} temperature and compensated meassure for O3 sensor) 
+
+\begin{DoxyReturn}{Returns}
+The concetration value in ppm / L\+EL, -\/1000 if error. 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Conc@{get\+Conc}}
+\index{get\+Conc@{get\+Conc}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Conc(uint8\+\_\+t resolution)}{getConc(uint8_t resolution)}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Conc (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{resolution}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a91686da9586bc41f99a13bd91a0ed77d}{}\label{class_gas_a91686da9586bc41f99a13bd91a0ed77d}
+
+
+This function reads concentration value with default parameters (\hyperlink{class_b_m_e280}{B\+M\+E280} temperature and compensated meassure for O3 sensor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & resolution\+: resolution value for A\+DC M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+12\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+L\+O\+W\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+14\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+M\+E\+D\+I\+U\+M\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+16\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+H\+I\+G\+H\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+18\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+U\+L\+T\+R\+A\+\_\+\+H\+I\+G\+H\+\_\+\+R\+ES \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The concetration value in ppm / L\+EL, -\/1000 if error. 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Conc@{get\+Conc}}
+\index{get\+Conc@{get\+Conc}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Conc(uint8\+\_\+t resolution, uint8\+\_\+t electrode)}{getConc(uint8_t resolution, uint8_t electrode)}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Conc (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{resolution, }
+\item[{uint8\+\_\+t}]{electrode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a732fd18c42ad4c0f0b03ffca9af46aa7}{}\label{class_gas_a732fd18c42ad4c0f0b03ffca9af46aa7}
+
+
+This function reads concentration value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & resolution\+: resolution value for A\+DC M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+12\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+L\+O\+W\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+14\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+M\+E\+D\+I\+U\+M\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+16\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+H\+I\+G\+H\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+18\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+U\+L\+T\+R\+A\+\_\+\+H\+I\+G\+H\+\_\+\+R\+ES \\
+\hline
+{\em uint8\+\_\+t} & electrode\+: electrode to read W\+O\+R\+K\+I\+N\+G\+\_\+\+E\+L\+E\+C\+T\+R\+O\+DE A\+U\+X\+I\+L\+I\+A\+R\+Y\+\_\+\+E\+L\+E\+C\+T\+R\+O\+DE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The concetration value in ppm / L\+EL, -\/1000 if error. 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Conc@{get\+Conc}}
+\index{get\+Conc@{get\+Conc}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Conc(uint8\+\_\+t resolution, float temperature, uint8\+\_\+t electrode)}{getConc(uint8_t resolution, float temperature, uint8_t electrode)}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Conc (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{resolution, }
+\item[{float}]{temperature, }
+\item[{uint8\+\_\+t}]{electrode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a98ccd0b466a4017be356b4c716c340a3}{}\label{class_gas_a98ccd0b466a4017be356b4c716c340a3}
+
+
+This function reads concentration value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & resolution\+: resolution value for A\+DC M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+12\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+L\+O\+W\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+14\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+M\+E\+D\+I\+U\+M\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+16\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+H\+I\+G\+H\+\_\+\+R\+ES M\+C\+P3421\+\_\+\+R\+E\+S\+\_\+18\+\_\+\+B\+IT or M\+C\+P3421\+\_\+\+U\+L\+T\+R\+A\+\_\+\+H\+I\+G\+H\+\_\+\+R\+ES \\
+\hline
+{\em float} & temperature\+: ambient temperature for sensor compensation (-\/1000 if doesn\textquotesingle{}t needed) \\
+\hline
+{\em uint8\+\_\+t} & electrode\+: electrode to read W\+O\+R\+K\+I\+N\+G\+\_\+\+E\+L\+E\+C\+T\+R\+O\+DE A\+U\+X\+I\+L\+I\+A\+R\+Y\+\_\+\+E\+L\+E\+C\+T\+R\+O\+DE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The concetration value in ppm / L\+EL, -\/1000 if error. 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Humidity@{get\+Humidity}}
+\index{get\+Humidity@{get\+Humidity}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Humidity()}{getHumidity()}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Humidity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a455f761086e030428ca77d6a6f535ad0}{}\label{class_gas_a455f761086e030428ca77d6a6f535ad0}
+
+
+This function reads relative humidity from \hyperlink{class_b_m_e280}{B\+M\+E280}. 
+
+\begin{DoxyReturn}{Returns}
+The relative humidity, -\/1000 if error 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Pressure@{get\+Pressure}}
+\index{get\+Pressure@{get\+Pressure}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Pressure()}{getPressure()}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Pressure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_afa9e24ecbe2f2201b6b64061d9a80a5a}{}\label{class_gas_afa9e24ecbe2f2201b6b64061d9a80a5a}
+
+
+This function reads pressure from \hyperlink{class_b_m_e280}{B\+M\+E280}. 
+
+\begin{DoxyReturn}{Returns}
+The pressure, -\/1000 if error 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Temp()}{getTemp()}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a1650ec9742154290a7a3f63379050d26}{}\label{class_gas_a1650ec9742154290a7a3f63379050d26}
+
+
+M\+E\+A\+S\+U\+RE F\+U\+N\+C\+T\+I\+O\+NS. 
+
+M\+E\+A\+S\+U\+R\+I\+NG F\+U\+N\+C\+T\+I\+O\+NS This function reads temperature
+
+\begin{DoxyReturn}{Returns}
+The temperature, -\/1000 if error 
+\end{DoxyReturn}
+\index{Gas@{Gas}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{get\+Temp(bool sensor)}{getTemp(bool sensor)}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::get\+Temp (
+\begin{DoxyParamCaption}
+\item[{bool}]{sensor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_acdb7c24963bd545e02e582103260f866}{}\label{class_gas_acdb7c24963bd545e02e582103260f866}
+
+
+This function reads temperature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & sensor\+: \textquotesingle{}0\textquotesingle{} for \hyperlink{class_l_m_p91000}{L\+M\+P91000}, \textquotesingle{}1\textquotesingle{} for \hyperlink{class_b_m_e280}{B\+M\+E280} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The temperature, -\/1000 if error 
+\end{DoxyReturn}
+\index{Gas@{Gas}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gas\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a85a1a2ea4d0ac98e87b61b8662a03428}{}\label{class_gas_a85a1a2ea4d0ac98e87b61b8662a03428}
+
+
+This function turns off the A\+FE board. 
+
+\begin{DoxyReturn}{Returns}
+pwr\+Gas\+Register 
+\end{DoxyReturn}
+\index{Gas@{Gas}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{O\+F\+F(uint8\+\_\+t enable\+\_\+\+F\+E\+T)}{OFF(uint8_t enable_FET)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gas\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{enable\+\_\+\+F\+ET}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_ae4b6c428a66cd5181f6823207b32500e}{}\label{class_gas_ae4b6c428a66cd5181f6823207b32500e}
+
+
+This function turns off the A\+FE board and enables the shorting F\+ET for 3 electrode boards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & enable\+\_\+\+F\+ET\+: \textquotesingle{}1\textquotesingle{} to enable the F\+ET, \textquotesingle{}F\+E\+T\+\_\+\+N\+O\+T\+\_\+\+S\+H\+O\+R\+T\+ED\textquotesingle{} if not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pwr\+Gas\+Register 
+\end{DoxyReturn}
+\index{Gas@{Gas}!ON@{ON}}
+\index{ON@{ON}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Gas\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a92f32be9143d2ad3bd42aa6316f02632}{}\label{class_gas_a92f32be9143d2ad3bd42aa6316f02632}
+P\+O\+W\+ER A\+ND C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON F\+U\+N\+C\+T\+I\+O\+NS This function turns on the A\+FE board and selects a default gain for transimpendance amplifier
+
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 no communication with \hyperlink{class_l_m_p91000}{L\+M\+P91000}
+\end{DoxyReturn}
+P\+U\+B\+L\+IC F\+U\+N\+C\+T\+I\+O\+NS ///////////////////////////////////////////////////////// P\+O\+W\+ER A\+ND C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON F\+U\+N\+C\+T\+I\+O\+NS \index{Gas@{Gas}!ON@{ON}}
+\index{ON@{ON}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{O\+N(float R\+\_\+gain)}{ON(float R_gain)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Gas\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{float}]{R\+\_\+gain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_a8ca77049a319053cff80057cf80deb43}{}\label{class_gas_a8ca77049a319053cff80057cf80deb43}
+
+
+This function turns on the A\+FE board and selects a gain for transimpendance amplifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & R\+\_\+gain\+: gain for transimpendance amplifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK -\/1 no communication with \hyperlink{class_l_m_p91000}{L\+M\+P91000} 
+\end{DoxyReturn}
+\index{Gas@{Gas}!ppm2perc@{ppm2perc}}
+\index{ppm2perc@{ppm2perc}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{ppm2perc(float ppm\+\_\+conc)}{ppm2perc(float ppm_conc)}}]{\setlength{\rightskip}{0pt plus 5cm}float Gas\+::ppm2perc (
+\begin{DoxyParamCaption}
+\item[{float}]{ppm\+\_\+conc}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_abdf5e9ce7bb1eb355bc1d649dcdb76f5}{}\label{class_gas_abdf5e9ce7bb1eb355bc1d649dcdb76f5}
+
+
+This function converts concentration in ppm to \%. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & ppm\+\_\+conc\+: concentration in ppm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The concetration value in \% 
+\end{DoxyReturn}
+\index{Gas@{Gas}!set\+Power\+Mode@{set\+Power\+Mode}}
+\index{set\+Power\+Mode@{set\+Power\+Mode}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{set\+Power\+Mode(uint8\+\_\+t power\+\_\+mode)}{setPowerMode(uint8_t power_mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Gas\+::set\+Power\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{power\+\_\+mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_aa9727ba2e2d29e1979da2b419564e679}{}\label{class_gas_aa9727ba2e2d29e1979da2b419564e679}
+
+
+This function sets the power mode of \hyperlink{class_l_m_p91000}{L\+M\+P91000}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & power\+\_\+mode\+: M\+O\+D\+E\+\_\+\+D\+E\+E\+P\+\_\+\+S\+L\+E\+EP M\+O\+D\+E\+\_\+2\+\_\+\+L\+E\+A\+D\+\_\+\+G\+A\+L\+V\+A\+N\+IC M\+O\+D\+E\+\_\+\+S\+T\+A\+N\+D\+\_\+\+BY M\+O\+D\+E\+\_\+3\+\_\+\+L\+E\+A\+D\+\_\+\+A\+M\+P\+E\+R\+I\+O\+M\+E\+T\+R\+IC M\+O\+D\+E\+\_\+\+T\+E\+M\+P\+\_\+\+T\+I\+A\+\_\+\+O\+FF M\+O\+D\+E\+\_\+\+T\+E\+M\+P\+\_\+\+T\+I\+A\+\_\+\+ON M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+C\+H\+A\+N\+GE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if OK 
+\end{DoxyReturn}
+\index{Gas@{Gas}!show\+Sensor\+Info@{show\+Sensor\+Info}}
+\index{show\+Sensor\+Info@{show\+Sensor\+Info}!Gas@{Gas}}
+\subsubsection[{\texorpdfstring{show\+Sensor\+Info()}{showSensorInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gas\+::show\+Sensor\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gas_aa453bad7933117048997ca9c14c47d54}{}\label{class_gas_aa453bad7933117048997ca9c14c47d54}
+
+
+M\+I\+S\+C\+E\+L\+A\+N\+E\+US. 
+
+M\+I\+S\+C\+E\+L\+A\+N\+E\+US This function shows the information about the sensor
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\hyperlink{_wasp_sensor_gas___pro_8h}{Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/Wasp\+Sensor\+Gas\+\_\+\+Pro.\+cpp\end{DoxyCompactItemize}

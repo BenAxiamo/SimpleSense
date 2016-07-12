@@ -1,0 +1,779 @@
+\hypertarget{_wasp_frame_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Frame/\+Wasp\+Frame.h File Reference}
+\label{_wasp_frame_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Frame/\+Wasp\+Frame.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Frame/\+Wasp\+Frame.\+h}}
+
+
+Library for creating formated frames.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$W\+Constants.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}../\+Wasp\+A\+E\+S/\+Wasp\+A\+E\+S.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wasp_frame}{Wasp\+Frame}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wasp_frame}{Wasp\+Frame} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wasp_frame_8h_aaf382fa762841aa2b5a5069293fe42c8}{S\+E\+N\+S\+O\+R\+\_\+\+CO}~0
+\begin{DoxyCompactList}\small\item\em Gases Board sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a165ec3bdcff60c11e283c2fa3b78adfb}{S\+E\+N\+S\+O\+R\+\_\+\+C\+O2}~1\hypertarget{_wasp_frame_8h_a165ec3bdcff60c11e283c2fa3b78adfb}{}\label{_wasp_frame_8h_a165ec3bdcff60c11e283c2fa3b78adfb}
+
+\begin{DoxyCompactList}\small\item\em Carbon Dioxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a0cd690275273a54e337218269fb7d4bf}{S\+E\+N\+S\+O\+R\+\_\+\+O2}~2\hypertarget{_wasp_frame_8h_a0cd690275273a54e337218269fb7d4bf}{}\label{_wasp_frame_8h_a0cd690275273a54e337218269fb7d4bf}
+
+\begin{DoxyCompactList}\small\item\em Oxygen measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2bc2ee53c9c792f3e5f440953b717b14}{S\+E\+N\+S\+O\+R\+\_\+\+C\+H4}~3\hypertarget{_wasp_frame_8h_a2bc2ee53c9c792f3e5f440953b717b14}{}\label{_wasp_frame_8h_a2bc2ee53c9c792f3e5f440953b717b14}
+
+\begin{DoxyCompactList}\small\item\em Methane measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a95f0f28a15b0cd51d7df6a4288400b38}{S\+E\+N\+S\+O\+R\+\_\+\+L\+PG}~4\hypertarget{_wasp_frame_8h_a95f0f28a15b0cd51d7df6a4288400b38}{}\label{_wasp_frame_8h_a95f0f28a15b0cd51d7df6a4288400b38}
+
+\begin{DoxyCompactList}\small\item\em Liquefied Pretoleum Gases measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af727e3eb263e55e329547b2b90665937}{S\+E\+N\+S\+O\+R\+\_\+\+N\+H3}~5\hypertarget{_wasp_frame_8h_af727e3eb263e55e329547b2b90665937}{}\label{_wasp_frame_8h_af727e3eb263e55e329547b2b90665937}
+
+\begin{DoxyCompactList}\small\item\em Ammonia measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a6436d2da5873621e1ed7d3637fe77713}{S\+E\+N\+S\+O\+R\+\_\+\+A\+P1}~6\hypertarget{_wasp_frame_8h_a6436d2da5873621e1ed7d3637fe77713}{}\label{_wasp_frame_8h_a6436d2da5873621e1ed7d3637fe77713}
+
+\begin{DoxyCompactList}\small\item\em Air Pollutans 1 measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aed7aa7ad9fd88f7caec42e2229932e23}{S\+E\+N\+S\+O\+R\+\_\+\+A\+P2}~7\hypertarget{_wasp_frame_8h_aed7aa7ad9fd88f7caec42e2229932e23}{}\label{_wasp_frame_8h_aed7aa7ad9fd88f7caec42e2229932e23}
+
+\begin{DoxyCompactList}\small\item\em Air Pollutans 2 measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a85daf48249b8539e4cfc26d2cef5a8ba}{S\+E\+N\+S\+O\+R\+\_\+\+SV}~8\hypertarget{_wasp_frame_8h_a85daf48249b8539e4cfc26d2cef5a8ba}{}\label{_wasp_frame_8h_a85daf48249b8539e4cfc26d2cef5a8ba}
+
+\begin{DoxyCompactList}\small\item\em Solvent Vapors measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a79558b0c7ff9102a5a435d04c8f66af3}{S\+E\+N\+S\+O\+R\+\_\+\+N\+O2}~9\hypertarget{_wasp_frame_8h_a79558b0c7ff9102a5a435d04c8f66af3}{}\label{_wasp_frame_8h_a79558b0c7ff9102a5a435d04c8f66af3}
+
+\begin{DoxyCompactList}\small\item\em Nitrogen Dioxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a31f3929bc6276693dd21f90aa32b3101}{S\+E\+N\+S\+O\+R\+\_\+\+O3}~10\hypertarget{_wasp_frame_8h_a31f3929bc6276693dd21f90aa32b3101}{}\label{_wasp_frame_8h_a31f3929bc6276693dd21f90aa32b3101}
+
+\begin{DoxyCompactList}\small\item\em Ozone measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2e91a97543c8b2631d500c20df65d9ae}{S\+E\+N\+S\+O\+R\+\_\+\+V\+OC}~11\hypertarget{_wasp_frame_8h_a2e91a97543c8b2631d500c20df65d9ae}{}\label{_wasp_frame_8h_a2e91a97543c8b2631d500c20df65d9ae}
+
+\begin{DoxyCompactList}\small\item\em Hydrocarbons measurement type. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+CA}~12\hypertarget{_wasp_frame_8h_a8c573247ff00208fd96e037b30c91bd6}{}\label{_wasp_frame_8h_a8c573247ff00208fd96e037b30c91bd6}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+FA}~13\hypertarget{_wasp_frame_8h_a6340a363d4a4fca9eb37dce0d69a5fc3}{}\label{_wasp_frame_8h_a6340a363d4a4fca9eb37dce0d69a5fc3}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+H\+U\+MA}~14\hypertarget{_wasp_frame_8h_a423eb0db83df6f2f31e1b397f7679a8a}{}\label{_wasp_frame_8h_a423eb0db83df6f2f31e1b397f7679a8a}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a5dd6522ab7f5a8e191b5dbca497271e0}{S\+E\+N\+S\+O\+R\+\_\+\+PA}~15\hypertarget{_wasp_frame_8h_a5dd6522ab7f5a8e191b5dbca497271e0}{}\label{_wasp_frame_8h_a5dd6522ab7f5a8e191b5dbca497271e0}
+
+\begin{DoxyCompactList}\small\item\em Pressure atmospheric measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a3d6adb8a3b8616f8e57387eae0bdaf57}{S\+E\+N\+S\+O\+R\+\_\+\+PW}~16
+\begin{DoxyCompactList}\small\item\em Events Board Sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abf94b47375db0a5b7d9abf49c172e45e}{S\+E\+N\+S\+O\+R\+\_\+\+B\+E\+ND}~17\hypertarget{_wasp_frame_8h_abf94b47375db0a5b7d9abf49c172e45e}{}\label{_wasp_frame_8h_abf94b47375db0a5b7d9abf49c172e45e}
+
+\begin{DoxyCompactList}\small\item\em Bend measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa9b37508660c9ca5bcb20709e514c3aa}{S\+E\+N\+S\+O\+R\+\_\+\+V\+BR}~18\hypertarget{_wasp_frame_8h_aa9b37508660c9ca5bcb20709e514c3aa}{}\label{_wasp_frame_8h_aa9b37508660c9ca5bcb20709e514c3aa}
+
+\begin{DoxyCompactList}\small\item\em Vibration measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af5a0cbd62394243d503b14a4e5d686b8}{S\+E\+N\+S\+O\+R\+\_\+\+H\+A\+LL}~19\hypertarget{_wasp_frame_8h_af5a0cbd62394243d503b14a4e5d686b8}{}\label{_wasp_frame_8h_af5a0cbd62394243d503b14a4e5d686b8}
+
+\begin{DoxyCompactList}\small\item\em Hall Effect measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a198a73a7a1c490c0b5b582705b48db7b}{S\+E\+N\+S\+O\+R\+\_\+\+LP}~20\hypertarget{_wasp_frame_8h_a198a73a7a1c490c0b5b582705b48db7b}{}\label{_wasp_frame_8h_a198a73a7a1c490c0b5b582705b48db7b}
+
+\begin{DoxyCompactList}\small\item\em Liquid Presence measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aec169ecb16bfba9eeff9ee7aa1b6740b}{S\+E\+N\+S\+O\+R\+\_\+\+LL}~21\hypertarget{_wasp_frame_8h_aec169ecb16bfba9eeff9ee7aa1b6740b}{}\label{_wasp_frame_8h_aec169ecb16bfba9eeff9ee7aa1b6740b}
+
+\begin{DoxyCompactList}\small\item\em Liquid Level measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a716d18123493c94696c5d457bb836297}{S\+E\+N\+S\+O\+R\+\_\+\+L\+UM}~22\hypertarget{_wasp_frame_8h_a716d18123493c94696c5d457bb836297}{}\label{_wasp_frame_8h_a716d18123493c94696c5d457bb836297}
+
+\begin{DoxyCompactList}\small\item\em Luminosity measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a52800853a7695ab6095b55d6c50eee37}{S\+E\+N\+S\+O\+R\+\_\+\+P\+IR}~23\hypertarget{_wasp_frame_8h_a52800853a7695ab6095b55d6c50eee37}{}\label{_wasp_frame_8h_a52800853a7695ab6095b55d6c50eee37}
+
+\begin{DoxyCompactList}\small\item\em Presence measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afe4d8fb5e709dee619f265dec52ff4a4}{S\+E\+N\+S\+O\+R\+\_\+\+ST}~24\hypertarget{_wasp_frame_8h_afe4d8fb5e709dee619f265dec52ff4a4}{}\label{_wasp_frame_8h_afe4d8fb5e709dee619f265dec52ff4a4}
+
+\begin{DoxyCompactList}\small\item\em Stretch measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af1060e15eef528fda5658057b2e0b4f8}{S\+E\+N\+S\+O\+R\+\_\+\+M\+CP}~25
+\begin{DoxyCompactList}\small\item\em Smart cities sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a19f8c9d5025bb12d094601801fe7412d}{S\+E\+N\+S\+O\+R\+\_\+\+C\+DG}~26\hypertarget{_wasp_frame_8h_a19f8c9d5025bb12d094601801fe7412d}{}\label{_wasp_frame_8h_a19f8c9d5025bb12d094601801fe7412d}
+
+\begin{DoxyCompactList}\small\item\em Crack detection gauge measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a5ded378d4525e6c4cbb1792981c6a37d}{S\+E\+N\+S\+O\+R\+\_\+\+C\+PG}~27\hypertarget{_wasp_frame_8h_a5ded378d4525e6c4cbb1792981c6a37d}{}\label{_wasp_frame_8h_a5ded378d4525e6c4cbb1792981c6a37d}
+
+\begin{DoxyCompactList}\small\item\em Crack propagation gauge measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a14f252a48cc99ccddca211eb21cb6b99}{S\+E\+N\+S\+O\+R\+\_\+\+LD}~28\hypertarget{_wasp_frame_8h_a14f252a48cc99ccddca211eb21cb6b99}{}\label{_wasp_frame_8h_a14f252a48cc99ccddca211eb21cb6b99}
+
+\begin{DoxyCompactList}\small\item\em Linear Displacement measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa29c0f25d0fac4cf9941269c9f966623}{S\+E\+N\+S\+O\+R\+\_\+\+D\+U\+ST}~29\hypertarget{_wasp_frame_8h_aa29c0f25d0fac4cf9941269c9f966623}{}\label{_wasp_frame_8h_aa29c0f25d0fac4cf9941269c9f966623}
+
+\begin{DoxyCompactList}\small\item\em Dust measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a398069e1b8fb4344ed5affc95b35f5c3}{S\+E\+N\+S\+O\+R\+\_\+\+US}~30\hypertarget{_wasp_frame_8h_a398069e1b8fb4344ed5affc95b35f5c3}{}\label{_wasp_frame_8h_a398069e1b8fb4344ed5affc95b35f5c3}
+
+\begin{DoxyCompactList}\small\item\em Ultrasound measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa5f2849a5758a4746e30e32510b92f82}{S\+E\+N\+S\+O\+R\+\_\+\+MF}~31
+\begin{DoxyCompactList}\small\item\em Smart parking sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2c043e88985a4b41d1fe05fa40980b29}{S\+E\+N\+S\+O\+R\+\_\+\+PS}~32\hypertarget{_wasp_frame_8h_a2c043e88985a4b41d1fe05fa40980b29}{}\label{_wasp_frame_8h_a2c043e88985a4b41d1fe05fa40980b29}
+
+\begin{DoxyCompactList}\small\item\em Parking Spot Status measurement type. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+CB}~33\hypertarget{_wasp_frame_8h_a182056a367afc265965bc5e6a478bd27}{}\label{_wasp_frame_8h_a182056a367afc265965bc5e6a478bd27}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+FB}~34\hypertarget{_wasp_frame_8h_a1fd5e1ec5a7f1f46ecf8c475d4854858}{}\label{_wasp_frame_8h_a1fd5e1ec5a7f1f46ecf8c475d4854858}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+H\+U\+MB}~35\hypertarget{_wasp_frame_8h_ab82bfe95d75dc9d61019eae1f317a2b2}{}\label{_wasp_frame_8h_ab82bfe95d75dc9d61019eae1f317a2b2}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+LT}~36\hypertarget{_wasp_frame_8h_aa68353b4bf8fafa1e2ebc3e243e30eaa}{}\label{_wasp_frame_8h_aa68353b4bf8fafa1e2ebc3e243e30eaa}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a47efeb407b063989580d49355254d77f}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+IL}~37\hypertarget{_wasp_frame_8h_a47efeb407b063989580d49355254d77f}{}\label{_wasp_frame_8h_a47efeb407b063989580d49355254d77f}
+
+\begin{DoxyCompactList}\small\item\em Soil Temperature / Moisture measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a0b1787382eed1350d8b9a9d05eb43ff2}{S\+E\+N\+S\+O\+R\+\_\+\+LW}~38\hypertarget{_wasp_frame_8h_a0b1787382eed1350d8b9a9d05eb43ff2}{}\label{_wasp_frame_8h_a0b1787382eed1350d8b9a9d05eb43ff2}
+
+\begin{DoxyCompactList}\small\item\em Leaf Wetness measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a6626a09b17106725527c6cfd9f7d0f8a}{S\+E\+N\+S\+O\+R\+\_\+\+P\+AR}~39\hypertarget{_wasp_frame_8h_a6626a09b17106725527c6cfd9f7d0f8a}{}\label{_wasp_frame_8h_a6626a09b17106725527c6cfd9f7d0f8a}
+
+\begin{DoxyCompactList}\small\item\em Solar Radiation measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_adfa8edb5d6beca597b23ebc6a66ae663}{S\+E\+N\+S\+O\+R\+\_\+\+UV}~40\hypertarget{_wasp_frame_8h_adfa8edb5d6beca597b23ebc6a66ae663}{}\label{_wasp_frame_8h_adfa8edb5d6beca597b23ebc6a66ae663}
+
+\begin{DoxyCompactList}\small\item\em Ultraviolet Radiation measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a20d8310b8890d162fdbb97a1ca3e2057}{S\+E\+N\+S\+O\+R\+\_\+\+TD}~41\hypertarget{_wasp_frame_8h_a20d8310b8890d162fdbb97a1ca3e2057}{}\label{_wasp_frame_8h_a20d8310b8890d162fdbb97a1ca3e2057}
+
+\begin{DoxyCompactList}\small\item\em Trunk Diameter measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afc815ae46245ca596776fbde2c3d7358}{S\+E\+N\+S\+O\+R\+\_\+\+SD}~42\hypertarget{_wasp_frame_8h_afc815ae46245ca596776fbde2c3d7358}{}\label{_wasp_frame_8h_afc815ae46245ca596776fbde2c3d7358}
+
+\begin{DoxyCompactList}\small\item\em Stem Diameter measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abcc8eff5caeef32e6a87d2f1e056ca94}{S\+E\+N\+S\+O\+R\+\_\+\+FD}~43\hypertarget{_wasp_frame_8h_abcc8eff5caeef32e6a87d2f1e056ca94}{}\label{_wasp_frame_8h_abcc8eff5caeef32e6a87d2f1e056ca94}
+
+\begin{DoxyCompactList}\small\item\em Fruit Diameter measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a5c3d23a936e4729b0b663e19367ce1d7}{S\+E\+N\+S\+O\+R\+\_\+\+A\+NE}~44\hypertarget{_wasp_frame_8h_a5c3d23a936e4729b0b663e19367ce1d7}{}\label{_wasp_frame_8h_a5c3d23a936e4729b0b663e19367ce1d7}
+
+\begin{DoxyCompactList}\small\item\em Anemometer measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a21aa1940fb4afc27fd5caea096a94d5c}{S\+E\+N\+S\+O\+R\+\_\+\+WV}~45\hypertarget{_wasp_frame_8h_a21aa1940fb4afc27fd5caea096a94d5c}{}\label{_wasp_frame_8h_a21aa1940fb4afc27fd5caea096a94d5c}
+
+\begin{DoxyCompactList}\small\item\em Wind Vane measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a6b18e63972328d7f8db3e226b8f56a8b}{S\+E\+N\+S\+O\+R\+\_\+\+P\+LV}~46\hypertarget{_wasp_frame_8h_a6b18e63972328d7f8db3e226b8f56a8b}{}\label{_wasp_frame_8h_a6b18e63972328d7f8db3e226b8f56a8b}
+
+\begin{DoxyCompactList}\small\item\em Pluviometer measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a6df2bef87cb3980c8648f34aae79e212}{S\+E\+N\+S\+O\+R\+\_\+\+R\+AD}~47
+\begin{DoxyCompactList}\small\item\em Radiation sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a10308410796bcce4d0f967cc017c3150}{S\+E\+N\+S\+O\+R\+\_\+\+CU}~48
+\begin{DoxyCompactList}\small\item\em Smart Metering sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af1546af6d8ed9d8a9dac8508a01a625f}{S\+E\+N\+S\+O\+R\+\_\+\+WF}~49\hypertarget{_wasp_frame_8h_af1546af6d8ed9d8a9dac8508a01a625f}{}\label{_wasp_frame_8h_af1546af6d8ed9d8a9dac8508a01a625f}
+
+\begin{DoxyCompactList}\small\item\em Water flow measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aedf4fffbf6d5e66c17bea07f84b62a5d}{S\+E\+N\+S\+O\+R\+\_\+\+LC}~50\hypertarget{_wasp_frame_8h_aedf4fffbf6d5e66c17bea07f84b62a5d}{}\label{_wasp_frame_8h_aedf4fffbf6d5e66c17bea07f84b62a5d}
+
+\begin{DoxyCompactList}\small\item\em Load cell measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a45c9a1030c6cb8c842f1146ca1e3393a}{S\+E\+N\+S\+O\+R\+\_\+\+DF}~51\hypertarget{_wasp_frame_8h_a45c9a1030c6cb8c842f1146ca1e3393a}{}\label{_wasp_frame_8h_a45c9a1030c6cb8c842f1146ca1e3393a}
+
+\begin{DoxyCompactList}\small\item\em Distance foil measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ab5c75432c39eda5a774ad0a821729513}{S\+E\+N\+S\+O\+R\+\_\+\+B\+AT}~52
+\begin{DoxyCompactList}\small\item\em Additional sensor measurements. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af5c310fb4b6be46c8e08838d0fc6f0b2}{S\+E\+N\+S\+O\+R\+\_\+\+G\+PS}~53\hypertarget{_wasp_frame_8h_af5c310fb4b6be46c8e08838d0fc6f0b2}{}\label{_wasp_frame_8h_af5c310fb4b6be46c8e08838d0fc6f0b2}
+
+\begin{DoxyCompactList}\small\item\em Global Positioning System measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a8cc50bfc070f4c4c11cddb55a456f2c6}{S\+E\+N\+S\+O\+R\+\_\+\+R\+S\+SI}~54\hypertarget{_wasp_frame_8h_a8cc50bfc070f4c4c11cddb55a456f2c6}{}\label{_wasp_frame_8h_a8cc50bfc070f4c4c11cddb55a456f2c6}
+
+\begin{DoxyCompactList}\small\item\em R\+S\+SI measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a3a70db471777b7f49b96e895bb7987bb}{S\+E\+N\+S\+O\+R\+\_\+\+M\+AC}~55\hypertarget{_wasp_frame_8h_a3a70db471777b7f49b96e895bb7987bb}{}\label{_wasp_frame_8h_a3a70db471777b7f49b96e895bb7987bb}
+
+\begin{DoxyCompactList}\small\item\em M\+AC Address measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2317c37f4dc3397f851da6c014e1d4a3}{S\+E\+N\+S\+O\+R\+\_\+\+NA}~56\hypertarget{_wasp_frame_8h_a2317c37f4dc3397f851da6c014e1d4a3}{}\label{_wasp_frame_8h_a2317c37f4dc3397f851da6c014e1d4a3}
+
+\begin{DoxyCompactList}\small\item\em Network Address measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ad533cda02797e4015729584af153be61}{S\+E\+N\+S\+O\+R\+\_\+\+N\+ID}~57\hypertarget{_wasp_frame_8h_ad533cda02797e4015729584af153be61}{}\label{_wasp_frame_8h_ad533cda02797e4015729584af153be61}
+
+\begin{DoxyCompactList}\small\item\em Network Identifier origin measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a86dc253a56b1c61bf2f2ee3fec7ecb7c}{S\+E\+N\+S\+O\+R\+\_\+\+D\+A\+TE}~58\hypertarget{_wasp_frame_8h_a86dc253a56b1c61bf2f2ee3fec7ecb7c}{}\label{_wasp_frame_8h_a86dc253a56b1c61bf2f2ee3fec7ecb7c}
+
+\begin{DoxyCompactList}\small\item\em Date measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a29753842428f7af333a76486ce0286e2}{S\+E\+N\+S\+O\+R\+\_\+\+T\+I\+ME}~59\hypertarget{_wasp_frame_8h_a29753842428f7af333a76486ce0286e2}{}\label{_wasp_frame_8h_a29753842428f7af333a76486ce0286e2}
+
+\begin{DoxyCompactList}\small\item\em Time measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a7b24f1411d96f6f38b4de8627ce62388}{S\+E\+N\+S\+O\+R\+\_\+\+G\+MT}~60\hypertarget{_wasp_frame_8h_a7b24f1411d96f6f38b4de8627ce62388}{}\label{_wasp_frame_8h_a7b24f1411d96f6f38b4de8627ce62388}
+
+\begin{DoxyCompactList}\small\item\em G\+MT measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a5b764c55761c42cc9d6213440d18e8b3}{S\+E\+N\+S\+O\+R\+\_\+\+R\+AM}~61\hypertarget{_wasp_frame_8h_a5b764c55761c42cc9d6213440d18e8b3}{}\label{_wasp_frame_8h_a5b764c55761c42cc9d6213440d18e8b3}
+
+\begin{DoxyCompactList}\small\item\em R\+AM measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a7d9d61530f6ba57fe66af7634fdb145f}{S\+E\+N\+S\+O\+R\+\_\+\+I\+N\+\_\+\+T\+E\+MP}~62\hypertarget{_wasp_frame_8h_a7d9d61530f6ba57fe66af7634fdb145f}{}\label{_wasp_frame_8h_a7d9d61530f6ba57fe66af7634fdb145f}
+
+\begin{DoxyCompactList}\small\item\em Internal temperature measurement type. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+A\+CC}~63\hypertarget{_wasp_frame_8h_afbeddbd19ea93a76704f8e70fb72df24}{}\label{_wasp_frame_8h_afbeddbd19ea93a76704f8e70fb72df24}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a65887f6d818bb16e876d0ad9901021bd}{S\+E\+N\+S\+O\+R\+\_\+\+M\+I\+L\+L\+IS}~64\hypertarget{_wasp_frame_8h_a65887f6d818bb16e876d0ad9901021bd}{}\label{_wasp_frame_8h_a65887f6d818bb16e876d0ad9901021bd}
+
+\begin{DoxyCompactList}\small\item\em Millis measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa4190339b2e98cd8e022ae83caecb441}{S\+E\+N\+S\+O\+R\+\_\+\+S\+TR}~65
+\begin{DoxyCompactList}\small\item\em Special sensor measurements. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+M\+BT}~66\hypertarget{_wasp_frame_8h_a3b1ea56fe1f3d4240ef3e14f30375f28}{}\label{_wasp_frame_8h_a3b1ea56fe1f3d4240ef3e14f30375f28}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+M\+W\+I\+FI}~67\hypertarget{_wasp_frame_8h_acc09d588c981fe79a269fccb523b9050}{}\label{_wasp_frame_8h_acc09d588c981fe79a269fccb523b9050}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+U\+ID}~68\hypertarget{_wasp_frame_8h_a37d1347e19f78947983550712e500e6f}{}\label{_wasp_frame_8h_a37d1347e19f78947983550712e500e6f}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+RB}~69\hypertarget{_wasp_frame_8h_a79e4f7f7e438622d1e207b2695c5fad2}{}\label{_wasp_frame_8h_a79e4f7f7e438622d1e207b2695c5fad2}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_ab806aeb2b52a527a6b105c35e0c5697c}{S\+E\+N\+S\+O\+R\+\_\+\+PH}~70
+\begin{DoxyCompactList}\small\item\em Smart Water. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abddd4261058ce0aedda4af86b1d3980c}{S\+E\+N\+S\+O\+R\+\_\+\+O\+RP}~71\hypertarget{_wasp_frame_8h_abddd4261058ce0aedda4af86b1d3980c}{}\label{_wasp_frame_8h_abddd4261058ce0aedda4af86b1d3980c}
+
+\begin{DoxyCompactList}\small\item\em Oxidation Reduction Potential measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a975e9c8274c0dce31c3ad462f006c0a5}{S\+E\+N\+S\+O\+R\+\_\+\+DO}~72\hypertarget{_wasp_frame_8h_a975e9c8274c0dce31c3ad462f006c0a5}{}\label{_wasp_frame_8h_a975e9c8274c0dce31c3ad462f006c0a5}
+
+\begin{DoxyCompactList}\small\item\em Disolved Oxygen measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a966c21d42ee6e6b24ee531a407abaf18}{S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+ND}~73\hypertarget{_wasp_frame_8h_a966c21d42ee6e6b24ee531a407abaf18}{}\label{_wasp_frame_8h_a966c21d42ee6e6b24ee531a407abaf18}
+
+\begin{DoxyCompactList}\small\item\em Conductivity measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a0817728c2a0dd30564c3b3d3443a4d06}{S\+E\+N\+S\+O\+R\+\_\+\+WT}~74\hypertarget{_wasp_frame_8h_a0817728c2a0dd30564c3b3d3443a4d06}{}\label{_wasp_frame_8h_a0817728c2a0dd30564c3b3d3443a4d06}
+
+\begin{DoxyCompactList}\small\item\em Water Temperature measurement type. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+NA}~75\hypertarget{_wasp_frame_8h_ac32c96cccdfe26a99ed96abd39524232}{}\label{_wasp_frame_8h_ac32c96cccdfe26a99ed96abd39524232}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+CA}~76\hypertarget{_wasp_frame_8h_adbda2caf003168cf1b58f96bca701ac1}{}\label{_wasp_frame_8h_adbda2caf003168cf1b58f96bca701ac1}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+IF}~77\hypertarget{_wasp_frame_8h_a2e876fc020ae9148ef8bae2cccfc2c84}{}\label{_wasp_frame_8h_a2e876fc020ae9148ef8bae2cccfc2c84}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+CL}~78\hypertarget{_wasp_frame_8h_ada0f9c9d1d56a3f0afe34bb6812dd1fd}{}\label{_wasp_frame_8h_ada0f9c9d1d56a3f0afe34bb6812dd1fd}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+BR}~79\hypertarget{_wasp_frame_8h_a929efb134e017a604c720131646439e0}{}\label{_wasp_frame_8h_a929efb134e017a604c720131646439e0}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+II}~80\hypertarget{_wasp_frame_8h_aa8a5a20f4e41ddf62aa106aadf7a8abf}{}\label{_wasp_frame_8h_aa8a5a20f4e41ddf62aa106aadf7a8abf}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+C\+U2}~81\hypertarget{_wasp_frame_8h_a3f3524200b171c0d799a69e7cb50678d}{}\label{_wasp_frame_8h_a3f3524200b171c0d799a69e7cb50678d}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+IK}~82\hypertarget{_wasp_frame_8h_aa3ab618e9de11b314ced4b571eafee46}{}\label{_wasp_frame_8h_aa3ab618e9de11b314ced4b571eafee46}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+M\+G2}~83\hypertarget{_wasp_frame_8h_a44e8f8fcd3eb0a076fb2f10333435576}{}\label{_wasp_frame_8h_a44e8f8fcd3eb0a076fb2f10333435576}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+D\+I\+N\+O3}~84\hypertarget{_wasp_frame_8h_afcbcd706cfbd09d28980f63d13e9f9c7}{}\label{_wasp_frame_8h_afcbcd706cfbd09d28980f63d13e9f9c7}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a0a3d31927d79dbdff06d8561d8dd2419}{S\+E\+N\+S\+O\+R\+\_\+\+T\+X\+\_\+\+P\+WR}~85\hypertarget{_wasp_frame_8h_a0a3d31927d79dbdff06d8561d8dd2419}{}\label{_wasp_frame_8h_a0a3d31927d79dbdff06d8561d8dd2419}
+
+\begin{DoxyCompactList}\small\item\em X\+Bee transmision power. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a14f81174d54afd8ad17b4797bf4c2120}{S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST}~86
+\begin{DoxyCompactList}\small\item\em Smart Libelium. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a7a55f7c89648a5c3a2c2963c75b23ac1}{S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+SP}~87\hypertarget{_wasp_frame_8h_a7a55f7c89648a5c3a2c2963c75b23ac1}{}\label{_wasp_frame_8h_a7a55f7c89648a5c3a2c2963c75b23ac1}
+
+\begin{DoxyCompactList}\small\item\em X\+Bee Digimesh asleep time for cyclic sleep mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ae7c6e20692a9c18381863eba007ca487}{S\+E\+N\+S\+O\+R\+\_\+\+L\+UX}~88\hypertarget{_wasp_frame_8h_ae7c6e20692a9c18381863eba007ca487}{}\label{_wasp_frame_8h_ae7c6e20692a9c18381863eba007ca487}
+
+\begin{DoxyCompactList}\small\item\em Luxes measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afcdd251d4c592a7596aa1209f661faa5}{S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED}~89
+\begin{DoxyCompactList}\small\item\em G\+PS. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a616cd4ae0169e17c97d88eeeb14d8475}{S\+E\+N\+S\+O\+R\+\_\+\+C\+O\+U\+R\+SE}~90\hypertarget{_wasp_frame_8h_a616cd4ae0169e17c97d88eeeb14d8475}{}\label{_wasp_frame_8h_a616cd4ae0169e17c97d88eeeb14d8475}
+
+\begin{DoxyCompactList}\small\item\em G\+PS course over the ground measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ad2dbc390f92f56562e6b97f6d40ecd50}{S\+E\+N\+S\+O\+R\+\_\+\+A\+L\+T\+I\+T\+U\+DE}~91\hypertarget{_wasp_frame_8h_ad2dbc390f92f56562e6b97f6d40ecd50}{}\label{_wasp_frame_8h_ad2dbc390f92f56562e6b97f6d40ecd50}
+
+\begin{DoxyCompactList}\small\item\em G\+PS altitude over the ground measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a461dcf867f29bcef272e0283f203a4a8}{S\+E\+N\+S\+O\+R\+\_\+\+H\+D\+OP}~92\hypertarget{_wasp_frame_8h_a461dcf867f29bcef272e0283f203a4a8}{}\label{_wasp_frame_8h_a461dcf867f29bcef272e0283f203a4a8}
+
+\begin{DoxyCompactList}\small\item\em G\+PS H\+D\+OP over the ground measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a192e766b21b338cea1ee6d96a74d64b7}{S\+E\+N\+S\+O\+R\+\_\+\+V\+D\+OP}~93\hypertarget{_wasp_frame_8h_a192e766b21b338cea1ee6d96a74d64b7}{}\label{_wasp_frame_8h_a192e766b21b338cea1ee6d96a74d64b7}
+
+\begin{DoxyCompactList}\small\item\em G\+PS V\+D\+OP over the ground measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a4d3686b3799fd701ede617ec48e66ab9}{S\+E\+N\+S\+O\+R\+\_\+\+P\+D\+OP}~94\hypertarget{_wasp_frame_8h_a4d3686b3799fd701ede617ec48e66ab9}{}\label{_wasp_frame_8h_a4d3686b3799fd701ede617ec48e66ab9}
+
+\begin{DoxyCompactList}\small\item\em G\+PS P\+D\+OP over the ground measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a4b1e8706ca22b6608389f515c92b1aaf}{S\+E\+N\+S\+O\+R\+\_\+\+F\+SM}~95
+\begin{DoxyCompactList}\small\item\em State Machine. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a6c5ac0aa88cc26c08190c668438acc79}{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1}~96
+\begin{DoxyCompactList}\small\item\em New pluviometer values. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ade80f30d0f3dfb270fa2a9825f97936d}{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V2}~97\hypertarget{_wasp_frame_8h_ade80f30d0f3dfb270fa2a9825f97936d}{}\label{_wasp_frame_8h_ade80f30d0f3dfb270fa2a9825f97936d}
+
+\begin{DoxyCompactList}\small\item\em pluviomter value for previous hour \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_adda12733b3dc752ac6189a5c388d6fb4}{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V3}~98\hypertarget{_wasp_frame_8h_adda12733b3dc752ac6189a5c388d6fb4}{}\label{_wasp_frame_8h_adda12733b3dc752ac6189a5c388d6fb4}
+
+\begin{DoxyCompactList}\small\item\em pluviomter value for last 24h \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a85dd3f92fddd2c5a88a66e2498d9e5cd}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C}~99
+\begin{DoxyCompactList}\small\item\em P\&S watermarks. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afabc9aed8ccb4710a9bfeb9c2bed764b}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+D}~100\hypertarget{_wasp_frame_8h_afabc9aed8ccb4710a9bfeb9c2bed764b}{}\label{_wasp_frame_8h_afabc9aed8ccb4710a9bfeb9c2bed764b}
+
+\begin{DoxyCompactList}\small\item\em watermark value for P\&S connector D \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aec1bb06d0619b54cddc31bc05049cf66}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+E}~101\hypertarget{_wasp_frame_8h_aec1bb06d0619b54cddc31bc05049cf66}{}\label{_wasp_frame_8h_aec1bb06d0619b54cddc31bc05049cf66}
+
+\begin{DoxyCompactList}\small\item\em watermark value for P\&S connector E \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2d64c70a358537108a05d51bd5230f9d}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+F}~102\hypertarget{_wasp_frame_8h_a2d64c70a358537108a05d51bd5230f9d}{}\label{_wasp_frame_8h_a2d64c70a358537108a05d51bd5230f9d}
+
+\begin{DoxyCompactList}\small\item\em watermark value for P\&S connector F \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ac2f5acdf174fc5023aad80c14b9259c6}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1}~103
+\begin{DoxyCompactList}\small\item\em Waspmote O\+EM watermarks. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a9efaf9c5010a875140e6812ed1c839a9}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L2}~104\hypertarget{_wasp_frame_8h_a9efaf9c5010a875140e6812ed1c839a9}{}\label{_wasp_frame_8h_a9efaf9c5010a875140e6812ed1c839a9}
+
+\begin{DoxyCompactList}\small\item\em Agriculture Board watermark2. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aaccb42bfb613147e32fe4d705f5538c0}{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L3}~105\hypertarget{_wasp_frame_8h_aaccb42bfb613147e32fe4d705f5538c0}{}\label{_wasp_frame_8h_aaccb42bfb613147e32fe4d705f5538c0}
+
+\begin{DoxyCompactList}\small\item\em Agriculture Board watermark3. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a44a43dca48b91be18e857b806748d616}{S\+E\+N\+S\+O\+R\+\_\+\+T\+CC}~106
+\begin{DoxyCompactList}\small\item\em D\+S18\+B20. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a6dafdf68b0b4df298255fa656e1732b7}{S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3}~107
+\begin{DoxyCompactList}\small\item\em P\&S Ultrasound depending on socket voltage ref. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abe7635b74be5a40f2e36408d728fd5ca}{S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+5V}~108\hypertarget{_wasp_frame_8h_abe7635b74be5a40f2e36408d728fd5ca}{}\label{_wasp_frame_8h_abe7635b74be5a40f2e36408d728fd5ca}
+
+\begin{DoxyCompactList}\small\item\em W\+R\+A1 Ultrasound sensor powered at 5V. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2816219d795c5b5784a1aa26929175bd}{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D}~109
+\begin{DoxyCompactList}\small\item\em P\&S Security sensors depending on socket (Security -\/ Events board) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa5104273778a832a4687f3679da477fd}{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+E}~110\hypertarget{_wasp_frame_8h_aa5104273778a832a4687f3679da477fd}{}\label{_wasp_frame_8h_aa5104273778a832a4687f3679da477fd}
+
+\begin{DoxyCompactList}\small\item\em L\+DR sensor in socket E. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ac4029fd92a859e9c0f5330308ad3bd0a}{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+F}~111\hypertarget{_wasp_frame_8h_ac4029fd92a859e9c0f5330308ad3bd0a}{}\label{_wasp_frame_8h_ac4029fd92a859e9c0f5330308ad3bd0a}
+
+\begin{DoxyCompactList}\small\item\em L\+DR sensor in socket F. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a75eccdf2142a74e4e53216cb25bfdf95}{S\+E\+N\+S\+O\+R\+\_\+\+L\+P\+\_\+D}~112\hypertarget{_wasp_frame_8h_a75eccdf2142a74e4e53216cb25bfdf95}{}\label{_wasp_frame_8h_a75eccdf2142a74e4e53216cb25bfdf95}
+
+\begin{DoxyCompactList}\small\item\em Liquid Presence sensor in socket D. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a95c30abaac262bf799d331f6c50fccc9}{S\+E\+N\+S\+O\+R\+\_\+\+L\+P\+\_\+E}~113\hypertarget{_wasp_frame_8h_a95c30abaac262bf799d331f6c50fccc9}{}\label{_wasp_frame_8h_a95c30abaac262bf799d331f6c50fccc9}
+
+\begin{DoxyCompactList}\small\item\em Liquid Presence sensor in socket E. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ae198f82bc5c365a024ed6e1ae593f08e}{S\+E\+N\+S\+O\+R\+\_\+\+L\+P\+\_\+F}~114\hypertarget{_wasp_frame_8h_ae198f82bc5c365a024ed6e1ae593f08e}{}\label{_wasp_frame_8h_ae198f82bc5c365a024ed6e1ae593f08e}
+
+\begin{DoxyCompactList}\small\item\em Liquid Presence sensor in socket F. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aabcc0be343885c9eeec19d83eb704ad0}{S\+E\+N\+S\+O\+R\+\_\+\+L\+L\+\_\+D}~115\hypertarget{_wasp_frame_8h_aabcc0be343885c9eeec19d83eb704ad0}{}\label{_wasp_frame_8h_aabcc0be343885c9eeec19d83eb704ad0}
+
+\begin{DoxyCompactList}\small\item\em Liquid Level sensor in socketD. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a0ee4b6fdf0374fd113cdfada3784205c}{S\+E\+N\+S\+O\+R\+\_\+\+L\+L\+\_\+E}~116\hypertarget{_wasp_frame_8h_a0ee4b6fdf0374fd113cdfada3784205c}{}\label{_wasp_frame_8h_a0ee4b6fdf0374fd113cdfada3784205c}
+
+\begin{DoxyCompactList}\small\item\em Liquid Level sensor in socketE. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abfa74606afcd9c3b3bf3aa9e59a06903}{S\+E\+N\+S\+O\+R\+\_\+\+L\+L\+\_\+F}~117\hypertarget{_wasp_frame_8h_abfa74606afcd9c3b3bf3aa9e59a06903}{}\label{_wasp_frame_8h_abfa74606afcd9c3b3bf3aa9e59a06903}
+
+\begin{DoxyCompactList}\small\item\em Liquid Level sensor in socketF. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a2d9c3d83da3ab4edb9d5e4acd4f38c0c}{S\+E\+N\+S\+O\+R\+\_\+\+H\+A\+L\+L\+\_\+D}~118\hypertarget{_wasp_frame_8h_a2d9c3d83da3ab4edb9d5e4acd4f38c0c}{}\label{_wasp_frame_8h_a2d9c3d83da3ab4edb9d5e4acd4f38c0c}
+
+\begin{DoxyCompactList}\small\item\em Hall Effect sensor in socket D. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa4cd0a5a375d41f06a1dc21f415ad789}{S\+E\+N\+S\+O\+R\+\_\+\+H\+A\+L\+L\+\_\+E}~119\hypertarget{_wasp_frame_8h_aa4cd0a5a375d41f06a1dc21f415ad789}{}\label{_wasp_frame_8h_aa4cd0a5a375d41f06a1dc21f415ad789}
+
+\begin{DoxyCompactList}\small\item\em Hall Effect sensor in socket E. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afa989491f35ffc3cf29060fb120743ad}{S\+E\+N\+S\+O\+R\+\_\+\+H\+A\+L\+L\+\_\+F}~120\hypertarget{_wasp_frame_8h_afa989491f35ffc3cf29060fb120743ad}{}\label{_wasp_frame_8h_afa989491f35ffc3cf29060fb120743ad}
+
+\begin{DoxyCompactList}\small\item\em Hall Effect sensor in socket F. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ace139b4700be26f3803c3faba3d0d724}{S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C}~121
+\begin{DoxyCompactList}\small\item\em P\&S liquid flow sensor depending on socket (Smart Metering) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af35cb45278ce442139e7b886b169d765}{S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+E}~122\hypertarget{_wasp_frame_8h_af35cb45278ce442139e7b886b169d765}{}\label{_wasp_frame_8h_af35cb45278ce442139e7b886b169d765}
+
+\begin{DoxyCompactList}\small\item\em Liquid Flow sensor in socket E. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a46b6af847c6699c6e9e8f29f0c84b9a6}{S\+E\+N\+S\+O\+R\+\_\+\+T\+ST}~123
+\begin{DoxyCompactList}\small\item\em Unix/\+Epoch timestamp. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a656845e8c285c07b8cdbd35432c94a75}{S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB}~124
+\begin{DoxyCompactList}\small\item\em Turbidity sensor. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ae1bd417ef481b68bbe93ca72c3788a30}{S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI}~125
+\begin{DoxyCompactList}\small\item\em Version parameters. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a5b510fb572cb2a67f709faae514ccabd}{S\+E\+N\+S\+O\+R\+\_\+\+V\+P\+R\+OG}~126\hypertarget{_wasp_frame_8h_a5b510fb572cb2a67f709faae514ccabd}{}\label{_wasp_frame_8h_a5b510fb572cb2a67f709faae514ccabd}
+
+\begin{DoxyCompactList}\small\item\em Program version. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af2fac6d0ca367c918fbcd8917353d0ba}{S\+E\+N\+S\+O\+R\+\_\+\+V\+B\+O\+OT}~127\hypertarget{_wasp_frame_8h_af2fac6d0ca367c918fbcd8917353d0ba}{}\label{_wasp_frame_8h_af2fac6d0ca367c918fbcd8917353d0ba}
+
+\begin{DoxyCompactList}\small\item\em Bootloader version. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a002d5966e82d179427093b8717ca88e7}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2}~128
+\begin{DoxyCompactList}\small\item\em Gases P\+RO. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ae654826e001f859be3d5bdf311b21004}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+CO}~129\hypertarget{_wasp_frame_8h_ae654826e001f859be3d5bdf311b21004}{}\label{_wasp_frame_8h_ae654826e001f859be3d5bdf311b21004}
+
+\begin{DoxyCompactList}\small\item\em Carbon Monoxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abf868fb018479a2ba541593f49f8bc72}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+E\+TO}~130\hypertarget{_wasp_frame_8h_abf868fb018479a2ba541593f49f8bc72}{}\label{_wasp_frame_8h_abf868fb018479a2ba541593f49f8bc72}
+
+\begin{DoxyCompactList}\small\item\em Ethylene Oxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ae62eddbbe3fb54e6dac393d0190964e2}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+H2}~131\hypertarget{_wasp_frame_8h_ae62eddbbe3fb54e6dac393d0190964e2}{}\label{_wasp_frame_8h_ae62eddbbe3fb54e6dac393d0190964e2}
+
+\begin{DoxyCompactList}\small\item\em Hydrogen measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ae091bbdc6aaea963b87f9ba64cc4fe15}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+H2S}~132\hypertarget{_wasp_frame_8h_ae091bbdc6aaea963b87f9ba64cc4fe15}{}\label{_wasp_frame_8h_ae091bbdc6aaea963b87f9ba64cc4fe15}
+
+\begin{DoxyCompactList}\small\item\em Hydrogen Sulphide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a7162a10efeb7b185c063dc1265e44ed1}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+H\+CL}~133\hypertarget{_wasp_frame_8h_a7162a10efeb7b185c063dc1265e44ed1}{}\label{_wasp_frame_8h_a7162a10efeb7b185c063dc1265e44ed1}
+
+\begin{DoxyCompactList}\small\item\em Hydrogen Chloride measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a98553af9b81c2bfa0474e41d1e395f62}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+H\+CN}~134\hypertarget{_wasp_frame_8h_a98553af9b81c2bfa0474e41d1e395f62}{}\label{_wasp_frame_8h_a98553af9b81c2bfa0474e41d1e395f62}
+
+\begin{DoxyCompactList}\small\item\em Hydrogen Cyanide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a9b1fc61e9812d12e8f4bbfbe702977c8}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+N\+H3}~135\hypertarget{_wasp_frame_8h_a9b1fc61e9812d12e8f4bbfbe702977c8}{}\label{_wasp_frame_8h_a9b1fc61e9812d12e8f4bbfbe702977c8}
+
+\begin{DoxyCompactList}\small\item\em Ammonia measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a3a098e7a78c16f66ac6a6f6117b3c986}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+NO}~136\hypertarget{_wasp_frame_8h_a3a098e7a78c16f66ac6a6f6117b3c986}{}\label{_wasp_frame_8h_a3a098e7a78c16f66ac6a6f6117b3c986}
+
+\begin{DoxyCompactList}\small\item\em Nitrogen Monoxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a660187d789205fd78918b0f24c2c7369}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+N\+O2}~137\hypertarget{_wasp_frame_8h_a660187d789205fd78918b0f24c2c7369}{}\label{_wasp_frame_8h_a660187d789205fd78918b0f24c2c7369}
+
+\begin{DoxyCompactList}\small\item\em Nitrogen Dioxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_af0828dacf104a01ba270a77886a722c7}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+O2}~138\hypertarget{_wasp_frame_8h_af0828dacf104a01ba270a77886a722c7}{}\label{_wasp_frame_8h_af0828dacf104a01ba270a77886a722c7}
+
+\begin{DoxyCompactList}\small\item\em Oxygen measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a82fe404396041f41d8b109fc8f53d921}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+P\+H3}~139\hypertarget{_wasp_frame_8h_a82fe404396041f41d8b109fc8f53d921}{}\label{_wasp_frame_8h_a82fe404396041f41d8b109fc8f53d921}
+
+\begin{DoxyCompactList}\small\item\em Phospine measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ab061937a64ab70787dc27ed3a3f12d39}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+S\+O2}~140\hypertarget{_wasp_frame_8h_ab061937a64ab70787dc27ed3a3f12d39}{}\label{_wasp_frame_8h_ab061937a64ab70787dc27ed3a3f12d39}
+
+\begin{DoxyCompactList}\small\item\em Sulfur Dioxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aee9ea2c1f09d4c18a3b03cd0d499c3ee}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+H4}~141\hypertarget{_wasp_frame_8h_aee9ea2c1f09d4c18a3b03cd0d499c3ee}{}\label{_wasp_frame_8h_aee9ea2c1f09d4c18a3b03cd0d499c3ee}
+
+\begin{DoxyCompactList}\small\item\em Methane and other combustible gases measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aec2ef77dff28b964260b8ffd71facfa8}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+O3}~142\hypertarget{_wasp_frame_8h_aec2ef77dff28b964260b8ffd71facfa8}{}\label{_wasp_frame_8h_aec2ef77dff28b964260b8ffd71facfa8}
+
+\begin{DoxyCompactList}\small\item\em Ozone measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ad4b7f8c8eef4a4bb60ff5f7413688df5}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+O2}~143\hypertarget{_wasp_frame_8h_ad4b7f8c8eef4a4bb60ff5f7413688df5}{}\label{_wasp_frame_8h_ad4b7f8c8eef4a4bb60ff5f7413688df5}
+
+\begin{DoxyCompactList}\small\item\em Carbon Dioxide measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ac0e26b38c321bc6333b2e00651a01ece}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+TC}~144\hypertarget{_wasp_frame_8h_ac0e26b38c321bc6333b2e00651a01ece}{}\label{_wasp_frame_8h_ac0e26b38c321bc6333b2e00651a01ece}
+
+\begin{DoxyCompactList}\small\item\em Temperature Celsius measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a88254427fd849dd4e6d1bf49c968d8a5}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+TF}~145\hypertarget{_wasp_frame_8h_a88254427fd849dd4e6d1bf49c968d8a5}{}\label{_wasp_frame_8h_a88254427fd849dd4e6d1bf49c968d8a5}
+
+\begin{DoxyCompactList}\small\item\em Temperature Fahrenheit measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a7be27423aaf93c980dc9925cca48f022}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+H\+UM}~146\hypertarget{_wasp_frame_8h_a7be27423aaf93c980dc9925cca48f022}{}\label{_wasp_frame_8h_a7be27423aaf93c980dc9925cca48f022}
+
+\begin{DoxyCompactList}\small\item\em Humidity measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_adcffc1e8829c157da06c41d9d13ae833}{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+P\+R\+ES}~147\hypertarget{_wasp_frame_8h_adcffc1e8829c157da06c41d9d13ae833}{}\label{_wasp_frame_8h_adcffc1e8829c157da06c41d9d13ae833}
+
+\begin{DoxyCompactList}\small\item\em Pressure measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a3056d001e4823ecf0c7bae7a38817851}{S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+\+TC}~148\hypertarget{_wasp_frame_8h_a3056d001e4823ecf0c7bae7a38817851}{}\label{_wasp_frame_8h_a3056d001e4823ecf0c7bae7a38817851}
+
+\begin{DoxyCompactList}\small\item\em Temperature Celsius measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aedd240d9835e39c1333d3ed73567d76a}{S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+\+TF}~149\hypertarget{_wasp_frame_8h_aedd240d9835e39c1333d3ed73567d76a}{}\label{_wasp_frame_8h_aedd240d9835e39c1333d3ed73567d76a}
+
+\begin{DoxyCompactList}\small\item\em Temperature Fahrenheit measurement type. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+P}~150\hypertarget{_wasp_frame_8h_a3f0d9e0567b4c9d44eeb240571f6bd9a}{}\label{_wasp_frame_8h_a3f0d9e0567b4c9d44eeb240571f6bd9a}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_aa890e577b928c320f832c2073d810e65}{S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+\+P\+M1}~151\hypertarget{_wasp_frame_8h_aa890e577b928c320f832c2073d810e65}{}\label{_wasp_frame_8h_aa890e577b928c320f832c2073d810e65}
+
+\begin{DoxyCompactList}\small\item\em P\+M1 measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a949cbd874697eab1ebab144a791b736a}{S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+\+P\+M2\+\_\+5}~152\hypertarget{_wasp_frame_8h_a949cbd874697eab1ebab144a791b736a}{}\label{_wasp_frame_8h_a949cbd874697eab1ebab144a791b736a}
+
+\begin{DoxyCompactList}\small\item\em P\+M2.\+5 measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a25475060d63e14916c4e4e47be965995}{S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+\+P\+M10}~153\hypertarget{_wasp_frame_8h_a25475060d63e14916c4e4e47be965995}{}\label{_wasp_frame_8h_a25475060d63e14916c4e4e47be965995}
+
+\begin{DoxyCompactList}\small\item\em P\+M10 measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a7bff19b908991ab9cbf60e758a8f9b3d}{S\+E\+N\+S\+O\+R\+\_\+\+O\+P\+C\+\_\+\+P\+A\+RT}~154\hypertarget{_wasp_frame_8h_a7bff19b908991ab9cbf60e758a8f9b3d}{}\label{_wasp_frame_8h_a7bff19b908991ab9cbf60e758a8f9b3d}
+
+\begin{DoxyCompactList}\small\item\em Particle bin counter measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a092d463bcd3fd4d64369083dc58092ed}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+CA}~155\hypertarget{_wasp_frame_8h_a092d463bcd3fd4d64369083dc58092ed}{}\label{_wasp_frame_8h_a092d463bcd3fd4d64369083dc58092ed}
+
+\begin{DoxyCompactList}\small\item\em Calcium ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a64449c067e75c9365c561895a1e0dbdd}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+FL}~156\hypertarget{_wasp_frame_8h_a64449c067e75c9365c561895a1e0dbdd}{}\label{_wasp_frame_8h_a64449c067e75c9365c561895a1e0dbdd}
+
+\begin{DoxyCompactList}\small\item\em Fluoride ion measurement type. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+FB}~157\hypertarget{_wasp_frame_8h_a70c83af6ddc008d1bcd4c583e0fe2463}{}\label{_wasp_frame_8h_a70c83af6ddc008d1bcd4c583e0fe2463}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a935127702e266a0aa325dc1f70c0713e}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+NO}~158\hypertarget{_wasp_frame_8h_a935127702e266a0aa325dc1f70c0713e}{}\label{_wasp_frame_8h_a935127702e266a0aa325dc1f70c0713e}
+
+\begin{DoxyCompactList}\small\item\em Nitrates ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afdede33aa6d002e16b43378554e7719e}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+BR}~159\hypertarget{_wasp_frame_8h_afdede33aa6d002e16b43378554e7719e}{}\label{_wasp_frame_8h_afdede33aa6d002e16b43378554e7719e}
+
+\begin{DoxyCompactList}\small\item\em Bromide ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_adb922ceb5f3503d9492539354899da6d}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+CL}~160\hypertarget{_wasp_frame_8h_adb922ceb5f3503d9492539354899da6d}{}\label{_wasp_frame_8h_adb922ceb5f3503d9492539354899da6d}
+
+\begin{DoxyCompactList}\small\item\em Chlorideion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afcd386093ee5f9ed02b4ea925d2196f7}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+CU}~161\hypertarget{_wasp_frame_8h_afcd386093ee5f9ed02b4ea925d2196f7}{}\label{_wasp_frame_8h_afcd386093ee5f9ed02b4ea925d2196f7}
+
+\begin{DoxyCompactList}\small\item\em Cupric ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a68e82e2a29b6cfa7002637cf84a1f661}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+IO}~162\hypertarget{_wasp_frame_8h_a68e82e2a29b6cfa7002637cf84a1f661}{}\label{_wasp_frame_8h_a68e82e2a29b6cfa7002637cf84a1f661}
+
+\begin{DoxyCompactList}\small\item\em Iodide ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a663e142bf39d63e9efa5b586af4773ab}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+PB}~163\hypertarget{_wasp_frame_8h_a663e142bf39d63e9efa5b586af4773ab}{}\label{_wasp_frame_8h_a663e142bf39d63e9efa5b586af4773ab}
+
+\begin{DoxyCompactList}\small\item\em Lead ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_ab604bbd17093b49b40d1a2f11ad32591}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+AG}~164\hypertarget{_wasp_frame_8h_ab604bbd17093b49b40d1a2f11ad32591}{}\label{_wasp_frame_8h_ab604bbd17093b49b40d1a2f11ad32591}
+
+\begin{DoxyCompactList}\small\item\em Silver ion measurement type. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a120762e219bb6b1e1e9daad3554e54f8}{S\+E\+N\+S\+O\+R\+\_\+\+S\+W\+I\+\_\+\+PH}~165\hypertarget{_wasp_frame_8h_a120762e219bb6b1e1e9daad3554e54f8}{}\label{_wasp_frame_8h_a120762e219bb6b1e1e9daad3554e54f8}
+
+\begin{DoxyCompactList}\small\item\em pH (for Smart Water Ions) measurement type \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+P\+H\+\_\+A}~166\hypertarget{_wasp_frame_8h_a887c07b946cacb736bc4c97709fe52a8}{}\label{_wasp_frame_8h_a887c07b946cacb736bc4c97709fe52a8}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+P\+H\+\_\+B}~167\hypertarget{_wasp_frame_8h_ad1d0e85bdf84ea35e095ce12988f4fa4}{}\label{_wasp_frame_8h_ad1d0e85bdf84ea35e095ce12988f4fa4}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+P\+H\+\_\+C}~168\hypertarget{_wasp_frame_8h_ac14c6a679f565e3a86e00cf0ff50ad4a}{}\label{_wasp_frame_8h_ac14c6a679f565e3a86e00cf0ff50ad4a}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+O\+R\+P\+\_\+A}~169\hypertarget{_wasp_frame_8h_afdcf82f44d275d7c27822714c319e6e8}{}\label{_wasp_frame_8h_afdcf82f44d275d7c27822714c319e6e8}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+O\+R\+P\+\_\+B}~170\hypertarget{_wasp_frame_8h_a4f795c778df7435c6c07a5597bd896f2}{}\label{_wasp_frame_8h_a4f795c778df7435c6c07a5597bd896f2}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+O\+R\+P\+\_\+C}~171\hypertarget{_wasp_frame_8h_a53e06266cb787dedec39ec0dd6a0d7f7}{}\label{_wasp_frame_8h_a53e06266cb787dedec39ec0dd6a0d7f7}
+
+\item 
+\#define {\bfseries bit\+Read}(value,  bit)~(((value) $>$$>$ (bit)) \& 0x01)\hypertarget{_wasp_frame_8h_aff20d8c0a05ad3043afa2e4ad9ebe768}{}\label{_wasp_frame_8h_aff20d8c0a05ad3043afa2e4ad9ebe768}
+
+\item 
+\#define {\bfseries bit\+Set}(value,  bit)~((value) $\vert$= (1\+U\+L $<$$<$ (bit)))\hypertarget{_wasp_frame_8h_a6a8195c0e930f86c6af03ba6af8b41dd}{}\label{_wasp_frame_8h_a6a8195c0e930f86c6af03ba6af8b41dd}
+
+\item 
+\#define {\bfseries bit\+Clear}(value,  bit)~((value) \&= $\sim$(1\+U\+L $<$$<$ (bit)))\hypertarget{_wasp_frame_8h_abbe843c0521806a4ab2e7cffe44769e2}{}\label{_wasp_frame_8h_abbe843c0521806a4ab2e7cffe44769e2}
+
+\item 
+\#define {\bfseries bit\+Write}(value,  bit,  bitvalue)~(bitvalue ? bit\+Set(value, bit) \+: bit\+Clear(value, bit))\hypertarget{_wasp_frame_8h_a42c17f59f3f9a3112d01246760067a8e}{}\label{_wasp_frame_8h_a42c17f59f3f9a3112d01246760067a8e}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a99a8aeb9f036381a1f4b1c1a1e4fe9e4}{M\+A\+X\+\_\+\+F\+R\+A\+ME}~150\hypertarget{_wasp_frame_8h_a99a8aeb9f036381a1f4b1c1a1e4fe9e4}{}\label{_wasp_frame_8h_a99a8aeb9f036381a1f4b1c1a1e4fe9e4}
+
+\begin{DoxyCompactList}\small\item\em maximum size in bytes of the frame \end{DoxyCompactList}\item 
+\#define {\bfseries U\+N\+I\+C\+A\+S\+T\+\_\+16B}~0\hypertarget{_wasp_frame_8h_a68739d4c85ed323d2cd29bd04dc215fa}{}\label{_wasp_frame_8h_a68739d4c85ed323d2cd29bd04dc215fa}
+
+\item 
+\#define {\bfseries U\+N\+I\+C\+A\+S\+T\+\_\+64B}~1\hypertarget{_wasp_frame_8h_a3f7eed41448e4f0ce78dfb5c22415aca}{}\label{_wasp_frame_8h_a3f7eed41448e4f0ce78dfb5c22415aca}
+
+\item 
+\#define {\bfseries B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+\+M\+O\+DE}~2\hypertarget{_wasp_frame_8h_aaefdb3da4695984bd53fa4d7205269dc}{}\label{_wasp_frame_8h_aaefdb3da4695984bd53fa4d7205269dc}
+
+\item 
+\#define {\bfseries E\+X\+A\+M\+P\+L\+E\+\_\+\+F\+R\+A\+ME}~0\hypertarget{_wasp_frame_8h_a42bc2e31f8cce2c8c4da66efcbd368d8}{}\label{_wasp_frame_8h_a42bc2e31f8cce2c8c4da66efcbd368d8}
+
+\item 
+\#define {\bfseries T\+I\+M\+E\+O\+U\+T\+\_\+\+F\+R\+A\+ME}~1\hypertarget{_wasp_frame_8h_a01b852cba7c7804ed9f83a64fdf31731}{}\label{_wasp_frame_8h_a01b852cba7c7804ed9f83a64fdf31731}
+
+\item 
+\#define {\bfseries E\+V\+E\+N\+T\+\_\+\+F\+R\+A\+ME}~2\hypertarget{_wasp_frame_8h_a84b8140fd1a4cac035f5b0b0aa179cbd}{}\label{_wasp_frame_8h_a84b8140fd1a4cac035f5b0b0aa179cbd}
+
+\item 
+\#define {\bfseries A\+L\+A\+R\+M\+\_\+\+F\+R\+A\+ME}~3\hypertarget{_wasp_frame_8h_ae4b50a83f75c753f98d891eb6c01417a}{}\label{_wasp_frame_8h_ae4b50a83f75c753f98d891eb6c01417a}
+
+\item 
+\#define {\bfseries S\+E\+R\+V\+I\+C\+E1\+\_\+\+F\+R\+A\+ME}~4\hypertarget{_wasp_frame_8h_a2d505e179e77f5af9206205cecc7b30b}{}\label{_wasp_frame_8h_a2d505e179e77f5af9206205cecc7b30b}
+
+\item 
+\#define {\bfseries S\+E\+R\+V\+I\+C\+E2\+\_\+\+F\+R\+A\+ME}~5\hypertarget{_wasp_frame_8h_adda2a4a2f398b8459d36be2aa6d37c9b}{}\label{_wasp_frame_8h_adda2a4a2f398b8459d36be2aa6d37c9b}
+
+\item 
+\#define {\bfseries S\+E\+T\+\_\+\+T\+I\+M\+E\+\_\+\+F\+R\+A\+ME}~6\hypertarget{_wasp_frame_8h_aee45109ad283129add528ce3d747281a}{}\label{_wasp_frame_8h_aee45109ad283129add528ce3d747281a}
+
+\item 
+\#define \hyperlink{_wasp_frame_8h_a6d7dfac3c44d471d63ef0e0b85a6fe92}{A\+E\+S128\+\_\+\+E\+C\+B\+\_\+\+F\+R\+A\+ME}~97\hypertarget{_wasp_frame_8h_a6d7dfac3c44d471d63ef0e0b85a6fe92}{}\label{_wasp_frame_8h_a6d7dfac3c44d471d63ef0e0b85a6fe92}
+
+\begin{DoxyCompactList}\small\item\em Encrypted frame using A\+E\+S-\/128 key size and E\+CB mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_afb167b941ce31e4c30b4f6773bd218b7}{A\+E\+S192\+\_\+\+E\+C\+B\+\_\+\+F\+R\+A\+ME}~98\hypertarget{_wasp_frame_8h_afb167b941ce31e4c30b4f6773bd218b7}{}\label{_wasp_frame_8h_afb167b941ce31e4c30b4f6773bd218b7}
+
+\begin{DoxyCompactList}\small\item\em Encrypted frame using A\+E\+S-\/192 key size and E\+CB mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_aa0c263d59068ac129b8d81ccf4f1b715}{A\+E\+S256\+\_\+\+E\+C\+B\+\_\+\+F\+R\+A\+ME}~99\hypertarget{_wasp_frame_8h_aa0c263d59068ac129b8d81ccf4f1b715}{}\label{_wasp_frame_8h_aa0c263d59068ac129b8d81ccf4f1b715}
+
+\begin{DoxyCompactList}\small\item\em Encrypted frame using A\+E\+S-\/256 key size and E\+CB mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a627e37e85582a82b07525bebfee88ca3}{T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8}~0\hypertarget{_wasp_frame_8h_a627e37e85582a82b07525bebfee88ca3}{}\label{_wasp_frame_8h_a627e37e85582a82b07525bebfee88ca3}
+
+\begin{DoxyCompactList}\small\item\em T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8 defines the constant for uint8\+\_\+t variables types (1 Byte) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a56e5f9a95536838408fcca8f22d541b4}{T\+Y\+P\+E\+\_\+\+I\+NT}~1\hypertarget{_wasp_frame_8h_a56e5f9a95536838408fcca8f22d541b4}{}\label{_wasp_frame_8h_a56e5f9a95536838408fcca8f22d541b4}
+
+\begin{DoxyCompactList}\small\item\em T\+Y\+P\+E\+\_\+\+I\+NT defines the constant for int (int16\+\_\+t) variables types (2 Bytes) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a105c7addfad52601f4d079673eae7982}{T\+Y\+P\+E\+\_\+\+F\+L\+O\+AT}~2\hypertarget{_wasp_frame_8h_a105c7addfad52601f4d079673eae7982}{}\label{_wasp_frame_8h_a105c7addfad52601f4d079673eae7982}
+
+\begin{DoxyCompactList}\small\item\em T\+Y\+P\+E\+\_\+\+F\+L\+O\+AT defines the constant for double/float variables types (4 Bytes) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a26d8c7975967e3eac4c483dd5f04ad25}{T\+Y\+P\+E\+\_\+\+C\+H\+AR}~3\hypertarget{_wasp_frame_8h_a26d8c7975967e3eac4c483dd5f04ad25}{}\label{_wasp_frame_8h_a26d8c7975967e3eac4c483dd5f04ad25}
+
+\begin{DoxyCompactList}\small\item\em T\+Y\+P\+E\+\_\+\+C\+H\+AR defines the constant for char$\ast$ (strings) variables types (variable Bytes) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_abdb15db914e316ac53041c57de861e41}{T\+Y\+P\+E\+\_\+\+U\+L\+O\+NG}~4\hypertarget{_wasp_frame_8h_abdb15db914e316ac53041c57de861e41}{}\label{_wasp_frame_8h_abdb15db914e316ac53041c57de861e41}
+
+\begin{DoxyCompactList}\small\item\em T\+Y\+P\+E\+\_\+\+U\+L\+O\+NG defines the constant for unsigned long int variables types (4 Bytes) \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_acc166508d5cfbf4100f8622ce97f4985}{B\+I\+N\+A\+RY}~0\hypertarget{_wasp_frame_8h_acc166508d5cfbf4100f8622ce97f4985}{}\label{_wasp_frame_8h_acc166508d5cfbf4100f8622ce97f4985}
+
+\begin{DoxyCompactList}\small\item\em B\+I\+N\+A\+RY frame mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{_wasp_frame_8h_a60710bac11b4f1135f61ded06542d661}{A\+S\+C\+II}~1\hypertarget{_wasp_frame_8h_a60710bac11b4f1135f61ded06542d661}{}\label{_wasp_frame_8h_a60710bac11b4f1135f61ded06542d661}
+
+\begin{DoxyCompactList}\small\item\em A\+S\+C\+II frame mode. \end{DoxyCompactList}\item 
+\#define {\bfseries E\+N\+C\+R\+Y\+P\+T\+E\+D\+\_\+\+F\+R\+A\+ME}~2\hypertarget{_wasp_frame_8h_ab7b2f67bd77a190e77516e7b63e34e9e}{}\label{_wasp_frame_8h_ab7b2f67bd77a190e77516e7b63e34e9e}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile unsigned long \hyperlink{_wasp_frame_8h_a17710d54f01cc7adebf23f358b078758}{\+\_\+serial\+\_\+id}\hypertarget{_wasp_frame_8h_a17710d54f01cc7adebf23f358b078758}{}\label{_wasp_frame_8h_a17710d54f01cc7adebf23f358b078758}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Waspmote serial id. \end{DoxyCompactList}\item 
+\hyperlink{class_wasp_frame}{Wasp\+Frame} \hyperlink{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}{frame}\hypertarget{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}{}\label{_wasp_frame_8h_a6240aaba878a8368af0eead8dc7759a4}
+
+\begin{DoxyCompactList}\small\item\em Preinstantiate Objects /////////////////////////////////////////////////////. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for creating formated frames. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+9 Design\+: David Gascón Implementation\+: Yuri Carmona, Javier Siscart, Joaquín Ruiz 
+
+\subsection{Macro Definition Documentation}
+\index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+B\+AT@{S\+E\+N\+S\+O\+R\+\_\+\+B\+AT}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+B\+AT@{S\+E\+N\+S\+O\+R\+\_\+\+B\+AT}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+B\+AT}{SENSOR_BAT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+B\+AT~52}\hypertarget{_wasp_frame_8h_ab5c75432c39eda5a774ad0a821729513}{}\label{_wasp_frame_8h_ab5c75432c39eda5a774ad0a821729513}
+
+
+Additional sensor measurements. 
+
+Battery measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+CO@{S\+E\+N\+S\+O\+R\+\_\+\+CO}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+CO@{S\+E\+N\+S\+O\+R\+\_\+\+CO}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+CO}{SENSOR_CO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+CO~0}\hypertarget{_wasp_frame_8h_aaf382fa762841aa2b5a5069293fe42c8}{}\label{_wasp_frame_8h_aaf382fa762841aa2b5a5069293fe42c8}
+
+
+Gases Board sensor measurements. 
+
+Carbon Monoxide measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+CU@{S\+E\+N\+S\+O\+R\+\_\+\+CU}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+CU@{S\+E\+N\+S\+O\+R\+\_\+\+CU}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+CU}{SENSOR_CU}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+CU~48}\hypertarget{_wasp_frame_8h_a10308410796bcce4d0f967cc017c3150}{}\label{_wasp_frame_8h_a10308410796bcce4d0f967cc017c3150}
+
+
+Smart Metering sensor measurements. 
+
+Current measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST@{S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST@{S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST}{SENSOR_DM_ST}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+D\+M\+\_\+\+ST~86}\hypertarget{_wasp_frame_8h_a14f81174d54afd8ad17b4797bf4c2120}{}\label{_wasp_frame_8h_a14f81174d54afd8ad17b4797bf4c2120}
+
+
+Smart Libelium. 
+
+X\+Bee Digimesh awake time for cyclic sleep mode \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+F\+SM@{S\+E\+N\+S\+O\+R\+\_\+\+F\+SM}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+F\+SM@{S\+E\+N\+S\+O\+R\+\_\+\+F\+SM}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+F\+SM}{SENSOR_FSM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+F\+SM~95}\hypertarget{_wasp_frame_8h_a4b1e8706ca22b6608389f515c92b1aaf}{}\label{_wasp_frame_8h_a4b1e8706ca22b6608389f515c92b1aaf}
+
+
+State Machine. 
+
+Finite State Machine (F\+SM) value \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2@{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2@{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2}{SENSOR_GP_CL2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+G\+P\+\_\+\+C\+L2~128}\hypertarget{_wasp_frame_8h_a002d5966e82d179427093b8717ca88e7}{}\label{_wasp_frame_8h_a002d5966e82d179427093b8717ca88e7}
+
+
+Gases P\+RO. 
+
+Chlorine measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D@{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D@{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D}{SENSOR_LUM_D}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+L\+U\+M\+\_\+D~109}\hypertarget{_wasp_frame_8h_a2816219d795c5b5784a1aa26929175bd}{}\label{_wasp_frame_8h_a2816219d795c5b5784a1aa26929175bd}
+
+
+P\&S Security sensors depending on socket (Security -\/ Events board) 
+
+L\+DR sensor in socket D \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+M\+CP@{S\+E\+N\+S\+O\+R\+\_\+\+M\+CP}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+M\+CP@{S\+E\+N\+S\+O\+R\+\_\+\+M\+CP}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+M\+CP}{SENSOR_MCP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+M\+CP~25}\hypertarget{_wasp_frame_8h_af1060e15eef528fda5658057b2e0b4f8}{}\label{_wasp_frame_8h_af1060e15eef528fda5658057b2e0b4f8}
+
+
+Smart cities sensor measurements. 
+
+Microphone measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+MF@{S\+E\+N\+S\+O\+R\+\_\+\+MF}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+MF@{S\+E\+N\+S\+O\+R\+\_\+\+MF}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+MF}{SENSOR_MF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+MF~31}\hypertarget{_wasp_frame_8h_aa5f2849a5758a4746e30e32510b92f82}{}\label{_wasp_frame_8h_aa5f2849a5758a4746e30e32510b92f82}
+
+
+Smart parking sensor measurements. 
+
+Magnetic Field measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+PH@{S\+E\+N\+S\+O\+R\+\_\+\+PH}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+PH@{S\+E\+N\+S\+O\+R\+\_\+\+PH}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+PH}{SENSOR_PH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+PH~70}\hypertarget{_wasp_frame_8h_ab806aeb2b52a527a6b105c35e0c5697c}{}\label{_wasp_frame_8h_ab806aeb2b52a527a6b105c35e0c5697c}
+
+
+Smart Water. 
+
+pH measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1@{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1@{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1}{SENSOR_PLV1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+P\+L\+V1~96}\hypertarget{_wasp_frame_8h_a6c5ac0aa88cc26c08190c668438acc79}{}\label{_wasp_frame_8h_a6c5ac0aa88cc26c08190c668438acc79}
+
+
+New pluviometer values. 
+
+pluviomter value for current hour \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+PW@{S\+E\+N\+S\+O\+R\+\_\+\+PW}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+PW@{S\+E\+N\+S\+O\+R\+\_\+\+PW}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+PW}{SENSOR_PW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+PW~16}\hypertarget{_wasp_frame_8h_a3d6adb8a3b8616f8e57387eae0bdaf57}{}\label{_wasp_frame_8h_a3d6adb8a3b8616f8e57387eae0bdaf57}
+
+
+Events Board Sensor measurements. 
+
+Pressure/\+Weight measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+R\+AD@{S\+E\+N\+S\+O\+R\+\_\+\+R\+AD}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+R\+AD@{S\+E\+N\+S\+O\+R\+\_\+\+R\+AD}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+R\+AD}{SENSOR_RAD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+R\+AD~47}\hypertarget{_wasp_frame_8h_a6df2bef87cb3980c8648f34aae79e212}{}\label{_wasp_frame_8h_a6df2bef87cb3980c8648f34aae79e212}
+
+
+Radiation sensor measurements. 
+
+Geiger tube measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1@{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1@{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1}{SENSOR_SOIL1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L1~103}\hypertarget{_wasp_frame_8h_ac2f5acdf174fc5023aad80c14b9259c6}{}\label{_wasp_frame_8h_ac2f5acdf174fc5023aad80c14b9259c6}
+
+
+Waspmote O\+EM watermarks. 
+
+Agriculture Board watermark1 \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C@{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C@{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C}{SENSOR_SOIL_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+S\+O\+I\+L\+\_\+C~99}\hypertarget{_wasp_frame_8h_a85dd3f92fddd2c5a88a66e2498d9e5cd}{}\label{_wasp_frame_8h_a85dd3f92fddd2c5a88a66e2498d9e5cd}
+
+
+P\&S watermarks. 
+
+watermark value for P\&S connector C \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED@{S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED@{S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED}{SENSOR_SPEED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+S\+P\+E\+ED~89}\hypertarget{_wasp_frame_8h_afcdd251d4c592a7596aa1209f661faa5}{}\label{_wasp_frame_8h_afcdd251d4c592a7596aa1209f661faa5}
+
+
+G\+PS. 
+
+G\+PS speed over the ground measurement type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+S\+TR@{S\+E\+N\+S\+O\+R\+\_\+\+S\+TR}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+S\+TR@{S\+E\+N\+S\+O\+R\+\_\+\+S\+TR}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+S\+TR}{SENSOR_STR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+S\+TR~65}\hypertarget{_wasp_frame_8h_aa4190339b2e98cd8e022ae83caecb441}{}\label{_wasp_frame_8h_aa4190339b2e98cd8e022ae83caecb441}
+
+
+Special sensor measurements. 
+
+\hyperlink{class_string}{String} type \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+CC@{S\+E\+N\+S\+O\+R\+\_\+\+T\+CC}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+CC@{S\+E\+N\+S\+O\+R\+\_\+\+T\+CC}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+T\+CC}{SENSOR_TCC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+T\+CC~106}\hypertarget{_wasp_frame_8h_a44a43dca48b91be18e857b806748d616}{}\label{_wasp_frame_8h_a44a43dca48b91be18e857b806748d616}
+
+
+D\+S18\+B20. 
+
+D\+S18\+B20 temperature sensor \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+ST@{S\+E\+N\+S\+O\+R\+\_\+\+T\+ST}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+ST@{S\+E\+N\+S\+O\+R\+\_\+\+T\+ST}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+T\+ST}{SENSOR_TST}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+T\+ST~123}\hypertarget{_wasp_frame_8h_a46b6af847c6699c6e9e8f29f0c84b9a6}{}\label{_wasp_frame_8h_a46b6af847c6699c6e9e8f29f0c84b9a6}
+
+
+Unix/\+Epoch timestamp. 
+
+Unix (aka Epoch) timestamp value \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB@{S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB@{S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB}{SENSOR_TURB}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+T\+U\+RB~124}\hypertarget{_wasp_frame_8h_a656845e8c285c07b8cdbd35432c94a75}{}\label{_wasp_frame_8h_a656845e8c285c07b8cdbd35432c94a75}
+
+
+Turbidity sensor. 
+
+Turbidity sensor \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3@{S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3@{S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3}{SENSOR_US_3V3}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+U\+S\+\_\+3\+V3~107}\hypertarget{_wasp_frame_8h_a6dafdf68b0b4df298255fa656e1732b7}{}\label{_wasp_frame_8h_a6dafdf68b0b4df298255fa656e1732b7}
+
+
+P\&S Ultrasound depending on socket voltage ref. 
+
+W\+R\+A1 Ultrasound sensor powered at 3\+V3 \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI@{S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI@{S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI}{SENSOR_VAPI}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+V\+A\+PI~125}\hypertarget{_wasp_frame_8h_ae1bd417ef481b68bbe93ca72c3788a30}{}\label{_wasp_frame_8h_ae1bd417ef481b68bbe93ca72c3788a30}
+
+
+Version parameters. 
+
+A\+PI version \index{Wasp\+Frame.\+h@{Wasp\+Frame.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C@{S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C}}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C@{S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C}!Wasp\+Frame.\+h@{Wasp\+Frame.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C}{SENSOR_WF_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+\_\+\+W\+F\+\_\+C~121}\hypertarget{_wasp_frame_8h_ace139b4700be26f3803c3faba3d0d724}{}\label{_wasp_frame_8h_ace139b4700be26f3803c3faba3d0d724}
+
+
+P\&S liquid flow sensor depending on socket (Smart Metering) 
+
+Liquid Flow sensor in socket C 

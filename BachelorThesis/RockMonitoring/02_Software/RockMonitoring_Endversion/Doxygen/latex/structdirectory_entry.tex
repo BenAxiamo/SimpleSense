@@ -1,0 +1,109 @@
+\hypertarget{structdirectory_entry}{}\section{directory\+Entry Struct Reference}
+\label{structdirectory_entry}\index{directory\+Entry@{directory\+Entry}}
+
+
+F\+AT short directory entry.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Fat\+Structs.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structdirectory_entry_a05dc993ea55a1a742de5970541a31ecb}{name} \mbox{[}11\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{structdirectory_entry_a16c6cde55c8175c90935c386f1cfb21a}{attributes}
+\item 
+uint8\+\_\+t \hyperlink{structdirectory_entry_afe7d00be85f3b78549b21610050da52b}{reserved\+NT}
+\item 
+uint8\+\_\+t \hyperlink{structdirectory_entry_aa5e1ce5b411b88f005b28a3e7c7c5af6}{creation\+Time\+Tenths}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_a622bfa70c2cd9006108d7473d737a953}{creation\+Time}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_a7b43372794655fe6604d3c17c02302fe}{creation\+Date}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_abca70dc5c5fcbe199fd78df010111331}{last\+Access\+Date}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_a3b492598b2b05e8425d2a500443613bd}{first\+Cluster\+High}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_a7bab435322d1928f66fbce53ee1f402d}{last\+Write\+Time}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_a12b2e7cf87482a942a0b5d3df6c51468}{last\+Write\+Date}
+\item 
+uint16\+\_\+t \hyperlink{structdirectory_entry_a74bd660417a9c3501eae353326c14bb9}{first\+Cluster\+Low}
+\item 
+uint32\+\_\+t \hyperlink{structdirectory_entry_ac2445d99b50f925f662952e0ccd26a02}{file\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+AT short directory entry. 
+
+Short means short 8.\+3 name, not the entry size.
+
+Date Format. A F\+AT directory entry date stamp is a 16-\/bit field that is basically a date relative to the M\+S-\/\+D\+OS epoch of 01/01/1980. Here is the format (bit 0 is the L\+SB of the 16-\/bit word, bit 15 is the M\+SB of the 16-\/bit word)\+:
+
+Bits 9-\/15\+: Count of years from 1980, valid value range 0-\/127 inclusive (1980-\/2107).
+
+Bits 5-\/8\+: Month of year, 1 = January, valid value range 1-\/12 inclusive.
+
+Bits 0-\/4\+: Day of month, valid value range 1-\/31 inclusive.
+
+Time Format. A F\+AT directory entry time stamp is a 16-\/bit field that has a granularity of 2 seconds. Here is the format (bit 0 is the L\+SB of the 16-\/bit word, bit 15 is the M\+SB of the 16-\/bit word).
+
+Bits 11-\/15\+: Hours, valid value range 0-\/23 inclusive.
+
+Bits 5-\/10\+: Minutes, valid value range 0-\/59 inclusive.
+
+Bits 0-\/4\+: 2-\/second count, valid value range 0-\/29 inclusive (0 -\/ 58 seconds).
+
+The valid time range is from Midnight 00\+:00\+:00 to 23\+:59\+:58. 
+
+\subsection{Member Data Documentation}
+\index{directory\+Entry@{directory\+Entry}!attributes@{attributes}}
+\index{attributes@{attributes}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{attributes}{attributes}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t directory\+Entry\+::attributes}\hypertarget{structdirectory_entry_a16c6cde55c8175c90935c386f1cfb21a}{}\label{structdirectory_entry_a16c6cde55c8175c90935c386f1cfb21a}
+Entry attributes.
+
+The upper two bits of the attribute byte are reserved and should always be set to 0 when a file is created and never modified or looked at after that. See defines that begin with D\+I\+R\+\_\+\+A\+T\+T\+\_\+. \index{directory\+Entry@{directory\+Entry}!creation\+Date@{creation\+Date}}
+\index{creation\+Date@{creation\+Date}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{creation\+Date}{creationDate}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::creation\+Date}\hypertarget{structdirectory_entry_a7b43372794655fe6604d3c17c02302fe}{}\label{structdirectory_entry_a7b43372794655fe6604d3c17c02302fe}
+Date file was created. \index{directory\+Entry@{directory\+Entry}!creation\+Time@{creation\+Time}}
+\index{creation\+Time@{creation\+Time}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{creation\+Time}{creationTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::creation\+Time}\hypertarget{structdirectory_entry_a622bfa70c2cd9006108d7473d737a953}{}\label{structdirectory_entry_a622bfa70c2cd9006108d7473d737a953}
+Time file was created. \index{directory\+Entry@{directory\+Entry}!creation\+Time\+Tenths@{creation\+Time\+Tenths}}
+\index{creation\+Time\+Tenths@{creation\+Time\+Tenths}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{creation\+Time\+Tenths}{creationTimeTenths}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t directory\+Entry\+::creation\+Time\+Tenths}\hypertarget{structdirectory_entry_aa5e1ce5b411b88f005b28a3e7c7c5af6}{}\label{structdirectory_entry_aa5e1ce5b411b88f005b28a3e7c7c5af6}
+The granularity of the seconds part of creation\+Time is 2 seconds so this field is a count of tenths of a second and its valid value range is 0-\/199 inclusive. (W\+HG note -\/ seems to be hundredths) \index{directory\+Entry@{directory\+Entry}!file\+Size@{file\+Size}}
+\index{file\+Size@{file\+Size}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{file\+Size}{fileSize}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t directory\+Entry\+::file\+Size}\hypertarget{structdirectory_entry_ac2445d99b50f925f662952e0ccd26a02}{}\label{structdirectory_entry_ac2445d99b50f925f662952e0ccd26a02}
+32-\/bit unsigned holding this file\textquotesingle{}s size in bytes. \index{directory\+Entry@{directory\+Entry}!first\+Cluster\+High@{first\+Cluster\+High}}
+\index{first\+Cluster\+High@{first\+Cluster\+High}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{first\+Cluster\+High}{firstClusterHigh}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::first\+Cluster\+High}\hypertarget{structdirectory_entry_a3b492598b2b05e8425d2a500443613bd}{}\label{structdirectory_entry_a3b492598b2b05e8425d2a500443613bd}
+High word of this entry\textquotesingle{}s first cluster number (always 0 for a F\+A\+T12 or F\+A\+T16 volume). \index{directory\+Entry@{directory\+Entry}!first\+Cluster\+Low@{first\+Cluster\+Low}}
+\index{first\+Cluster\+Low@{first\+Cluster\+Low}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{first\+Cluster\+Low}{firstClusterLow}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::first\+Cluster\+Low}\hypertarget{structdirectory_entry_a74bd660417a9c3501eae353326c14bb9}{}\label{structdirectory_entry_a74bd660417a9c3501eae353326c14bb9}
+Low word of this entry\textquotesingle{}s first cluster number. \index{directory\+Entry@{directory\+Entry}!last\+Access\+Date@{last\+Access\+Date}}
+\index{last\+Access\+Date@{last\+Access\+Date}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{last\+Access\+Date}{lastAccessDate}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::last\+Access\+Date}\hypertarget{structdirectory_entry_abca70dc5c5fcbe199fd78df010111331}{}\label{structdirectory_entry_abca70dc5c5fcbe199fd78df010111331}
+Last access date. Note that there is no last access time, only a date. This is the date of last read or write. In the case of a write, this should be set to the same date as last\+Write\+Date. \index{directory\+Entry@{directory\+Entry}!last\+Write\+Date@{last\+Write\+Date}}
+\index{last\+Write\+Date@{last\+Write\+Date}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{last\+Write\+Date}{lastWriteDate}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::last\+Write\+Date}\hypertarget{structdirectory_entry_a12b2e7cf87482a942a0b5d3df6c51468}{}\label{structdirectory_entry_a12b2e7cf87482a942a0b5d3df6c51468}
+Date of last write. File creation is considered a write. \index{directory\+Entry@{directory\+Entry}!last\+Write\+Time@{last\+Write\+Time}}
+\index{last\+Write\+Time@{last\+Write\+Time}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{last\+Write\+Time}{lastWriteTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t directory\+Entry\+::last\+Write\+Time}\hypertarget{structdirectory_entry_a7bab435322d1928f66fbce53ee1f402d}{}\label{structdirectory_entry_a7bab435322d1928f66fbce53ee1f402d}
+Time of last write. File creation is considered a write. \index{directory\+Entry@{directory\+Entry}!name@{name}}
+\index{name@{name}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t directory\+Entry\+::name\mbox{[}11\mbox{]}}\hypertarget{structdirectory_entry_a05dc993ea55a1a742de5970541a31ecb}{}\label{structdirectory_entry_a05dc993ea55a1a742de5970541a31ecb}
+Short 8.\+3 name.
+
+The first eight bytes contain the file name with blank fill. The last three bytes contain the file extension with blank fill. \index{directory\+Entry@{directory\+Entry}!reserved\+NT@{reserved\+NT}}
+\index{reserved\+NT@{reserved\+NT}!directory\+Entry@{directory\+Entry}}
+\subsubsection[{\texorpdfstring{reserved\+NT}{reservedNT}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t directory\+Entry\+::reserved\+NT}\hypertarget{structdirectory_entry_afe7d00be85f3b78549b21610050da52b}{}\label{structdirectory_entry_afe7d00be85f3b78549b21610050da52b}
+Reserved for use by Windows NT. Set value to 0 when a file is created and never modify or look at it after that. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_fat_structs_8h}{Sd\+Fat\+Structs.\+h}\end{DoxyCompactItemize}

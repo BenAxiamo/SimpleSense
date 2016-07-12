@@ -1,0 +1,118 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\PowerSupply.PcbDoc
+Date     : 19.05.2016
+Time     : 16:41:12
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.2mm) (All),(All)
+   Violation between Text "D2" (-57.326mm,24.645mm)  Top Overlay and 
+                     Track (-55.696mm,24.34mm)(-53.246mm,24.34mm)  Top Overlay
+   Violation between Text "R9" (-39.497mm,13.792mm)  Top Overlay and 
+                     Track (-41.616mm,15.73mm)(-39.716mm,15.73mm)  Top Overlay
+   Violation between Text "R6" (-48.742mm,16.014mm)  Top Overlay and 
+                     Track (-50.046mm,13.715mm)(-50.046mm,17.715mm)  Top Overlay
+   Violation between Text "R6" (-48.742mm,16.014mm)  Top Overlay and 
+                     Track (-55.046mm,17.715mm)(-50.046mm,17.715mm)  Top Overlay
+   Violation between Text "Q1" (-50.038mm,11.36mm)  Top Overlay and 
+                     Track (-48.49mm,11.255mm)(-48.49mm,12.255mm)  Top Overlay
+   Violation between Text "Q1" (-50.038mm,11.36mm)  Top Overlay and 
+                     Track (-48.49mm,12.255mm)(-47.69mm,12.255mm)  Top Overlay
+Rule Violations :6
+
+Processing Rule : Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)
+   Violation between Text "C7" (-15.773mm,2.013mm)  Top Overlay and 
+                     Pad C7-1(-16.281mm,4.053mm)  Top Layer
+   Violation between Text "C6" (-17.247mm,2.013mm)  Top Overlay and 
+                     Pad C6-1(-17.501mm,4.053mm)  Top Layer
+   Violation between Text "C4" (-28.921mm,2.645mm)  Top Overlay and 
+                     Pad C4-1(-31.496mm,3.33mm)  Top Layer
+   Violation between Text "R4" (-37.16mm,11.278mm)  Top Overlay and 
+                     Pad R4-2(-35.911mm,12.827mm)  Top Layer
+   Violation between Text "R4" (-37.16mm,11.278mm)  Top Overlay and 
+                     Pad R4-1(-37.211mm,12.827mm)  Top Layer
+   Violation between Text "R5" (-39.446mm,11.354mm)  Top Overlay and 
+                     Pad R5-2(-38.121mm,12.827mm)  Top Layer
+   Violation between Text "R5" (-39.446mm,11.354mm)  Top Overlay and 
+                     Pad R5-1(-39.421mm,12.827mm)  Top Layer
+   Violation between Track (-32.768mm,14.613mm)(-20.268mm,14.613mm)  Top Overlay and 
+                     Pad L1-2(-26.518mm,15.113mm)  Top Layer
+   Violation between Track (-32.768mm,26.313mm)(-20.268mm,26.313mm)  Top Overlay and 
+                     Pad L1-1(-26.518mm,25.813mm)  Top Layer
+   Violation between Text "R8" (-45.166mm,18.49mm)  Top Overlay and 
+                     Pad R2-2(-46.716mm,18.44mm)  Top Layer
+   Violation between Track (-50.046mm,13.715mm)(-50.046mm,17.715mm)  Top Overlay and 
+                     Pad U2-1(-50.546mm,18.345mm)  Top Layer
+   Violation between Track (-55.046mm,17.715mm)(-50.046mm,17.715mm)  Top Overlay and 
+                     Pad U2-1(-50.546mm,18.345mm)  Top Layer
+   Violation between Track (-55.046mm,17.715mm)(-50.046mm,17.715mm)  Top Overlay and 
+                     Pad U2-2(-51.816mm,18.345mm)  Top Layer
+   Violation between Track (-55.046mm,17.715mm)(-50.046mm,17.715mm)  Top Overlay and 
+                     Pad U2-3(-53.086mm,18.345mm)  Top Layer
+   Violation between Track (-55.046mm,17.715mm)(-50.046mm,17.715mm)  Top Overlay and 
+                     Pad U2-4(-54.356mm,18.345mm)  Top Layer
+   Violation between Track (-55.046mm,13.715mm)(-50.046mm,13.715mm)  Top Overlay and 
+                     Pad U2-5(-54.356mm,13.075mm)  Top Layer
+   Violation between Track (-55.046mm,13.715mm)(-50.046mm,13.715mm)  Top Overlay and 
+                     Pad U2-6(-53.086mm,13.075mm)  Top Layer
+   Violation between Track (-55.046mm,13.715mm)(-50.046mm,13.715mm)  Top Overlay and 
+                     Pad U2-7(-51.816mm,13.075mm)  Top Layer
+   Violation between Track (-50.046mm,13.715mm)(-50.046mm,17.715mm)  Top Overlay and 
+                     Pad U2-8(-50.546mm,13.075mm)  Top Layer
+   Violation between Track (-55.046mm,13.715mm)(-50.046mm,13.715mm)  Top Overlay and 
+                     Pad U2-8(-50.546mm,13.075mm)  Top Layer
+Rule Violations :20
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25mm) (Prefered=12.5mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.25mm) (Max=2mm) (All)
+   Violation between Hole Size Constraint (3mm > 2mm) : Pad Free-1(-65.606mm,27.48mm)  Multi-Layer
+   Violation between Hole Size Constraint (3mm > 2mm) : Pad Free-2(-65.606mm,3mm)  Multi-Layer
+   Violation between Hole Size Constraint (3mm > 2mm) : Pad Free-3(-3mm,3mm)  Multi-Layer
+   Violation between Hole Size Constraint (3mm > 2mm) : Pad Free-4(-3mm,27.48mm)  Multi-Layer
+   Violation between Hole Size Constraint (0.2mm < 0.25mm) : Via (-40.116mm,16.68mm) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint (0.2mm < 0.25mm) : Via (-41.216mm,16.68mm) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint (0.2mm < 0.25mm) : Via (-40.116mm,17.78mm) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint (0.2mm < 0.25mm) : Via (-41.216mm,17.78mm) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint (0.2mm < 0.25mm) : Via (-40.116mm,18.88mm) Top Layer to Bottom Layer
+   Violation between Hole Size Constraint (0.2mm < 0.25mm) : Via (-41.216mm,18.88mm) Top Layer to Bottom Layer
+Rule Violations :10
+
+Processing Rule : Minimum Annular Ring (Minimum=0.225mm) (((ObjectKind = 'Pad') OR (ObjectKind = 'Via')) And (Layer = 'MultiLayer') And (HoleDiameter <= AsMM(0.45)))
+   Violation between Minimum Annular Ring (0.15mm < 0.225mm) : Via (-40.116mm,16.68mm) Top Layer to Bottom Layer
+   Violation between Minimum Annular Ring (0.15mm < 0.225mm) : Via (-41.216mm,16.68mm) Top Layer to Bottom Layer
+   Violation between Minimum Annular Ring (0.15mm < 0.225mm) : Via (-40.116mm,17.78mm) Top Layer to Bottom Layer
+   Violation between Minimum Annular Ring (0.15mm < 0.225mm) : Via (-41.216mm,17.78mm) Top Layer to Bottom Layer
+   Violation between Minimum Annular Ring (0.15mm < 0.225mm) : Via (-40.116mm,18.88mm) Top Layer to Bottom Layer
+   Violation between Minimum Annular Ring (0.15mm < 0.225mm) : Via (-41.216mm,18.88mm) Top Layer to Bottom Layer
+Rule Violations :6
+
+Processing Rule : Minimum Annular Ring (Minimum=0.25mm) (((ObjectKind = 'Pad') OR (ObjectKind = 'Via')) And (Layer = 'MultiLayer') And (HoleDiameter > AsMM(0.45)))
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.4mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.15mm) (Max=1.5mm) (Preferred=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 42
+Time Elapsed        : 00:00:00

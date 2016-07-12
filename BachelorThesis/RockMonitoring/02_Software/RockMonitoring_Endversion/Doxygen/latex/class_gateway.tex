@@ -1,0 +1,337 @@
+\hypertarget{class_gateway}{}\section{Gateway Class Reference}
+\label{class_gateway}\index{Gateway@{Gateway}}
+
+
+{\ttfamily \#include $<$Gateway.\+h$>$}
+
+
+
+Collaboration diagram for Gateway\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gateway__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gateway_aa46c059aeda74c7d47dfa40ad521b1d5}{Gateway} ()
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a5d219c9a9ec19e653be48f8832c83285}{init} (void)
+\item 
+void \hyperlink{class_gateway_a5b3639ce998f2cbaad5c753ad4983993}{show\+Struct\+Content} (uint8\+\_\+t node)
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_ae6ea194466065c5e16573194b954d56e}{send\+To\+Server} (\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$data\+To\+Send)
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_adbe66d7a9769448ddd15aebe892aac25}{send\+Sleep} (uint8\+\_\+t ID)
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a92a7418ac3c22ed518d3638f35e94ed2}{request\+Data} (uint8\+\_\+t ID)
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a10c7b8bea8c3677acb51f3d6bc632729}{receive\+Node\+Data} (void)
+\item 
+void \hyperlink{class_gateway_a38cd1f8c0490b671f176c0c268a67f09}{deep\+Sleep} (void)
+\item 
+int8\+\_\+t \hyperlink{class_gateway_aeeb4507e5da1ab2e991278021abd1dc7}{wake\+Up} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a9d34fa93e382ed6e6289efe29e7ea6d0}{measure\+Battery} (void)
+\item 
+void \hyperlink{class_gateway_aaf583390ac930e8bd513ca97fe59ba31}{run} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} \hyperlink{class_gateway_a270aad0f50decd3f5140f4e1cdab5c52}{my\+Sensor\+Struct}
+\item 
+\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} \hyperlink{class_gateway_ae95c6b223c4c3d759f5594cec3283b69}{my\+Sensor\+Struct\+Array} \mbox{[}\hyperlink{_constants_8h_a70e76791a9cc76a4ac1d07222d9d0e32}{number\+Of\+Nodes}\mbox{]}
+\item 
+uint32\+\_\+t \hyperlink{class_gateway_abad37ae0964cf2a1913f616888a74df1}{sleep\+Time} =60
+\item 
+char \hyperlink{class_gateway_a7e3225e6afd4360659530bf39baa67e1}{time\+String} \mbox{[}12\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a908079e6afe54a56c710b6ba5a3af7ad}{sensor\+ID} \mbox{[}\hyperlink{_constants_8h_a70e76791a9cc76a4ac1d07222d9d0e32}{number\+Of\+Nodes}\mbox{]} =\{3,4,5\}
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a97308149e6ad1ba165624c6eef3df761}{not\+Received} =0
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_ae486953d1dbc8811b3438f64f2e940ec}{not\+Received\+Cnt} =0
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_a22eff85e24fa38ad576f72aaa27c23d7}{not\+Sleep\+Cnt} =0
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_aeb1b88db56322530fa14d814b065c512}{nothing\+Received} =0
+\item 
+uint8\+\_\+t \hyperlink{class_gateway_aedf1d6a042a5558fbc40197275d1591e}{current\+Node} =0
+\item 
+\hyperlink{class_lora}{Lora} \hyperlink{class_gateway_a3665047d9fe3f4beb5fbb172a33873a3}{my\+Lora}
+\item 
+\hyperlink{class_connection3_g}{Connection3G} \hyperlink{class_gateway_a1a8fea5745d4519cfeb681135372dcb3}{my3G}
+\item 
+\hyperlink{class_leds}{Leds} \hyperlink{class_gateway_adda10328b9e799d16a456008ca50caa8}{my\+Leds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Gateway.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Gateway@{Gateway}!Gateway@{Gateway}}
+\index{Gateway@{Gateway}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{Gateway()}{Gateway()}}]{\setlength{\rightskip}{0pt plus 5cm}Gateway\+::\+Gateway (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_aa46c059aeda74c7d47dfa40ad521b1d5}{}\label{class_gateway_aa46c059aeda74c7d47dfa40ad521b1d5}
+This method creats object of \hyperlink{class_lora}{Lora} and \hyperlink{class_connection3_g}{Connection3G}
+
+Definition at line 6 of file Gateway.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Gateway@{Gateway}!deep\+Sleep@{deep\+Sleep}}
+\index{deep\+Sleep@{deep\+Sleep}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{deep\+Sleep(void)}{deepSleep(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gateway\+::deep\+Sleep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_a38cd1f8c0490b671f176c0c268a67f09}{}\label{class_gateway_a38cd1f8c0490b671f176c0c268a67f09}
+Sets gateway into deep\+Sleep mode
+
+Definition at line 98 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!init@{init}}
+\index{init@{init}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{init(void)}{init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_a5d219c9a9ec19e653be48f8832c83285}{}\label{class_gateway_a5d219c9a9ec19e653be48f8832c83285}
+This method initializes all the components of the sensornode \begin{DoxyReturn}{Returns}
+0 all settings are done correctly 
+
+1 error during settings
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!measure\+Battery@{measure\+Battery}}
+\index{measure\+Battery@{measure\+Battery}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{measure\+Battery(void)}{measureBattery(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::measure\+Battery (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_a9d34fa93e382ed6e6289efe29e7ea6d0}{}\label{class_gateway_a9d34fa93e382ed6e6289efe29e7ea6d0}
+This method shuts down the battery charger and measures the battery level \begin{DoxyReturn}{Returns}
+returns the battery level
+\end{DoxyReturn}
+
+
+Definition at line 27 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!receive\+Node\+Data@{receive\+Node\+Data}}
+\index{receive\+Node\+Data@{receive\+Node\+Data}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{receive\+Node\+Data(void)}{receiveNodeData(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::receive\+Node\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_a10c7b8bea8c3677acb51f3d6bc632729}{}\label{class_gateway_a10c7b8bea8c3677acb51f3d6bc632729}
+Receives data from a sensor-\/node \begin{DoxyReturn}{Returns}
+0 receiving was successful 
+
+1 receiving was unsuccessful
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!request\+Data@{request\+Data}}
+\index{request\+Data@{request\+Data}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{request\+Data(uint8\+\_\+t I\+D)}{requestData(uint8_t ID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::request\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_a92a7418ac3c22ed518d3638f35e94ed2}{}\label{class_gateway_a92a7418ac3c22ed518d3638f35e94ed2}
+Requests data from a sensor-\/node \begin{DoxyReturn}{Returns}
+0 request was successful 
+
+1 request was unsuccessful
+\end{DoxyReturn}
+
+
+Definition at line 70 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!run@{run}}
+\index{run@{run}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{run(void)}{run(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gateway\+::run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_aaf583390ac930e8bd513ca97fe59ba31}{}\label{class_gateway_aaf583390ac930e8bd513ca97fe59ba31}
+structures the procedure of the gateway
+
+Definition at line 116 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!send\+Sleep@{send\+Sleep}}
+\index{send\+Sleep@{send\+Sleep}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{send\+Sleep(uint8\+\_\+t I\+D)}{sendSleep(uint8_t ID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::send\+Sleep (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_adbe66d7a9769448ddd15aebe892aac25}{}\label{class_gateway_adbe66d7a9769448ddd15aebe892aac25}
+Sends to all the sensor-\/nodes a sleep command \begin{DoxyReturn}{Returns}
+0 command was successful 
+
+1 command was unsuccessful
+\end{DoxyReturn}
+
+
+Definition at line 91 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!send\+To\+Server@{send\+To\+Server}}
+\index{send\+To\+Server@{send\+To\+Server}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{send\+To\+Server(\+Sensors\+::struct\+Sensors $\ast$data\+To\+Send)}{sendToServer(Sensors::structSensors *dataToSend)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::send\+To\+Server (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors} $\ast$}]{data\+To\+Send}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_ae6ea194466065c5e16573194b954d56e}{}\label{class_gateway_ae6ea194466065c5e16573194b954d56e}
+Uploads all the received data to a web-\/server \begin{DoxyReturn}{Returns}
+0 uploading was successful 
+
+1 uploading was unsuccessful
+\end{DoxyReturn}
+
+
+Definition at line 84 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!show\+Struct\+Content@{show\+Struct\+Content}}
+\index{show\+Struct\+Content@{show\+Struct\+Content}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{show\+Struct\+Content(uint8\+\_\+t node)}{showStructContent(uint8_t node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gateway\+::show\+Struct\+Content (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_a5b3639ce998f2cbaad5c753ad4983993}{}\label{class_gateway_a5b3639ce998f2cbaad5c753ad4983993}
+Shows the content of a received packet from a sensor-\/node
+
+Definition at line 40 of file Gateway.\+cpp.
+
+\index{Gateway@{Gateway}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{wake\+Up(void)}{wakeUp(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Gateway\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gateway_aeeb4507e5da1ab2e991278021abd1dc7}{}\label{class_gateway_aeeb4507e5da1ab2e991278021abd1dc7}
+After deep\+Sleep reconfigures all the modules \begin{DoxyReturn}{Returns}
+0 reconfiguration was successful 
+
+1 reconfiguration was unsuccessful
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Gateway.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Gateway@{Gateway}!current\+Node@{current\+Node}}
+\index{current\+Node@{current\+Node}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{current\+Node}{currentNode}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::current\+Node =0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_aedf1d6a042a5558fbc40197275d1591e}{}\label{class_gateway_aedf1d6a042a5558fbc40197275d1591e}
+
+
+Definition at line 35 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!my3G@{my3G}}
+\index{my3G@{my3G}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{my3G}{my3G}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Connection3G} Gateway\+::my3G\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a1a8fea5745d4519cfeb681135372dcb3}{}\label{class_gateway_a1a8fea5745d4519cfeb681135372dcb3}
+
+
+Definition at line 39 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!my\+Leds@{my\+Leds}}
+\index{my\+Leds@{my\+Leds}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{my\+Leds}{myLeds}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Leds} Gateway\+::my\+Leds\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_adda10328b9e799d16a456008ca50caa8}{}\label{class_gateway_adda10328b9e799d16a456008ca50caa8}
+
+
+Definition at line 40 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!my\+Lora@{my\+Lora}}
+\index{my\+Lora@{my\+Lora}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{my\+Lora}{myLora}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lora} Gateway\+::my\+Lora\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a3665047d9fe3f4beb5fbb172a33873a3}{}\label{class_gateway_a3665047d9fe3f4beb5fbb172a33873a3}
+
+
+Definition at line 38 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!my\+Sensor\+Struct@{my\+Sensor\+Struct}}
+\index{my\+Sensor\+Struct@{my\+Sensor\+Struct}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{my\+Sensor\+Struct}{mySensorStruct}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensors\+::struct\+Sensors} Gateway\+::my\+Sensor\+Struct\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a270aad0f50decd3f5140f4e1cdab5c52}{}\label{class_gateway_a270aad0f50decd3f5140f4e1cdab5c52}
+
+
+Definition at line 25 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!my\+Sensor\+Struct\+Array@{my\+Sensor\+Struct\+Array}}
+\index{my\+Sensor\+Struct\+Array@{my\+Sensor\+Struct\+Array}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{my\+Sensor\+Struct\+Array}{mySensorStructArray}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensors\+::struct\+Sensors} Gateway\+::my\+Sensor\+Struct\+Array\mbox{[}{\bf number\+Of\+Nodes}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_ae95c6b223c4c3d759f5594cec3283b69}{}\label{class_gateway_ae95c6b223c4c3d759f5594cec3283b69}
+
+
+Definition at line 26 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!nothing\+Received@{nothing\+Received}}
+\index{nothing\+Received@{nothing\+Received}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{nothing\+Received}{nothingReceived}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::nothing\+Received =0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_aeb1b88db56322530fa14d814b065c512}{}\label{class_gateway_aeb1b88db56322530fa14d814b065c512}
+
+
+Definition at line 34 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!not\+Received@{not\+Received}}
+\index{not\+Received@{not\+Received}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{not\+Received}{notReceived}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::not\+Received =0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a97308149e6ad1ba165624c6eef3df761}{}\label{class_gateway_a97308149e6ad1ba165624c6eef3df761}
+
+
+Definition at line 31 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!not\+Received\+Cnt@{not\+Received\+Cnt}}
+\index{not\+Received\+Cnt@{not\+Received\+Cnt}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{not\+Received\+Cnt}{notReceivedCnt}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::not\+Received\+Cnt =0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_ae486953d1dbc8811b3438f64f2e940ec}{}\label{class_gateway_ae486953d1dbc8811b3438f64f2e940ec}
+
+
+Definition at line 32 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!not\+Sleep\+Cnt@{not\+Sleep\+Cnt}}
+\index{not\+Sleep\+Cnt@{not\+Sleep\+Cnt}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{not\+Sleep\+Cnt}{notSleepCnt}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::not\+Sleep\+Cnt =0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a22eff85e24fa38ad576f72aaa27c23d7}{}\label{class_gateway_a22eff85e24fa38ad576f72aaa27c23d7}
+
+
+Definition at line 33 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!sensor\+ID@{sensor\+ID}}
+\index{sensor\+ID@{sensor\+ID}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{sensor\+ID}{sensorID}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gateway\+::sensor\+ID\mbox{[}{\bf number\+Of\+Nodes}\mbox{]} =\{3,4,5\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a908079e6afe54a56c710b6ba5a3af7ad}{}\label{class_gateway_a908079e6afe54a56c710b6ba5a3af7ad}
+
+
+Definition at line 29 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!sleep\+Time@{sleep\+Time}}
+\index{sleep\+Time@{sleep\+Time}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{sleep\+Time}{sleepTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Gateway\+::sleep\+Time =60\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_abad37ae0964cf2a1913f616888a74df1}{}\label{class_gateway_abad37ae0964cf2a1913f616888a74df1}
+
+
+Definition at line 27 of file Gateway.\+h.
+
+\index{Gateway@{Gateway}!time\+String@{time\+String}}
+\index{time\+String@{time\+String}!Gateway@{Gateway}}
+\subsubsection[{\texorpdfstring{time\+String}{timeString}}]{\setlength{\rightskip}{0pt plus 5cm}char Gateway\+::time\+String\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_gateway_a7e3225e6afd4360659530bf39baa67e1}{}\label{class_gateway_a7e3225e6afd4360659530bf39baa67e1}
+
+
+Definition at line 28 of file Gateway.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_gateway_8h}{Gateway.\+h}\item 
+\hyperlink{_gateway_8cpp}{Gateway.\+cpp}\end{DoxyCompactItemize}

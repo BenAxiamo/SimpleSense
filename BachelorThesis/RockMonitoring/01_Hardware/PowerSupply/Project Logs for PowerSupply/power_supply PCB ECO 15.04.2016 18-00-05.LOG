@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetU1_5 Pin=U1-5
+Removed Pin From Net: NetName=NetU1_8 Pin=U1-8
+Removed Pin From Net: NetName=NetU1_8 Pin=X4-1
+Removed Pin From Net: NetName=NetU1_5 Pin=X4-2
+Removed Member From Class: ClassName=power_supply Member=X4
+Added Component: Designator=*(NOTIFICATION_CONNECTOR)
+Added Pin To Net: NetName=NetU1_5 Pin=*-1
+Added Pin To Net: NetName=NetU1_8 Pin=*-2
+Added Pin To Net: NetName=NetU1_5 Pin=U1-4
+Added Pin To Net: NetName=NetU1_8 Pin=U1-5
+Change Net Name : Old Net Name=NetU1_5 New Net Name=Net*_1
+Change Net Name : Old Net Name=NetU1_8 New Net Name=Net*_2
+Added Member To Class: ClassName=power_supply Member=Component * Notification
+Added Room: Name=power_supply

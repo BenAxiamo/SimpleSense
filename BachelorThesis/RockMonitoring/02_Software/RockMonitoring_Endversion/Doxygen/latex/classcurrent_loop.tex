@@ -1,0 +1,45 @@
+\hypertarget{classcurrent_loop}{}\section{current\+Loop Class Reference}
+\label{classcurrent_loop}\index{current\+Loop@{current\+Loop}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcurrent_loop_a55742b5324bc1ec97003a66f9b668781}{current\+Loop} ()\hypertarget{classcurrent_loop_a55742b5324bc1ec97003a66f9b668781}{}\label{classcurrent_loop_a55742b5324bc1ec97003a66f9b668781}
+
+\begin{DoxyCompactList}\small\item\em The constructor of the class. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{classcurrent_loop_a1f66e65f1cffac2572fb36d8b294de93}{ON} (uint8\+\_\+t power\+Supply)\hypertarget{classcurrent_loop_a1f66e65f1cffac2572fb36d8b294de93}{}\label{classcurrent_loop_a1f66e65f1cffac2572fb36d8b294de93}
+
+\begin{DoxyCompactList}\small\item\em Powers ON the 4-\/20mA supply 5V or 12V. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{classcurrent_loop_a2b03dd4d53fa6f74c5e738cd91330260}{O\+FF} (uint8\+\_\+t power\+Supply)\hypertarget{classcurrent_loop_a2b03dd4d53fa6f74c5e738cd91330260}{}\label{classcurrent_loop_a2b03dd4d53fa6f74c5e738cd91330260}
+
+\begin{DoxyCompactList}\small\item\em Powers O\+FF the 4-\/20mA supply 5V or 12V. \end{DoxyCompactList}\item 
+int \hyperlink{classcurrent_loop_a4fed14933bfd22a7ee3a367a1162be53}{read\+Channel} (uint8\+\_\+t channel)\hypertarget{classcurrent_loop_a4fed14933bfd22a7ee3a367a1162be53}{}\label{classcurrent_loop_a4fed14933bfd22a7ee3a367a1162be53}
+
+\begin{DoxyCompactList}\small\item\em Get the sensor value in integer format. \end{DoxyCompactList}\item 
+float \hyperlink{classcurrent_loop_a38532f653a76e728701c60ca6677a393}{read\+Voltage} (uint8\+\_\+t channel)\hypertarget{classcurrent_loop_a38532f653a76e728701c60ca6677a393}{}\label{classcurrent_loop_a38532f653a76e728701c60ca6677a393}
+
+\begin{DoxyCompactList}\small\item\em Get the sensor value as a voltage in Volts. \end{DoxyCompactList}\item 
+float \hyperlink{classcurrent_loop_a9788fbd27fb43cc55f8182fef7c5e706}{read\+Current} (uint8\+\_\+t channel)\hypertarget{classcurrent_loop_a9788fbd27fb43cc55f8182fef7c5e706}{}\label{classcurrent_loop_a9788fbd27fb43cc55f8182fef7c5e706}
+
+\begin{DoxyCompactList}\small\item\em Get the sensor value as a current in mA. \end{DoxyCompactList}\item 
+float \hyperlink{classcurrent_loop_a74449a8dc00f76669b7a27054cac2fa3}{read\+Current} (uint8\+\_\+t channel, float off\+Set)
+\item 
+uint8\+\_\+t \hyperlink{classcurrent_loop_a6c742536add757bba87b265e5c837aa4}{is\+Connected} (uint8\+\_\+t channel)\hypertarget{classcurrent_loop_a6c742536add757bba87b265e5c837aa4}{}\label{classcurrent_loop_a6c742536add757bba87b265e5c837aa4}
+
+\begin{DoxyCompactList}\small\item\em It checks if the current loop is well connected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{current\+Loop@{current\+Loop}!read\+Current@{read\+Current}}
+\index{read\+Current@{read\+Current}!current\+Loop@{current\+Loop}}
+\subsubsection[{\texorpdfstring{read\+Current(uint8\+\_\+t channel, float off\+Set)}{readCurrent(uint8_t channel, float offSet)}}]{\setlength{\rightskip}{0pt plus 5cm}float current\+Loop\+::read\+Current (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{channel, }
+\item[{float}]{off\+Set}
+\end{DoxyParamCaption}
+)}\hypertarget{classcurrent_loop_a74449a8dc00f76669b7a27054cac2fa3}{}\label{classcurrent_loop_a74449a8dc00f76669b7a27054cac2fa3}
+Get the sensor value as a current in mA and introduce a correction off\+Set factor. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+\_\+4\+\_\+20m\+A/\hyperlink{current_loop_8h}{current\+Loop.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+\_\+4\+\_\+20m\+A/\hyperlink{current_loop_8cpp}{current\+Loop.\+cpp}\end{DoxyCompactItemize}

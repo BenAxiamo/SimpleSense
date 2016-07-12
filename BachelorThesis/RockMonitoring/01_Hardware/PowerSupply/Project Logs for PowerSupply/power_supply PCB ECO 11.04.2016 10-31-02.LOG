@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=L1 Old Footprint=0402-A New Footprint=INDC1608L
+Change Component Footprint: Designator=R2 Old Footprint=AXIAL-0.4 New Footprint=0402
+Added Member To Class: ClassName=power_supply Member=Component C4 Cap Semi
+Added Member To Class: ClassName=power_supply Member=Component D1 D Schottky
+Added Room: Name=power_supply

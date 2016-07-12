@@ -1,0 +1,326 @@
+\hypertarget{_wasp_sensor_gas___pro_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\+Wasp\+Sensor\+Gas\+\_\+\+Pro.h File Reference}
+\label{_wasp_sensor_gas___pro_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\+Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\+Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h}}
+
+
+Library for managing the \hyperlink{class_gas}{Gas} Pro Sensor Board.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\\*
+{\ttfamily \#include $<$Wasp\+Constants.\+h$>$}\\*
+{\ttfamily \#include $<$M\+C\+P3421.\+h$>$}\\*
+{\ttfamily \#include $<$L\+M\+P91000.\+h$>$}\\*
+{\ttfamily \#include $<$B\+M\+E280.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_gas}{Gas}
+\begin{DoxyCompactList}\small\item\em Wasp\+Sensor\+Gas\+\_\+\+Pro Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries G\+A\+S\+\_\+\+D\+E\+B\+UG}~0\hypertarget{_wasp_sensor_gas___pro_8h_a858a523a0532dad9795fbc342d959ace}{}\label{_wasp_sensor_gas___pro_8h_a858a523a0532dad9795fbc342d959ace}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+1}~1\hypertarget{_wasp_sensor_gas___pro_8h_a18e4ba9407880d2a41451a3179680c9e}{}\label{_wasp_sensor_gas___pro_8h_a18e4ba9407880d2a41451a3179680c9e}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+2}~2\hypertarget{_wasp_sensor_gas___pro_8h_a999cf2c2706c459276c0f7275daaff46}{}\label{_wasp_sensor_gas___pro_8h_a999cf2c2706c459276c0f7275daaff46}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+3}~3\hypertarget{_wasp_sensor_gas___pro_8h_aa2b27090f044a5580ba61c4c9db32cb9}{}\label{_wasp_sensor_gas___pro_8h_aa2b27090f044a5580ba61c4c9db32cb9}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+4}~4\hypertarget{_wasp_sensor_gas___pro_8h_ab185208c7bdee09a50ab108d44e00841}{}\label{_wasp_sensor_gas___pro_8h_ab185208c7bdee09a50ab108d44e00841}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+5}~5\hypertarget{_wasp_sensor_gas___pro_8h_a21c74181428d0f6cdc204d1f571b7046}{}\label{_wasp_sensor_gas___pro_8h_a21c74181428d0f6cdc204d1f571b7046}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+6}~6\hypertarget{_wasp_sensor_gas___pro_8h_a072b8bb596d4b18034f099b51a850010}{}\label{_wasp_sensor_gas___pro_8h_a072b8bb596d4b18034f099b51a850010}
+
+\item 
+\#define \hyperlink{_wasp_sensor_gas___pro_8h_a4c70aa76503c1a820b18bbd3794784a7}{S\+O\+C\+K\+E\+T\+\_\+A}~4\hypertarget{_wasp_sensor_gas___pro_8h_a4c70aa76503c1a820b18bbd3794784a7}{}\label{_wasp_sensor_gas___pro_8h_a4c70aa76503c1a820b18bbd3794784a7}
+
+\begin{DoxyCompactList}\small\item\em P\&S! \end{DoxyCompactList}\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+B}~5\hypertarget{_wasp_sensor_gas___pro_8h_ad5738be5049373d4f0497ff09e0f6766}{}\label{_wasp_sensor_gas___pro_8h_ad5738be5049373d4f0497ff09e0f6766}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+C}~1\hypertarget{_wasp_sensor_gas___pro_8h_aacd2e647ec574960e28b147489ddcd7b}{}\label{_wasp_sensor_gas___pro_8h_aacd2e647ec574960e28b147489ddcd7b}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+D}~6\hypertarget{_wasp_sensor_gas___pro_8h_a12830dd8d110249933b65cbd1c1d92f7}{}\label{_wasp_sensor_gas___pro_8h_a12830dd8d110249933b65cbd1c1d92f7}
+
+\item 
+\#define {\bfseries S\+O\+C\+K\+E\+T\+\_\+F}~3\hypertarget{_wasp_sensor_gas___pro_8h_af929ce73a269760ea0988ae04751ac89}{}\label{_wasp_sensor_gas___pro_8h_af929ce73a269760ea0988ae04751ac89}
+
+\item 
+\#define \hyperlink{_wasp_sensor_gas___pro_8h_ae046eeff6ca2b87f36b2523462710e4b}{V\+E\+R\+\_\+\+B\+O\+A\+R\+D\+\_\+\+R\+EG}~0x00\hypertarget{_wasp_sensor_gas___pro_8h_ae046eeff6ca2b87f36b2523462710e4b}{}\label{_wasp_sensor_gas___pro_8h_ae046eeff6ca2b87f36b2523462710e4b}
+
+\begin{DoxyCompactList}\small\item\em E\+E\+P\+R\+OM memory address. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+EG}~0x01\hypertarget{_wasp_sensor_gas___pro_8h_aede93fbf74a0953a1dc3faa499f88aed}{}\label{_wasp_sensor_gas___pro_8h_aede93fbf74a0953a1dc3faa499f88aed}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+I\+T\+I\+V\+I\+T\+Y\+\_\+\+R\+EG}~0x02\hypertarget{_wasp_sensor_gas___pro_8h_a01f345a168682d525e6e5f0111fef62d}{}\label{_wasp_sensor_gas___pro_8h_a01f345a168682d525e6e5f0111fef62d}
+
+\item 
+\#define {\bfseries O\+F\+F\+S\+E\+T\+\_\+\+R\+EG}~0x08\hypertarget{_wasp_sensor_gas___pro_8h_ab1aff33343a04c2bafc0697a78c87567}{}\label{_wasp_sensor_gas___pro_8h_ab1aff33343a04c2bafc0697a78c87567}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+\_\+\+R\+EG}~0x70\hypertarget{_wasp_sensor_gas___pro_8h_a72aa83b96c03cc6959caa0133c0c6d1c}{}\label{_wasp_sensor_gas___pro_8h_a72aa83b96c03cc6959caa0133c0c6d1c}
+
+\item 
+\#define {\bfseries C\+A\+L\+\_\+\+R\+EG}~0x10\hypertarget{_wasp_sensor_gas___pro_8h_acc4a6e5fa6613a2aaaa55f4d55ec24a1}{}\label{_wasp_sensor_gas___pro_8h_acc4a6e5fa6613a2aaaa55f4d55ec24a1}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+W\+E\+\_\+\+R\+EG}~0x02\hypertarget{_wasp_sensor_gas___pro_8h_a222dc295301d567fd9b04ccde8d3389e}{}\label{_wasp_sensor_gas___pro_8h_a222dc295301d567fd9b04ccde8d3389e}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+\_\+\+A\+E\+\_\+\+R\+EG}~0x0C\hypertarget{_wasp_sensor_gas___pro_8h_a3d947fd0093fd66924f1ffbc44254086}{}\label{_wasp_sensor_gas___pro_8h_a3d947fd0093fd66924f1ffbc44254086}
+
+\item 
+\#define {\bfseries C\+A\+L\+\_\+\+W\+E\+\_\+\+R\+EG}~0x10\hypertarget{_wasp_sensor_gas___pro_8h_a5c18d23ccd2a3dd70fe00ab7512a035f}{}\label{_wasp_sensor_gas___pro_8h_a5c18d23ccd2a3dd70fe00ab7512a035f}
+
+\item 
+\#define {\bfseries C\+A\+L\+\_\+\+A\+E\+\_\+\+R\+EG}~0x18\hypertarget{_wasp_sensor_gas___pro_8h_a2abd8562a85acd5c5a0f9831f98bbcb3}{}\label{_wasp_sensor_gas___pro_8h_a2abd8562a85acd5c5a0f9831f98bbcb3}
+
+\item 
+\#define {\bfseries C\+A\+L\+\_\+1\+\_\+\+R\+EG}~0x10\hypertarget{_wasp_sensor_gas___pro_8h_a85ab8f45daa5629913c5190d8085088f}{}\label{_wasp_sensor_gas___pro_8h_a85ab8f45daa5629913c5190d8085088f}
+
+\item 
+\#define {\bfseries C\+A\+L\+\_\+2\+\_\+\+R\+EG}~0x18\hypertarget{_wasp_sensor_gas___pro_8h_a342fc905945f303e9623f7f3891aca06}{}\label{_wasp_sensor_gas___pro_8h_a342fc905945f303e9623f7f3891aca06}
+
+\item 
+\#define {\bfseries V\+O\+L\+\_\+\+W\+I\+P\+E\+R\+\_\+0\+\_\+\+R\+EG}~0x00\hypertarget{_wasp_sensor_gas___pro_8h_ab8080274f237f4440a16987f61eaa241}{}\label{_wasp_sensor_gas___pro_8h_ab8080274f237f4440a16987f61eaa241}
+
+\item 
+\#define {\bfseries V\+O\+L\+\_\+\+W\+I\+P\+E\+R\+\_\+1\+\_\+\+R\+EG}~0x10\hypertarget{_wasp_sensor_gas___pro_8h_a5877a0d10b895d833159c1766cfe0649}{}\label{_wasp_sensor_gas___pro_8h_a5877a0d10b895d833159c1766cfe0649}
+
+\item 
+\#define {\bfseries N\+V\+O\+L\+\_\+\+W\+I\+P\+E\+R\+\_\+0\+\_\+\+R\+EG}~0x20\hypertarget{_wasp_sensor_gas___pro_8h_aae48df69fc26eeae47f34baeded5dcb9}{}\label{_wasp_sensor_gas___pro_8h_aae48df69fc26eeae47f34baeded5dcb9}
+
+\item 
+\#define {\bfseries N\+V\+O\+L\+\_\+\+W\+I\+P\+E\+R\+\_\+1\+\_\+\+R\+EG}~0x30\hypertarget{_wasp_sensor_gas___pro_8h_a691ee65578599d2a0f762ffaa46d1257}{}\label{_wasp_sensor_gas___pro_8h_a691ee65578599d2a0f762ffaa46d1257}
+
+\item 
+\#define {\bfseries V\+O\+L\+\_\+\+T\+C\+O\+N\+\_\+\+R\+EG}~0x40\hypertarget{_wasp_sensor_gas___pro_8h_a73580bf7390e95306a120171c9590797}{}\label{_wasp_sensor_gas___pro_8h_a73580bf7390e95306a120171c9590797}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+EG}~0x50\hypertarget{_wasp_sensor_gas___pro_8h_a9669af9ee7ab58ae67c4e924e9f4a33f}{}\label{_wasp_sensor_gas___pro_8h_a9669af9ee7ab58ae67c4e924e9f4a33f}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+0\+\_\+\+R\+EG}~0x60\hypertarget{_wasp_sensor_gas___pro_8h_a8f8765271076fbf82454a4be99dffe0b}{}\label{_wasp_sensor_gas___pro_8h_a8f8765271076fbf82454a4be99dffe0b}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+1\+\_\+\+R\+EG}~0x70\hypertarget{_wasp_sensor_gas___pro_8h_adbc4d8cd8cca7e0f0f50a11159a1289a}{}\label{_wasp_sensor_gas___pro_8h_adbc4d8cd8cca7e0f0f50a11159a1289a}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+2\+\_\+\+R\+EG}~0x80\hypertarget{_wasp_sensor_gas___pro_8h_aba81789aad145183aebccb0b65d04ffd}{}\label{_wasp_sensor_gas___pro_8h_aba81789aad145183aebccb0b65d04ffd}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+3\+\_\+\+R\+EG}~0x90\hypertarget{_wasp_sensor_gas___pro_8h_aa78fed73f0f689aad6e9db5f136985b2}{}\label{_wasp_sensor_gas___pro_8h_aa78fed73f0f689aad6e9db5f136985b2}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+4\+\_\+\+R\+EG}~0x\+A0\hypertarget{_wasp_sensor_gas___pro_8h_aa0d326037637acdcc012c67a0fb3bf0b}{}\label{_wasp_sensor_gas___pro_8h_aa0d326037637acdcc012c67a0fb3bf0b}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+5\+\_\+\+R\+EG}~0x\+B0\hypertarget{_wasp_sensor_gas___pro_8h_a3f5c5fd070ddb44bccb5f36d0a58c7d7}{}\label{_wasp_sensor_gas___pro_8h_a3f5c5fd070ddb44bccb5f36d0a58c7d7}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+6\+\_\+\+R\+EG}~0x\+C0\hypertarget{_wasp_sensor_gas___pro_8h_ab500ed7d7dfaabfd9b6d57db92fb422f}{}\label{_wasp_sensor_gas___pro_8h_ab500ed7d7dfaabfd9b6d57db92fb422f}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+7\+\_\+\+R\+EG}~0x\+D0\hypertarget{_wasp_sensor_gas___pro_8h_aa6570fddba7a87da2d7e758bbd6005aa}{}\label{_wasp_sensor_gas___pro_8h_aa6570fddba7a87da2d7e758bbd6005aa}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+8\+\_\+\+R\+EG}~0x\+E0\hypertarget{_wasp_sensor_gas___pro_8h_a3ce15de3ac4cd084cd5c1a185b403911}{}\label{_wasp_sensor_gas___pro_8h_a3ce15de3ac4cd084cd5c1a185b403911}
+
+\item 
+\#define {\bfseries E\+E\+P\+R\+O\+M\+\_\+9\+\_\+\+R\+EG}~0x\+F0\hypertarget{_wasp_sensor_gas___pro_8h_a68604702f106e2d43592e212d2a0abfd}{}\label{_wasp_sensor_gas___pro_8h_a68604702f106e2d43592e212d2a0abfd}
+
+\item 
+\#define {\bfseries W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+M\+A\+ND}~0x00\hypertarget{_wasp_sensor_gas___pro_8h_ad1953a1338ab589f5dd289a90a904bec}{}\label{_wasp_sensor_gas___pro_8h_ad1953a1338ab589f5dd289a90a904bec}
+
+\item 
+\#define {\bfseries I\+N\+C\+\_\+\+C\+O\+M\+M\+A\+ND}~0x04\hypertarget{_wasp_sensor_gas___pro_8h_a60a740a1828e46e0c0d5d5aec54d1fa8}{}\label{_wasp_sensor_gas___pro_8h_a60a740a1828e46e0c0d5d5aec54d1fa8}
+
+\item 
+\#define {\bfseries D\+E\+C\+\_\+\+C\+O\+M\+M\+A\+ND}~0x08\hypertarget{_wasp_sensor_gas___pro_8h_a4113def81953603836edf7a8332e1652}{}\label{_wasp_sensor_gas___pro_8h_a4113def81953603836edf7a8332e1652}
+
+\item 
+\#define {\bfseries R\+E\+A\+D\+\_\+\+C\+O\+M\+M\+A\+ND}~0x0C\hypertarget{_wasp_sensor_gas___pro_8h_aefa4ad5f4ff688e721810f9196df660e}{}\label{_wasp_sensor_gas___pro_8h_aefa4ad5f4ff688e721810f9196df660e}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+G\+A\+I\+N\+\_\+0}~0\hypertarget{_wasp_sensor_gas___pro_8h_a4716660a06cb1f6c036df22466e1355f}{}\label{_wasp_sensor_gas___pro_8h_a4716660a06cb1f6c036df22466e1355f}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+G\+A\+I\+N\+\_\+1}~20000\hypertarget{_wasp_sensor_gas___pro_8h_a0a1f509a4f3a4c71118392f40bf5e838}{}\label{_wasp_sensor_gas___pro_8h_a0a1f509a4f3a4c71118392f40bf5e838}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+G\+A\+I\+N\+\_\+2}~40000\hypertarget{_wasp_sensor_gas___pro_8h_a22f4d5b252655eff0b28fd911847327f}{}\label{_wasp_sensor_gas___pro_8h_a22f4d5b252655eff0b28fd911847327f}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+G\+A\+I\+N\+\_\+3}~60000\hypertarget{_wasp_sensor_gas___pro_8h_abd93b4cf09bfb0dbd7b8679198bf295c}{}\label{_wasp_sensor_gas___pro_8h_abd93b4cf09bfb0dbd7b8679198bf295c}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+G\+A\+I\+N\+\_\+4}~80000\hypertarget{_wasp_sensor_gas___pro_8h_ac0007d5665903d594e50c21aebfd99c1}{}\label{_wasp_sensor_gas___pro_8h_ac0007d5665903d594e50c21aebfd99c1}
+
+\item 
+\#define {\bfseries M\+C\+P\+\_\+\+G\+A\+I\+N\+\_\+5}~100000\hypertarget{_wasp_sensor_gas___pro_8h_aa6a153a7520a58ccff6e682b61b95e04}{}\label{_wasp_sensor_gas___pro_8h_aa6a153a7520a58ccff6e682b61b95e04}
+
+\item 
+\#define {\bfseries C\+L2\+\_\+\+SS}~0\hypertarget{_wasp_sensor_gas___pro_8h_ae9aa95722f1dd4cb82ec98cea32569db}{}\label{_wasp_sensor_gas___pro_8h_ae9aa95722f1dd4cb82ec98cea32569db}
+
+\item 
+\#define {\bfseries C\+O\+\_\+\+S\+S\+\_\+\+S\+EC}~1\hypertarget{_wasp_sensor_gas___pro_8h_a693587e2170bfd215dfa484cda2ee1a6}{}\label{_wasp_sensor_gas___pro_8h_a693587e2170bfd215dfa484cda2ee1a6}
+
+\item 
+\#define {\bfseries E\+T\+O\+\_\+\+SS}~2\hypertarget{_wasp_sensor_gas___pro_8h_a8a1d142578c397e8fe90aad96a91959a}{}\label{_wasp_sensor_gas___pro_8h_a8a1d142578c397e8fe90aad96a91959a}
+
+\item 
+\#define {\bfseries H2\+\_\+\+S\+S\+\_\+\+S\+EC}~3\hypertarget{_wasp_sensor_gas___pro_8h_abb3676133a4211688b83e7a47e1c53ed}{}\label{_wasp_sensor_gas___pro_8h_abb3676133a4211688b83e7a47e1c53ed}
+
+\item 
+\#define {\bfseries H2\+S\+\_\+\+S\+S\+\_\+\+S\+EC}~4\hypertarget{_wasp_sensor_gas___pro_8h_a039e4bd847597cd49097e9b9240e83a1}{}\label{_wasp_sensor_gas___pro_8h_a039e4bd847597cd49097e9b9240e83a1}
+
+\item 
+\#define {\bfseries H\+C\+L\+\_\+\+SS}~5\hypertarget{_wasp_sensor_gas___pro_8h_adfdef6ab57a3a9e18cffa5429a9c7b3a}{}\label{_wasp_sensor_gas___pro_8h_adfdef6ab57a3a9e18cffa5429a9c7b3a}
+
+\item 
+\#define {\bfseries H\+C\+N\+\_\+\+SS}~6\hypertarget{_wasp_sensor_gas___pro_8h_afc6da556792c0026170731a73f056202}{}\label{_wasp_sensor_gas___pro_8h_afc6da556792c0026170731a73f056202}
+
+\item 
+\#define {\bfseries N\+H3\+\_\+\+SS}~7\hypertarget{_wasp_sensor_gas___pro_8h_ae053e44abf7d3d6568c09a07f3f57f6a}{}\label{_wasp_sensor_gas___pro_8h_ae053e44abf7d3d6568c09a07f3f57f6a}
+
+\item 
+\#define {\bfseries N\+O\+\_\+\+SS}~8\hypertarget{_wasp_sensor_gas___pro_8h_a3be5c01d32227f9f24417e6716b7663d}{}\label{_wasp_sensor_gas___pro_8h_a3be5c01d32227f9f24417e6716b7663d}
+
+\item 
+\#define {\bfseries N\+O2\+\_\+\+S\+S\+\_\+\+C\+LE}~9\hypertarget{_wasp_sensor_gas___pro_8h_a803aa22d33f9b4f99dcc4c6bc0a9bbbf}{}\label{_wasp_sensor_gas___pro_8h_a803aa22d33f9b4f99dcc4c6bc0a9bbbf}
+
+\item 
+\#define {\bfseries O2\+\_\+\+SS}~10\hypertarget{_wasp_sensor_gas___pro_8h_abf05be93a49fe1f806aaa1235f6aa0db}{}\label{_wasp_sensor_gas___pro_8h_abf05be93a49fe1f806aaa1235f6aa0db}
+
+\item 
+\#define {\bfseries P\+H3\+\_\+\+SS}~11\hypertarget{_wasp_sensor_gas___pro_8h_a65521ccc1bfe8a1437bbbbbefd0344f5}{}\label{_wasp_sensor_gas___pro_8h_a65521ccc1bfe8a1437bbbbbefd0344f5}
+
+\item 
+\#define {\bfseries S\+O2\+\_\+\+SS}~12\hypertarget{_wasp_sensor_gas___pro_8h_a1aa7452a60a8a70c7eeb7da11bccd938}{}\label{_wasp_sensor_gas___pro_8h_a1aa7452a60a8a70c7eeb7da11bccd938}
+
+\item 
+\#define {\bfseries L\+E\+L\+\_\+\+AS}~13\hypertarget{_wasp_sensor_gas___pro_8h_a11654eee76b9d176d883e6a5a97e9d0d}{}\label{_wasp_sensor_gas___pro_8h_a11654eee76b9d176d883e6a5a97e9d0d}
+
+\item 
+\#define {\bfseries O3\+\_\+\+AS}~14\hypertarget{_wasp_sensor_gas___pro_8h_a6e90e76618f4248888b53c260156ab9f}{}\label{_wasp_sensor_gas___pro_8h_a6e90e76618f4248888b53c260156ab9f}
+
+\item 
+\#define {\bfseries N\+D\+I\+R\+\_\+\+C\+O2\+\_\+\+SS}~15\hypertarget{_wasp_sensor_gas___pro_8h_a12f1f338e05d872bf413add544e4d386}{}\label{_wasp_sensor_gas___pro_8h_a12f1f338e05d872bf413add544e4d386}
+
+\item 
+\#define {\bfseries C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+N\+D\+IR}~251\hypertarget{_wasp_sensor_gas___pro_8h_ae35ef5faf1b6a28e7fa7f4642756a714}{}\label{_wasp_sensor_gas___pro_8h_ae35ef5faf1b6a28e7fa7f4642756a714}
+
+\item 
+\#define {\bfseries C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+3E}~252\hypertarget{_wasp_sensor_gas___pro_8h_a4906eb80a6d82893e3e5dd42073e9d79}{}\label{_wasp_sensor_gas___pro_8h_a4906eb80a6d82893e3e5dd42073e9d79}
+
+\item 
+\#define {\bfseries C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+4E}~253\hypertarget{_wasp_sensor_gas___pro_8h_a41f7abc8764746d8ef1801c772196fc0}{}\label{_wasp_sensor_gas___pro_8h_a41f7abc8764746d8ef1801c772196fc0}
+
+\item 
+\#define {\bfseries C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+P\+EL}~254\hypertarget{_wasp_sensor_gas___pro_8h_ab8cb1c01c31d763ae04d00196e41c2c0}{}\label{_wasp_sensor_gas___pro_8h_ab8cb1c01c31d763ae04d00196e41c2c0}
+
+\item 
+\#define {\bfseries U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+S\+E\+N\+S\+OR}~255\hypertarget{_wasp_sensor_gas___pro_8h_a885e3ee9f23969a2825607b0c7a28490}{}\label{_wasp_sensor_gas___pro_8h_a885e3ee9f23969a2825607b0c7a28490}
+
+\item 
+\#define {\bfseries W\+O\+R\+K\+I\+N\+G\+\_\+\+E\+L\+E\+C\+T\+R\+O\+DE}~0\hypertarget{_wasp_sensor_gas___pro_8h_a82023cbe4fb98d8d18ef4a9ac301b6ed}{}\label{_wasp_sensor_gas___pro_8h_a82023cbe4fb98d8d18ef4a9ac301b6ed}
+
+\item 
+\#define {\bfseries A\+U\+X\+I\+L\+I\+A\+R\+Y\+\_\+\+E\+L\+E\+C\+T\+R\+O\+DE}~1\hypertarget{_wasp_sensor_gas___pro_8h_ae38c7bc2167fb806b2ba50a7df3f86a5}{}\label{_wasp_sensor_gas___pro_8h_ae38c7bc2167fb806b2ba50a7df3f86a5}
+
+\item 
+\#define {\bfseries C\+O\+M\+P\+E\+N\+S\+A\+T\+ED}~2\hypertarget{_wasp_sensor_gas___pro_8h_ab26dde03107414f26d8b0fe597004f73}{}\label{_wasp_sensor_gas___pro_8h_ab26dde03107414f26d8b0fe597004f73}
+
+\item 
+\#define {\bfseries U\+HV}~7\hypertarget{_wasp_sensor_gas___pro_8h_a2da300f7b58ed8453d2c7d886786da13}{}\label{_wasp_sensor_gas___pro_8h_a2da300f7b58ed8453d2c7d886786da13}
+
+\item 
+\#define {\bfseries U\+MV}~6\hypertarget{_wasp_sensor_gas___pro_8h_a5dc3b319c4402b1f564c7c39e5471088}{}\label{_wasp_sensor_gas___pro_8h_a5dc3b319c4402b1f564c7c39e5471088}
+
+\item 
+\#define {\bfseries U\+LV}~5\hypertarget{_wasp_sensor_gas___pro_8h_adc0e114e039f1a7edf70f0a632bdc3f9}{}\label{_wasp_sensor_gas___pro_8h_adc0e114e039f1a7edf70f0a632bdc3f9}
+
+\item 
+\#define {\bfseries L\+LV}~4\hypertarget{_wasp_sensor_gas___pro_8h_a8bc3cd2d4d26beeef72ddf185d3b5f3e}{}\label{_wasp_sensor_gas___pro_8h_a8bc3cd2d4d26beeef72ddf185d3b5f3e}
+
+\item 
+\#define {\bfseries L\+MV}~3\hypertarget{_wasp_sensor_gas___pro_8h_ac2c3189a63c668e1d9d6d010667f2901}{}\label{_wasp_sensor_gas___pro_8h_ac2c3189a63c668e1d9d6d010667f2901}
+
+\item 
+\#define {\bfseries L\+HV}~2\hypertarget{_wasp_sensor_gas___pro_8h_afe3e88ab8c8ed68ba3987ac9a0822fbb}{}\label{_wasp_sensor_gas___pro_8h_afe3e88ab8c8ed68ba3987ac9a0822fbb}
+
+\item 
+\#define {\bfseries U\+RG}~1\hypertarget{_wasp_sensor_gas___pro_8h_a38d792e62fa509a9df46a392ada4af22}{}\label{_wasp_sensor_gas___pro_8h_a38d792e62fa509a9df46a392ada4af22}
+
+\item 
+\#define {\bfseries L\+RG}~0\hypertarget{_wasp_sensor_gas___pro_8h_a9e7e91009b74fd2de6e248fe644b8070}{}\label{_wasp_sensor_gas___pro_8h_a9e7e91009b74fd2de6e248fe644b8070}
+
+\item 
+\#define {\bfseries M\+A\+X\+\_\+\+R\+A\+N\+G\+E\+\_\+\+F\+A\+C\+T\+OR}~0.\+85\hypertarget{_wasp_sensor_gas___pro_8h_ab07135315f43432b2e0c0cb034e9081d}{}\label{_wasp_sensor_gas___pro_8h_ab07135315f43432b2e0c0cb034e9081d}
+
+\item 
+\#define {\bfseries M\+I\+N\+\_\+\+R\+A\+N\+G\+E\+\_\+\+F\+A\+C\+T\+OR}~0.\+15\hypertarget{_wasp_sensor_gas___pro_8h_af856dfabc259a9396585912730c4e546}{}\label{_wasp_sensor_gas___pro_8h_af856dfabc259a9396585912730c4e546}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const float table\+\_\+baseline\+\_\+temp\+\_\+comp\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]} \hyperlink{_wasp_sensor_gas___pro_8h_a68002a0e9fea636b3e141eb74e5f8713}{P\+R\+O\+G\+M\+EM}
+\begin{DoxyCompactList}\small\item\em Compensation values for baseline. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t {\bfseries pwr\+Gas\+P\+R\+O\+Register}\hypertarget{_wasp_sensor_gas___pro_8h_a13f5f53653fa59cf4b1f5867fd1c541c}{}\label{_wasp_sensor_gas___pro_8h_a13f5f53653fa59cf4b1f5867fd1c541c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the \hyperlink{class_gas}{Gas} Pro Sensor Board. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+4 Design\+: David Gascón Implementation\+: Alejandro Gállego 
+
+\subsection{Variable Documentation}
+\index{Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h@{Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h}!P\+R\+O\+G\+M\+EM@{P\+R\+O\+G\+M\+EM}}
+\index{P\+R\+O\+G\+M\+EM@{P\+R\+O\+G\+M\+EM}!Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h@{Wasp\+Sensor\+Gas\+\_\+\+Pro.\+h}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+G\+M\+EM}{PROGMEM}}]{\setlength{\rightskip}{0pt plus 5cm}const float table\+\_\+sensitivity\+\_\+temp\+\_\+comp \mbox{[}$\,$\mbox{]}\mbox{[}5\mbox{]} P\+R\+O\+G\+M\+EM}\hypertarget{_wasp_sensor_gas___pro_8h_a68002a0e9fea636b3e141eb74e5f8713}{}\label{_wasp_sensor_gas___pro_8h_a68002a0e9fea636b3e141eb74e5f8713}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\{   
+    \{0,0,-0.05,-0.3\},       
+    \{-0.3,0,0,-0.3\},        
+    \{-1,0,2.66,5\},          
+    \{-2,0,0,-2.5\},          
+    \{0,0,0,-0.04\},          
+    \{0,0,4,15\},             
+    \{0,0,-0.1,0.1\},     
+    \{-0.25,0,1.66,3\},       
+    \{-0.6,0,4,9\},           
+    \{0.1,0,-0.5,-1.7\},      
+    \{0,0,0,0\},              
+    \{0,0,0.15,0.4\},     
+    \{0,0,0.2,0.6\},          
+    \{0,0,0,0\},              
+    \{0.01,0.025,0.12,0.25\}  
+\}
+\end{DoxyCode}
+
+
+Compensation values for baseline. 
+
+Compensation values for sensitivity. 

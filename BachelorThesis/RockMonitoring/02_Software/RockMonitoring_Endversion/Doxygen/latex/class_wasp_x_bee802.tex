@@ -1,0 +1,361 @@
+\hypertarget{class_wasp_x_bee802}{}\section{Wasp\+X\+Bee802 Class Reference}
+\label{class_wasp_x_bee802}\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+
+
+\hyperlink{class_wasp_x_bee802}{Wasp\+X\+Bee802} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee802.\+h$>$}
+
+Inheritance diagram for Wasp\+X\+Bee802\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_x_bee802}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_x_bee802_ada15251381d333b599ea771846a0f66a}{Wasp\+X\+Bee802} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee802_a56812ba1a268a0a7e2ff0415775cb564}{init} (uint8\+\_\+t uart\+\_\+used)
+\begin{DoxyCompactList}\small\item\em It initializes the necessary variables. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a21644a1e20fdf83fdaa4d15d514f85f5}{set\+Retries} (uint8\+\_\+t retry)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a37db265da4aaf51ac40c950c94e31fbd}{get\+Retries} ()
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_ac9c3c856ed7608d4684792d6c8a247fb}{set\+Delay\+Slots} (uint8\+\_\+t exponent)
+\begin{DoxyCompactList}\small\item\em It sets the minimun value of the back-\/off exponent in C\+S\+M\+A/\+CA. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a8325d3cb7ce5b16ff1ddfe9c17bdd65e}{get\+Delay\+Slots} ()
+\begin{DoxyCompactList}\small\item\em It gets the minimun value of the back-\/off exponent in C\+S\+M\+A/\+CA. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a4aa47519ff335b0fcbf4afb3133af11c}{set\+Mac\+Mode} (uint8\+\_\+t mac)
+\begin{DoxyCompactList}\small\item\em It sets the M\+AC mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a6b63e24d4379abd85bbb659ebd03383d}{get\+Mac\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets the M\+AC mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_aa25706b23c0e73b9c087ea9d8660d721}{set\+Energy\+Threshold} (uint8\+\_\+t threshold)
+\begin{DoxyCompactList}\small\item\em It sets the CA threshold in the C\+CA process to detect energy on the channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a6786806d765df7b7014d8a63bb734b03}{get\+Energy\+Threshold} ()
+\begin{DoxyCompactList}\small\item\em It gets the Energy Threshold used in the C\+CA process. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a2b954c48b998e79c786c14cd17f69683}{get\+C\+C\+Acounter} ()
+\begin{DoxyCompactList}\small\item\em It gets the number of times too much energy has been found on the channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a27f0c74090f27fe98693f364261ef37a}{reset\+C\+C\+Acounter} ()
+\begin{DoxyCompactList}\small\item\em It resets the C\+CA counter. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a31cef979f0d1a23d5b40bf6761444e03}{get\+A\+C\+Kcounter} ()
+\begin{DoxyCompactList}\small\item\em It gets the number of times there has been an A\+CK failure. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a6321f418f50c9ff79f2f03693ada0eb9}{reset\+A\+C\+Kcounter} ()
+\begin{DoxyCompactList}\small\item\em It resets the A\+CK counter. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a2a737f55f83b9da93c5c8dafdb8b24b5}{send\+X\+Bee\+Priv} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em It sends a packet to other X\+Bee modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a7d35fb23b4d1cf6b9c542b31e0d34250}{retries}
+\begin{DoxyCompactList}\small\item\em Variables /////////////////////////////////////////////////////////////. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_af474c123ca9cc2c0151f232180374262}{delay\+Slots}\hypertarget{class_wasp_x_bee802_af474c123ca9cc2c0151f232180374262}{}\label{class_wasp_x_bee802_af474c123ca9cc2c0151f232180374262}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the minimun value of the back-\/off exponent in C\+S\+M\+A/\+CA (range \mbox{[}0-\/3\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a54c63539f9ce9f21aad8073f1e09e18b}{mac\+Mode}\hypertarget{class_wasp_x_bee802_a54c63539f9ce9f21aad8073f1e09e18b}{}\label{class_wasp_x_bee802_a54c63539f9ce9f21aad8073f1e09e18b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the M\+AC mode(range \mbox{[}0-\/3\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_a95f6cf094157a4fd9773074868c1e12a}{energy\+Threshold}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_ac3c86f9bfd1569e306da01238f345dc4}{counter\+C\+CA} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee802_ac3c86f9bfd1569e306da01238f345dc4}{}\label{class_wasp_x_bee802_ac3c86f9bfd1569e306da01238f345dc4}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the number of times too much energy has been found on the channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee802_ab5dabaafb26a931e00469212b61194b8}{counter\+A\+CK} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee802_ab5dabaafb26a931e00469212b61194b8}{}\label{class_wasp_x_bee802_ab5dabaafb26a931e00469212b61194b8}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the number of times there has been an A\+CK failure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_x_bee802}{Wasp\+X\+Bee802} Class. 
+
+\hyperlink{class_wasp_x_bee802}{Wasp\+X\+Bee802} Class defines all the variables and functions used to manage X\+Bee 802.\+15.\+4 modules. It inherits from \textquotesingle{}\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core}\textquotesingle{} class the necessary functions, variables and definitions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{Wasp\+X\+Bee802()}{WaspXBee802()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+X\+Bee802\+::\+Wasp\+X\+Bee802 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wasp_x_bee802_ada15251381d333b599ea771846a0f66a}{}\label{class_wasp_x_bee802_ada15251381d333b599ea771846a0f66a}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!get\+A\+C\+Kcounter@{get\+A\+C\+Kcounter}}
+\index{get\+A\+C\+Kcounter@{get\+A\+C\+Kcounter}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{get\+A\+C\+Kcounter()}{getACKcounter()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::get\+A\+C\+Kcounter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a31cef979f0d1a23d5b40bf6761444e03}{}\label{class_wasp_x_bee802_a31cef979f0d1a23d5b40bf6761444e03}
+
+
+It gets the number of times there has been an A\+CK failure. 
+
+It stores in global \textquotesingle{}counter\+A\+CK\textquotesingle{} variable the number of times there has been an A\+CK failure \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!get\+C\+C\+Acounter@{get\+C\+C\+Acounter}}
+\index{get\+C\+C\+Acounter@{get\+C\+C\+Acounter}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{get\+C\+C\+Acounter()}{getCCAcounter()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::get\+C\+C\+Acounter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a2b954c48b998e79c786c14cd17f69683}{}\label{class_wasp_x_bee802_a2b954c48b998e79c786c14cd17f69683}
+
+
+It gets the number of times too much energy has been found on the channel. 
+
+It stores in global \textquotesingle{}counter\+C\+CA\textquotesingle{} variable the number of times too much energy has been found on the channel \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!get\+Delay\+Slots@{get\+Delay\+Slots}}
+\index{get\+Delay\+Slots@{get\+Delay\+Slots}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{get\+Delay\+Slots()}{getDelaySlots()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::get\+Delay\+Slots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a8325d3cb7ce5b16ff1ddfe9c17bdd65e}{}\label{class_wasp_x_bee802_a8325d3cb7ce5b16ff1ddfe9c17bdd65e}
+
+
+It gets the minimun value of the back-\/off exponent in C\+S\+M\+A/\+CA. 
+
+It stores in global \textquotesingle{}delay\+Slots\textquotesingle{} variable the minimun value of the back-\/off exponent in C\+S\+M\+A/\+CA \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!get\+Energy\+Threshold@{get\+Energy\+Threshold}}
+\index{get\+Energy\+Threshold@{get\+Energy\+Threshold}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{get\+Energy\+Threshold()}{getEnergyThreshold()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::get\+Energy\+Threshold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a6786806d765df7b7014d8a63bb734b03}{}\label{class_wasp_x_bee802_a6786806d765df7b7014d8a63bb734b03}
+
+
+It gets the Energy Threshold used in the C\+CA process. 
+
+It stores in global \textquotesingle{}energy\+Threshold\textquotesingle{} variable the Energy Threshold used in the C\+CA process \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!get\+Mac\+Mode@{get\+Mac\+Mode}}
+\index{get\+Mac\+Mode@{get\+Mac\+Mode}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{get\+Mac\+Mode()}{getMacMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::get\+Mac\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a6b63e24d4379abd85bbb659ebd03383d}{}\label{class_wasp_x_bee802_a6b63e24d4379abd85bbb659ebd03383d}
+
+
+It gets the M\+AC mode. 
+
+It stores in global \textquotesingle{}mac\+Mode\textquotesingle{} variable the M\+AC mode \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!get\+Retries@{get\+Retries}}
+\index{get\+Retries@{get\+Retries}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{get\+Retries()}{getRetries()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::get\+Retries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a37db265da4aaf51ac40c950c94e31fbd}{}\label{class_wasp_x_bee802_a37db265da4aaf51ac40c950c94e31fbd}
+It gets the maximum number of retries to execute in addition to the three retries defined in the 802.\+15.\+4 protocol
+
+It stores in global \textquotesingle{}retries\textquotesingle{} variable the number of retries \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!init@{init}}
+\index{init@{init}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t uart\+\_\+used)}{init(uint8_t uart_used)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee802\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{uart\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee802_a56812ba1a268a0a7e2ff0415775cb564}{}\label{class_wasp_x_bee802_a56812ba1a268a0a7e2ff0415775cb564}
+
+
+It initializes the necessary variables. 
+
+It initalizes all the necessary variables 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & protocol\+\_\+used \+: specifies the protocol used in the X\+Bee module (depends on the X\+Bee module) \\
+\hline
+{\em uint8\+\_\+t} & uart\+\_\+used \+: specifies the U\+A\+RT where the data are sent to (0-\/1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!reset\+A\+C\+Kcounter@{reset\+A\+C\+Kcounter}}
+\index{reset\+A\+C\+Kcounter@{reset\+A\+C\+Kcounter}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{reset\+A\+C\+Kcounter()}{resetACKcounter()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::reset\+A\+C\+Kcounter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a6321f418f50c9ff79f2f03693ada0eb9}{}\label{class_wasp_x_bee802_a6321f418f50c9ff79f2f03693ada0eb9}
+
+
+It resets the A\+CK counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!reset\+C\+C\+Acounter@{reset\+C\+C\+Acounter}}
+\index{reset\+C\+C\+Acounter@{reset\+C\+C\+Acounter}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{reset\+C\+C\+Acounter()}{resetCCAcounter()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::reset\+C\+C\+Acounter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a27f0c74090f27fe98693f364261ef37a}{}\label{class_wasp_x_bee802_a27f0c74090f27fe98693f364261ef37a}
+
+
+It resets the C\+CA counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}}
+\index{send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{send\+X\+Bee\+Priv(struct packet\+X\+Bee $\ast$packet)}{sendXBeePriv(struct packetXBee *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::send\+X\+Bee\+Priv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee802_a2a737f55f83b9da93c5c8dafdb8b24b5}{}\label{class_wasp_x_bee802_a2a737f55f83b9da93c5c8dafdb8b24b5}
+
+
+It sends a packet to other X\+Bee modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ packet \+: the function gets the needed information to send the packet from it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!set\+Delay\+Slots@{set\+Delay\+Slots}}
+\index{set\+Delay\+Slots@{set\+Delay\+Slots}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{set\+Delay\+Slots(uint8\+\_\+t exponent)}{setDelaySlots(uint8_t exponent)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::set\+Delay\+Slots (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{exponent}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_ac9c3c856ed7608d4684792d6c8a247fb}{}\label{class_wasp_x_bee802_ac9c3c856ed7608d4684792d6c8a247fb}
+
+
+It sets the minimun value of the back-\/off exponent in C\+S\+M\+A/\+CA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & exponent \+: specifies the value of the back-\/off exponent in C\+S\+M\+A/\+CA (range \mbox{[}0-\/3\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!set\+Energy\+Threshold@{set\+Energy\+Threshold}}
+\index{set\+Energy\+Threshold@{set\+Energy\+Threshold}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{set\+Energy\+Threshold(uint8\+\_\+t threshold)}{setEnergyThreshold(uint8_t threshold)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::set\+Energy\+Threshold (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{threshold}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_aa25706b23c0e73b9c087ea9d8660d721}{}\label{class_wasp_x_bee802_aa25706b23c0e73b9c087ea9d8660d721}
+
+
+It sets the CA threshold in the C\+CA process to detect energy on the channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & threshold \+: specifies the CA threshold in the C\+CA process to detect energy on the channel (range \mbox{[}0x00-\/0x50\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!set\+Mac\+Mode@{set\+Mac\+Mode}}
+\index{set\+Mac\+Mode@{set\+Mac\+Mode}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{set\+Mac\+Mode(uint8\+\_\+t mac)}{setMacMode(uint8_t mac)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::set\+Mac\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mac}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a4aa47519ff335b0fcbf4afb3133af11c}{}\label{class_wasp_x_bee802_a4aa47519ff335b0fcbf4afb3133af11c}
+
+
+It sets the M\+AC mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mac \+: specifies the M\+AC mode (range \mbox{[}0-\/3\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!set\+Retries@{set\+Retries}}
+\index{set\+Retries@{set\+Retries}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{set\+Retries(uint8\+\_\+t retry)}{setRetries(uint8_t retry)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::set\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{retry}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee802_a21644a1e20fdf83fdaa4d15d514f85f5}{}\label{class_wasp_x_bee802_a21644a1e20fdf83fdaa4d15d514f85f5}
+It sets the maximum number of retries to execute in addition to the three retries defined in the 802.\+15.\+4 protocol
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & retry \+: specifies the number of retries to set (range \mbox{[}0-\/6\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!energy\+Threshold@{energy\+Threshold}}
+\index{energy\+Threshold@{energy\+Threshold}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{energy\+Threshold}{energyThreshold}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::energy\+Threshold}\hypertarget{class_wasp_x_bee802_a95f6cf094157a4fd9773074868c1e12a}{}\label{class_wasp_x_bee802_a95f6cf094157a4fd9773074868c1e12a}
+Variable \+: the CA threshold in the C\+CA process to detect energy on the channel (range \mbox{[}0x00-\/0x50\mbox{]}) \index{Wasp\+X\+Bee802@{Wasp\+X\+Bee802}!retries@{retries}}
+\index{retries@{retries}!Wasp\+X\+Bee802@{Wasp\+X\+Bee802}}
+\subsubsection[{\texorpdfstring{retries}{retries}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee802\+::retries}\hypertarget{class_wasp_x_bee802_a7d35fb23b4d1cf6b9c542b31e0d34250}{}\label{class_wasp_x_bee802_a7d35fb23b4d1cf6b9c542b31e0d34250}
+
+
+Variables /////////////////////////////////////////////////////////////. 
+
+Variable \+: number of retries to execute in addition to the three retries defined in the 802.\+15.\+4 protocol (range \mbox{[}0-\/6\mbox{]}) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee802/\hyperlink{_wasp_x_bee802_8h}{Wasp\+X\+Bee802.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee802/Wasp\+X\+Bee802.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,709 @@
+\hypertarget{class_wasp_g_p_s}{}\section{Wasp\+G\+PS Class Reference}
+\label{class_wasp_g_p_s}\index{Wasp\+G\+PS@{Wasp\+G\+PS}}
+
+
+\hyperlink{class_wasp_g_p_s}{Wasp\+G\+PS} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+G\+P\+S.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_g_p_s_ae4c985d18fdd5d579ed826091370dd5f}{Wasp\+G\+PS} ()
+\begin{DoxyCompactList}\small\item\em public methods and attributes ////////////////////////// \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_s_aee96d01b9cb4c202aee0f1eb7d23f07d}{ON} ()
+\begin{DoxyCompactList}\small\item\em It sets U\+A\+R\+T1\textquotesingle{}s multiplexor to G\+PS and open the serial port. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_s_a7ca48db0ad28499ec707da9c8d4c168c}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It closes U\+A\+R\+T1 and powers off the G\+PS module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_s_ad1fb46ced4ab1e70acdc6b8b65c22017}{set\+Mode} (uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em It sets the current internal Power Mode on the G\+PS. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_s_ac7f5eb6748d3fb0504223db1734de4f6}{get\+Mode} (void)
+\begin{DoxyCompactList}\small\item\em It gets the current internal Power Mode on the G\+PS. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_s_a121d4b15f3c1a583527a2612a6690604}{get\+Comm\+Mode} (void)
+\begin{DoxyCompactList}\small\item\em It gets the communication mode in use. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_s_a2ec8ddef6843d3c4b74dfbdd8bfab605}{check} ()
+\begin{DoxyCompactList}\small\item\em It checks if the receiver is connected to sattelites. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_g_p_s_a4874231d2959a49ae536c0fe5fdbc5d5}{wait\+For\+Signal} ()
+\item 
+bool \hyperlink{class_wasp_g_p_s_aa23959c501ca0af5ee0cfa2320b3a4a9}{wait\+For\+Signal} (unsigned long timeout)
+\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a391c6f99505c32663fc5abf887727b2a}{get\+Time} (void)
+\begin{DoxyCompactList}\small\item\em It gets the current time given by G\+PS. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_ae684a06bd7d0817f953f8caf14e23ed5}{get\+Date} (void)
+\begin{DoxyCompactList}\small\item\em It gets the current date given by G\+PS. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a8ea90739d315b574238ba5740d5a64d5}{get\+Latitude} (void)
+\begin{DoxyCompactList}\small\item\em It gets the Latitude from the G\+PS. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_g_p_s_a53058a6576140e56b6196a7203b8bbfe}{convert2\+Degrees} (char $\ast$input, char indicator)
+\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a6c3ccd0b879dca13d186f3d842f0bb89}{get\+Longitude} (void)
+\begin{DoxyCompactList}\small\item\em It gets the Longitude from the G\+PS. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_ac595e50d499c0384d2936926e3a791b7}{get\+Speed} (void)
+\begin{DoxyCompactList}\small\item\em It gets the Speed from the G\+PS. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a4286f04d384c095f467f7f4e68970b52}{get\+Altitude} (void)
+\begin{DoxyCompactList}\small\item\em It gets the Altitude from the G\+PS. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a4a5435eb1a294e2d0dee84e949a9abc1}{get\+Course} (void)
+\begin{DoxyCompactList}\small\item\em It gets the Course from the G\+PS. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_s_a2dedd359ffb9df0eb4fa9a9bae8b04b6}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em It gets the latitude, longitude, altitude, speed, course, time and date. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_s_a49796d04b8934a7cc350218123a5e697}{set\+Time\+From\+G\+PS} (void)
+\begin{DoxyCompactList}\small\item\em It sets R\+TC time from G\+PS. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_s_ad733fb9fb2832ac4f82651ada25c62cc}{save\+Ephems} ()
+\begin{DoxyCompactList}\small\item\em Saves Ephemeris data into default file on SD card. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_s_aba008b17da237045d38b14b7e4685471}{save\+Ephems} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Saves Ephemeris data into SD card. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_s_a6be042ba4f2b51951f57e3ba408a6766}{load\+Ephems} ()
+\begin{DoxyCompactList}\small\item\em Loads Ephemerids data stored in the default file on SD card. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_s_a8b4a945a2630e01643ef8ca67af74a4b}{load\+Ephems} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads Ephemerids data stored in the SD card. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_g_p_s_a3ef86d4c2d4d128c2b8eca9d102208d5}{show\+Raw\+Data} (uint8\+\_\+t mode, unsigned long time)
+\begin{DoxyCompactList}\small\item\em Shows data directly from G\+PS module. N\+M\+EA or Binary. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_af5ee3ced200f8d5e71d1191c0cabd4ef}{get\+Firmware\+Version} ()
+\begin{DoxyCompactList}\small\item\em Gets firmware version of G\+PS module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_g_p_s_a626c22eceec7e3c24c617deb83b4ec88}{flag}
+\item 
+char \hyperlink{class_wasp_g_p_s_a168dcfbebb54ee62c3cc02c2d84930f3}{time\+G\+PS} \mbox{[}11\mbox{]}
+\begin{DoxyCompactList}\small\item\em Variable \+: Time extracted from N\+M\+EA G\+GA sentence received from G\+PS receiver. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a559035395a1af4c42e3b8ec4f8fc9650}{date\+G\+PS} \mbox{[}7\mbox{]}
+\begin{DoxyCompactList}\small\item\em Variable \+: Date extracted from N\+M\+EA R\+MC sentence received from G\+PS receiver. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a41e3f22ac06b05cdf5a53bd7aba6131e}{clk\+Offset}
+\begin{DoxyCompactList}\small\item\em Variable \+: Clock drift of the G\+PS receiver used to initialize it. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a55ac56acd96b1395b64abe8aa561ddcd}{time\+Of\+Week}
+\begin{DoxyCompactList}\small\item\em Variable \+: G\+PS Time of Week used to initialize it. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a81ffa14a72dd68d969eaf0d6fb4200d9}{week\+No}\hypertarget{class_wasp_g_p_s_a81ffa14a72dd68d969eaf0d6fb4200d9}{}\label{class_wasp_g_p_s_a81ffa14a72dd68d969eaf0d6fb4200d9}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Extended G\+PS Week Number used to initialize it. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_acf2fad0a21eab1fbbaf679b089ade066}{channel}\hypertarget{class_wasp_g_p_s_acf2fad0a21eab1fbbaf679b089ade066}{}\label{class_wasp_g_p_s_acf2fad0a21eab1fbbaf679b089ade066}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Channel Counter used to initialize it. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_a6e2bf5694bf9761c7a0397a85a332e78}{reset\+Cfg}\hypertarget{class_wasp_g_p_s_a6e2bf5694bf9761c7a0397a85a332e78}{}\label{class_wasp_g_p_s_a6e2bf5694bf9761c7a0397a85a332e78}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Reset Configuration. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_aa854571fb2346b18cb4e919f5f0d2c39}{coordinate\+Lat}
+\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_afb52e5ef895f9a4b38f7df8720ae5834}{coordinate\+Lon}
+\item 
+char $\ast$ \hyperlink{class_wasp_g_p_s_ac5e0de3f3f4515fb4ca0ce8eff30a62b}{coordinate\+Al}\hypertarget{class_wasp_g_p_s_ac5e0de3f3f4515fb4ca0ce8eff30a62b}{}\label{class_wasp_g_p_s_ac5e0de3f3f4515fb4ca0ce8eff30a62b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Default Altitude position. Expressed in meters. Example--$>$0. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_ae5f4be8c4baf4bf37fe4da05e0441de5}{latitude} \mbox{[}11\mbox{]}\hypertarget{class_wasp_g_p_s_ae5f4be8c4baf4bf37fe4da05e0441de5}{}\label{class_wasp_g_p_s_ae5f4be8c4baf4bf37fe4da05e0441de5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the latitude given by the G\+PS module. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_aab20497f7689102728afa42133906568}{N\+S\+\_\+indicator}\hypertarget{class_wasp_g_p_s_aab20497f7689102728afa42133906568}{}\label{class_wasp_g_p_s_aab20497f7689102728afa42133906568}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the latitude indicator N\+: North; S\+: South. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a88d11e3966a3a80eb84b1f381700e7ab}{longitude} \mbox{[}11\mbox{]}\hypertarget{class_wasp_g_p_s_a88d11e3966a3a80eb84b1f381700e7ab}{}\label{class_wasp_g_p_s_a88d11e3966a3a80eb84b1f381700e7ab}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the longitude given by the G\+PS module. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a681c1aab0b428071b066b84b437712b5}{E\+W\+\_\+indicator}\hypertarget{class_wasp_g_p_s_a681c1aab0b428071b066b84b437712b5}{}\label{class_wasp_g_p_s_a681c1aab0b428071b066b84b437712b5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the longitude indicator E\+: East; W\+: West. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a8468653f9e32c640b9fe6ee94973cac6}{speed} \mbox{[}\hyperlink{_wasp_g_p_s_8h_a0592dba56693fad79136250c11e5a7fe}{M\+A\+X\+\_\+\+S\+I\+ZE}\mbox{]}\hypertarget{class_wasp_g_p_s_a8468653f9e32c640b9fe6ee94973cac6}{}\label{class_wasp_g_p_s_a8468653f9e32c640b9fe6ee94973cac6}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the speed given by the G\+PS module. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a1f01b6cb2262fd7dba0b8ba90f46baa6}{altitude} \mbox{[}\hyperlink{_wasp_g_p_s_8h_a0592dba56693fad79136250c11e5a7fe}{M\+A\+X\+\_\+\+S\+I\+ZE}\mbox{]}\hypertarget{class_wasp_g_p_s_a1f01b6cb2262fd7dba0b8ba90f46baa6}{}\label{class_wasp_g_p_s_a1f01b6cb2262fd7dba0b8ba90f46baa6}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the altitude given by the G\+PS module. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a700f5c5bda697229be8d68fe9ffe98ac}{course} \mbox{[}\hyperlink{_wasp_g_p_s_8h_a0592dba56693fad79136250c11e5a7fe}{M\+A\+X\+\_\+\+S\+I\+ZE}\mbox{]}\hypertarget{class_wasp_g_p_s_a700f5c5bda697229be8d68fe9ffe98ac}{}\label{class_wasp_g_p_s_a700f5c5bda697229be8d68fe9ffe98ac}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores the course given by the G\+PS module. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a5b12e0cc2563db74a1b71016537dd25c}{R\+M\+C\+Mode} \mbox{[}2\mbox{]}\hypertarget{class_wasp_g_p_s_a5b12e0cc2563db74a1b71016537dd25c}{}\label{class_wasp_g_p_s_a5b12e0cc2563db74a1b71016537dd25c}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: it stores mode field of R\+MC and G\+LL N\+M\+EA sentence. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_s_af9e9791df9f98a8b48568c658d06c621}{signal\+Status}
+\item 
+char \hyperlink{class_wasp_g_p_s_aa6a05d9758aca8f23071792a5fabc0ba}{state} \mbox{[}2\mbox{]}\hypertarget{class_wasp_g_p_s_aa6a05d9758aca8f23071792a5fabc0ba}{}\label{class_wasp_g_p_s_aa6a05d9758aca8f23071792a5fabc0ba}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: state field of R\+MC sentence. Same as status. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a934517bf8b1951f3439bba96dc3040c8}{satellites} \mbox{[}3\mbox{]}\hypertarget{class_wasp_g_p_s_a934517bf8b1951f3439bba96dc3040c8}{}\label{class_wasp_g_p_s_a934517bf8b1951f3439bba96dc3040c8}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Satellites used field in G\+GA. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_aebe47405d30de22844c33de2533191b5}{accuracy} \mbox{[}4\mbox{]}\hypertarget{class_wasp_g_p_s_aebe47405d30de22844c33de2533191b5}{}\label{class_wasp_g_p_s_aebe47405d30de22844c33de2533191b5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Accuracy field of G\+GA sentence. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a550e60dead1c3923fd8c6198f5ba8ec2}{G\+S\+A\+Mode1} \mbox{[}2\mbox{]}\hypertarget{class_wasp_g_p_s_a550e60dead1c3923fd8c6198f5ba8ec2}{}\label{class_wasp_g_p_s_a550e60dead1c3923fd8c6198f5ba8ec2}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Mode 1 field of G\+SA sentence. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a6678bb8a28a19a4f7d4f920e6f1bc67c}{G\+S\+A\+Mode2} \mbox{[}2\mbox{]}\hypertarget{class_wasp_g_p_s_a6678bb8a28a19a4f7d4f920e6f1bc67c}{}\label{class_wasp_g_p_s_a6678bb8a28a19a4f7d4f920e6f1bc67c}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Mode 2 field of G\+SA sentence. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_aeef9bca178ee975e48f3f9ca258a6a3a}{P\+D\+O\+P\+Accuracy} \mbox{[}4\mbox{]}\hypertarget{class_wasp_g_p_s_aeef9bca178ee975e48f3f9ca258a6a3a}{}\label{class_wasp_g_p_s_aeef9bca178ee975e48f3f9ca258a6a3a}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Position dilution of precision of G\+SA sentence. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a6d05a845aa17eb1a96c3ec1f638ead8f}{H\+D\+O\+P\+Accuracy} \mbox{[}4\mbox{]}\hypertarget{class_wasp_g_p_s_a6d05a845aa17eb1a96c3ec1f638ead8f}{}\label{class_wasp_g_p_s_a6d05a845aa17eb1a96c3ec1f638ead8f}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Horizontal dilution of precision of G\+SA sentence. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_a56dec22b9c8d5f9ce7dd05efda5cfcd8}{V\+D\+O\+P\+Accuracy} \mbox{[}4\mbox{]}\hypertarget{class_wasp_g_p_s_a56dec22b9c8d5f9ce7dd05efda5cfcd8}{}\label{class_wasp_g_p_s_a56dec22b9c8d5f9ce7dd05efda5cfcd8}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: Vertical dilution of precision of G\+SA sentence. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_g_p_s_ab7fa9639a5448d1271c7593567a71f6f}{satellites\+In\+View} \mbox{[}4\mbox{]}\hypertarget{class_wasp_g_p_s_ab7fa9639a5448d1271c7593567a71f6f}{}\label{class_wasp_g_p_s_ab7fa9639a5448d1271c7593567a71f6f}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: satellites used in G\+SV sentence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_g_p_s}{Wasp\+G\+PS} Class. 
+
+\hyperlink{class_wasp_g_p_s}{Wasp\+G\+PS} Class defines all the variables and functions used to manage G\+PS v2.\+0, the J\+N3 receiver from Telit. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{Wasp\+G\+P\+S()}{WaspGPS()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+G\+P\+S\+::\+Wasp\+G\+PS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_ae4c985d18fdd5d579ed826091370dd5f}{}\label{class_wasp_g_p_s_ae4c985d18fdd5d579ed826091370dd5f}
+
+
+public methods and attributes ////////////////////////// 
+
+class constructor
+
+It initializes the variables with the default values. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!check@{check}}
+\index{check@{check}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{check()}{check()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+S\+::check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a2ec8ddef6843d3c4b74dfbdd8bfab605}{}\label{class_wasp_g_p_s_a2ec8ddef6843d3c4b74dfbdd8bfab605}
+
+
+It checks if the receiver is connected to sattelites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if connected, \textquotesingle{}0\textquotesingle{} if not. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+init() 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!convert2\+Degrees@{convert2\+Degrees}}
+\index{convert2\+Degrees@{convert2\+Degrees}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{convert2\+Degrees(char $\ast$input, char indicator)}{convert2Degrees(char *input, char indicator)}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+G\+P\+S\+::convert2\+Degrees (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input, }
+\item[{char}]{indicator}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a53058a6576140e56b6196a7203b8bbfe}{}\label{class_wasp_g_p_s_a53058a6576140e56b6196a7203b8bbfe}
+It performs the conversion from input parameters in D\+D°\+M\+M.\+mmm’ notation to D\+D.\+dddddd° notation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & input \+: is a string indicating the latitude/longitude in D\+Dmm.\+mmmm\textquotesingle{} notation for latitude and D\+D\+Dmm.\+mmmm\textquotesingle{} notation for longitude \\
+\hline
+{\em char} & indicator \+: is a char indicating \textquotesingle{}N\textquotesingle{} for North, \textquotesingle{}S\textquotesingle{} for South, \textquotesingle{}E\textquotesingle{} for East and \textquotesingle{}W\textquotesingle{} for West \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Latitude/\+Longitude in a float expressed in degrees 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Altitude@{get\+Altitude}}
+\index{get\+Altitude@{get\+Altitude}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Altitude(void)}{getAltitude(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Altitude (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a4286f04d384c095f467f7f4e68970b52}{}\label{class_wasp_g_p_s_a4286f04d384c095f467f7f4e68970b52}
+
+
+It gets the Altitude from the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Altitude in a string, expressed in meters 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Comm\+Mode@{get\+Comm\+Mode}}
+\index{get\+Comm\+Mode@{get\+Comm\+Mode}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Comm\+Mode(void)}{getCommMode(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+S\+::get\+Comm\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a121d4b15f3c1a583527a2612a6690604}{}\label{class_wasp_g_p_s_a121d4b15f3c1a583527a2612a6690604}
+
+
+It gets the communication mode in use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}comm\+Mode\textquotesingle{} variable that contains the communication mode on use 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+set\+Comm\+Mode() 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Course@{get\+Course}}
+\index{get\+Course@{get\+Course}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Course(void)}{getCourse(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Course (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a4a5435eb1a294e2d0dee84e949a9abc1}{}\label{class_wasp_g_p_s_a4a5435eb1a294e2d0dee84e949a9abc1}
+
+
+It gets the Course from the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the True Track made good, expressed in degrees 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Date(void)}{getDate(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Date (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_ae684a06bd7d0817f953f8caf14e23ed5}{}\label{class_wasp_g_p_s_ae684a06bd7d0817f953f8caf14e23ed5}
+
+
+It gets the current date given by G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the currect date in a string with the following structure--$>$ \char`\"{}ddmmyy\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_g_p_s_ae684a06bd7d0817f953f8caf14e23ed5}{get\+Date()}, extract\+Time(), extract\+Date() 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Firmware\+Version@{get\+Firmware\+Version}}
+\index{get\+Firmware\+Version@{get\+Firmware\+Version}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Firmware\+Version()}{getFirmwareVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Firmware\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_af5ee3ced200f8d5e71d1191c0cabd4ef}{}\label{class_wasp_g_p_s_af5ee3ced200f8d5e71d1191c0cabd4ef}
+
+
+Gets firmware version of G\+PS module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Firmware version 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Latitude@{get\+Latitude}}
+\index{get\+Latitude@{get\+Latitude}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Latitude(void)}{getLatitude(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Latitude (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a8ea90739d315b574238ba5740d5a64d5}{}\label{class_wasp_g_p_s_a8ea90739d315b574238ba5740d5a64d5}
+
+
+It gets the Latitude from the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Latitude in a string, expressed as ddmm.\+mmmm 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Longitude@{get\+Longitude}}
+\index{get\+Longitude@{get\+Longitude}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Longitude(void)}{getLongitude(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Longitude (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a6c3ccd0b879dca13d186f3d842f0bb89}{}\label{class_wasp_g_p_s_a6c3ccd0b879dca13d186f3d842f0bb89}
+
+
+It gets the Longitude from the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Longitude in a string, expressed as ddmm.\+mmmm 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Mode(void)}{getMode(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+S\+::get\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_ac7f5eb6748d3fb0504223db1734de4f6}{}\label{class_wasp_g_p_s_ac7f5eb6748d3fb0504223db1734de4f6}
+
+
+It gets the current internal Power Mode on the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}pwr\+Mode\textquotesingle{} variable that contains the power mode on use 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_g_p_s_ad1fb46ced4ab1e70acdc6b8b65c22017}{set\+Mode()} 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Position()}{getPosition()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+S\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a2dedd359ffb9df0eb4fa9a9bae8b04b6}{}\label{class_wasp_g_p_s_a2dedd359ffb9df0eb4fa9a9bae8b04b6}
+
+
+It gets the latitude, longitude, altitude, speed, course, time and date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if success, \textquotesingle{}0\textquotesingle{} if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Speed(void)}{getSpeed(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_ac595e50d499c0384d2936926e3a791b7}{}\label{class_wasp_g_p_s_ac595e50d499c0384d2936926e3a791b7}
+
+
+It gets the Speed from the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Speed in a string, expressed in kilometers per hour 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{get\+Time(void)}{getTime(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+G\+P\+S\+::get\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a391c6f99505c32663fc5abf887727b2a}{}\label{class_wasp_g_p_s_a391c6f99505c32663fc5abf887727b2a}
+
+
+It gets the current time given by G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the currect time in a string with the following structure--$>$ \char`\"{}hhmmss.\+mmmm\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_g_p_s_ae684a06bd7d0817f953f8caf14e23ed5}{get\+Date()}, extract\+Time(), extract\+Date() 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!load\+Ephems@{load\+Ephems}}
+\index{load\+Ephems@{load\+Ephems}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{load\+Ephems()}{loadEphems()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+S\+::load\+Ephems (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a6be042ba4f2b51951f57e3ba408a6766}{}\label{class_wasp_g_p_s_a6be042ba4f2b51951f57e3ba408a6766}
+
+
+Loads Ephemerids data stored in the default file on SD card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if error reading file, -\/1 if no SD, -\/2 if no file. 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!load\+Ephems@{load\+Ephems}}
+\index{load\+Ephems@{load\+Ephems}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{load\+Ephems(const char $\ast$filename)}{loadEphems(const char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+S\+::load\+Ephems (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a8b4a945a2630e01643ef8ca67af74a4b}{}\label{class_wasp_g_p_s_a8b4a945a2630e01643ef8ca67af74a4b}
+
+
+Loads Ephemerids data stored in the SD card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$ filename\+: file name on SD card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if error reading file, -\/1 if no SD, -\/2 if no file. 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+S\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a7ca48db0ad28499ec707da9c8d4c168c}{}\label{class_wasp_g_p_s_a7ca48db0ad28499ec707da9c8d4c168c}
+
+
+It closes U\+A\+R\+T1 and powers off the G\+PS module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+close(), begin() 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!ON@{ON}}
+\index{ON@{ON}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+S\+::\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_aee96d01b9cb4c202aee0f1eb7d23f07d}{}\label{class_wasp_g_p_s_aee96d01b9cb4c202aee0f1eb7d23f07d}
+
+
+It sets U\+A\+R\+T1\textquotesingle{}s multiplexor to G\+PS and open the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+close(), begin() 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!save\+Ephems@{save\+Ephems}}
+\index{save\+Ephems@{save\+Ephems}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{save\+Ephems()}{saveEphems()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+S\+::save\+Ephems (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_ad733fb9fb2832ac4f82651ada25c62cc}{}\label{class_wasp_g_p_s_ad733fb9fb2832ac4f82651ada25c62cc}
+
+
+Saves Ephemeris data into default file on SD card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/3 if no ephem data,, -\/2 if error creating SD card file, \textbackslash{} -\/1 if no SD, 0 if error writting into file, 1 on success 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!save\+Ephems@{save\+Ephems}}
+\index{save\+Ephems@{save\+Ephems}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{save\+Ephems(const char $\ast$filename)}{saveEphems(const char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+S\+::save\+Ephems (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_aba008b17da237045d38b14b7e4685471}{}\label{class_wasp_g_p_s_aba008b17da237045d38b14b7e4685471}
+
+
+Saves Ephemeris data into SD card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$ filename\+: file name on SD card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/3 if no ephem data,, -\/2 if error creating SD card file, \textbackslash{} -\/1 if no SD, 0 if error writting into file, 1 on success 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t)}{setMode(uint8_t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+S\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_ad1fb46ced4ab1e70acdc6b8b65c22017}{}\label{class_wasp_g_p_s_ad1fb46ced4ab1e70acdc6b8b65c22017}
+
+
+It sets the current internal Power Mode on the G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: power mode to set the G\+PS. Possible values are G\+P\+S\+\_\+\+ON, G\+P\+S\+\_\+\+O\+FF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_g_p_s_ac7f5eb6748d3fb0504223db1734de4f6}{get\+Mode()} 
+\end{DoxySeeAlso}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!set\+Time\+From\+G\+PS@{set\+Time\+From\+G\+PS}}
+\index{set\+Time\+From\+G\+PS@{set\+Time\+From\+G\+PS}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{set\+Time\+From\+G\+P\+S(void)}{setTimeFromGPS(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+S\+::set\+Time\+From\+G\+PS (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a49796d04b8934a7cc350218123a5e697}{}\label{class_wasp_g_p_s_a49796d04b8934a7cc350218123a5e697}
+
+
+It sets R\+TC time from G\+PS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!show\+Raw\+Data@{show\+Raw\+Data}}
+\index{show\+Raw\+Data@{show\+Raw\+Data}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{show\+Raw\+Data(uint8\+\_\+t mode, unsigned long time)}{showRawData(uint8_t mode, unsigned long time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+G\+P\+S\+::show\+Raw\+Data (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{unsigned long}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a3ef86d4c2d4d128c2b8eca9d102208d5}{}\label{class_wasp_g_p_s_a3ef86d4c2d4d128c2b8eca9d102208d5}
+
+
+Shows data directly from G\+PS module. N\+M\+EA or Binary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode\+: N\+M\+E\+A\+\_\+\+M\+O\+DE or O\+S\+P\+\_\+\+M\+O\+DE \\
+\hline
+{\em unsigned} & long time\+: time to show data in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!wait\+For\+Signal@{wait\+For\+Signal}}
+\index{wait\+For\+Signal@{wait\+For\+Signal}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{wait\+For\+Signal()}{waitForSignal()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+G\+P\+S\+::wait\+For\+Signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_a4874231d2959a49ae536c0fe5fdbc5d5}{}\label{class_wasp_g_p_s_a4874231d2959a49ae536c0fe5fdbc5d5}
+It checks if the receiver is connected to satellites until connection is stablished or G\+P\+S\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+T\+I\+M\+E\+O\+UT is reached
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if connected, \textquotesingle{}0\textquotesingle{} if not. 
+\end{DoxyReturn}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!wait\+For\+Signal@{wait\+For\+Signal}}
+\index{wait\+For\+Signal@{wait\+For\+Signal}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{wait\+For\+Signal(unsigned long timeout)}{waitForSignal(unsigned long timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+G\+P\+S\+::wait\+For\+Signal (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_s_aa23959c501ca0af5ee0cfa2320b3a4a9}{}\label{class_wasp_g_p_s_aa23959c501ca0af5ee0cfa2320b3a4a9}
+It checks if the receiver is connected to satellites until connection is stablished or timeout parameter is reached
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & timeout defines the time to wait \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}1\textquotesingle{} if connected, \textquotesingle{}0\textquotesingle{} if not. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+G\+PS@{Wasp\+G\+PS}!clk\+Offset@{clk\+Offset}}
+\index{clk\+Offset@{clk\+Offset}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{clk\+Offset}{clkOffset}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Wasp\+G\+P\+S\+::clk\+Offset}\hypertarget{class_wasp_g_p_s_a41e3f22ac06b05cdf5a53bd7aba6131e}{}\label{class_wasp_g_p_s_a41e3f22ac06b05cdf5a53bd7aba6131e}
+
+
+Variable \+: Clock drift of the G\+PS receiver used to initialize it. 
+
+Value in Hz. Use \textquotesingle{}0\textquotesingle{} to use the last value saved, if not available 96250\+Hz will be used. \index{Wasp\+G\+PS@{Wasp\+G\+PS}!coordinate\+Lat@{coordinate\+Lat}}
+\index{coordinate\+Lat@{coordinate\+Lat}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{coordinate\+Lat}{coordinateLat}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Wasp\+G\+P\+S\+::coordinate\+Lat}\hypertarget{class_wasp_g_p_s_aa854571fb2346b18cb4e919f5f0d2c39}{}\label{class_wasp_g_p_s_aa854571fb2346b18cb4e919f5f0d2c39}
+Variable \+: Default Latitude. + = North (Range 90 to -\/90). Expressed in degrees. Example--$>$37.\+3875111 \index{Wasp\+G\+PS@{Wasp\+G\+PS}!coordinate\+Lon@{coordinate\+Lon}}
+\index{coordinate\+Lon@{coordinate\+Lon}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{coordinate\+Lon}{coordinateLon}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Wasp\+G\+P\+S\+::coordinate\+Lon}\hypertarget{class_wasp_g_p_s_afb52e5ef895f9a4b38f7df8720ae5834}{}\label{class_wasp_g_p_s_afb52e5ef895f9a4b38f7df8720ae5834}
+Variable \+: Default Longitude. + = East (Range 180 to -\/180). Expressed in degrees. Example--$>$-\/121.\+97232 \index{Wasp\+G\+PS@{Wasp\+G\+PS}!date\+G\+PS@{date\+G\+PS}}
+\index{date\+G\+PS@{date\+G\+PS}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{date\+G\+PS}{dateGPS}}]{\setlength{\rightskip}{0pt plus 5cm}char Wasp\+G\+P\+S\+::date\+G\+PS\mbox{[}7\mbox{]}}\hypertarget{class_wasp_g_p_s_a559035395a1af4c42e3b8ec4f8fc9650}{}\label{class_wasp_g_p_s_a559035395a1af4c42e3b8ec4f8fc9650}
+
+
+Variable \+: Date extracted from N\+M\+EA R\+MC sentence received from G\+PS receiver. 
+
+\hyperlink{class_string}{String} that contains the date extracted from N\+M\+EA R\+MC sentence. To store the date 23rd of March 1994, it is stored this way\+: \char`\"{}230394\char`\"{} \index{Wasp\+G\+PS@{Wasp\+G\+PS}!flag@{flag}}
+\index{flag@{flag}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{flag}{flag}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+G\+P\+S\+::flag}\hypertarget{class_wasp_g_p_s_a626c22eceec7e3c24c617deb83b4ec88}{}\label{class_wasp_g_p_s_a626c22eceec7e3c24c617deb83b4ec88}
+Variable \+: Flag used to determine if an error occurred while executing some function
+
+Possible values are\+: 0 or 1. \index{Wasp\+G\+PS@{Wasp\+G\+PS}!signal\+Status@{signal\+Status}}
+\index{signal\+Status@{signal\+Status}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{signal\+Status}{signalStatus}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+S\+::signal\+Status}\hypertarget{class_wasp_g_p_s_af9e9791df9f98a8b48568c658d06c621}{}\label{class_wasp_g_p_s_af9e9791df9f98a8b48568c658d06c621}
+Variable \+: global to show if connected of not, depending R\+MC status parameter (A connected, V disconected) \index{Wasp\+G\+PS@{Wasp\+G\+PS}!time\+G\+PS@{time\+G\+PS}}
+\index{time\+G\+PS@{time\+G\+PS}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{time\+G\+PS}{timeGPS}}]{\setlength{\rightskip}{0pt plus 5cm}char Wasp\+G\+P\+S\+::time\+G\+PS\mbox{[}11\mbox{]}}\hypertarget{class_wasp_g_p_s_a168dcfbebb54ee62c3cc02c2d84930f3}{}\label{class_wasp_g_p_s_a168dcfbebb54ee62c3cc02c2d84930f3}
+
+
+Variable \+: Time extracted from N\+M\+EA G\+GA sentence received from G\+PS receiver. 
+
+\hyperlink{class_string}{String} that contains the time extracted from N\+M\+EA G\+GA sentence. To store the time 13\+:30\+:00, it is stored this way\+: \char`\"{}133000\char`\"{} \index{Wasp\+G\+PS@{Wasp\+G\+PS}!time\+Of\+Week@{time\+Of\+Week}}
+\index{time\+Of\+Week@{time\+Of\+Week}!Wasp\+G\+PS@{Wasp\+G\+PS}}
+\subsubsection[{\texorpdfstring{time\+Of\+Week}{timeOfWeek}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Wasp\+G\+P\+S\+::time\+Of\+Week}\hypertarget{class_wasp_g_p_s_a55ac56acd96b1395b64abe8aa561ddcd}{}\label{class_wasp_g_p_s_a55ac56acd96b1395b64abe8aa561ddcd}
+
+
+Variable \+: G\+PS Time of Week used to initialize it. 
+
+Time of week specified in seconds. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+G\+P\+S/\hyperlink{_wasp_g_p_s_8h}{Wasp\+G\+P\+S.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+G\+P\+S/Wasp\+G\+P\+S.\+cpp\end{DoxyCompactItemize}

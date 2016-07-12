@@ -1,0 +1,532 @@
+\hypertarget{class_modbus_master232}{}\section{Modbus\+Master232 Class Reference}
+\label{class_modbus_master232}\index{Modbus\+Master232@{Modbus\+Master232}}
+
+
+{\ttfamily \#include $<$Modbus\+Master232.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_modbus_master232_a2727d618f5d2cc3ad6a92031be79cc44}{Modbus\+Master232} ()
+\item 
+{\bfseries Modbus\+Master232} (uint8\+\_\+t)\hypertarget{class_modbus_master232_a9faa747630643b5283037a0b1895e34e}{}\label{class_modbus_master232_a9faa747630643b5283037a0b1895e34e}
+
+\item 
+{\bfseries Modbus\+Master232} (uint8\+\_\+t, uint8\+\_\+t)\hypertarget{class_modbus_master232_aaa220fa5c55723be7d78421753fdda84}{}\label{class_modbus_master232_aaa220fa5c55723be7d78421753fdda84}
+
+\item 
+void \hyperlink{class_modbus_master232_a9e9242efe51e3c96ff35e2cb6bb49e0e}{begin} ()
+\item 
+void {\bfseries begin} (unsigned long, uint8\+\_\+t)\hypertarget{class_modbus_master232_ae8f2ddaa227e71915feac0c5699d2337}{}\label{class_modbus_master232_ae8f2ddaa227e71915feac0c5699d2337}
+
+\item 
+void \hyperlink{class_modbus_master232_aea00d1ccb419fa79dc12eea85eb31119}{idle} (void($\ast$)())
+\item 
+uint16\+\_\+t \hyperlink{class_modbus_master232_a8a81721eda5ea13577b34b8c7eba73e9}{get\+Response\+Buffer} (uint8\+\_\+t)
+\item 
+void \hyperlink{class_modbus_master232_ada54b984965e9aba4262d06c9993abc6}{clear\+Response\+Buffer} ()
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a69110f988209e27580f76823adbe1d0d}{set\+Transmit\+Buffer} (uint8\+\_\+t, uint16\+\_\+t)
+\item 
+void \hyperlink{class_modbus_master232_ad5a453d2eab7407f2b99bec5c983388f}{clear\+Transmit\+Buffer} ()
+\item 
+void {\bfseries begin\+Transmission} (uint16\+\_\+t)\hypertarget{class_modbus_master232_ad28812575f0ae01e323c6a904cbb440d}{}\label{class_modbus_master232_ad28812575f0ae01e323c6a904cbb440d}
+
+\item 
+uint8\+\_\+t {\bfseries request\+From} (uint16\+\_\+t, uint16\+\_\+t)\hypertarget{class_modbus_master232_a528931473230921f5f81de4d9bb2e24d}{}\label{class_modbus_master232_a528931473230921f5f81de4d9bb2e24d}
+
+\item 
+void {\bfseries send\+Bit} (bool)\hypertarget{class_modbus_master232_a33148cb6ab6b76a65a1ba2f2392674f4}{}\label{class_modbus_master232_a33148cb6ab6b76a65a1ba2f2392674f4}
+
+\item 
+void {\bfseries send} (uint8\+\_\+t)\hypertarget{class_modbus_master232_a30c5e9403abee78a392a4a6850a05a16}{}\label{class_modbus_master232_a30c5e9403abee78a392a4a6850a05a16}
+
+\item 
+void {\bfseries send} (uint16\+\_\+t)\hypertarget{class_modbus_master232_a0a0f4bcc4db34f0e9d0a0e2364ba1cd4}{}\label{class_modbus_master232_a0a0f4bcc4db34f0e9d0a0e2364ba1cd4}
+
+\item 
+void {\bfseries send} (uint32\+\_\+t)\hypertarget{class_modbus_master232_a9572f8d6ba125423a53207e20b366e42}{}\label{class_modbus_master232_a9572f8d6ba125423a53207e20b366e42}
+
+\item 
+void {\bfseries set\+Slave\+Address} (uint8\+\_\+t)\hypertarget{class_modbus_master232_ad5198e4ae52b0e85a1d66c55945b8620}{}\label{class_modbus_master232_ad5198e4ae52b0e85a1d66c55945b8620}
+
+\item 
+uint8\+\_\+t {\bfseries available} (void)\hypertarget{class_modbus_master232_a809c918d4e5bf11df876ebdee9d655ea}{}\label{class_modbus_master232_a809c918d4e5bf11df876ebdee9d655ea}
+
+\item 
+uint16\+\_\+t {\bfseries receive} (void)\hypertarget{class_modbus_master232_ad0476107efe15bd2e37d729f592cdf24}{}\label{class_modbus_master232_ad0476107efe15bd2e37d729f592cdf24}
+
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a90be1ec752704f889756412adcc66388}{read\+Coils} (uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a0f56c27d45b18429519ad691f2c78800}{read\+Discrete\+Inputs} (uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a7abdc6c3580b803667798bfb7aff3529}{read\+Holding\+Registers} (uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a0cfb23cdda96fea7b1701ccf528bd449}{read\+Input\+Registers} (uint16\+\_\+t, uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a6b5aac6d76d69e72a61497c96d049e54}{write\+Single\+Coil} (uint16\+\_\+t, uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a43acfa022f7cb4484bb6b3d6788a0226}{write\+Single\+Register} (uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a6bc096e96a83323bd06aa531a8152bfe}{write\+Multiple\+Coils} (uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t {\bfseries write\+Multiple\+Coils} ()\hypertarget{class_modbus_master232_a7d1de63383c9e7b62153d683b8e4a7dc}{}\label{class_modbus_master232_a7d1de63383c9e7b62153d683b8e4a7dc}
+
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a2b04f2c6f1ea615f2f241db2f4a948b5}{write\+Multiple\+Registers} (uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t {\bfseries write\+Multiple\+Registers} ()\hypertarget{class_modbus_master232_a115229a614109785aef3a914d59f5a54}{}\label{class_modbus_master232_a115229a614109785aef3a914d59f5a54}
+
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a1ca67e1b0a58cdabbb463fa102fd3944}{mask\+Write\+Register} (uint16\+\_\+t, uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_modbus_master232_a34d4cd9268235fd21e28611e20f532a7}{read\+Write\+Multiple\+Registers} (uint16\+\_\+t, uint16\+\_\+t, uint16\+\_\+t, uint16\+\_\+t)
+\item 
+uint8\+\_\+t {\bfseries read\+Write\+Multiple\+Registers} (uint16\+\_\+t, uint16\+\_\+t)\hypertarget{class_modbus_master232_a6cacc11e9026e88e546e7bb6e169e776}{}\label{class_modbus_master232_a6cacc11e9026e88e546e7bb6e169e776}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_a4cce540f90b010767157b4c02ec7b67e}{ku8\+M\+B\+Illegal\+Function} = 0x01
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_a6ded76cb0e4f4a1b300fd18cf82f59da}{ku8\+M\+B\+Illegal\+Data\+Address} = 0x02
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_ab7cc8568ac2defaf240b2e28e7768a95}{ku8\+M\+B\+Illegal\+Data\+Value} = 0x03
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_af9baebfe630c87f0d678110d38999cf2}{ku8\+M\+B\+Slave\+Device\+Failure} = 0x04
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_a6b6f40ff2ea76159dd2073a704588363}{ku8\+M\+B\+Success} = 0x00
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_a1a9b2e570613e0a753465c2c29c77710}{ku8\+M\+B\+Invalid\+Slave\+ID} = 0x\+E0
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_a6783cdbae073f65a8abfad3bc7a164f6}{ku8\+M\+B\+Invalid\+Function} = 0x\+E1
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_a1548431c365a54900c3e6cddae6bfe01}{ku8\+M\+B\+Response\+Timed\+Out} = 0x\+E2
+\item 
+static const uint8\+\_\+t \hyperlink{class_modbus_master232_aa390e0eb3db73565735fb2857930486f}{ku8\+M\+B\+Invalid\+C\+RC} = 0x\+E3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Waspmote class library for communicating with Modbus slaves over R\+S-\/232/485 (via R\+TU protocol). 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Modbus\+Master232@{Modbus\+Master232}!Modbus\+Master232@{Modbus\+Master232}}
+\index{Modbus\+Master232@{Modbus\+Master232}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{Modbus\+Master232()}{ModbusMaster232()}}]{\setlength{\rightskip}{0pt plus 5cm}Modbus\+Master232\+::\+Modbus\+Master232 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a2727d618f5d2cc3ad6a92031be79cc44}{}\label{class_modbus_master232_a2727d618f5d2cc3ad6a92031be79cc44}
+Constructor. Creates class object using default serial port 0, Modbus slave ID 1. 
+
+\subsection{Member Function Documentation}
+\index{Modbus\+Master232@{Modbus\+Master232}!begin@{begin}}
+\index{begin@{begin}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Modbus\+Master232\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a9e9242efe51e3c96ff35e2cb6bb49e0e}{}\label{class_modbus_master232_a9e9242efe51e3c96ff35e2cb6bb49e0e}
+Initialize class object.
+
+Sets up the serial port using default 19200 baud rate. Call once class has been instantiated, typically within setup(). \index{Modbus\+Master232@{Modbus\+Master232}!clear\+Response\+Buffer@{clear\+Response\+Buffer}}
+\index{clear\+Response\+Buffer@{clear\+Response\+Buffer}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{clear\+Response\+Buffer()}{clearResponseBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Modbus\+Master232\+::clear\+Response\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_ada54b984965e9aba4262d06c9993abc6}{}\label{class_modbus_master232_ada54b984965e9aba4262d06c9993abc6}
+Clear Modbus response buffer.
+
+\begin{DoxySeeAlso}{See also}
+Modbus\+Master\+::get\+Response\+Buffer(uint8\+\_\+t u8\+Index) 
+\end{DoxySeeAlso}
+\index{Modbus\+Master232@{Modbus\+Master232}!clear\+Transmit\+Buffer@{clear\+Transmit\+Buffer}}
+\index{clear\+Transmit\+Buffer@{clear\+Transmit\+Buffer}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{clear\+Transmit\+Buffer()}{clearTransmitBuffer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Modbus\+Master232\+::clear\+Transmit\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_ad5a453d2eab7407f2b99bec5c983388f}{}\label{class_modbus_master232_ad5a453d2eab7407f2b99bec5c983388f}
+Clear Modbus transmit buffer.
+
+\begin{DoxySeeAlso}{See also}
+Modbus\+Master\+::set\+Transmit\+Buffer(uint8\+\_\+t u8\+Index, uint16\+\_\+t u16\+Value) 
+\end{DoxySeeAlso}
+\index{Modbus\+Master232@{Modbus\+Master232}!get\+Response\+Buffer@{get\+Response\+Buffer}}
+\index{get\+Response\+Buffer@{get\+Response\+Buffer}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{get\+Response\+Buffer(uint8\+\_\+t)}{getResponseBuffer(uint8_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Modbus\+Master232\+::get\+Response\+Buffer (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{u8\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a8a81721eda5ea13577b34b8c7eba73e9}{}\label{class_modbus_master232_a8a81721eda5ea13577b34b8c7eba73e9}
+Retrieve data from response buffer.
+
+\begin{DoxySeeAlso}{See also}
+Modbus\+Master\+::clear\+Response\+Buffer() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index} & index of response buffer array (0x00..0x3F) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value in position u8\+Index of response buffer (0x0000..0x\+F\+F\+FF) 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!idle@{idle}}
+\index{idle@{idle}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{idle(void($\ast$)())}{idle(void(*)())}}]{\setlength{\rightskip}{0pt plus 5cm}void Modbus\+Master232\+::idle (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)()}]{idle}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_aea00d1ccb419fa79dc12eea85eb31119}{}\label{class_modbus_master232_aea00d1ccb419fa79dc12eea85eb31119}
+Set idle time callback function (cooperative multitasking).
+
+This function gets called in the idle time between transmission of data and response from slave. Do not call functions that read from the serial buffer that is used by Modbus\+Master. Use of i2c/\+T\+WI, 1-\/\+Wire, other serial ports, etc. is permitted within callback function.
+
+\begin{DoxySeeAlso}{See also}
+Modbus\+Master\+::\+Modbus\+Master\+Transaction() 
+\end{DoxySeeAlso}
+\index{Modbus\+Master232@{Modbus\+Master232}!mask\+Write\+Register@{mask\+Write\+Register}}
+\index{mask\+Write\+Register@{mask\+Write\+Register}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{mask\+Write\+Register(uint16\+\_\+t, uint16\+\_\+t, uint16\+\_\+t)}{maskWriteRegister(uint16_t, uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::mask\+Write\+Register (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Write\+Address, }
+\item[{uint16\+\_\+t}]{u16\+And\+Mask, }
+\item[{uint16\+\_\+t}]{u16\+Or\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a1ca67e1b0a58cdabbb463fa102fd3944}{}\label{class_modbus_master232_a1ca67e1b0a58cdabbb463fa102fd3944}
+Modbus function 0x16 Mask Write Register.
+
+This function code is used to modify the contents of a specified holding register using a combination of an A\+ND mask, an OR mask, and the register\textquotesingle{}s current contents. The function can be used to set or clear individual bits in the register.
+
+The request specifies the holding register to be written, the data to be used as the A\+ND mask, and the data to be used as the OR mask. Registers are addressed starting at zero.
+
+The function\textquotesingle{}s algorithm is\+:
+
+Result = (Current Contents \&\& And\+\_\+\+Mask) $\vert$$\vert$ (Or\+\_\+\+Mask \&\& ($\sim$\+And\+\_\+\+Mask))
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Write\+Address} & address of the holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+And\+Mask} & A\+ND mask (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Or\+Mask} & OR mask (0x0000..0x\+F\+F\+FF) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!read\+Coils@{read\+Coils}}
+\index{read\+Coils@{read\+Coils}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{read\+Coils(uint16\+\_\+t, uint16\+\_\+t)}{readCoils(uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::read\+Coils (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Read\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Bit\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a90be1ec752704f889756412adcc66388}{}\label{class_modbus_master232_a90be1ec752704f889756412adcc66388}
+Modbus function 0x01 Read Coils.
+
+This function code is used to read from 1 to 2000 contiguous status of coils in a remote device. The request specifies the starting address, i.\+e. the address of the first coil specified, and the number of coils. Coils are addressed starting at zero.
+
+The coils in the response buffer are packed as one coil per bit of the data field. Status is indicated as 1=ON and 0=O\+FF. The L\+SB of the first data word contains the output addressed in the query. The other coils follow toward the high order end of this word and from low order to high order in subsequent words.
+
+If the returned quantity is not a multiple of sixteen, the remaining bits in the final data word will be padded with zeros (toward the high order end of the word).
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Read\+Address} & address of first coil (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Bit\+Qty} & quantity of coils to read (1..2000, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!read\+Discrete\+Inputs@{read\+Discrete\+Inputs}}
+\index{read\+Discrete\+Inputs@{read\+Discrete\+Inputs}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{read\+Discrete\+Inputs(uint16\+\_\+t, uint16\+\_\+t)}{readDiscreteInputs(uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::read\+Discrete\+Inputs (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Read\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Bit\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a0f56c27d45b18429519ad691f2c78800}{}\label{class_modbus_master232_a0f56c27d45b18429519ad691f2c78800}
+Modbus function 0x02 Read Discrete Inputs.
+
+This function code is used to read from 1 to 2000 contiguous status of discrete inputs in a remote device. The request specifies the starting address, i.\+e. the address of the first input specified, and the number of inputs. Discrete inputs are addressed starting at zero.
+
+The discrete inputs in the response buffer are packed as one input per bit of the data field. Status is indicated as 1=ON; 0=O\+FF. The L\+SB of the first data word contains the input addressed in the query. The other inputs follow toward the high order end of this word, and from low order to high order in subsequent words.
+
+If the returned quantity is not a multiple of sixteen, the remaining bits in the final data word will be padded with zeros (toward the high order end of the word).
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Read\+Address} & address of first discrete input (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Bit\+Qty} & quantity of discrete inputs to read (1..2000, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!read\+Holding\+Registers@{read\+Holding\+Registers}}
+\index{read\+Holding\+Registers@{read\+Holding\+Registers}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{read\+Holding\+Registers(uint16\+\_\+t, uint16\+\_\+t)}{readHoldingRegisters(uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::read\+Holding\+Registers (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Read\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Read\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a7abdc6c3580b803667798bfb7aff3529}{}\label{class_modbus_master232_a7abdc6c3580b803667798bfb7aff3529}
+Modbus function 0x03 Read Holding Registers.
+
+This function code is used to read the contents of a contiguous block of holding registers in a remote device. The request specifies the starting register address and the number of registers. Registers are addressed starting at zero.
+
+The register data in the response buffer is packed as one word per register.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Read\+Address} & address of the first holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Read\+Qty} & quantity of holding registers to read (1..125, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!read\+Input\+Registers@{read\+Input\+Registers}}
+\index{read\+Input\+Registers@{read\+Input\+Registers}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{read\+Input\+Registers(uint16\+\_\+t, uint8\+\_\+t)}{readInputRegisters(uint16_t, uint8_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::read\+Input\+Registers (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Read\+Address, }
+\item[{uint8\+\_\+t}]{u16\+Read\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a0cfb23cdda96fea7b1701ccf528bd449}{}\label{class_modbus_master232_a0cfb23cdda96fea7b1701ccf528bd449}
+Modbus function 0x04 Read Input Registers.
+
+This function code is used to read from 1 to 125 contiguous input registers in a remote device. The request specifies the starting register address and the number of registers. Registers are addressed starting at zero.
+
+The register data in the response buffer is packed as one word per register.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Read\+Address} & address of the first input register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Read\+Qty} & quantity of input registers to read (1..125, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!read\+Write\+Multiple\+Registers@{read\+Write\+Multiple\+Registers}}
+\index{read\+Write\+Multiple\+Registers@{read\+Write\+Multiple\+Registers}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{read\+Write\+Multiple\+Registers(uint16\+\_\+t, uint16\+\_\+t, uint16\+\_\+t, uint16\+\_\+t)}{readWriteMultipleRegisters(uint16_t, uint16_t, uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::read\+Write\+Multiple\+Registers (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Read\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Read\+Qty, }
+\item[{uint16\+\_\+t}]{u16\+Write\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Write\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a34d4cd9268235fd21e28611e20f532a7}{}\label{class_modbus_master232_a34d4cd9268235fd21e28611e20f532a7}
+Modbus function 0x17 Read Write Multiple Registers.
+
+This function code performs a combination of one read operation and one write operation in a single M\+O\+D\+B\+US transaction. The write operation is performed before the read. Holding registers are addressed starting at zero.
+
+The request specifies the starting address and number of holding registers to be read as well as the starting address, and the number of holding registers. The data to be written is specified in the transmit buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Read\+Address} & address of the first holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Read\+Qty} & quantity of holding registers to read (1..125, enforced by remote device) \\
+\hline
+{\em u16\+Write\+Address} & address of the first holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Write\+Qty} & quantity of holding registers to write (1..121, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!set\+Transmit\+Buffer@{set\+Transmit\+Buffer}}
+\index{set\+Transmit\+Buffer@{set\+Transmit\+Buffer}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{set\+Transmit\+Buffer(uint8\+\_\+t, uint16\+\_\+t)}{setTransmitBuffer(uint8_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::set\+Transmit\+Buffer (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{u8\+Index, }
+\item[{uint16\+\_\+t}]{u16\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a69110f988209e27580f76823adbe1d0d}{}\label{class_modbus_master232_a69110f988209e27580f76823adbe1d0d}
+Place data in transmit buffer.
+
+\begin{DoxySeeAlso}{See also}
+Modbus\+Master\+::clear\+Transmit\+Buffer() 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index} & index of transmit buffer array (0x00..0x3F) \\
+\hline
+{\em u16\+Value} & value to place in position u8\+Index of transmit buffer (0x0000..0x\+F\+F\+FF) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!write\+Multiple\+Coils@{write\+Multiple\+Coils}}
+\index{write\+Multiple\+Coils@{write\+Multiple\+Coils}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{write\+Multiple\+Coils(uint16\+\_\+t, uint16\+\_\+t)}{writeMultipleCoils(uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::write\+Multiple\+Coils (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Write\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Bit\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a6bc096e96a83323bd06aa531a8152bfe}{}\label{class_modbus_master232_a6bc096e96a83323bd06aa531a8152bfe}
+Modbus function 0x0F Write Multiple Coils.
+
+This function code is used to force each coil in a sequence of coils to either ON or O\+FF in a remote device. The request specifies the coil references to be forced. Coils are addressed starting at zero.
+
+The requested O\+N/\+O\+FF states are specified by contents of the transmit buffer. A logical \textquotesingle{}1\textquotesingle{} in a bit position of the buffer requests the corresponding output to be ON. A logical \textquotesingle{}0\textquotesingle{} requests it to be O\+FF.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Write\+Address} & address of the first coil (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Bit\+Qty} & quantity of coils to write (1..2000, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!write\+Multiple\+Registers@{write\+Multiple\+Registers}}
+\index{write\+Multiple\+Registers@{write\+Multiple\+Registers}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{write\+Multiple\+Registers(uint16\+\_\+t, uint16\+\_\+t)}{writeMultipleRegisters(uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::write\+Multiple\+Registers (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Write\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Write\+Qty}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a2b04f2c6f1ea615f2f241db2f4a948b5}{}\label{class_modbus_master232_a2b04f2c6f1ea615f2f241db2f4a948b5}
+Modbus function 0x10 Write Multiple Registers.
+
+This function code is used to write a block of contiguous registers (1 to 123 registers) in a remote device.
+
+The requested written values are specified in the transmit buffer. Data is packed as one word per register.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Write\+Address} & address of the holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Write\+Qty} & quantity of holding registers to write (1..123, enforced by remote device) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!write\+Single\+Coil@{write\+Single\+Coil}}
+\index{write\+Single\+Coil@{write\+Single\+Coil}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{write\+Single\+Coil(uint16\+\_\+t, uint8\+\_\+t)}{writeSingleCoil(uint16_t, uint8_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::write\+Single\+Coil (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Write\+Address, }
+\item[{uint8\+\_\+t}]{u8\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a6b5aac6d76d69e72a61497c96d049e54}{}\label{class_modbus_master232_a6b5aac6d76d69e72a61497c96d049e54}
+Modbus function 0x05 Write Single Coil.
+
+This function code is used to write a single output to either ON or O\+FF in a remote device. The requested O\+N/\+O\+FF state is specified by a constant in the state field. A non-\/zero value requests the output to be ON and a value of 0 requests it to be O\+FF. The request specifies the address of the coil to be forced. Coils are addressed starting at zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Write\+Address} & address of the coil (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u8\+State} & 0=O\+FF, non-\/zero=ON (0x00..0x\+FF) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+\index{Modbus\+Master232@{Modbus\+Master232}!write\+Single\+Register@{write\+Single\+Register}}
+\index{write\+Single\+Register@{write\+Single\+Register}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{write\+Single\+Register(uint16\+\_\+t, uint16\+\_\+t)}{writeSingleRegister(uint16_t, uint16_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Modbus\+Master232\+::write\+Single\+Register (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{u16\+Write\+Address, }
+\item[{uint16\+\_\+t}]{u16\+Write\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_modbus_master232_a43acfa022f7cb4484bb6b3d6788a0226}{}\label{class_modbus_master232_a43acfa022f7cb4484bb6b3d6788a0226}
+Modbus function 0x06 Write Single Register.
+
+This function code is used to write a single holding register in a remote device. The request specifies the address of the register to be written. Registers are addressed starting at zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u16\+Write\+Address} & address of the holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+{\em u16\+Write\+Value} & value to be written to holding register (0x0000..0x\+F\+F\+FF) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success; exception number on failure 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Illegal\+Data\+Address@{ku8\+M\+B\+Illegal\+Data\+Address}}
+\index{ku8\+M\+B\+Illegal\+Data\+Address@{ku8\+M\+B\+Illegal\+Data\+Address}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Illegal\+Data\+Address}{ku8MBIllegalDataAddress}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Illegal\+Data\+Address = 0x02\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_a6ded76cb0e4f4a1b300fd18cf82f59da}{}\label{class_modbus_master232_a6ded76cb0e4f4a1b300fd18cf82f59da}
+Modbus protocol illegal data address exception.
+
+The data address received in the query is not an allowable address for the server (or slave). More specifically, the combination of reference number and transfer length is invalid. For a controller with 100 registers, the A\+DU addresses the first register as 0, and the last one as 99. If a request is submitted with a starting register address of 96 and a quantity of registers of 4, then this request will successfully operate (address-\/wise at least) on registers 96, 97, 98, 99. If a request is submitted with a starting register address of 96 and a quantity of registers of 5, then this request will fail with Exception Code 0x02 \char`\"{}\+Illegal Data Address\char`\"{} since it attempts to operate on registers 96, 97, 98, 99 and 100, and there is no register with address
+\begin{DoxyEnumerate}
+\item 
+\end{DoxyEnumerate}\index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Illegal\+Data\+Value@{ku8\+M\+B\+Illegal\+Data\+Value}}
+\index{ku8\+M\+B\+Illegal\+Data\+Value@{ku8\+M\+B\+Illegal\+Data\+Value}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Illegal\+Data\+Value}{ku8MBIllegalDataValue}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Illegal\+Data\+Value = 0x03\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_ab7cc8568ac2defaf240b2e28e7768a95}{}\label{class_modbus_master232_ab7cc8568ac2defaf240b2e28e7768a95}
+Modbus protocol illegal data value exception.
+
+A value contained in the query data field is not an allowable value for server (or slave). This indicates a fault in the structure of the remainder of a complex request, such as that the implied length is incorrect. It specifically does N\+OT mean that a data item submitted for storage in a register has a value outside the expectation of the application program, since the M\+O\+D\+B\+US protocol is unaware of the significance of any particular value of any particular register. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Illegal\+Function@{ku8\+M\+B\+Illegal\+Function}}
+\index{ku8\+M\+B\+Illegal\+Function@{ku8\+M\+B\+Illegal\+Function}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Illegal\+Function}{ku8MBIllegalFunction}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Illegal\+Function = 0x01\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_a4cce540f90b010767157b4c02ec7b67e}{}\label{class_modbus_master232_a4cce540f90b010767157b4c02ec7b67e}
+Modbus protocol illegal function exception.
+
+The function code received in the query is not an allowable action for the server (or slave). This may be because the function code is only applicable to newer devices, and was not implemented in the unit selected. It could also indicate that the server (or slave) is in the wrong state to process a request of this type, for example because it is unconfigured and is being asked to return register values. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Invalid\+C\+RC@{ku8\+M\+B\+Invalid\+C\+RC}}
+\index{ku8\+M\+B\+Invalid\+C\+RC@{ku8\+M\+B\+Invalid\+C\+RC}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Invalid\+C\+RC}{ku8MBInvalidCRC}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Invalid\+C\+RC = 0x\+E3\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_aa390e0eb3db73565735fb2857930486f}{}\label{class_modbus_master232_aa390e0eb3db73565735fb2857930486f}
+Modbus\+Master invalid response C\+RC exception.
+
+The C\+RC in the response does not match the one calculated. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Invalid\+Function@{ku8\+M\+B\+Invalid\+Function}}
+\index{ku8\+M\+B\+Invalid\+Function@{ku8\+M\+B\+Invalid\+Function}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Invalid\+Function}{ku8MBInvalidFunction}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Invalid\+Function = 0x\+E1\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_a6783cdbae073f65a8abfad3bc7a164f6}{}\label{class_modbus_master232_a6783cdbae073f65a8abfad3bc7a164f6}
+Modbus\+Master invalid response function exception.
+
+The function code in the response does not match that of the request. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Invalid\+Slave\+ID@{ku8\+M\+B\+Invalid\+Slave\+ID}}
+\index{ku8\+M\+B\+Invalid\+Slave\+ID@{ku8\+M\+B\+Invalid\+Slave\+ID}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Invalid\+Slave\+ID}{ku8MBInvalidSlaveID}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Invalid\+Slave\+ID = 0x\+E0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_a1a9b2e570613e0a753465c2c29c77710}{}\label{class_modbus_master232_a1a9b2e570613e0a753465c2c29c77710}
+Modbus\+Master invalid response slave ID exception.
+
+The slave ID in the response does not match that of the request. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Response\+Timed\+Out@{ku8\+M\+B\+Response\+Timed\+Out}}
+\index{ku8\+M\+B\+Response\+Timed\+Out@{ku8\+M\+B\+Response\+Timed\+Out}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Response\+Timed\+Out}{ku8MBResponseTimedOut}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Response\+Timed\+Out = 0x\+E2\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_a1548431c365a54900c3e6cddae6bfe01}{}\label{class_modbus_master232_a1548431c365a54900c3e6cddae6bfe01}
+Modbus\+Master response timed out exception.
+
+The entire response was not received within the timeout period, Modbus\+Master\+::ku8\+M\+B\+Response\+Timeout. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Slave\+Device\+Failure@{ku8\+M\+B\+Slave\+Device\+Failure}}
+\index{ku8\+M\+B\+Slave\+Device\+Failure@{ku8\+M\+B\+Slave\+Device\+Failure}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Slave\+Device\+Failure}{ku8MBSlaveDeviceFailure}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Slave\+Device\+Failure = 0x04\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_af9baebfe630c87f0d678110d38999cf2}{}\label{class_modbus_master232_af9baebfe630c87f0d678110d38999cf2}
+Modbus protocol slave device failure exception.
+
+An unrecoverable error occurred while the server (or slave) was attempting to perform the requested action. \index{Modbus\+Master232@{Modbus\+Master232}!ku8\+M\+B\+Success@{ku8\+M\+B\+Success}}
+\index{ku8\+M\+B\+Success@{ku8\+M\+B\+Success}!Modbus\+Master232@{Modbus\+Master232}}
+\subsubsection[{\texorpdfstring{ku8\+M\+B\+Success}{ku8MBSuccess}}]{\setlength{\rightskip}{0pt plus 5cm}const uint8\+\_\+t Modbus\+Master232\+::ku8\+M\+B\+Success = 0x00\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_modbus_master232_a6b6f40ff2ea76159dd2073a704588363}{}\label{class_modbus_master232_a6b6f40ff2ea76159dd2073a704588363}
+Modbus\+Master success.
+
+Modbus transaction was successful; the following checks were valid\+:
+\begin{DoxyItemize}
+\item slave ID
+\item function code
+\item response code
+\item data
+\item C\+RC 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Modbus\+Master232/Modbus\+Master232.\+h\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Modbus\+Master232/Modbus\+Master232.\+cpp\end{DoxyCompactItemize}

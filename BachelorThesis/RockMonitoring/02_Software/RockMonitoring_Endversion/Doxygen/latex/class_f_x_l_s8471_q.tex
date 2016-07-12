@@ -1,0 +1,166 @@
+\hypertarget{class_f_x_l_s8471_q}{}\section{F\+X\+L\+S8471Q Class Reference}
+\label{class_f_x_l_s8471_q}\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+
+
+Class that handles the communication to the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}.  
+
+
+
+
+{\ttfamily \#include $<$F\+X\+L\+S8471\+Q.\+h$>$}
+
+
+
+Collaboration diagram for F\+X\+L\+S8471Q\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_f_x_l_s8471_q__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_x_l_s8471_q_1_1struct_pitch_roll}{struct\+Pitch\+Roll}
+\item 
+struct \hyperlink{struct_f_x_l_s8471_q_1_1struct_x_y_z}{struct\+X\+YZ}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_f_x_l_s8471_q_af6d170ebbacae88335d6c29224d5cc0c}{F\+X\+L\+S8471Q} ()
+\item 
+void \hyperlink{class_f_x_l_s8471_q_a65f1994bddb6bfae7d8a4e35b390a08d}{init} (uint8\+\_\+t slave\+Addr)
+\begin{DoxyCompactList}\small\item\em This method initializes the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_f_x_l_s8471_q_ae4b516a49ab351ef663b14231083a666}{get\+Acc\+X\+YZ} (\hyperlink{struct_f_x_l_s8471_q_1_1struct_x_y_z}{F\+X\+L\+S8471\+Q\+::struct\+X\+YZ} $\ast$xyz)
+\begin{DoxyCompactList}\small\item\em This method returns the values of the X, Y and Z axis of the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_f_x_l_s8471_q_ae94d465acb1d7044365d5364c5ab8686}{get\+Acc\+Pitch\+Roll} (\hyperlink{struct_f_x_l_s8471_q_1_1struct_pitch_roll}{F\+X\+L\+S8471\+Q\+::struct\+Pitch\+Roll} $\ast$Pitch\+Roll)
+\begin{DoxyCompactList}\small\item\em This method returns the values of the pitch and roll angles of the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. \end{DoxyCompactList}\item 
+void \hyperlink{class_f_x_l_s8471_q_afb8a176addd8b73d1df028831d7bf8b8}{go\+To\+Sleep} ()
+\begin{DoxyCompactList}\small\item\em This method sets the Accelerometer in Standby. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_f_x_l_s8471_q_a4e1d91629c057575a8aecc5ec63b6237}{i2c\+Slave\+Addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles the communication to the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. 
+
+Definition at line 26 of file F\+X\+L\+S8471\+Q.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\subsubsection[{\texorpdfstring{F\+X\+L\+S8471\+Q()}{FXLS8471Q()}}]{\setlength{\rightskip}{0pt plus 5cm}F\+X\+L\+S8471\+Q\+::\+F\+X\+L\+S8471Q (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_f_x_l_s8471_q_af6d170ebbacae88335d6c29224d5cc0c}{}\label{class_f_x_l_s8471_q_af6d170ebbacae88335d6c29224d5cc0c}
+
+
+Definition at line 7 of file F\+X\+L\+S8471\+Q.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!get\+Acc\+Pitch\+Roll@{get\+Acc\+Pitch\+Roll}}
+\index{get\+Acc\+Pitch\+Roll@{get\+Acc\+Pitch\+Roll}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\subsubsection[{\texorpdfstring{get\+Acc\+Pitch\+Roll(\+F\+X\+L\+S8471\+Q\+::struct\+Pitch\+Roll $\ast$\+Pitch\+Roll)}{getAccPitchRoll(FXLS8471Q::structPitchRoll *PitchRoll)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t F\+X\+L\+S8471\+Q\+::get\+Acc\+Pitch\+Roll (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+X\+L\+S8471\+Q\+::struct\+Pitch\+Roll} $\ast$}]{Pitch\+Roll}
+\end{DoxyParamCaption}
+)}\hypertarget{class_f_x_l_s8471_q_ae94d465acb1d7044365d5364c5ab8686}{}\label{class_f_x_l_s8471_q_ae94d465acb1d7044365d5364c5ab8686}
+
+
+This method returns the values of the pitch and roll angles of the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_f_x_l_s8471_q_1_1struct_pitch_roll}{F\+X\+L\+S8471\+Q\+::struct\+Pitch\+Roll}} & $\ast$ Pitch\+Roll, pointer to pitch and roll angle data of one accelerometer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, gives back 1 for Error and 0 for ok 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file F\+X\+L\+S8471\+Q.\+cpp.
+
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!get\+Acc\+X\+YZ@{get\+Acc\+X\+YZ}}
+\index{get\+Acc\+X\+YZ@{get\+Acc\+X\+YZ}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\subsubsection[{\texorpdfstring{get\+Acc\+X\+Y\+Z(\+F\+X\+L\+S8471\+Q\+::struct\+X\+Y\+Z $\ast$xyz)}{getAccXYZ(FXLS8471Q::structXYZ *xyz)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t F\+X\+L\+S8471\+Q\+::get\+Acc\+X\+YZ (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+X\+L\+S8471\+Q\+::struct\+X\+YZ} $\ast$}]{xyz}
+\end{DoxyParamCaption}
+)}\hypertarget{class_f_x_l_s8471_q_ae4b516a49ab351ef663b14231083a666}{}\label{class_f_x_l_s8471_q_ae4b516a49ab351ef663b14231083a666}
+
+
+This method returns the values of the X, Y and Z axis of the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_f_x_l_s8471_q_1_1struct_x_y_z}{F\+X\+L\+S8471\+Q\+::struct\+X\+YZ}} & $\ast$ xyz, pointer to x,y and z data of one accelerometer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t state, gives back 1 for Error and 0 for ok 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file F\+X\+L\+S8471\+Q.\+cpp.
+
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!go\+To\+Sleep@{go\+To\+Sleep}}
+\index{go\+To\+Sleep@{go\+To\+Sleep}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\subsubsection[{\texorpdfstring{go\+To\+Sleep()}{goToSleep()}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+X\+L\+S8471\+Q\+::go\+To\+Sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_f_x_l_s8471_q_afb8a176addd8b73d1df028831d7bf8b8}{}\label{class_f_x_l_s8471_q_afb8a176addd8b73d1df028831d7bf8b8}
+
+
+This method sets the Accelerometer in Standby. 
+
+
+
+Definition at line 166 of file F\+X\+L\+S8471\+Q.\+cpp.
+
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!init@{init}}
+\index{init@{init}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t slave\+Addr)}{init(uint8_t slaveAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void F\+X\+L\+S8471\+Q\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{slave\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_f_x_l_s8471_q_a65f1994bddb6bfae7d8a4e35b390a08d}{}\label{class_f_x_l_s8471_q_a65f1994bddb6bfae7d8a4e35b390a08d}
+
+
+This method initializes the Accelerometer \hyperlink{class_f_x_l_s8471_q}{F\+X\+L\+S8471Q}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & slave\+Addr, value from 0 to 3, sets the i2c slave address \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file F\+X\+L\+S8471\+Q.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}!i2c\+Slave\+Addr@{i2c\+Slave\+Addr}}
+\index{i2c\+Slave\+Addr@{i2c\+Slave\+Addr}!F\+X\+L\+S8471Q@{F\+X\+L\+S8471Q}}
+\subsubsection[{\texorpdfstring{i2c\+Slave\+Addr}{i2cSlaveAddr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t F\+X\+L\+S8471\+Q\+::i2c\+Slave\+Addr\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_f_x_l_s8471_q_a4e1d91629c057575a8aecc5ec63b6237}{}\label{class_f_x_l_s8471_q_a4e1d91629c057575a8aecc5ec63b6237}
+
+
+Definition at line 55 of file F\+X\+L\+S8471\+Q.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_f_x_l_s8471_q_8h}{F\+X\+L\+S8471\+Q.\+h}\item 
+\hyperlink{_f_x_l_s8471_q_8cpp}{F\+X\+L\+S8471\+Q.\+cpp}\end{DoxyCompactItemize}

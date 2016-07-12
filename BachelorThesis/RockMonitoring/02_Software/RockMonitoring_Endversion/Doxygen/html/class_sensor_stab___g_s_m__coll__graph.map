@@ -1,0 +1,9 @@
+<map id="SensorStab_GSM" name="SensorStab_GSM">
+<area shape="rect" id="node2" href="$struct_sensors_1_1struct_sensors.html" title="{Sensors::structSensors\n|+ sensTemp1\l+ sensTemp2\l+ sensTemp3\l+ extension\l+ sensorNodeId\l+ batteryLevel\l|}" alt="" coords="18,271,176,422"/>
+<area shape="rect" id="node4" href="$struct_f_x_l_s8471_q_1_1struct_pitch_roll.html" title="{FXLS8471Q::structPitchRoll\n|+ pitch\l+ roll\l|}" alt="" coords="5,27,189,119"/>
+<area shape="rect" id="node6" href="$class_leds.html" title="Class that handles the Leds. " alt="" coords="201,235,383,459"/>
+<area shape="rect" id="node8" href="$class_sensors.html" title="Class that handles sensors. " alt="" coords="407,242,552,451"/>
+<area shape="rect" id="node10" href="$class_p_c_t2075.html" title="Class that handles the communication to the temperature sensor PCT2075. " alt="" coords="355,13,460,134"/>
+<area shape="rect" id="node12" href="$class_f_x_l_s8471_q.html" title="Class that handles the communication to the Accelerometer FXLS8471Q. " alt="" coords="485,5,619,141"/>
+<area shape="rect" id="node14" href="$class_connection3_g.html" title="Class that handles the communication over 3G. " alt="" coords="577,271,719,422"/>
+</map>

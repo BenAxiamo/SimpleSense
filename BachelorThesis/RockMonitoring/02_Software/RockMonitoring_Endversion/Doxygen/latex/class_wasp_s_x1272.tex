@@ -1,0 +1,2081 @@
+\hypertarget{class_wasp_s_x1272}{}\section{Wasp\+S\+X1272 Class Reference}
+\label{class_wasp_s_x1272}\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+
+
+\hyperlink{class_wasp_s_x1272}{Wasp\+S\+X1272} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+S\+X1272.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_s_x1272_aa461e1ac299e686241b130dada05e33f}{Wasp\+S\+X1272} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a03a4b5828167453c6c499721b9329546}{ON} ()
+\begin{DoxyCompactList}\small\item\em It puts the module ON. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_x1272_a2f4aabfd219ec3ab7f3a6112c2ae1e7c}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It puts the module O\+FF. \end{DoxyCompactList}\item 
+byte \hyperlink{class_wasp_s_x1272_adaab21595ee209e5cc354e197319fc26}{read\+Register} (byte address)
+\begin{DoxyCompactList}\small\item\em It reads an internal module register. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_x1272_a50ea3e9a1f83ac5c328b45a460afa1eb}{write\+Register} (byte address, byte data)
+\begin{DoxyCompactList}\small\item\em It writes in an internal module register. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_x1272_a79ed7e936a231836bbba73c432490502}{clear\+Flags} ()
+\begin{DoxyCompactList}\small\item\em It clears the interruption flags. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a5789e7501f0644ae3cd5aa74224a4b9b}{set\+L\+O\+RA} ()
+\begin{DoxyCompactList}\small\item\em It sets the Lo\+Ra mode on. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a2b10fc7aa684df80b9e20ae7aec3b53f}{set\+F\+SK} ()
+\begin{DoxyCompactList}\small\item\em It sets the F\+SK mode on. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a6768cfb86570b1c9cab31cb814935a6b}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets the BW, SF and CR of the module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a3d21215daa95c054fbad20d4b9c584b9}{set\+Mode} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets the BW, SF and CR of the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aa8524235c5dae92706f9f17b6ad50ec9}{get\+Header} ()
+\begin{DoxyCompactList}\small\item\em It gets the header mode configured. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a1394f68ba9aa38a080d97413918f2c5d}{set\+Header\+ON} ()
+\begin{DoxyCompactList}\small\item\em It sets explicit header mode. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a5b36510ae511b68be945ade593059fdc}{set\+Header\+O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It sets implicit header mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a203b6de1df24b6c2d3d6707c1106ffb4}{get\+C\+RC} ()
+\begin{DoxyCompactList}\small\item\em It gets the C\+RC configured. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a198b1a5e1541db62325abd50d01bd9bd}{set\+C\+R\+C\+\_\+\+ON} ()
+\begin{DoxyCompactList}\small\item\em It sets C\+RC on. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a26eeb852f94a25a2ba634d9cf392004c}{set\+C\+R\+C\+\_\+\+O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It sets C\+RC off. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_x1272_ac03cb7d689229081f0abc07bca8973ba}{is\+SF} (uint8\+\_\+t spr)
+\begin{DoxyCompactList}\small\item\em It is true if the SF selected exists. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a74458c9b8d7c6779d990fbccef44030e}{get\+SF} ()
+\begin{DoxyCompactList}\small\item\em It gets the SF configured. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a6274034f0824ca27d5dccdbcfbd30361}{set\+SF} (uint8\+\_\+t spr)
+\begin{DoxyCompactList}\small\item\em It sets the SF. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_x1272_ae8bb6b458f0332ad246e4d31ccb249ff}{is\+BW} (uint16\+\_\+t band)
+\begin{DoxyCompactList}\small\item\em It is true if the BW selected exists. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a60da4a67007c36b712fcdc8f53880fdb}{get\+BW} ()
+\begin{DoxyCompactList}\small\item\em It gets the BW configured. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a840451b65bbc28a5df23c7d07bd64412}{set\+BW} (uint16\+\_\+t band)
+\begin{DoxyCompactList}\small\item\em It sets the BW. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_x1272_a98e73c32ea04a4a00587dc4b0f8230ff}{is\+CR} (uint8\+\_\+t cod)
+\begin{DoxyCompactList}\small\item\em It is true if the CR selected exists. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_abe2c5576eec220edbc7c140911714793}{get\+CR} ()
+\begin{DoxyCompactList}\small\item\em It gets the CR configured. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a47579d6c4557f9e8f80ecffd73b367a9}{set\+CR} (uint8\+\_\+t cod)
+\begin{DoxyCompactList}\small\item\em It sets the CR. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_x1272_ac999b789c15c3eb30e1be8c58abfe356}{is\+Channel} (uint32\+\_\+t ch)
+\begin{DoxyCompactList}\small\item\em It is true if the channel selected exists. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a3cc92221cf256e40e3c659dab8f00829}{get\+Channel} ()
+\begin{DoxyCompactList}\small\item\em It gets frequency channel the module is using. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a1623397f18fff0d0f4464db9d18df523}{set\+Channel} (uint32\+\_\+t ch)
+\begin{DoxyCompactList}\small\item\em It sets frequency channel the module is using. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a824818f55b70107652287cf0db5f4f5d}{get\+Power} ()
+\begin{DoxyCompactList}\small\item\em It gets the output power of the signal. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a2a83400b06e5c4b5edac9e6909f0163b}{set\+Power} (char p)
+\begin{DoxyCompactList}\small\item\em It sets the output power of the signal. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a6d4e422a21ed892a8040c84d4dcd5e2c}{set\+Power\+Num} (uint8\+\_\+t \hyperlink{group__avr__math_gaa9a9885e972736204c941a7e9db0ffe2}{pow})
+\begin{DoxyCompactList}\small\item\em It sets the output power of the signal. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a3a21a5a4b0b67f9e9ad8d92eb2275f68}{get\+Preamble\+Length} ()
+\begin{DoxyCompactList}\small\item\em It gets the preamble length configured. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_af0acf50e108ef62da463f901569a79c7}{set\+Preamble\+Length} (uint16\+\_\+t l)
+\begin{DoxyCompactList}\small\item\em It sets the preamble length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a6097316a67ccc71da2ec338d232d1af0}{get\+Payload\+Length} ()
+\begin{DoxyCompactList}\small\item\em It gets the payload length of the last packet to send/receive. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_acfad433b86efde50154b7af55273562d}{set\+Packet\+Length} ()
+\begin{DoxyCompactList}\small\item\em It sets the packet length to send/receive. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a986a701e93954ecc70e7cfb020d5964f}{set\+Packet\+Length} (uint8\+\_\+t l)
+\begin{DoxyCompactList}\small\item\em It sets the packet length to send/receive. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aa8fb06f141d2a1eb0c4524479370c6c5}{get\+Node\+Address} ()
+\begin{DoxyCompactList}\small\item\em It gets the node address of the mote. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a17343af90b0d4680acdd73acaf3eb20e}{set\+Node\+Address} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em It sets the node address of the mote. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a0d168248aaeec82271ae59ad9a329680}{get\+S\+NR} ()
+\begin{DoxyCompactList}\small\item\em It gets the S\+NR of the latest received packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a12f88056421b8cfe367cd7edf675c2a5}{get\+R\+S\+SI} ()
+\begin{DoxyCompactList}\small\item\em It gets the current value of R\+S\+SI. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_wasp_s_x1272_a08509541a70726549edefa3a4d851f59}{get\+R\+S\+S\+Ipacket} ()
+\begin{DoxyCompactList}\small\item\em It gets the R\+S\+SI of the latest received packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aa4080fc70f853968a90830db5e98c676}{set\+Retries} (uint8\+\_\+t ret)
+\begin{DoxyCompactList}\small\item\em It sets the total of retries when a packet is not correctly received. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a8dbdb367b9129c69a82bbb002799f34f}{get\+Max\+Current} ()
+\begin{DoxyCompactList}\small\item\em It gets the maximum current supply by the module. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a4ecab36e30981047f5bf8fb83ddf6c6f}{set\+Max\+Current} (uint8\+\_\+t rate)
+\begin{DoxyCompactList}\small\item\em It sets the maximum current supply by the module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a09e6bbe1e24b97c68f6a628cd57bc850}{get\+Regs} ()
+\begin{DoxyCompactList}\small\item\em It gets the content of the main configuration registers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ae4f23c81125693128bdfe0418bbb4436}{trunc\+Payload} (uint16\+\_\+t length16)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ad733a7c8538845be0bd39d5c53d53e66}{set\+A\+CK} ()
+\begin{DoxyCompactList}\small\item\em It writes an A\+CK in F\+I\+FO to send it. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a694eecb5441dbef491d53610dbba3f38}{receive} ()
+\begin{DoxyCompactList}\small\item\em It puts the module in reception mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a7b1c3d46e9a4da8d35ab9054211c0ba4}{receive\+Packet\+M\+A\+X\+Timeout} ()
+\begin{DoxyCompactList}\small\item\em It receives a packet before M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a52a5086cdd4fab4f48d3e325e0100a83}{receive\+Packet\+Timeout} ()
+\begin{DoxyCompactList}\small\item\em It receives a packet before a timeout. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ab46cc22de51816249afea97045a65291}{receive\+Packet\+Timeout} (uint32\+\_\+t wait)
+\begin{DoxyCompactList}\small\item\em It receives a packet before a timeout. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a3e138724ad6b6067c07b60bebf53431c}{receive\+Packet\+M\+A\+X\+Timeout\+A\+CK} ()
+\begin{DoxyCompactList}\small\item\em It receives a packet before M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT and reply with an A\+CK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a4d10e4790879f549010178b97728772e}{receive\+Packet\+Timeout\+A\+CK} ()
+\begin{DoxyCompactList}\small\item\em It receives a packet before a timeout and reply with an A\+CK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a696bbccf8a987ff4b7a3881dbdc4692c}{receive\+Packet\+Timeout\+A\+CK} (uint32\+\_\+t wait)
+\begin{DoxyCompactList}\small\item\em It receives a packet before a timeout and reply with an A\+CK. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a25d0016d01e66f8ee55b8cc2d32d6bf5}{receive\+All} ()
+\begin{DoxyCompactList}\small\item\em It puts the module in \textquotesingle{}promiscuous\textquotesingle{} reception mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_afec4215ab3837cd7ac92b9cfb6545706}{receive\+All} (uint32\+\_\+t wait)
+\begin{DoxyCompactList}\small\item\em It puts the module in \textquotesingle{}promiscuous\textquotesingle{} reception mode with a timeout. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_x1272_ad3957a95fa55fd7731d7918582b86a53}{available\+Data} ()
+\begin{DoxyCompactList}\small\item\em It checks if there is an available packet and its destination. \end{DoxyCompactList}\item 
+boolean \hyperlink{class_wasp_s_x1272_aabf4255a8e88a94a5a3380744a880a13}{available\+Data} (uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a2edc7d42bf60617e412f162d3f8c38d8}{set\+Packet} (uint8\+\_\+t dest, char $\ast$payload)
+\begin{DoxyCompactList}\small\item\em It writes a packet in F\+I\+FO in order to send it. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a409523a65d537469885820fa19287e29}{set\+Packet} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload)
+\begin{DoxyCompactList}\small\item\em It writes a packet in F\+I\+FO in order to send it. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a40866e414879532539620dc1120ffc8f}{get\+Packet\+M\+A\+X\+Timeout} ()
+\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_ab49d2bfcf3588738ddc067aa0e7b2256}{get\+Packet} ()
+\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a20a7df488b2d492df0beea9960020361}{get\+Packet} (uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ad6fb27179a1f937346ca666c219fc293}{send\+With\+M\+A\+X\+Timeout} ()
+\begin{DoxyCompactList}\small\item\em It sends the packet stored in F\+I\+FO before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a03f4f66d0e107c9129d9662e64e40d19}{send\+With\+Timeout} ()
+\begin{DoxyCompactList}\small\item\em It sends the packet stored in F\+I\+FO before ending \+\_\+send\+Time time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ac3371b85caddc32797a02f0344e8742c}{send\+With\+Timeout} (uint32\+\_\+t wait)
+\begin{DoxyCompactList}\small\item\em It tries to send the packet stored in F\+I\+FO before ending \textquotesingle{}wait\textquotesingle{} time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aade52cbbf70fd42eccf9a6f83c9fed6d}{send\+Packet\+M\+A\+X\+Timeout} (uint8\+\_\+t dest, char $\ast$payload)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_abe613448b1c0ad5470297288f2c510e4}{send\+Packet\+M\+A\+X\+Timeout} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ad218714f7005cfe6af7867a5102cd66e}{send\+Packet\+Timeout} (uint8\+\_\+t dest, char $\ast$payload)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a454c089cf9ee490098996fc2852516fa}{send\+Packet\+Timeout} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a4d67e110f17bb1af67bd3d8c8f171c79}{send\+Packet\+Timeout} (uint8\+\_\+t dest, char $\ast$payload, uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aab5c58b6000c527a958d37cf84a1e6df}{send\+Packet\+Timeout} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length, uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a06669a509b7b1e2e8c7dd573495548d4}{send\+Packet\+M\+A\+X\+Timeout\+A\+CK} (uint8\+\_\+t dest, char $\ast$payload)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_acc7d19c5f87ada936e98e6d8ec226161}{send\+Packet\+M\+A\+X\+Timeout\+A\+CK} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a4918dca6e41512f0be457af884f79aa8}{send\+Packet\+Timeout\+A\+CK} (uint8\+\_\+t dest, char $\ast$payload)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_afc7c0f0a4f588b97dec7dd8c89a5d182}{send\+Packet\+Timeout\+A\+CK} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a30ea240ddcb8f4d300993ed19b4125d7}{send\+Packet\+Timeout\+A\+CK} (uint8\+\_\+t dest, char $\ast$payload, uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a31db984ec240735f181778be6d76e58b}{send\+Packet\+Timeout\+A\+CK} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length, uint32\+\_\+t wait)
+\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a1ce9404fd36d521df85aa3012b1f6ce7}{set\+Destination} (uint8\+\_\+t dest)
+\begin{DoxyCompactList}\small\item\em It sets the destination of a packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ab3d853aa4bf2aad5b4beb9b3f8fb881a}{set\+Timeout} ()
+\begin{DoxyCompactList}\small\item\em It sets the waiting time to send a packet. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_s_x1272_af4d14db4017412597273b96f0961101e}{time\+On\+Air} ()
+\begin{DoxyCompactList}\small\item\em It gets the theoretical value of the time-\/on-\/air of the packet. \end{DoxyCompactList}\item 
+float {\bfseries time\+On\+Air} (uint16\+\_\+t payloadlength)\hypertarget{class_wasp_s_x1272_adf9f7c849e6f0ce66135143028ca9d77}{}\label{class_wasp_s_x1272_adf9f7c849e6f0ce66135143028ca9d77}
+
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a2985790c73d6e508c402dd3cfbdfece6}{set\+Payload} (char $\ast$payload)
+\begin{DoxyCompactList}\small\item\em It sets the payload of the packet that is going to be sent. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_abe88824e8f0e9bc8ce2f288753e4b51b}{set\+Payload} (uint8\+\_\+t $\ast$payload)
+\begin{DoxyCompactList}\small\item\em It sets the payload of the packet that is going to be sent. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_abd43427fcdcf3417fc4b6512dfb19a3f}{get\+A\+CK} ()
+\begin{DoxyCompactList}\small\item\em If an A\+CK is received, it gets it and checks its content. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a84c2988f43ccd456b391dae02dc6c3e8}{get\+A\+CK} (uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a1108494dcf0fab0071528d5a7734b656}{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries} (uint8\+\_\+t dest, char $\ast$payload)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a4f356ba87e5d4f4006de36bd2a128503}{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a3bd0a1e6ea2deee167927e6a29b4d584}{send\+Packet\+Timeout\+A\+C\+K\+Retries} (uint8\+\_\+t dest, char $\ast$payload)
+\begin{DoxyCompactList}\small\item\em It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aac66b43d32e2564e20062603af3305fb}{send\+Packet\+Timeout\+A\+C\+K\+Retries} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_aaa7a8d46d26f447cf133e1424242ea50}{send\+Packet\+Timeout\+A\+C\+K\+Retries} (uint8\+\_\+t dest, char $\ast$payload, uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a9b26c15d76cfd97ea23dfbede87ba030}{send\+Packet\+Timeout\+A\+C\+K\+Retries} (uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length, uint32\+\_\+t wait)
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a193169393606b1ba294e39d42570897a}{get\+Temp} ()
+\begin{DoxyCompactList}\small\item\em It gets the internal temperature of the module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_x1272_ab136ac58860cfe670c0a8ee99e4aa9f6}{show\+Received\+Packet} ()
+\begin{DoxyCompactList}\small\item\em It shows te received packet via U\+SB port. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_x1272_a277e2c8f44b88a0ab94ab5a0027fe347}{show\+Framefrom\+Packet} ()
+\begin{DoxyCompactList}\small\item\em It shows te received Waspmote Frame via U\+SB port. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_s_x1272_a857569bb5f2063f714cc787437d069a4}{show\+Rx\+Registers} ()
+\begin{DoxyCompactList}\small\item\em It prints the registers related to RX via U\+SB. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a1a32d15e142ef83b76edf83c67fe5d39}{set\+R\+T\+Cfrom\+Meshlium} ()
+\begin{DoxyCompactList}\small\item\em It sets the R\+TC settings with Meshlium timestamp configuration. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_s_x1272_ac6ad4c4e8f40848fcca34a9c21d35313}{cad\+Detected} ()
+\begin{DoxyCompactList}\small\item\em It sets the R\+TC settings with Meshlium timestamp configuration. \end{DoxyCompactList}\item 
+uint8\+\_\+t {\bfseries show\+Framefrom\+Packet\+Meshlium} ()\hypertarget{class_wasp_s_x1272_ade9008e2641ea8b5f33db1032c0b4b1c}{}\label{class_wasp_s_x1272_ade9008e2641ea8b5f33db1032c0b4b1c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a76dd3e69da36093d4e249998202b414e}{st\+\_\+\+SD}
+\begin{DoxyCompactList}\small\item\em Variables /////////////////////////////////////////////////////////////. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a00d80addbd1a513a8f6ae9706ac86083}{\+\_\+bandwidth}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a82c8def66933dc82a7125ebccc757a22}{\+\_\+coding\+Rate}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a501d372a9d25177f2de1015279efa842}{\+\_\+spreading\+Factor}
+\item 
+uint32\+\_\+t \hyperlink{class_wasp_s_x1272_a83eb4b1eb13e02e27186eab0c01f7067}{\+\_\+channel}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a6a1ec7b8bcd4746748b2d6c4a57381be}{\+\_\+power}
+\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_ab2738b8b388733f5e25a777fee3bacdc}{\+\_\+\+S\+NR}
+\item 
+int8\+\_\+t \hyperlink{class_wasp_s_x1272_a33d5c32f89a846f1d9a6766080a0ded1}{\+\_\+\+R\+S\+SI}
+\item 
+int16\+\_\+t \hyperlink{class_wasp_s_x1272_a38392b43de9313fe7527421ba79ca475}{\+\_\+\+R\+S\+S\+Ipacket}
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_s_x1272_aa7151ad6fd3be83f6f0a748d77194985}{\+\_\+preamblelength}
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_s_x1272_a5ebbaeb146f744d57cc1e6550efc40e5}{\+\_\+payloadlength}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ad73e96b457d2671c53a305db57c0f15f}{\+\_\+node\+Address}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ab63346ffc568865de30c4638a4ed43f9}{\+\_\+header}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a05b54181f30cdbca8706a00b8ff0bec9}{\+\_\+hreceived}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ab53671db53fec5cf5972a540db517024}{\+\_\+\+C\+RC}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a85c9daae64a5291ea033aab2c9eb4c80}{\+\_\+destination}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_addd7b2be1fcda591c3df8e470b2e82f0}{\+\_\+packet\+Number}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a4025d018b1337cdd681e6e2a855179d4}{\+\_\+reception}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a446b8d3764d930f490508e03d603f28a}{\+\_\+retries}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a96e8d83e71cde36dde2cbeeeb1db4f86}{\+\_\+max\+Retries}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_a7a4e718645c2ff60ddea7bbcb530b6d2}{\+\_\+max\+Current}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_s_x1272_ac90e11a42677f2fff97ab2caa3a4c676}{\+\_\+modem}
+\item 
+\hyperlink{structpack}{pack} \hyperlink{class_wasp_s_x1272_aa318dbc9060a067fb925926cd3545366}{packet\+\_\+sent}
+\item 
+\hyperlink{structpack}{pack} \hyperlink{class_wasp_s_x1272_a43eb11f317cfd60607e2d00a5515f5d7}{packet\+\_\+received}
+\item 
+\hyperlink{structpack}{pack} \hyperlink{class_wasp_s_x1272_ad87e372f185c7c5fd312dd8323d91c95}{A\+CK}
+\item 
+int \hyperlink{class_wasp_s_x1272_ab9473d933d186b09be966fe005be1391}{\+\_\+temp}
+\item 
+uint16\+\_\+t \hyperlink{class_wasp_s_x1272_a5074331b975a265eeae0235edd6da59d}{\+\_\+send\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_s_x1272}{Wasp\+S\+X1272} Class. 
+
+\hyperlink{class_wasp_s_x1272}{Wasp\+S\+X1272} Class defines all the variables and functions used to manage S\+X1272 modules. It inherits from \textquotesingle{}\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core}\textquotesingle{} class the necessary functions, variables and definitions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{Wasp\+S\+X1272()}{WaspSX1272()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+S\+X1272\+::\+Wasp\+S\+X1272 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aa461e1ac299e686241b130dada05e33f}{}\label{class_wasp_s_x1272_aa461e1ac299e686241b130dada05e33f}
+
+
+class constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!available\+Data@{available\+Data}}
+\index{available\+Data@{available\+Data}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{available\+Data()}{availableData()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+X1272\+::available\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ad3957a95fa55fd7731d7918582b86a53}{}\label{class_wasp_s_x1272_ad3957a95fa55fd7731d7918582b86a53}
+
+
+It checks if there is an available packet and its destination. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on success, \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!available\+Data@{available\+Data}}
+\index{available\+Data@{available\+Data}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{available\+Data(uint32\+\_\+t wait)}{availableData(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+X1272\+::available\+Data (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aabf4255a8e88a94a5a3380744a880a13}{}\label{class_wasp_s_x1272_aabf4255a8e88a94a5a3380744a880a13}
+It checks if there is an available packet and its destination before a timeout.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait while there is no a valid header received. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on success, \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+Lo\+Ra mode
+
+F\+SK mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!cad\+Detected@{cad\+Detected}}
+\index{cad\+Detected@{cad\+Detected}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{cad\+Detected()}{cadDetected()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+S\+X1272\+::cad\+Detected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ac6ad4c4e8f40848fcca34a9c21d35313}{}\label{class_wasp_s_x1272_ac6ad4c4e8f40848fcca34a9c21d35313}
+
+
+It sets the R\+TC settings with Meshlium timestamp configuration. 
+
+This function sends a special Frame to Meshlium (Meshlium\textquotesingle{}s address must be \textquotesingle{}1\textquotesingle{}), and then Meshlium returns an answer with the timestamp. This function parses the info and sets the R\+TC Time and Date. \begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on cad detected, \textquotesingle{}false\textquotesingle{} if not detected 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!clear\+Flags@{clear\+Flags}}
+\index{clear\+Flags@{clear\+Flags}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{clear\+Flags()}{clearFlags()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+X1272\+::clear\+Flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a79ed7e936a231836bbba73c432490502}{}\label{class_wasp_s_x1272_a79ed7e936a231836bbba73c432490502}
+
+
+It clears the interruption flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Lo\+Ra mode
+
+F\+SK mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+A\+CK@{get\+A\+CK}}
+\index{get\+A\+CK@{get\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+A\+C\+K()}{getACK()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_abd43427fcdcf3417fc4b6512dfb19a3f}{}\label{class_wasp_s_x1272_abd43427fcdcf3417fc4b6512dfb19a3f}
+
+
+If an A\+CK is received, it gets it and checks its content. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+A\+CK@{get\+A\+CK}}
+\index{get\+A\+CK@{get\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+A\+C\+K(uint32\+\_\+t wait)}{getACK(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a84c2988f43ccd456b391dae02dc6c3e8}{}\label{class_wasp_s_x1272_a84c2988f43ccd456b391dae02dc6c3e8}
+It receives and gets an A\+CK from F\+I\+FO, if it arrives before ending \textquotesingle{}wait\textquotesingle{} time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait while there is no an A\+CK received. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+BW@{get\+BW}}
+\index{get\+BW@{get\+BW}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+B\+W()}{getBW()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::get\+BW (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a60da4a67007c36b712fcdc8f53880fdb}{}\label{class_wasp_s_x1272_a60da4a67007c36b712fcdc8f53880fdb}
+
+
+It gets the BW configured. 
+
+It stores in global \textquotesingle{}\+\_\+bandwidth\textquotesingle{} variable the BW selected in the configuration \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Channel@{get\+Channel}}
+\index{get\+Channel@{get\+Channel}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Channel()}{getChannel()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a3cc92221cf256e40e3c659dab8f00829}{}\label{class_wasp_s_x1272_a3cc92221cf256e40e3c659dab8f00829}
+
+
+It gets frequency channel the module is using. 
+
+It stores in global \textquotesingle{}\+\_\+channel\textquotesingle{} variable the frequency channel \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+CR@{get\+CR}}
+\index{get\+CR@{get\+CR}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+C\+R()}{getCR()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::get\+CR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_abe2c5576eec220edbc7c140911714793}{}\label{class_wasp_s_x1272_abe2c5576eec220edbc7c140911714793}
+
+
+It gets the CR configured. 
+
+It stores in global \textquotesingle{}\+\_\+coding\+Rate\textquotesingle{} variable the CR selected in the configuration \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+C\+RC@{get\+C\+RC}}
+\index{get\+C\+RC@{get\+C\+RC}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+C\+R\+C()}{getCRC()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+C\+RC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a203b6de1df24b6c2d3d6707c1106ffb4}{}\label{class_wasp_s_x1272_a203b6de1df24b6c2d3d6707c1106ffb4}
+
+
+It gets the C\+RC configured. 
+
+It stores in global \textquotesingle{}\+\_\+\+C\+RC\textquotesingle{} variable \textquotesingle{}1\textquotesingle{} enabling C\+RC generation on payload, or \textquotesingle{}0\textquotesingle{} disabling the C\+RC. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Header()}{getHeader()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aa8524235c5dae92706f9f17b6ad50ec9}{}\label{class_wasp_s_x1272_aa8524235c5dae92706f9f17b6ad50ec9}
+
+
+It gets the header mode configured. 
+
+It stores in global \textquotesingle{}\+\_\+header\textquotesingle{} variable \textquotesingle{}0\textquotesingle{} when header is sent (explicit header mode) or \textquotesingle{}1\textquotesingle{} when is not sent (implicit header mode). \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Max\+Current@{get\+Max\+Current}}
+\index{get\+Max\+Current@{get\+Max\+Current}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Max\+Current()}{getMaxCurrent()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Max\+Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a8dbdb367b9129c69a82bbb002799f34f}{}\label{class_wasp_s_x1272_a8dbdb367b9129c69a82bbb002799f34f}
+
+
+It gets the maximum current supply by the module. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Mode()}{getMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a6768cfb86570b1c9cab31cb814935a6b}{}\label{class_wasp_s_x1272_a6768cfb86570b1c9cab31cb814935a6b}
+
+
+It gets the BW, SF and CR of the module. 
+
+It stores in global \textquotesingle{}\+\_\+bandwidth\textquotesingle{} variable the BW It stores in global \textquotesingle{}\+\_\+coding\+Rate\textquotesingle{} variable the CR It stores in global \textquotesingle{}\+\_\+spreading\+Factor\textquotesingle{} variable the SF \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Node\+Address@{get\+Node\+Address}}
+\index{get\+Node\+Address@{get\+Node\+Address}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Node\+Address()}{getNodeAddress()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Node\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aa8fb06f141d2a1eb0c4524479370c6c5}{}\label{class_wasp_s_x1272_aa8fb06f141d2a1eb0c4524479370c6c5}
+
+
+It gets the node address of the mote. 
+
+It stores in global \textquotesingle{}\+\_\+node\+Address\textquotesingle{} variable the node address \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Packet@{get\+Packet}}
+\index{get\+Packet@{get\+Packet}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Packet()}{getPacket()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::get\+Packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ab49d2bfcf3588738ddc067aa0e7b2256}{}\label{class_wasp_s_x1272_ab49d2bfcf3588738ddc067aa0e7b2256}
+It reads a received packet from the F\+I\+FO, if it arrives before ending \textquotesingle{}\+\_\+send\+Time\textquotesingle{} time.
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Packet@{get\+Packet}}
+\index{get\+Packet@{get\+Packet}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Packet(uint32\+\_\+t wait)}{getPacket(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::get\+Packet (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a20a7df488b2d492df0beea9960020361}{}\label{class_wasp_s_x1272_a20a7df488b2d492df0beea9960020361}
+It receives and gets a packet from F\+I\+FO, if it arrives before ending \textquotesingle{}wait\textquotesingle{} time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait while there is not a complete packet received. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+Lo\+Ra mode
+
+F\+SK mode
+
+Lo\+Ra
+
+F\+SK \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Packet\+M\+A\+X\+Timeout@{get\+Packet\+M\+A\+X\+Timeout}}
+\index{get\+Packet\+M\+A\+X\+Timeout@{get\+Packet\+M\+A\+X\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Packet\+M\+A\+X\+Timeout()}{getPacketMAXTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Packet\+M\+A\+X\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a40866e414879532539620dc1120ffc8f}{}\label{class_wasp_s_x1272_a40866e414879532539620dc1120ffc8f}
+It reads a received packet from the F\+I\+FO, if it arrives before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT time.
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Payload\+Length@{get\+Payload\+Length}}
+\index{get\+Payload\+Length@{get\+Payload\+Length}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Payload\+Length()}{getPayloadLength()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Payload\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a6097316a67ccc71da2ec338d232d1af0}{}\label{class_wasp_s_x1272_a6097316a67ccc71da2ec338d232d1af0}
+
+
+It gets the payload length of the last packet to send/receive. 
+
+It stores in global \textquotesingle{}\+\_\+payloadlength\textquotesingle{} variable the payload length of the last packet to send/receive. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Power@{get\+Power}}
+\index{get\+Power@{get\+Power}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Power()}{getPower()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a824818f55b70107652287cf0db5f4f5d}{}\label{class_wasp_s_x1272_a824818f55b70107652287cf0db5f4f5d}
+
+
+It gets the output power of the signal. 
+
+It stores in global \textquotesingle{}\+\_\+power\textquotesingle{} variable the output power of the signal \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Preamble\+Length@{get\+Preamble\+Length}}
+\index{get\+Preamble\+Length@{get\+Preamble\+Length}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Preamble\+Length()}{getPreambleLength()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Preamble\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a3a21a5a4b0b67f9e9ad8d92eb2275f68}{}\label{class_wasp_s_x1272_a3a21a5a4b0b67f9e9ad8d92eb2275f68}
+
+
+It gets the preamble length configured. 
+
+It stores in global \textquotesingle{}\+\_\+preamblelength\textquotesingle{} variable the preamble length \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Regs@{get\+Regs}}
+\index{get\+Regs@{get\+Regs}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Regs()}{getRegs()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Regs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a09e6bbe1e24b97c68f6a628cd57bc850}{}\label{class_wasp_s_x1272_a09e6bbe1e24b97c68f6a628cd57bc850}
+
+
+It gets the content of the main configuration registers. 
+
+It stores in global \textquotesingle{}\+\_\+bandwidth\textquotesingle{} variable the BW. It stores in global \textquotesingle{}\+\_\+coding\+Rate\textquotesingle{} variable the CR. It stores in global \textquotesingle{}\+\_\+spreading\+Factor\textquotesingle{} variable the SF. It stores in global \textquotesingle{}\+\_\+power\textquotesingle{} variable the output power of the signal. It stores in global \textquotesingle{}\+\_\+channel\textquotesingle{} variable the frequency channel. It stores in global \textquotesingle{}\+\_\+\+C\+RC\textquotesingle{} variable \textquotesingle{}1\textquotesingle{} enabling C\+RC generation on payload, or \textquotesingle{}0\textquotesingle{} disabling the C\+RC. It stores in global \textquotesingle{}\+\_\+header\textquotesingle{} variable \textquotesingle{}0\textquotesingle{} when header is sent (explicit header mode) or \textquotesingle{}1\textquotesingle{} when is not sent (implicit header mode). It stores in global \textquotesingle{}\+\_\+preamblelength\textquotesingle{} variable the preamble length. It stores in global \textquotesingle{}\+\_\+payloadlength\textquotesingle{} variable the payload length of the last packet to send/receive. It stores in global \textquotesingle{}\+\_\+node\+Address\textquotesingle{} variable the node address. It stores in global \textquotesingle{}\+\_\+temp\textquotesingle{} variable the module temperature. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+R\+S\+SI@{get\+R\+S\+SI}}
+\index{get\+R\+S\+SI@{get\+R\+S\+SI}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+I()}{getRSSI()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+R\+S\+SI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a12f88056421b8cfe367cd7edf675c2a5}{}\label{class_wasp_s_x1272_a12f88056421b8cfe367cd7edf675c2a5}
+
+
+It gets the current value of R\+S\+SI. 
+
+It stores in global \textquotesingle{}\+\_\+\+R\+S\+SI\textquotesingle{} variable the current value of R\+S\+SI \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+Lo\+Ra mode
+
+F\+SK mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+R\+S\+S\+Ipacket@{get\+R\+S\+S\+Ipacket}}
+\index{get\+R\+S\+S\+Ipacket@{get\+R\+S\+S\+Ipacket}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+R\+S\+S\+Ipacket()}{getRSSIpacket()}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+S\+X1272\+::get\+R\+S\+S\+Ipacket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a08509541a70726549edefa3a4d851f59}{}\label{class_wasp_s_x1272_a08509541a70726549edefa3a4d851f59}
+
+
+It gets the R\+S\+SI of the latest received packet. 
+
+It stores in global \textquotesingle{}\+\_\+\+R\+S\+S\+Ipacket\textquotesingle{} variable the R\+S\+SI of the latest packet received. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+SF@{get\+SF}}
+\index{get\+SF@{get\+SF}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+S\+F()}{getSF()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::get\+SF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a74458c9b8d7c6779d990fbccef44030e}{}\label{class_wasp_s_x1272_a74458c9b8d7c6779d990fbccef44030e}
+
+
+It gets the SF configured. 
+
+It stores in global \textquotesingle{}\+\_\+spreading\+Factor\textquotesingle{} variable the current value of SF \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+S\+NR@{get\+S\+NR}}
+\index{get\+S\+NR@{get\+S\+NR}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+S\+N\+R()}{getSNR()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::get\+S\+NR (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a0d168248aaeec82271ae59ad9a329680}{}\label{class_wasp_s_x1272_a0d168248aaeec82271ae59ad9a329680}
+
+
+It gets the S\+NR of the latest received packet. 
+
+It stores in global \textquotesingle{}\+\_\+\+S\+NR\textquotesingle{} variable the S\+NR \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{get\+Temp()}{getTemp()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::get\+Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a193169393606b1ba294e39d42570897a}{}\label{class_wasp_s_x1272_a193169393606b1ba294e39d42570897a}
+
+
+It gets the internal temperature of the module. 
+
+It stores in global \textquotesingle{}\+\_\+temp\textquotesingle{} variable the module temperature. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!is\+BW@{is\+BW}}
+\index{is\+BW@{is\+BW}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{is\+B\+W(uint16\+\_\+t band)}{isBW(uint16_t band)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+X1272\+::is\+BW (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{band}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ae8bb6b458f0332ad246e4d31ccb249ff}{}\label{class_wasp_s_x1272_ae8bb6b458f0332ad246e4d31ccb249ff}
+
+
+It is true if the BW selected exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & band \+: bandwidth value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on success, \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!is\+Channel@{is\+Channel}}
+\index{is\+Channel@{is\+Channel}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{is\+Channel(uint32\+\_\+t ch)}{isChannel(uint32_t ch)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+X1272\+::is\+Channel (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ch}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ac999b789c15c3eb30e1be8c58abfe356}{}\label{class_wasp_s_x1272_ac999b789c15c3eb30e1be8c58abfe356}
+
+
+It is true if the channel selected exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & ch \+: frequency channel value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on success, \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!is\+CR@{is\+CR}}
+\index{is\+CR@{is\+CR}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{is\+C\+R(uint8\+\_\+t cod)}{isCR(uint8_t cod)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+X1272\+::is\+CR (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{cod}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a98e73c32ea04a4a00587dc4b0f8230ff}{}\label{class_wasp_s_x1272_a98e73c32ea04a4a00587dc4b0f8230ff}
+
+
+It is true if the CR selected exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & cod \+: the coding rate value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on success, \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!is\+SF@{is\+SF}}
+\index{is\+SF@{is\+SF}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{is\+S\+F(uint8\+\_\+t spr)}{isSF(uint8_t spr)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Wasp\+S\+X1272\+::is\+SF (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{spr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ac03cb7d689229081f0abc07bca8973ba}{}\label{class_wasp_s_x1272_ac03cb7d689229081f0abc07bca8973ba}
+
+
+It is true if the SF selected exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & spr \+: spreading factor value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} on success, \textquotesingle{}false\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+X1272\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a2f4aabfd219ec3ab7f3a6112c2ae1e7c}{}\label{class_wasp_s_x1272_a2f4aabfd219ec3ab7f3a6112c2ae1e7c}
+
+
+It puts the module O\+FF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!ON@{ON}}
+\index{ON@{ON}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a03a4b5828167453c6c499721b9329546}{}\label{class_wasp_s_x1272_a03a4b5828167453c6c499721b9329546}
+
+
+It puts the module ON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!read\+Register@{read\+Register}}
+\index{read\+Register@{read\+Register}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{read\+Register(byte address)}{readRegister(byte address)}}]{\setlength{\rightskip}{0pt plus 5cm}byte Wasp\+S\+X1272\+::read\+Register (
+\begin{DoxyParamCaption}
+\item[{byte}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_adaab21595ee209e5cc354e197319fc26}{}\label{class_wasp_s_x1272_adaab21595ee209e5cc354e197319fc26}
+
+
+It reads an internal module register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte} & address \+: address register to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the content of the register. 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive@{receive}}
+\index{receive@{receive}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive()}{receive()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a694eecb5441dbef491d53610dbba3f38}{}\label{class_wasp_s_x1272_a694eecb5441dbef491d53610dbba3f38}
+
+
+It puts the module in reception mode. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+Lo\+Ra mode
+
+F\+SK mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+All@{receive\+All}}
+\index{receive\+All@{receive\+All}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+All()}{receiveAll()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a25d0016d01e66f8ee55b8cc2d32d6bf5}{}\label{class_wasp_s_x1272_a25d0016d01e66f8ee55b8cc2d32d6bf5}
+
+
+It puts the module in \textquotesingle{}promiscuous\textquotesingle{} reception mode. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+All@{receive\+All}}
+\index{receive\+All@{receive\+All}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+All(uint32\+\_\+t wait)}{receiveAll(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+All (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_afec4215ab3837cd7ac92b9cfb6545706}{}\label{class_wasp_s_x1272_afec4215ab3837cd7ac92b9cfb6545706}
+
+
+It puts the module in \textquotesingle{}promiscuous\textquotesingle{} reception mode with a timeout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait to receive something. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+F\+SK mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+Packet\+M\+A\+X\+Timeout@{receive\+Packet\+M\+A\+X\+Timeout}}
+\index{receive\+Packet\+M\+A\+X\+Timeout@{receive\+Packet\+M\+A\+X\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+M\+A\+X\+Timeout()}{receivePacketMAXTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+Packet\+M\+A\+X\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a7b1c3d46e9a4da8d35ab9054211c0ba4}{}\label{class_wasp_s_x1272_a7b1c3d46e9a4da8d35ab9054211c0ba4}
+
+
+It receives a packet before M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+Packet\+M\+A\+X\+Timeout\+A\+CK@{receive\+Packet\+M\+A\+X\+Timeout\+A\+CK}}
+\index{receive\+Packet\+M\+A\+X\+Timeout\+A\+CK@{receive\+Packet\+M\+A\+X\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+M\+A\+X\+Timeout\+A\+C\+K()}{receivePacketMAXTimeoutACK()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+Packet\+M\+A\+X\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a3e138724ad6b6067c07b60bebf53431c}{}\label{class_wasp_s_x1272_a3e138724ad6b6067c07b60bebf53431c}
+
+
+It receives a packet before M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT and reply with an A\+CK. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+Packet\+Timeout@{receive\+Packet\+Timeout}}
+\index{receive\+Packet\+Timeout@{receive\+Packet\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+Timeout()}{receivePacketTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a52a5086cdd4fab4f48d3e325e0100a83}{}\label{class_wasp_s_x1272_a52a5086cdd4fab4f48d3e325e0100a83}
+
+
+It receives a packet before a timeout. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+Packet\+Timeout@{receive\+Packet\+Timeout}}
+\index{receive\+Packet\+Timeout@{receive\+Packet\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+Timeout(uint32\+\_\+t wait)}{receivePacketTimeout(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ab46cc22de51816249afea97045a65291}{}\label{class_wasp_s_x1272_ab46cc22de51816249afea97045a65291}
+
+
+It receives a packet before a timeout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait to receive something. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+Packet\+Timeout\+A\+CK@{receive\+Packet\+Timeout\+A\+CK}}
+\index{receive\+Packet\+Timeout\+A\+CK@{receive\+Packet\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+Timeout\+A\+C\+K()}{receivePacketTimeoutACK()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+Packet\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a4d10e4790879f549010178b97728772e}{}\label{class_wasp_s_x1272_a4d10e4790879f549010178b97728772e}
+
+
+It receives a packet before a timeout and reply with an A\+CK. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!receive\+Packet\+Timeout\+A\+CK@{receive\+Packet\+Timeout\+A\+CK}}
+\index{receive\+Packet\+Timeout\+A\+CK@{receive\+Packet\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{receive\+Packet\+Timeout\+A\+C\+K(uint32\+\_\+t wait)}{receivePacketTimeoutACK(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::receive\+Packet\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a696bbccf8a987ff4b7a3881dbdc4692c}{}\label{class_wasp_s_x1272_a696bbccf8a987ff4b7a3881dbdc4692c}
+
+
+It receives a packet before a timeout and reply with an A\+CK. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait to receive something. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+M\+A\+X\+Timeout@{send\+Packet\+M\+A\+X\+Timeout}}
+\index{send\+Packet\+M\+A\+X\+Timeout@{send\+Packet\+M\+A\+X\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+M\+A\+X\+Timeout(uint8\+\_\+t dest, char $\ast$payload)}{sendPacketMAXTimeout(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+M\+A\+X\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aade52cbbf70fd42eccf9a6f83c9fed6d}{}\label{class_wasp_s_x1272_aade52cbbf70fd42eccf9a6f83c9fed6d}
+It tries to send the packet which payload is a parameter before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+M\+A\+X\+Timeout@{send\+Packet\+M\+A\+X\+Timeout}}
+\index{send\+Packet\+M\+A\+X\+Timeout@{send\+Packet\+M\+A\+X\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+M\+A\+X\+Timeout(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{sendPacketMAXTimeout(uint8_t dest, uint8_t *payload, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+M\+A\+X\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_abe613448b1c0ad5470297288f2c510e4}{}\label{class_wasp_s_x1272_abe613448b1c0ad5470297288f2c510e4}
+It tries to send the packet which payload is a parameter before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+M\+A\+X\+Timeout\+A\+CK@{send\+Packet\+M\+A\+X\+Timeout\+A\+CK}}
+\index{send\+Packet\+M\+A\+X\+Timeout\+A\+CK@{send\+Packet\+M\+A\+X\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K(uint8\+\_\+t dest, char $\ast$payload)}{sendPacketMAXTimeoutACK(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+M\+A\+X\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a06669a509b7b1e2e8c7dd573495548d4}{}\label{class_wasp_s_x1272_a06669a509b7b1e2e8c7dd573495548d4}
+It sends the packet which payload is a parameter before M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT, and replies with A\+CK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}9\textquotesingle{} --$>$ The A\+CK lost (no data available) \textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+M\+A\+X\+Timeout\+A\+CK@{send\+Packet\+M\+A\+X\+Timeout\+A\+CK}}
+\index{send\+Packet\+M\+A\+X\+Timeout\+A\+CK@{send\+Packet\+M\+A\+X\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{sendPacketMAXTimeoutACK(uint8_t dest, uint8_t *payload, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+M\+A\+X\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_acc7d19c5f87ada936e98e6d8ec226161}{}\label{class_wasp_s_x1272_acc7d19c5f87ada936e98e6d8ec226161}
+It sends the packet which payload is a parameter before M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT, and replies with A\+CK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & payload\+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}9\textquotesingle{} --$>$ The A\+CK lost (no data available) \textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries}}
+\index{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries(uint8\+\_\+t dest, char $\ast$payload)}{sendPacketMAXTimeoutACKRetries(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a1108494dcf0fab0071528d5a7734b656}{}\label{class_wasp_s_x1272_a1108494dcf0fab0071528d5a7734b656}
+It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value, before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries}}
+\index{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{sendPacketMAXTimeoutACKRetries(uint8_t dest, uint8_t *payload, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+M\+A\+X\+Timeout\+A\+C\+K\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a4f356ba87e5d4f4006de36bd2a128503}{}\label{class_wasp_s_x1272_a4f356ba87e5d4f4006de36bd2a128503}
+It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value, before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout@{send\+Packet\+Timeout}}
+\index{send\+Packet\+Timeout@{send\+Packet\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout(uint8\+\_\+t dest, char $\ast$payload)}{sendPacketTimeout(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ad218714f7005cfe6af7867a5102cd66e}{}\label{class_wasp_s_x1272_ad218714f7005cfe6af7867a5102cd66e}
+It sends the packet which payload is a parameter before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout@{send\+Packet\+Timeout}}
+\index{send\+Packet\+Timeout@{send\+Packet\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{sendPacketTimeout(uint8_t dest, uint8_t *payload, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a454c089cf9ee490098996fc2852516fa}{}\label{class_wasp_s_x1272_a454c089cf9ee490098996fc2852516fa}
+It sends the packet which payload is a parameter before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload\+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout@{send\+Packet\+Timeout}}
+\index{send\+Packet\+Timeout@{send\+Packet\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout(uint8\+\_\+t dest, char $\ast$payload, uint32\+\_\+t wait)}{sendPacketTimeout(uint8_t dest, char *payload, uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload, }
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a4d67e110f17bb1af67bd3d8c8f171c79}{}\label{class_wasp_s_x1272_a4d67e110f17bb1af67bd3d8c8f171c79}
+It sends the packet which payload is a parameter before ending \textquotesingle{}wait\textquotesingle{} time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint32\+\_\+t} & wait \+: time to wait. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout@{send\+Packet\+Timeout}}
+\index{send\+Packet\+Timeout@{send\+Packet\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length, uint32\+\_\+t wait)}{sendPacketTimeout(uint8_t dest, uint8_t *payload, uint16_t length, uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length, }
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aab5c58b6000c527a958d37cf84a1e6df}{}\label{class_wasp_s_x1272_aab5c58b6000c527a958d37cf84a1e6df}
+It sends the packet which payload is a parameter before ending \textquotesingle{}wait\textquotesingle{} time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+{\em uint32\+\_\+t} & wait \+: time to wait. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}}
+\index{send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K(uint8\+\_\+t dest, char $\ast$payload)}{sendPacketTimeoutACK(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a4918dca6e41512f0be457af884f79aa8}{}\label{class_wasp_s_x1272_a4918dca6e41512f0be457af884f79aa8}
+It sends the packet which payload is a parameter before a timeout, and replies with A\+CK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}9\textquotesingle{} --$>$ The A\+CK lost (no data available) \textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}}
+\index{send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{sendPacketTimeoutACK(uint8_t dest, uint8_t *payload, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_afc7c0f0a4f588b97dec7dd8c89a5d182}{}\label{class_wasp_s_x1272_afc7c0f0a4f588b97dec7dd8c89a5d182}
+It sends the packet which payload is a parameter before a timeout, and replies with A\+CK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & payload\+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}9\textquotesingle{} --$>$ The A\+CK lost (no data available) \textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}}
+\index{send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K(uint8\+\_\+t dest, char $\ast$payload, uint32\+\_\+t wait)}{sendPacketTimeoutACK(uint8_t dest, char *payload, uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload, }
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a30ea240ddcb8f4d300993ed19b4125d7}{}\label{class_wasp_s_x1272_a30ea240ddcb8f4d300993ed19b4125d7}
+It sends the packet which payload is a parameter before \textquotesingle{}wait\textquotesingle{} time, and replies with A\+CK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint32\+\_\+t} & wait \+: time to wait to send the packet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}9\textquotesingle{} --$>$ The A\+CK lost (no data available) \textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}}
+\index{send\+Packet\+Timeout\+A\+CK@{send\+Packet\+Timeout\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length, uint32\+\_\+t wait)}{sendPacketTimeoutACK(uint8_t dest, uint8_t *payload, uint16_t length, uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+CK (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length, }
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a31db984ec240735f181778be6d76e58b}{}\label{class_wasp_s_x1272_a31db984ec240735f181778be6d76e58b}
+It sends the packet which payload is a parameter before \textquotesingle{}wait\textquotesingle{} time, and replies with A\+CK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & payload\+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+{\em uint32\+\_\+t} & wait \+: time to wait to send the packet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}9\textquotesingle{} --$>$ The A\+CK lost (no data available) \textquotesingle{}8\textquotesingle{} --$>$ The A\+CK lost \textquotesingle{}7\textquotesingle{} --$>$ The A\+CK destination incorrectly received \textquotesingle{}6\textquotesingle{} --$>$ The A\+CK source incorrectly received \textquotesingle{}5\textquotesingle{} --$>$ The A\+CK number incorrectly received \textquotesingle{}4\textquotesingle{} --$>$ The A\+CK length incorrectly received \textquotesingle{}3\textquotesingle{} --$>$ N-\/\+A\+CK received \textquotesingle{}2\textquotesingle{} --$>$ The A\+CK has not been received \textquotesingle{}1\textquotesingle{} --$>$ not used (reserved) \textquotesingle{}0\textquotesingle{} --$>$ The A\+CK has been received with no errors 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}}
+\index{send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K\+Retries(uint8\+\_\+t dest, char $\ast$payload)}{sendPacketTimeoutACKRetries(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+C\+K\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a3bd0a1e6ea2deee167927e6a29b4d584}{}\label{class_wasp_s_x1272_a3bd0a1e6ea2deee167927e6a29b4d584}
+
+
+It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}}
+\index{send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K\+Retries(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{sendPacketTimeoutACKRetries(uint8_t dest, uint8_t *payload, uint16_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+C\+K\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aac66b43d32e2564e20062603af3305fb}{}\label{class_wasp_s_x1272_aac66b43d32e2564e20062603af3305fb}
+
+
+It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}}
+\index{send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K\+Retries(uint8\+\_\+t dest, char $\ast$payload, uint32\+\_\+t wait)}{sendPacketTimeoutACKRetries(uint8_t dest, char *payload, uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+C\+K\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload, }
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aaa7a8d46d26f447cf133e1424242ea50}{}\label{class_wasp_s_x1272_aaa7a8d46d26f447cf133e1424242ea50}
+It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value, before ending \textquotesingle{}wait\textquotesingle{} time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint32\+\_\+t} & wait \+: time to wait while trying to send the packet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}}
+\index{send\+Packet\+Timeout\+A\+C\+K\+Retries@{send\+Packet\+Timeout\+A\+C\+K\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+Packet\+Timeout\+A\+C\+K\+Retries(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload, uint16\+\_\+t length, uint32\+\_\+t wait)}{sendPacketTimeoutACKRetries(uint8_t dest, uint8_t *payload, uint16_t length, uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+Packet\+Timeout\+A\+C\+K\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length, }
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a9b26c15d76cfd97ea23dfbede87ba030}{}\label{class_wasp_s_x1272_a9b26c15d76cfd97ea23dfbede87ba030}
+It sends a packet, waits to receive an A\+CK and updates the \+\_\+retries value, before ending \textquotesingle{}wait\textquotesingle{} time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload \+: packet payload. \\
+\hline
+{\em uint16\+\_\+t} & length \+: payload buffer length. \\
+\hline
+{\em uint32\+\_\+t} & wait \+: time to wait while trying to send the packet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+With\+M\+A\+X\+Timeout@{send\+With\+M\+A\+X\+Timeout}}
+\index{send\+With\+M\+A\+X\+Timeout@{send\+With\+M\+A\+X\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+With\+M\+A\+X\+Timeout()}{sendWithMAXTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+With\+M\+A\+X\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ad6fb27179a1f937346ca666c219fc293}{}\label{class_wasp_s_x1272_ad6fb27179a1f937346ca666c219fc293}
+
+
+It sends the packet stored in F\+I\+FO before ending M\+A\+X\+\_\+\+T\+I\+M\+E\+O\+UT. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+With\+Timeout@{send\+With\+Timeout}}
+\index{send\+With\+Timeout@{send\+With\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+With\+Timeout()}{sendWithTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+With\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a03f4f66d0e107c9129d9662e64e40d19}{}\label{class_wasp_s_x1272_a03f4f66d0e107c9129d9662e64e40d19}
+
+
+It sends the packet stored in F\+I\+FO before ending \+\_\+send\+Time time. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!send\+With\+Timeout@{send\+With\+Timeout}}
+\index{send\+With\+Timeout@{send\+With\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{send\+With\+Timeout(uint32\+\_\+t wait)}{sendWithTimeout(uint32_t wait)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::send\+With\+Timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ac3371b85caddc32797a02f0344e8742c}{}\label{class_wasp_s_x1272_ac3371b85caddc32797a02f0344e8742c}
+
+
+It tries to send the packet stored in F\+I\+FO before ending \textquotesingle{}wait\textquotesingle{} time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & wait \+: time to wait to send the packet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+Lo\+Ra mode
+
+F\+SK mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+A\+CK@{set\+A\+CK}}
+\index{set\+A\+CK@{set\+A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+A\+C\+K()}{setACK()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+A\+CK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ad733a7c8538845be0bd39d5c53d53e66}{}\label{class_wasp_s_x1272_ad733a7c8538845be0bd39d5c53d53e66}
+
+
+It writes an A\+CK in F\+I\+FO to send it. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+BW@{set\+BW}}
+\index{set\+BW@{set\+BW}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+B\+W(uint16\+\_\+t band)}{setBW(uint16_t band)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+BW (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{band}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a840451b65bbc28a5df23c7d07bd64412}{}\label{class_wasp_s_x1272_a840451b65bbc28a5df23c7d07bd64412}
+
+
+It sets the BW. 
+
+It stores in global \textquotesingle{}\+\_\+bandwidth\textquotesingle{} variable the BW selected in the configuration 
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & band \+: bandwidth value to set in the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Channel@{set\+Channel}}
+\index{set\+Channel@{set\+Channel}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Channel(uint32\+\_\+t ch)}{setChannel(uint32_t ch)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Channel (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ch}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a1623397f18fff0d0f4464db9d18df523}{}\label{class_wasp_s_x1272_a1623397f18fff0d0f4464db9d18df523}
+
+
+It sets frequency channel the module is using. 
+
+It stores in global \textquotesingle{}\+\_\+channel\textquotesingle{} variable the frequency channel 
+\begin{DoxyParams}{Parameters}
+{\em uint32\+\_\+t} & ch \+: frequency channel value to set in the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+CR@{set\+CR}}
+\index{set\+CR@{set\+CR}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+C\+R(uint8\+\_\+t cod)}{setCR(uint8_t cod)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+CR (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{cod}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a47579d6c4557f9e8f80ecffd73b367a9}{}\label{class_wasp_s_x1272_a47579d6c4557f9e8f80ecffd73b367a9}
+
+
+It sets the CR. 
+
+It stores in global \textquotesingle{}\+\_\+coding\+Rate\textquotesingle{} variable the CR selected in the configuration 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & cod \+: coding rate value to set in the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+C\+R\+C\+\_\+\+O\+FF@{set\+C\+R\+C\+\_\+\+O\+FF}}
+\index{set\+C\+R\+C\+\_\+\+O\+FF@{set\+C\+R\+C\+\_\+\+O\+FF}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+C\+R\+C\+\_\+\+O\+F\+F()}{setCRC_OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+C\+R\+C\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a26eeb852f94a25a2ba634d9cf392004c}{}\label{class_wasp_s_x1272_a26eeb852f94a25a2ba634d9cf392004c}
+
+
+It sets C\+RC off. 
+
+It stores in global \textquotesingle{}\+\_\+\+C\+RC\textquotesingle{} variable \textquotesingle{}0\textquotesingle{} when success \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+C\+R\+C\+\_\+\+ON@{set\+C\+R\+C\+\_\+\+ON}}
+\index{set\+C\+R\+C\+\_\+\+ON@{set\+C\+R\+C\+\_\+\+ON}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+C\+R\+C\+\_\+\+O\+N()}{setCRC_ON()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+C\+R\+C\+\_\+\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a198b1a5e1541db62325abd50d01bd9bd}{}\label{class_wasp_s_x1272_a198b1a5e1541db62325abd50d01bd9bd}
+
+
+It sets C\+RC on. 
+
+It stores in global \textquotesingle{}\+\_\+\+C\+RC\textquotesingle{} variable \textquotesingle{}1\textquotesingle{} when success \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Destination@{set\+Destination}}
+\index{set\+Destination@{set\+Destination}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Destination(uint8\+\_\+t dest)}{setDestination(uint8_t dest)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Destination (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a1ce9404fd36d521df85aa3012b1f6ce7}{}\label{class_wasp_s_x1272_a1ce9404fd36d521df85aa3012b1f6ce7}
+
+
+It sets the destination of a packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: value to set as destination address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+F\+SK@{set\+F\+SK}}
+\index{set\+F\+SK@{set\+F\+SK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+F\+S\+K()}{setFSK()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+F\+SK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a2b10fc7aa684df80b9e20ae7aec3b53f}{}\label{class_wasp_s_x1272_a2b10fc7aa684df80b9e20ae7aec3b53f}
+
+
+It sets the F\+SK mode on. 
+
+It stores in global \textquotesingle{}\+\_\+\+F\+SK\textquotesingle{} variable \textquotesingle{}1\textquotesingle{} when success \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Header\+O\+FF@{set\+Header\+O\+FF}}
+\index{set\+Header\+O\+FF@{set\+Header\+O\+FF}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Header\+O\+F\+F()}{setHeaderOFF()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Header\+O\+FF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a5b36510ae511b68be945ade593059fdc}{}\label{class_wasp_s_x1272_a5b36510ae511b68be945ade593059fdc}
+
+
+It sets implicit header mode. 
+
+It stores in global \textquotesingle{}\+\_\+header\textquotesingle{} variable \textquotesingle{}0\textquotesingle{} when success \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Header\+ON@{set\+Header\+ON}}
+\index{set\+Header\+ON@{set\+Header\+ON}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Header\+O\+N()}{setHeaderON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Header\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a1394f68ba9aa38a080d97413918f2c5d}{}\label{class_wasp_s_x1272_a1394f68ba9aa38a080d97413918f2c5d}
+
+
+It sets explicit header mode. 
+
+It stores in global \textquotesingle{}\+\_\+header\textquotesingle{} variable \textquotesingle{}1\textquotesingle{} when success \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+L\+O\+RA@{set\+L\+O\+RA}}
+\index{set\+L\+O\+RA@{set\+L\+O\+RA}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+L\+O\+R\+A()}{setLORA()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+L\+O\+RA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a5789e7501f0644ae3cd5aa74224a4b9b}{}\label{class_wasp_s_x1272_a5789e7501f0644ae3cd5aa74224a4b9b}
+
+
+It sets the Lo\+Ra mode on. 
+
+It stores in global \textquotesingle{}\+\_\+\+L\+O\+RA\textquotesingle{} variable \textquotesingle{}1\textquotesingle{} when success \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Max\+Current@{set\+Max\+Current}}
+\index{set\+Max\+Current@{set\+Max\+Current}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Max\+Current(uint8\+\_\+t rate)}{setMaxCurrent(uint8_t rate)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Max\+Current (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a4ecab36e30981047f5bf8fb83ddf6c6f}{}\label{class_wasp_s_x1272_a4ecab36e30981047f5bf8fb83ddf6c6f}
+
+
+It sets the maximum current supply by the module. 
+
+It stores in global \textquotesingle{}\+\_\+max\+Current\textquotesingle{} variable the maximum current supply. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & rate \+: maximum current supply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t mode)}{setMode(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a3d21215daa95c054fbad20d4b9c584b9}{}\label{class_wasp_s_x1272_a3d21215daa95c054fbad20d4b9c584b9}
+
+
+It sets the BW, SF and CR of the module. 
+
+It stores in global \textquotesingle{}\+\_\+bandwidth\textquotesingle{} variable the BW It stores in global \textquotesingle{}\+\_\+coding\+Rate\textquotesingle{} variable the CR It stores in global \textquotesingle{}\+\_\+spreading\+Factor\textquotesingle{} variable the SF 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: there is a mode number to different values of the configured parameters with this function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Node\+Address@{set\+Node\+Address}}
+\index{set\+Node\+Address@{set\+Node\+Address}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Node\+Address(uint8\+\_\+t addr)}{setNodeAddress(uint8_t addr)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Node\+Address (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a17343af90b0d4680acdd73acaf3eb20e}{}\label{class_wasp_s_x1272_a17343af90b0d4680acdd73acaf3eb20e}
+
+
+It sets the node address of the mote. 
+
+It stores in global \textquotesingle{}\+\_\+node\+Address\textquotesingle{} variable the node address 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & addr \+: address value to set as node address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Packet@{set\+Packet}}
+\index{set\+Packet@{set\+Packet}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Packet(uint8\+\_\+t dest, char $\ast$payload)}{setPacket(uint8_t dest, char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Packet (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a2edc7d42bf60617e412f162d3f8c38d8}{}\label{class_wasp_s_x1272_a2edc7d42bf60617e412f162d3f8c38d8}
+
+
+It writes a packet in F\+I\+FO in order to send it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Packet@{set\+Packet}}
+\index{set\+Packet@{set\+Packet}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Packet(uint8\+\_\+t dest, uint8\+\_\+t $\ast$payload)}{setPacket(uint8_t dest, uint8_t *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Packet (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dest, }
+\item[{uint8\+\_\+t $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a409523a65d537469885820fa19287e29}{}\label{class_wasp_s_x1272_a409523a65d537469885820fa19287e29}
+
+
+It writes a packet in F\+I\+FO in order to send it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & dest \+: packet destination. \\
+\hline
+{\em uint8\+\_\+t} & $\ast$payload\+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Packet\+Length@{set\+Packet\+Length}}
+\index{set\+Packet\+Length@{set\+Packet\+Length}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Packet\+Length()}{setPacketLength()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Packet\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_acfad433b86efde50154b7af55273562d}{}\label{class_wasp_s_x1272_acfad433b86efde50154b7af55273562d}
+
+
+It sets the packet length to send/receive. 
+
+It stores in global \textquotesingle{}\+\_\+payloadlength\textquotesingle{} variable the payload length of the last packet to send/receive. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Packet\+Length@{set\+Packet\+Length}}
+\index{set\+Packet\+Length@{set\+Packet\+Length}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Packet\+Length(uint8\+\_\+t l)}{setPacketLength(uint8_t l)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Packet\+Length (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a986a701e93954ecc70e7cfb020d5964f}{}\label{class_wasp_s_x1272_a986a701e93954ecc70e7cfb020d5964f}
+
+
+It sets the packet length to send/receive. 
+
+It stores in global \textquotesingle{}\+\_\+payloadlength\textquotesingle{} variable the payload length of the last packet to send/receive. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & l \+: payload length to set in the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Payload@{set\+Payload}}
+\index{set\+Payload@{set\+Payload}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Payload(char $\ast$payload)}{setPayload(char *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Payload (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a2985790c73d6e508c402dd3cfbdfece6}{}\label{class_wasp_s_x1272_a2985790c73d6e508c402dd3cfbdfece6}
+
+
+It sets the payload of the packet that is going to be sent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$payload \+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Payload@{set\+Payload}}
+\index{set\+Payload@{set\+Payload}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Payload(uint8\+\_\+t $\ast$payload)}{setPayload(uint8_t *payload)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Payload (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{payload}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_abe88824e8f0e9bc8ce2f288753e4b51b}{}\label{class_wasp_s_x1272_abe88824e8f0e9bc8ce2f288753e4b51b}
+
+
+It sets the payload of the packet that is going to be sent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & payload\+: packet payload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Power@{set\+Power}}
+\index{set\+Power@{set\+Power}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Power(char p)}{setPower(char p)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Power (
+\begin{DoxyParamCaption}
+\item[{char}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a2a83400b06e5c4b5edac9e6909f0163b}{}\label{class_wasp_s_x1272_a2a83400b06e5c4b5edac9e6909f0163b}
+
+
+It sets the output power of the signal. 
+
+It stores in global \textquotesingle{}\+\_\+power\textquotesingle{} variable the output power of the signal 
+\begin{DoxyParams}{Parameters}
+{\em char} & p \+: \textquotesingle{}M\textquotesingle{}, \textquotesingle{}H\textquotesingle{} or \textquotesingle{}L\textquotesingle{} if you want Maximum, High or Low output power signal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Power\+Num@{set\+Power\+Num}}
+\index{set\+Power\+Num@{set\+Power\+Num}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Power\+Num(uint8\+\_\+t pow)}{setPowerNum(uint8_t pow)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::set\+Power\+Num (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{pow}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a6d4e422a21ed892a8040c84d4dcd5e2c}{}\label{class_wasp_s_x1272_a6d4e422a21ed892a8040c84d4dcd5e2c}
+
+
+It sets the output power of the signal. 
+
+It stores in global \textquotesingle{}\+\_\+power\textquotesingle{} variable the output power of the signal 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & pow \+: value to set as output power. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Preamble\+Length@{set\+Preamble\+Length}}
+\index{set\+Preamble\+Length@{set\+Preamble\+Length}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Preamble\+Length(uint16\+\_\+t l)}{setPreambleLength(uint16_t l)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Preamble\+Length (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_af0acf50e108ef62da463f901569a79c7}{}\label{class_wasp_s_x1272_af0acf50e108ef62da463f901569a79c7}
+
+
+It sets the preamble length. 
+
+It stores in global \textquotesingle{}\+\_\+preamblelength\textquotesingle{} variable the preamble length 
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & l \+: preamble length to set in the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Retries@{set\+Retries}}
+\index{set\+Retries@{set\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Retries(uint8\+\_\+t ret)}{setRetries(uint8_t ret)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Retries (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ret}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_aa4080fc70f853968a90830db5e98c676}{}\label{class_wasp_s_x1272_aa4080fc70f853968a90830db5e98c676}
+
+
+It sets the total of retries when a packet is not correctly received. 
+
+It stores in global \textquotesingle{}\+\_\+max\+Retries\textquotesingle{} variable the number of retries. 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & ret \+: number of retries. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+R\+T\+Cfrom\+Meshlium@{set\+R\+T\+Cfrom\+Meshlium}}
+\index{set\+R\+T\+Cfrom\+Meshlium@{set\+R\+T\+Cfrom\+Meshlium}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+R\+T\+Cfrom\+Meshlium()}{setRTCfromMeshlium()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+R\+T\+Cfrom\+Meshlium (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a1a32d15e142ef83b76edf83c67fe5d39}{}\label{class_wasp_s_x1272_a1a32d15e142ef83b76edf83c67fe5d39}
+
+
+It sets the R\+TC settings with Meshlium timestamp configuration. 
+
+This function sends a special Frame to Meshlium (Meshlium\textquotesingle{}s address must be \textquotesingle{}1\textquotesingle{}), and then Meshlium returns an answer with the timestamp. This function parses the info and sets the R\+TC Time and Date. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+SF@{set\+SF}}
+\index{set\+SF@{set\+SF}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+S\+F(uint8\+\_\+t spr)}{setSF(uint8_t spr)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+SF (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{spr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a6274034f0824ca27d5dccdbcfbd30361}{}\label{class_wasp_s_x1272_a6274034f0824ca27d5dccdbcfbd30361}
+
+
+It sets the SF. 
+
+It stores in global \textquotesingle{}\+\_\+spreading\+Factor\textquotesingle{} variable the current value of SF 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & spr \+: spreading factor value to set in the configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+F\+SK mode
+
+Lo\+Ra mode \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!set\+Timeout@{set\+Timeout}}
+\index{set\+Timeout@{set\+Timeout}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{set\+Timeout()}{setTimeout()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::set\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ab3d853aa4bf2aad5b4beb9b3f8fb881a}{}\label{class_wasp_s_x1272_ab3d853aa4bf2aad5b4beb9b3f8fb881a}
+
+
+It sets the waiting time to send a packet. 
+
+It stores in global \textquotesingle{}\+\_\+send\+Time\textquotesingle{} variable the time for each mode. \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!show\+Framefrom\+Packet@{show\+Framefrom\+Packet}}
+\index{show\+Framefrom\+Packet@{show\+Framefrom\+Packet}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{show\+Framefrom\+Packet()}{showFramefromPacket()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+X1272\+::show\+Framefrom\+Packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a277e2c8f44b88a0ab94ab5a0027fe347}{}\label{class_wasp_s_x1272_a277e2c8f44b88a0ab94ab5a0027fe347}
+
+
+It shows te received Waspmote Frame via U\+SB port. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!show\+Received\+Packet@{show\+Received\+Packet}}
+\index{show\+Received\+Packet@{show\+Received\+Packet}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{show\+Received\+Packet()}{showReceivedPacket()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+X1272\+::show\+Received\+Packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ab136ac58860cfe670c0a8ee99e4aa9f6}{}\label{class_wasp_s_x1272_ab136ac58860cfe670c0a8ee99e4aa9f6}
+
+
+It shows te received packet via U\+SB port. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!show\+Rx\+Registers@{show\+Rx\+Registers}}
+\index{show\+Rx\+Registers@{show\+Rx\+Registers}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{show\+Rx\+Registers()}{showRxRegisters()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+X1272\+::show\+Rx\+Registers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a857569bb5f2063f714cc787437d069a4}{}\label{class_wasp_s_x1272_a857569bb5f2063f714cc787437d069a4}
+
+
+It prints the registers related to RX via U\+SB. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!time\+On\+Air@{time\+On\+Air}}
+\index{time\+On\+Air@{time\+On\+Air}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{time\+On\+Air()}{timeOnAir()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+S\+X1272\+::time\+On\+Air (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_af4d14db4017412597273b96f0961101e}{}\label{class_wasp_s_x1272_af4d14db4017412597273b96f0961101e}
+
+
+It gets the theoretical value of the time-\/on-\/air of the packet. 
+
+\begin{DoxyRemark}{Remarks}
+\href{http://www.semtech.com/images/datasheet/sx1272.pdf}{\tt http\+://www.\+semtech.\+com/images/datasheet/sx1272.\+pdf} It stores in global \textquotesingle{}\+\_\+send\+Time\textquotesingle{} variable the time for each mode. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+float\+: time on air depending on module settings and packet length 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!trunc\+Payload@{trunc\+Payload}}
+\index{trunc\+Payload@{trunc\+Payload}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{trunc\+Payload(uint16\+\_\+t length16)}{truncPayload(uint16_t length16)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::trunc\+Payload (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{length16}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_ae4f23c81125693128bdfe0418bbb4436}{}\label{class_wasp_s_x1272_ae4f23c81125693128bdfe0418bbb4436}
+It sets the maximum number of bytes from a frame that fit in a packet structure.
+
+It stores in global \textquotesingle{}\+\_\+payloadlength\textquotesingle{} variable the maximum number of bytes. 
+\begin{DoxyParams}{Parameters}
+{\em uint16\+\_\+t} & length16 \+: total frame length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!write\+Register@{write\+Register}}
+\index{write\+Register@{write\+Register}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{write\+Register(byte address, byte data)}{writeRegister(byte address, byte data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+S\+X1272\+::write\+Register (
+\begin{DoxyParamCaption}
+\item[{byte}]{address, }
+\item[{byte}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_s_x1272_a50ea3e9a1f83ac5c328b45a460afa1eb}{}\label{class_wasp_s_x1272_a50ea3e9a1f83ac5c328b45a460afa1eb}
+
+
+It writes in an internal module register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte} & address \+: address register to write in. \\
+\hline
+{\em byte} & data \+: value to write in the register. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+bandwidth@{\+\_\+bandwidth}}
+\index{\+\_\+bandwidth@{\+\_\+bandwidth}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+bandwidth}{_bandwidth}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+bandwidth}\hypertarget{class_wasp_s_x1272_a00d80addbd1a513a8f6ae9706ac86083}{}\label{class_wasp_s_x1272_a00d80addbd1a513a8f6ae9706ac86083}
+Variable \+: bandwidth configured in Lo\+Ra mode. bandwidth = 00 --$>$ BW = 125\+K\+Hz bandwidth = 01 --$>$ BW = 250\+K\+Hz bandwidth = 10 --$>$ BW = 500\+K\+Hz \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+channel@{\+\_\+channel}}
+\index{\+\_\+channel@{\+\_\+channel}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+channel}{_channel}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Wasp\+S\+X1272\+::\+\_\+channel}\hypertarget{class_wasp_s_x1272_a83eb4b1eb13e02e27186eab0c01f7067}{}\label{class_wasp_s_x1272_a83eb4b1eb13e02e27186eab0c01f7067}
+Variable \+: frequency channel. channel = 0x\+D84\+C\+CC --$>$ CH = 10\+\_\+868, 865.\+20\+M\+Hz channel = 0x\+D86000 --$>$ CH = 11\+\_\+868, 865.\+50\+M\+Hz channel = 0x\+D87333 --$>$ CH = 12\+\_\+868, 865.\+80\+M\+Hz channel = 0x\+D88666 --$>$ CH = 13\+\_\+868, 866.\+10\+M\+Hz channel = 0x\+D89999 --$>$ CH = 14\+\_\+868, 866.\+40\+M\+Hz channel = 0x\+D8\+A\+C\+CC --$>$ CH = 15\+\_\+868, 866.\+70\+M\+Hz channel = 0x\+D8\+C000 --$>$ CH = 16\+\_\+868, 867.\+00\+M\+Hz channel = 0x\+E1\+C51E --$>$ CH = 00\+\_\+900, 903.\+08\+M\+Hz channel = 0x\+E24\+F5C --$>$ CH = 01\+\_\+900, 905.\+24\+M\+Hz channel = 0x\+E2\+D999 --$>$ CH = 02\+\_\+900, 907.\+40\+M\+Hz channel = 0x\+E363\+D7 --$>$ CH = 03\+\_\+900, 909.\+56\+M\+Hz channel = 0x\+E3\+E\+E14 --$>$ CH = 04\+\_\+900, 911.\+72\+M\+Hz channel = 0x\+E47851 --$>$ CH = 05\+\_\+900, 913.\+88\+M\+Hz channel = 0x\+E5028F --$>$ CH = 06\+\_\+900, 916.\+04\+M\+Hz channel = 0x\+E58\+C\+CC --$>$ CH = 07\+\_\+900, 918.\+20\+M\+Hz channel = 0x\+E6170A --$>$ CH = 08\+\_\+900, 920.\+36\+M\+Hz channel = 0x\+E6\+A147 --$>$ CH = 09\+\_\+900, 922.\+52\+M\+Hz channel = 0x\+E72\+B85 --$>$ CH = 10\+\_\+900, 924.\+68\+M\+Hz channel = 0x\+E7\+B5\+C2 --$>$ CH = 11\+\_\+900, 926.\+84\+M\+Hz \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+coding\+Rate@{\+\_\+coding\+Rate}}
+\index{\+\_\+coding\+Rate@{\+\_\+coding\+Rate}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+coding\+Rate}{_codingRate}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+coding\+Rate}\hypertarget{class_wasp_s_x1272_a82c8def66933dc82a7125ebccc757a22}{}\label{class_wasp_s_x1272_a82c8def66933dc82a7125ebccc757a22}
+Variable \+: coding rate configured in Lo\+Ra mode. coding\+Rate = 001 --$>$ CR = 4/5 coding\+Rate = 010 --$>$ CR = 4/6 coding\+Rate = 011 --$>$ CR = 4/7 coding\+Rate = 100 --$>$ CR = 4/8 \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+\+C\+RC@{\+\_\+\+C\+RC}}
+\index{\+\_\+\+C\+RC@{\+\_\+\+C\+RC}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+\+C\+RC}{_CRC}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+\+C\+RC}\hypertarget{class_wasp_s_x1272_ab53671db53fec5cf5972a540db517024}{}\label{class_wasp_s_x1272_ab53671db53fec5cf5972a540db517024}
+Variable \+: presence or absence of C\+RC calculation. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+destination@{\+\_\+destination}}
+\index{\+\_\+destination@{\+\_\+destination}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+destination}{_destination}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+destination}\hypertarget{class_wasp_s_x1272_a85c9daae64a5291ea033aab2c9eb4c80}{}\label{class_wasp_s_x1272_a85c9daae64a5291ea033aab2c9eb4c80}
+Variable \+: packet destination. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+header@{\+\_\+header}}
+\index{\+\_\+header@{\+\_\+header}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+header}{_header}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+header}\hypertarget{class_wasp_s_x1272_ab63346ffc568865de30c4638a4ed43f9}{}\label{class_wasp_s_x1272_ab63346ffc568865de30c4638a4ed43f9}
+Variable \+: implicit or explicit header in Lo\+Ra mode. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+hreceived@{\+\_\+hreceived}}
+\index{\+\_\+hreceived@{\+\_\+hreceived}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+hreceived}{_hreceived}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+hreceived}\hypertarget{class_wasp_s_x1272_a05b54181f30cdbca8706a00b8ff0bec9}{}\label{class_wasp_s_x1272_a05b54181f30cdbca8706a00b8ff0bec9}
+Variable \+: header received while waiting a packet to arrive. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+max\+Current@{\+\_\+max\+Current}}
+\index{\+\_\+max\+Current@{\+\_\+max\+Current}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+max\+Current}{_maxCurrent}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+max\+Current}\hypertarget{class_wasp_s_x1272_a7a4e718645c2ff60ddea7bbcb530b6d2}{}\label{class_wasp_s_x1272_a7a4e718645c2ff60ddea7bbcb530b6d2}
+Variable \+: maximum current supply. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+max\+Retries@{\+\_\+max\+Retries}}
+\index{\+\_\+max\+Retries@{\+\_\+max\+Retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+max\+Retries}{_maxRetries}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+max\+Retries}\hypertarget{class_wasp_s_x1272_a96e8d83e71cde36dde2cbeeeb1db4f86}{}\label{class_wasp_s_x1272_a96e8d83e71cde36dde2cbeeeb1db4f86}
+Variable \+: maximum number of retries. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+modem@{\+\_\+modem}}
+\index{\+\_\+modem@{\+\_\+modem}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+modem}{_modem}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+modem}\hypertarget{class_wasp_s_x1272_ac90e11a42677f2fff97ab2caa3a4c676}{}\label{class_wasp_s_x1272_ac90e11a42677f2fff97ab2caa3a4c676}
+Variable \+: indicates F\+SK or Lo\+Ra modem. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+node\+Address@{\+\_\+node\+Address}}
+\index{\+\_\+node\+Address@{\+\_\+node\+Address}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+node\+Address}{_nodeAddress}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+node\+Address}\hypertarget{class_wasp_s_x1272_ad73e96b457d2671c53a305db57c0f15f}{}\label{class_wasp_s_x1272_ad73e96b457d2671c53a305db57c0f15f}
+Variable \+: node address. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+packet\+Number@{\+\_\+packet\+Number}}
+\index{\+\_\+packet\+Number@{\+\_\+packet\+Number}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+packet\+Number}{_packetNumber}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+packet\+Number}\hypertarget{class_wasp_s_x1272_addd7b2be1fcda591c3df8e470b2e82f0}{}\label{class_wasp_s_x1272_addd7b2be1fcda591c3df8e470b2e82f0}
+Variable \+: packet number. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+payloadlength@{\+\_\+payloadlength}}
+\index{\+\_\+payloadlength@{\+\_\+payloadlength}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+payloadlength}{_payloadlength}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+S\+X1272\+::\+\_\+payloadlength}\hypertarget{class_wasp_s_x1272_a5ebbaeb146f744d57cc1e6550efc40e5}{}\label{class_wasp_s_x1272_a5ebbaeb146f744d57cc1e6550efc40e5}
+Variable \+: payload length sent/received. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+power@{\+\_\+power}}
+\index{\+\_\+power@{\+\_\+power}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+power}{_power}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+power}\hypertarget{class_wasp_s_x1272_a6a1ec7b8bcd4746748b2d6c4a57381be}{}\label{class_wasp_s_x1272_a6a1ec7b8bcd4746748b2d6c4a57381be}
+Variable \+: output power. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+preamblelength@{\+\_\+preamblelength}}
+\index{\+\_\+preamblelength@{\+\_\+preamblelength}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+preamblelength}{_preamblelength}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+S\+X1272\+::\+\_\+preamblelength}\hypertarget{class_wasp_s_x1272_aa7151ad6fd3be83f6f0a748d77194985}{}\label{class_wasp_s_x1272_aa7151ad6fd3be83f6f0a748d77194985}
+Variable \+: preamble length sent/received. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+reception@{\+\_\+reception}}
+\index{\+\_\+reception@{\+\_\+reception}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+reception}{_reception}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+reception}\hypertarget{class_wasp_s_x1272_a4025d018b1337cdd681e6e2a855179d4}{}\label{class_wasp_s_x1272_a4025d018b1337cdd681e6e2a855179d4}
+Variable \+: indicates if received packet is correct or incorrect. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+retries@{\+\_\+retries}}
+\index{\+\_\+retries@{\+\_\+retries}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+retries}{_retries}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+retries}\hypertarget{class_wasp_s_x1272_a446b8d3764d930f490508e03d603f28a}{}\label{class_wasp_s_x1272_a446b8d3764d930f490508e03d603f28a}
+Variable \+: number of current retry. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+\+R\+S\+SI@{\+\_\+\+R\+S\+SI}}
+\index{\+\_\+\+R\+S\+SI@{\+\_\+\+R\+S\+SI}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+\+R\+S\+SI}{_RSSI}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::\+\_\+\+R\+S\+SI}\hypertarget{class_wasp_s_x1272_a33d5c32f89a846f1d9a6766080a0ded1}{}\label{class_wasp_s_x1272_a33d5c32f89a846f1d9a6766080a0ded1}
+Variable \+: R\+S\+SI current value. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+\+R\+S\+S\+Ipacket@{\+\_\+\+R\+S\+S\+Ipacket}}
+\index{\+\_\+\+R\+S\+S\+Ipacket@{\+\_\+\+R\+S\+S\+Ipacket}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+\+R\+S\+S\+Ipacket}{_RSSIpacket}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Wasp\+S\+X1272\+::\+\_\+\+R\+S\+S\+Ipacket}\hypertarget{class_wasp_s_x1272_a38392b43de9313fe7527421ba79ca475}{}\label{class_wasp_s_x1272_a38392b43de9313fe7527421ba79ca475}
+Variable \+: R\+S\+SI from the last packet received in Lo\+Ra mode. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+send\+Time@{\+\_\+send\+Time}}
+\index{\+\_\+send\+Time@{\+\_\+send\+Time}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+send\+Time}{_sendTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wasp\+S\+X1272\+::\+\_\+send\+Time}\hypertarget{class_wasp_s_x1272_a5074331b975a265eeae0235edd6da59d}{}\label{class_wasp_s_x1272_a5074331b975a265eeae0235edd6da59d}
+Variable \+: current timeout to send a packet. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+\+S\+NR@{\+\_\+\+S\+NR}}
+\index{\+\_\+\+S\+NR@{\+\_\+\+S\+NR}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+\+S\+NR}{_SNR}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+S\+X1272\+::\+\_\+\+S\+NR}\hypertarget{class_wasp_s_x1272_ab2738b8b388733f5e25a777fee3bacdc}{}\label{class_wasp_s_x1272_ab2738b8b388733f5e25a777fee3bacdc}
+Variable \+: S\+NR from the last packet received in Lo\+Ra mode. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+spreading\+Factor@{\+\_\+spreading\+Factor}}
+\index{\+\_\+spreading\+Factor@{\+\_\+spreading\+Factor}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+spreading\+Factor}{_spreadingFactor}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::\+\_\+spreading\+Factor}\hypertarget{class_wasp_s_x1272_a501d372a9d25177f2de1015279efa842}{}\label{class_wasp_s_x1272_a501d372a9d25177f2de1015279efa842}
+Variable \+: spreading factor configured in Lo\+Ra mode. spreading\+Factor = 6 --$>$ SF = 6, 64 chips/symbol spreading\+Factor = 7 --$>$ SF = 7, 128 chips/symbol spreading\+Factor = 8 --$>$ SF = 8, 256 chips/symbol spreading\+Factor = 9 --$>$ SF = 9, 512 chips/symbol spreading\+Factor = 10 --$>$ SF = 10, 1024 chips/symbol spreading\+Factor = 11 --$>$ SF = 11, 2048 chips/symbol spreading\+Factor = 12 --$>$ SF = 12, 4096 chips/symbol \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!\+\_\+temp@{\+\_\+temp}}
+\index{\+\_\+temp@{\+\_\+temp}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{\+\_\+temp}{_temp}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+S\+X1272\+::\+\_\+temp}\hypertarget{class_wasp_s_x1272_ab9473d933d186b09be966fe005be1391}{}\label{class_wasp_s_x1272_ab9473d933d186b09be966fe005be1391}
+Variable \+: temperature module. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!A\+CK@{A\+CK}}
+\index{A\+CK@{A\+CK}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{A\+CK}{ACK}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pack} Wasp\+S\+X1272\+::\+A\+CK}\hypertarget{class_wasp_s_x1272_ad87e372f185c7c5fd312dd8323d91c95}{}\label{class_wasp_s_x1272_ad87e372f185c7c5fd312dd8323d91c95}
+Variable \+: array with all the information about a sent/received ack. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!packet\+\_\+received@{packet\+\_\+received}}
+\index{packet\+\_\+received@{packet\+\_\+received}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{packet\+\_\+received}{packet_received}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pack} Wasp\+S\+X1272\+::packet\+\_\+received}\hypertarget{class_wasp_s_x1272_a43eb11f317cfd60607e2d00a5515f5d7}{}\label{class_wasp_s_x1272_a43eb11f317cfd60607e2d00a5515f5d7}
+Variable \+: array with all the information about a received packet. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!packet\+\_\+sent@{packet\+\_\+sent}}
+\index{packet\+\_\+sent@{packet\+\_\+sent}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{packet\+\_\+sent}{packet_sent}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pack} Wasp\+S\+X1272\+::packet\+\_\+sent}\hypertarget{class_wasp_s_x1272_aa318dbc9060a067fb925926cd3545366}{}\label{class_wasp_s_x1272_aa318dbc9060a067fb925926cd3545366}
+Variable \+: array with all the information about a sent packet. \index{Wasp\+S\+X1272@{Wasp\+S\+X1272}!st\+\_\+\+SD@{st\+\_\+\+SD}}
+\index{st\+\_\+\+SD@{st\+\_\+\+SD}!Wasp\+S\+X1272@{Wasp\+S\+X1272}}
+\subsubsection[{\texorpdfstring{st\+\_\+\+SD}{st_SD}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+S\+X1272\+::st\+\_\+\+SD}\hypertarget{class_wasp_s_x1272_a76dd3e69da36093d4e249998202b414e}{}\label{class_wasp_s_x1272_a76dd3e69da36093d4e249998202b414e}
+
+
+Variables /////////////////////////////////////////////////////////////. 
+
+Variable \+: SD state. st\+\_\+\+SD = 00 --$>$ S\+D\+\_\+\+O\+FF st\+\_\+\+SD = 01 --$>$ S\+D\+\_\+\+ON 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+S\+X1272/\hyperlink{_wasp_s_x1272_8h}{Wasp\+S\+X1272.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+S\+X1272/\hyperlink{_wasp_s_x1272_8cpp}{Wasp\+S\+X1272.\+cpp}\end{DoxyCompactItemize}

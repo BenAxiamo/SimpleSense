@@ -1,0 +1,364 @@
+\hypertarget{class_lora}{}\section{Lora Class Reference}
+\label{class_lora}\index{Lora@{Lora}}
+
+
+Class that is used to initialize and communicate between \hyperlink{class_gateway}{Gateway} and Sensornode via Lo\+Ra.  
+
+
+
+
+{\ttfamily \#include $<$lora\+\_\+class.\+h$>$}
+
+
+
+Collaboration diagram for Lora\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_lora__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_lora_1_1lora_settings}{lora\+Settings}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lora_a828bc4febabc3d8ce409d226fafaccf1}{Lora} (\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$sensorstruct)
+\item 
+int8\+\_\+t \hyperlink{class_lora_a7a2c376c0eea2715cd4d976a2d0b1ff9}{init} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_a3893f74b58a9e696e99bcc08f417aaed}{get\+ID} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_ac1353b12ea1094a2fc79887556613d87}{activity\+Detection} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_ac17ac3b6aa37ae63fee774bf32a9651f}{data\+Request} (uint8\+\_\+t ID)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_aabe28ca7e6605cfa1c828aa7b0e3204d}{wait\+For\+Data\+Request} (void)
+\item 
+void \hyperlink{class_lora_adc489dee222212aaa024708342979a55}{collect\+Data} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_a272ad34d041a5ce7f6e7f0bb449f5897}{send\+Data} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_a9a17db362492abeeb63e2184a6eefda8}{receive\+Data} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_ad7aa04fa0786201ead141699446491d3}{send\+Deep\+Sleep} (uint8\+\_\+t ID)
+\item 
+uint8\+\_\+t \hyperlink{class_lora_af312b9416d9114ed07bb3a0dbad81ac2}{wait\+For\+Deep\+Sleep} (void)
+\item 
+int8\+\_\+t \hyperlink{class_lora_a1dfacb6c20da34f6c3b10685b66f7201}{wake\+Up} (void)
+\item 
+void \hyperlink{class_lora_a6a411c5ee5e9f476676f0cd0a57b7a83}{convert\+Struct} (void)
+\item 
+void \hyperlink{class_lora_a5339d28dcbd3a1eafd5523e660d627af}{convert\+Struct\+Back} (\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$dest)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_lora_1_1lora_settings}{Lora\+::lora\+Settings} \hyperlink{class_lora_aafc57260071b0df449fbe0b63bf55530}{my\+Settings}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_lora_a31a8e6588f109ae8c9dc34f41e55aa39}{string\+Data} \mbox{[}19\mbox{]}
+\item 
+\hyperlink{struct_sensors_1_1struct_sensors}{Sensors\+::struct\+Sensors} $\ast$ \hyperlink{class_lora_a699a6c2d05a24bb1dd2994b82e9e8a33}{local\+Sensor\+Struct}
+\item 
+uint8\+\_\+t \hyperlink{class_lora_ae7af40cf946319a9845222abf177cbdc}{send\+Data\+Command} =1
+\item 
+uint8\+\_\+t \hyperlink{class_lora_af6ad33ed00480cffccef545888c53246}{send\+Command\+To\+Sleep} =2
+\item 
+uint8\+\_\+t \hyperlink{class_lora_a47c7dd9636e2680b188e6b475602a049}{gateway\+ID} =2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that is used to initialize and communicate between \hyperlink{class_gateway}{Gateway} and Sensornode via Lo\+Ra. 
+
+Definition at line 12 of file lora\+\_\+class.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Lora@{Lora}!Lora@{Lora}}
+\index{Lora@{Lora}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{Lora(\+Sensors\+::struct\+Sensors $\ast$sensorstruct)}{Lora(Sensors::structSensors *sensorstruct)}}]{\setlength{\rightskip}{0pt plus 5cm}Lora\+::\+Lora (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors} $\ast$}]{sensorstruct}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a828bc4febabc3d8ce409d226fafaccf1}{}\label{class_lora_a828bc4febabc3d8ce409d226fafaccf1}
+Constructor sets all Lo\+Ra-\/paramets to default ~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em Tx\+Power} & is set to high ~\newline
+\\
+\hline
+{\em Mode} & is set to 3 ~\newline
+\\
+\hline
+{\em C\+RC} & and Header are on ~\newline
+\\
+\hline
+{\em Channel} & is set to Channel 17 ~\newline
+ void\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file lora\+\_\+class.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Lora@{Lora}!activity\+Detection@{activity\+Detection}}
+\index{activity\+Detection@{activity\+Detection}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{activity\+Detection(void)}{activityDetection(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::activity\+Detection (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_ac1353b12ea1094a2fc79887556613d87}{}\label{class_lora_ac1353b12ea1094a2fc79887556613d87}
+Detects any activity on the channel \begin{DoxyReturn}{Returns}
+0 there has been an activity on the channel 
+
+1 there hasn\textquotesingle{}t been an activity on the channel
+\end{DoxyReturn}
+
+
+Definition at line 169 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!collect\+Data@{collect\+Data}}
+\index{collect\+Data@{collect\+Data}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{collect\+Data(void)}{collectData(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lora\+::collect\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_adc489dee222212aaa024708342979a55}{}\label{class_lora_adc489dee222212aaa024708342979a55}
+\index{Lora@{Lora}!convert\+Struct@{convert\+Struct}}
+\index{convert\+Struct@{convert\+Struct}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{convert\+Struct(void)}{convertStruct(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lora\+::convert\+Struct (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a6a411c5ee5e9f476676f0cd0a57b7a83}{}\label{class_lora_a6a411c5ee5e9f476676f0cd0a57b7a83}
+Converts the struct containing the information to send into a uin8t\+\_\+t array
+
+Definition at line 129 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!convert\+Struct\+Back@{convert\+Struct\+Back}}
+\index{convert\+Struct\+Back@{convert\+Struct\+Back}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{convert\+Struct\+Back(\+Sensors\+::struct\+Sensors $\ast$dest)}{convertStructBack(Sensors::structSensors *dest)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lora\+::convert\+Struct\+Back (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensors\+::struct\+Sensors} $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a5339d28dcbd3a1eafd5523e660d627af}{}\label{class_lora_a5339d28dcbd3a1eafd5523e660d627af}
+Converts the uin8t\+\_\+t array back into a struct containing all the necessary information 
+\begin{DoxyParams}{Parameters}
+{\em dest} & is the destination of the conversion back into an struct\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 152 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!data\+Request@{data\+Request}}
+\index{data\+Request@{data\+Request}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{data\+Request(uint8\+\_\+t I\+D)}{dataRequest(uint8_t ID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::data\+Request (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_ac17ac3b6aa37ae63fee774bf32a9651f}{}\label{class_lora_ac17ac3b6aa37ae63fee774bf32a9651f}
+\hyperlink{class_gateway}{Gateway} sends a request for measurement data to the sensornode 
+\begin{DoxyParams}{Parameters}
+{\em ID} & says which sensornode should send the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 no error request has been received and acknowledged 
+
+1 error request has not been received
+\end{DoxyReturn}
+
+
+Definition at line 182 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{get\+I\+D(void)}{getID(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::get\+ID (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a3893f74b58a9e696e99bcc08f417aaed}{}\label{class_lora_a3893f74b58a9e696e99bcc08f417aaed}
+Takes the Input from the terminal to set the ID of the sensornode \begin{DoxyReturn}{Returns}
+An uint8\+\_\+t containing the ID given in the terminal is returned
+\end{DoxyReturn}
+
+
+Definition at line 27 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!init@{init}}
+\index{init@{init}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{init(void)}{init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Lora\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a7a2c376c0eea2715cd4d976a2d0b1ff9}{}\label{class_lora_a7a2c376c0eea2715cd4d976a2d0b1ff9}
+Sets the basic settings so that the sensor-\/node can communicate with the gateway when turned on Gets the Sensor\+Node\+ID from the E\+E\+P\+R\+OM and turns the R\+TC, the Lo\+Ra and the U\+SB on \begin{DoxyReturn}{Returns}
+0 settings done 
+
+1 error during settings
+\end{DoxyReturn}
+
+
+Definition at line 60 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!receive\+Data@{receive\+Data}}
+\index{receive\+Data@{receive\+Data}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{receive\+Data(void)}{receiveData(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::receive\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a9a17db362492abeeb63e2184a6eefda8}{}\label{class_lora_a9a17db362492abeeb63e2184a6eefda8}
+\hyperlink{class_gateway}{Gateway} receives the data sent by the sensor-\/node via \hyperlink{class_lora}{Lora} \begin{DoxyReturn}{Returns}
+0-\/$>$ no error Data has been received and acknowledged 
+
+1-\/$>$ error Data has not been received
+\end{DoxyReturn}
+
+
+Definition at line 241 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{send\+Data(void)}{sendData(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::send\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a272ad34d041a5ce7f6e7f0bb449f5897}{}\label{class_lora_a272ad34d041a5ce7f6e7f0bb449f5897}
+Sensor-\/node sends the data requested by the gateway \begin{DoxyReturn}{Returns}
+0 data has been send successful 
+
+1 data has not been send successful
+\end{DoxyReturn}
+
+
+Definition at line 224 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!send\+Deep\+Sleep@{send\+Deep\+Sleep}}
+\index{send\+Deep\+Sleep@{send\+Deep\+Sleep}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{send\+Deep\+Sleep(uint8\+\_\+t I\+D)}{sendDeepSleep(uint8_t ID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::send\+Deep\+Sleep (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_ad7aa04fa0786201ead141699446491d3}{}\label{class_lora_ad7aa04fa0786201ead141699446491d3}
+After the gateway has finished uploading the information to the webserver it sends to command to the sensor-\/node to go to sleep 
+\begin{DoxyParams}{Parameters}
+{\em ID} & which sensor-\/node should go to sleep \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 sensor-\/node received command and has acknowledged 
+
+1 sensor-\/node has not received command
+\end{DoxyReturn}
+
+
+Definition at line 311 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!wait\+For\+Data\+Request@{wait\+For\+Data\+Request}}
+\index{wait\+For\+Data\+Request@{wait\+For\+Data\+Request}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{wait\+For\+Data\+Request(void)}{waitForDataRequest(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::wait\+For\+Data\+Request (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_aabe28ca7e6605cfa1c828aa7b0e3204d}{}\label{class_lora_aabe28ca7e6605cfa1c828aa7b0e3204d}
+Sensor-\/node waits for the data-\/request from the gateway \begin{DoxyReturn}{Returns}
+0 request has been received and acknowledged 
+
+1 error request has not been received
+\end{DoxyReturn}
+
+
+Definition at line 204 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!wait\+For\+Deep\+Sleep@{wait\+For\+Deep\+Sleep}}
+\index{wait\+For\+Deep\+Sleep@{wait\+For\+Deep\+Sleep}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{wait\+For\+Deep\+Sleep(void)}{waitForDeepSleep(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::wait\+For\+Deep\+Sleep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_af312b9416d9114ed07bb3a0dbad81ac2}{}\label{class_lora_af312b9416d9114ed07bb3a0dbad81ac2}
+After the sensor-\/node has send the requested data to the gateway, he waits for the deep\+Sleep command \begin{DoxyReturn}{Returns}
+0 command received 
+
+1 command not received
+\end{DoxyReturn}
+
+
+Definition at line 329 of file lora\+\_\+class.\+cpp.
+
+\index{Lora@{Lora}!wake\+Up@{wake\+Up}}
+\index{wake\+Up@{wake\+Up}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{wake\+Up(void)}{wakeUp(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Lora\+::wake\+Up (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lora_a1dfacb6c20da34f6c3b10685b66f7201}{}\label{class_lora_a1dfacb6c20da34f6c3b10685b66f7201}
+After the deep\+Sleep the Lo\+Ra-\/module needs to be reconfigured, takes all the settings saved in my\+Settings and restores them \begin{DoxyReturn}{Returns}
+0 no error during reconfiguration 
+
+1 error during reconfiguration
+\end{DoxyReturn}
+
+
+Definition at line 258 of file lora\+\_\+class.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{Lora@{Lora}!gateway\+ID@{gateway\+ID}}
+\index{gateway\+ID@{gateway\+ID}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{gateway\+ID}{gatewayID}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::gateway\+ID =2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lora_a47c7dd9636e2680b188e6b475602a049}{}\label{class_lora_a47c7dd9636e2680b188e6b475602a049}
+
+
+Definition at line 19 of file lora\+\_\+class.\+h.
+
+\index{Lora@{Lora}!local\+Sensor\+Struct@{local\+Sensor\+Struct}}
+\index{local\+Sensor\+Struct@{local\+Sensor\+Struct}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{local\+Sensor\+Struct}{localSensorStruct}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensors\+::struct\+Sensors}$\ast$ Lora\+::local\+Sensor\+Struct\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lora_a699a6c2d05a24bb1dd2994b82e9e8a33}{}\label{class_lora_a699a6c2d05a24bb1dd2994b82e9e8a33}
+
+
+Definition at line 16 of file lora\+\_\+class.\+h.
+
+\index{Lora@{Lora}!my\+Settings@{my\+Settings}}
+\index{my\+Settings@{my\+Settings}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{my\+Settings}{mySettings}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Lora\+::lora\+Settings} Lora\+::my\+Settings}\hypertarget{class_lora_aafc57260071b0df449fbe0b63bf55530}{}\label{class_lora_aafc57260071b0df449fbe0b63bf55530}
+\index{Lora@{Lora}!send\+Command\+To\+Sleep@{send\+Command\+To\+Sleep}}
+\index{send\+Command\+To\+Sleep@{send\+Command\+To\+Sleep}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{send\+Command\+To\+Sleep}{sendCommandToSleep}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::send\+Command\+To\+Sleep =2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lora_af6ad33ed00480cffccef545888c53246}{}\label{class_lora_af6ad33ed00480cffccef545888c53246}
+
+
+Definition at line 18 of file lora\+\_\+class.\+h.
+
+\index{Lora@{Lora}!send\+Data\+Command@{send\+Data\+Command}}
+\index{send\+Data\+Command@{send\+Data\+Command}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{send\+Data\+Command}{sendDataCommand}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::send\+Data\+Command =1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lora_ae7af40cf946319a9845222abf177cbdc}{}\label{class_lora_ae7af40cf946319a9845222abf177cbdc}
+
+
+Definition at line 17 of file lora\+\_\+class.\+h.
+
+\index{Lora@{Lora}!string\+Data@{string\+Data}}
+\index{string\+Data@{string\+Data}!Lora@{Lora}}
+\subsubsection[{\texorpdfstring{string\+Data}{stringData}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Lora\+::string\+Data\mbox{[}19\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_lora_a31a8e6588f109ae8c9dc34f41e55aa39}{}\label{class_lora_a31a8e6588f109ae8c9dc34f41e55aa39}
+
+
+Definition at line 15 of file lora\+\_\+class.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lora__class_8h}{lora\+\_\+class.\+h}\item 
+\hyperlink{lora__class_8cpp}{lora\+\_\+class.\+cpp}\end{DoxyCompactItemize}

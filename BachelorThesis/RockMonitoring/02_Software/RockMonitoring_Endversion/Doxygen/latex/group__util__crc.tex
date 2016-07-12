@@ -1,0 +1,45 @@
+\hypertarget{group__util__crc}{}\section{$<$util/crc16.h$>$\+: C\+RC Computations}
+\label{group__util__crc}\index{$<$util/crc16.\+h$>$\+: C\+R\+C Computations@{$<$util/crc16.\+h$>$\+: C\+R\+C Computations}}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{util_2crc16_8h}{util/crc16.h}>}
+\end{DoxyCode}
+
+
+This header file provides a optimized inline functions for calculating cyclic redundancy checks (C\+RC) using common polynomials.
+
+\begin{DoxyParagraph}{References\+:}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+
+\end{DoxyParagraph}
+See the Dallas Semiconductor app note 27 for 8051 assembler example and general C\+RC optimization suggestions. The table on the last page of the app note is the key to understanding these implementations.
+
+\begin{DoxyParagraph}{}
+
+\end{DoxyParagraph}
+Jack Crenshaw\textquotesingle{}s \char`\"{}\+Implementing C\+R\+Cs\char`\"{} article in the January 1992 isue of {\itshape Embedded} {\itshape Systems} {\itshape Programming}. This may be difficult to find, but it explains C\+RC\textquotesingle{}s in very clear and concise terms. Well worth the effort to obtain a copy.
+
+A typical application would look like\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Dallas iButton test vector.}
+uint8\_t serno[] = \{ 0x02, 0x1c, 0xb8, 0x01, 0, 0, 0, 0xa2 \};
+
+\textcolor{keywordtype}{int}
+checkcrc(\textcolor{keywordtype}{void})
+\{
+uint8\_t crc = 0, i;
+
+\textcolor{keywordflow}{for} (i = 0; i < \textcolor{keyword}{sizeof} serno / \textcolor{keyword}{sizeof} serno[0]; i++)
+    crc = \_crc\_ibutton\_update(crc, serno[i]);
+
+\textcolor{keywordflow}{return} crc; \textcolor{comment}{// must be 0}
+\}
+\end{DoxyCode}
+ 

@@ -1,0 +1,448 @@
+\hypertarget{pgmspace_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/pgmspace.h File Reference}
+\label{pgmspace_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/pgmspace.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/avr/include/avr/pgmspace.\+h}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$avr/io.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+need\+\_\+size\+\_\+t}\hypertarget{pgmspace_8h_a2898830827f947f003d187388f7e6c72}{}\label{pgmspace_8h_a2898830827f947f003d187388f7e6c72}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+const\+\_\+\+\_\+))\hypertarget{pgmspace_8h_a87f6b1b3880d945610873b9da382e5d4}{}\label{pgmspace_8h_a87f6b1b3880d945610873b9da382e5d4}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+R\+O\+G\+M\+E\+M\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+progmem\+\_\+\+\_\+))\hypertarget{pgmspace_8h_a80fdd263dea318b34bfe11f5c3cbb6f3}{}\label{pgmspace_8h_a80fdd263dea318b34bfe11f5c3cbb6f3}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+}~\hyperlink{stdint_8h_a772744ca0816d59e120b8f8a1ede64f0}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((\+\_\+\+\_\+pure\+\_\+\+\_\+))\hypertarget{pgmspace_8h_a536d41f7767c0a501c4f9aa625ef0c58}{}\label{pgmspace_8h_a536d41f7767c0a501c4f9aa625ef0c58}
+
+\item 
+\#define \hyperlink{group__avr__pgmspace_gad4e4bd82edf6d5d840462257528bea37}{P\+R\+O\+G\+M\+EM}~\+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+R\+O\+G\+M\+E\+M\+\_\+\+\_\+
+\item 
+\#define {\bfseries P\+G\+M\+\_\+P}~const char $\ast$\hypertarget{pgmspace_8h_a963f816fc88a5d8479c285ed4c630229}{}\label{pgmspace_8h_a963f816fc88a5d8479c285ed4c630229}
+
+\item 
+\#define {\bfseries P\+G\+M\+\_\+\+V\+O\+I\+D\+\_\+P}~const void $\ast$\hypertarget{pgmspace_8h_a84a61d55b7efefabd8419e28f02704f9}{}\label{pgmspace_8h_a84a61d55b7efefabd8419e28f02704f9}
+
+\item 
+\#define {\bfseries P\+S\+TR}(s)~(\+\_\+\+\_\+extension\+\_\+\+\_\+(\{static const char \+\_\+\+\_\+c\mbox{[}$\,$\mbox{]} \hyperlink{_wasp_w_i_f_i_8cpp_ae5c5fb9292dcf02d50968ea123df5c40}{P\+R\+O\+G\+M\+EM} = (s); \&\+\_\+\+\_\+c\mbox{[}0\mbox{]};\}))\hypertarget{pgmspace_8h_a05ca900ebf7cd121be73c654d9ccb3eb}{}\label{pgmspace_8h_a05ca900ebf7cd121be73c654d9ccb3eb}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+}(addr)  
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+}(addr)
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+}(addr)                
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+}(addr)              
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+}(addr)              
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+}(addr)            
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+}(addr)              
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+}(addr)            
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+PM}(addr)              ~\+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+(addr)\hypertarget{pgmspace_8h_af4d822f7eef0dc6a504866e32ed3dedf}{}\label{pgmspace_8h_af4d822f7eef0dc6a504866e32ed3dedf}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+word}(addr)    ~\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+(addr)\hypertarget{pgmspace_8h_a6ebe98808169fa5a0a26f8a99a24f17f}{}\label{pgmspace_8h_a6ebe98808169fa5a0a26f8a99a24f17f}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+dword}(addr)  ~\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+(addr)\hypertarget{pgmspace_8h_ac2eb90684cd62732b2c1b2b396747f11}{}\label{pgmspace_8h_ac2eb90684cd62732b2c1b2b396747f11}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+L\+P\+M\+\_\+float}(addr)  ~\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+(addr)\hypertarget{pgmspace_8h_a343ca83093c7d7def42319d0c0836472}{}\label{pgmspace_8h_a343ca83093c7d7def42319d0c0836472}
+
+\item 
+\#define \hyperlink{group__avr__pgmspace_ga88d7dd4863f87530e1a34ece430a587c}{pgm\+\_\+read\+\_\+byte\+\_\+near}(address\+\_\+short)~\+\_\+\+\_\+\+L\+PM((uint16\+\_\+t)(address\+\_\+short))
+\item 
+\#define \hyperlink{group__avr__pgmspace_gaf51eeaa847dd2668d2a66b70ecfb7398}{pgm\+\_\+read\+\_\+word\+\_\+near}(address\+\_\+short)~\+\_\+\+\_\+\+L\+P\+M\+\_\+word((uint16\+\_\+t)(address\+\_\+short))
+\item 
+\#define \hyperlink{group__avr__pgmspace_ga7fa92c0a662403a643859e0f33b0a182}{pgm\+\_\+read\+\_\+dword\+\_\+near}(address\+\_\+short)~\+\_\+\+\_\+\+L\+P\+M\+\_\+dword((uint16\+\_\+t)(address\+\_\+short))
+\item 
+\#define \hyperlink{group__avr__pgmspace_ga066040df814dabc7980cd1422508b46b}{pgm\+\_\+read\+\_\+float\+\_\+near}(address\+\_\+short)~\+\_\+\+\_\+\+L\+P\+M\+\_\+float((uint16\+\_\+t)(address\+\_\+short))
+\item 
+\#define \hyperlink{group__avr__pgmspace_ga349c2c134daa01aeea62256f1fd7489c}{pgm\+\_\+read\+\_\+byte}(address\+\_\+short)    ~\hyperlink{group__avr__pgmspace_ga88d7dd4863f87530e1a34ece430a587c}{pgm\+\_\+read\+\_\+byte\+\_\+near}(address\+\_\+short)
+\item 
+\#define \hyperlink{group__avr__pgmspace_ga6e58e62e197da722b973c33ba3e1fa07}{pgm\+\_\+read\+\_\+word}(address\+\_\+short)    ~\hyperlink{group__avr__pgmspace_gaf51eeaa847dd2668d2a66b70ecfb7398}{pgm\+\_\+read\+\_\+word\+\_\+near}(address\+\_\+short)
+\item 
+\#define \hyperlink{group__avr__pgmspace_gaf7a15983bd2edb2a8841246950c4710d}{pgm\+\_\+read\+\_\+dword}(address\+\_\+short)  ~\hyperlink{group__avr__pgmspace_ga7fa92c0a662403a643859e0f33b0a182}{pgm\+\_\+read\+\_\+dword\+\_\+near}(address\+\_\+short)
+\item 
+\#define \hyperlink{group__avr__pgmspace_ga8ff5ce55a4fa21ad4276a06737f8be7d}{pgm\+\_\+read\+\_\+float}(address\+\_\+short)  ~\hyperlink{group__avr__pgmspace_ga066040df814dabc7980cd1422508b46b}{pgm\+\_\+read\+\_\+float\+\_\+near}(address\+\_\+short)
+\item 
+\#define {\bfseries pgm\+\_\+get\+\_\+far\+\_\+address}(var)                                                
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const void $\ast$ {\bfseries memchr\+\_\+P} (const void $\ast$, int \+\_\+\+\_\+val, size\+\_\+t \+\_\+\+\_\+len) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_ae0423b2eaff4e25f983254aeafea650c}{}\label{pgmspace_8h_ae0423b2eaff4e25f983254aeafea650c}
+
+\item 
+int {\bfseries memcmp\+\_\+P} (const void $\ast$, const void $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_ab1b0b56685303c2452e98914e7e5d6d0}{}\label{pgmspace_8h_ab1b0b56685303c2452e98914e7e5d6d0}
+
+\item 
+void $\ast$ {\bfseries memccpy\+\_\+P} (void $\ast$, const void $\ast$, int \+\_\+\+\_\+val, size\+\_\+t)\hypertarget{pgmspace_8h_ab634773b9a204254507f42072d914f20}{}\label{pgmspace_8h_ab634773b9a204254507f42072d914f20}
+
+\item 
+void $\ast$ {\bfseries memcpy\+\_\+P} (void $\ast$, const void $\ast$, size\+\_\+t)\hypertarget{pgmspace_8h_a735734c4e9324648d698ef3badcd2e54}{}\label{pgmspace_8h_a735734c4e9324648d698ef3badcd2e54}
+
+\item 
+void $\ast$ {\bfseries memmem\+\_\+P} (const void $\ast$, size\+\_\+t, const void $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_acbfbbb4b19f6cab4b59e7c59e237628d}{}\label{pgmspace_8h_acbfbbb4b19f6cab4b59e7c59e237628d}
+
+\item 
+const void $\ast$ {\bfseries memrchr\+\_\+P} (const void $\ast$, int \+\_\+\+\_\+val, size\+\_\+t \+\_\+\+\_\+len) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_a63918ecda159ea5364de1f6a8076e333}{}\label{pgmspace_8h_a63918ecda159ea5364de1f6a8076e333}
+
+\item 
+char $\ast$ {\bfseries strcat\+\_\+P} (char $\ast$, const char $\ast$)\hypertarget{pgmspace_8h_a3da24d3983abedc59cbc75c5e82586e0}{}\label{pgmspace_8h_a3da24d3983abedc59cbc75c5e82586e0}
+
+\item 
+const char $\ast$ {\bfseries strchr\+\_\+P} (const char $\ast$, int \+\_\+\+\_\+val) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_a3e4f4d47e5981b84dee69ca0cc77e89c}{}\label{pgmspace_8h_a3e4f4d47e5981b84dee69ca0cc77e89c}
+
+\item 
+const char $\ast$ {\bfseries strchrnul\+\_\+P} (const char $\ast$, int \+\_\+\+\_\+val) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_ab964b7dedcdea89586a54dcfab96cafa}{}\label{pgmspace_8h_ab964b7dedcdea89586a54dcfab96cafa}
+
+\item 
+int {\bfseries strcmp\+\_\+P} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_ab0c75b8cce460448b747c29231da847c}{}\label{pgmspace_8h_ab0c75b8cce460448b747c29231da847c}
+
+\item 
+char $\ast$ {\bfseries strcpy\+\_\+P} (char $\ast$, const char $\ast$)\hypertarget{pgmspace_8h_a3aaa460d1574cb9474b1062d0ceff862}{}\label{pgmspace_8h_a3aaa460d1574cb9474b1062d0ceff862}
+
+\item 
+int {\bfseries strcasecmp\+\_\+P} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a4b2a918fb5938763024b3818ee89fbef}{}\label{pgmspace_8h_a4b2a918fb5938763024b3818ee89fbef}
+
+\item 
+char $\ast$ {\bfseries strcasestr\+\_\+P} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a5c7373e9cb058edc3922e1d1d8250805}{}\label{pgmspace_8h_a5c7373e9cb058edc3922e1d1d8250805}
+
+\item 
+size\+\_\+t {\bfseries strcspn\+\_\+P} (const char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+reject) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a8afa4577f8ce7241a948af61e6991c67}{}\label{pgmspace_8h_a8afa4577f8ce7241a948af61e6991c67}
+
+\item 
+size\+\_\+t {\bfseries strlcat\+\_\+P} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{pgmspace_8h_a85328d5e578db3c60f9753cb1769dc96}{}\label{pgmspace_8h_a85328d5e578db3c60f9753cb1769dc96}
+
+\item 
+size\+\_\+t {\bfseries strlcpy\+\_\+P} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{pgmspace_8h_ab95a4e6a4b527ee389c72bdabb991e08}{}\label{pgmspace_8h_ab95a4e6a4b527ee389c72bdabb991e08}
+
+\item 
+size\+\_\+t {\bfseries \+\_\+\+\_\+strlen\+\_\+P} (const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_a1a96981116710158f1614948b5b45858}{}\label{pgmspace_8h_a1a96981116710158f1614948b5b45858}
+
+\item 
+size\+\_\+t {\bfseries strnlen\+\_\+P} (const char $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_ae49af6f37458622ef579ded4149076fb}{}\label{pgmspace_8h_ae49af6f37458622ef579ded4149076fb}
+
+\item 
+int {\bfseries strncmp\+\_\+P} (const char $\ast$, const char $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a3139220accf77b43102c23b58d249ee9}{}\label{pgmspace_8h_a3139220accf77b43102c23b58d249ee9}
+
+\item 
+int {\bfseries strncasecmp\+\_\+P} (const char $\ast$, const char $\ast$, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a7a9100487dc0a7e5c501966c94e0ecdb}{}\label{pgmspace_8h_a7a9100487dc0a7e5c501966c94e0ecdb}
+
+\item 
+char $\ast$ {\bfseries strncat\+\_\+P} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{pgmspace_8h_a6520ec8f2a54e50949e747a5666e4ca4}{}\label{pgmspace_8h_a6520ec8f2a54e50949e747a5666e4ca4}
+
+\item 
+char $\ast$ {\bfseries strncpy\+\_\+P} (char $\ast$, const char $\ast$, size\+\_\+t)\hypertarget{pgmspace_8h_a745ac22a848883230dc9209908f40499}{}\label{pgmspace_8h_a745ac22a848883230dc9209908f40499}
+
+\item 
+char $\ast$ {\bfseries strpbrk\+\_\+P} (const char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+accept) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_afd639f6e1120643f8ceb350ea7e433e2}{}\label{pgmspace_8h_afd639f6e1120643f8ceb350ea7e433e2}
+
+\item 
+const char $\ast$ {\bfseries strrchr\+\_\+P} (const char $\ast$, int \+\_\+\+\_\+val) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_aa5779ba83c3c6258e31801b484fbf76a}{}\label{pgmspace_8h_aa5779ba83c3c6258e31801b484fbf76a}
+
+\item 
+char $\ast$ {\bfseries strsep\+\_\+P} (char $\ast$$\ast$\+\_\+\+\_\+sp, const char $\ast$\+\_\+\+\_\+delim)\hypertarget{pgmspace_8h_ab267cf656e76142102c1dc3de6d661a6}{}\label{pgmspace_8h_ab267cf656e76142102c1dc3de6d661a6}
+
+\item 
+size\+\_\+t {\bfseries strspn\+\_\+P} (const char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+accept) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a9813accb359f237457b8dc97763ccc9f}{}\label{pgmspace_8h_a9813accb359f237457b8dc97763ccc9f}
+
+\item 
+char $\ast$ {\bfseries strstr\+\_\+P} (const char $\ast$, const char $\ast$) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a63ce7166e7743280d7b071cf27514706}{}\label{pgmspace_8h_a63ce7166e7743280d7b071cf27514706}
+
+\item 
+char $\ast$ {\bfseries strtok\+\_\+P} (char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+delim)\hypertarget{pgmspace_8h_a23ff99a4f540a7c138175464cfda12b1}{}\label{pgmspace_8h_a23ff99a4f540a7c138175464cfda12b1}
+
+\item 
+char $\ast$ {\bfseries strtok\+\_\+rP} (char $\ast$\+\_\+\+\_\+s, const char $\ast$\+\_\+\+\_\+delim, char $\ast$$\ast$\+\_\+\+\_\+last)\hypertarget{pgmspace_8h_a6fce26031ea463f7793f8443074fb470}{}\label{pgmspace_8h_a6fce26031ea463f7793f8443074fb470}
+
+\item 
+size\+\_\+t {\bfseries strlen\+\_\+\+PF} (\hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_a81b51d7846b5afc721c9415fae4aa37a}{}\label{pgmspace_8h_a81b51d7846b5afc721c9415fae4aa37a}
+
+\item 
+size\+\_\+t {\bfseries strnlen\+\_\+\+PF} (\hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src, size\+\_\+t len) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+C\+O\+N\+S\+T\+\_\+\+\_\+\hypertarget{pgmspace_8h_ad41f841e17b0f0af09b3fdb3f0e2fac9}{}\label{pgmspace_8h_ad41f841e17b0f0af09b3fdb3f0e2fac9}
+
+\item 
+void $\ast$ {\bfseries memcpy\+\_\+\+PF} (void $\ast$dest, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src, size\+\_\+t len)\hypertarget{pgmspace_8h_a0f5e8ac4ee26a7e9a3aa1f74a4dacee7}{}\label{pgmspace_8h_a0f5e8ac4ee26a7e9a3aa1f74a4dacee7}
+
+\item 
+char $\ast$ {\bfseries strcpy\+\_\+\+PF} (char $\ast$dest, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src)\hypertarget{pgmspace_8h_a2e984c377ae55a9b40efc5f8335b08b6}{}\label{pgmspace_8h_a2e984c377ae55a9b40efc5f8335b08b6}
+
+\item 
+char $\ast$ {\bfseries strncpy\+\_\+\+PF} (char $\ast$dest, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src, size\+\_\+t len)\hypertarget{pgmspace_8h_a10a901b7441ec232be7a7b4d00f44b49}{}\label{pgmspace_8h_a10a901b7441ec232be7a7b4d00f44b49}
+
+\item 
+char $\ast$ {\bfseries strcat\+\_\+\+PF} (char $\ast$dest, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src)\hypertarget{pgmspace_8h_a127529844a9435fa7b5660d3e9330db8}{}\label{pgmspace_8h_a127529844a9435fa7b5660d3e9330db8}
+
+\item 
+size\+\_\+t {\bfseries strlcat\+\_\+\+PF} (char $\ast$dst, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src, size\+\_\+t siz)\hypertarget{pgmspace_8h_af632b479b04d0c98caf94de85dc11f3e}{}\label{pgmspace_8h_af632b479b04d0c98caf94de85dc11f3e}
+
+\item 
+char $\ast$ {\bfseries strncat\+\_\+\+PF} (char $\ast$dest, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src, size\+\_\+t len)\hypertarget{pgmspace_8h_a71147e3266ac95c66aa66dee8f7fe7a2}{}\label{pgmspace_8h_a71147e3266ac95c66aa66dee8f7fe7a2}
+
+\item 
+int {\bfseries strcmp\+\_\+\+PF} (const char $\ast$s1, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} s2) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_ad34d5b7d040fcb97939e939f19d88a5f}{}\label{pgmspace_8h_ad34d5b7d040fcb97939e939f19d88a5f}
+
+\item 
+int {\bfseries strncmp\+\_\+\+PF} (const char $\ast$s1, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} s2, size\+\_\+t n) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a31c3d78d72e8dc80e192d4bd6a65529e}{}\label{pgmspace_8h_a31c3d78d72e8dc80e192d4bd6a65529e}
+
+\item 
+int {\bfseries strcasecmp\+\_\+\+PF} (const char $\ast$s1, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} s2) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a319ec42a66ba8333213fa10dbe06a606}{}\label{pgmspace_8h_a319ec42a66ba8333213fa10dbe06a606}
+
+\item 
+int {\bfseries strncasecmp\+\_\+\+PF} (const char $\ast$s1, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} s2, size\+\_\+t n) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a086db857a2372e4c84cc16204ac5292c}{}\label{pgmspace_8h_a086db857a2372e4c84cc16204ac5292c}
+
+\item 
+char $\ast$ {\bfseries strstr\+\_\+\+PF} (const char $\ast$s1, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} s2)\hypertarget{pgmspace_8h_a7c1caa0d8ecfd966f9946b18bd472fe5}{}\label{pgmspace_8h_a7c1caa0d8ecfd966f9946b18bd472fe5}
+
+\item 
+size\+\_\+t {\bfseries strlcpy\+\_\+\+PF} (char $\ast$dst, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t} src, size\+\_\+t siz)\hypertarget{pgmspace_8h_a6674a08f95d5daedce3079b96be63008}{}\label{pgmspace_8h_a6674a08f95d5daedce3079b96be63008}
+
+\item 
+int {\bfseries memcmp\+\_\+\+PF} (const void $\ast$, \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{uint\+\_\+farptr\+\_\+t}, size\+\_\+t) \+\_\+\+\_\+\+A\+T\+T\+R\+\_\+\+P\+U\+R\+E\+\_\+\+\_\+\hypertarget{pgmspace_8h_a80332272d69f05daab5f177723380175}{}\label{pgmspace_8h_a80332272d69f05daab5f177723380175}
+
+\item 
+{\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((\+\_\+\+\_\+always\+\_\+inline\+\_\+\+\_\+)) static \+\_\+\+\_\+inline\+\_\+\+\_\+ size\+\_\+t strlen\+\_\+P(const char $\ast$s)\hypertarget{pgmspace_8h_af09bef2311f829f1986560e83e035c89}{}\label{pgmspace_8h_af09bef2311f829f1986560e83e035c89}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+}{__LPM_classic__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+classic\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_a97ae35d56183b35032d195a1ee89eec9}{}\label{pgmspace_8h_a97ae35d56183b35032d195a1ee89eec9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr); \(\backslash\)
+    uint8\_t \_\_result;           \(\backslash\)
+    \_\_asm\_\_                     \(\backslash\)
+    (                           \(\backslash\)
+        \textcolor{stringliteral}{"lpm"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}            \(\backslash\)
+        \textcolor{stringliteral}{"mov %0, r0"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}     \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result)       \(\backslash\)
+        : \textcolor{stringliteral}{"z"} (\_\_addr16)        \(\backslash\)
+        : \textcolor{stringliteral}{"r0"}                  \(\backslash\)
+    );                          \(\backslash\)
+    \_\_result;                   \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+}{__LPM_dword_classic__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+classic\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_a73c04d5fd1d9a8a133b1746bbbe1bb00}{}\label{pgmspace_8h_a73c04d5fd1d9a8a133b1746bbbe1bb00}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                            \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr);   \(\backslash\)
+    uint32\_t \_\_result;                      \(\backslash\)
+    \_\_asm\_\_                                 \(\backslash\)
+    (                                       \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %A0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %B0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %C0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %D0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result), \textcolor{stringliteral}{"=z"} (\_\_addr16)  \(\backslash\)
+        : \textcolor{stringliteral}{"1"} (\_\_addr16)                    \(\backslash\)
+        : \textcolor{stringliteral}{"r0"}                              \(\backslash\)
+    );                                      \(\backslash\)
+    \_\_result;                               \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+}{__LPM_dword_enhanced__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+dword\+\_\+enhanced\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_ae2a0f6e9a9173f1b49f99df5fbda8591}{}\label{pgmspace_8h_ae2a0f6e9a9173f1b49f99df5fbda8591}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                            \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr);   \(\backslash\)
+    uint32\_t \_\_result;                      \(\backslash\)
+    \_\_asm\_\_                                 \(\backslash\)
+    (                                       \(\backslash\)
+        \textcolor{stringliteral}{"lpm %A0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %B0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %C0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %D0, Z"}    \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result), \textcolor{stringliteral}{"=z"} (\_\_addr16)  \(\backslash\)
+        : \textcolor{stringliteral}{"1"} (\_\_addr16)                    \(\backslash\)
+    );                                      \(\backslash\)
+    \_\_result;                               \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+}{__LPM_enhanced__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+enhanced\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_a1b369c790673cf91213297ead210b7a7}{}\label{pgmspace_8h_a1b369c790673cf91213297ead210b7a7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr); \(\backslash\)
+    uint8\_t \_\_result;           \(\backslash\)
+    \_\_asm\_\_                     \(\backslash\)
+    (                           \(\backslash\)
+        \textcolor{stringliteral}{"lpm %0, Z"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}      \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result)       \(\backslash\)
+        : \textcolor{stringliteral}{"z"} (\_\_addr16)        \(\backslash\)
+    );                          \(\backslash\)
+    \_\_result;                   \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+}{__LPM_float_classic__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+classic\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_a78340b5d5c4d15081ad8cf34a30a3bdf}{}\label{pgmspace_8h_a78340b5d5c4d15081ad8cf34a30a3bdf}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                            \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr);   \(\backslash\)
+    float \_\_result;                         \(\backslash\)
+    \_\_asm\_\_                                 \(\backslash\)
+    (                                       \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %A0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %B0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %C0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %D0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result), \textcolor{stringliteral}{"=z"} (\_\_addr16)  \(\backslash\)
+        : \textcolor{stringliteral}{"1"} (\_\_addr16)                    \(\backslash\)
+        : \textcolor{stringliteral}{"r0"}                              \(\backslash\)
+    );                                      \(\backslash\)
+    \_\_result;                               \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+}{__LPM_float_enhanced__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+float\+\_\+enhanced\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_af7f819bcd6100f996b53d5137f053d36}{}\label{pgmspace_8h_af7f819bcd6100f996b53d5137f053d36}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                            \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr);   \(\backslash\)
+    float \_\_result;                         \(\backslash\)
+    \_\_asm\_\_                                 \(\backslash\)
+    (                                       \(\backslash\)
+        \textcolor{stringliteral}{"lpm %A0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %B0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %C0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %D0, Z"}    \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result), \textcolor{stringliteral}{"=z"} (\_\_addr16)  \(\backslash\)
+        : \textcolor{stringliteral}{"1"} (\_\_addr16)                    \(\backslash\)
+    );                                      \(\backslash\)
+    \_\_result;                               \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+}{__LPM_word_classic__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+classic\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_a77fbdfef723feeeab0fbbf269cae9fea}{}\label{pgmspace_8h_a77fbdfef723feeeab0fbbf269cae9fea}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                            \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr);   \(\backslash\)
+    uint16\_t \_\_result;                      \(\backslash\)
+    \_\_asm\_\_                                 \(\backslash\)
+    (                                       \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %A0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"adiw r30, 1"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"mov %B0, r0"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result), \textcolor{stringliteral}{"=z"} (\_\_addr16)  \(\backslash\)
+        : \textcolor{stringliteral}{"1"} (\_\_addr16)                    \(\backslash\)
+        : \textcolor{stringliteral}{"r0"}                              \(\backslash\)
+    );                                      \(\backslash\)
+    \_\_result;                               \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+@{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+}{__LPM_word_enhanced__}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+L\+P\+M\+\_\+word\+\_\+enhanced\+\_\+\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_ae83653fb8f7e4ee5c457ae027703d378}{}\label{pgmspace_8h_ae83653fb8f7e4ee5c457ae027703d378}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                            \(\backslash\)
+    uint16\_t \_\_addr16 = (uint16\_t)(addr);   \(\backslash\)
+    uint16\_t \_\_result;                      \(\backslash\)
+    \_\_asm\_\_                                 \(\backslash\)
+    (                                       \(\backslash\)
+        \textcolor{stringliteral}{"lpm %A0, Z+"}   \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        \textcolor{stringliteral}{"lpm %B0, Z"}    \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}              \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_result), \textcolor{stringliteral}{"=z"} (\_\_addr16)  \(\backslash\)
+        : \textcolor{stringliteral}{"1"} (\_\_addr16)                    \(\backslash\)
+    );                                      \(\backslash\)
+    \_\_result;                               \(\backslash\)
+\}))
+\end{DoxyCode}
+\index{pgmspace.\+h@{pgmspace.\+h}!pgm\+\_\+get\+\_\+far\+\_\+address@{pgm\+\_\+get\+\_\+far\+\_\+address}}
+\index{pgm\+\_\+get\+\_\+far\+\_\+address@{pgm\+\_\+get\+\_\+far\+\_\+address}!pgmspace.\+h@{pgmspace.\+h}}
+\subsubsection[{\texorpdfstring{pgm\+\_\+get\+\_\+far\+\_\+address}{pgm_get_far_address}}]{\setlength{\rightskip}{0pt plus 5cm}\#define pgm\+\_\+get\+\_\+far\+\_\+address(
+\begin{DoxyParamCaption}
+\item[{}]{var}
+\end{DoxyParamCaption}
+)}\hypertarget{pgmspace_8h_a8f4a87d8740f570871d7e041750efed3}{}\label{pgmspace_8h_a8f4a87d8740f570871d7e041750efed3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\{                                                    \hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{\(\backslash\)}
+\hyperlink{group__avr__inttypes_ga72b6692e3f3123903c1a0d9a960c59b1}{    uint\_farptr\_t} tmp;                                \(\backslash\)
+                                                      \(\backslash\)
+    \_\_asm\_\_ \_\_volatile\_\_(                             \(\backslash\)
+                                                      \(\backslash\)
+            \textcolor{stringliteral}{"ldi    %A0, lo8(%1)"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+            \textcolor{stringliteral}{"ldi    %B0, hi8(%1)"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+            \textcolor{stringliteral}{"ldi    %C0, hh8(%1)"}           \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+            \textcolor{stringliteral}{"clr    %D0"}                    \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}    \(\backslash\)
+        :                                             \(\backslash\)
+            \textcolor{stringliteral}{"=d"} (tmp)                                \(\backslash\)
+        :                                             \(\backslash\)
+            \textcolor{stringliteral}{"p"}  (&(var))                             \(\backslash\)
+    );                                                \(\backslash\)
+    tmp;                                              \(\backslash\)
+\})
+\end{DoxyCode}

@@ -1,0 +1,792 @@
+\hypertarget{class_wasp_x_bee_z_b}{}\section{Wasp\+X\+Bee\+ZB Class Reference}
+\label{class_wasp_x_bee_z_b}\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+
+
+\hyperlink{class_wasp_x_bee_z_b}{Wasp\+X\+Bee\+ZB} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+X\+Bee\+Z\+B.\+h$>$}
+
+Inheritance diagram for Wasp\+X\+Bee\+ZB\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_x_bee_z_b}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_x_bee_z_b_ab80a736ef957fc9eac040ec67be11f11}{Wasp\+X\+Bee\+ZB} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_z_b_a065c5f6d9bd14de389314f78d9dfae22}{init} (uint8\+\_\+t uart\+\_\+used)
+\begin{DoxyCompactList}\small\item\em Methods ////////////////////////////////////////////////////////////////. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a4197985ee551498c9b5301e4b44625d7}{reset\+Network} (uint8\+\_\+t \hyperlink{class_wasp_x_bee_core_adb05ad7b2a13f1bea8dc219282e3ba50}{reset})
+\begin{DoxyCompactList}\small\item\em It resets the network. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a22772ea96f7e8886ddcd2f1c643a9851}{get\+Parent\+Network\+Address} ()
+\begin{DoxyCompactList}\small\item\em It gets the 16b parent´s network address. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a231e01bb7b9b2d240c1787ea8acfc32c}{get\+Remaining\+Children} ()
+\begin{DoxyCompactList}\small\item\em It gets the number of children which can still connect to the current device. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a2dae6efc2c69806a2ad02555780e53ee}{set\+Device\+Type} (uint8\+\_\+t $\ast$\hyperlink{_sd_fat_structs_8h_a1d127017fb298b889f4ba24752d08b8e}{type})
+\begin{DoxyCompactList}\small\item\em It sets the current device type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a072e4a6df44fc8521e6bbfb52bce446a}{get\+Device\+Type} ()
+\begin{DoxyCompactList}\small\item\em It gets the current device type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a73bbe4ac7a2b5bbbff43005aefc9d4d3}{get\+Payload\+Bytes} ()
+\begin{DoxyCompactList}\small\item\em It gets the bytes that can be used in the payload. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a55dfaebfc32020a28080c33f7d10a12a}{get\+Operating64\+P\+AN} ()
+\begin{DoxyCompactList}\small\item\em It gets the 64-\/bit Operating Extended P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ac4ec46ef3f4cb180e77bd2460d9aee1b}{get\+Operating16\+P\+AN} ()
+\begin{DoxyCompactList}\small\item\em It gets the 16-\/bit Operating P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a3479c73cb6688e6527c8e6b34e9d260b}{set\+Max\+Unicast\+Hops} (uint8\+\_\+t hops)
+\begin{DoxyCompactList}\small\item\em It sets the maximum hops limit. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a6a4ba0967cccf61e5a5e2ab30c7bb2c1}{get\+Max\+Unicast\+Hops} ()
+\begin{DoxyCompactList}\small\item\em It gets the maximum hop limits. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a56b5daef58984a91e299825bc6199439}{set\+Max\+Broadcast\+Hops} (uint8\+\_\+t bhops)
+\begin{DoxyCompactList}\small\item\em It sets the maximum number of hops for each broadcast data transmission. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a7e85b32a0d105071a2e7eff27628d946}{get\+Max\+Broadcast\+Hops} ()
+\begin{DoxyCompactList}\small\item\em It gets the maximum number of hops for each broadcast data transmission. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a245b1892e4d6d660a964ca0a5b0039f1}{set\+Stack\+Profile} (uint8\+\_\+t profile)
+\begin{DoxyCompactList}\small\item\em It sets the Zig\+Bee Stack profile. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a222859bf9780dfde21a495b9c6663fb9}{get\+Stack\+Profile} ()
+\begin{DoxyCompactList}\small\item\em It gets the Zig\+Bee Stack profile. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ae15b1c90c2d6177ad73584ff2cd1000c}{set\+Period\+Sleep} (uint8\+\_\+t $\ast$periods)
+\begin{DoxyCompactList}\small\item\em It sets the number of Sleep Periods to not assert X\+Bee pin. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a153775deeb7794798e78625afa1cca79}{set\+Join\+Time} (uint8\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em It sets the time that a Coordinator/\+Router allows nodes to join. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a9ca694d7fc105ef037073c6637daaf4e}{get\+Join\+Time} ()
+\begin{DoxyCompactList}\small\item\em It gets the time that a Coordinator/\+Router allows nodes to join. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ab6a35d342a298d95fc01740f5441b209}{set\+Channel\+Verification} (uint8\+\_\+t verif)
+\begin{DoxyCompactList}\small\item\em It sets the channel verification parameter (JV parameter) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_afc87e9887e21b21e166337b59c571d18}{get\+Channel\+Verification} ()
+\begin{DoxyCompactList}\small\item\em It gets the channel verification parameter (JV parameter) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a129227e7173f4822e9885418bd5e2a22}{set\+Join\+Notification} (uint8\+\_\+t notif)
+\begin{DoxyCompactList}\small\item\em It sets the join notification setting. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a598b4fc6c39c2221c2a0d507be7d24d6}{get\+Join\+Notification} ()
+\begin{DoxyCompactList}\small\item\em It gets the join notification setting. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a468c52498ac1f48adbb2863e868a7122}{set\+Aggregate\+Notification} (uint8\+\_\+t anotif)
+\begin{DoxyCompactList}\small\item\em It sets the time between consecutive aggregate route broadcast messages. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a2948d8a2278d0a9059b9f9fc835f13db}{get\+Aggregate\+Notification} ()
+\begin{DoxyCompactList}\small\item\em It gets the time between consecutive aggregate route broadcast messages. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a4de23b2a33913ede61d8b5170bda6842}{get\+Association\+Indication} ()
+\begin{DoxyCompactList}\small\item\em It gets information regarding last node join request. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_aeb53beba00840257d873764dfce207a4}{set\+Encryption\+Options} (uint8\+\_\+t eoptions)
+\begin{DoxyCompactList}\small\item\em It sets options for encryption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a97dd852a026ff78e4363057b93fc3eba}{get\+Encryption\+Options} ()
+\begin{DoxyCompactList}\small\item\em It gets options for encryption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a06504b4f6c7c9c701ecaf031f0e67e4c}{set\+Network\+Key} (const char $\ast$key)
+\begin{DoxyCompactList}\small\item\em It sets the 128-\/bit A\+ES encryption key. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a9294555b860999c770b4a64de9f9bd9a}{set\+Power\+Mode} (uint8\+\_\+t power)
+\begin{DoxyCompactList}\small\item\em It sets the power mode of the device. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_aa48a068d83c9a36b9facc66ce842b88c}{get\+Power\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets the power mode of the device. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a41f1c1f8f3a07179d593d38dafc38e5c}{get\+Supply\+Voltage} ()
+\begin{DoxyCompactList}\small\item\em It gets the voltage on the Vcc pin. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ad109ebed041cadba7747660e5bf3b7c8}{set\+A\+P\+Sencryption} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em It sets the Application Layer Encryption. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a50375e7d9ab3bba2a7eec41eff8bb4e6}{send\+X\+Bee\+Priv} (struct \hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em It sends a packet to other X\+Bee modules. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_x_bee_z_b_a92e2276d07ed342ec44e0b8f1305e9b6}{set\+Known\+Destination} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, const char $\ast$address)
+\item 
+void \hyperlink{class_wasp_x_bee_z_b_a10e0ee0ca5ac913b03fc8a4198a1814d}{set\+Known\+Destination} (\hyperlink{structpacket_x_bee}{packet\+X\+Bee} $\ast$paq, uint8\+\_\+t $\ast$address)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_aae3447c38de3275ca8ff2fbd67d982e9}{parent\+NA} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Variables /////////////////////////////////////////////////////////////. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a0eaef957b4be07d9827c0bc51d3d8cc4}{remaining\+Children}\hypertarget{class_wasp_x_bee_z_b_a0eaef957b4be07d9827c0bc51d3d8cc4}{}\label{class_wasp_x_bee_z_b_a0eaef957b4be07d9827c0bc51d3d8cc4}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the number of children which can still connect to the current device. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a731285d51e4cdf41a2f49118f67c6099}{device\+Type} \mbox{[}4\mbox{]}\hypertarget{class_wasp_x_bee_z_b_a731285d51e4cdf41a2f49118f67c6099}{}\label{class_wasp_x_bee_z_b_a731285d51e4cdf41a2f49118f67c6099}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the current device type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a09e59c0f17b3a353ef02ad4f4569d0fc}{max\+Payload\+Bytes} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_z_b_a09e59c0f17b3a353ef02ad4f4569d0fc}{}\label{class_wasp_x_bee_z_b_a09e59c0f17b3a353ef02ad4f4569d0fc}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the bytes that can be used in the payload. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ad1643e0a2c44373a303ce438d5f540bf}{operating64\+P\+AN} \mbox{[}8\mbox{]}\hypertarget{class_wasp_x_bee_z_b_ad1643e0a2c44373a303ce438d5f540bf}{}\label{class_wasp_x_bee_z_b_ad1643e0a2c44373a303ce438d5f540bf}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the operating 64-\/bit P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a0decfdb006b7e29f75a3ded83ab13ae5}{operating16\+P\+AN} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_z_b_a0decfdb006b7e29f75a3ded83ab13ae5}{}\label{class_wasp_x_bee_z_b_a0decfdb006b7e29f75a3ded83ab13ae5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the operating 16-\/bit P\+AN ID. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ab1c10f4df0c97332255921cff2fdc9b1}{max\+Unicast\+Hops}\hypertarget{class_wasp_x_bee_z_b_ab1c10f4df0c97332255921cff2fdc9b1}{}\label{class_wasp_x_bee_z_b_ab1c10f4df0c97332255921cff2fdc9b1}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the maximum hops limit (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ab61d6af1c2ccf7369189697a0d567e6a}{max\+Broadcast\+Hops}\hypertarget{class_wasp_x_bee_z_b_ab61d6af1c2ccf7369189697a0d567e6a}{}\label{class_wasp_x_bee_z_b_ab61d6af1c2ccf7369189697a0d567e6a}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the maximum number of hops for each broadcast data transmission (range \mbox{[}0x00-\/0x20\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a2ac5bf30f23d32970edc8aa9432a30d5}{stack\+Profile}\hypertarget{class_wasp_x_bee_z_b_a2ac5bf30f23d32970edc8aa9432a30d5}{}\label{class_wasp_x_bee_z_b_a2ac5bf30f23d32970edc8aa9432a30d5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the Zig\+Bee Stack profile (range \mbox{[}0-\/2\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_aa552043b10f91a20d7188b51f3fd90a3}{period\+Sleep} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_z_b_aa552043b10f91a20d7188b51f3fd90a3}{}\label{class_wasp_x_bee_z_b_aa552043b10f91a20d7188b51f3fd90a3}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the number of Sleep Periods to not assert X\+Bee pin. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a3392b39b9500dd5e79ab6193549212bd}{join\+Time}\hypertarget{class_wasp_x_bee_z_b_a3392b39b9500dd5e79ab6193549212bd}{}\label{class_wasp_x_bee_z_b_a3392b39b9500dd5e79ab6193549212bd}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the time that a Coordinator/\+Router allows nodes to join (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a5a853b011b88b212b625e19a3244be64}{channel\+Verification}\hypertarget{class_wasp_x_bee_z_b_a5a853b011b88b212b625e19a3244be64}{}\label{class_wasp_x_bee_z_b_a5a853b011b88b212b625e19a3244be64}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the channel verification parameter (range \mbox{[}0-\/1\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a69f99d3a3ebac757f1cbd4299acf9daf}{join\+Notification}\hypertarget{class_wasp_x_bee_z_b_a69f99d3a3ebac757f1cbd4299acf9daf}{}\label{class_wasp_x_bee_z_b_a69f99d3a3ebac757f1cbd4299acf9daf}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the join notification setting (range \mbox{[}0-\/1\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a3b304871ecc850e069feb269228d01be}{aggregate\+Notification}\hypertarget{class_wasp_x_bee_z_b_a3b304871ecc850e069feb269228d01be}{}\label{class_wasp_x_bee_z_b_a3b304871ecc850e069feb269228d01be}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the time between consecutive aggregate route broadcast messages (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a652c908374341bd381a7132f31e5b12e}{association\+Indication}\hypertarget{class_wasp_x_bee_z_b_a652c908374341bd381a7132f31e5b12e}{}\label{class_wasp_x_bee_z_b_a652c908374341bd381a7132f31e5b12e}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: information regarding last node join request. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ada3e0b058b63683c74bb58fa6f21b19d}{encrypt\+Options}\hypertarget{class_wasp_x_bee_z_b_ada3e0b058b63683c74bb58fa6f21b19d}{}\label{class_wasp_x_bee_z_b_ada3e0b058b63683c74bb58fa6f21b19d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: options for encryption (range \mbox{[}0-\/2\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a6552264e7b7a423c00f3bcb9887978f6}{network\+Key} \mbox{[}16\mbox{]}\hypertarget{class_wasp_x_bee_z_b_a6552264e7b7a423c00f3bcb9887978f6}{}\label{class_wasp_x_bee_z_b_a6552264e7b7a423c00f3bcb9887978f6}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the 128-\/bit A\+ES encryption key (range \mbox{[}0-\/0x\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FF\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_a5ba4f2bc074e4e321e08e0def503c8cd}{power\+Mode}\hypertarget{class_wasp_x_bee_z_b_a5ba4f2bc074e4e321e08e0def503c8cd}{}\label{class_wasp_x_bee_z_b_a5ba4f2bc074e4e321e08e0def503c8cd}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the power mode of the device (range \mbox{[}0-\/1\mbox{]}) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_x_bee_z_b_ae017a8df747359ed3f27b8f22dd7e9d1}{supply\+Voltage} \mbox{[}2\mbox{]}\hypertarget{class_wasp_x_bee_z_b_ae017a8df747359ed3f27b8f22dd7e9d1}{}\label{class_wasp_x_bee_z_b_ae017a8df747359ed3f27b8f22dd7e9d1}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: the voltage on the Vcc pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_x_bee_z_b}{Wasp\+X\+Bee\+ZB} Class. 
+
+\hyperlink{class_wasp_x_bee_z_b}{Wasp\+X\+Bee\+ZB} Class defines all the variables and functions used to manage X\+Bee Zig\+Bee modules. It inherits from \textquotesingle{}\hyperlink{class_wasp_x_bee_core}{Wasp\+X\+Bee\+Core}\textquotesingle{} class the necessary functions, variables and definitions 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{Wasp\+X\+Bee\+Z\+B()}{WaspXBeeZB()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+X\+Bee\+Z\+B\+::\+Wasp\+X\+Bee\+ZB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wasp_x_bee_z_b_ab80a736ef957fc9eac040ec67be11f11}{}\label{class_wasp_x_bee_z_b_ab80a736ef957fc9eac040ec67be11f11}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Aggregate\+Notification@{get\+Aggregate\+Notification}}
+\index{get\+Aggregate\+Notification@{get\+Aggregate\+Notification}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Aggregate\+Notification()}{getAggregateNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Aggregate\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a2948d8a2278d0a9059b9f9fc835f13db}{}\label{class_wasp_x_bee_z_b_a2948d8a2278d0a9059b9f9fc835f13db}
+
+
+It gets the time between consecutive aggregate route broadcast messages. 
+
+It stores in global \textquotesingle{}aggregate\+Notification\textquotesingle{} variable the time between consecutive aggregate route broadcast messages \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Association\+Indication@{get\+Association\+Indication}}
+\index{get\+Association\+Indication@{get\+Association\+Indication}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Association\+Indication()}{getAssociationIndication()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Association\+Indication (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a4de23b2a33913ede61d8b5170bda6842}{}\label{class_wasp_x_bee_z_b_a4de23b2a33913ede61d8b5170bda6842}
+
+
+It gets information regarding last node join request. 
+
+It stores in global \textquotesingle{}association\+Indication\textquotesingle{} variable information regarding last node join request \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Channel\+Verification@{get\+Channel\+Verification}}
+\index{get\+Channel\+Verification@{get\+Channel\+Verification}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Channel\+Verification()}{getChannelVerification()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Channel\+Verification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_afc87e9887e21b21e166337b59c571d18}{}\label{class_wasp_x_bee_z_b_afc87e9887e21b21e166337b59c571d18}
+
+
+It gets the channel verification parameter (JV parameter) 
+
+It stores in global \textquotesingle{}channel\+Verification\textquotesingle{} variable the channel verification parameter \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Device\+Type@{get\+Device\+Type}}
+\index{get\+Device\+Type@{get\+Device\+Type}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Device\+Type()}{getDeviceType()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Device\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a072e4a6df44fc8521e6bbfb52bce446a}{}\label{class_wasp_x_bee_z_b_a072e4a6df44fc8521e6bbfb52bce446a}
+
+
+It gets the current device type. 
+
+It stores in global \textquotesingle{}device\+Type\textquotesingle{} variable the current device type \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Encryption\+Options@{get\+Encryption\+Options}}
+\index{get\+Encryption\+Options@{get\+Encryption\+Options}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Encryption\+Options()}{getEncryptionOptions()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Encryption\+Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a97dd852a026ff78e4363057b93fc3eba}{}\label{class_wasp_x_bee_z_b_a97dd852a026ff78e4363057b93fc3eba}
+
+
+It gets options for encryption. 
+
+It stores in global \textquotesingle{}encryp\+Options\textquotesingle{} variable options for encryption \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Join\+Notification@{get\+Join\+Notification}}
+\index{get\+Join\+Notification@{get\+Join\+Notification}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Join\+Notification()}{getJoinNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Join\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a598b4fc6c39c2221c2a0d507be7d24d6}{}\label{class_wasp_x_bee_z_b_a598b4fc6c39c2221c2a0d507be7d24d6}
+
+
+It gets the join notification setting. 
+
+It stores in global \textquotesingle{}join\+Notification\textquotesingle{} variable the join notification setting \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Join\+Time@{get\+Join\+Time}}
+\index{get\+Join\+Time@{get\+Join\+Time}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Join\+Time()}{getJoinTime()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Join\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a9ca694d7fc105ef037073c6637daaf4e}{}\label{class_wasp_x_bee_z_b_a9ca694d7fc105ef037073c6637daaf4e}
+
+
+It gets the time that a Coordinator/\+Router allows nodes to join. 
+
+It stores in global \textquotesingle{}join\+Time\textquotesingle{} variable the time that a Coordinator/\+Router allows nodes to join \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Max\+Broadcast\+Hops@{get\+Max\+Broadcast\+Hops}}
+\index{get\+Max\+Broadcast\+Hops@{get\+Max\+Broadcast\+Hops}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Max\+Broadcast\+Hops()}{getMaxBroadcastHops()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Max\+Broadcast\+Hops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a7e85b32a0d105071a2e7eff27628d946}{}\label{class_wasp_x_bee_z_b_a7e85b32a0d105071a2e7eff27628d946}
+
+
+It gets the maximum number of hops for each broadcast data transmission. 
+
+It stores in global \textquotesingle{}max\+Broadcast\+Hops\textquotesingle{} variable the maximum number of hops for each broadcast data transmission \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Max\+Unicast\+Hops@{get\+Max\+Unicast\+Hops}}
+\index{get\+Max\+Unicast\+Hops@{get\+Max\+Unicast\+Hops}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Max\+Unicast\+Hops()}{getMaxUnicastHops()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Max\+Unicast\+Hops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a6a4ba0967cccf61e5a5e2ab30c7bb2c1}{}\label{class_wasp_x_bee_z_b_a6a4ba0967cccf61e5a5e2ab30c7bb2c1}
+
+
+It gets the maximum hop limits. 
+
+It stores in global \textquotesingle{}max\+Unicast\+Hops\textquotesingle{} variable the maximum hop limits \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Operating16\+P\+AN@{get\+Operating16\+P\+AN}}
+\index{get\+Operating16\+P\+AN@{get\+Operating16\+P\+AN}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Operating16\+P\+A\+N()}{getOperating16PAN()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Operating16\+P\+AN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_ac4ec46ef3f4cb180e77bd2460d9aee1b}{}\label{class_wasp_x_bee_z_b_ac4ec46ef3f4cb180e77bd2460d9aee1b}
+
+
+It gets the 16-\/bit Operating P\+AN ID. 
+
+It stores in global \textquotesingle{}operating16\+P\+AN\textquotesingle{} variable the 16-\/bit Operating P\+AN ID \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Operating64\+P\+AN@{get\+Operating64\+P\+AN}}
+\index{get\+Operating64\+P\+AN@{get\+Operating64\+P\+AN}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Operating64\+P\+A\+N()}{getOperating64PAN()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Operating64\+P\+AN (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a55dfaebfc32020a28080c33f7d10a12a}{}\label{class_wasp_x_bee_z_b_a55dfaebfc32020a28080c33f7d10a12a}
+
+
+It gets the 64-\/bit Operating Extended P\+AN ID. 
+
+It stores in global \textquotesingle{}operating64\+P\+AN\textquotesingle{} variable the 64-\/bit Operating P\+AN ID \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Parent\+Network\+Address@{get\+Parent\+Network\+Address}}
+\index{get\+Parent\+Network\+Address@{get\+Parent\+Network\+Address}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Parent\+Network\+Address()}{getParentNetworkAddress()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Parent\+Network\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a22772ea96f7e8886ddcd2f1c643a9851}{}\label{class_wasp_x_bee_z_b_a22772ea96f7e8886ddcd2f1c643a9851}
+
+
+It gets the 16b parent´s network address. 
+
+It stores in global \textquotesingle{}parent\+NA\textquotesingle{} variable the 16b parent´s network address \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Payload\+Bytes@{get\+Payload\+Bytes}}
+\index{get\+Payload\+Bytes@{get\+Payload\+Bytes}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Payload\+Bytes()}{getPayloadBytes()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Payload\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a73bbe4ac7a2b5bbbff43005aefc9d4d3}{}\label{class_wasp_x_bee_z_b_a73bbe4ac7a2b5bbbff43005aefc9d4d3}
+
+
+It gets the bytes that can be used in the payload. 
+
+It stores in global \textquotesingle{}max\+Payload\+Bytes\textquotesingle{} variable the bytes that can be used in the payload \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Power\+Mode@{get\+Power\+Mode}}
+\index{get\+Power\+Mode@{get\+Power\+Mode}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Power\+Mode()}{getPowerMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Power\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_aa48a068d83c9a36b9facc66ce842b88c}{}\label{class_wasp_x_bee_z_b_aa48a068d83c9a36b9facc66ce842b88c}
+
+
+It gets the power mode of the device. 
+
+It stores in global \textquotesingle{}power\+Mode\textquotesingle{} variable the power mode of the device \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Remaining\+Children@{get\+Remaining\+Children}}
+\index{get\+Remaining\+Children@{get\+Remaining\+Children}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Remaining\+Children()}{getRemainingChildren()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Remaining\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a231e01bb7b9b2d240c1787ea8acfc32c}{}\label{class_wasp_x_bee_z_b_a231e01bb7b9b2d240c1787ea8acfc32c}
+
+
+It gets the number of children which can still connect to the current device. 
+
+It stores in global \textquotesingle{}remaining\+Children\textquotesingle{} variable the number of children which can still connect to the current device \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Stack\+Profile@{get\+Stack\+Profile}}
+\index{get\+Stack\+Profile@{get\+Stack\+Profile}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Stack\+Profile()}{getStackProfile()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Stack\+Profile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a222859bf9780dfde21a495b9c6663fb9}{}\label{class_wasp_x_bee_z_b_a222859bf9780dfde21a495b9c6663fb9}
+
+
+It gets the Zig\+Bee Stack profile. 
+
+It stores in global \textquotesingle{}stack\+Profile\textquotesingle{} variable the Zig\+Bee Stack profile \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!get\+Supply\+Voltage@{get\+Supply\+Voltage}}
+\index{get\+Supply\+Voltage@{get\+Supply\+Voltage}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{get\+Supply\+Voltage()}{getSupplyVoltage()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::get\+Supply\+Voltage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a41f1c1f8f3a07179d593d38dafc38e5c}{}\label{class_wasp_x_bee_z_b_a41f1c1f8f3a07179d593d38dafc38e5c}
+
+
+It gets the voltage on the Vcc pin. 
+
+It stores in global \textquotesingle{}supply\+Voltage\textquotesingle{} variable the voltage on the Vcc pin \begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!init@{init}}
+\index{init@{init}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t uart\+\_\+used)}{init(uint8_t uart_used)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Z\+B\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{uart\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee_z_b_a065c5f6d9bd14de389314f78d9dfae22}{}\label{class_wasp_x_bee_z_b_a065c5f6d9bd14de389314f78d9dfae22}
+
+
+Methods ////////////////////////////////////////////////////////////////. 
+
+It initializes the necessary variables
+
+It initalizes all the necessary variables 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & protocol\+\_\+used \+: specifies the protocol used in the X\+Bee module (depends on the X\+Bee module) \\
+\hline
+{\em uint8\+\_\+t} & uart\+\_\+used \+: specifies the U\+A\+RT where the data are sent to (0-\/1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a38936686684436eb38429103b70874f1}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!reset\+Network@{reset\+Network}}
+\index{reset\+Network@{reset\+Network}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{reset\+Network(uint8\+\_\+t reset)}{resetNetwork(uint8_t reset)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::reset\+Network (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{reset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a4197985ee551498c9b5301e4b44625d7}{}\label{class_wasp_x_bee_z_b_a4197985ee551498c9b5301e4b44625d7}
+
+
+It resets the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & reset \+: specifies the reset to do (0\+: reset the node network interface $\vert$$\vert$ 1\+: reset the entirely network) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}}
+\index{send\+X\+Bee\+Priv@{send\+X\+Bee\+Priv}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{send\+X\+Bee\+Priv(struct packet\+X\+Bee $\ast$packet)}{sendXBeePriv(struct packetXBee *packet)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::send\+X\+Bee\+Priv (
+\begin{DoxyParamCaption}
+\item[{struct {\bf packet\+X\+Bee} $\ast$}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_wasp_x_bee_z_b_a50375e7d9ab3bba2a7eec41eff8bb4e6}{}\label{class_wasp_x_bee_z_b_a50375e7d9ab3bba2a7eec41eff8bb4e6}
+
+
+It sends a packet to other X\+Bee modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ packet \+: the function gets the needed information to send the packet from it \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_wasp_x_bee_core_a021b4bfd9bd565b6a6448043610e5548}{Wasp\+X\+Bee\+Core}.
+
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Aggregate\+Notification@{set\+Aggregate\+Notification}}
+\index{set\+Aggregate\+Notification@{set\+Aggregate\+Notification}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Aggregate\+Notification(uint8\+\_\+t anotif)}{setAggregateNotification(uint8_t anotif)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Aggregate\+Notification (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{anotif}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a468c52498ac1f48adbb2863e868a7122}{}\label{class_wasp_x_bee_z_b_a468c52498ac1f48adbb2863e868a7122}
+
+
+It sets the time between consecutive aggregate route broadcast messages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & anotif \+: the time between consecutive aggregate route broadcast messages (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+A\+P\+Sencryption@{set\+A\+P\+Sencryption}}
+\index{set\+A\+P\+Sencryption@{set\+A\+P\+Sencryption}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+A\+P\+Sencryption(uint8\+\_\+t mode)}{setAPSencryption(uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+A\+P\+Sencryption (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_ad109ebed041cadba7747660e5bf3b7c8}{}\label{class_wasp_x_bee_z_b_ad109ebed041cadba7747660e5bf3b7c8}
+
+
+It sets the Application Layer Encryption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: enables or disables this encryption mode (X\+B\+E\+E\+\_\+\+ON or X\+B\+E\+E\+\_\+\+O\+FF) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Channel\+Verification@{set\+Channel\+Verification}}
+\index{set\+Channel\+Verification@{set\+Channel\+Verification}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Channel\+Verification(uint8\+\_\+t verif)}{setChannelVerification(uint8_t verif)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Channel\+Verification (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{verif}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_ab6a35d342a298d95fc01740f5441b209}{}\label{class_wasp_x_bee_z_b_ab6a35d342a298d95fc01740f5441b209}
+
+
+It sets the channel verification parameter (JV parameter) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time \+: the channel verification parameter (range \mbox{[}0-\/1\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Device\+Type@{set\+Device\+Type}}
+\index{set\+Device\+Type@{set\+Device\+Type}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Device\+Type(uint8\+\_\+t $\ast$type)}{setDeviceType(uint8_t *type)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Device\+Type (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a2dae6efc2c69806a2ad02555780e53ee}{}\label{class_wasp_x_bee_z_b_a2dae6efc2c69806a2ad02555780e53ee}
+
+
+It sets the current device type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & type \+: the current device type (range \mbox{[}0-\/0x\+F\+F\+F\+F\+F\+F\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Encryption\+Options@{set\+Encryption\+Options}}
+\index{set\+Encryption\+Options@{set\+Encryption\+Options}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Encryption\+Options(uint8\+\_\+t eoptions)}{setEncryptionOptions(uint8_t eoptions)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Encryption\+Options (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{eoptions}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_aeb53beba00840257d873764dfce207a4}{}\label{class_wasp_x_bee_z_b_aeb53beba00840257d873764dfce207a4}
+
+
+It sets options for encryption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & eoptions \+: options for encryption (range \mbox{[}0-\/2\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Join\+Notification@{set\+Join\+Notification}}
+\index{set\+Join\+Notification@{set\+Join\+Notification}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Join\+Notification(uint8\+\_\+t notif)}{setJoinNotification(uint8_t notif)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Join\+Notification (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{notif}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a129227e7173f4822e9885418bd5e2a22}{}\label{class_wasp_x_bee_z_b_a129227e7173f4822e9885418bd5e2a22}
+
+
+It sets the join notification setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & notif \+: the join notification setting (range \mbox{[}0-\/1\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Join\+Time@{set\+Join\+Time}}
+\index{set\+Join\+Time@{set\+Join\+Time}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Join\+Time(uint8\+\_\+t time)}{setJoinTime(uint8_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Join\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a153775deeb7794798e78625afa1cca79}{}\label{class_wasp_x_bee_z_b_a153775deeb7794798e78625afa1cca79}
+
+
+It sets the time that a Coordinator/\+Router allows nodes to join. 
+
+This function sets the NJ parameter. Range\+: 0 -\/ 0x\+FF \mbox{[}x 1 sec\mbox{]}. Default\+: 0x\+FF 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & time \+: the time that a Coordinator/\+Router allows nodes to join \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Known\+Destination@{set\+Known\+Destination}}
+\index{set\+Known\+Destination@{set\+Known\+Destination}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Known\+Destination(packet\+X\+Bee $\ast$paq, const char $\ast$address)}{setKnownDestination(packetXBee *paq, const char *address)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Z\+B\+::set\+Known\+Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{const char $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a92e2276d07ed342ec44e0b8f1305e9b6}{}\label{class_wasp_x_bee_z_b_a92e2276d07ed342ec44e0b8f1305e9b6}
+It sets M\+Y\+\_\+\+Known flag to \textquotesingle{}1\textquotesingle{} and sets the destination network address to the packet to be sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ paq \+: This is the packet to be set \\
+\hline
+{\em const} & char$\ast$ address \+: pointer to the destination address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Known\+Destination@{set\+Known\+Destination}}
+\index{set\+Known\+Destination@{set\+Known\+Destination}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Known\+Destination(packet\+X\+Bee $\ast$paq, uint8\+\_\+t $\ast$address)}{setKnownDestination(packetXBee *paq, uint8_t *address)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+X\+Bee\+Z\+B\+::set\+Known\+Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf packet\+X\+Bee} $\ast$}]{paq, }
+\item[{uint8\+\_\+t $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a10e0ee0ca5ac913b03fc8a4198a1814d}{}\label{class_wasp_x_bee_z_b_a10e0ee0ca5ac913b03fc8a4198a1814d}
+It sets M\+Y\+\_\+\+Known flag to \textquotesingle{}1\textquotesingle{} and sets the destination network address to the packet to be sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em struct} & packet\+X\+Bee$\ast$ paq \+: This is the packet to be set \\
+\hline
+{\em const} & char$\ast$ address \+: pointer to the destination address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Max\+Broadcast\+Hops@{set\+Max\+Broadcast\+Hops}}
+\index{set\+Max\+Broadcast\+Hops@{set\+Max\+Broadcast\+Hops}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Max\+Broadcast\+Hops(uint8\+\_\+t bhops)}{setMaxBroadcastHops(uint8_t bhops)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Max\+Broadcast\+Hops (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{bhops}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a56b5daef58984a91e299825bc6199439}{}\label{class_wasp_x_bee_z_b_a56b5daef58984a91e299825bc6199439}
+
+
+It sets the maximum number of hops for each broadcast data transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & bhops \+: the maximum number of hops for each broadcast data transmission (range \mbox{[}0x00-\/0x20\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Max\+Unicast\+Hops@{set\+Max\+Unicast\+Hops}}
+\index{set\+Max\+Unicast\+Hops@{set\+Max\+Unicast\+Hops}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Max\+Unicast\+Hops(uint8\+\_\+t hops)}{setMaxUnicastHops(uint8_t hops)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Max\+Unicast\+Hops (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{hops}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a3479c73cb6688e6527c8e6b34e9d260b}{}\label{class_wasp_x_bee_z_b_a3479c73cb6688e6527c8e6b34e9d260b}
+
+
+It sets the maximum hops limit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & type \+: the maximum hops limit (range \mbox{[}0x00-\/0x\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Network\+Key@{set\+Network\+Key}}
+\index{set\+Network\+Key@{set\+Network\+Key}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Network\+Key(const char $\ast$key)}{setNetworkKey(const char *key)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Network\+Key (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a06504b4f6c7c9c701ecaf031f0e67e4c}{}\label{class_wasp_x_bee_z_b_a06504b4f6c7c9c701ecaf031f0e67e4c}
+
+
+It sets the 128-\/bit A\+ES encryption key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & key \+: the 128-\/bit A\+ES encryption key (range \mbox{[}0-\/0x\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FF\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Period\+Sleep@{set\+Period\+Sleep}}
+\index{set\+Period\+Sleep@{set\+Period\+Sleep}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Period\+Sleep(uint8\+\_\+t $\ast$periods)}{setPeriodSleep(uint8_t *periods)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Period\+Sleep (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{periods}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_ae15b1c90c2d6177ad73584ff2cd1000c}{}\label{class_wasp_x_bee_z_b_ae15b1c90c2d6177ad73584ff2cd1000c}
+
+
+It sets the number of Sleep Periods to not assert X\+Bee pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t$\ast$} & periods \+: the number of Sleep Periods to not assert X\+Bee pin (range \mbox{[}0x20-\/0x\+A\+F0\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Power\+Mode@{set\+Power\+Mode}}
+\index{set\+Power\+Mode@{set\+Power\+Mode}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Power\+Mode(uint8\+\_\+t power)}{setPowerMode(uint8_t power)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Power\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a9294555b860999c770b4a64de9f9bd9a}{}\label{class_wasp_x_bee_z_b_a9294555b860999c770b4a64de9f9bd9a}
+
+
+It sets the power mode of the device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & power \+: the power mode of the device (range \mbox{[}0-\/1\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!set\+Stack\+Profile@{set\+Stack\+Profile}}
+\index{set\+Stack\+Profile@{set\+Stack\+Profile}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{set\+Stack\+Profile(uint8\+\_\+t profile)}{setStackProfile(uint8_t profile)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::set\+Stack\+Profile (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{profile}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_x_bee_z_b_a245b1892e4d6d660a964ca0a5b0039f1}{}\label{class_wasp_x_bee_z_b_a245b1892e4d6d660a964ca0a5b0039f1}
+
+
+It sets the Zig\+Bee Stack profile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & profile \+: the Zig\+Bee Stack profile (range \mbox{[}0-\/2\mbox{]}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on success, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}!parent\+NA@{parent\+NA}}
+\index{parent\+NA@{parent\+NA}!Wasp\+X\+Bee\+ZB@{Wasp\+X\+Bee\+ZB}}
+\subsubsection[{\texorpdfstring{parent\+NA}{parentNA}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+X\+Bee\+Z\+B\+::parent\+NA\mbox{[}2\mbox{]}}\hypertarget{class_wasp_x_bee_z_b_aae3447c38de3275ca8ff2fbd67d982e9}{}\label{class_wasp_x_bee_z_b_aae3447c38de3275ca8ff2fbd67d982e9}
+
+
+Variables /////////////////////////////////////////////////////////////. 
+
+Variable \+: the 16b parent´s network address 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee\+Z\+B/\hyperlink{_wasp_x_bee_z_b_8h}{Wasp\+X\+Bee\+Z\+B.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+X\+Bee\+Z\+B/Wasp\+X\+Bee\+Z\+B.\+cpp\end{DoxyCompactItemize}

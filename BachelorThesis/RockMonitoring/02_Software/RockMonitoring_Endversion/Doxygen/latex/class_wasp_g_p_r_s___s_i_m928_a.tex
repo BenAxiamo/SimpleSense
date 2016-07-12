@@ -1,0 +1,211 @@
+\hypertarget{class_wasp_g_p_r_s___s_i_m928_a}{}\section{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A Class Reference}
+\label{class_wasp_g_p_r_s___s_i_m928_a}\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+
+
+\hyperlink{class_wasp_g_p_r_s___s_i_m928_a}{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A.\+h$>$}
+
+Inheritance diagram for Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wasp_g_p_r_s___s_i_m928_a}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_a5560ac35ec706377295b153596d53a84}{G\+P\+S\+\_\+\+ON} ()
+\begin{DoxyCompactList}\small\item\em This function switches on the G\+PS engine. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_a444ff94882e0feb71a71c88a5cfe6182}{G\+P\+S\+\_\+\+O\+FF} ()
+\begin{DoxyCompactList}\small\item\em This function switches off the G\+PS engine. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_a62bbac97f7bf942c9d37a79c34f3f246}{get\+G\+P\+S\+Data} (bool parse)
+\begin{DoxyCompactList}\small\item\em This function reads the data from satellites. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_af163f1823ea22c9acf5ff293b98d072d}{check\+G\+PS} ()
+\begin{DoxyCompactList}\small\item\em This function checks if the G\+PS position is fixed or not. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_a621bd6fa71bc512a9b83190c1b136f31}{wait\+For\+G\+P\+S\+Signal} ()
+\begin{DoxyCompactList}\small\item\em This function checks if the position is fixed until time out. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_a84b067680414d55d9a2f11677f863d55}{wait\+For\+G\+P\+S\+Signal} (long timeout)
+\begin{DoxyCompactList}\small\item\em This function checks if the position is fixed until time out. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wasp_g_p_r_s___s_i_m928_a_aeaf42dc745e86a3471c030facea54a0c}{set\+R\+T\+C\+Time\+From\+G\+PS} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries longitude}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_aceff4f0ee845ff116f1321bab1421b50}{}\label{class_wasp_g_p_r_s___s_i_m928_a_aceff4f0ee845ff116f1321bab1421b50}
+
+\item 
+float {\bfseries latitude}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_ae5c0048a40eecdc0835f96f4cae9dafd}{}\label{class_wasp_g_p_r_s___s_i_m928_a_ae5c0048a40eecdc0835f96f4cae9dafd}
+
+\item 
+float {\bfseries altitude}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_aee517948d4b5d1f39cc7dce5cb7ee62a}{}\label{class_wasp_g_p_r_s___s_i_m928_a_aee517948d4b5d1f39cc7dce5cb7ee62a}
+
+\item 
+char {\bfseries U\+T\+C\+\_\+time} \mbox{[}11\mbox{]}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_afa3b83d66c3f04fb832744d2de4f6eec}{}\label{class_wasp_g_p_r_s___s_i_m928_a_afa3b83d66c3f04fb832744d2de4f6eec}
+
+\item 
+char {\bfseries date} \mbox{[}9\mbox{]}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a9dce0b95cb2df5e719b5b983b5896cb8}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a9dce0b95cb2df5e719b5b983b5896cb8}
+
+\item 
+int8\+\_\+t {\bfseries sats\+\_\+in\+\_\+view}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a5419be5b4df290c8eb09a4d522664527}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a5419be5b4df290c8eb09a4d522664527}
+
+\item 
+int8\+\_\+t {\bfseries sats\+\_\+in\+\_\+use}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a9cbf8a429018b9456aaec6baa2bc7d31}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a9cbf8a429018b9456aaec6baa2bc7d31}
+
+\item 
+float {\bfseries speed\+OG}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a237bc75e53ed66ec614deeb3074f47db}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a237bc75e53ed66ec614deeb3074f47db}
+
+\item 
+float {\bfseries course\+OG}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a3399cdc25404ad9105e4d49f1b2df3c9}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a3399cdc25404ad9105e4d49f1b2df3c9}
+
+\item 
+float {\bfseries H\+D\+OP}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a0029934ebd5e0564f81589a8053eb9bf}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a0029934ebd5e0564f81589a8053eb9bf}
+
+\item 
+float {\bfseries P\+D\+OP}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a9ecaeccc36d95273e14c0a2719907dda}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a9ecaeccc36d95273e14c0a2719907dda}
+
+\item 
+float {\bfseries V\+D\+OP}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a713f93dbec374b59792f67e30d5648e7}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a713f93dbec374b59792f67e30d5648e7}
+
+\item 
+int {\bfseries G\+P\+S\+\_\+status}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_afb6da1e8ad6284dc54e2118759490c0b}{}\label{class_wasp_g_p_r_s___s_i_m928_a_afb6da1e8ad6284dc54e2118759490c0b}
+
+\item 
+int {\bfseries fix\+\_\+status}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a411ea458aeac82aa5af76555bfe94451}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a411ea458aeac82aa5af76555bfe94451}
+
+\item 
+int {\bfseries S\+NR}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_ad23f8691cc2fb6b27d139858291f2386}{}\label{class_wasp_g_p_r_s___s_i_m928_a_ad23f8691cc2fb6b27d139858291f2386}
+
+\item 
+int {\bfseries mode}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_ad51d1288371046657c584fe41c815be9}{}\label{class_wasp_g_p_r_s___s_i_m928_a_ad51d1288371046657c584fe41c815be9}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_g_p_r_s___s_i_m928_a}{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A} Class. 
+
+\hyperlink{class_wasp_g_p_r_s___s_i_m928_a}{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A} Class defines all the variables and functions used to manage S\+I\+M928A module 
+
+\subsection{Member Function Documentation}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!check\+G\+PS@{check\+G\+PS}}
+\index{check\+G\+PS@{check\+G\+PS}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{check\+G\+P\+S()}{checkGPS()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::check\+G\+PS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_af163f1823ea22c9acf5ff293b98d072d}{}\label{class_wasp_g_p_r_s___s_i_m928_a_af163f1823ea22c9acf5ff293b98d072d}
+
+
+This function checks if the G\+PS position is fixed or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char$\ast$} & buffer\+: string pointer to store the information data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} if timeout \textquotesingle{}1\textquotesingle{} if G\+PS status is fixed \textquotesingle{}2\textquotesingle{} if G\+PS status is not fixed 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!get\+G\+P\+S\+Data@{get\+G\+P\+S\+Data}}
+\index{get\+G\+P\+S\+Data@{get\+G\+P\+S\+Data}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{get\+G\+P\+S\+Data(bool parse)}{getGPSData(bool parse)}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::get\+G\+P\+S\+Data (
+\begin{DoxyParamCaption}
+\item[{bool}]{parse}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a62bbac97f7bf942c9d37a79c34f3f246}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a62bbac97f7bf942c9d37a79c34f3f246}
+
+
+This function reads the data from satellites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & parse\+: \textquotesingle{}0\textquotesingle{} raw string in buffer\+\_\+\+G\+P\+RS and \textquotesingle{}1\textquotesingle{} for G\+PS data parsed and stored in variables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success -\/1 if timeout -\/2 if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!G\+P\+S\+\_\+\+O\+FF@{G\+P\+S\+\_\+\+O\+FF}}
+\index{G\+P\+S\+\_\+\+O\+FF@{G\+P\+S\+\_\+\+O\+FF}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+O\+F\+F()}{GPS_OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::\+G\+P\+S\+\_\+\+O\+FF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a444ff94882e0feb71a71c88a5cfe6182}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a444ff94882e0feb71a71c88a5cfe6182}
+
+
+This function switches off the G\+PS engine. 
+
+\begin{DoxyReturn}{Returns}
+1 if success 0 if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!G\+P\+S\+\_\+\+ON@{G\+P\+S\+\_\+\+ON}}
+\index{G\+P\+S\+\_\+\+ON@{G\+P\+S\+\_\+\+ON}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+O\+N()}{GPS_ON()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::\+G\+P\+S\+\_\+\+ON (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a5560ac35ec706377295b153596d53a84}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a5560ac35ec706377295b153596d53a84}
+
+
+This function switches on the G\+PS engine. 
+
+\begin{DoxyReturn}{Returns}
+1 if success 0 if error 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!set\+R\+T\+C\+Time\+From\+G\+PS@{set\+R\+T\+C\+Time\+From\+G\+PS}}
+\index{set\+R\+T\+C\+Time\+From\+G\+PS@{set\+R\+T\+C\+Time\+From\+G\+PS}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{set\+R\+T\+C\+Time\+From\+G\+P\+S()}{setRTCTimeFromGPS()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::set\+R\+T\+C\+Time\+From\+G\+PS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_aeaf42dc745e86a3471c030facea54a0c}{}\label{class_wasp_g_p_r_s___s_i_m928_a_aeaf42dc745e86a3471c030facea54a0c}
+This function sets time and date from the G\+PS to the R\+TC. G\+PS has to be initialized first and got the time/date
+
+\begin{DoxyReturn}{Returns}
+1 if success 0 otherwise 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!wait\+For\+G\+P\+S\+Signal@{wait\+For\+G\+P\+S\+Signal}}
+\index{wait\+For\+G\+P\+S\+Signal@{wait\+For\+G\+P\+S\+Signal}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{wait\+For\+G\+P\+S\+Signal()}{waitForGPSSignal()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::wait\+For\+G\+P\+S\+Signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a621bd6fa71bc512a9b83190c1b136f31}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a621bd6fa71bc512a9b83190c1b136f31}
+
+
+This function checks if the position is fixed until time out. 
+
+\begin{DoxyReturn}{Returns}
+0 if not connected 1 if connected 
+\end{DoxyReturn}
+\index{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}!wait\+For\+G\+P\+S\+Signal@{wait\+For\+G\+P\+S\+Signal}}
+\index{wait\+For\+G\+P\+S\+Signal@{wait\+For\+G\+P\+S\+Signal}!Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A@{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928A}}
+\subsubsection[{\texorpdfstring{wait\+For\+G\+P\+S\+Signal(long timeout)}{waitForGPSSignal(long timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A\+::wait\+For\+G\+P\+S\+Signal (
+\begin{DoxyParamCaption}
+\item[{long}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_g_p_r_s___s_i_m928_a_a84b067680414d55d9a2f11677f863d55}{}\label{class_wasp_g_p_r_s___s_i_m928_a_a84b067680414d55d9a2f11677f863d55}
+
+
+This function checks if the position is fixed until time out. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & timeout\+: max time to wait in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if not connected 1 if connected 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A/\hyperlink{_wasp_g_p_r_s___s_i_m928_a_8h}{Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A/Wasp\+G\+P\+R\+S\+\_\+\+S\+I\+M928\+A.\+cpp\end{DoxyCompactItemize}

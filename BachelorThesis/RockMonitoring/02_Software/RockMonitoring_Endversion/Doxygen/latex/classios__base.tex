@@ -1,0 +1,400 @@
+\hypertarget{classios__base}{}\section{ios\+\_\+base Class Reference}
+\label{classios__base}\index{ios\+\_\+base@{ios\+\_\+base}}
+
+
+Base class for all streams.  
+
+
+
+
+{\ttfamily \#include $<$ios.\+h$>$}
+
+Inheritance diagram for ios\+\_\+base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.490196cm]{classios__base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191e}{seekdir} \{ \hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea6639b4dd9e9b57ffef4a176cd1a1e7bb}{beg}, 
+\hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea53910041525b9e2f33bfc3bb4482134c}{cur}, 
+\hyperlink{classios__base_ab01103ba35f6ba93a704b3ec0c86191eaae47c0ae984e90b38907783a1a804811}{end}
+ \}
+\item 
+typedef unsigned char \hyperlink{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}{iostate}
+\item 
+typedef uint32\+\_\+t \hyperlink{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}{streamsize}
+\item 
+typedef uint32\+\_\+t \hyperlink{classios__base_abe85cf1f181b8bce8022f05ab76aae7f}{pos\+\_\+type}
+\item 
+typedef int32\+\_\+t \hyperlink{classios__base_a45de7cca0d01da781f4b886179c65c22}{off\+\_\+type}
+\item 
+typedef unsigned int \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags}
+\item 
+typedef uint8\+\_\+t \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classios__base_ade5bd46462e075999c3a5c2cff2015f1}{fill} ()
+\item 
+char \hyperlink{classios__base_aa5683f9bdf295311bd5a6d3cdc2fedd5}{fill} (char c)
+\item 
+\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_ab5e9c7dbcbc33b7de9dcb70525ec7384}{flags} () const 
+\item 
+\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_ae67e900dc12e4c7cbc0741ad1c70d6c2}{flags} (\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} fl)
+\item 
+int \hyperlink{classios__base_a9d36cb5a859b74e04f640d2f5e53b41d}{precision} () const 
+\item 
+int \hyperlink{classios__base_a5b70cc65fc2c276136fea99bddedb6f0}{precision} (unsigned int n)
+\item 
+\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_ab5db835cb45bba7684ebf72d9a3cccb4}{setf} (\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} fl)
+\item 
+\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a74dbc93607ab7d68a87ec326b92b6c81}{setf} (\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} fl, \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} mask)
+\item 
+void \hyperlink{classios__base_a3bf7d054a433ed15e8b984e16f630fa4}{unsetf} (\hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} fl)
+\item 
+unsigned \hyperlink{classios__base_afa30e7644b4eae5928ad9c487ad387de}{width} ()
+\item 
+unsigned \hyperlink{classios__base_ab2ba0f005bbf3d8ebed93b64068492e0}{width} (unsigned n)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}{iostate} \hyperlink{classios__base_a07a00996a6e525b88bdfe7935d5ead05}{goodbit} = 0x00
+\item 
+static const \hyperlink{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}{iostate} \hyperlink{classios__base_ac8c2c8f2f6bc9e6ce101c20e88ebce35}{badbit} = 0\+X01
+\item 
+static const \hyperlink{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}{iostate} \hyperlink{classios__base_af75072b7ef2a931c77a2cb8e7ccda460}{eofbit} = 0x02
+\item 
+static const \hyperlink{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}{iostate} \hyperlink{classios__base_a36157154001bcce17827db6786e35efd}{failbit} = 0\+X04
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_ad364df9af2cfde1f40bd8e10c62bb215}{left} = 0x0001
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_aec064a12730b5d87e718c1864e29ac64}{right} = 0x0002
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_afc720b7f6f461ec8e9cf5505059e5d7c}{internal} = 0x0004
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a2826aed005e7c1f6858060cddae7971a}{dec} = 0x0008
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a3608e51eb0a80ea94ddadd5b713a3750}{hex} = 0x0010
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a4155540f8d3ffdb8d25a2f50ee4df08f}{oct} = 0x0020
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_afa74acd95d4bbc7cc3551251aac2bf00}{boolalpha} = 0x0100
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a7e3373ab307feecfc228bc9bdb29cd01}{showbase} = 0x0200
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_ac9bb172682e157f037bd7fb82a236ee6}{showpoint} = 0x0400
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a7bfa4a883933105d10f8ce2693cb9f21}{showpos} = 0x0800
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a64977c777d6e45826d1be9763f17f824}{skipws} = 0x1000
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_ade3db1fe3249e87f4c47a9a8916793d9}{uppercase} = 0x4000
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_adaaf735381254aa096ebe3605e8bbd0a}{adjustfield} = \hyperlink{classios__base_ad364df9af2cfde1f40bd8e10c62bb215}{left} $\vert$ \hyperlink{classios__base_aec064a12730b5d87e718c1864e29ac64}{right} $\vert$ \hyperlink{classios__base_afc720b7f6f461ec8e9cf5505059e5d7c}{internal}
+\item 
+static const \hyperlink{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{fmtflags} \hyperlink{classios__base_a75ce5482aa207d7aa0265d138b50a102}{basefield} = \hyperlink{classios__base_a2826aed005e7c1f6858060cddae7971a}{dec} $\vert$ \hyperlink{classios__base_a3608e51eb0a80ea94ddadd5b713a3750}{hex} $\vert$ \hyperlink{classios__base_a4155540f8d3ffdb8d25a2f50ee4df08f}{oct}
+\item 
+static const \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} \hyperlink{classios__base_a8380aac3c405730708888fdc68905820}{app} = 0\+X4
+\item 
+static const \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} \hyperlink{classios__base_aa434355c165500065276d955d8b36e99}{ate} = 0\+X8
+\item 
+static const \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} \hyperlink{classios__base_ac99947c17c2936d15243671366605602}{binary} = 0\+X10
+\item 
+static const \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} \hyperlink{classios__base_ae5432e3c269064480652c4602f5f74ad}{in} = 0\+X20
+\item 
+static const \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} \hyperlink{classios__base_a4c1d517774c0d11af3424e90395f26ae}{out} = 0\+X40
+\item 
+static const \hyperlink{classios__base_aaa192ec0dccc43050715553a34644523}{openmode} \hyperlink{classios__base_ae62b8972f37509819e1384214071194b}{trunc} = 0\+X80
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{classios__base_a19ffb796cb95d3744d9bc7739939acf2}{flags\+To\+Base} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all streams. 
+
+\subsection{Member Typedef Documentation}
+\index{ios\+\_\+base@{ios\+\_\+base}!fmtflags@{fmtflags}}
+\index{fmtflags@{fmtflags}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{fmtflags}{fmtflags}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf ios\+\_\+base\+::fmtflags}}\hypertarget{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}{}\label{classios__base_ac9a54e52cef4f01ac0afd8ae896a3413}
+type for format flags \index{ios\+\_\+base@{ios\+\_\+base}!iostate@{iostate}}
+\index{iostate@{iostate}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{iostate}{iostate}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf ios\+\_\+base\+::iostate}}\hypertarget{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}{}\label{classios__base_aef19291eeae0f072ac42c6ba1fe3033c}
+typedef for iostate bitmask \index{ios\+\_\+base@{ios\+\_\+base}!off\+\_\+type@{off\+\_\+type}}
+\index{off\+\_\+type@{off\+\_\+type}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{off\+\_\+type}{off_type}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int32\+\_\+t {\bf ios\+\_\+base\+::off\+\_\+type}}\hypertarget{classios__base_a45de7cca0d01da781f4b886179c65c22}{}\label{classios__base_a45de7cca0d01da781f4b886179c65c22}
+type for relative seek offset \index{ios\+\_\+base@{ios\+\_\+base}!openmode@{openmode}}
+\index{openmode@{openmode}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{openmode}{openmode}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint8\+\_\+t {\bf ios\+\_\+base\+::openmode}}\hypertarget{classios__base_aaa192ec0dccc43050715553a34644523}{}\label{classios__base_aaa192ec0dccc43050715553a34644523}
+typedef for iostream open mode \index{ios\+\_\+base@{ios\+\_\+base}!pos\+\_\+type@{pos\+\_\+type}}
+\index{pos\+\_\+type@{pos\+\_\+type}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{pos\+\_\+type}{pos_type}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\+\_\+t {\bf ios\+\_\+base\+::pos\+\_\+type}}\hypertarget{classios__base_abe85cf1f181b8bce8022f05ab76aae7f}{}\label{classios__base_abe85cf1f181b8bce8022f05ab76aae7f}
+type for absolute seek position \index{ios\+\_\+base@{ios\+\_\+base}!streamsize@{streamsize}}
+\index{streamsize@{streamsize}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{streamsize}{streamsize}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\+\_\+t {\bf ios\+\_\+base\+::streamsize}}\hypertarget{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}{}\label{classios__base_a82836e1d3cc603fba8f0b54d323a2dff}
+unsigned size that can represent maximum file size. (violates spec -\/ should be signed) 
+
+\subsection{Member Enumeration Documentation}
+\index{ios\+\_\+base@{ios\+\_\+base}!seekdir@{seekdir}}
+\index{seekdir@{seekdir}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{seekdir}{seekdir}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ios\+\_\+base\+::seekdir}}\hypertarget{classios__base_ab01103ba35f6ba93a704b3ec0c86191e}{}\label{classios__base_ab01103ba35f6ba93a704b3ec0c86191e}
+enumerated type for the direction of relative seeks \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{beg@{beg}!ios\+\_\+base@{ios\+\_\+base}}\index{ios\+\_\+base@{ios\+\_\+base}!beg@{beg}}\item[{\em 
+beg\hypertarget{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea6639b4dd9e9b57ffef4a176cd1a1e7bb}{}\label{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea6639b4dd9e9b57ffef4a176cd1a1e7bb}
+}]seek relative to the beginning of the stream \index{cur@{cur}!ios\+\_\+base@{ios\+\_\+base}}\index{ios\+\_\+base@{ios\+\_\+base}!cur@{cur}}\item[{\em 
+cur\hypertarget{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea53910041525b9e2f33bfc3bb4482134c}{}\label{classios__base_ab01103ba35f6ba93a704b3ec0c86191ea53910041525b9e2f33bfc3bb4482134c}
+}]seek relative to the current stream position \index{end@{end}!ios\+\_\+base@{ios\+\_\+base}}\index{ios\+\_\+base@{ios\+\_\+base}!end@{end}}\item[{\em 
+end\hypertarget{classios__base_ab01103ba35f6ba93a704b3ec0c86191eaae47c0ae984e90b38907783a1a804811}{}\label{classios__base_ab01103ba35f6ba93a704b3ec0c86191eaae47c0ae984e90b38907783a1a804811}
+}]seek relative to the end of the stream \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{ios\+\_\+base@{ios\+\_\+base}!fill@{fill}}
+\index{fill@{fill}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{fill()}{fill()}}]{\setlength{\rightskip}{0pt plus 5cm}char ios\+\_\+base\+::fill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_ade5bd46462e075999c3a5c2cff2015f1}{}\label{classios__base_ade5bd46462e075999c3a5c2cff2015f1}
+\begin{DoxyReturn}{Returns}
+fill character 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!fill@{fill}}
+\index{fill@{fill}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{fill(char c)}{fill(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}char ios\+\_\+base\+::fill (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_aa5683f9bdf295311bd5a6d3cdc2fedd5}{}\label{classios__base_aa5683f9bdf295311bd5a6d3cdc2fedd5}
+Set fill character 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & new fill character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old fill character 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!flags@{flags}}
+\index{flags@{flags}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{flags() const }{flags() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fmtflags} ios\+\_\+base\+::flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_ab5e9c7dbcbc33b7de9dcb70525ec7384}{}\label{classios__base_ab5e9c7dbcbc33b7de9dcb70525ec7384}
+\begin{DoxyReturn}{Returns}
+format flags 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!flags@{flags}}
+\index{flags@{flags}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{flags(fmtflags fl)}{flags(fmtflags fl)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fmtflags} ios\+\_\+base\+::flags (
+\begin{DoxyParamCaption}
+\item[{{\bf fmtflags}}]{fl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_ae67e900dc12e4c7cbc0741ad1c70d6c2}{}\label{classios__base_ae67e900dc12e4c7cbc0741ad1c70d6c2}
+set format flags 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fl} & new flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old flags 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!flags\+To\+Base@{flags\+To\+Base}}
+\index{flags\+To\+Base@{flags\+To\+Base}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{flags\+To\+Base()}{flagsToBase()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t ios\+\_\+base\+::flags\+To\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classios__base_a19ffb796cb95d3744d9bc7739939acf2}{}\label{classios__base_a19ffb796cb95d3744d9bc7739939acf2}
+\begin{DoxyReturn}{Returns}
+current number base 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!precision@{precision}}
+\index{precision@{precision}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{precision() const }{precision() const }}]{\setlength{\rightskip}{0pt plus 5cm}int ios\+\_\+base\+::precision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_a9d36cb5a859b74e04f640d2f5e53b41d}{}\label{classios__base_a9d36cb5a859b74e04f640d2f5e53b41d}
+\begin{DoxyReturn}{Returns}
+precision 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!precision@{precision}}
+\index{precision@{precision}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{precision(unsigned int n)}{precision(unsigned int n)}}]{\setlength{\rightskip}{0pt plus 5cm}int ios\+\_\+base\+::precision (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_a5b70cc65fc2c276136fea99bddedb6f0}{}\label{classios__base_a5b70cc65fc2c276136fea99bddedb6f0}
+set precision 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & new precision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old precision 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!setf@{setf}}
+\index{setf@{setf}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{setf(fmtflags fl)}{setf(fmtflags fl)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fmtflags} ios\+\_\+base\+::setf (
+\begin{DoxyParamCaption}
+\item[{{\bf fmtflags}}]{fl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_ab5db835cb45bba7684ebf72d9a3cccb4}{}\label{classios__base_ab5db835cb45bba7684ebf72d9a3cccb4}
+set format flags 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fl} & new flags to be or\textquotesingle{}ed in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old flags 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!setf@{setf}}
+\index{setf@{setf}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{setf(fmtflags fl, fmtflags mask)}{setf(fmtflags fl, fmtflags mask)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fmtflags} ios\+\_\+base\+::setf (
+\begin{DoxyParamCaption}
+\item[{{\bf fmtflags}}]{fl, }
+\item[{{\bf fmtflags}}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_a74dbc93607ab7d68a87ec326b92b6c81}{}\label{classios__base_a74dbc93607ab7d68a87ec326b92b6c81}
+modify format flags 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mask} & flags to be removed \\
+\hline
+\mbox{\tt in}  & {\em fl} & flags to be set after mask bits have been cleared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old flags 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!unsetf@{unsetf}}
+\index{unsetf@{unsetf}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{unsetf(fmtflags fl)}{unsetf(fmtflags fl)}}]{\setlength{\rightskip}{0pt plus 5cm}void ios\+\_\+base\+::unsetf (
+\begin{DoxyParamCaption}
+\item[{{\bf fmtflags}}]{fl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_a3bf7d054a433ed15e8b984e16f630fa4}{}\label{classios__base_a3bf7d054a433ed15e8b984e16f630fa4}
+clear format flags 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fl} & flags to be cleared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old flags 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!width@{width}}
+\index{width@{width}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{width()}{width()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned ios\+\_\+base\+::width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_afa30e7644b4eae5928ad9c487ad387de}{}\label{classios__base_afa30e7644b4eae5928ad9c487ad387de}
+\begin{DoxyReturn}{Returns}
+width 
+\end{DoxyReturn}
+\index{ios\+\_\+base@{ios\+\_\+base}!width@{width}}
+\index{width@{width}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{width(unsigned n)}{width(unsigned n)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned ios\+\_\+base\+::width (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classios__base_ab2ba0f005bbf3d8ebed93b64068492e0}{}\label{classios__base_ab2ba0f005bbf3d8ebed93b64068492e0}
+set width 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & new width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+old width 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{ios\+\_\+base@{ios\+\_\+base}!adjustfield@{adjustfield}}
+\index{adjustfield@{adjustfield}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{adjustfield}{adjustfield}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::adjustfield = {\bf left} $\vert$ {\bf right} $\vert$ {\bf internal}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_adaaf735381254aa096ebe3605e8bbd0a}{}\label{classios__base_adaaf735381254aa096ebe3605e8bbd0a}
+mask for adjustfield \index{ios\+\_\+base@{ios\+\_\+base}!app@{app}}
+\index{app@{app}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{app}{app}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf openmode} ios\+\_\+base\+::app = 0\+X4\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a8380aac3c405730708888fdc68905820}{}\label{classios__base_a8380aac3c405730708888fdc68905820}
+seek to end before each write \index{ios\+\_\+base@{ios\+\_\+base}!ate@{ate}}
+\index{ate@{ate}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{ate}{ate}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf openmode} ios\+\_\+base\+::ate = 0\+X8\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_aa434355c165500065276d955d8b36e99}{}\label{classios__base_aa434355c165500065276d955d8b36e99}
+open and seek to end immediately after opening \index{ios\+\_\+base@{ios\+\_\+base}!badbit@{badbit}}
+\index{badbit@{badbit}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{badbit}{badbit}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf iostate} ios\+\_\+base\+::badbit = 0\+X01\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ac8c2c8f2f6bc9e6ce101c20e88ebce35}{}\label{classios__base_ac8c2c8f2f6bc9e6ce101c20e88ebce35}
+iostate bad bit for a nonrecoverable error. \index{ios\+\_\+base@{ios\+\_\+base}!basefield@{basefield}}
+\index{basefield@{basefield}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{basefield}{basefield}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::basefield = {\bf dec} $\vert$ {\bf hex} $\vert$ {\bf oct}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a75ce5482aa207d7aa0265d138b50a102}{}\label{classios__base_a75ce5482aa207d7aa0265d138b50a102}
+mask for basefield \index{ios\+\_\+base@{ios\+\_\+base}!binary@{binary}}
+\index{binary@{binary}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{binary}{binary}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf openmode} ios\+\_\+base\+::binary = 0\+X10\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ac99947c17c2936d15243671366605602}{}\label{classios__base_ac99947c17c2936d15243671366605602}
+perform input and output in binary mode (as opposed to text mode) \index{ios\+\_\+base@{ios\+\_\+base}!boolalpha@{boolalpha}}
+\index{boolalpha@{boolalpha}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{boolalpha}{boolalpha}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::boolalpha = 0x0100\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_afa74acd95d4bbc7cc3551251aac2bf00}{}\label{classios__base_afa74acd95d4bbc7cc3551251aac2bf00}
+use strings true/false for bool \index{ios\+\_\+base@{ios\+\_\+base}!dec@{dec}}
+\index{dec@{dec}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{dec}{dec}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::dec = 0x0008\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a2826aed005e7c1f6858060cddae7971a}{}\label{classios__base_a2826aed005e7c1f6858060cddae7971a}
+base 10 flag \index{ios\+\_\+base@{ios\+\_\+base}!eofbit@{eofbit}}
+\index{eofbit@{eofbit}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{eofbit}{eofbit}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf iostate} ios\+\_\+base\+::eofbit = 0x02\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_af75072b7ef2a931c77a2cb8e7ccda460}{}\label{classios__base_af75072b7ef2a931c77a2cb8e7ccda460}
+iostate bit for end of file reached \index{ios\+\_\+base@{ios\+\_\+base}!failbit@{failbit}}
+\index{failbit@{failbit}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{failbit}{failbit}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf iostate} ios\+\_\+base\+::failbit = 0\+X04\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a36157154001bcce17827db6786e35efd}{}\label{classios__base_a36157154001bcce17827db6786e35efd}
+iostate fail bit for nonfatal error \index{ios\+\_\+base@{ios\+\_\+base}!goodbit@{goodbit}}
+\index{goodbit@{goodbit}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{goodbit}{goodbit}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf iostate} ios\+\_\+base\+::goodbit = 0x00\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a07a00996a6e525b88bdfe7935d5ead05}{}\label{classios__base_a07a00996a6e525b88bdfe7935d5ead05}
+iostate for no flags \index{ios\+\_\+base@{ios\+\_\+base}!hex@{hex}}
+\index{hex@{hex}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{hex}{hex}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::hex = 0x0010\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a3608e51eb0a80ea94ddadd5b713a3750}{}\label{classios__base_a3608e51eb0a80ea94ddadd5b713a3750}
+base 16 flag \index{ios\+\_\+base@{ios\+\_\+base}!in@{in}}
+\index{in@{in}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{in}{in}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf openmode} ios\+\_\+base\+::in = 0\+X20\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ae5432e3c269064480652c4602f5f74ad}{}\label{classios__base_ae5432e3c269064480652c4602f5f74ad}
+open for input \index{ios\+\_\+base@{ios\+\_\+base}!internal@{internal}}
+\index{internal@{internal}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{internal}{internal}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::internal = 0x0004\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_afc720b7f6f461ec8e9cf5505059e5d7c}{}\label{classios__base_afc720b7f6f461ec8e9cf5505059e5d7c}
+fill between sign/base prefix and number \index{ios\+\_\+base@{ios\+\_\+base}!left@{left}}
+\index{left@{left}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{left}{left}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::left = 0x0001\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ad364df9af2cfde1f40bd8e10c62bb215}{}\label{classios__base_ad364df9af2cfde1f40bd8e10c62bb215}
+left adjust fields \index{ios\+\_\+base@{ios\+\_\+base}!oct@{oct}}
+\index{oct@{oct}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{oct}{oct}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::oct = 0x0020\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a4155540f8d3ffdb8d25a2f50ee4df08f}{}\label{classios__base_a4155540f8d3ffdb8d25a2f50ee4df08f}
+base 8 flag \index{ios\+\_\+base@{ios\+\_\+base}!out@{out}}
+\index{out@{out}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{out}{out}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf openmode} ios\+\_\+base\+::out = 0\+X40\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a4c1d517774c0d11af3424e90395f26ae}{}\label{classios__base_a4c1d517774c0d11af3424e90395f26ae}
+open for output \index{ios\+\_\+base@{ios\+\_\+base}!right@{right}}
+\index{right@{right}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{right}{right}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::right = 0x0002\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_aec064a12730b5d87e718c1864e29ac64}{}\label{classios__base_aec064a12730b5d87e718c1864e29ac64}
+right adjust fields \index{ios\+\_\+base@{ios\+\_\+base}!showbase@{showbase}}
+\index{showbase@{showbase}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{showbase}{showbase}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::showbase = 0x0200\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a7e3373ab307feecfc228bc9bdb29cd01}{}\label{classios__base_a7e3373ab307feecfc228bc9bdb29cd01}
+use prefix 0X for hex and 0 for oct \index{ios\+\_\+base@{ios\+\_\+base}!showpoint@{showpoint}}
+\index{showpoint@{showpoint}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{showpoint}{showpoint}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::showpoint = 0x0400\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ac9bb172682e157f037bd7fb82a236ee6}{}\label{classios__base_ac9bb172682e157f037bd7fb82a236ee6}
+always show \textquotesingle{}.\textquotesingle{} for floating numbers \index{ios\+\_\+base@{ios\+\_\+base}!showpos@{showpos}}
+\index{showpos@{showpos}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{showpos}{showpos}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::showpos = 0x0800\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a7bfa4a883933105d10f8ce2693cb9f21}{}\label{classios__base_a7bfa4a883933105d10f8ce2693cb9f21}
+show + sign for nonnegative numbers \index{ios\+\_\+base@{ios\+\_\+base}!skipws@{skipws}}
+\index{skipws@{skipws}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{skipws}{skipws}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::skipws = 0x1000\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_a64977c777d6e45826d1be9763f17f824}{}\label{classios__base_a64977c777d6e45826d1be9763f17f824}
+skip initial white space \index{ios\+\_\+base@{ios\+\_\+base}!trunc@{trunc}}
+\index{trunc@{trunc}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{trunc}{trunc}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf openmode} ios\+\_\+base\+::trunc = 0\+X80\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ae62b8972f37509819e1384214071194b}{}\label{classios__base_ae62b8972f37509819e1384214071194b}
+truncate an existing stream when opening \index{ios\+\_\+base@{ios\+\_\+base}!uppercase@{uppercase}}
+\index{uppercase@{uppercase}!ios\+\_\+base@{ios\+\_\+base}}
+\subsubsection[{\texorpdfstring{uppercase}{uppercase}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf fmtflags} ios\+\_\+base\+::uppercase = 0x4000\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classios__base_ade3db1fe3249e87f4c47a9a8916793d9}{}\label{classios__base_ade3db1fe3249e87f4c47a9a8916793d9}
+use uppercase letters in number representations 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{ios_8h}{ios.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,22 @@
+Field=Description~String~Description~269|Field=Value~String~Value~98|Field=Designator~String~Designator~86|Field=Footprint~String~Footprint~163|Field=Quantity~Integer~Quantity~50|Field=Supplier 1~String~Supplier 1~85|Field=Supplier Part Number 1~String~Supplier Part Number 1~133|Field=Supplier Unit Price 1~Float~Supplier Unit Price 1~76|Field=Supplier 2~String~Supplier 2~136|Field=Supplier Part Number 2~String~Supplier Part Number 2~193|Field=Supplier Unit Price 2~Float~Supplier Unit Price 2~86|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~PowerSupply.PrjPCB|ReportField=ProjectFullPath~C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\PowerSupply.PrjPCB|ReportField=Title~Bill of Materials For Project [PowerSupply.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~29|ReportField=ReportTime~16:08:33|ReportField=ReportDate~20.05.2016|ReportField=ReportDateTime~20.05.2016 16:08:33|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~L3, 12a Rodborough Rd|ReportField=Address2~Frenchs Forest|ReportField=Address3~NSW|ReportField=Address4~Australia 2086|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~20.05.2016|ReportField=CurrentTime~16:01:25|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\power_supply.SchDoc|ReportField=DocumentName~power_supply.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~20.05.2016|ReportField=Organization~Altium Limited|ReportField=ProjectName~PowerSupply.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~PowerSupply_Waspmote|ReportField=DataSourceFileName~PowerSupply.PrjPCB|ReportField=DataSourceFullPath~C:\Users\Swen\Dropbox\Bachelorarbeit_Felsüberwachung\01_Hardware\PowerSupply\PowerSupply.PrjPCB
+Capacitor|10uF|C1, C2, C4|C1210|3|Farnell|1828859|0,689|Digi-Key|490-1891-1-ND|0,61
+Capacitor|1uF|C3, C5|C1210|2|Farnell|||Digi-Key|1276-3352-1-ND|
+Capacitor|100nF|C6, C7|0402|2|Farnell|1844578|0,0978|Digi-Key|490-5920-1-ND|0,10
+Capacitor|680nF|C8|0402|1||||||
+Schottky Diode||D1, D2, D3|SMB|3|Farnell|1843684|0,538|Digi-Key|B340LB-FDICT-ND|0,41
+Inductor|22u|L1|LMX131J|1|Farnell|2373880|3,57|Digi-Key|478-7123-1-ND|2,63
+N-Channel MOSFET||Q1|Sot-23|1|Farnell|9845011||Digi-Key|FDV301NCT-ND|0,23
+Resistor|151m|R1|2510|1||||Digi-Key|WSLG-.151CT-ND|
+Resistor|1K|R2, R3, R6|0603|3||||||
+Resistor|316K|R4|0603|1|Farnell|2303268||Digi-Key|311-316KHRCT-ND|0,10
+Resistor|1.2K|R5|0603|1|Farnell|2059603||Digi-Key|311-1.2KGRCT-ND|0,10
+Resistor|1.18M|R7|0402|1|Farnell|2316670|0,0939|Digi-Key|541-1.18MLCT-ND|0,10
+Resistor|10k|R8|0603|1|Farnell|1795343|0,0939|Digi-Key|311-10KGRCT-ND|0,10
+Resistor|3|R9|0402|1|Farnell|||Digi-Key|311-3.0JRCT-ND|
+Battery Charger for Solar Power|LT3652EMSE#PBF|U1|LT-MSE-12-EDP_N|1|Farnell|1839126|7,08|Digi-Key|LT3652EMSE#PBF-ND|6,53
+3-Terminal Adjustable Current Source, 3-pin TO-92|LM234Z-3|U2|SO-8|1|Farnell|1467822|2,24|Digikey|497-1549-1-ND|
+Connector||X1|Wasp_Connector|1|Farnell|3705262|0,40|Digi-Key|277-1150-ND|0,58
+Connector||X2|Solar_Connector|1|Farnell|3705262|0,40|Digi-Key|277-1150-ND|0,58
+Connector||X3|Battery_Connector|1|Farnell|3705262|0,40|Digi-Key|277-1150-ND|0,58
+Connector||X4|NOTIFICATION_CONNECTOR|1|Farnell|3705274|0,854|Digi-Key|277-1151-ND|0,91
+PAD||X5|LötPad|1||||||

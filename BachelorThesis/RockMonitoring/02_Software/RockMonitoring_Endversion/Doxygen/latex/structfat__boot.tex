@@ -1,0 +1,140 @@
+\hypertarget{structfat__boot}{}\section{fat\+\_\+boot Struct Reference}
+\label{structfat__boot}\index{fat\+\_\+boot@{fat\+\_\+boot}}
+
+
+Boot sector for a F\+A\+T12/\+F\+A\+T16 volume.  
+
+
+
+
+{\ttfamily \#include $<$Sd\+Fat\+Structs.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_a83f9f2d1d0130f25f34c90dfc82e3751}{jump} \mbox{[}3\mbox{]}
+\item 
+char \hyperlink{structfat__boot_adc034212201e879fea1eb44db43e55a5}{oem\+Id} \mbox{[}8\mbox{]}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_a60b2461f8ebf0ad295a95094e1bd7d65}{bytes\+Per\+Sector}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_ab3063726125b16a2ccad719548d79abd}{sectors\+Per\+Cluster}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_a13f272a8f780fb43a400f873a3fd7b73}{reserved\+Sector\+Count}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_a04d3b6a45acf28a80ff909dc1b33da2f}{fat\+Count}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_a2124f89e12307df944f08e6657dbf4af}{root\+Dir\+Entry\+Count}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_ac8bd40dd9186882e423e10b0c83e89b7}{total\+Sectors16}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_a63eaf7185663369af2527309634d3c90}{media\+Type}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_a0d5ab13399759acfa571e49b85600db1}{sectors\+Per\+Fat16}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_a6d5ceaf374e0607be8b8162bf657f282}{sectors\+Per\+Track}
+\item 
+uint16\+\_\+t \hyperlink{structfat__boot_ae31da876cd9f48de5268a129218df2c2}{head\+Count}
+\item 
+uint32\+\_\+t \hyperlink{structfat__boot_a18f1b4c245fe7bd09f5a9430c005e23a}{hiddden\+Sectors}
+\item 
+uint32\+\_\+t \hyperlink{structfat__boot_addeb2dd8f78418edbf544303d44133e2}{total\+Sectors32}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_aebd280b93563b75b9612d3db844b0d16}{drive\+Number}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_affa7e6efb3ccea19ba7ea0ddadce7463}{reserved1}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_a712dc388c530e91e4a692e7102d6bdc8}{boot\+Signature}
+\item 
+uint32\+\_\+t \hyperlink{structfat__boot_ac05e88a0d27f0340ba008834361d2b20}{volume\+Serial\+Number}
+\item 
+char \hyperlink{structfat__boot_a9ee733f1b1abc0210ec8f9676bba2218}{volume\+Label} \mbox{[}11\mbox{]}
+\item 
+char \hyperlink{structfat__boot_aee529e32908406866f3ec3c17c4632fa}{file\+System\+Type} \mbox{[}8\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_acf9f5d9f61a6e680e11849f957ecf782}{boot\+Code} \mbox{[}448\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_a7951b888af4f357b84dd40af2ef7f29d}{boot\+Sector\+Sig0}
+\item 
+uint8\+\_\+t \hyperlink{structfat__boot_afe8f58668ff594bb2022ce7c06b7726c}{boot\+Sector\+Sig1}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Boot sector for a F\+A\+T12/\+F\+A\+T16 volume. 
+
+\subsection{Member Data Documentation}
+\index{fat\+\_\+boot@{fat\+\_\+boot}!boot\+Code@{boot\+Code}}
+\index{boot\+Code@{boot\+Code}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{boot\+Code}{bootCode}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::boot\+Code\mbox{[}448\mbox{]}}\hypertarget{structfat__boot_acf9f5d9f61a6e680e11849f957ecf782}{}\label{structfat__boot_acf9f5d9f61a6e680e11849f957ecf782}
+X86 boot code \index{fat\+\_\+boot@{fat\+\_\+boot}!boot\+Sector\+Sig0@{boot\+Sector\+Sig0}}
+\index{boot\+Sector\+Sig0@{boot\+Sector\+Sig0}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{boot\+Sector\+Sig0}{bootSectorSig0}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::boot\+Sector\+Sig0}\hypertarget{structfat__boot_a7951b888af4f357b84dd40af2ef7f29d}{}\label{structfat__boot_a7951b888af4f357b84dd40af2ef7f29d}
+must be 0\+X55 \index{fat\+\_\+boot@{fat\+\_\+boot}!boot\+Sector\+Sig1@{boot\+Sector\+Sig1}}
+\index{boot\+Sector\+Sig1@{boot\+Sector\+Sig1}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{boot\+Sector\+Sig1}{bootSectorSig1}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::boot\+Sector\+Sig1}\hypertarget{structfat__boot_afe8f58668ff594bb2022ce7c06b7726c}{}\label{structfat__boot_afe8f58668ff594bb2022ce7c06b7726c}
+must be 0\+X\+AA \index{fat\+\_\+boot@{fat\+\_\+boot}!boot\+Signature@{boot\+Signature}}
+\index{boot\+Signature@{boot\+Signature}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{boot\+Signature}{bootSignature}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::boot\+Signature}\hypertarget{structfat__boot_a712dc388c530e91e4a692e7102d6bdc8}{}\label{structfat__boot_a712dc388c530e91e4a692e7102d6bdc8}
+0\+X29 if next three fields are valid \index{fat\+\_\+boot@{fat\+\_\+boot}!bytes\+Per\+Sector@{bytes\+Per\+Sector}}
+\index{bytes\+Per\+Sector@{bytes\+Per\+Sector}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{bytes\+Per\+Sector}{bytesPerSector}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::bytes\+Per\+Sector}\hypertarget{structfat__boot_a60b2461f8ebf0ad295a95094e1bd7d65}{}\label{structfat__boot_a60b2461f8ebf0ad295a95094e1bd7d65}
+The size of a hardware sector. Valid decimal values for this field are 512, 1024, 2048, and 4096. For most disks used in the United States, the value of this field is 512. \index{fat\+\_\+boot@{fat\+\_\+boot}!drive\+Number@{drive\+Number}}
+\index{drive\+Number@{drive\+Number}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{drive\+Number}{driveNumber}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::drive\+Number}\hypertarget{structfat__boot_aebd280b93563b75b9612d3db844b0d16}{}\label{structfat__boot_aebd280b93563b75b9612d3db844b0d16}
+Related to the B\+I\+OS physical drive number. Floppy drives are identified as 0x00 and physical hard disks are identified as 0x80, regardless of the number of physical disk drives. Typically, this value is set prior to issuing an I\+NT 13h B\+I\+OS call to specify the device to access. The value is only relevant if the device is a boot device. \index{fat\+\_\+boot@{fat\+\_\+boot}!fat\+Count@{fat\+Count}}
+\index{fat\+Count@{fat\+Count}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{fat\+Count}{fatCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::fat\+Count}\hypertarget{structfat__boot_a04d3b6a45acf28a80ff909dc1b33da2f}{}\label{structfat__boot_a04d3b6a45acf28a80ff909dc1b33da2f}
+The number of copies of the F\+AT on the volume. The value of this field is always 2. \index{fat\+\_\+boot@{fat\+\_\+boot}!file\+System\+Type@{file\+System\+Type}}
+\index{file\+System\+Type@{file\+System\+Type}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{file\+System\+Type}{fileSystemType}}]{\setlength{\rightskip}{0pt plus 5cm}char fat\+\_\+boot\+::file\+System\+Type\mbox{[}8\mbox{]}}\hypertarget{structfat__boot_aee529e32908406866f3ec3c17c4632fa}{}\label{structfat__boot_aee529e32908406866f3ec3c17c4632fa}
+A field with a value of either F\+AT, F\+A\+T12 or F\+A\+T16, depending on the disk format. \index{fat\+\_\+boot@{fat\+\_\+boot}!head\+Count@{head\+Count}}
+\index{head\+Count@{head\+Count}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{head\+Count}{headCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::head\+Count}\hypertarget{structfat__boot_ae31da876cd9f48de5268a129218df2c2}{}\label{structfat__boot_ae31da876cd9f48de5268a129218df2c2}
+Number of heads for interrupt 0x13. Not used otherwise. \index{fat\+\_\+boot@{fat\+\_\+boot}!hiddden\+Sectors@{hiddden\+Sectors}}
+\index{hiddden\+Sectors@{hiddden\+Sectors}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{hiddden\+Sectors}{hidddenSectors}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat\+\_\+boot\+::hiddden\+Sectors}\hypertarget{structfat__boot_a18f1b4c245fe7bd09f5a9430c005e23a}{}\label{structfat__boot_a18f1b4c245fe7bd09f5a9430c005e23a}
+Count of hidden sectors preceding the partition that contains this F\+AT volume. This field is generally only relevant for media visible on interrupt 0x13. \index{fat\+\_\+boot@{fat\+\_\+boot}!jump@{jump}}
+\index{jump@{jump}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{jump}{jump}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::jump\mbox{[}3\mbox{]}}\hypertarget{structfat__boot_a83f9f2d1d0130f25f34c90dfc82e3751}{}\label{structfat__boot_a83f9f2d1d0130f25f34c90dfc82e3751}
+The first three bytes of the boot sector must be valid, executable x 86-\/based C\+PU instructions. This includes a jump instruction that skips the next nonexecutable bytes. \index{fat\+\_\+boot@{fat\+\_\+boot}!media\+Type@{media\+Type}}
+\index{media\+Type@{media\+Type}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{media\+Type}{mediaType}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::media\+Type}\hypertarget{structfat__boot_a63eaf7185663369af2527309634d3c90}{}\label{structfat__boot_a63eaf7185663369af2527309634d3c90}
+This dates back to the old M\+S-\/\+D\+OS 1.\+x media determination and is no longer usually used for anything. 0x\+F8 is the standard value for fixed (nonremovable) media. For removable media, 0x\+F0 is frequently used. Legal values are 0x\+F0 or 0x\+F8-\/0x\+FF. \index{fat\+\_\+boot@{fat\+\_\+boot}!oem\+Id@{oem\+Id}}
+\index{oem\+Id@{oem\+Id}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{oem\+Id}{oemId}}]{\setlength{\rightskip}{0pt plus 5cm}char fat\+\_\+boot\+::oem\+Id\mbox{[}8\mbox{]}}\hypertarget{structfat__boot_adc034212201e879fea1eb44db43e55a5}{}\label{structfat__boot_adc034212201e879fea1eb44db43e55a5}
+This is typically a string of characters that identifies the operating system that formatted the volume. \index{fat\+\_\+boot@{fat\+\_\+boot}!reserved1@{reserved1}}
+\index{reserved1@{reserved1}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{reserved1}{reserved1}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::reserved1}\hypertarget{structfat__boot_affa7e6efb3ccea19ba7ea0ddadce7463}{}\label{structfat__boot_affa7e6efb3ccea19ba7ea0ddadce7463}
+used by Windows NT -\/ should be zero for F\+AT \index{fat\+\_\+boot@{fat\+\_\+boot}!reserved\+Sector\+Count@{reserved\+Sector\+Count}}
+\index{reserved\+Sector\+Count@{reserved\+Sector\+Count}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{reserved\+Sector\+Count}{reservedSectorCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::reserved\+Sector\+Count}\hypertarget{structfat__boot_a13f272a8f780fb43a400f873a3fd7b73}{}\label{structfat__boot_a13f272a8f780fb43a400f873a3fd7b73}
+The number of sectors preceding the start of the first F\+AT, including the boot sector. The value of this field is always 1. \index{fat\+\_\+boot@{fat\+\_\+boot}!root\+Dir\+Entry\+Count@{root\+Dir\+Entry\+Count}}
+\index{root\+Dir\+Entry\+Count@{root\+Dir\+Entry\+Count}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{root\+Dir\+Entry\+Count}{rootDirEntryCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::root\+Dir\+Entry\+Count}\hypertarget{structfat__boot_a2124f89e12307df944f08e6657dbf4af}{}\label{structfat__boot_a2124f89e12307df944f08e6657dbf4af}
+For F\+A\+T12 and F\+A\+T16 volumes, this field contains the count of 32-\/byte directory entries in the root directory. For F\+A\+T32 volumes, this field must be set to 0. For F\+A\+T12 and F\+A\+T16 volumes, this value should always specify a count that when multiplied by 32 results in a multiple of bytes\+Per\+Sector. F\+A\+T16 volumes should use the value 512. \index{fat\+\_\+boot@{fat\+\_\+boot}!sectors\+Per\+Cluster@{sectors\+Per\+Cluster}}
+\index{sectors\+Per\+Cluster@{sectors\+Per\+Cluster}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{sectors\+Per\+Cluster}{sectorsPerCluster}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t fat\+\_\+boot\+::sectors\+Per\+Cluster}\hypertarget{structfat__boot_ab3063726125b16a2ccad719548d79abd}{}\label{structfat__boot_ab3063726125b16a2ccad719548d79abd}
+Number of sectors per allocation unit. This value must be a power of 2 that is greater than 0. The legal values are 1, 2, 4, 8, 16, 32, 64, and 128. 128 should be avoided. \index{fat\+\_\+boot@{fat\+\_\+boot}!sectors\+Per\+Fat16@{sectors\+Per\+Fat16}}
+\index{sectors\+Per\+Fat16@{sectors\+Per\+Fat16}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{sectors\+Per\+Fat16}{sectorsPerFat16}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::sectors\+Per\+Fat16}\hypertarget{structfat__boot_a0d5ab13399759acfa571e49b85600db1}{}\label{structfat__boot_a0d5ab13399759acfa571e49b85600db1}
+Count of sectors occupied by one F\+AT on F\+A\+T12/\+F\+A\+T16 volumes. On F\+A\+T32 volumes this field must be 0, and sectors\+Per\+Fat32 contains the F\+AT size count. \index{fat\+\_\+boot@{fat\+\_\+boot}!sectors\+Per\+Track@{sectors\+Per\+Track}}
+\index{sectors\+Per\+Track@{sectors\+Per\+Track}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{sectors\+Per\+Track}{sectorsPerTrack}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::sectors\+Per\+Track}\hypertarget{structfat__boot_a6d5ceaf374e0607be8b8162bf657f282}{}\label{structfat__boot_a6d5ceaf374e0607be8b8162bf657f282}
+Sectors per track for interrupt 0x13. Not used otherwise. \index{fat\+\_\+boot@{fat\+\_\+boot}!total\+Sectors16@{total\+Sectors16}}
+\index{total\+Sectors16@{total\+Sectors16}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{total\+Sectors16}{totalSectors16}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t fat\+\_\+boot\+::total\+Sectors16}\hypertarget{structfat__boot_ac8bd40dd9186882e423e10b0c83e89b7}{}\label{structfat__boot_ac8bd40dd9186882e423e10b0c83e89b7}
+This field is the old 16-\/bit total count of sectors on the volume. This count includes the count of all sectors in all four regions of the volume. This field can be 0; if it is 0, then total\+Sectors32 must be nonzero. For F\+A\+T32 volumes, this field must be 0. For F\+A\+T12 and F\+A\+T16 volumes, this field contains the sector count, and total\+Sectors32 is 0 if the total sector count fits (is less than 0x10000). \index{fat\+\_\+boot@{fat\+\_\+boot}!total\+Sectors32@{total\+Sectors32}}
+\index{total\+Sectors32@{total\+Sectors32}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{total\+Sectors32}{totalSectors32}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat\+\_\+boot\+::total\+Sectors32}\hypertarget{structfat__boot_addeb2dd8f78418edbf544303d44133e2}{}\label{structfat__boot_addeb2dd8f78418edbf544303d44133e2}
+This field is the new 32-\/bit total count of sectors on the volume. This count includes the count of all sectors in all four regions of the volume. This field can be 0; if it is 0, then total\+Sectors16 must be nonzero. \index{fat\+\_\+boot@{fat\+\_\+boot}!volume\+Label@{volume\+Label}}
+\index{volume\+Label@{volume\+Label}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{volume\+Label}{volumeLabel}}]{\setlength{\rightskip}{0pt plus 5cm}char fat\+\_\+boot\+::volume\+Label\mbox{[}11\mbox{]}}\hypertarget{structfat__boot_a9ee733f1b1abc0210ec8f9676bba2218}{}\label{structfat__boot_a9ee733f1b1abc0210ec8f9676bba2218}
+A field once used to store the volume label. The volume label is now stored as a special file in the root directory. \index{fat\+\_\+boot@{fat\+\_\+boot}!volume\+Serial\+Number@{volume\+Serial\+Number}}
+\index{volume\+Serial\+Number@{volume\+Serial\+Number}!fat\+\_\+boot@{fat\+\_\+boot}}
+\subsubsection[{\texorpdfstring{volume\+Serial\+Number}{volumeSerialNumber}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t fat\+\_\+boot\+::volume\+Serial\+Number}\hypertarget{structfat__boot_ac05e88a0d27f0340ba008834361d2b20}{}\label{structfat__boot_ac05e88a0d27f0340ba008834361d2b20}
+A random serial number created when formatting a disk, which helps to distinguish between disks. Usually generated by combining date and time. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/sd\+\_\+utilities/\hyperlink{_sd_fat_structs_8h}{Sd\+Fat\+Structs.\+h}\end{DoxyCompactItemize}

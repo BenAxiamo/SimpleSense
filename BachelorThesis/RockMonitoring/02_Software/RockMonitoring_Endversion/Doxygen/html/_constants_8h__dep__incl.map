@@ -1,0 +1,20 @@
+<map id="Constants.h" name="Constants.h">
+<area shape="rect" id="node3" href="$_connection3_g_8h.html" title="Connection3G.h" alt="" coords="36,229,151,256"/>
+<area shape="rect" id="node7" href="$_gateway_8h.html" title="Gateway.h" alt="" coords="319,304,403,331"/>
+<area shape="rect" id="node11" href="$_sensor_stab_8h.html" title="SensorStab.h" alt="" coords="159,304,260,331"/>
+<area shape="rect" id="node15" href="$_sensor_stab___g_s_m_8h.html" title="SensorStab_GSM.h" alt="" coords="559,304,697,331"/>
+<area shape="rect" id="node19" href="$_f_x_l_s8471_q_8h.html" title="FXLS8471Q.h" alt="" coords="161,80,263,107"/>
+<area shape="rect" id="node23" href="$_sensors_8h.html" title="Sensors.h" alt="" coords="227,155,308,181"/>
+<area shape="rect" id="node27" href="$lora__class_8h.html" title="lora_class.h" alt="" coords="447,229,539,256"/>
+<area shape="rect" id="node38" href="$_leds_8h.html" title="Leds.h" alt="" coords="615,229,676,256"/>
+<area shape="rect" id="node47" href="$_p_c_t2075_8h.html" title="PCT2075.h" alt="" coords="339,80,425,107"/>
+<area shape="rect" id="node5" href="$_connection3_g_8cpp.html" title="Connection3G.cpp" alt="" coords="5,304,133,331"/>
+<area shape="rect" id="node9" href="$_gateway_8cpp.html" title="Gateway.cpp" alt="" coords="312,379,411,405"/>
+<area shape="rect" id="node13" href="$_sensor_stab_8cpp.html" title="SensorStab.cpp" alt="" coords="152,379,267,405"/>
+<area shape="rect" id="node17" href="$_sensor_stab___g_s_m_8cpp.html" title="SensorStab_GSM.cpp" alt="" coords="552,379,704,405"/>
+<area shape="rect" id="node21" href="$_f_x_l_s8471_q_8cpp.html" title="FXLS8471Q.cpp" alt="" coords="87,155,203,181"/>
+<area shape="rect" id="node34" href="$_sensors_8cpp.html" title="Sensors.cpp" alt="" coords="226,229,320,256"/>
+<area shape="rect" id="node30" href="$lora__class_8cpp.html" title="lora_class.cpp" alt="" coords="428,304,535,331"/>
+<area shape="rect" id="node41" href="$_leds_8cpp.html" title="Leds.cpp" alt="" coords="721,304,796,331"/>
+<area shape="rect" id="node49" href="$_p_c_t2075_8cpp.html" title="PCT2075.cpp" alt="" coords="333,155,432,181"/>
+</map>

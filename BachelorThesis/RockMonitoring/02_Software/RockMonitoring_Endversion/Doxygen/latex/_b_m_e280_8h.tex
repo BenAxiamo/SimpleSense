@@ -1,0 +1,348 @@
+\hypertarget{_b_m_e280_8h}{}\section{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\+B\+M\+E280.h File Reference}
+\label{_b_m_e280_8h}\index{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\+B\+M\+E280.\+h@{C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/libraries/\+Sensor\+Gas\+\_\+\+P\+R\+O/\+B\+M\+E280.\+h}}
+
+
+Library for managing the \hyperlink{class_b_m_e280}{B\+M\+E280} sensor.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_b_m_e280}{B\+M\+E280}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_m_e280}{B\+M\+E280} Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+E\+B\+UG}~0\hypertarget{_b_m_e280_8h_ab81a3c64dcb4d60bbba0b40a0d05d956}{}\label{_b_m_e280_8h_ab81a3c64dcb4d60bbba0b40a0d05d956}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_a4db27e6a138fa0ba5c2f5779467b5871}{B\+M\+E280\+\_\+\+S\+L\+E\+E\+P\+\_\+\+M\+O\+DE}~0x00\hypertarget{_b_m_e280_8h_a4db27e6a138fa0ba5c2f5779467b5871}{}\label{_b_m_e280_8h_a4db27e6a138fa0ba5c2f5779467b5871}
+
+\begin{DoxyCompactList}\small\item\em Sensor Specific constants. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+F\+O\+R\+C\+E\+D\+\_\+\+M\+O\+DE}~0x01\hypertarget{_b_m_e280_8h_ae59bb15caa6e0a75e373286eacb5abc4}{}\label{_b_m_e280_8h_ae59bb15caa6e0a75e373286eacb5abc4}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+DE}~0x03\hypertarget{_b_m_e280_8h_a8a9c2aa9289d646803badb7d7fdbd5cb}{}\label{_b_m_e280_8h_a8a9c2aa9289d646803badb7d7fdbd5cb}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+O\+F\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+O\+DE}~0x\+B6\hypertarget{_b_m_e280_8h_aaeaec910fc12353ed56d6c71767caf6d}{}\label{_b_m_e280_8h_aaeaec910fc12353ed56d6c71767caf6d}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+1\+\_\+\+MS}~0x00\hypertarget{_b_m_e280_8h_a96007052b64f48620c27a4b929d7b0c5}{}\label{_b_m_e280_8h_a96007052b64f48620c27a4b929d7b0c5}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+63\+\_\+\+MS}~0x01\hypertarget{_b_m_e280_8h_adb80a14712ac1d667e76ada099095485}{}\label{_b_m_e280_8h_adb80a14712ac1d667e76ada099095485}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+125\+\_\+\+MS}~0x02\hypertarget{_b_m_e280_8h_abda2854c877d0ab552b0d3a5e92ce06a}{}\label{_b_m_e280_8h_abda2854c877d0ab552b0d3a5e92ce06a}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+250\+\_\+\+MS}~0x03\hypertarget{_b_m_e280_8h_a3c7744e622d09172d4c6fe19d5060901}{}\label{_b_m_e280_8h_a3c7744e622d09172d4c6fe19d5060901}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+500\+\_\+\+MS}~0x04\hypertarget{_b_m_e280_8h_a822d215c13193c2e88010c2c911a1e7c}{}\label{_b_m_e280_8h_a822d215c13193c2e88010c2c911a1e7c}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+1000\+\_\+\+MS}~0x05\hypertarget{_b_m_e280_8h_afe13ba4269e78b8a5b2463fbff88fdc9}{}\label{_b_m_e280_8h_afe13ba4269e78b8a5b2463fbff88fdc9}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+10\+\_\+\+MS}~0x06\hypertarget{_b_m_e280_8h_a2d9584d45556539af37055d1cee375df}{}\label{_b_m_e280_8h_a2d9584d45556539af37055d1cee375df}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+N\+D\+B\+Y\+\_\+\+T\+I\+M\+E\+\_\+20\+\_\+\+MS}~0x07\hypertarget{_b_m_e280_8h_ae9926694b90ad9154a2c849a7bceb7f6}{}\label{_b_m_e280_8h_ae9926694b90ad9154a2c849a7bceb7f6}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_abcf371c3d0d12d73d349aa5fbf634229}{B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+S\+K\+I\+P\+P\+ED}~0x00\hypertarget{_b_m_e280_8h_abcf371c3d0d12d73d349aa5fbf634229}{}\label{_b_m_e280_8h_abcf371c3d0d12d73d349aa5fbf634229}
+
+\begin{DoxyCompactList}\small\item\em Oversampling constants (ctrl\+\_\+hum\+\_\+reg and ctrl\+\_\+meas\+\_\+reg) \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+1X}~0x01\hypertarget{_b_m_e280_8h_a05967ed78460d980bda3ab61596cf44a}{}\label{_b_m_e280_8h_a05967ed78460d980bda3ab61596cf44a}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+2X}~0x02\hypertarget{_b_m_e280_8h_ac22e6bb8c580a32fbbb5cb2d58018f55}{}\label{_b_m_e280_8h_ac22e6bb8c580a32fbbb5cb2d58018f55}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+4X}~0x03\hypertarget{_b_m_e280_8h_a976874b3e3db2acf54f50b655dc57154}{}\label{_b_m_e280_8h_a976874b3e3db2acf54f50b655dc57154}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+8X}~0x04\hypertarget{_b_m_e280_8h_a2d1eb4f63f2c9648c4da35401a6a69b4}{}\label{_b_m_e280_8h_a2d1eb4f63f2c9648c4da35401a6a69b4}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+16X}~0x05\hypertarget{_b_m_e280_8h_ab23c43ddb9565c25d9a62dd26a002769}{}\label{_b_m_e280_8h_ab23c43ddb9565c25d9a62dd26a002769}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_ae61c58ec304b87f6f9726992af323dc3}{B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+\+O\+FF}~0x00\hypertarget{_b_m_e280_8h_ae61c58ec304b87f6f9726992af323dc3}{}\label{_b_m_e280_8h_ae61c58ec304b87f6f9726992af323dc3}
+
+\begin{DoxyCompactList}\small\item\em Filter constants. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+2}~0x01\hypertarget{_b_m_e280_8h_a225fa757613310b9dfd1cb83cfe71080}{}\label{_b_m_e280_8h_a225fa757613310b9dfd1cb83cfe71080}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+4}~0x02\hypertarget{_b_m_e280_8h_a75df0ff360627c3efdd98ad38a92dab0}{}\label{_b_m_e280_8h_a75df0ff360627c3efdd98ad38a92dab0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+8}~0x03\hypertarget{_b_m_e280_8h_ae6f638d18f380c7e537c02c7bb1a6c22}{}\label{_b_m_e280_8h_ae6f638d18f380c7e537c02c7bb1a6c22}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+16}~0x04\hypertarget{_b_m_e280_8h_a73ced29de70a4fe0fa1f05676b2604e4}{}\label{_b_m_e280_8h_a73ced29de70a4fe0fa1f05676b2604e4}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_a95bded41d4d21e0dc9d5e90cef46e2f0}{B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+T1\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x88\hypertarget{_b_m_e280_8h_a95bded41d4d21e0dc9d5e90cef46e2f0}{}\label{_b_m_e280_8h_a95bded41d4d21e0dc9d5e90cef46e2f0}
+
+\begin{DoxyCompactList}\small\item\em Register address. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+T1\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x89\hypertarget{_b_m_e280_8h_ab41e00320fc3817544911020c4892ce9}{}\label{_b_m_e280_8h_ab41e00320fc3817544911020c4892ce9}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+T2\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x8A\hypertarget{_b_m_e280_8h_aeb987cec0df70171e3f36e5d3b68f57b}{}\label{_b_m_e280_8h_aeb987cec0df70171e3f36e5d3b68f57b}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+T2\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x8B\hypertarget{_b_m_e280_8h_a04dadb44784187c69a905720ce955e84}{}\label{_b_m_e280_8h_a04dadb44784187c69a905720ce955e84}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+T3\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x8C\hypertarget{_b_m_e280_8h_aa900c543759fa27e583393ef8740c37a}{}\label{_b_m_e280_8h_aa900c543759fa27e583393ef8740c37a}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+T3\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x8D\hypertarget{_b_m_e280_8h_a656d326254d65330c2bdf9482ca590fc}{}\label{_b_m_e280_8h_a656d326254d65330c2bdf9482ca590fc}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P1\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x8E\hypertarget{_b_m_e280_8h_a4e93de21dbe08f37e606c40c9fc144d0}{}\label{_b_m_e280_8h_a4e93de21dbe08f37e606c40c9fc144d0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P1\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x8F\hypertarget{_b_m_e280_8h_ad521625b8228f27c5bd1408f11c82705}{}\label{_b_m_e280_8h_ad521625b8228f27c5bd1408f11c82705}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P2\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x90\hypertarget{_b_m_e280_8h_a413900b0f4aa9c057203f6b198e78806}{}\label{_b_m_e280_8h_a413900b0f4aa9c057203f6b198e78806}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P2\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x91\hypertarget{_b_m_e280_8h_afa34e3a536046bc6156a1ed4bb507d95}{}\label{_b_m_e280_8h_afa34e3a536046bc6156a1ed4bb507d95}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P3\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x92\hypertarget{_b_m_e280_8h_adcc5e52670f45b9f63a9135c5e1c5492}{}\label{_b_m_e280_8h_adcc5e52670f45b9f63a9135c5e1c5492}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P3\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x93\hypertarget{_b_m_e280_8h_a37526ca63d516cbca0117a54e9266190}{}\label{_b_m_e280_8h_a37526ca63d516cbca0117a54e9266190}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P4\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x94\hypertarget{_b_m_e280_8h_a74ecf31c885677d4d6b8a3d8db22ee6d}{}\label{_b_m_e280_8h_a74ecf31c885677d4d6b8a3d8db22ee6d}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P4\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x95\hypertarget{_b_m_e280_8h_a7df62b54283c277da20b12bb322870e0}{}\label{_b_m_e280_8h_a7df62b54283c277da20b12bb322870e0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P5\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x96\hypertarget{_b_m_e280_8h_a7054983fb5c397ec63838d2b6d047a12}{}\label{_b_m_e280_8h_a7054983fb5c397ec63838d2b6d047a12}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P5\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x97\hypertarget{_b_m_e280_8h_ac038f66828c72b71559096efafa76970}{}\label{_b_m_e280_8h_ac038f66828c72b71559096efafa76970}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P6\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x98\hypertarget{_b_m_e280_8h_a7e12334e305f1665cbcaa02bdbb38909}{}\label{_b_m_e280_8h_a7e12334e305f1665cbcaa02bdbb38909}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P6\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x99\hypertarget{_b_m_e280_8h_ac43647d729a7d57221ecb0cf139accb4}{}\label{_b_m_e280_8h_ac43647d729a7d57221ecb0cf139accb4}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P7\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x9A\hypertarget{_b_m_e280_8h_a70f6683a4c3c0818405ca3880f28a109}{}\label{_b_m_e280_8h_a70f6683a4c3c0818405ca3880f28a109}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P7\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x9B\hypertarget{_b_m_e280_8h_a7587b0d965b303fec2c2d4371add623f}{}\label{_b_m_e280_8h_a7587b0d965b303fec2c2d4371add623f}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P8\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x9C\hypertarget{_b_m_e280_8h_afe625f2ec64c74d6488a93ba04575b24}{}\label{_b_m_e280_8h_afe625f2ec64c74d6488a93ba04575b24}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P8\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x9D\hypertarget{_b_m_e280_8h_a26633dd2c5b34de0d5163e11f9e3a22d}{}\label{_b_m_e280_8h_a26633dd2c5b34de0d5163e11f9e3a22d}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P9\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x9E\hypertarget{_b_m_e280_8h_a24f19ebc8092ddede86f5533b9f09313}{}\label{_b_m_e280_8h_a24f19ebc8092ddede86f5533b9f09313}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+P9\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x9F\hypertarget{_b_m_e280_8h_a819382b7d14efff4294e19f9a72010b3}{}\label{_b_m_e280_8h_a819382b7d14efff4294e19f9a72010b3}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H1\+\_\+\+R\+EG}~0x\+A1\hypertarget{_b_m_e280_8h_ad29dd403735dc3c3225c6838e5eed820}{}\label{_b_m_e280_8h_ad29dd403735dc3c3225c6838e5eed820}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H2\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x\+E1\hypertarget{_b_m_e280_8h_a260ba9aa4ae925ed4a76a2f45a62e1f2}{}\label{_b_m_e280_8h_a260ba9aa4ae925ed4a76a2f45a62e1f2}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H2\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x\+E2\hypertarget{_b_m_e280_8h_aaf8b4172339b971f5a5b108c98d5d2fe}{}\label{_b_m_e280_8h_aaf8b4172339b971f5a5b108c98d5d2fe}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H3\+\_\+\+R\+EG}~0x\+E3\hypertarget{_b_m_e280_8h_adbb9946cb6a096b6ff1f0226c0e7a659}{}\label{_b_m_e280_8h_adbb9946cb6a096b6ff1f0226c0e7a659}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H4\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x\+E4\hypertarget{_b_m_e280_8h_a8dc154fcd1e08088d289ce668c4d718a}{}\label{_b_m_e280_8h_a8dc154fcd1e08088d289ce668c4d718a}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H5\+\_\+\+L\+S\+B\+\_\+\+H4\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x\+E5\hypertarget{_b_m_e280_8h_ad45dcf74eea8e8034f9c088ce24245af}{}\label{_b_m_e280_8h_ad45dcf74eea8e8034f9c088ce24245af}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H5\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x\+E6\hypertarget{_b_m_e280_8h_ae7e42b75f0268a4303b77699fb8be834}{}\label{_b_m_e280_8h_ae7e42b75f0268a4303b77699fb8be834}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+D\+I\+G\+\_\+\+H6\+\_\+\+R\+EG}~0x\+E7\hypertarget{_b_m_e280_8h_aa53163d82db48577fdb9a83112226e2c}{}\label{_b_m_e280_8h_aa53163d82db48577fdb9a83112226e2c}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+H\+I\+P\+\_\+\+I\+D\+\_\+\+R\+EG}~0x\+D0\hypertarget{_b_m_e280_8h_a2827491ed8c1242d45360a6528b2ad7a}{}\label{_b_m_e280_8h_a2827491ed8c1242d45360a6528b2ad7a}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+R\+S\+T\+\_\+\+R\+EG}~0x\+E0\hypertarget{_b_m_e280_8h_a58ebcaa8ff137ca7e8704dbfb70dff57}{}\label{_b_m_e280_8h_a58ebcaa8ff137ca7e8704dbfb70dff57}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG}~0x\+F3\hypertarget{_b_m_e280_8h_ae8869864cbf76f7320c8abbcfd9d6bcf}{}\label{_b_m_e280_8h_ae8869864cbf76f7320c8abbcfd9d6bcf}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+EG}~0x\+F4\hypertarget{_b_m_e280_8h_a34483b4a562393f91fe3f01d676abb88}{}\label{_b_m_e280_8h_a34483b4a562393f91fe3f01d676abb88}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+R\+EG}~0x\+F2\hypertarget{_b_m_e280_8h_a6da31fc4446b80cf5a830a5df45a5743}{}\label{_b_m_e280_8h_a6da31fc4446b80cf5a830a5df45a5743}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+EG}~0x\+F5\hypertarget{_b_m_e280_8h_a70c225069ef92e5da90ee45362f7ba69}{}\label{_b_m_e280_8h_a70c225069ef92e5da90ee45362f7ba69}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x\+F7\hypertarget{_b_m_e280_8h_ac60d376f920e64fe5855852658041c82}{}\label{_b_m_e280_8h_ac60d376f920e64fe5855852658041c82}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x\+F8\hypertarget{_b_m_e280_8h_acba4811c6b0815f807732a8c90cb1311}{}\label{_b_m_e280_8h_acba4811c6b0815f807732a8c90cb1311}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+EG}~0x\+F9\hypertarget{_b_m_e280_8h_a76fa207f16ead1434519745ce83763e4}{}\label{_b_m_e280_8h_a76fa207f16ead1434519745ce83763e4}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x\+FA\hypertarget{_b_m_e280_8h_a274a08bbc75e1b359aa6c46b50954b33}{}\label{_b_m_e280_8h_a274a08bbc75e1b359aa6c46b50954b33}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x\+FB\hypertarget{_b_m_e280_8h_ab54b428fbb78e70606ce994fcbfbc6aa}{}\label{_b_m_e280_8h_ab54b428fbb78e70606ce994fcbfbc6aa}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+EG}~0x\+FC\hypertarget{_b_m_e280_8h_a1376db91beb753a83dbbd8f1d0716a56}{}\label{_b_m_e280_8h_a1376db91beb753a83dbbd8f1d0716a56}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+M\+S\+B\+\_\+\+R\+EG}~0x\+FD\hypertarget{_b_m_e280_8h_a463b030450826d7a286b272753c7c91c}{}\label{_b_m_e280_8h_a463b030450826d7a286b272753c7c91c}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+L\+S\+B\+\_\+\+R\+EG}~0x\+FE\hypertarget{_b_m_e280_8h_a477dde6d1d96211aff748215ea9cd4dc}{}\label{_b_m_e280_8h_a477dde6d1d96211aff748215ea9cd4dc}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_adb7ec156dcbf974883574e16c283e6db}{B\+M\+E280\+\_\+\+C\+H\+I\+P\+\_\+\+I\+D\+\_\+\+R\+E\+G\+\_\+\+C\+H\+I\+P\+\_\+\+ID}~0x60\hypertarget{_b_m_e280_8h_adb7ec156dcbf974883574e16c283e6db}{}\label{_b_m_e280_8h_adb7ec156dcbf974883574e16c283e6db}
+
+\begin{DoxyCompactList}\small\item\em ID Register. \end{DoxyCompactList}\item 
+\#define \hyperlink{_b_m_e280_8h_ab0f30a9cade6e4b8449837f9e4b1f175}{B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+G\+\_\+\+M\+E\+A\+S\+U\+R\+I\+N\+G\+\_\+\+\_\+\+P\+OS}~3\hypertarget{_b_m_e280_8h_ab0f30a9cade6e4b8449837f9e4b1f175}{}\label{_b_m_e280_8h_ab0f30a9cade6e4b8449837f9e4b1f175}
+
+\begin{DoxyCompactList}\small\item\em Status Register. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+G\+\_\+\+M\+E\+A\+S\+U\+R\+I\+N\+G\+\_\+\+\_\+\+M\+SK}~0x08\hypertarget{_b_m_e280_8h_a8da42d714025e036d1b0f20fe331ada9}{}\label{_b_m_e280_8h_a8da42d714025e036d1b0f20fe331ada9}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+G\+\_\+\+M\+E\+A\+S\+U\+R\+I\+N\+G\+\_\+\+\_\+\+L\+EN}~1\hypertarget{_b_m_e280_8h_ad8ae45a418448790bdf8817e9c9852a0}{}\label{_b_m_e280_8h_ad8ae45a418448790bdf8817e9c9852a0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+G\+\_\+\+I\+M\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+\_\+\+P\+OS}~0\hypertarget{_b_m_e280_8h_a5b8bcb61a49ff4f04d46a5efc32d2ba6}{}\label{_b_m_e280_8h_a5b8bcb61a49ff4f04d46a5efc32d2ba6}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+G\+\_\+\+I\+M\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+\_\+\+M\+SK}~0x01\hypertarget{_b_m_e280_8h_a5d0cc0178b6317664389a0f3dd15ab98}{}\label{_b_m_e280_8h_a5d0cc0178b6317664389a0f3dd15ab98}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+G\+\_\+\+I\+M\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+\_\+\+L\+EN}~1\hypertarget{_b_m_e280_8h_a11b07487118d29b34617d518828502a5}{}\label{_b_m_e280_8h_a11b07487118d29b34617d518828502a5}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_a83adf541c4799f8ddf2b250700721442}{B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+\_\+\+P\+OS}~5\hypertarget{_b_m_e280_8h_a83adf541c4799f8ddf2b250700721442}{}\label{_b_m_e280_8h_a83adf541c4799f8ddf2b250700721442}
+
+\begin{DoxyCompactList}\small\item\em Control Measurement Register. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+\_\+\+M\+SK}~0x\+E0\hypertarget{_b_m_e280_8h_abf22141a2e3cfab59d3db74488f735a0}{}\label{_b_m_e280_8h_abf22141a2e3cfab59d3db74488f735a0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+\_\+\+L\+EN}~3\hypertarget{_b_m_e280_8h_a1ee2a85ddf7cc87fe57c9c644bd023f3}{}\label{_b_m_e280_8h_a1ee2a85ddf7cc87fe57c9c644bd023f3}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+\_\+\+P\+OS}~2\hypertarget{_b_m_e280_8h_a05032b45b61726be42d540f4d50b10bd}{}\label{_b_m_e280_8h_a05032b45b61726be42d540f4d50b10bd}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+\_\+\+M\+SK}~0x1C\hypertarget{_b_m_e280_8h_aa999deca96d3cc40caf8cef78a7b7c13}{}\label{_b_m_e280_8h_aa999deca96d3cc40caf8cef78a7b7c13}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+\_\+\+L\+EN}~3\hypertarget{_b_m_e280_8h_a47c33e47355aef0914a75ccfe1269d69}{}\label{_b_m_e280_8h_a47c33e47355aef0914a75ccfe1269d69}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+P\+OS}~0\hypertarget{_b_m_e280_8h_adf01e47f951dee2934c6b6d7611a4963}{}\label{_b_m_e280_8h_adf01e47f951dee2934c6b6d7611a4963}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+SK}~0x03\hypertarget{_b_m_e280_8h_a300fad25fbc83139348cb4b9d1f78b84}{}\label{_b_m_e280_8h_a300fad25fbc83139348cb4b9d1f78b84}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+M\+E\+A\+S\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+L\+EN}~2\hypertarget{_b_m_e280_8h_a214284056c470cb41eb9249d6f4ac646}{}\label{_b_m_e280_8h_a214284056c470cb41eb9249d6f4ac646}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_a3b7401aef31c94e2113eb20e4067d730}{B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+\_\+\+P\+OS}~0\hypertarget{_b_m_e280_8h_a3b7401aef31c94e2113eb20e4067d730}{}\label{_b_m_e280_8h_a3b7401aef31c94e2113eb20e4067d730}
+
+\begin{DoxyCompactList}\small\item\em Control Humidity Register. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+\_\+\+M\+SK}~0x07\hypertarget{_b_m_e280_8h_ae8a0ae149a901ec7c8125c408bfd5519}{}\label{_b_m_e280_8h_ae8a0ae149a901ec7c8125c408bfd5519}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+T\+R\+L\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+R\+E\+G\+\_\+\+O\+V\+E\+R\+S\+A\+M\+\_\+\+H\+U\+M\+I\+D\+I\+T\+Y\+\_\+\+\_\+\+L\+EN}~3\hypertarget{_b_m_e280_8h_a1320318848ffb0f5fcf494f80ef878a8}{}\label{_b_m_e280_8h_a1320318848ffb0f5fcf494f80ef878a8}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_a64b0a5e480c70389a81797d24159c09d}{B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+T\+S\+B\+\_\+\+\_\+\+P\+OS}~5\hypertarget{_b_m_e280_8h_a64b0a5e480c70389a81797d24159c09d}{}\label{_b_m_e280_8h_a64b0a5e480c70389a81797d24159c09d}
+
+\begin{DoxyCompactList}\small\item\em Configuration Register. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+T\+S\+B\+\_\+\+\_\+\+M\+SK}~0x\+E0\hypertarget{_b_m_e280_8h_a13bc6c52e08937f6258dd1bafe57403b}{}\label{_b_m_e280_8h_a13bc6c52e08937f6258dd1bafe57403b}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+T\+S\+B\+\_\+\+\_\+\+L\+EN}~3\hypertarget{_b_m_e280_8h_a24fc0818630315911555c857ce96da1c}{}\label{_b_m_e280_8h_a24fc0818630315911555c857ce96da1c}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+\_\+\+P\+OS}~2\hypertarget{_b_m_e280_8h_a236416ba4aa121935ed6b25f3ea8c62c}{}\label{_b_m_e280_8h_a236416ba4aa121935ed6b25f3ea8c62c}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+\_\+\+M\+SK}~0x1C\hypertarget{_b_m_e280_8h_a3a5dead94f11798c296c58e556fc54a0}{}\label{_b_m_e280_8h_a3a5dead94f11798c296c58e556fc54a0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+\_\+\+L\+EN}~3\hypertarget{_b_m_e280_8h_ad1f3ccacdafec120a031e265af4ea8ff}{}\label{_b_m_e280_8h_ad1f3ccacdafec120a031e265af4ea8ff}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+S\+P\+I3\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+\_\+\+P\+OS}~0\hypertarget{_b_m_e280_8h_a38ad673d933ae55ffbe0ed1a1140d97c}{}\label{_b_m_e280_8h_a38ad673d933ae55ffbe0ed1a1140d97c}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+S\+P\+I3\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+\_\+\+M\+SK}~0x01\hypertarget{_b_m_e280_8h_a2ad6d6f9bbad5de23ac8dfbc9bb72be4}{}\label{_b_m_e280_8h_a2ad6d6f9bbad5de23ac8dfbc9bb72be4}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+S\+P\+I3\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+\_\+\+L\+EN}~1\hypertarget{_b_m_e280_8h_ac34cd761e167b41660f9e90922e9f86d}{}\label{_b_m_e280_8h_ac34cd761e167b41660f9e90922e9f86d}
+
+\item 
+\#define \hyperlink{_b_m_e280_8h_ac7e77e9d3b099f3c601ee826f43fe624}{B\+M\+E280\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+\_\+\+P\+OS}~4\hypertarget{_b_m_e280_8h_ac7e77e9d3b099f3c601ee826f43fe624}{}\label{_b_m_e280_8h_ac7e77e9d3b099f3c601ee826f43fe624}
+
+\begin{DoxyCompactList}\small\item\em Data Register. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+\_\+\+M\+SK}~0x\+F0\hypertarget{_b_m_e280_8h_a7ce6bced58c9e2d09eed2462c05361c0}{}\label{_b_m_e280_8h_a7ce6bced58c9e2d09eed2462c05361c0}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+\_\+\+L\+EN}~4\hypertarget{_b_m_e280_8h_a6683ce56b3bd1c991cea2bc436b3bd8b}{}\label{_b_m_e280_8h_a6683ce56b3bd1c991cea2bc436b3bd8b}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+\_\+\+P\+OS}~4\hypertarget{_b_m_e280_8h_a0a43b90ecbaf1230b99be1c532b89f8d}{}\label{_b_m_e280_8h_a0a43b90ecbaf1230b99be1c532b89f8d}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+\_\+\+M\+SK}~0x\+F0\hypertarget{_b_m_e280_8h_a0278cc38dc1b8b48d762ee7a777120be}{}\label{_b_m_e280_8h_a0278cc38dc1b8b48d762ee7a777120be}
+
+\item 
+\#define {\bfseries B\+M\+E280\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+X\+L\+S\+B\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+\_\+\+L\+EN}~4\hypertarget{_b_m_e280_8h_a299d053488d0e6d2bdbd2634fd1b6e50}{}\label{_b_m_e280_8h_a299d053488d0e6d2bdbd2634fd1b6e50}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_m_e280}{B\+M\+E280} {\bfseries B\+ME}\hypertarget{_b_m_e280_8h_a60f64e9e4b1987233a3a96ace43e07ef}{}\label{_b_m_e280_8h_a60f64e9e4b1987233a3a96ace43e07ef}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Library for managing the \hyperlink{class_b_m_e280}{B\+M\+E280} sensor. 
+
+Copyright (C) 2015 Libelium Comunicaciones Distribuidas S.\+L. \href{http://www.libelium.com}{\tt http\+://www.\+libelium.\+com}
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU Lesser General Public License as published by the Free Software Foundation, either version 2.\+1 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU Lesser General Public License for more details.
+
+You should have received a copy of the G\+NU Lesser General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+Version\+: 1.\+2 Design\+: David Gascón Implementation\+: Alejandro Gállego 

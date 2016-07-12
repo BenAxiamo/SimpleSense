@@ -1,0 +1,48 @@
+\hypertarget{group__util__parity}{}\section{$<$util/parity.h$>$\+: Parity bit generation}
+\label{group__util__parity}\index{$<$util/parity.\+h$>$\+: Parity bit generation@{$<$util/parity.\+h$>$\+: Parity bit generation}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__util__parity_ga4180eaa9b8f27f8efc589f3a3ba1724c}{parity\+\_\+even\+\_\+bit}(val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{util_2parity_8h}{util/parity.h}>} 
+\end{DoxyCode}
+
+
+This header file contains optimized assembler code to calculate the parity bit for a byte. 
+
+\subsection{Macro Definition Documentation}
+\index{$<$util/parity.\+h$>$\+: Parity bit generation@{$<$util/parity.\+h$>$\+: Parity bit generation}!parity\+\_\+even\+\_\+bit@{parity\+\_\+even\+\_\+bit}}
+\index{parity\+\_\+even\+\_\+bit@{parity\+\_\+even\+\_\+bit}!$<$util/parity.\+h$>$\+: Parity bit generation@{$<$util/parity.\+h$>$\+: Parity bit generation}}
+\subsubsection[{\texorpdfstring{parity\+\_\+even\+\_\+bit}{parity_even_bit}}]{\setlength{\rightskip}{0pt plus 5cm}\#define parity\+\_\+even\+\_\+bit(
+\begin{DoxyParamCaption}
+\item[{}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{group__util__parity_ga4180eaa9b8f27f8efc589f3a3ba1724c}{}\label{group__util__parity_ga4180eaa9b8f27f8efc589f3a3ba1724c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\_\_extension\_\_(\{                    \(\backslash\)
+    unsigned \textcolor{keywordtype}{char} \_\_t;              \(\backslash\)
+    \_\_asm\_\_ (                   \(\backslash\)
+        \textcolor{stringliteral}{"mov \_\_tmp\_reg\_\_,%0"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}     \(\backslash\)
+        \textcolor{stringliteral}{"swap %0"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}            \(\backslash\)
+        \textcolor{stringliteral}{"eor %0,\_\_tmp\_reg\_\_"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}     \(\backslash\)
+        \textcolor{stringliteral}{"mov \_\_tmp\_reg\_\_,%0"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}     \(\backslash\)
+        \textcolor{stringliteral}{"lsr %0"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}             \(\backslash\)
+        \textcolor{stringliteral}{"lsr %0"} \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t"}             \(\backslash\)
+        \textcolor{stringliteral}{"eor %0,\_\_tmp\_reg\_\_"}            \(\backslash\)
+        : \textcolor{stringliteral}{"=r"} (\_\_t)                \(\backslash\)
+        : \textcolor{stringliteral}{"0"} ((\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char})(val))        \(\backslash\)
+        : \textcolor{stringliteral}{"r0"}                  \(\backslash\)
+    );                      \(\backslash\)
+    (((\_\_t + 1) >> 1) & 1);             \(\backslash\)
+ \}))
+\end{DoxyCode}
+\begin{DoxyReturn}{Returns}
+1 if {\ttfamily val} has an odd number of bits set. 
+\end{DoxyReturn}

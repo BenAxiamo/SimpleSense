@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=NetC3_2 Pin=D3-1
+Removed Pin From Net: NetName=NetC1_2 Pin=D3-2
+Removed Pin From Net: NetName=NetC1_2 Pin=X2-1
+Removed Member From Class: ClassName=power_supply Member=D3
+Change Component Footprint: Designator=C1 Old Footprint=0402 New Footprint=C1210
+Change Component Footprint: Designator=C2 Old Footprint=0402 New Footprint=C1210
+Change Component Footprint: Designator=C3 Old Footprint=0402 New Footprint=C1210
+Added Component: Designator=R2(0603)
+Added Component: Designator=U?(Z03A)
+Added Component: Designator=X4(NOTIFICATION_CONNECTOR)
+Added Pin To Net: NetName=NetR1_1 Pin=R2-1
+Added Pin To Net: NetName=NetC1_2 Pin=U?-1
+Added Pin To Net: NetName=NetR1_1 Pin=U?-3
+Added Pin To Net: NetName=NetC3_2 Pin=X2-1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=U?-2
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetU1_5 Pin=U1-5
+Added Pin To Net: NetName=NetU1_5 Pin=X4-2
+Added Net: Name=NetU1_5
+Added Pin To Net: NetName=NetU1_8 Pin=U1-8
+Added Pin To Net: NetName=NetU1_8 Pin=X4-1
+Added Net: Name=NetU1_8
+Added Member To Class: ClassName=power_supply Member=Component R5 Res2
+Added Member To Class: ClassName=power_supply Member=Component U? LM234Z-3
+Added Member To Class: ClassName=power_supply Member=Component X4 Notification

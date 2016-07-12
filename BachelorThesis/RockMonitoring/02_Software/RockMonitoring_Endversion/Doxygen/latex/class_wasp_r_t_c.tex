@@ -1,0 +1,1108 @@
+\hypertarget{class_wasp_r_t_c}{}\section{Wasp\+R\+TC Class Reference}
+\label{class_wasp_r_t_c}\index{Wasp\+R\+TC@{Wasp\+R\+TC}}
+
+
+\hyperlink{class_wasp_r_t_c}{Wasp\+R\+TC} Class.  
+
+
+
+
+{\ttfamily \#include $<$Wasp\+R\+T\+C.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wasp_r_t_c_aef80633b0a26b22b0d0eec240a1575df}{Wasp\+R\+TC} ()
+\begin{DoxyCompactList}\small\item\em class constructor \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a8c8178ff8fbedd06dda5143bbfab3ef9}{B\+C\+D2byte} (uint8\+\_\+t number)
+\begin{DoxyCompactList}\small\item\em It converts a number from B\+CD to byte. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a3736d3652382ab153bdd4387ee91d899}{B\+C\+D2byte} (uint8\+\_\+t high, uint8\+\_\+t low)
+\begin{DoxyCompactList}\small\item\em It converts a number from B\+CD to byte. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a9f8cbe6f261ec1d08faf0ebd24d02b8a}{byte2\+B\+CD} (uint8\+\_\+t the\+Number)
+\begin{DoxyCompactList}\small\item\em It converts a number from int to B\+CD. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_ac8df10139c5157e797836bad6d9ad62f}{reset\+Vars} ()
+\begin{DoxyCompactList}\small\item\em It resets the variables used through the library. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_r_t_c_a34711fa7b3af46d78bda4542c84343d7}{get\+Timestamp} ()
+\begin{DoxyCompactList}\small\item\em It gets date and time. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a89edbeff8b1f54b4bf19606651d946de}{write\+R\+TC} ()
+\begin{DoxyCompactList}\small\item\em It writes the date and time set in the corresponding variables to the R\+TC. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a5e57fe11b7980ff3c2b14503a1255915}{read\+R\+TC} (uint8\+\_\+t end\+Address)
+\item 
+void \hyperlink{class_wasp_r_t_c_a7b6291e110c876a031ab4e110407514e}{write\+R\+T\+Cregister} (uint8\+\_\+t the\+Address)
+\begin{DoxyCompactList}\small\item\em It writes to the R\+TC the selected registers stored in \textquotesingle{}registers\+R\+TC\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a17946ba1e6c84c822ffa8619ce1d02dd}{read\+R\+T\+Cregister} (uint8\+\_\+t the\+Address)
+\begin{DoxyCompactList}\small\item\em It reads from the R\+TC the selected register, and stores it in \textquotesingle{}registers\+R\+TC\textquotesingle{} variable. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_ae2a1e1937063883d9d56c34758ce8f86}{configure\+Alarm\+Mode} (uint8\+\_\+t alarm\+Num, uint8\+\_\+t alarm\+Mode)
+\begin{DoxyCompactList}\small\item\em It configures the alarm mode and attaches the interruption. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a3254cf8ebea2137e3d2ea79b769616b6}{write\+R\+T\+Calarm1} ()
+\begin{DoxyCompactList}\small\item\em It writes Alarm1 to the R\+TC. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a13f247f7ecb79283c8e96115c76b8e23}{write\+R\+T\+Calarm2} ()
+\begin{DoxyCompactList}\small\item\em It writes Alarm2 to the R\+TC. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a5e974e6eb577f1eac623c154f4933c59}{attach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It attaches the interruption to the defined pin. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_ab447bc9512cfe45364f8fa5a7aad37c6}{detach\+Int} (void)
+\begin{DoxyCompactList}\small\item\em It detaches the interruption from the defined pin. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_ab3e685d098a070d59e6955ccaae36be2}{ON} ()
+\begin{DoxyCompactList}\small\item\em It powers the R\+TC and initializes variables. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_aba6ddf7b8a066ae1d2cdfa6609d5dcbc}{O\+FF} ()
+\begin{DoxyCompactList}\small\item\em It closes I2C and powers off the R\+TC module. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_ae9ed6b1f9d02e69f83125aefdb561cfe}{close} ()
+\begin{DoxyCompactList}\small\item\em It closes I2C bus. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a680cc0ae58d1768fe95ea12548321f44}{set\+Mode} (uint8\+\_\+t mode, uint8\+\_\+t I2\+C\+\_\+mode)
+\begin{DoxyCompactList}\small\item\em It sets Power Mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_af365757369b6f1f4fe5c026bc2a2a059}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em It gets Power Mode. \end{DoxyCompactList}\item 
+int \hyperlink{class_wasp_r_t_c_ae46667354809aece99983084773cf976}{dow} (int y, int m, int d)
+\begin{DoxyCompactList}\small\item\em It calculates the day of the week based on the complete date. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}{set\+Time} (const char $\ast$time)
+\begin{DoxyCompactList}\small\item\em It sets in the R\+TC the specified date and time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ac4a457e1fe7dbf6c2c71a338a4d774f6}{set\+Time} (uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ad646e9d4a4255e945ca438ccc8f85f3e}{year}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ac9753d846137f17f54c9af1dc1dc9902}{month}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_afc2f32d6e3915726394eb5f0a52920fc}{date}, uint8\+\_\+t day\+\_\+week, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{second})
+\begin{DoxyCompactList}\small\item\em It sets in the R\+TC the specified date and time. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{class_wasp_r_t_c_adeaf194910cea5ebbe6c4adebbcd989c}{get\+Time} ()
+\item 
+void \hyperlink{class_wasp_r_t_c_a490dd61c617b8d146667aa307961132e}{set\+Alarm1} (const char $\ast$time, uint8\+\_\+t offset, uint8\+\_\+t mode)
+\item 
+void \hyperlink{class_wasp_r_t_c_a6a428ba63570fb35ac8d2b18c83e7425}{set\+Alarm1} (uint8\+\_\+t day\+\_\+date, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{second}, uint8\+\_\+t offset, uint8\+\_\+t mode)
+\item 
+char $\ast$ \hyperlink{class_wasp_r_t_c_ad6e99510cb41a42bf0c31e9a5709ad2f}{get\+Alarm1} ()
+\item 
+void \hyperlink{class_wasp_r_t_c_a398ed640e1db583308f3eaf1ca03bc6e}{set\+Alarm2} (const char $\ast$time, uint8\+\_\+t offset, uint8\+\_\+t mode)
+\item 
+void \hyperlink{class_wasp_r_t_c_a85bd8e721a5fc9afa7e9293b6a41a8d4}{set\+Alarm2} (uint8\+\_\+t day\+\_\+date, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}, uint8\+\_\+t offset, uint8\+\_\+t mode)
+\item 
+char $\ast$ \hyperlink{class_wasp_r_t_c_ad555073df7f151ded8e5adf126753487}{get\+Alarm2} ()
+\item 
+void \hyperlink{class_wasp_r_t_c_ad0c1d992e62d0415368d985bd8312784}{clear\+Alarm\+Flag} ()
+\item 
+void \hyperlink{class_wasp_r_t_c_a695dc4be8867425210d69e525235b14e}{disable\+Alarm1} ()
+\begin{DoxyCompactList}\small\item\em It clears A1\+IE in control register to disable the Alarm1. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_af408112d40578d6cbe05a7db041f659b}{disable\+Alarm2} ()
+\begin{DoxyCompactList}\small\item\em It clears A2\+IE in control register to disable the Alarm2. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_r_t_c_a648fdee8729a639696baba3873da65ce}{get\+Temperature} ()
+\begin{DoxyCompactList}\small\item\em It gets the temperature from the R\+TC temperature sensor. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_wasp_r_t_c_a5c7acac14ef0ac2781e6e76340e16a78}{get\+Epoch\+Time} ()
+\begin{DoxyCompactList}\small\item\em It gets the timestamp (in seconds) from 1st January 1970. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_wasp_r_t_c_aa8e7d09344004c92301528a846a6fd07}{get\+Epoch\+Time} (uint8\+\_\+t Year, uint8\+\_\+t Month, uint8\+\_\+t Date, uint8\+\_\+t Hour, uint8\+\_\+t Minute, uint8\+\_\+t Second)
+\begin{DoxyCompactList}\small\item\em It gets the timestamp (in seconds) from 1st January 1970. \end{DoxyCompactList}\item 
+void \hyperlink{class_wasp_r_t_c_a9d24c3b1008e7832d3a1b28e17510d73}{break\+Time\+Absolute} (unsigned long time\+Input, \hyperlink{structtimestamp__t}{timestamp\+\_\+t} $\ast$tm)
+\item 
+void \hyperlink{class_wasp_r_t_c_a412d547f7c3b807ac0dfc67d984939ea}{break\+Time\+Offset} (unsigned long time\+Input, \hyperlink{structtimestamp__t}{timestamp\+\_\+t} $\ast$tm)
+\begin{DoxyCompactList}\small\item\em It gets the offset time from input seconds time. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a8c8ba5c6a96fbafb02007ddfd7d51cba}{set\+G\+MT} (int8\+\_\+t gmt)
+\begin{DoxyCompactList}\small\item\em It sets the G\+MT. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_r_t_c_a1336f95a263851ae2a0f7c20be12f4c9}{get\+G\+MT} ()
+\begin{DoxyCompactList}\small\item\em It gets G\+MT value. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a673e05184e7bb06fb1205d3f90e8d564}{get\+Alarm\+Triggered} ()
+\begin{DoxyCompactList}\small\item\em It gets alarm triggered from the R\+TC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_abd6b0ce126ca222db1ce3a7d97d9c9c2}{registers\+R\+TC} \mbox{[}\hyperlink{_wasp_r_t_c_8h_aeca19c709b2c1ae0c6d1f586a80acf5d}{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+S\+I\+ZE}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Variable \+: Array for storing the value of the different R\+TC registers. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a3f2475e446dd730b6dccb10bc2f64fb5}{is\+ON}\hypertarget{class_wasp_r_t_c_a3f2475e446dd730b6dccb10bc2f64fb5}{}\label{class_wasp_r_t_c_a3f2475e446dd730b6dccb10bc2f64fb5}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores if the R\+TC is O\+N(1) or O\+F\+F(0) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ad646e9d4a4255e945ca438ccc8f85f3e}{year}\hypertarget{class_wasp_r_t_c_ad646e9d4a4255e945ca438ccc8f85f3e}{}\label{class_wasp_r_t_c_ad646e9d4a4255e945ca438ccc8f85f3e}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the year. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ac9753d846137f17f54c9af1dc1dc9902}{month}\hypertarget{class_wasp_r_t_c_ac9753d846137f17f54c9af1dc1dc9902}{}\label{class_wasp_r_t_c_ac9753d846137f17f54c9af1dc1dc9902}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the month. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a42d32d3f7881c8cf99b453752dac71b8}{day}\hypertarget{class_wasp_r_t_c_a42d32d3f7881c8cf99b453752dac71b8}{}\label{class_wasp_r_t_c_a42d32d3f7881c8cf99b453752dac71b8}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the day of the week. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}\hypertarget{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{}\label{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the hours. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}\hypertarget{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{}\label{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the minutes. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{second}\hypertarget{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{}\label{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the seconds. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_afc2f32d6e3915726394eb5f0a52920fc}{date}\hypertarget{class_wasp_r_t_c_afc2f32d6e3915726394eb5f0a52920fc}{}\label{class_wasp_r_t_c_afc2f32d6e3915726394eb5f0a52920fc}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the date(day of the week) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ac72f182d7a587dbb90ab0a055e2b35ce}{second\+\_\+alarm1}\hypertarget{class_wasp_r_t_c_ac72f182d7a587dbb90ab0a055e2b35ce}{}\label{class_wasp_r_t_c_ac72f182d7a587dbb90ab0a055e2b35ce}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the seconds for Alarm1. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a9d6b69383ee943734df9e0d3068c2a04}{minute\+\_\+alarm1}\hypertarget{class_wasp_r_t_c_a9d6b69383ee943734df9e0d3068c2a04}{}\label{class_wasp_r_t_c_a9d6b69383ee943734df9e0d3068c2a04}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the minutes for Alarm1. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a765adbeaf3e449783f9aef666f332308}{hour\+\_\+alarm1}\hypertarget{class_wasp_r_t_c_a765adbeaf3e449783f9aef666f332308}{}\label{class_wasp_r_t_c_a765adbeaf3e449783f9aef666f332308}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the hours for Alarm1. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_aa8f27ee3d427f966910c7598c95c380a}{day\+\_\+alarm1}\hypertarget{class_wasp_r_t_c_aa8f27ee3d427f966910c7598c95c380a}{}\label{class_wasp_r_t_c_aa8f27ee3d427f966910c7598c95c380a}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the day of the week/date for Alarm1. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a2784b6a1898c1988b245fe683cb99396}{minute\+\_\+alarm2}\hypertarget{class_wasp_r_t_c_a2784b6a1898c1988b245fe683cb99396}{}\label{class_wasp_r_t_c_a2784b6a1898c1988b245fe683cb99396}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the minutes for Alarm2. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a878fb26354144aa78851ba43e0e75fac}{hour\+\_\+alarm2}\hypertarget{class_wasp_r_t_c_a878fb26354144aa78851ba43e0e75fac}{}\label{class_wasp_r_t_c_a878fb26354144aa78851ba43e0e75fac}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the hours for Alarm2. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0cb80e69826e590662b6230787a65a06}{day\+\_\+alarm2}\hypertarget{class_wasp_r_t_c_a0cb80e69826e590662b6230787a65a06}{}\label{class_wasp_r_t_c_a0cb80e69826e590662b6230787a65a06}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the day of the week/date for Alarm2. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b3db37ecd9abe1bc6ca0bd42d86164b}{alarm1\+Mode}\hypertarget{class_wasp_r_t_c_a0b3db37ecd9abe1bc6ca0bd42d86164b}{}\label{class_wasp_r_t_c_a0b3db37ecd9abe1bc6ca0bd42d86164b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the alarm mode for the Alarm 1. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a8e32cf02895268c5627a8533d0ba2402}{alarm2\+Mode}\hypertarget{class_wasp_r_t_c_a8e32cf02895268c5627a8533d0ba2402}{}\label{class_wasp_r_t_c_a8e32cf02895268c5627a8533d0ba2402}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the alarm mode for the Alarm 2. \end{DoxyCompactList}\item 
+float \hyperlink{class_wasp_r_t_c_aa3c98dea66301379bb928a7dbbebc454}{temp}\hypertarget{class_wasp_r_t_c_aa3c98dea66301379bb928a7dbbebc454}{}\label{class_wasp_r_t_c_aa3c98dea66301379bb928a7dbbebc454}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the value of the temperature. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_af05bbd464ba747016043d54c275aca7e}{\+\_\+pwr\+Mode}\hypertarget{class_wasp_r_t_c_af05bbd464ba747016043d54c275aca7e}{}\label{class_wasp_r_t_c_af05bbd464ba747016043d54c275aca7e}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the R\+TC power mode. \end{DoxyCompactList}\item 
+char \hyperlink{class_wasp_r_t_c_a08437e3f2d8f8bcedef5ff0e31723d3d}{time\+Stamp} \mbox{[}100\mbox{]}\hypertarget{class_wasp_r_t_c_a08437e3f2d8f8bcedef5ff0e31723d3d}{}\label{class_wasp_r_t_c_a08437e3f2d8f8bcedef5ff0e31723d3d}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the time\+Stamp in \char`\"{}dow, Y\+Y/\+M\+M/\+D\+D -\/ H\+H\+:\+M\+M.\+S\+S\char`\"{} format. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_wasp_r_t_c_ac4149b615766377a1f3c5bb907c3c98b}{epoch}\hypertarget{class_wasp_r_t_c_ac4149b615766377a1f3c5bb907c3c98b}{}\label{class_wasp_r_t_c_ac4149b615766377a1f3c5bb907c3c98b}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the epoch time when get\+Unix\+Time() is called. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{class_wasp_r_t_c_a84e28473f406df472c2516882ddbcf22}{\+\_\+gmt}\hypertarget{class_wasp_r_t_c_a84e28473f406df472c2516882ddbcf22}{}\label{class_wasp_r_t_c_a84e28473f406df472c2516882ddbcf22}
+
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the G\+MT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_wasp_r_t_c_aeb275f3335c51a0e14ac93ed591f01c1}{alarm\+Triggered}
+\begin{DoxyCompactList}\small\item\em Variable \+: It stores the alarm which generated the last R\+TC Alarm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wasp_r_t_c}{Wasp\+R\+TC} Class. 
+
+\hyperlink{class_wasp_r_t_c}{Wasp\+R\+TC} Class defines all the variables and functions used for managing the R\+TC 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{Wasp\+R\+T\+C()}{WaspRTC()}}]{\setlength{\rightskip}{0pt plus 5cm}Wasp\+R\+T\+C\+::\+Wasp\+R\+TC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_aef80633b0a26b22b0d0eec240a1575df}{}\label{class_wasp_r_t_c_aef80633b0a26b22b0d0eec240a1575df}
+
+
+class constructor 
+
+It does nothing 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!attach\+Int@{attach\+Int}}
+\index{attach\+Int@{attach\+Int}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{attach\+Int(void)}{attachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::attach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a5e974e6eb577f1eac623c154f4933c59}{}\label{class_wasp_r_t_c_a5e974e6eb577f1eac623c154f4933c59}
+
+
+It attaches the interruption to the defined pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_ab447bc9512cfe45364f8fa5a7aad37c6}{detach\+Int()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!B\+C\+D2byte@{B\+C\+D2byte}}
+\index{B\+C\+D2byte@{B\+C\+D2byte}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{B\+C\+D2byte(uint8\+\_\+t number)}{BCD2byte(uint8_t number)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::\+B\+C\+D2byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{number}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a8c8178ff8fbedd06dda5143bbfab3ef9}{}\label{class_wasp_r_t_c_a8c8178ff8fbedd06dda5143bbfab3ef9}
+
+
+It converts a number from B\+CD to byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & number \+: number to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number converted 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a3736d3652382ab153bdd4387ee91d899}{B\+C\+D2byte(uint8\+\_\+t high, uint8\+\_\+t low)}, \hyperlink{class_wasp_r_t_c_a9f8cbe6f261ec1d08faf0ebd24d02b8a}{byte2\+B\+C\+D(uint8\+\_\+t the\+Number)} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!B\+C\+D2byte@{B\+C\+D2byte}}
+\index{B\+C\+D2byte@{B\+C\+D2byte}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{B\+C\+D2byte(uint8\+\_\+t high, uint8\+\_\+t low)}{BCD2byte(uint8_t high, uint8_t low)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::\+B\+C\+D2byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{high, }
+\item[{uint8\+\_\+t}]{low}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a3736d3652382ab153bdd4387ee91d899}{}\label{class_wasp_r_t_c_a3736d3652382ab153bdd4387ee91d899}
+
+
+It converts a number from B\+CD to byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & high \+: higher part of the number to convert \\
+\hline
+{\em uint8\+\_\+t} & low \+: lower part of the number to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number converted 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a8c8178ff8fbedd06dda5143bbfab3ef9}{B\+C\+D2byte(uint8\+\_\+t number)}, \hyperlink{class_wasp_r_t_c_a9f8cbe6f261ec1d08faf0ebd24d02b8a}{byte2\+B\+C\+D(uint8\+\_\+t the\+Number)} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!break\+Time\+Absolute@{break\+Time\+Absolute}}
+\index{break\+Time\+Absolute@{break\+Time\+Absolute}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{break\+Time\+Absolute(unsigned long time\+Input, timestamp\+\_\+t $\ast$tm)}{breakTimeAbsolute(unsigned long timeInput, timestamp_t *tm)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::break\+Time\+Absolute (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time\+Input, }
+\item[{{\bf timestamp\+\_\+t} $\ast$}]{tm}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a9d24c3b1008e7832d3a1b28e17510d73}{}\label{class_wasp_r_t_c_a9d24c3b1008e7832d3a1b28e17510d73}
+It gets the year, month, day, hour, minute and second values from input epoch time \begin{DoxyVerb}This function calculates the structure as an ABSOLUTE time. For example, 
+\end{DoxyVerb}
+ if time\+Input equals to 1416933867, this function stores the following data within the structure\+: Tue, 25 Nov 2014 16\+:44\+:27 G\+MT 
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long time\+Input\+: input epoch time \\
+\hline
+{\em \hyperlink{structtimestamp__t}{timestamp\+\_\+t}} & $\ast$tm\+: pointer to a structure where time and date is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!break\+Time\+Offset@{break\+Time\+Offset}}
+\index{break\+Time\+Offset@{break\+Time\+Offset}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{break\+Time\+Offset(unsigned long time\+Input, timestamp\+\_\+t $\ast$tm)}{breakTimeOffset(unsigned long timeInput, timestamp_t *tm)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::break\+Time\+Offset (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{time\+Input, }
+\item[{{\bf timestamp\+\_\+t} $\ast$}]{tm}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a412d547f7c3b807ac0dfc67d984939ea}{}\label{class_wasp_r_t_c_a412d547f7c3b807ac0dfc67d984939ea}
+
+
+It gets the offset time from input seconds time. 
+
+This function calculates the structure as a relative O\+F\+F\+S\+ET time. For example, if time\+Input equals to 411361, this function stores the following data within the structure\+: 4 days, 18 hours, 16 minutes and 1 seconds. 
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long time\+Input\+: input seconds time \\
+\hline
+{\em \hyperlink{structtimestamp__t}{timestamp\+\_\+t}} & $\ast$tm\+: pointer to a structure where time and date is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!byte2\+B\+CD@{byte2\+B\+CD}}
+\index{byte2\+B\+CD@{byte2\+B\+CD}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{byte2\+B\+C\+D(uint8\+\_\+t the\+Number)}{byte2BCD(uint8_t theNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::byte2\+B\+CD (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{the\+Number}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a9f8cbe6f261ec1d08faf0ebd24d02b8a}{}\label{class_wasp_r_t_c_a9f8cbe6f261ec1d08faf0ebd24d02b8a}
+
+
+It converts a number from int to B\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & the\+Number \+: number to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number converted 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a8c8178ff8fbedd06dda5143bbfab3ef9}{B\+C\+D2byte(uint8\+\_\+t number)}, \hyperlink{class_wasp_r_t_c_a3736d3652382ab153bdd4387ee91d899}{B\+C\+D2byte(uint8\+\_\+t high, uint8\+\_\+t low)} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!clear\+Alarm\+Flag@{clear\+Alarm\+Flag}}
+\index{clear\+Alarm\+Flag@{clear\+Alarm\+Flag}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{clear\+Alarm\+Flag()}{clearAlarmFlag()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::clear\+Alarm\+Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ad0c1d992e62d0415368d985bd8312784}{}\label{class_wasp_r_t_c_ad0c1d992e62d0415368d985bd8312784}
+It clears bits A1F and A2F, necessary to be able to catch interrupts after previous interrupts
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!close@{close}}
+\index{close@{close}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ae9ed6b1f9d02e69f83125aefdb561cfe}{}\label{class_wasp_r_t_c_ae9ed6b1f9d02e69f83125aefdb561cfe}
+
+
+It closes I2C bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!configure\+Alarm\+Mode@{configure\+Alarm\+Mode}}
+\index{configure\+Alarm\+Mode@{configure\+Alarm\+Mode}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{configure\+Alarm\+Mode(uint8\+\_\+t alarm\+Num, uint8\+\_\+t alarm\+Mode)}{configureAlarmMode(uint8_t alarmNum, uint8_t alarmMode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::configure\+Alarm\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{alarm\+Num, }
+\item[{uint8\+\_\+t}]{alarm\+Mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ae2a1e1937063883d9d56c34758ce8f86}{}\label{class_wasp_r_t_c_ae2a1e1937063883d9d56c34758ce8f86}
+
+
+It configures the alarm mode and attaches the interruption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & alarm\+Num \+: specifies the alarm we want to use \\
+\hline
+{\em uint8\+\_\+t} & alarm\+Mode \+: specifies the alarm mode we want to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!detach\+Int@{detach\+Int}}
+\index{detach\+Int@{detach\+Int}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{detach\+Int(void)}{detachInt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::detach\+Int (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ab447bc9512cfe45364f8fa5a7aad37c6}{}\label{class_wasp_r_t_c_ab447bc9512cfe45364f8fa5a7aad37c6}
+
+
+It detaches the interruption from the defined pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a5e974e6eb577f1eac623c154f4933c59}{attach\+Int()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!disable\+Alarm1@{disable\+Alarm1}}
+\index{disable\+Alarm1@{disable\+Alarm1}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{disable\+Alarm1()}{disableAlarm1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::disable\+Alarm1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a695dc4be8867425210d69e525235b14e}{}\label{class_wasp_r_t_c_a695dc4be8867425210d69e525235b14e}
+
+
+It clears A1\+IE in control register to disable the Alarm1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!disable\+Alarm2@{disable\+Alarm2}}
+\index{disable\+Alarm2@{disable\+Alarm2}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{disable\+Alarm2()}{disableAlarm2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::disable\+Alarm2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_af408112d40578d6cbe05a7db041f659b}{}\label{class_wasp_r_t_c_af408112d40578d6cbe05a7db041f659b}
+
+
+It clears A2\+IE in control register to disable the Alarm2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!dow@{dow}}
+\index{dow@{dow}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{dow(int y, int m, int d)}{dow(int y, int m, int d)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wasp\+R\+T\+C\+::dow (
+\begin{DoxyParamCaption}
+\item[{int}]{y, }
+\item[{int}]{m, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ae46667354809aece99983084773cf976}{}\label{class_wasp_r_t_c_ae46667354809aece99983084773cf976}
+
+
+It calculates the day of the week based on the complete date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & y \+: year \\
+\hline
+{\em int} & m\+: month \\
+\hline
+{\em int} & d\+: day of the month \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the day of the week (range from 1-\/7) 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Alarm1@{get\+Alarm1}}
+\index{get\+Alarm1@{get\+Alarm1}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Alarm1()}{getAlarm1()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+R\+T\+C\+::get\+Alarm1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ad6e99510cb41a42bf0c31e9a5709ad2f}{}\label{class_wasp_r_t_c_ad6e99510cb41a42bf0c31e9a5709ad2f}
+It gets Alarm1 date and time from the R\+TC, storing them in the corresponding variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing the Alarm1 date and the time 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Alarm2@{get\+Alarm2}}
+\index{get\+Alarm2@{get\+Alarm2}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Alarm2()}{getAlarm2()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+R\+T\+C\+::get\+Alarm2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ad555073df7f151ded8e5adf126753487}{}\label{class_wasp_r_t_c_ad555073df7f151ded8e5adf126753487}
+It gets Alarm2 date and time from the R\+TC, storing them in the corresponding variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing the Alarm2 date and the time 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a398ed640e1db583308f3eaf1ca03bc6e}{set\+Alarm2(const char$\ast$ time, uint8\+\_\+t offset, uint8\+\_\+t mode)}, \hyperlink{class_wasp_r_t_c_a85bd8e721a5fc9afa7e9293b6a41a8d4}{set\+Alarm2(uint8\+\_\+t day\+\_\+date, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t offset, uint8\+\_\+t mode)} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Alarm\+Triggered@{get\+Alarm\+Triggered}}
+\index{get\+Alarm\+Triggered@{get\+Alarm\+Triggered}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Triggered()}{getAlarmTriggered()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::get\+Alarm\+Triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a673e05184e7bb06fb1205d3f90e8d564}{}\label{class_wasp_r_t_c_a673e05184e7bb06fb1205d3f90e8d564}
+
+
+It gets alarm triggered from the R\+TC. 
+
+This function gets the two last bit of the R\+TC status register and returns the number of the alarm has been triggered 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 1 if alarm 1 has been triggered 2 if alarm 2 has been triggered 3 if both alarms have been triggered 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Epoch\+Time@{get\+Epoch\+Time}}
+\index{get\+Epoch\+Time@{get\+Epoch\+Time}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Epoch\+Time()}{getEpochTime()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Wasp\+R\+T\+C\+::get\+Epoch\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a5c7acac14ef0ac2781e6e76340e16a78}{}\label{class_wasp_r_t_c_a5c7acac14ef0ac2781e6e76340e16a78}
+
+
+It gets the timestamp (in seconds) from 1st January 1970. 
+
+This function calls \hyperlink{class_wasp_r_t_c_adeaf194910cea5ebbe6c4adebbcd989c}{get\+Time()} function to get actual values and then calculate the epoch time from R\+TC time and date 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+timestamp 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Epoch\+Time@{get\+Epoch\+Time}}
+\index{get\+Epoch\+Time@{get\+Epoch\+Time}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Epoch\+Time(uint8\+\_\+t Year, uint8\+\_\+t Month, uint8\+\_\+t Date, uint8\+\_\+t Hour, uint8\+\_\+t Minute, uint8\+\_\+t Second)}{getEpochTime(uint8_t Year, uint8_t Month, uint8_t Date, uint8_t Hour, uint8_t Minute, uint8_t Second)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Wasp\+R\+T\+C\+::get\+Epoch\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{Year, }
+\item[{uint8\+\_\+t}]{Month, }
+\item[{uint8\+\_\+t}]{Date, }
+\item[{uint8\+\_\+t}]{Hour, }
+\item[{uint8\+\_\+t}]{Minute, }
+\item[{uint8\+\_\+t}]{Second}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_aa8e7d09344004c92301528a846a6fd07}{}\label{class_wasp_r_t_c_aa8e7d09344004c92301528a846a6fd07}
+
+
+It gets the timestamp (in seconds) from 1st January 1970. 
+
+This function uses the input date and time to calculate the epoch time. It is necessary to indicate year, month, day, hour, minute and second 
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & Year\+: It is specified as two ciphers. i.\+e. 2014 is 14 uint8\+\_\+t Month\+: month to be used. uint8\+\_\+t Date\+: day of month to be used. uint8\+\_\+t Hour\+: hour to be used. uint8\+\_\+t Minute\+: minute to be used. uint8\+\_\+t Second\+: second to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+timestamp 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+G\+MT@{get\+G\+MT}}
+\index{get\+G\+MT@{get\+G\+MT}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+G\+M\+T()}{getGMT()}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Wasp\+R\+T\+C\+::get\+G\+MT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a1336f95a263851ae2a0f7c20be12f4c9}{}\label{class_wasp_r_t_c_a1336f95a263851ae2a0f7c20be12f4c9}
+
+
+It gets G\+MT value. 
+
+This function get the G\+MT variable 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\+\_\+t \+\_\+gmt 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Mode()}{getMode()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::get\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_af365757369b6f1f4fe5c026bc2a2a059}{}\label{class_wasp_r_t_c_af365757369b6f1f4fe5c026bc2a2a059}
+
+
+It gets Power Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the variable \textquotesingle{}\+\_\+pwr\+Mode\textquotesingle{} that contains the R\+TC power mode 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+set\+Mode(uint8\+\_\+t mode) 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Temperature@{get\+Temperature}}
+\index{get\+Temperature@{get\+Temperature}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Temperature()}{getTemperature()}}]{\setlength{\rightskip}{0pt plus 5cm}float Wasp\+R\+T\+C\+::get\+Temperature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a648fdee8729a639696baba3873da65ce}{}\label{class_wasp_r_t_c_a648fdee8729a639696baba3873da65ce}
+
+
+It gets the temperature from the R\+TC temperature sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+temperature 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Time()}{getTime()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+R\+T\+C\+::get\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_adeaf194910cea5ebbe6c4adebbcd989c}{}\label{class_wasp_r_t_c_adeaf194910cea5ebbe6c4adebbcd989c}
+It gets from the R\+TC the date and time, storing them in the corresponding variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing the date and the time 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}{set\+Time(const char$\ast$ time)}, \hyperlink{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}{set\+Time}(uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ad646e9d4a4255e945ca438ccc8f85f3e}{year}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ac9753d846137f17f54c9af1dc1dc9902}{month}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_afc2f32d6e3915726394eb5f0a52920fc}{date}, uint8\+\_\+t day\+\_\+week, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{second}) 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{get\+Timestamp()}{getTimestamp()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Wasp\+R\+T\+C\+::get\+Timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a34711fa7b3af46d78bda4542c84343d7}{}\label{class_wasp_r_t_c_a34711fa7b3af46d78bda4542c84343d7}
+
+
+It gets date and time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string containing date and time. These values are got from the library variables 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{O\+F\+F()}{OFF()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::\+O\+FF (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_aba6ddf7b8a066ae1d2cdfa6609d5dcbc}{}\label{class_wasp_r_t_c_aba6ddf7b8a066ae1d2cdfa6609d5dcbc}
+
+
+It closes I2C and powers off the R\+TC module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_ae9ed6b1f9d02e69f83125aefdb561cfe}{close()}, 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!ON@{ON}}
+\index{ON@{ON}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{O\+N()}{ON()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::\+ON (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ab3e685d098a070d59e6955ccaae36be2}{}\label{class_wasp_r_t_c_ab3e685d098a070d59e6955ccaae36be2}
+
+
+It powers the R\+TC and initializes variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!read\+R\+TC@{read\+R\+TC}}
+\index{read\+R\+TC@{read\+R\+TC}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{read\+R\+T\+C(uint8\+\_\+t end\+Address)}{readRTC(uint8_t endAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::read\+R\+TC (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{end\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a5e57fe11b7980ff3c2b14503a1255915}{}\label{class_wasp_r_t_c_a5e57fe11b7980ff3c2b14503a1255915}
+It reads from the R\+TC the date,time and optionally alarm1 and alarm2, setting the corresponding variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & end\+Address \+: specifies the last R\+TC register we want to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a89edbeff8b1f54b4bf19606651d946de}{write\+R\+T\+C()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!read\+R\+T\+Cregister@{read\+R\+T\+Cregister}}
+\index{read\+R\+T\+Cregister@{read\+R\+T\+Cregister}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{read\+R\+T\+Cregister(uint8\+\_\+t the\+Address)}{readRTCregister(uint8_t theAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::read\+R\+T\+Cregister (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{the\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a17946ba1e6c84c822ffa8619ce1d02dd}{}\label{class_wasp_r_t_c_a17946ba1e6c84c822ffa8619ce1d02dd}
+
+
+It reads from the R\+TC the selected register, and stores it in \textquotesingle{}registers\+R\+TC\textquotesingle{} variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & the\+Address \+: specifies the R\+TC register address where we want to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a7b6291e110c876a031ab4e110407514e}{write\+R\+T\+Cregister(uint8\+\_\+t the\+Address)} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!reset\+Vars@{reset\+Vars}}
+\index{reset\+Vars@{reset\+Vars}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{reset\+Vars()}{resetVars()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::reset\+Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ac8df10139c5157e797836bad6d9ad62f}{}\label{class_wasp_r_t_c_ac8df10139c5157e797836bad6d9ad62f}
+
+
+It resets the variables used through the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Alarm1@{set\+Alarm1}}
+\index{set\+Alarm1@{set\+Alarm1}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Alarm1(const char $\ast$time, uint8\+\_\+t offset, uint8\+\_\+t mode)}{setAlarm1(const char *time, uint8_t offset, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::set\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a490dd61c617b8d146667aa307961132e}{}\label{class_wasp_r_t_c_a490dd61c617b8d146667aa307961132e}
+It sets Alarm1 to the specified time. It also enables the corresponding R\+TC interruption
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time \+: the time to set for the Alarm 1. It looks like \char`\"{}\+D\+D\+:hh\+:mm\+:ss\char`\"{} \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E6 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a490dd61c617b8d146667aa307961132e}{set\+Alarm1}(uint8\+\_\+t day\+\_\+date, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{second}, uint8\+\_\+t offset, uint8\+\_\+t mode), \hyperlink{class_wasp_r_t_c_ad6e99510cb41a42bf0c31e9a5709ad2f}{get\+Alarm1()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Alarm1@{set\+Alarm1}}
+\index{set\+Alarm1@{set\+Alarm1}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Alarm1(uint8\+\_\+t day\+\_\+date, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second, uint8\+\_\+t offset, uint8\+\_\+t mode)}{setAlarm1(uint8_t day_date, uint8_t hour, uint8_t minute, uint8_t second, uint8_t offset, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::set\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{day\+\_\+date, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{second, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a6a428ba63570fb35ac8d2b18c83e7425}{}\label{class_wasp_r_t_c_a6a428ba63570fb35ac8d2b18c83e7425}
+It sets Alarm1 to the specified time. It also enables the corresponding R\+TC interruption
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & day\+\_\+date \+: specifies the date or the day of the week to set the Alarm1 to \\
+\hline
+{\em uint8\+\_\+t} & hour \+: specifies the hour to set the Alarm1 to \\
+\hline
+{\em uint8\+\_\+t} & minute \+: specifies the minute to set the Alarm1 to \\
+\hline
+{\em uint8\+\_\+t} & second \+: specifies the second to set the Alarm1 to \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E4, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E5, R\+T\+C\+\_\+\+A\+L\+M1\+\_\+\+M\+O\+D\+E6 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a490dd61c617b8d146667aa307961132e}{set\+Alarm1(const char$\ast$ time, uint8\+\_\+t offset, uint8\+\_\+t mode)}, \hyperlink{class_wasp_r_t_c_ad6e99510cb41a42bf0c31e9a5709ad2f}{get\+Alarm1()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Alarm2@{set\+Alarm2}}
+\index{set\+Alarm2@{set\+Alarm2}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Alarm2(const char $\ast$time, uint8\+\_\+t offset, uint8\+\_\+t mode)}{setAlarm2(const char *time, uint8_t offset, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::set\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a398ed640e1db583308f3eaf1ca03bc6e}{}\label{class_wasp_r_t_c_a398ed640e1db583308f3eaf1ca03bc6e}
+It sets Alarm2 to the specified time. It also enables the corresponding R\+TC interruption
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time \+: the time to set for the Alarm 1. It looks like \char`\"{}\+D\+D\+:hh\+:mm\char`\"{} \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E4, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E5 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Alarm2@{set\+Alarm2}}
+\index{set\+Alarm2@{set\+Alarm2}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Alarm2(uint8\+\_\+t day\+\_\+date, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t offset, uint8\+\_\+t mode)}{setAlarm2(uint8_t day_date, uint8_t hour, uint8_t minute, uint8_t offset, uint8_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::set\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{day\+\_\+date, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{offset, }
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a85bd8e721a5fc9afa7e9293b6a41a8d4}{}\label{class_wasp_r_t_c_a85bd8e721a5fc9afa7e9293b6a41a8d4}
+It sets Alarm2 to the specified time. It also enables the corresponding R\+TC interruption
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & day\+\_\+date \+: specifies the date or the day of the week to set the Alarm2 to \\
+\hline
+{\em uint8\+\_\+t} & hour \+: specifies the hour to set the Alarm2 to \\
+\hline
+{\em uint8\+\_\+t} & minute \+: specifies the minute to set the Alarm2 to \\
+\hline
+{\em uint8\+\_\+t} & offset \+: R\+T\+C\+\_\+\+O\+F\+F\+S\+ET or R\+T\+C\+\_\+\+A\+B\+S\+O\+L\+U\+TE \\
+\hline
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E1, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E2, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E3, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E4, R\+T\+C\+\_\+\+A\+L\+M2\+\_\+\+M\+O\+D\+E5 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a398ed640e1db583308f3eaf1ca03bc6e}{set\+Alarm2(const char$\ast$ time, uint8\+\_\+t offset, uint8\+\_\+t mode)}, \hyperlink{class_wasp_r_t_c_ad555073df7f151ded8e5adf126753487}{get\+Alarm2()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+G\+MT@{set\+G\+MT}}
+\index{set\+G\+MT@{set\+G\+MT}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+G\+M\+T(int8\+\_\+t gmt)}{setGMT(int8_t gmt)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::set\+G\+MT (
+\begin{DoxyParamCaption}
+\item[{int8\+\_\+t}]{gmt}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a8c8ba5c6a96fbafb02007ddfd7d51cba}{}\label{class_wasp_r_t_c_a8c8ba5c6a96fbafb02007ddfd7d51cba}
+
+
+It sets the G\+MT. 
+
+This function set the G\+MT variable and check if the param given is a valid G\+MT value, if gmt is not a valid value it will save set G\+MT 0 
+\begin{DoxyParams}{Parameters}
+{\em int8\+\_\+t} & gmt\+: input gmt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 1 if not valid G\+MT, 0 otherwise 
+\end{DoxyReturn}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Mode(uint8\+\_\+t mode, uint8\+\_\+t I2\+C\+\_\+mode)}{setMode(uint8_t mode, uint8_t I2C_mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode, }
+\item[{uint8\+\_\+t}]{I2\+C\+\_\+mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a680cc0ae58d1768fe95ea12548321f44}{}\label{class_wasp_r_t_c_a680cc0ae58d1768fe95ea12548321f44}
+
+
+It sets Power Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & mode \+: R\+T\+C\+\_\+\+ON or R\+T\+C\+\_\+\+O\+FF \\
+\hline
+{\em uint8\+\_\+t} & I2\+C\+\_\+mode \+: R\+T\+C\+\_\+\+I2\+C\+\_\+\+M\+O\+DE or R\+T\+C\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+M\+O\+DE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_af365757369b6f1f4fe5c026bc2a2a059}{get\+Mode()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Time(const char $\ast$time)}{setTime(const char *time)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::set\+Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}{}\label{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}
+
+
+It sets in the R\+TC the specified date and time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ time \+: the time and date to set in the R\+TC. It looks like \char`\"{}\+Y\+Y\+:\+M\+M\+:\+D\+D\+:dow\+:hh\+:mm\+:ss\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}{set\+Time}(uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ad646e9d4a4255e945ca438ccc8f85f3e}{year}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ac9753d846137f17f54c9af1dc1dc9902}{month}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_afc2f32d6e3915726394eb5f0a52920fc}{date}, uint8\+\_\+t day\+\_\+week, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_a0b743dddae720f33e107233086e08e62}{hour}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_adc5a10810d87d464a49b998936b48839}{minute}, uint8\+\_\+t \hyperlink{class_wasp_r_t_c_ada5488e4d4353b46588db98b7531afe4}{second}), \hyperlink{class_wasp_r_t_c_adeaf194910cea5ebbe6c4adebbcd989c}{get\+Time()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{set\+Time(uint8\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t date, uint8\+\_\+t day\+\_\+week, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)}{setTime(uint8_t year, uint8_t month, uint8_t date, uint8_t day_week, uint8_t hour, uint8_t minute, uint8_t second)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::set\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{year, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{date, }
+\item[{uint8\+\_\+t}]{day\+\_\+week, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_ac4a457e1fe7dbf6c2c71a338a4d774f6}{}\label{class_wasp_r_t_c_ac4a457e1fe7dbf6c2c71a338a4d774f6}
+
+
+It sets in the R\+TC the specified date and time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & year \+: the year to set in the R\+TC \\
+\hline
+{\em uint8\+\_\+t} & month \+: the month to set in the R\+TC \\
+\hline
+{\em uint8\+\_\+t} & date \+: the date to set in the R\+TC \\
+\hline
+{\em uint8\+\_\+t} & day\+\_\+week \+: the day of the week to set in the R\+TC \\
+\hline
+{\em uint8\+\_\+t} & hour \+: the hours to set in the R\+TC \\
+\hline
+{\em uint8\+\_\+t} & minute \+: the minutes to set in the R\+TC \\
+\hline
+{\em uint8\+\_\+t} & second \+: the seconds to set in the R\+TC \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}0\textquotesingle{} on succes, \textquotesingle{}1\textquotesingle{} otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_afceabc433a5dc8d002c709f5703352a9}{set\+Time(const char$\ast$ time)}, \hyperlink{class_wasp_r_t_c_adeaf194910cea5ebbe6c4adebbcd989c}{get\+Time()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!write\+R\+TC@{write\+R\+TC}}
+\index{write\+R\+TC@{write\+R\+TC}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{write\+R\+T\+C()}{writeRTC()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::write\+R\+TC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a89edbeff8b1f54b4bf19606651d946de}{}\label{class_wasp_r_t_c_a89edbeff8b1f54b4bf19606651d946de}
+
+
+It writes the date and time set in the corresponding variables to the R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a5e57fe11b7980ff3c2b14503a1255915}{read\+R\+T\+C(uint8\+\_\+t end\+Address)} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!write\+R\+T\+Calarm1@{write\+R\+T\+Calarm1}}
+\index{write\+R\+T\+Calarm1@{write\+R\+T\+Calarm1}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{write\+R\+T\+Calarm1()}{writeRTCalarm1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::write\+R\+T\+Calarm1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a3254cf8ebea2137e3d2ea79b769616b6}{}\label{class_wasp_r_t_c_a3254cf8ebea2137e3d2ea79b769616b6}
+
+
+It writes Alarm1 to the R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a13f247f7ecb79283c8e96115c76b8e23}{write\+R\+T\+Calarm2()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!write\+R\+T\+Calarm2@{write\+R\+T\+Calarm2}}
+\index{write\+R\+T\+Calarm2@{write\+R\+T\+Calarm2}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{write\+R\+T\+Calarm2()}{writeRTCalarm2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::write\+R\+T\+Calarm2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a13f247f7ecb79283c8e96115c76b8e23}{}\label{class_wasp_r_t_c_a13f247f7ecb79283c8e96115c76b8e23}
+
+
+It writes Alarm2 to the R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a3254cf8ebea2137e3d2ea79b769616b6}{write\+R\+T\+Calarm1()} 
+\end{DoxySeeAlso}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!write\+R\+T\+Cregister@{write\+R\+T\+Cregister}}
+\index{write\+R\+T\+Cregister@{write\+R\+T\+Cregister}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{write\+R\+T\+Cregister(uint8\+\_\+t the\+Address)}{writeRTCregister(uint8_t theAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wasp\+R\+T\+C\+::write\+R\+T\+Cregister (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{the\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_wasp_r_t_c_a7b6291e110c876a031ab4e110407514e}{}\label{class_wasp_r_t_c_a7b6291e110c876a031ab4e110407514e}
+
+
+It writes to the R\+TC the selected registers stored in \textquotesingle{}registers\+R\+TC\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uint8\+\_\+t} & the\+Address \+: specifies the R\+TC register address where we want to start writing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_wasp_r_t_c_a17946ba1e6c84c822ffa8619ce1d02dd}{read\+R\+T\+Cregister(uint8\+\_\+t the\+Address)} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\index{Wasp\+R\+TC@{Wasp\+R\+TC}!alarm\+Triggered@{alarm\+Triggered}}
+\index{alarm\+Triggered@{alarm\+Triggered}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{alarm\+Triggered}{alarmTriggered}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::alarm\+Triggered}\hypertarget{class_wasp_r_t_c_aeb275f3335c51a0e14ac93ed591f01c1}{}\label{class_wasp_r_t_c_aeb275f3335c51a0e14ac93ed591f01c1}
+
+
+Variable \+: It stores the alarm which generated the last R\+TC Alarm. 
+
+Possible values are\+: \textquotesingle{}1\textquotesingle{}\+: Alarm1 triggered \textquotesingle{}2\textquotesingle{}\+: Alarm2 triggered \textquotesingle{}3\textquotesingle{}\+: Both alarms triggered \index{Wasp\+R\+TC@{Wasp\+R\+TC}!registers\+R\+TC@{registers\+R\+TC}}
+\index{registers\+R\+TC@{registers\+R\+TC}!Wasp\+R\+TC@{Wasp\+R\+TC}}
+\subsubsection[{\texorpdfstring{registers\+R\+TC}{registersRTC}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wasp\+R\+T\+C\+::registers\+R\+TC\mbox{[}{\bf R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+S\+I\+ZE}\mbox{]}}\hypertarget{class_wasp_r_t_c_abd6b0ce126ca222db1ce3a7d97d9c9c2}{}\label{class_wasp_r_t_c_abd6b0ce126ca222db1ce3a7d97d9c9c2}
+
+
+Variable \+: Array for storing the value of the different R\+TC registers. 
+
+Its size is defined by \textquotesingle{}R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+S\+I\+ZE\textquotesingle{} constant 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/\hyperlink{_wasp_r_t_c_8h}{Wasp\+R\+T\+C.\+h}\item 
+C\+:/\+Users/\+Daniel/\+Dropbox/\+Rock\+Monitoring/02\+\_\+\+Software/\+Rock\+Monitoring/libraries/waspmote-\/api/Wasp\+R\+T\+C.\+cpp\end{DoxyCompactItemize}
