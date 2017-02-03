@@ -16,6 +16,7 @@ class SensorStab_GSM
         uint8_t makeMeasurment(void);
         void convertTime(uint32_t time);    //safes the converted time in the member timeString
         void deepSleep(void);
+        void customDeepSleep2(const char* time2wake,uint8_t offset,uint8_t mode,uint8_t option);
         void wakeUp(void);
         uint8_t measureBattery(void);
         void run(void);
